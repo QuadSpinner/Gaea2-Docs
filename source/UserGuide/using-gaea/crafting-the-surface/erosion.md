@@ -4,15 +4,15 @@ title: Erosion
 
 # Erosion
 
-<figure><img src="../../.gitbook/assets/snow.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/snow.webp"></figure>
 
 Erosion is the key simulation that helps you transform your terrain from a fractal noise or basic geometric shape (or even a complex shape) into a believable, realistic terrain.
 
 Gaea's simulations of natural processes are the cornerstone of creating rich, believable digital terrains.
 
-Creating simple erosion can give you great terrains, especially when powered by Erosion\_2. However, you can take it several levels further. Creating multiple erosion passes and infusing different processes in between, lets you create very complex visuals.
+Creating simple erosion can give you great terrains, especially when powered by Erosion_2. However, you can take it several levels further. Creating multiple erosion passes and infusing different processes in between, lets you create very complex visuals.
 
-See [understanding-erosion](../understanding-erosion/ "mention") and [erosion\_2](../understanding-erosion/erosion_2/ "mention").
+See [understanding-erosion](../understanding-erosion/) and [Erosion_2](../understanding-erosion/erosion_2/).
 
 
 

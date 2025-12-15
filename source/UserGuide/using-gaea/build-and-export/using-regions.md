@@ -5,13 +5,13 @@ title: Using Regions
 
 # Using Regions
 
-{% include "../../.gitbook/includes/this-feature-is-to-be-intro....md" %}
+{% include "../../.data/includes/this-feature-is-to-be-intro....md" %}
 
 ## Regions
 
 Regions allows you to take a portion of your terrain and upscale it to a higher resolution. For example, you can take 1/6th of a 8192 x 8192 terrain and upscale the Region to 8192 x 8192 - making it almost 6X times larger in proportional pixel density.
 
-<figure><img src="../../.gitbook/assets/Build Options Regions.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Build Options Regions.png"></figure>
 
 Gaea gives you the ability to preview any individual region. You can have an unlimited number of regions.
 
@@ -29,7 +29,7 @@ If any required nodes are not baked, Gaea will prompt you to bake them. You can 
 
 The Gate node lets you quickly bake and unbake necessary nodes. Simply put a Gate node at the end of one or more chain of nodes you need to bake. Then use the `Bake Required Nodes` command in the Bake menu to bake all Gates. Use `Unbake All` to unbake the Gates.
 
-<figure><img src="../../.gitbook/assets/Bake Menu.png" alt="" width="168"><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Bake Menu.png" width="168"></figure>
 
 ### Negligible Loss of quality
 

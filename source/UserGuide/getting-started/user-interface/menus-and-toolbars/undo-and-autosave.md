@@ -8,7 +8,7 @@ title: Undo and Autosave
 
 The Undo menu lists recent actions and allows you undo them.
 
-<figure><img src="../../../.gitbook/assets/undo_menu.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.data/assets/undo_menu.png"></figure>
 
 The Undo menu also acts as a history readout, showing you exactly what changes were made in each step. For example, when a node value is changed, it will show you the name of the node, the name of the modified property, and the before and after values.
 
@@ -16,12 +16,12 @@ The Undo menu also acts as a history readout, showing you exactly what changes w
 
 The Autosave feature in Gaea is a crucial tool designed to automatically save your project at regular intervals. This ensures that your work is periodically backed up, minimizing data loss in the event of unexpected software shutdowns or system failures.
 
-<figure><img src="../../../.gitbook/assets/image (38).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.data/assets/image (38).png"></figure>
 
 **Remind Me to Save Every.** This option allows you to set the frequency of the Autosave reminders. You can choose from the following intervals **5 minutes, 10 minutes, 15 minutes, 30 minutes.**
 
 :::warning
-Selecting one of these options will configure the application to remind you to save your work at the chosen interval. Gaea autosaves every 10 minutes by default, and saves a Disaster Recovery file every 5 seconds (see [#disaster-recovery](undo-and-autosave.md#disaster-recovery "mention"))
+Selecting one of these options will configure the application to remind you to save your work at the chosen interval. Gaea autosaves every 10 minutes by default, and saves a Disaster Recovery file every 5 seconds (see [#disaster-recovery](undo-and-autosave.md#disaster-recovery))
 :::
 
 **Reset Timer.** Selecting 'Reset Timer' will restart the countdown of the current Autosave interval. This is useful when you want to make sure that a save happens at a specific point during your work session.

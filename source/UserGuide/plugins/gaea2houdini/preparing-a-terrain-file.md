@@ -16,17 +16,17 @@ Your Gaea `.terrain` file can be as simple as one node, or have a hundred nodes 
 
 Create a new String variable. Give it a meaningful name, and set the Type to "Input". Then create a File node, and bind its File property to this Input variable.
 
-<div><figure><img src="../../.gitbook/assets/Gaea_-_Untitled_09-04-29-PM.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Gaea_-_Untitled_09-04-52-PM.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Gaea_-_Untitled_09-05-02-PM.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.data/assets/Gaea_-_Untitled_09-04-29-PM.png"></figure> <figure><img src="../../.data/assets/Gaea_-_Untitled_09-04-52-PM.png"></figure> <figure><img src="../../.data/assets/Gaea_-_Untitled_09-05-02-PM.png"></figure></div>
 
 
 
 For Output, create a variable and set the Type to Output. Create an Export node, set the format to `GaeaRaw`, the Location to `Explicit` and bind the Output Path to your variable.
 
-<figure><img src="../../.gitbook/assets/Gaea_-_HoudiniTest-001.terrain_09-09-59-PM.png" alt="" width="310"><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Gaea_-_HoudiniTest-001.terrain_09-09-59-PM.png" width="310"></figure>
 
 
 
-Now you can put anything between these nodes and expose their properties. These properties will show up in Houdini in the [#gaea-terrain-processor-sop-node](gaea-hdas.md#gaea-terrain-processor-sop-node "mention").
+Now you can put anything between these nodes and expose their properties. These properties will show up in Houdini in the [#gaea-terrain-processor-sop-node](gaea-hdas.md#gaea-terrain-processor-sop-node).
 
 ## Examples
 
@@ -36,7 +36,7 @@ Let's say you only want to use Erosion2, create an Erosion2 node between the Fil
 
 For each parameter you wish to expose, open the Edit Parameter menu and select `Bind To > New Variable`.
 
-<figure><img src="../../.gitbook/assets/image (70).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/image (70).png"></figure>
 
 Once all your properties are exposed, your .terrain file is ready for use in Houdini.
 
@@ -46,7 +46,7 @@ Not all properties can be exposed!
 Some properties with custom UI like Curve, CLUTer, Draw, and others may not bind to a parameter.
 :::
 
-<figure><img src="../../.gitbook/assets/Gaea_-_Untitled_09-15-05-PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Gaea_-_Untitled_09-15-05-PM.png"></figure>
 
 
 
@@ -54,7 +54,7 @@ Some properties with custom UI like Curve, CLUTer, Draw, and others may not bind
 
 In this larger example, we have created two outputs - one for the heightfield and one for color, so we can use Gaea's ColorErosion tools.
 
-<figure><img src="../../.gitbook/assets/Gaea_-_HoudiniTest-001.terrain_09-17-07-PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Gaea_-_HoudiniTest-001.terrain_09-17-07-PM.png"></figure>
 
 #### Design-Time Tip
 
@@ -68,4 +68,4 @@ Turn on `Discard Alt in Final Build` so this alternate route is never used durin
 
 You don't need to always expose properties directly. You can create independent variables, bind them to one or more properties, and use Expressions to filter the values. This lets you create a fully functional node-based terrain process with properties of your own.
 
-See [scripting-and-expressions](../../developers/scripting-and-expressions/ "mention") for further details.
+See [scripting-and-expressions](../../developers/scripting-and-expressions/) for further details.

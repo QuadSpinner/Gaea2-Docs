@@ -4,4 +4,4 @@ title: Automation View
 
 # Automation View
 
-{% include "../../../.gitbook/includes/under-construction.md" %}
+{% include "../../../.data/includes/under-construction.md" %}

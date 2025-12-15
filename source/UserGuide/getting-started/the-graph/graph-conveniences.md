@@ -12,7 +12,7 @@ Gaea supplies numerous quality-of-life features to help you create and navigate 
 
 Each node has a corresponding shortcode. For example, Perlin is `p`, Mountain is `m`, Erosion2 is `e2`, Cone is `con`, and so on.
 
-<figure><img src="../../.gitbook/assets/Gaea_-_Untitled_11-31-06-PM.png" alt="" width="362"><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Gaea_-_Untitled_11-31-06-PM.png" width="362"></figure>
 
 You can enter the shortcode instead of the full name when searching for nodes.
 
@@ -22,13 +22,13 @@ You can use shortcodes (or full names) to quickly create a linear sequence of no
 
 Enter `m,e2,e2,tb,sm` to create `Mountain > Erosion2 > Erosion2 > TextureBase > SatMap`.
 
-<figure><img src="../../.gitbook/assets/Gaea_-_Untitled_11-37-32-PM.gif" alt=""><figcaption><p>Chained creation can help you quickly create several nodes at once.</p></figcaption></figure>
+<figure><img src="../../.data/assets/Gaea_-_Untitled_11-37-32-PM.gif"><figcaption><p>Chained creation can help you quickly create several nodes at once.</p></figcaption></figure>
 
 ### Out to Out
 
 When you drag a connection from an Out port and connect it to another Out port, instead of denying the connection as a disallowed right-to-left direction flow, Gaea will create a `Combine` node and route both Out ports to the Combine node.
 
-<figure><img src="../../.gitbook/assets/Gaea_out-to-out.gif" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Gaea_out-to-out.gif"></figure>
 
 ### MultiMix
 
@@ -44,13 +44,13 @@ For detailed information on Portals, see [portals-and-chokepoints.md](portals-an
 
 Right-click on a connection and select "Convert to Portal" (or press `Ctrl + P` to convert an existing connection to a Portal. This will also convert the Out port to a Portal.
 
-<figure><img src="../../.gitbook/assets/Convert to Portal.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Convert to Portal.png"></figure>
 
 Other connections associated with that Port will not be affected.
 
 ## Insert Node
 
-<figure><img src="../../.gitbook/assets/Insert Node.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Insert Node.png"></figure>
 
 * Right-click on a connection and choose "Insert node." This action opens a search menu.
 * Select the node you wish to insert from this menu, and it will be automatically placed between the existing connection.
@@ -63,7 +63,7 @@ When you press `P` to bring up the Portal Management menu and select an In port,
 
 ### Navigate Menu
 
-<figure><img src="../../.gitbook/assets/Navigate Menu.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Navigate Menu.png"></figure>
 
 * Press the `,` key while a node is selected to open the navigate menu. This menu displays all incoming and outgoing connections linked to the selected node.
 * Click on a connection within the menu to select and automatically navigate to the corresponding node.
@@ -72,15 +72,15 @@ When you press `P` to bring up the Portal Management menu and select an In port,
 
 Allows you to bookmark selected node. When a node is bookmarked, it is shown in the bookmark menu. Clicking on the node will select and navigate to that node.
 
-<figure><img src="../../.gitbook/assets/Gaea_-_Untitled_08-43-25-PM.png" alt="" width="201"><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Gaea_-_Untitled_08-43-25-PM.png" width="201"></figure>
 
 ## Organization
 
 ### Select Nodes
 
-You can select all nodes upstream (ancestors) or downstream (descendants) of a specific node from the Node menu or the [#graph-toolbar](../user-interface/menus-and-toolbars/#graph-toolbar "mention").
+You can select all nodes upstream (ancestors) or downstream (descendants) of a specific node from the Node menu or the [#graph-toolbar](../user-interface/menus-and-toolbars/#graph-toolbar).
 
-<figure><img src="../../.gitbook/assets/Select Nodes.png" alt="" width="233"><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Select Nodes.png" width="233"></figure>
 
 ### Group/Ungroup nodes
 
@@ -110,4 +110,4 @@ Pressing `F4` when one or more nodes are selected will automatically layout the 
 
 Dragging the cursor on the graph while holding `Ctrl + Shift` lets you push all nodes to the right of the cursor. It is a handy tool to quickly organize portions of a graph.
 
-<figure><img src="../../.gitbook/assets/Gaea_-_Mixer_and_ColorErosion.terrain_11-46-49-PM.gif" alt=""><figcaption><p>Push nodes with <code>Ctrl + Shift + LMB</code></p></figcaption></figure>
+<figure><img src="../../.data/assets/Gaea_-_Mixer_and_ColorErosion.terrain_11-46-49-PM.gif"><figcaption><p>Push nodes with <code>Ctrl + Shift + LMB</code></p></figcaption></figure>

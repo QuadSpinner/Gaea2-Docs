@@ -9,12 +9,12 @@ title: Autosave and Recovery
 
 The Autosave feature in Gaea is a crucial tool designed to automatically save your project at regular intervals. This ensures that your work is periodically backed up, minimizing data loss in the event of unexpected software shutdowns or system failures.
 
-<figure><img src="../.gitbook/assets/image (38).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.data/assets/image (38).png"></figure>
 
 **Remind Me to Save Every.** This option allows you to set the frequency of the Autosave reminders. You can choose from the following intervals **5 minutes, 10 minutes, 15 minutes, 30 minutes.**
 
 :::warning
-Selecting one of these options will configure the application to remind you to save your work at the chosen interval. Gaea autosaves every 10 minutes by default, and saves a Disaster Recovery file every 5 seconds (see [#disaster-recovery](autosave-and-recovery.md#disaster-recovery "mention"))
+Selecting one of these options will configure the application to remind you to save your work at the chosen interval. Gaea autosaves every 10 minutes by default, and saves a Disaster Recovery file every 5 seconds (see [#disaster-recovery](autosave-and-recovery.md#disaster-recovery))
 :::
 
 **Reset Timer.** Selecting 'Reset Timer' will restart the countdown of the current Autosave interval. This is useful when you want to make sure that a save happens at a specific point during your work session.

@@ -47,4 +47,4 @@ Houdini uses the same mechanism to display both color and masks, making it hard 
 
 ***
 
-See [Gaea2Houdini](https://app.gitbook.com/s/-MRH8eXs83d5sUGKdsHp/plugins/gaea2houdini "mention") for more information.
+See [Gaea2Houdini](/plugins/gaea2houdini) for more information.

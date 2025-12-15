@@ -8,7 +8,7 @@ Gaea's Synth node can take static color information and turn it into an editable
 
 The process is quite simple:
 
-<figure><img src="../../.gitbook/assets/synth_process.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/synth_process.png"></figure>
 
 1. Connect a static color map such as a SatMap or a File node with a color input to a Synth node.
    1. You will also need to provide a Height or Texture input, so you can apply the colors.

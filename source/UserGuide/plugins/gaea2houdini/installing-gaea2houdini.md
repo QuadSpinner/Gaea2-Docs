@@ -8,7 +8,7 @@ title: Installing Gaea2Houdini
 
 Gaea2Houdini ships in [SideFX Labs](https://www.sidefx.com/products/sidefx-labs/) and can be installed directly from the Houdini Launcher.
 
-<figure><img src="../../.gitbook/assets/Houdini_Launcher_08-05-19-PM.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Houdini_Launcher_08-05-19-PM.png"></figure>
 
 You can find further details on SideFX Labs' Installation process [in their documentation](https://www.sidefx.com/docs/houdini/labs/#install).
 

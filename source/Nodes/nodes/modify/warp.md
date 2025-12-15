@@ -12,7 +12,7 @@ By using vector fields, the warping created by this node result in more comprehe
 
 **Warp as a Post Process**
 
-Warp is also built into the [Modifier Stack](https://app.gitbook.com/s/-MRH8eXs83d5sUGKdsHp/getting-started/user-interface/property-editor/modifier-stack "mention") for easy access.
+Warp is also built into the [Modifier Stack](/getting-started/user-interface/property-editor/modifier-stack) for easy access.
 
 ### Properties
 

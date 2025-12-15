@@ -6,24 +6,24 @@ title: Graph Toolbar
 
 The Graph Toolbar is an essential interface within the graph environment, designed to enhance user efficiency and interaction. It hosts a variety of tools and menus that facilitate complex graph operations. Key features include:
 
-<div align="center" data-full-width="false"><figure><img src="../../../.gitbook/assets/Gaea_7l3gBgyyni.png" alt="" width="63"><figcaption></figcaption></figure></div>
+<div align="center" data-full-width="false"><figure><img src="../../../.data/assets/Gaea_7l3gBgyyni.png" width="63"></figure></div>
 
 *   **Bookmarks Menu**: Allows users to mark and quickly navigate to specific nodes.
 
-    See[#node-bookmarks](../../the-graph/graph-conveniences.md#node-bookmarks "mention")
+    See[#node-bookmarks](../../the-graph/graph-conveniences.md#node-bookmarks)
 *   **Node Conveniences Menu**: Offers shortcuts to commonly used node functions.
 
-    See [#organization](../../the-graph/graph-conveniences.md#organization "mention")
+    See [#organization](../../the-graph/graph-conveniences.md#organization)
 *   **Bake Menu**: Provides all baking related options.
 
-    See [baking-nodes](../../../using-gaea/baking-nodes/ "mention")
+    See [baking-nodes](../../../using-gaea/baking-nodes/)
 *   **Refresh Node**: Refreshes the node.
 
     Builds the selected node.
 
     Right-clicking on "Refresh Node" Provides menu option to "Refresh all nodes", clicking on this refreshes all nodes in graph.
 
-<figure><img src="../../../.gitbook/assets/Gaea Refresh all nodes.png" alt="" width="237"><figcaption><p>Refresh all nodes</p></figcaption></figure>
+<figure><img src="../../../.data/assets/Gaea Refresh all nodes.png" width="237"><figcaption><p>Refresh all nodes</p></figcaption></figure>
 
 
 
@@ -33,14 +33,14 @@ The Graph Toolbar is an essential interface within the graph environment, design
 
     Right-clicking on "Mutate Node" provides menu option to "Mutate all nodes", clicking on this mutates all nodes in graph.
 
-<figure><img src="../../../.gitbook/assets/Gaea Mutate all nodes.png" alt="" width="242"><figcaption><p>Mutate all nodes</p></figcaption></figure>
+<figure><img src="../../../.data/assets/Gaea Mutate all nodes.png" width="242"><figcaption><p>Mutate all nodes</p></figcaption></figure>
 
 
 
 * **Suspend Engine**: Lets you toggle the Gaea engine, see [suspending-engine.md](../../the-graph/suspending-engine.html)
 * **Graph toolbar submenu**: Incorporate extended functionalities and settings found in the main graph menu for comprehensive control.
 
-<figure><img src="../../../.gitbook/assets/Graph Submenu.png" alt="" width="225"><figcaption><p>Graph toolbar submenu</p></figcaption></figure>
+<figure><img src="../../../.data/assets/Graph Submenu.png" width="225"><figcaption><p>Graph toolbar submenu</p></figcaption></figure>
 
 
 

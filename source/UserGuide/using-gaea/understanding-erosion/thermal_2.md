@@ -1,8 +1,8 @@
 ---
-title: Thermal\_2
+title: Thermal_2
 ---
 
-# Thermal\_2
+# Thermal_2
 
 {% embed url="https://www.youtube.com/watch?v=C9KpUG8u2WM" %}
 
@@ -25,4 +25,4 @@ title: Thermal\_2
 
 * **Feature Scale:** Adjusts the scale of the thermal erosion features in meters. Larger values will produce broader, more pronounced features, while smaller values will result in finer details.
 
-These parameters in the Thermal\_2 node give you control over how thermal erosion shapes your terrain, from broad, sweeping changes to fine, detailed adjustments, with the Anisotropy parameter providing nuanced control over the directionality and intensity of the erosion effects.
+These parameters in the Thermal_2 node give you control over how thermal erosion shapes your terrain, from broad, sweeping changes to fine, detailed adjustments, with the Anisotropy parameter providing nuanced control over the directionality and intensity of the erosion effects.

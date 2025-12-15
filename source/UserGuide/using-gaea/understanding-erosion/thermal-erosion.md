@@ -14,7 +14,7 @@ Thermal Stress Anisotropy governs how erosion and the resulting rock deposits ar
 
 The image below shows a simplified version of how Thermal Stress Anisotropy affects a terrain.
 
-<figure><img src="https://docs.quadspinner.com/images/thermal_stress_anisotropy.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.quadspinner.com/images/thermal_stress_anisotropy.webp"></figure>
 
 **Combining with Hydraulic Erosion**
 

@@ -14,7 +14,7 @@ You can create the preset by selecting "Create Preset" from the "Presets" menu i
 
 It will open a create preset dialog.
 
-<figure><img src="../../../.gitbook/assets/Create Preset.png" alt="" width="330"><figcaption><p>Create Preset dialog</p></figcaption></figure>
+<figure><img src="../../../.data/assets/Create Preset.png" width="330"><figcaption><p>Create Preset dialog</p></figcaption></figure>
 
 Enter a meaningful name for the preset.&#x20;
 
@@ -22,10 +22,10 @@ Checking the option "Make these the default settings for this type of node" will
 
 Clicking on "Create Preset" button will create the preset. We have named the preset "Long Duration". This new preset will now be visible in preset menu. clicking on this preset will apply its settings to the selected node.
 
-<figure><img src="../../../.gitbook/assets/Preset Added.png" alt="" width="232"><figcaption></figcaption></figure>
+<figure><img src="../../../.data/assets/Preset Added.png" width="232"></figure>
 
 You can create multiple presets with various node settings.&#x20;
 
 Search menu can be used to search a particular preset, use "\_" and then type the name of your preset, your preset will be shown above other nodes in search, selecting the preset in search will create that node type with the preset applied.
 
-{% include "../../../.gitbook/includes/under-construction.md" %}
+{% include "../../../.data/includes/under-construction.md" %}

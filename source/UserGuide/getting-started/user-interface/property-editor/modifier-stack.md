@@ -10,7 +10,7 @@ Modifiers are additional adjustments you can add on top of most nodes. These Mod
 
 Many of these Modifiers provide the same functionality as nodes of the same names. However, when you use a Modifier, you create less overhead than creating individual nodes for small adjustments.
 
-<figure><img src="../../../.gitbook/assets/image (26).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.data/assets/image (26).png"></figure>
 
 The Modifier Stack can be used to re-order the Modifiers applied to the node. Often this may change the end-result when using impactful Modifiers such as Autolevel or Height Remap.
 

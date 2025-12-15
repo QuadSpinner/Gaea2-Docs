@@ -20,7 +20,7 @@ $$
 
 
 
-<figure><img src="../../.gitbook/assets/scale--5000x2600.webp" alt=""><figcaption><p>The default Gaea world is 5000m wide and 2500m tall, creating a perfect 0.5 ratio.</p></figcaption></figure>
+<figure><img src="../../.data/assets/scale--5000x2600.webp"><figcaption><p>The default Gaea world is 5000m wide and 2500m tall, creating a perfect 0.5 ratio.</p></figcaption></figure>
 
 ### Terrain Size and Height
 

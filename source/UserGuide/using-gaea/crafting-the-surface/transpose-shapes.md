@@ -8,5 +8,5 @@ The Transpose node can take the surface shapes of one terrain and transpose them
 
 You can create an terrain surface that you like, regardless of the shape it is built upon. Then create or bring in a terrain shape you like - an Unreal Engine drawn terrain, a ZBrush sculpted landscape, or even a full 3D model1. Then simply Tranpose the surface.
 
-<figure><img src="../../.gitbook/assets/transpose.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/transpose.webp"></figure>
 

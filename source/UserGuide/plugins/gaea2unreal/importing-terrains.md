@@ -18,14 +18,14 @@ See the [unreal-node.md](../../using-gaea/build-and-export/application-specific-
 
 Once you have installed the Gaea2Unreal plugin in your UE installation, you will see the Gaea Landscape Importer in the main toolbar in Unreal Engine.
 
-<figure><img src="../../.gitbook/assets/image (54).png" alt="" width="541"><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/image (54).png" width="541"></figure>
 
 Clicking it will bring up the Gaea Landscape Importer window. Click `Import Heightmap` and select the PNG file that was exported from Gaea. The Importer will read the heightmap file along with the metadata saved by Gaea for UE-scale conversion, and populate the specifics in the window.
 
-<figure><img src="../../.gitbook/assets/image (51).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/image (51).png"></figure>
 
 Click `Create Landscape` and you're done!
 
-<figure><img src="../../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/image.webp"></figure>
 
 See the [importing-weight-maps.md](importing-weight-maps.html) section to see how to expand on this import process by importing additional assets as weight maps.

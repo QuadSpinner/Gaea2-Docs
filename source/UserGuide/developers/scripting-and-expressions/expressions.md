@@ -16,13 +16,13 @@ At the moment, only Float (decimal) and Int (whole number) properties support Ex
 
 Click the Property Binding menu next to a property and select Expression.&#x20;
 
-<figure><img src="../../.gitbook/assets/expr_create.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/expr_create.png"></figure>
 
 This will bring up the Edit Expression dialog. In the expression, the slider's value is represented by `x` so any modifications you make to `x` will be applied to the property.
 
 For example, let's say you want much finer control over your slider, then you can apply a multiplier of `0.01` to the value thereby reducing the value to 1% of its original.
 
-<figure><img src="../../.gitbook/assets/expr_edit.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/expr_edit.png"></figure>
 
 ### Modifying Variables
 
@@ -32,9 +32,9 @@ For example, you have Mountain node with the `Height` property bound to a variab
 
 You want the Height of the FractalTerrace to be proportionally linked to the Height of the Mountain. So, you would enter the expression: <mark style="color:yellow;">`x * 0.3`</mark> so the FractalTerrace spacing is always 30% of the Mountain's height. This means no matter what the height, the FractalTerrace spacing remains consistently placed at the same location.
 
-<figure><img src="../../.gitbook/assets/expr_demo1.gif" alt=""><figcaption><p>The FractalTerrace spacing remains consistent no matter the height of the Mountain.</p></figcaption></figure>
+<figure><img src="../../.data/assets/expr_demo1.gif"><figcaption><p>The FractalTerrace spacing remains consistent no matter the height of the Mountain.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/expr_demo2.png" alt=""><figcaption><p>The expression takes the value of 2.82 and reduces it to 0.84.</p></figcaption></figure>
+<figure><img src="../../.data/assets/expr_demo2.png"><figcaption><p>The expression takes the value of 2.82 and reduces it to 0.84.</p></figcaption></figure>
 
 ## Additional Functions and Strategies
 
@@ -68,4 +68,4 @@ Here are some additional ideas.
          if(SomeVar, 0.3, 0.6)
 ```
 
-For a full list of available options, see [Broken link](broken-reference "mention")
+For a full list of available options, see [Broken link](broken-reference)

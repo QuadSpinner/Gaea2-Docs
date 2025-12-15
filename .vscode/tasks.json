@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "tool:build-staging",
+      "type": "process",
+      "command": "X:\\Infra\\AngryMonkey\\AngryMonkey\\bin\\Debug\\net10.0\\AngryMonkey.exe",
+            "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    }
+  ]
+}

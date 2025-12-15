@@ -39,7 +39,7 @@ For properties that allow numeric entry (Integer or Decimals), you can right-cli
 
 For values shown as percentages, you can enter a value in meters and Gaea will convert it to the appropriate percentage or decimal value proportionate to the metric value in relation to the Terrain Definition set in the Build tab.
 
-For example, if you enter `500m` and your Terrain width in [build-options](../../../using-gaea/build-and-export/build-options/ "mention") > [#terrain](../../../using-gaea/build-and-export/build-options/#terrain "mention") is set to `5000m` the value will be converted to `(500m / 5000m)` - in other words, it will be `0.1` or `10%` as appropriate.
+For example, if you enter `500m` and your Terrain width in [build-options](../../../using-gaea/build-and-export/build-options/) > [#terrain](../../../using-gaea/build-and-export/build-options/#terrain) is set to `5000m` the value will be converted to `(500m / 5000m)` - in other words, it will be `0.1` or `10%` as appropriate.
 
 ### Nudge Popup
 

@@ -35,7 +35,7 @@ again for the next node.
 
 This may still look too simple for most usage scenarios. So you can add
 distortions to the nodes by using the `Displace` option in the
-[Modifier Stack](https://app.gitbook.com/s/-MRH8eXs83d5sUGKdsHp/getting-started/user-interface/property-editor/modifier-stack "mention"). This will create more natural-looking cracks.
+[Modifier Stack](/getting-started/user-interface/property-editor/modifier-stack). This will create more natural-looking cracks.
 
 ![](/images/ref/Cracks/usage-3.webp)
 

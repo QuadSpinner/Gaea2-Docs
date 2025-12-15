@@ -7,7 +7,7 @@ title: Baking Nodes
 
 The Baking feature in Gaea is a powerful tool designed to enhance workflow efficiency by locking nodes at a high resolution, enabling high-quality previews without compromising performance on the rest of the graph.
 
-<figure><img src="../../.gitbook/assets/Gaea_STYygINX4O.png" alt="" width="233"><figcaption><p>Baking Menu</p></figcaption></figure>
+<figure><img src="../../.data/assets/Gaea_STYygINX4O.png" width="233"><figcaption><p>Baking Menu</p></figcaption></figure>
 
 ## Baking Features
 

@@ -21,7 +21,7 @@ MeshWarp will only work with Mesher nodes set to `Tris` export.
 
 The MeshWarp node, along with generating tangent-space normals, will also apply nuanced warping to mask and color maps to make them fit the exported Mesh and LODs with a higher level of fidelity.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.data/assets/image (1).png"></figure>
 
 Drag and drop a connection on the MeshWarp node and select "Add new port" to add additional ports.&#x20;
 
@@ -29,7 +29,7 @@ Drag and drop a connection on the MeshWarp node and select "Add new port" to add
 
 If your Mesher node has LODS set, then MeshWarp will generate appropriately warped versions of your connected maps for each LOD.
 
-<figure><img src="../../../.gitbook/assets/image (59).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.data/assets/image (59).png"></figure>
 
 :::info
 MeshWarp will use the incoming node's Name as the prefix for the file. So if you have a node `PerlinMaskRocks` then the output will be `PerlinMaskRocks_LOD1` while the high-resolution version has no suffix.

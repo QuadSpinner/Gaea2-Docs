@@ -4,12 +4,12 @@ title: Erosion\_1
 
 # Erosion\_1
 
-<figure><img src="https://docs.quadspinner.com/images/ref/Erosion/Erosion--Default.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.quadspinner.com/images/ref/Erosion/Erosion--Default.webp"></figure>
 
 :::info
 This page refers to Erosion, aka Erosion\_1 or Classic Erosion. It was the mainstay of Gaea 1.0's erosion toolkit, and is also available in Gaea 2.0.
 
-[erosion\_2](erosion_2/ "mention")is the newer generation of Erosion and provides new options and dramatically higher performance. The general principles of Erosion\_1 still apply to Erosion\_2.
+[Erosion_2](erosion_2/)is the newer generation of Erosion and provides new options and dramatically higher performance. The general principles of Erosion\_1 still apply to Erosion_2.
 
 Both nodes can be used side-by-side for leveraging their unique abilities.
 :::
@@ -30,15 +30,15 @@ A great way to create sophisticated erosion is to use multiple Erosion nodes. A 
 
 In this example, we have `Selective Processing` set to `Altitude` with high `Duration` of `30%` for creating the initial pass. The strong grooves/flow structure it creates will guide the erosion in subsequent passes.
 
-<figure><img src="https://docs.quadspinner.com/images/ref/Erosion/Erosion-Pass1.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.quadspinner.com/images/ref/Erosion/Erosion-Pass1.webp"></figure>
 
 For the second pass, we have default settings except for `100%` `Downcutting` and `100%` `Base Level`. This creates strong flow structures everywhere.
 
-<figure><img src="https://docs.quadspinner.com/images/ref/Erosion/Erosion-Pass2.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.quadspinner.com/images/ref/Erosion/Erosion-Pass2.webp"></figure>
 
 The third pass is fully default. It takes the general larger variations created in the previous passes and homogenizes the overall "texture" yet keeps the larger features. Optionally, higher Inhibition can be used to create more sediments at the bottom.
 
-<figure><img src="https://docs.quadspinner.com/images/ref/Erosion/Erosion-Pass3.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.quadspinner.com/images/ref/Erosion/Erosion-Pass3.webp"></figure>
 
 **Data Output**
 

@@ -6,7 +6,7 @@ title: BlobRemover
 
 A low-level node that helps isolate and remove small blobs or disconnected shapes.
 
-<figure><img src="../../.gitbook/assets/Gaea_-_Untitled_10-43-03-PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.data/assets/Gaea_-_Untitled_10-43-03-PM.png"></figure>
 
 
 

@@ -13,7 +13,7 @@ Activating a Floating License on a workstation is the same as loading a user key
 :::info
 ## File Based Licenses
 
-You can install your floating license the same way as described in [#license-file](activation.md#license-file "mention"). The only difference is that your file will be saved as `floating.lic`
+You can install your floating license the same way as described in [#license-file](activation.md#license-file). The only difference is that your file will be saved as `floating.lic`
 :::
 
 

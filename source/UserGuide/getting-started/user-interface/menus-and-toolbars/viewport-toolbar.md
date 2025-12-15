@@ -6,7 +6,7 @@ title: Viewport Toolbar
 
 The Viewport Toolbar is a crucial component of the Gaea Viewport, equipped with a variety of tools and menus designed to enhance user interaction and efficiency. It provides easy access to navigation controls, display settings, lighting settings, facilitating a streamlined workflow in the Gaea Viewport environment.
 
-<figure><img src="../../../.gitbook/assets/Viewport Toolbar.png" alt="" width="62"><figcaption></figcaption></figure>
+<figure><img src="../../../.data/assets/Viewport Toolbar.png" width="62"></figure>
 
 
 
@@ -14,11 +14,11 @@ The Viewport Toolbar is a crucial component of the Gaea Viewport, equipped with 
 
 Lighting: Provides comprehensive set of options to modify the viewport lighting. User can modify settings for Sun, Light, Atmosphere.
 
-<figure><img src="../../../.gitbook/assets/Viewport Lighting.png" alt="" width="350"><figcaption><p>Lighting properties</p></figcaption></figure>
+<figure><img src="../../../.data/assets/Viewport Lighting.png" width="350"><figcaption><p>Lighting properties</p></figcaption></figure>
 
 Render Style: Viewport preview renderer can be set from this option. User can select from Realistic Render, Clay Render, Visualize Data allows to view the raw data with render off. See [render-modes.md](../viewport/render-modes.html)
 
-<figure><img src="../../../.gitbook/assets/Viewport Renderer (1).png" alt="" width="230"><figcaption><p>Render Style</p></figcaption></figure>
+<figure><img src="../../../.data/assets/Viewport Renderer (1).png" width="230"><figcaption><p>Render Style</p></figcaption></figure>
 
 Autolevel Masks:&#x20;
 
@@ -26,11 +26,11 @@ Toggle 2D Viewport: Shows/Hides 2D viewport.
 
 Viewport Tools: It provides tools to Pick Height/Color and provides various measurement tools. See [measurement-tools.md](../viewport/measurement-tools.html)
 
-<figure><img src="../../../.gitbook/assets/Viewport Tools.png" alt="" width="227"><figcaption><p>Viewport Tools</p></figcaption></figure>
+<figure><img src="../../../.data/assets/Viewport Tools.png" width="227"><figcaption><p>Viewport Tools</p></figcaption></figure>
 
 Viewport Toolbar submenu: This submenu provides extended functionalities and settings for viewport.
 
-<figure><img src="../../../.gitbook/assets/Viewport Submenu.png" alt="" width="226"><figcaption><p>More viewport options</p></figcaption></figure>
+<figure><img src="../../../.data/assets/Viewport Submenu.png" width="226"><figcaption><p>More viewport options</p></figcaption></figure>
 
 
 

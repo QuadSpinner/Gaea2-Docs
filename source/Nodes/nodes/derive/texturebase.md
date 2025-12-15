@@ -6,7 +6,7 @@ title: TextureBase
 
 Creates a mask simulating natural material distribution onto which color from [satmap.md](../colorize/satmap.html) or [cluter.md](../colorize/cluter.html) or other color node is “flowed.” Useful for driving texturing, shading, or erosion masks with a natural, layered look.
 
-{% include "../../.gitbook/includes/color-lookup.md" %}
+{% include "../../.data/includes/color-lookup.md" %}
 
 ## Properties
 
