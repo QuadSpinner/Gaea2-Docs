@@ -1,7 +1,6 @@
 ---
 title: Shaper
 uid: shaper
-uid: shaper
 ---
 
 

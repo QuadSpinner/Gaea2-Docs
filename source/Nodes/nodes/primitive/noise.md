@@ -1,7 +1,6 @@
 ---
 title: Noise
 uid: noise
-uid: noise
 ---
 
 

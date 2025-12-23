@@ -1,14 +1,13 @@
 ---
 title: Data View
 uid: data-view
-uid: data-view
 ---
 
 # Data View
 
 The Data View is a set of tabs in the right side of the Graph, providing fast access to key information in your project.
 
-<figure><img src="../../.data/assets/Gaea_-_Cartography_-_3D_Map.terrain_10-43-28-PM.png"></figure>
+<figure><img src="/.data/assets/Gaea_-_Cartography_-_3D_Map.terrain_10-43-28-PM.png"></figure>
 
 ## Terrain Tab
 

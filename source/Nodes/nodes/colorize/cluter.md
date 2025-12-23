@@ -1,7 +1,6 @@
 ---
 title: CLUTer
 uid: cluter
-uid: cluter
 ---
 
 
@@ -18,7 +17,7 @@ The CLUTer nodes let you take any grayscale input (such as Curvature, Slope, Sur
 ### Gradient Editor
 Click anywhere in the gradient to create a new stop. Drag the stop to position it. Select the stop and press `DEL` to delete the stop.
 
-![CLUTer](../../images/CLUT-sample.webp)
+![CLUTer](/images/CLUT-sample.webp)
 
 :::info
 You can use **Input Clarity** instead of interjecting an Autolevels node to the graph.
@@ -26,7 +25,7 @@ You can use **Input Clarity** instead of interjecting an Autolevels node to the 
 
 In this example, a Flow is mapped by CLUTer to create basic texture map.
 
-![CLUTer](../../images/CLUT-sample2.webp)
+![CLUTer](/images/CLUT-sample2.webp)
 
 
 

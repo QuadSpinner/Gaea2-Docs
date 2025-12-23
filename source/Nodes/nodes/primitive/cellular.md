@@ -1,7 +1,6 @@
 ---
 title: Cellular
 uid: cellular
-uid: cellular
 ---
 
 

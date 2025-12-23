@@ -1,7 +1,6 @@
 ---
 title: Extend
 uid: extend
-uid: extend
 ---
 
 

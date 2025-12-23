@@ -1,7 +1,6 @@
 ---
 title: Importing Terrains
 uid: importing-terrains
-uid: importing-terrains
 ---
 
 # Importing Terrains
@@ -14,20 +13,20 @@ Importing terrains into Unreal Engine can be a complicated process, especially w
 
 ### Exporting your Terrain <a href="#exporting-your-terrain" id="exporting-your-terrain"></a>
 
-See the [unreal-node.md](../../using-gaea/build-and-export/application-specific-export-nodes/unreal-node.html) section on how to prepare your terrain for export.
+See the [unreal-node.md](/using-gaea/build-and-export/application-specific-export-nodes/unreal-node.html) section on how to prepare your terrain for export.
 
 ### Importing into Unreal Engine 5 <a href="#importing-into-unreal-engine-5" id="importing-into-unreal-engine-5"></a>
 
 Once you have installed the Gaea2Unreal plugin in your UE installation, you will see the Gaea Landscape Importer in the main toolbar in Unreal Engine.
 
-<figure><img src="../../.data/assets/image (54).png" width="541"></figure>
+<figure><img src="/.data/assets/image (54).png" width="541"></figure>
 
 Clicking it will bring up the Gaea Landscape Importer window. Click `Import Heightmap` and select the PNG file that was exported from Gaea. The Importer will read the heightmap file along with the metadata saved by Gaea for UE-scale conversion, and populate the specifics in the window.
 
-<figure><img src="../../.data/assets/image (51).png"></figure>
+<figure><img src="/.data/assets/image (51).png"></figure>
 
 Click `Create Landscape` and you're done!
 
-<figure><img src="../../.data/assets/image.webp"></figure>
+<figure><img src="/.data/assets/image.webp"></figure>
 
 See the [importing-weight-maps.md](importing-weight-maps.html) section to see how to expand on this import process by importing additional assets as weight maps.

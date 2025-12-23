@@ -1,7 +1,6 @@
 ---
 title: Scale and Resolution
 uid: scale-and-resolution
-uid: scale-and-resolution
 ---
 
 # Scale and Resolution
@@ -11,7 +10,7 @@ uid: scale-and-resolution
 Understanding dimensions and scale in Gaea is essential for building terrains that look realistic and match your project needs. Here’s a simplified overview of key concepts:
 
 :::info
-For detailed technical information, see [dimensions-and-scale.md](../../advanced-topics/technical-information/dimensions-and-scale.html) in [Broken link](broken-reference).
+For detailed technical information, see [dimensions-and-scale.md](/advanced-topics/technical-information/dimensions-and-scale.html) in [Broken link](broken-reference).
 :::
 
 ### **World Space**
@@ -60,4 +59,4 @@ This guide provides the fundamentals to begin working with dimensions and scale 
 
 
 
-For detailed technical information see [dimensions-and-scale.md](../../advanced-topics/technical-information/dimensions-and-scale.html) in [Broken link](broken-reference).
+For detailed technical information see [dimensions-and-scale.md](/advanced-topics/technical-information/dimensions-and-scale.html) in [Broken link](broken-reference).

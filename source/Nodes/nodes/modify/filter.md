@@ -1,7 +1,6 @@
 ---
 title: Filter
 uid: filter
-uid: filter
 ---
 
 # Filter

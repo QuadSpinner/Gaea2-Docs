@@ -2,7 +2,6 @@
 icon: play
 title: Terrain Basics
 uid: terrain-basics
-uid: terrain-basics
 ---
 
 # Terrain Basics
@@ -19,14 +18,14 @@ This terrain graph is made of 3 building blocks, or Nodes. Each represents an ob
 
 The first node creates a Mountain. It has a random shape, generated through mathematics.
 
-<figure><img src="../../.data/assets/Gaea_-_Untitled_02-30-40-AM.png"><figcaption><p>Mountain Node</p></figcaption></figure>
+<figure><img src="/.data/assets/Gaea_-_Untitled_02-30-40-AM.png"><figcaption><p>Mountain Node</p></figcaption></figure>
 
 The second node is an Adjust node which, as the name suggests, adjusts the shape. In this case we use its Shaper property to bulk up the mountain and make it more expansive.
 
-<figure><img src="../../.data/assets/sbJD05BwRh.png"><figcaption><p>Adjust Node</p></figcaption></figure>
+<figure><img src="/.data/assets/sbJD05BwRh.png"><figcaption><p>Adjust Node</p></figcaption></figure>
 
 The third and final node is an [Erosion_2](../understanding-erosion/erosion_2/) node. Erosion is one of the key processes in nature that forms a terrain's shape and character through slow modifications over eons. Gaea does this for you in a flash. This third node takes the basic mountain shape and applies a lot of erosion to make it more realistic - creating strong gullies on some sides and softer, mineral-deposited slopes on others.
 
-<figure><img src="../../.data/assets/sQdSAyb7YN.png"><figcaption><p>Erosion2 Node</p></figcaption></figure>
+<figure><img src="/.data/assets/sQdSAyb7YN.png"><figcaption><p>Erosion2 Node</p></figcaption></figure>
 
 This is how most terrains work: You start with one shape or several, adjust them, and then process them with simulations like Erosion.

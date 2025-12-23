@@ -1,7 +1,6 @@
 ---
 title: Autolevel
 uid: autolevel
-uid: autolevel
 ---
 
 # Autolevel

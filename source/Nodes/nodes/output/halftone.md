@@ -1,7 +1,6 @@
 ---
 title: Halftone
 uid: halftone
-uid: halftone
 ---
 
 

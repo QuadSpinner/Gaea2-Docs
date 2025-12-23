@@ -1,7 +1,6 @@
 ---
 title: Creating Mutations
 uid: creating-mutations
-uid: creating-mutations
 ---
 
 # Creating Mutations
@@ -13,7 +12,7 @@ In its most basic form, mutations update the seeds used by all nodes in the terr
 This provides a clean and predictable way to generate multiple mutations.
 
 :::info
-To prevent specific nodes from being affected, you can try [baking-nodes](../../using-gaea/baking-nodes/).
+To prevent specific nodes from being affected, you can try [baking-nodes](/using-gaea/baking-nodes/).
 :::
 
 
@@ -22,12 +21,12 @@ To prevent specific nodes from being affected, you can try [baking-nodes](../../
 
 The fastest way to set up mutations, is to go to Build menu > Batch Build Manager and use the `Add Mutation` button to queue up as many mutations as you want.
 
-<figure><img src="../../.data/assets/Batch_Build_Manager_08-19-54-PM.png"></figure>
+<figure><img src="/.data/assets/Batch_Build_Manager_08-19-54-PM.png"></figure>
 
 If you find yourself repeating these builds, save the batch build as a Windows Batch (.bat) file.
 
 :::info
-Use the `[Mutation]` token in the [#build](../../using-gaea/build-and-export/build-options/#build) Destination to add the current mutation as part of a folder name or subfolder.
+Use the `[Mutation]` token in the [#build](/using-gaea/build-and-export/build-options/#build) Destination to add the current mutation as part of a folder name or subfolder.
 
 For example:
 

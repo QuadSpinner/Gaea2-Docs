@@ -1,7 +1,6 @@
 ---
 title: Trees
 uid: trees
-uid: trees
 ---
 
 

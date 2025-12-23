@@ -1,7 +1,6 @@
 ---
 title: Repeat
 uid: repeat
-uid: repeat
 ---
 
 

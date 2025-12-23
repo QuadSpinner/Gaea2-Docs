@@ -1,7 +1,6 @@
 ---
 title: Shatter
 uid: shatter
-uid: shatter
 ---
 
 

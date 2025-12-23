@@ -1,7 +1,6 @@
 ---
 title: Shear
 uid: shear
-uid: shear
 ---
 
 

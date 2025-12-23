@@ -1,7 +1,6 @@
 ---
 title: Swirl
 uid: swirl
-uid: swirl
 ---
 
 # Swirl

@@ -2,7 +2,6 @@
 icon: code-branch
 title: Version Numbers
 uid: version-numbers
-uid: version-numbers
 ---
 
 # Version Numbers

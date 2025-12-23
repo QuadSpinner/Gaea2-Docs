@@ -1,7 +1,6 @@
 ---
 title: Clip
 uid: clip
-uid: clip
 ---
 
 # Clip

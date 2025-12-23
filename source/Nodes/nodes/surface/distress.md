@@ -1,7 +1,6 @@
 ---
 title: Distress
 uid: distress
-uid: distress
 ---
 
 

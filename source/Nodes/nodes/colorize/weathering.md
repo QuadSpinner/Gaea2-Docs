@@ -1,7 +1,6 @@
 ---
 title: Weathering
 uid: weathering
-uid: weathering
 ---
 
 

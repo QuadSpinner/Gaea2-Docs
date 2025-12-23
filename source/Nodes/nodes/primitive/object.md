@@ -1,7 +1,6 @@
 ---
 title: Object
 uid: object
-uid: object
 ---
 
 

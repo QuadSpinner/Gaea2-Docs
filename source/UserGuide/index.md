@@ -2,7 +2,6 @@
 icon: power-off
 title: Home
 uid: home
-uid: home
 ---
 
 ## Gaea 2 Documentation

@@ -1,7 +1,6 @@
 ---
 title: Thermal_2
 uid: thermal-2
-uid: thermal-2
 ---
 
 # Thermal_2

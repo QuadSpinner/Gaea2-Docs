@@ -1,7 +1,6 @@
 ---
 title: Shade
 uid: shade
-uid: shade
 ---
 
 

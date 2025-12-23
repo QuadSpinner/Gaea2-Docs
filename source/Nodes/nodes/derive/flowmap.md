@@ -1,7 +1,6 @@
 ---
 title: FlowMap
 uid: flowmap
-uid: flowmap
 ---
 
 

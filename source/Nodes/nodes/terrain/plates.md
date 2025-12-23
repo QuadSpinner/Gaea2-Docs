@@ -1,7 +1,6 @@
 ---
 title: Plates
 uid: plates
-uid: plates
 ---
 
 

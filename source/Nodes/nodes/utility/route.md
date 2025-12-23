@@ -1,7 +1,6 @@
 ---
 title: Route
 uid: route
-uid: route
 ---
 
 

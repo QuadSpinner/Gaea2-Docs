@@ -1,7 +1,6 @@
 ---
 title: Migration Guide
 uid: migration-guide
-uid: migration-guide
 ---
 
 # Migration Guide

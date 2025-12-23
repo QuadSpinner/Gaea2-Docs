@@ -2,7 +2,6 @@
 icon: light-emergency-on
 title: Autosave and Recovery
 uid: autosave-and-recovery
-uid: autosave-and-recovery
 ---
 
 # Autosave and Recovery
@@ -11,7 +10,7 @@ uid: autosave-and-recovery
 
 The Autosave feature in Gaea is a crucial tool designed to automatically save your project at regular intervals. This ensures that your work is periodically backed up, minimizing data loss in the event of unexpected software shutdowns or system failures.
 
-<figure><img src="../.data/assets/image (38).png"></figure>
+<figure><img src="/.data/assets/image (38).png"></figure>
 
 **Remind Me to Save Every.** This option allows you to set the frequency of the Autosave reminders. You can choose from the following intervals **5 minutes, 10 minutes, 15 minutes, 30 minutes.**
 

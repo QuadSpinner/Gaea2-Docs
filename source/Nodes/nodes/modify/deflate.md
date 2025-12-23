@@ -1,7 +1,6 @@
 ---
 title: Deflate
 uid: deflate
-uid: deflate
 ---
 
 # Deflate

@@ -1,7 +1,6 @@
 ---
 title: LoopEnd
 uid: loopend
-uid: loopend
 ---
 
 

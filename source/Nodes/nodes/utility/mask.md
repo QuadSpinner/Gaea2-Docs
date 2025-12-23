@@ -1,7 +1,6 @@
 ---
 title: Mask
 uid: mask
-uid: mask
 ---
 
 

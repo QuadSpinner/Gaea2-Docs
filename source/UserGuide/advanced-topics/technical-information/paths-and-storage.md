@@ -1,7 +1,6 @@
 ---
 title: Paths and Storage
 uid: paths-and-storage
-uid: paths-and-storage
 ---
 
 # Paths and Storage
@@ -30,7 +29,7 @@ For example, if your install location is: `D:\Programs\CG\Gaea\` then the Data f
 
 ## Your Gaea Files
 
-These paths can be changed in the [options.md](../../getting-started/options.html) dialog.
+These paths can be changed in the [options.md](/getting-started/options.html) dialog.
 
 ### Documents
 
@@ -46,7 +45,7 @@ Default location: `C:\Users\<you>\Documents\Gaea\Projects\`
 
 ### Builds
 
-This is where output files from builds are stored. It is denoted by the token `<Builds>` in [#build](../../using-gaea/build-and-export/build-options/#build) Build Destination.
+This is where output files from builds are stored. It is denoted by the token `<Builds>` in [#build](/using-gaea/build-and-export/build-options/#build) Build Destination.
 
 Default location: `C:\Users\<you>\Documents\Gaea\Builds\`
 

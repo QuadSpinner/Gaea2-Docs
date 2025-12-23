@@ -1,9 +1,8 @@
 ---
 title: Export View
 uid: export-view
-uid: export-view
 ---
 
 # Export View
 
-{% include "../../../.data/includes/under-construction.md" %}
+{% include "//.data/includes/under-construction.md" %}

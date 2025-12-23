@@ -2,7 +2,6 @@
 icon: '2'
 title: Large Mountains, Effects
 uid: large-mountains-effects
-uid: large-mountains-effects
 ---
 
 # Large Mountains, Effects

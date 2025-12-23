@@ -1,7 +1,6 @@
 ---
 title: Clamp
 uid: clamp
-uid: clamp
 ---
 
 

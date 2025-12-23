@@ -1,7 +1,6 @@
 ---
 title: untitled
 uid: untitled
-uid: untitled
 ---
 
 # Archived (v2.1 or older)

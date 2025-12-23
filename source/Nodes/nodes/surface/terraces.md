@@ -1,7 +1,6 @@
 ---
 title: Terraces
 uid: terraces
-uid: terraces
 ---
 
 

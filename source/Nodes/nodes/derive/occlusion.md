@@ -1,7 +1,6 @@
 ---
 title: Occlusion
 uid: occlusion
-uid: occlusion
 ---
 
 

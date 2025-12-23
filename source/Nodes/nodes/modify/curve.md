@@ -1,7 +1,6 @@
 ---
 title: Curve
 uid: curve
-uid: curve
 ---
 
 

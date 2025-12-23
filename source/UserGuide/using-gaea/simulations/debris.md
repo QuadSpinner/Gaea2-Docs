@@ -1,26 +1,25 @@
 ---
 title: Debris
 uid: debris
-uid: debris
 ---
 
 # Debris
 
 Simulate mechanical erosion with thousands (even millions) of individual, physical rocks and other geological debris using our physics-engine powered Debris simulation.
 
-<figure><img src="../../.data/assets/Gaea_-_TalusNode003.terrain_11-54-53-PM.png"></figure>
+<figure><img src="/.data/assets/Gaea_-_TalusNode003.terrain_11-54-53-PM.png"></figure>
 
-<figure><img src="../../.data/assets/Gaea_-_TalusNode003.terrain_11-57-19-PM.png"></figure>
+<figure><img src="/.data/assets/Gaea_-_TalusNode003.terrain_11-57-19-PM.png"></figure>
 
 You can keep them in the heightmap, or export a point-cloud for later use. You can even color each rock individually.
 
-<figure><img src="../../.data/assets/debrismask.webp"></figure>
+<figure><img src="/.data/assets/debrismask.webp"></figure>
 
 ### Emission Source
 
 The Debris simulation lets you control the emission source so you can place the debris as needed. In this image, the flow map of the terrain is provided as the Emitter Source, so the debris form only within those lanes and the take advantage of the inherent physics of the flows to create scree rivers.
 
-<figure><img src="../../.data/assets/Gaea_-_cx1.terrain_06-47-11-AM - Copy.jpg"></figure>
+<figure><img src="/.data/assets/Gaea_-_cx1.terrain_06-47-11-AM - Copy.jpg"></figure>
 
 ## Friction and Restitution
 
@@ -39,11 +38,11 @@ For natural rock surfaces, the friction coefficient averages around **0.62**. Th
 
 You vary debris sizes and even layer multiple Debris simulations to mix and match settings and shapes. The Debris node provides Sharp and Round rock shapes.
 
-<figure><img src="../../.data/assets/Gaea_-_TalusNode002.terrain_09-02-33-PM - Copy (1).jpg"></figure>
+<figure><img src="/.data/assets/Gaea_-_TalusNode002.terrain_09-02-33-PM - Copy (1).jpg"></figure>
 
 See the Debris examples that ship with Gaea to see how layering multiple simulations work.
 
-<figure><img src="../../.data/assets/image (55).png"></figure>
+<figure><img src="/.data/assets/image (55).png"></figure>
 
 :::info
 When using multiple Debris nodes, you can use [accumulators.md](../managing-graphs/accumulators.html) to combine all the output masks for colorization and other purposes.

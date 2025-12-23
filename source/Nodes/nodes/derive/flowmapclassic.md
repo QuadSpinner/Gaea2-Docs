@@ -1,7 +1,6 @@
 ---
 title: FlowMapClassic
 uid: flowmapclassic
-uid: flowmapclassic
 ---
 
 

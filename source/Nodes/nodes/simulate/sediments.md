@@ -1,7 +1,6 @@
 ---
 title: Sediments
 uid: sediments
-uid: sediments
 ---
 
 

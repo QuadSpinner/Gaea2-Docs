@@ -2,18 +2,17 @@
 icon: sparkles
 title: Profiles and Batch Builds
 uid: profiles-and-batch-builds
-uid: profiles-and-batch-builds
 ---
 
 # Profiles and Batch Builds
 
 
 
-{% include "../../.data/includes/this-feature-is-to-be-intro....md" %}
+{% include "/.data/includes/this-feature-is-to-be-intro....md" %}
 
 Build Profiles let you save all Build Settings in a named preset. If you find yourself creating multiple versions of your terrain, or creating different output types, you can switch between the different build settings swiftly with Profiles.
 
-<figure><img src="../../.data/assets/Build_Settings_and_Regions_08-00-36-PM.png"><figcaption><p>The Profiles tab lets you preview and manage profiles.</p></figcaption></figure>
+<figure><img src="/.data/assets/Build_Settings_and_Regions_08-00-36-PM.png"><figcaption><p>The Profiles tab lets you preview and manage profiles.</p></figcaption></figure>
 
 ## Using Profiles
 
@@ -37,13 +36,13 @@ Use ASCII-friendly names for the profile as you may wish to use them in command 
 
 You can execute multiple builds using saved profiles using the Batch Builds dialog. Go to Build menu > Batch Builds to open the dialog.
 
-<figure><img src="../../.data/assets/Batch_Build_Manager_07-33-43-PM.png"></figure>
+<figure><img src="/.data/assets/Batch_Build_Manager_07-33-43-PM.png"></figure>
 
 Queue the different profiles you want to build and execute the batch. You can also save the batch as a `.bat` file for later execution or modification.
 
-The `-profile <name>` or `-p <name>` argument can be used to specify a profile during a [build-swarm](../../advanced-topics/build-swarm/) execution. It is recommended that the \<name> be wrapped in `""` quotation marks to prevent incorrect parsing.
+The `-profile <name>` or `-p <name>` argument can be used to specify a profile during a [build-swarm](/advanced-topics/build-swarm/) execution. It is recommended that the \<name> be wrapped in `""` quotation marks to prevent incorrect parsing.
 
 
 
-See also [creating-mutations.md](../../advanced-topics/build-swarm/creating-mutations.html)
+See also [creating-mutations.md](/advanced-topics/build-swarm/creating-mutations.html)
 

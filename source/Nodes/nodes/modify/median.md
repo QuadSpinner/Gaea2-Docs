@@ -1,7 +1,6 @@
 ---
 title: Median
 uid: median
-uid: median
 ---
 
 

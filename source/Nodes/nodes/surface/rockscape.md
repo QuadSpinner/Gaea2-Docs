@@ -1,7 +1,6 @@
 ---
 title: Rockscape
 uid: rockscape
-uid: rockscape
 ---
 
 

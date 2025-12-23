@@ -1,7 +1,6 @@
 ---
 title: Gabor
 uid: gabor
-uid: gabor
 ---
 
 

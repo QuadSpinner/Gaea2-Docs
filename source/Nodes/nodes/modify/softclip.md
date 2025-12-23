@@ -1,7 +1,6 @@
 ---
 title: SoftClip
 uid: softclip
-uid: softclip
 ---
 
 

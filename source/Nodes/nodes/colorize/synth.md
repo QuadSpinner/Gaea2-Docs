@@ -1,7 +1,6 @@
 ---
 title: Synth
 uid: synth
-uid: synth
 ---
 
 

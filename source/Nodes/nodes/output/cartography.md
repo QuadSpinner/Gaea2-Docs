@@ -1,7 +1,6 @@
 ---
 title: Cartography
 uid: cartography
-uid: cartography
 ---
 
 

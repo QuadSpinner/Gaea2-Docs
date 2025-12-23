@@ -1,7 +1,6 @@
 ---
 title: Volcano
 uid: volcano
-uid: volcano
 ---
 
 

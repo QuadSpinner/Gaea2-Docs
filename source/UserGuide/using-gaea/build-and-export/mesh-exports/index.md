@@ -2,7 +2,6 @@
 icon: sparkles
 title: Mesh Exports
 uid: mesh-exports
-uid: mesh-exports
 ---
 
 # Mesh Exports
@@ -13,7 +12,7 @@ Gaea uses the Mesher node to translate a heightfield/terrain into a structured m
 
 You can choose between Triangles (Tris), Quads, and Adaptive Tris using our proprietary _Sophia_ algorithm.
 
-<figure><img src="../../../.data/assets/image (2).png"></figure>
+<figure><img src="//.data/assets/image (2).png"></figure>
 
 ## Displaced Grid Export
 
@@ -23,23 +22,23 @@ The resulting mesh is the same as if you were to create a plane of a fixed numbe
 
 The only downside of this method is that it uses the same number of polygons for any part of the terrain regardless of the complexity required. For example, a flat, featureless area would use the same number of polygons as a highly detailed peak.
 
-<figure><img src="../../../.data/assets/sophia-1.webp"><figcaption><p>Grid vs Adaptive Tris</p></figcaption></figure>
+<figure><img src="//.data/assets/sophia-1.webp"><figcaption><p>Grid vs Adaptive Tris</p></figcaption></figure>
 
 ## Adaptive Tris (Sophia)
 
 This method creates optimized terrains using our "Sophia" algorithm. It creates clean triangles and subdivides them as needed based on the complexity of the underlying portion of the terrain. The main advantage of this method is that it can produce higher quality meshes while reducing the amount of polygons used. In most cases, Optimized meshes produce higher quality results than their Grid counterparts, and use fewer polygons.
 
-<figure><img src="../../../.data/assets/sophia.webp"></figure>
+<figure><img src="//.data/assets/sophia.webp"></figure>
 
 Depending on the shape of your terrain, you can reduce polygon count by 20-40%. In extreme cases with large flat areas, it can decrease by up to 80%!
 
 Optimized meshes, however, cannot provide quad output and are limited to triangles because of the intrinsic nature of the algorithm.
 
-<figure><img src="../../../.data/assets/sophia-3.jpg"></figure>
+<figure><img src="//.data/assets/sophia-3.jpg"></figure>
 
 You can see that the mesh retains high-fidelity when imported into DCC application such as Blender with proper lighting.
 
-<figure><img src="../../../.data/assets/blender.png"></figure>
+<figure><img src="//.data/assets/blender.png"></figure>
 
 ### Comparison with Standard Tris Export
 
@@ -64,7 +63,7 @@ Meshes can be exported in 2 scales: Normalized and Metric.
 * Normalized scale enforces a strict `0..1` range for values along all 3 axes.
 * Metric scale enforces `1 unit = 1 meter`, so a typical Gaea terrain of `5000` meters would be `0..5000` units.
 
-The main advantage of Normalized meshes is that many modern OBJ importers let you apply a scale multiplier, which you can use to scale the terrain very easily. You just need to use the width of the terrain in meters (see [scale-and-resolution.md](../../terrain-basics/scale-and-resolution.html)). For example, the default terrain is 5000 meters wide. You can use `5000` as a multiplier when importing, and your terrain should scale to 5000 meters.
+The main advantage of Normalized meshes is that many modern OBJ importers let you apply a scale multiplier, which you can use to scale the terrain very easily. You just need to use the width of the terrain in meters (see [scale-and-resolution.md](/terrain-basics/scale-and-resolution.html)). For example, the default terrain is 5000 meters wide. You can use `5000` as a multiplier when importing, and your terrain should scale to 5000 meters.
 
 ### **Texture Mapping**
 

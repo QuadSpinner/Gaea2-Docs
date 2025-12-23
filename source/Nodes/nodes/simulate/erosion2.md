@@ -1,7 +1,6 @@
 ---
 title: Erosion2
 uid: erosion2
-uid: erosion2
 ---
 
 # Erosion2
@@ -14,7 +13,7 @@ Despite its complexity, Erosion_2 remains user-friendly and delivers determinist
 
 It simulates advanced hydraulic erosion with realistic sediment transport and terrain reshaping. It offers fine control over downcutting, sediment deposition, and orographic (rainfall-driven) effects for highly detailed or stylized terrains.
 
-<figure><img src="../../.data/assets/erosion.webp"></figure>
+<figure><img src="/.data/assets/erosion.webp"></figure>
 
 
 

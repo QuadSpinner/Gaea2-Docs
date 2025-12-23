@@ -1,7 +1,6 @@
 ---
 title: SuperColor
 uid: supercolor
-uid: supercolor
 ---
 
 

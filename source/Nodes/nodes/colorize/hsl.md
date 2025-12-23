@@ -1,7 +1,6 @@
 ---
 title: HSL
 uid: hsl
-uid: hsl
 ---
 
 

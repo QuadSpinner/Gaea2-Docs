@@ -1,12 +1,11 @@
 ---
 title: Erosion
 uid: erosion
-uid: erosion
 ---
 
 # Erosion
 
-<figure><img src="../../.data/assets/snow.webp"></figure>
+<figure><img src="/.data/assets/snow.webp"></figure>
 
 Erosion is the key simulation that helps you transform your terrain from a fractal noise or basic geometric shape (or even a complex shape) into a believable, realistic terrain.
 

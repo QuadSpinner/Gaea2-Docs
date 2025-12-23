@@ -1,7 +1,6 @@
 ---
 title: Island
 uid: island
-uid: island
 ---
 
 

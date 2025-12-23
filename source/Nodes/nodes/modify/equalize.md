@@ -1,7 +1,6 @@
 ---
 title: Equalize
 uid: equalize
-uid: equalize
 ---
 
 # Equalize

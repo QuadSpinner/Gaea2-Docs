@@ -1,7 +1,6 @@
 ---
 title: Lichtenberg
 uid: lichtenberg
-uid: lichtenberg
 ---
 
 # Lichtenberg

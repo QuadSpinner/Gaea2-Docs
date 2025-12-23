@@ -1,7 +1,6 @@
 ---
 title: MountainRange
 uid: mountainrange
-uid: mountainrange
 ---
 
 

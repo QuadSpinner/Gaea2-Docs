@@ -1,7 +1,6 @@
 ---
 title: Gaea HDAs
 uid: gaea-hdas
-uid: gaea-hdas
 ---
 
 # Gaea SOP Nodes

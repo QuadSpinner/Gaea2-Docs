@@ -1,7 +1,6 @@
 ---
 title: LineNoise
 uid: linenoise
-uid: linenoise
 ---
 
 

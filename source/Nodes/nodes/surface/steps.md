@@ -1,7 +1,6 @@
 ---
 title: Steps
 uid: steps
-uid: steps
 ---
 
 

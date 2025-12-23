@@ -1,7 +1,6 @@
 ---
 title: Height
 uid: height
-uid: height
 ---
 
 # Height

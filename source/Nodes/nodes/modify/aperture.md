@@ -1,7 +1,6 @@
 ---
 title: Aperture
 uid: aperture
-uid: aperture
 ---
 
 

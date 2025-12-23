@@ -1,7 +1,6 @@
 ---
 title: SatMap
 uid: satmap
-uid: satmap
 ---
 
 

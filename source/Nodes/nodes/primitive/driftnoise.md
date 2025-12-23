@@ -1,7 +1,6 @@
 ---
 title: DriftNoise
 uid: driftnoise
-uid: driftnoise
 ---
 
 

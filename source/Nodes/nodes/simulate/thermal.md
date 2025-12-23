@@ -1,7 +1,6 @@
 ---
 title: Thermal
 uid: thermal
-uid: thermal
 ---
 
 

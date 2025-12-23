@@ -1,7 +1,6 @@
 ---
 title: Glacier
 uid: glacier
-uid: glacier
 ---
 
 

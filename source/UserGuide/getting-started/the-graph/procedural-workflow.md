@@ -1,7 +1,6 @@
 ---
 title: Procedural Workflow
 uid: procedural-workflow
-uid: procedural-workflow
 ---
 
 # Procedural Workflow
@@ -11,7 +10,7 @@ uid: procedural-workflow
 In Gaea, terrain creation and manipulation are handled through a node-based system. This system may be new if you're accustomed to different types of software interfaces. Understanding how nodes work and interact in Gaea will enable you to efficiently create complex and realistic terrains.
 
 :::info
-You can skip straight to creating your first terrain in [introduction.md](../../using-gaea/terrain-basics/introduction.html)
+You can skip straight to creating your first terrain in [introduction.md](/using-gaea/terrain-basics/introduction.html)
 :::
 
 

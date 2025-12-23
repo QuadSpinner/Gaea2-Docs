@@ -1,7 +1,6 @@
 ---
 title: Combine
 uid: combine
-uid: combine
 ---
 
 # Combine
@@ -22,11 +21,11 @@ Inversely, if the first input is a heightmap or mask and the second is a color m
 
 **Example**
 
-This is an example of equally blending (Mode: Blend, Ratio: 50%) Perlin and Mountain nodes. ![](../../images/ref/Combine/combine--blend.webp)
+This is an example of equally blending (Mode: Blend, Ratio: 50%) Perlin and Mountain nodes. ![](/images/ref/Combine/combine--blend.webp)
 
-If you switch the mode to Max and Ratio to 100%: ![](../../images/ref/Combine/combine--max.webp)
+If you switch the mode to Max and Ratio to 100%: ![](/images/ref/Combine/combine--max.webp)
 
-If you plug in a shape of any kind to the Mask input of the Combine node, the brighter parts of the mask will be replaced with the first input, while darker areas will be replaced with the second input. If your mask is soft (ie - lots of grays instead of just black and white) then the blending between the two will be soft. This is usually the preferred method. ![](../../images/ref/Combine/combine--hardmask.webp)
+If you plug in a shape of any kind to the Mask input of the Combine node, the brighter parts of the mask will be replaced with the first input, while darker areas will be replaced with the second input. If your mask is soft (ie - lots of grays instead of just black and white) then the blending between the two will be soft. This is usually the preferred method. ![](/images/ref/Combine/combine--hardmask.webp)
 
 ### Additional Scenarios
 
@@ -61,5 +60,5 @@ Alternatively, you can add an Fx node to the Combine output or other nodes like 
 * **Swap Inputs**  
   Switches the two inputs.
 
-{% include "../../.data/includes/add-ports.md" %}
+{% include "/.data/includes/add-ports.md" %}
 

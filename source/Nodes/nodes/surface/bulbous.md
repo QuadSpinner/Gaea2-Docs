@@ -1,7 +1,6 @@
 ---
 title: Bulbous
 uid: bulbous
-uid: bulbous
 ---
 
 

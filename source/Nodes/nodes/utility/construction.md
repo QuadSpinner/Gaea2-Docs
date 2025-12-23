@@ -2,7 +2,6 @@
 hidden: true
 title: Construction
 uid: construction
-uid: construction
 ---
 
 # Construction

@@ -1,7 +1,6 @@
 ---
 title: RockNoise
 uid: rocknoise
-uid: rocknoise
 ---
 
 

@@ -1,7 +1,6 @@
 ---
 title: CutNoise
 uid: cutnoise
-uid: cutnoise
 ---
 
 

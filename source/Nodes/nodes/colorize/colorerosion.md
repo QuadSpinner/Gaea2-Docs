@@ -1,7 +1,6 @@
 ---
 title: ColorErosion
 uid: colorerosion
-uid: colorerosion
 ---
 
 

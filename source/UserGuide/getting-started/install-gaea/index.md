@@ -2,12 +2,11 @@
 icon: box
 title: Install Gaea
 uid: install-gaea
-uid: install-gaea
 ---
 
 # Install Gaea
 
-<figure><img src="../../.data/assets/gaea-ui2x.webp"><figcaption><p>The Gaea 2.0 User Interface</p></figcaption></figure>
+<figure><img src="/.data/assets/gaea-ui2x.webp"><figcaption><p>The Gaea 2.0 User Interface</p></figcaption></figure>
 
 ## Download Gaea
 
@@ -38,7 +37,7 @@ For GPU compute: NVIDIA cards need CUDA 12.5; AMD cards need HIP 6.0.
 :::
 
 :::info
-RAM may depend on project requirements. See [calculating-memory-requirements.md](../../advanced-topics/technical-information/calculating-memory-requirements.html).
+RAM may depend on project requirements. See [calculating-memory-requirements.md](/advanced-topics/technical-information/calculating-memory-requirements.html).
 :::
 
 ***
@@ -49,13 +48,13 @@ Gaea is available in various forms to provide flexible methods of deployment, wh
 
 ### Setup Executable
 
-<div align="left"><figure><img src="../../.data/assets/image (43).png" width="82"><figcaption><p>EXE</p></figcaption></figure></div>
+<div align="left"><figure><img src="/.data/assets/image (43).png" width="82"><figcaption><p>EXE</p></figcaption></figure></div>
 
-The setup exe is our primary - and recommended - way of installing Gaea. It provides for both [regular-installation.md](regular-installation.html)and [portable-installation.md](portable-installation.html)while also setting up additional registry entries required for the [gaea2unreal](../../plugins/gaea2unreal/) and [gaea2houdini](../../plugins/gaea2houdini/) bridges.
+The setup exe is our primary - and recommended - way of installing Gaea. It provides for both [regular-installation.md](regular-installation.html)and [portable-installation.md](portable-installation.html)while also setting up additional registry entries required for the [gaea2unreal](/plugins/gaea2unreal/) and [gaea2houdini](/plugins/gaea2houdini/) bridges.
 
 ### 7-Zip Package
 
-<div align="left"><figure><img src="../../.data/assets/image (44).png" width="81"><figcaption><p>7zip file</p></figcaption></figure></div>
+<div align="left"><figure><img src="/.data/assets/image (44).png" width="81"><figcaption><p>7zip file</p></figcaption></figure></div>
 
 The 7-zip package contains the exact same files as the setup executable; however, it is purely portable and does not create registry entries. It is very useful for advanced users or for System Administrators to create custom deployments. See [mass-deployment.md](mass-deployment.html) on how to enable Gaea2Unreal and Gaea2Houdini functionality in pure portable installs such as this.
 
@@ -81,7 +80,7 @@ Click "**Run Anyway**" to proceed with the installation.
 
 You can also check the SHA-256 hash of the file against the hash shown on the [download page](https://quadspinner.com/download/) for additional verification.
 
-![](../../.data/assets/JgfGg2VQGB.png) <img src="../../.data/assets/rqGW1Jb2K2.png" data-size="original">
+![](/.data/assets/JgfGg2VQGB.png) <img src="/.data/assets/rqGW1Jb2K2.png" data-size="original">
 
 Our new installer makes it very easy to install Gaea, whether you are at home with full Administrator privileges or in a restricted environment at work.
 
@@ -103,7 +102,7 @@ We provide a VirusTotal report for our installer on the download page.
 
 All Gaea binaries¹ are signed with a code-signing certificate provided after rigorous verification of our organization by a Certificate Authority. These signed files prevent tampering. You can open the file properties to see the certificate signature and ensure that each file has not been tampered with.
 
-<div align="left"><figure><img src="../../.data/assets/Certificate_03-08-17-AM.png" width="302"></figure></div>
+<div align="left"><figure><img src="/.data/assets/Certificate_03-08-17-AM.png" width="302"></figure></div>
 
 ¹ Exe and DLL files legally within QuadSpinner's ownership.
 

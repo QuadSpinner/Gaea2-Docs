@@ -1,7 +1,6 @@
 ---
 title: ThermalShaper
 uid: thermalshaper
-uid: thermalshaper
 ---
 
 

@@ -1,7 +1,6 @@
 ---
 title: Pattern
 uid: pattern
-uid: pattern
 ---
 
 

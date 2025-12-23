@@ -1,7 +1,6 @@
 ---
 title: Crater
 uid: crater
-uid: crater
 ---
 
 

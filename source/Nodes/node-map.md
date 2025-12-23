@@ -2,7 +2,6 @@
 icon: location-dot
 title: Node Map
 uid: node-map
-uid: node-map
 ---
 
 # Node Map

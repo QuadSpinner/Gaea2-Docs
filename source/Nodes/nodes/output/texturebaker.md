@@ -1,7 +1,6 @@
 ---
 title: TextureBaker
 uid: texturebaker
-uid: texturebaker
 ---
 
 

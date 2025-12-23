@@ -1,7 +1,6 @@
 ---
 title: GraphicEQ
 uid: graphiceq
-uid: graphiceq
 ---
 
 # GraphicEQ

@@ -1,7 +1,6 @@
 ---
 title: Math
 uid: math
-uid: math
 ---
 
 # MathX

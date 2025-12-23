@@ -1,7 +1,6 @@
 ---
 title: VariableBlur
 uid: variableblur
-uid: variableblur
 ---
 
 

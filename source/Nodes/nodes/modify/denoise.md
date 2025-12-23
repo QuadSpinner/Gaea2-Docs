@@ -1,7 +1,6 @@
 ---
 title: Denoise
 uid: denoise
-uid: denoise
 ---
 
 # Denoise

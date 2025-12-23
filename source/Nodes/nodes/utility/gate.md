@@ -1,7 +1,6 @@
 ---
 title: Gate
 uid: gate
-uid: gate
 ---
 
 

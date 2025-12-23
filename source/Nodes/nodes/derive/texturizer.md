@@ -1,7 +1,6 @@
 ---
 title: Texturizer
 uid: texturizer
-uid: texturizer
 ---
 
 # Texturizer

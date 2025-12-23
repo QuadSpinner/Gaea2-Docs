@@ -1,7 +1,6 @@
 ---
 title: Peaks
 uid: peaks
-uid: peaks
 ---
 
 

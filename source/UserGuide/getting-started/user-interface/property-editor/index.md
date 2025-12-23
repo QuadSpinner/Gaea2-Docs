@@ -1,7 +1,6 @@
 ---
 title: Property Editor
 uid: property-editor
-uid: property-editor
 ---
 
 # Property Editor
@@ -19,7 +18,7 @@ When you change a property, the effect is immediately applied and made visible i
 * **Color**: They allow you to choose a color for the color production nodes.
 * **File**: They allow you to choose a file from your computer.
 
-Sliders with unmodified (default) values are shown with slightly muted colors. This can be controlled through [options.md](../../options.html).
+Sliders with unmodified (default) values are shown with slightly muted colors. This can be controlled through [options.md](/options.html).
 
 Some nodes may have unique controls specific to them.
 
@@ -41,7 +40,7 @@ For properties that allow numeric entry (Integer or Decimals), you can right-cli
 
 For values shown as percentages, you can enter a value in meters and Gaea will convert it to the appropriate percentage or decimal value proportionate to the metric value in relation to the Terrain Definition set in the Build tab.
 
-For example, if you enter `500m` and your Terrain width in [build-options](../../../using-gaea/build-and-export/build-options/) > [#terrain](../../../using-gaea/build-and-export/build-options/#terrain) is set to `5000m` the value will be converted to `(500m / 5000m)` - in other words, it will be `0.1` or `10%` as appropriate.
+For example, if you enter `500m` and your Terrain width in [build-options](/../using-gaea/build-and-export/build-options/) > [#terrain](/../using-gaea/build-and-export/build-options/#terrain) is set to `5000m` the value will be converted to `(500m / 5000m)` - in other words, it will be `0.1` or `10%` as appropriate.
 
 ### Nudge Popup
 

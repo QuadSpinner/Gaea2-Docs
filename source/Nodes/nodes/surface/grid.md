@@ -1,7 +1,6 @@
 ---
 title: Grid
 uid: grid
-uid: grid
 ---
 
 

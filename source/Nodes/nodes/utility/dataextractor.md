@@ -1,7 +1,6 @@
 ---
 title: DataExtractor
 uid: dataextractor
-uid: dataextractor
 ---
 
 

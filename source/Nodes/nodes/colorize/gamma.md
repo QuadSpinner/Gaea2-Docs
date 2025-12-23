@@ -1,7 +1,6 @@
 ---
 title: Gamma
 uid: gamma
-uid: gamma
 ---
 
 

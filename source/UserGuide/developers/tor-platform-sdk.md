@@ -2,7 +2,6 @@
 icon: square-terminal
 title: TOR Platform SDK
 uid: tor-platform-sdk
-uid: tor-platform-sdk
 ---
 
 # TOR Platform SDK

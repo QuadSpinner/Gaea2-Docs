@@ -1,7 +1,6 @@
 ---
 title: Floating License
 uid: floating-license
-uid: floating-license
 ---
 
 # Floating License

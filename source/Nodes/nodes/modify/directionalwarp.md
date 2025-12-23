@@ -1,7 +1,6 @@
 ---
 title: DirectionalWarp
 uid: directionalwarp
-uid: directionalwarp
 ---
 
 

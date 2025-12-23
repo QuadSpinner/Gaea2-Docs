@@ -1,7 +1,6 @@
 ---
 title: PointCloud
 uid: pointcloud
-uid: pointcloud
 ---
 
 

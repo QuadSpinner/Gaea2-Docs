@@ -2,7 +2,6 @@
 icon: shield-halved
 title: Regular Installation
 uid: regular-installation
-uid: regular-installation
 ---
 
 # Regular Installation
@@ -13,7 +12,7 @@ Please make sure you have read the [.](./)page.
 
 Our new installer makes it very easy to install Gaea, whether you are at home with full Administrator privileges or in a restricted environment at work.
 
-<figure><img src="../../.data/assets/QuadSpinner_Gaea_2.0_Setup_09-55-53-PM.png" width="266"></figure>
+<figure><img src="/.data/assets/QuadSpinner_Gaea_2.0_Setup_09-55-53-PM.png" width="266"></figure>
 
 ### Choosing the Installation Type
 
@@ -23,7 +22,7 @@ To begin the installation select Regular or [portable-installation.md](portable-
 :shield: You will require Administrator Privileges for a Regular Installation. If you don't have them, you can choose to go for a [portable-installation.md](portable-installation.html).
 :::
 
-<figure><img src="../../.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM (1).png"></figure>
+<figure><img src="/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM (1).png"></figure>
 
 ### Choosing the Path
 
@@ -39,13 +38,13 @@ Gaea will now install. You will be given an option to launch Gaea once the insta
 
 ## Welcome to Gaea
 
-<figure><img src="../../.data/assets/Welcome_to_Gaea_2.0_09-56-21-PM.png"></figure>
+<figure><img src="/.data/assets/Welcome_to_Gaea_2.0_09-56-21-PM.png"></figure>
 
 Once Gaea launches, you will be presented with this Welcome dialog.
 
 You can set your Gaea Projects storage path here, and select the navigation style for the Viewport.
 
-<figure><img src="../../.data/assets/Welcome_to_Gaea_2.0_09-56-28-PM.png"></figure>
+<figure><img src="/.data/assets/Welcome_to_Gaea_2.0_09-56-28-PM.png"></figure>
 
 ### License Key
 
@@ -63,7 +62,7 @@ For users who have been issued a file-based key, just drag and drop the file (us
 
 ***
 
-Gaea is now installed and you are ready to create [terrain-basics](../../using-gaea/terrain-basics/)!
+Gaea is now installed and you are ready to create [terrain-basics](/using-gaea/terrain-basics/)!
 
 
 

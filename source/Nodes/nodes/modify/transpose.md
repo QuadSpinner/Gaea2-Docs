@@ -1,7 +1,6 @@
 ---
 title: Transpose
 uid: transpose
-uid: transpose
 ---
 
 # Transpose

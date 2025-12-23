@@ -1,7 +1,6 @@
 ---
 title: Cone
 uid: cone
-uid: cone
 ---
 
 

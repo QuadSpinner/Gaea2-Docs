@@ -1,7 +1,6 @@
 ---
 title: Slope
 uid: slope
-uid: slope
 ---
 
 # Slope

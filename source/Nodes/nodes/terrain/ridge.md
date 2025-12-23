@@ -1,7 +1,6 @@
 ---
 title: Ridge
 uid: ridge
-uid: ridge
 ---
 
 

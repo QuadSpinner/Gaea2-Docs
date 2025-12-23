@@ -1,7 +1,6 @@
 ---
 title: Tint
 uid: tint
-uid: tint
 ---
 
 

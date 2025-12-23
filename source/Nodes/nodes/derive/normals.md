@@ -1,7 +1,6 @@
 ---
 title: Normals
 uid: normals
-uid: normals
 ---
 
 

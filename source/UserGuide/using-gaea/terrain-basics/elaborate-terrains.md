@@ -2,7 +2,6 @@
 icon: '3'
 title: Elaborate Terrains
 uid: elaborate-terrains
-uid: elaborate-terrains
 ---
 
 # Elaborate Terrains

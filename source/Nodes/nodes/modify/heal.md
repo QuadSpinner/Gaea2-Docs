@@ -1,7 +1,6 @@
 ---
 title: Heal
 uid: heal
-uid: heal
 ---
 
 
