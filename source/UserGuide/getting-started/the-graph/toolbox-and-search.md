@@ -1,5 +1,7 @@
 ---
 title: Toolbox and Search
+uid: toolbox-and-search
+uid: toolbox-and-search
 ---
 
 # Toolbox and Search

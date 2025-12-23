@@ -1,5 +1,7 @@
 ---
 title: MountainSide
+uid: mountainside
+uid: mountainside
 ---
 
 

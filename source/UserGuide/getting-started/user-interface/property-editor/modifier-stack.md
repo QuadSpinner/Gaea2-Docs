@@ -1,5 +1,7 @@
 ---
 title: Modifier Stack
+uid: modifier-stack
+uid: modifier-stack
 ---
 
 # Modifier Stack

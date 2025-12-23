@@ -1,5 +1,7 @@
 ---
 title: LinearGradient
+uid: lineargradient
+uid: lineargradient
 ---
 
 

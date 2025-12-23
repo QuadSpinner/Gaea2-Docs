@@ -1,5 +1,7 @@
 ---
 title: Sea
+uid: sea
+uid: sea
 ---
 
 

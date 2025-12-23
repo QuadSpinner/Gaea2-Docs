@@ -1,5 +1,7 @@
 ---
 title: Variables
+uid: variables
+uid: variables
 ---
 
 # Variables

@@ -1,5 +1,7 @@
 ---
 title: Presets
+uid: presets
+uid: presets
 ---
 
 # Presets

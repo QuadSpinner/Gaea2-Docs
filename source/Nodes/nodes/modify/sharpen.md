@@ -1,5 +1,7 @@
 ---
 title: Sharpen
+uid: sharpen
+uid: sharpen
 ---
 
 

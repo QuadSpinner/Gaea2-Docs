@@ -1,5 +1,7 @@
 ---
 title: Noises, Primitives, and Landscapes
+uid: noises-primitives-and-landscapes
+uid: noises-primitives-and-landscapes
 ---
 
 # Noises, Primitives, and Landscapes

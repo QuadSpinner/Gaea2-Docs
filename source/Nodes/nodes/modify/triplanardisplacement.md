@@ -1,6 +1,8 @@
 ---
 hidden: true
 title: TriplanarDisplacement
+uid: triplanardisplacement
+uid: triplanardisplacement
 ---
 
 # TriplanarDisplacement

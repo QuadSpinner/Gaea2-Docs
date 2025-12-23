@@ -1,5 +1,7 @@
 ---
 title: Gaea Nodes
+uid: gaea-nodes
+uid: gaea-nodes
 ---
 
 # Gaea Nodes

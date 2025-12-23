@@ -1,5 +1,7 @@
 ---
 title: DotNoise
+uid: dotnoise
+uid: dotnoise
 ---
 
 

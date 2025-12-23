@@ -1,5 +1,7 @@
 ---
 title: Hemisphere
+uid: hemisphere
+uid: hemisphere
 ---
 
 

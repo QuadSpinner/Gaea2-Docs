@@ -1,5 +1,7 @@
 ---
 title: Non-Determinism
+uid: non-determinism
+uid: non-determinism
 ---
 
 # Non-Determinism

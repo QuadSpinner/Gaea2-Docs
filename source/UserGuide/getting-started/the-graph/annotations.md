@@ -1,5 +1,7 @@
 ---
 title: Annotations
+uid: annotations
+uid: annotations
 ---
 
 # Annotations

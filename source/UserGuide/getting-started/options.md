@@ -1,6 +1,8 @@
 ---
 icon: sliders-simple
 title: Options
+uid: options
+uid: options
 ---
 
 # Options

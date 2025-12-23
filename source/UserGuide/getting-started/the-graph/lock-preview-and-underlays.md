@@ -1,5 +1,7 @@
 ---
 title: Lock Preview and Underlays
+uid: lock-preview-and-underlays
+uid: lock-preview-and-underlays
 ---
 
 # Lock Preview and Underlays

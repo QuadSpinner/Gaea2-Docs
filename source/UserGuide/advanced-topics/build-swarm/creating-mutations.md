@@ -1,5 +1,7 @@
 ---
 title: Creating Mutations
+uid: creating-mutations
+uid: creating-mutations
 ---
 
 # Creating Mutations

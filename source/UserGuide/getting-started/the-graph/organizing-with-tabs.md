@@ -1,5 +1,7 @@
 ---
 title: Organizing with Tabs
+uid: organizing-with-tabs
+uid: organizing-with-tabs
 ---
 
 # Organizing with Tabs

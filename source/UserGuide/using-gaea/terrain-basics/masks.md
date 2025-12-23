@@ -1,6 +1,8 @@
 ---
 icon: '6'
 title: Masks
+uid: masks
+uid: masks
 ---
 
 # Masks

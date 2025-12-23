@@ -1,5 +1,7 @@
 ---
 title: Seamless
+uid: seamless
+uid: seamless
 ---
 
 

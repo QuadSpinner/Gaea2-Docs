@@ -1,5 +1,7 @@
 ---
 title: Installing Gaea2Houdini
+uid: installing-gaea2houdini
+uid: installing-gaea2houdini
 ---
 
 # Installing Gaea2Houdini

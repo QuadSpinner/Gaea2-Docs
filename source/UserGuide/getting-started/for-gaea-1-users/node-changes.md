@@ -1,5 +1,7 @@
 ---
 title: Node Changes
+uid: node-changes
+uid: node-changes
 ---
 
 # Node Changes

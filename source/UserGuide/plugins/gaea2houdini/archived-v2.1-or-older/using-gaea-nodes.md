@@ -1,5 +1,7 @@
 ---
 title: Using Gaea Nodes
+uid: using-gaea-nodes
+uid: using-gaea-nodes
 ---
 
 # Using Gaea Nodes

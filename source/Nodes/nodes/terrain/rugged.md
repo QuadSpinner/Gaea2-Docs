@@ -1,5 +1,7 @@
 ---
 title: Rugged
+uid: rugged
+uid: rugged
 ---
 
 

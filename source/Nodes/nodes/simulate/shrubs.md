@@ -1,6 +1,8 @@
 ---
 hidden: true
 title: Shrubs
+uid: shrubs
+uid: shrubs
 ---
 
 # Shrubs

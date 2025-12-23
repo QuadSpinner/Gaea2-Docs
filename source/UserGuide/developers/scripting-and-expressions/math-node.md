@@ -1,5 +1,7 @@
 ---
 title: Math Node
+uid: math-node
+uid: math-node
 ---
 
 # Math Node

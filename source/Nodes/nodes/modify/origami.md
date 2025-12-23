@@ -1,5 +1,7 @@
 ---
 title: Origami
+uid: origami
+uid: origami
 ---
 
 

@@ -1,5 +1,7 @@
 ---
 title: Snowfall
+uid: snowfall
+uid: snowfall
 ---
 
 # Snowfall

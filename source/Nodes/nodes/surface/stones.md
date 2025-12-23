@@ -1,5 +1,7 @@
 ---
 title: Stones
+uid: stones
+uid: stones
 ---
 
 

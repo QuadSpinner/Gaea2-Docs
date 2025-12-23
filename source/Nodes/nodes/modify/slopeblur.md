@@ -1,5 +1,7 @@
 ---
 title: SlopeBlur
+uid: slopeblur
+uid: slopeblur
 ---
 
 # SlopeBlur

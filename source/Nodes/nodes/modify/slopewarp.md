@@ -1,5 +1,7 @@
 ---
 title: SlopeWarp
+uid: slopewarp
+uid: slopewarp
 ---
 
 

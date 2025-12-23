@@ -1,5 +1,7 @@
 ---
 title: Main Menu
+uid: main-menu
+uid: main-menu
 ---
 
 # Main Menu

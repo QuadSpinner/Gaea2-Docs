@@ -1,5 +1,7 @@
 ---
 title: Debris
+uid: debris
+uid: debris
 ---
 
 # Debris

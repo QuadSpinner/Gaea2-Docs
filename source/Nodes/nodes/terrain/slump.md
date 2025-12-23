@@ -1,5 +1,7 @@
 ---
 title: Slump
+uid: slump
+uid: slump
 ---
 
 

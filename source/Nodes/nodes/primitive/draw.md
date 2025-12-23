@@ -1,5 +1,7 @@
 ---
 title: Draw
+uid: draw
+uid: draw
 ---
 
 

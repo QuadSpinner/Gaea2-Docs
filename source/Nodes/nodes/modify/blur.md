@@ -1,5 +1,7 @@
 ---
 title: Blur
+uid: blur
+uid: blur
 ---
 
 

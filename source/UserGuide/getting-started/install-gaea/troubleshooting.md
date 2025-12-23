@@ -1,6 +1,8 @@
 ---
 icon: suitcase-medical
 title: Troubleshooting
+uid: troubleshooting
+uid: troubleshooting
 ---
 
 # Troubleshooting

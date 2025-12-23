@@ -1,5 +1,7 @@
 ---
 title: Distance
+uid: distance
+uid: distance
 ---
 
 

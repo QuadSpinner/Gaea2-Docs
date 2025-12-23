@@ -1,5 +1,7 @@
 ---
 title: Benchmark Devices
+uid: benchmark-devices
+uid: benchmark-devices
 ---
 
 # Benchmark Devices

@@ -1,5 +1,7 @@
 ---
 title: WaveShine
+uid: waveshine
+uid: waveshine
 ---
 
 

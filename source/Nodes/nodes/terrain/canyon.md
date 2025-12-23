@@ -1,5 +1,7 @@
 ---
 title: Canyon
+uid: canyon
+uid: canyon
 ---
 
 

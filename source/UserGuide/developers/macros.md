@@ -1,6 +1,8 @@
 ---
 icon: gear-complex-code
 title: Macros
+uid: macros
+uid: macros
 ---
 
 # Macros

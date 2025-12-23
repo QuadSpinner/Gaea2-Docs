@@ -1,5 +1,7 @@
 ---
 title: Crumble
+uid: crumble
+uid: crumble
 ---
 
 # Crumble

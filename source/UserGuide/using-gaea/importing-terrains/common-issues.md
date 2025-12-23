@@ -1,5 +1,7 @@
 ---
 title: Common Issues
+uid: common-issues
+uid: common-issues
 ---
 
 # Common Issues

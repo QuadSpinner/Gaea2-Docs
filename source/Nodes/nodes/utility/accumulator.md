@@ -1,5 +1,7 @@
 ---
 title: Accumulator
+uid: accumulator
+uid: accumulator
 ---
 
 # Accumulator

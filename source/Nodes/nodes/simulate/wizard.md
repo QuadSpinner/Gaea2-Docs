@@ -1,5 +1,7 @@
 ---
 title: Wizard
+uid: wizard
+uid: wizard
 ---
 
 

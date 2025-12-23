@@ -1,5 +1,7 @@
 ---
 title: Managing Input and Output
+uid: managing-input-and-output
+uid: managing-input-and-output
 ---
 
 # Managing Input and Output

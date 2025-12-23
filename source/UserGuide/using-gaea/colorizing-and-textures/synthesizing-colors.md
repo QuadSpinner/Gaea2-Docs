@@ -1,5 +1,7 @@
 ---
 title: Synthesizing Colors
+uid: synthesizing-colors
+uid: synthesizing-colors
 ---
 
 # Synthesizing Colors

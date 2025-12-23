@@ -1,6 +1,8 @@
 ---
 icon: cubes-stacked
 title: Build Swarm
+uid: build-swarm
+uid: build-swarm
 ---
 
 # Build Swarm

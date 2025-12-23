@@ -1,5 +1,7 @@
 ---
 title: Flip
+uid: flip
+uid: flip
 ---
 
 # Flip

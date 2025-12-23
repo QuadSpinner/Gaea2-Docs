@@ -1,5 +1,7 @@
 ---
 title: Adjust
+uid: adjust
+uid: adjust
 ---
 
 # Adjust

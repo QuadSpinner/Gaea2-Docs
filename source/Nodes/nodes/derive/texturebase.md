@@ -1,5 +1,7 @@
 ---
 title: TextureBase
+uid: texturebase
+uid: texturebase
 ---
 
 # TextureBase

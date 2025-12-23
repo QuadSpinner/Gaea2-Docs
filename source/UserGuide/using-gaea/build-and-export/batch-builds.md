@@ -1,6 +1,8 @@
 ---
 icon: sparkles
 title: Batch Builds
+uid: batch-builds
+uid: batch-builds
 ---
 
 # Batch Builds

@@ -1,5 +1,7 @@
 ---
 title: Crafting Masks
+uid: crafting-masks
+uid: crafting-masks
 ---
 
 # Crafting Masks

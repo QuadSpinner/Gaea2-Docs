@@ -9,9 +9,21 @@
   --toc-border: #ccc;
   --toc-border-active: #000;
   --toc-chevron: rgba(0, 0, 0, 0.55);
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: #034ad8;
+  --pagefind-ui-text: #393939;
+  --pagefind-ui-background: #ffffff;
+  --pagefind-ui-border: #eeeeee;
+  --pagefind-ui-tag: #eeeeee;
+  --pagefind-ui-border-width: 2px;
+  --pagefind-ui-border-radius: 8px;
+  --pagefind-ui-image-border-radius: 8px;
+  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-font: "Segoe UI", sans-serif;
 }
 
-html[data-bs-theme=dark] {
+html[data-bs-theme=dark],
+body.dark {
   --toc-section: rgba(255, 255, 255, 0.92);
   --toc-link: rgba(255, 255, 255, 0.62);
   --toc-link-hover: rgba(255, 255, 255, 0.86);
@@ -19,6 +31,85 @@ html[data-bs-theme=dark] {
   --toc-border: rgba(255, 255, 255, 0.18);
   --toc-border-active: rgba(255, 255, 255, 0.55);
   --toc-chevron: rgba(255, 255, 255, 0.55);
+  --pagefind-ui-primary: #eeeeee;
+  --pagefind-ui-text: #eeeeee;
+  --pagefind-ui-background: #1c1c1c;
+  --pagefind-ui-border: #2a2a2a;
+  --pagefind-ui-tag: #252525;
+}
+
+.pagefind-ui {
+  border-radius: 4px;
+  border: 0;
+  background: none;
+  z-index: 59829;
+}
+.pagefind-ui .pagefind-ui__form.svelte-e9gkc3::before {
+  top: 9px !important;
+}
+.pagefind-ui:focus, .pagefind-ui:-moz-focusring {
+  border: 1px solid #4ff0b7;
+  box-shadow: none !important;
+}
+.pagefind-ui .pagefind-ui__search-input {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  height: 32px !important;
+  border: 1px solid #aaa;
+}
+.pagefind-ui .pagefind-ui__search-clear {
+  top: 8px !important;
+  height: 16px !important;
+}
+.pagefind-ui .pagefind-ui__drawer {
+  position: absolute;
+  background: #000;
+  z-index: 59829;
+  width: 28vw;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+.pagefind-ui .pagefind-ui__drawer .pagefind-ui__results-area {
+  margin-top: 0px !important;
+}
+.pagefind-ui .pagefind-ui__drawer .pagefind-ui__results-area .pagefind-ui__message {
+  padding-left: 64px;
+}
+.pagefind-ui .pagefind-ui__drawer .pagefind-ui__result-thumb {
+  display: none !important;
+}
+.pagefind-ui .pagefind-ui__drawer mark {
+  background: none !important;
+  color: #fff !important;
+  text-decoration: underline !important;
+  text-decoration-color: #ffcc00 !important;
+  -webkit-text-decoration-skip-ink: all !important;
+          text-decoration-skip-ink: all !important;
+}
+.pagefind-ui .pagefind-ui__drawer .pagefind-ui__result {
+  border: 0;
+  margin: 4px;
+  background-color: #373939;
+  padding: 0px !important;
+  border-radius: 6px;
+}
+.pagefind-ui .pagefind-ui__drawer .pagefind-ui__result .pagefind-ui__result-nested .pagefind-ui__result-title {
+  font-weight: 600;
+  font-size: 13px;
+}
+.pagefind-ui .pagefind-ui__drawer .pagefind-ui__result .pagefind-ui__result-nested .pagefind-ui__result-link::before {
+  display: none;
+}
+.pagefind-ui .pagefind-ui__drawer .pagefind-ui__result * {
+  font-size: smaller;
+}
+.pagefind-ui .pagefind-ui__drawer .pagefind-ui__result .pagefind-ui__result-inner {
+  padding: 6px 12px;
+  margin: 0 !important;
+}
+.pagefind-ui .pagefind-ui__drawer .pagefind-ui__result .pagefind-ui__result-excerpt {
+  color: #aaa;
 }
 
 .hive-nav {

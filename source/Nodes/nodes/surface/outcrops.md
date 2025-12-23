@@ -1,5 +1,7 @@
 ---
 title: Outcrops
+uid: outcrops
+uid: outcrops
 ---
 
 

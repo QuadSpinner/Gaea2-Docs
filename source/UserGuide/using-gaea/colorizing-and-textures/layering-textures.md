@@ -1,5 +1,7 @@
 ---
 title: Layering Textures
+uid: layering-textures
+uid: layering-textures
 ---
 
 # Layering Textures

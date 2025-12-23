@@ -1,5 +1,7 @@
 ---
 title: Hardware Thumbprint
+uid: hardware-thumbprint
+uid: hardware-thumbprint
 ---
 
 # Hardware Thumbprint

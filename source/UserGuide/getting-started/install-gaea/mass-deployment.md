@@ -1,6 +1,8 @@
 ---
 icon: network-wired
 title: Mass Deployment
+uid: mass-deployment
+uid: mass-deployment
 ---
 
 # Mass Deployment

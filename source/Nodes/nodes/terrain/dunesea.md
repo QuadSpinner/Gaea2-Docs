@@ -1,5 +1,7 @@
 ---
 title: DuneSea
+uid: dunesea
+uid: dunesea
 ---
 
 

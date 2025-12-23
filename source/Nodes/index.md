@@ -1,5 +1,7 @@
 ---
 title: Readme
+uid: readme
+uid: readme
 ---
 
 # Readme

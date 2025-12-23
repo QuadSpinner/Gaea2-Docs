@@ -1,5 +1,7 @@
 ---
 title: Thermal Erosion
+uid: thermal-erosion
+uid: thermal-erosion
 ---
 
 # Thermal Erosion

@@ -1,5 +1,7 @@
 ---
 title: File Formats
+uid: file-formats
+uid: file-formats
 ---
 
 # File Formats

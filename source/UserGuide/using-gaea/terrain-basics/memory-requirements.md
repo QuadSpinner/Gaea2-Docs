@@ -1,5 +1,7 @@
 ---
 title: Memory Requirements
+uid: memory-requirements
+uid: memory-requirements
 ---
 
 # Memory Requirements

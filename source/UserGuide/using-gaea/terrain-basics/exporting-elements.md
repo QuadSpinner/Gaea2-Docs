@@ -1,6 +1,8 @@
 ---
 icon: '5'
 title: Exporting Elements
+uid: exporting-elements
+uid: exporting-elements
 ---
 
 # Exporting Elements

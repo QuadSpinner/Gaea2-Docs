@@ -1,5 +1,7 @@
 ---
 title: Common Errors
+uid: common-errors
+uid: common-errors
 ---
 
 # Common Errors

@@ -1,5 +1,7 @@
 ---
 title: GroundTexture
+uid: groundtexture
+uid: groundtexture
 ---
 
 

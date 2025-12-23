@@ -1,5 +1,7 @@
 ---
 title: Scale and Resolution
+uid: scale-and-resolution
+uid: scale-and-resolution
 ---
 
 # Scale and Resolution

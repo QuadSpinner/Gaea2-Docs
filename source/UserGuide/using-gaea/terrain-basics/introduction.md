@@ -1,6 +1,8 @@
 ---
 icon: '1'
 title: Introduction
+uid: introduction
+uid: introduction
 ---
 
 # Introduction

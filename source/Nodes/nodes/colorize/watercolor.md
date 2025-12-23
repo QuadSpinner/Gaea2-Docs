@@ -1,5 +1,7 @@
 ---
 title: WaterColor
+uid: watercolor
+uid: watercolor
 ---
 
 

@@ -1,6 +1,8 @@
 ---
 icon: rectangle-terminal
 title: Command-line Interface
+uid: command-line-interface
+uid: command-line-interface
 ---
 
 # Command-line Interface

@@ -2,6 +2,8 @@
 icon: cloud-showers
 coverY: 0
 title: Understanding Erosion
+uid: understanding-erosion
+uid: understanding-erosion
 ---
 
 # Understanding Erosion

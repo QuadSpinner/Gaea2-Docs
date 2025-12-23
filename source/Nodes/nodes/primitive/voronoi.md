@@ -1,5 +1,7 @@
 ---
 title: Voronoi
+uid: voronoi
+uid: voronoi
 ---
 
 

@@ -1,5 +1,7 @@
 ---
 title: IceFloe
+uid: icefloe
+uid: icefloe
 ---
 
 

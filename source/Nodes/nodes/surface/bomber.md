@@ -1,5 +1,7 @@
 ---
 title: Bomber
+uid: bomber
+uid: bomber
 ---
 
 

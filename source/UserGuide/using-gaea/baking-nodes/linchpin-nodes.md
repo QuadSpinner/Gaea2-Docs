@@ -1,5 +1,7 @@
 ---
 title: Linchpin Nodes
+uid: linchpin-nodes
+uid: linchpin-nodes
 ---
 
 # Linchpin Nodes

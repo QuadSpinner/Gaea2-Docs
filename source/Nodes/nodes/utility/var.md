@@ -1,5 +1,7 @@
 ---
 title: Var
+uid: var
+uid: var
 ---
 
 

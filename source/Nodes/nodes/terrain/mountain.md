@@ -1,5 +1,7 @@
 ---
 title: Mountain
+uid: mountain
+uid: mountain
 ---
 
 

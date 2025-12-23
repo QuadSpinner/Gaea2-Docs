@@ -1,6 +1,8 @@
 ---
 icon: sparkles
 title: Tangent-Space Normals and Warped Maps
+uid: tangent-space-normals-and-warped-maps
+uid: tangent-space-normals-and-warped-maps
 ---
 
 # Tangent-Space Normals and Warped Maps

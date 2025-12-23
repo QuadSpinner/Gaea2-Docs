@@ -1,5 +1,7 @@
 ---
 title: Source Code
+uid: source-code
+uid: source-code
 ---
 
 # Source Code

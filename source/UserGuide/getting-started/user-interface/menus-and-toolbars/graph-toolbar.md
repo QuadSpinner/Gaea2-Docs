@@ -1,5 +1,7 @@
 ---
 title: Graph Toolbar
+uid: graph-toolbar
+uid: graph-toolbar
 ---
 
 # Graph Toolbar

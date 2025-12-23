@@ -1,6 +1,8 @@
 ---
 icon: sparkles
 title: Using Regions
+uid: using-regions
+uid: using-regions
 ---
 
 # Using Regions

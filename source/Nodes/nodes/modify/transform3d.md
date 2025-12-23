@@ -1,6 +1,8 @@
 ---
 hidden: true
 title: Transform3D
+uid: transform3d
+uid: transform3d
 ---
 
 # Transform3D

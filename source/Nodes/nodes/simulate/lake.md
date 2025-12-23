@@ -1,5 +1,7 @@
 ---
 title: Lake
+uid: lake
+uid: lake
 ---
 
 

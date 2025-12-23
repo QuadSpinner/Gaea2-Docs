@@ -1,5 +1,7 @@
 ---
 title: Surface Nodes
+uid: surface-nodes
+uid: surface-nodes
 ---
 
 # Surface Nodes

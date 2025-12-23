@@ -1,5 +1,7 @@
 ---
 title: Sunlight
+uid: sunlight
+uid: sunlight
 ---
 
 

@@ -1,5 +1,7 @@
 ---
 title: Importing Weight Maps
+uid: importing-weight-maps
+uid: importing-weight-maps
 ---
 
 # Importing Weight Maps

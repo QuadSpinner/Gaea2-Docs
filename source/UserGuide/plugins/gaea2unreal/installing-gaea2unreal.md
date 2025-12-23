@@ -1,5 +1,7 @@
 ---
 title: Installing Gaea2Unreal
+uid: installing-gaea2unreal
+uid: installing-gaea2unreal
 ---
 
 # Installing Gaea2Unreal

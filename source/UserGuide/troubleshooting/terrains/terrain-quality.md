@@ -1,5 +1,7 @@
 ---
 title: Terrain Quality
+uid: terrain-quality
+uid: terrain-quality
 ---
 
 # Terrain Quality

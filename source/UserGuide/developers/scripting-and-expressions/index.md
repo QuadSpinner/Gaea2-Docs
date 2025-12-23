@@ -1,6 +1,8 @@
 ---
 icon: gear-code
 title: Scripting and Expressions
+uid: scripting-and-expressions
+uid: scripting-and-expressions
 ---
 
 # Scripting and Expressions

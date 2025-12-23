@@ -1,5 +1,7 @@
 ---
 title: Compare
+uid: compare
+uid: compare
 ---
 
 # Compare

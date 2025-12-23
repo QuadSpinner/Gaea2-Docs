@@ -1,5 +1,7 @@
 ---
 title: Suspending Engine
+uid: suspending-engine
+uid: suspending-engine
 ---
 
 # Suspending Engine

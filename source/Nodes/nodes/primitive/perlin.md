@@ -1,5 +1,7 @@
 ---
 title: Perlin
+uid: perlin
+uid: perlin
 ---
 
 

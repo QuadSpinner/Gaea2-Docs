@@ -1,5 +1,7 @@
 ---
 title: TileInput
+uid: tileinput
+uid: tileinput
 ---
 
 

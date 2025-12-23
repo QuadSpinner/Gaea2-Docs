@@ -1,6 +1,8 @@
 ---
 icon: diagram-project
 title: The Graph
+uid: the-graph
+uid: the-graph
 ---
 
 # The Graph

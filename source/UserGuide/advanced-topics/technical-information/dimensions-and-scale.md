@@ -1,5 +1,7 @@
 ---
 title: Dimensions and Scale
+uid: dimensions-and-scale
+uid: dimensions-and-scale
 ---
 
 # Dimensions and Scale

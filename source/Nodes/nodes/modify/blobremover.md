@@ -1,5 +1,7 @@
 ---
 title: BlobRemover
+uid: blobremover
+uid: blobremover
 ---
 
 # BlobRemover

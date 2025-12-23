@@ -1,5 +1,7 @@
 ---
 title: Build Reports
+uid: build-reports
+uid: build-reports
 ---
 
 # Build Reports

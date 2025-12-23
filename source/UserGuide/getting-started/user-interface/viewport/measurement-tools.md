@@ -1,5 +1,7 @@
 ---
 title: Measurement Tools
+uid: measurement-tools
+uid: measurement-tools
 ---
 
 # Measurement Tools

@@ -1,5 +1,7 @@
 ---
 title: RadialGradient
+uid: radialgradient
+uid: radialgradient
 ---
 
 

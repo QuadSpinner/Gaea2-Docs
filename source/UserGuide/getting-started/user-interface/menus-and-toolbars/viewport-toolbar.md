@@ -1,5 +1,7 @@
 ---
 title: Viewport Toolbar
+uid: viewport-toolbar
+uid: viewport-toolbar
 ---
 
 # Viewport Toolbar

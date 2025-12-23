@@ -1,5 +1,7 @@
 ---
 title: Recurve
+uid: recurve
+uid: recurve
 ---
 
 # Recurve

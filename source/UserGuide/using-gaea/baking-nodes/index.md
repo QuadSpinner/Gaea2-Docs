@@ -1,6 +1,8 @@
 ---
 icon: fire
 title: Baking Nodes
+uid: baking-nodes
+uid: baking-nodes
 ---
 
 # Baking Nodes

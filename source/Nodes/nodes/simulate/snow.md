@@ -1,5 +1,7 @@
 ---
 title: Snow
+uid: snow
+uid: snow
 ---
 
 

@@ -1,6 +1,8 @@
 ---
 icon: light-emergency-on
 title: Autosave and Recovery
+uid: autosave-and-recovery
+uid: autosave-and-recovery
 ---
 
 # Autosave and Recovery

@@ -1,5 +1,7 @@
 ---
 title: Command Line Automation
+uid: command-line-automation
+uid: command-line-automation
 ---
 
 # Command Line Automation

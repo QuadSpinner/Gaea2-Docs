@@ -1,5 +1,7 @@
 ---
 title: Soil
+uid: soil
+uid: soil
 ---
 
 

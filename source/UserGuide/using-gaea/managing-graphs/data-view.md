@@ -1,5 +1,7 @@
 ---
 title: Data View
+uid: data-view
+uid: data-view
 ---
 
 # Data View

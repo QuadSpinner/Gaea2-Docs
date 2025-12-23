@@ -1,5 +1,7 @@
 ---
 title: MultiFractal
+uid: multifractal
+uid: multifractal
 ---
 
 

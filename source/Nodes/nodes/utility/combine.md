@@ -1,5 +1,7 @@
 ---
 title: Combine
+uid: combine
+uid: combine
 ---
 
 # Combine

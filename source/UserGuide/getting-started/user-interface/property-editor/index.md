@@ -1,5 +1,7 @@
 ---
 title: Property Editor
+uid: property-editor
+uid: property-editor
 ---
 
 # Property Editor

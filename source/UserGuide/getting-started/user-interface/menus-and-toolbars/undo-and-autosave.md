@@ -1,5 +1,7 @@
 ---
 title: Undo and Autosave
+uid: undo-and-autosave
+uid: undo-and-autosave
 ---
 
 # Undo and Autosave

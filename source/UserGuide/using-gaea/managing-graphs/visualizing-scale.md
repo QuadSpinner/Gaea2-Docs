@@ -1,5 +1,7 @@
 ---
 title: Visualizing Scale
+uid: visualizing-scale
+uid: visualizing-scale
 ---
 
 # Visualizing Scale

@@ -1,5 +1,7 @@
 ---
 title: Unreal Node
+uid: unreal-node
+uid: unreal-node
 ---
 
 # Unreal Node

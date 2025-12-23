@@ -1,5 +1,7 @@
 ---
 title: Splat
+uid: splat
+uid: splat
 ---
 
 

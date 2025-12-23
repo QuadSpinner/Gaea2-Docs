@@ -1,5 +1,7 @@
 ---
 title: Accumulators
+uid: accumulators
+uid: accumulators
 ---
 
 # Accumulators

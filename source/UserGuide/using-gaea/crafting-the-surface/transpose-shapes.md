@@ -1,5 +1,7 @@
 ---
 title: Transpose Shapes
+uid: transpose-shapes
+uid: transpose-shapes
 ---
 
 # Transpose Shapes

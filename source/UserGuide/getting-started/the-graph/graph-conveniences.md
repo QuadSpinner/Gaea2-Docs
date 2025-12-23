@@ -1,5 +1,7 @@
 ---
 title: Graph Conveniences
+uid: graph-conveniences
+uid: graph-conveniences
 ---
 
 # Graph Conveniences

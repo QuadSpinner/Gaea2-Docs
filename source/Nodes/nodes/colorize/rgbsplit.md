@@ -1,5 +1,7 @@
 ---
 title: RGBSplit
+uid: rgbsplit
+uid: rgbsplit
 ---
 
 

@@ -1,5 +1,7 @@
 ---
 title: Anastomosis
+uid: anastomosis
+uid: anastomosis
 ---
 
 # Anastomosis

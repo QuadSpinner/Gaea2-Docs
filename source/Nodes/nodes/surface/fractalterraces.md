@@ -1,5 +1,7 @@
 ---
 title: FractalTerraces
+uid: fractalterraces
+uid: fractalterraces
 ---
 
 

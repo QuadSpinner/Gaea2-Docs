@@ -1,5 +1,7 @@
 ---
 title: Curvature
+uid: curvature
+uid: curvature
 ---
 
 # Curvature

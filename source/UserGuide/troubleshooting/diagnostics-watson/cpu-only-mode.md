@@ -1,5 +1,7 @@
 ---
 title: CPU Only Mode
+uid: cpu-only-mode
+uid: cpu-only-mode
 ---
 
 # CPU Only Mode

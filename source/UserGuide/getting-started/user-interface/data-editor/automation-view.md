@@ -1,5 +1,7 @@
 ---
 title: Automation View
+uid: automation-view
+uid: automation-view
 ---
 
 # Automation View

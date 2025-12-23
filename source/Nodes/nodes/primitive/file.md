@@ -1,5 +1,7 @@
 ---
 title: File
+uid: file
+uid: file
 ---
 
 

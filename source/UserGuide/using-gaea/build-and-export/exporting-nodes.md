@@ -1,6 +1,8 @@
 ---
 icon: sparkles
 title: Exporting Nodes
+uid: exporting-nodes
+uid: exporting-nodes
 ---
 
 # Exporting Nodes

@@ -1,5 +1,7 @@
 ---
 title: Diagnostics Package
+uid: diagnostics-package
+uid: diagnostics-package
 ---
 
 # Diagnostics Package

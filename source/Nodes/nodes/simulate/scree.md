@@ -1,5 +1,7 @@
 ---
 title: Scree
+uid: scree
+uid: scree
 ---
 
 

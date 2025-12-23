@@ -1,5 +1,7 @@
 ---
 title: Render Modes
+uid: render-modes
+uid: render-modes
 ---
 
 # Render Modes

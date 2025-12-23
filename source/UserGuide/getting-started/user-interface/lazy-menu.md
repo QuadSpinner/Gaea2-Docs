@@ -1,5 +1,7 @@
 ---
 title: Lazy Menu
+uid: lazy-menu
+uid: lazy-menu
 ---
 
 # Lazy Menu

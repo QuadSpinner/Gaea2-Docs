@@ -1,5 +1,7 @@
 ---
 title: Dilate
+uid: dilate
+uid: dilate
 ---
 
 # Dilate

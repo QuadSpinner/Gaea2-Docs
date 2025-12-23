@@ -1,6 +1,8 @@
 ---
 icon: sparkles
 title: Mesh Exports
+uid: mesh-exports
+uid: mesh-exports
 ---
 
 # Mesh Exports

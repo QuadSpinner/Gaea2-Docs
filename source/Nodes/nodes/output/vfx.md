@@ -1,6 +1,8 @@
 ---
 hidden: true
 title: VFX
+uid: vfx
+uid: vfx
 ---
 
 # VFX

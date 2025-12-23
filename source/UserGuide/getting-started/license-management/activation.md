@@ -1,5 +1,7 @@
 ---
 title: Activation
+uid: activation
+uid: activation
 ---
 
 # Activation

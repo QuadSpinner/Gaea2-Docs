@@ -1,6 +1,8 @@
 ---
 icon: h
 title: Gaea2Houdini
+uid: gaea2houdini
+uid: gaea2houdini
 ---
 
 # Gaea2Houdini

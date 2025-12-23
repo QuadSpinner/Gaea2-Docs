@@ -1,5 +1,7 @@
 ---
 title: Using Modifiers
+uid: using-modifiers
+uid: using-modifiers
 ---
 
 # Using Modifiers

@@ -1,5 +1,7 @@
 ---
 title: Learning and Predictive System
+uid: learning-and-predictive-system
+uid: learning-and-predictive-system
 ---
 
 # Learning and Predictive System

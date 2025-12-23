@@ -1,5 +1,7 @@
 ---
 title: Sandstone
+uid: sandstone
+uid: sandstone
 ---
 
 

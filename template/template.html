@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="/assets/site.css" />
     <link rel="stylesheet" href="/assets/themes.css" />
     <link rel="stylesheet" href="/assets/styles.css" />
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js"></script>
 </head>
 
 <body data-hive="%%HIVE%%" data-hive-shortname="%%SHORTNAME%%">
     <div class="page-header d-print-none">
         <header class="navbar navbar-expand-md d-print-none" data-bs-theme="dark">
-            <div class="container-xl">
+            <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -51,7 +53,27 @@
                                     <span class="nav-link-title"> Changelog </span>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <div id="search"></div>
+                            </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="navbar-expand-md navbar-transparent">
+            <div class="collapse navbar-collapse">
+                <div class="navbar">
+                    <div class="container-xl">
+                        <div class="row flex-column flex-md-row flex-fill align-items-center">
+                            <div class="col">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item" data-hive="User Guide"><a class="nav-link" href="/"><span class="nav-link-title"> User Guide </span></a></li>                                   
+                                    <li class="nav-item" data-hive="Node Reference"><a class="nav-link" href="/Reference"><span class="nav-link-title"> Node Reference </span></a></li>                                   
+                                    <li class="nav-item" data-hive="Guides"><a class="nav-link" href="/Guides"><span class="nav-link-title"> Guides </span></a></li>                                   
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -65,11 +87,6 @@
             </div>
             <div class="row g-2 mt-5 align-top">
                 <div class="col-3 px-5 d-none d-lg-block">
-                    <div class="d-flex hive-nav">
-                        <a class="p-2 flex-fill nav-item" data-hive="User Guide" href="/">User Guide</a>
-                        <a class="p-2 flex-fill nav-item" data-hive="Node Reference" href="/Reference">Nodes</a>
-                        <a class="p-2 flex-fill nav-item" data-hive="Guides" href="/Guides">Guides</a>
-                    </div>
                     <nav id="site-nav"></nav>
                 </div>
                 <div class="col px-5">
@@ -163,7 +180,7 @@
             const hive = document.body?.dataset?.hive;
             if (!hive) return;
 
-            document.querySelectorAll('.hive-nav .nav-item[data-hive]').forEach(a => a.classList.toggle("active", a.dataset.hive === hive));
+            document.querySelectorAll('.nav-item[data-hive]').forEach(a => a.classList.toggle("active", a.dataset.hive === hive));
             const encoded = encodeURIComponent(window.location.href);
             const md = window.location.href.replace(".html", ".md");
             document.getElementById("cmd-view-md").setAttribute("href", md);
@@ -172,6 +189,11 @@
         });
     </script>
     <script src="/assets/TOC.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: "#search", showSubResults: true });
+        });
+    </script>
 </body>
 
 </html>

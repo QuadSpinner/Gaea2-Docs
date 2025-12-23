@@ -1,5 +1,7 @@
 ---
 title: Pixelate
+uid: pixelate
+uid: pixelate
 ---
 
 # Pixelate

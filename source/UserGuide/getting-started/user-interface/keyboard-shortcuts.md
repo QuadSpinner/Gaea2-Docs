@@ -1,5 +1,7 @@
 ---
 title: Keyboard Shortcuts
+uid: keyboard-shortcuts
+uid: keyboard-shortcuts
 ---
 
 # Keyboard Shortcuts

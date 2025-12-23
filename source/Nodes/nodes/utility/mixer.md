@@ -1,5 +1,7 @@
 ---
 title: Mixer
+uid: mixer
+uid: mixer
 ---
 
 

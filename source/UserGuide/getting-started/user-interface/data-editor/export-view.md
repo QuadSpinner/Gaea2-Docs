@@ -1,5 +1,7 @@
 ---
 title: Export View
+uid: export-view
+uid: export-view
 ---
 
 # Export View

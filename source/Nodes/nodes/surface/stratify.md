@@ -1,5 +1,7 @@
 ---
 title: Stratify
+uid: stratify
+uid: stratify
 ---
 
 

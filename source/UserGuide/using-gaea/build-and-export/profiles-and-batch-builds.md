@@ -1,6 +1,8 @@
 ---
 icon: sparkles
 title: Profiles and Batch Builds
+uid: profiles-and-batch-builds
+uid: profiles-and-batch-builds
 ---
 
 # Profiles and Batch Builds

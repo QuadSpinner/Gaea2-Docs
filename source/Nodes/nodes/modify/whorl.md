@@ -1,5 +1,7 @@
 ---
 title: Whorl
+uid: whorl
+uid: whorl
 ---
 
 

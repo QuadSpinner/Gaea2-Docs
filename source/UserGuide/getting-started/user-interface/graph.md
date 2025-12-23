@@ -1,5 +1,7 @@
 ---
 title: Graph
+uid: graph
+uid: graph
 ---
 
 # Graph

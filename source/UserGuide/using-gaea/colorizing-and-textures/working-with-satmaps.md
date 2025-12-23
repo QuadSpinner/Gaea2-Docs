@@ -1,5 +1,7 @@
 ---
 title: Working with SatMaps
+uid: working-with-satmaps
+uid: working-with-satmaps
 ---
 
 # Working with SatMaps

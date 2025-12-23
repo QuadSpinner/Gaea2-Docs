@@ -1,6 +1,8 @@
 ---
 icon: usb-drive
 title: Portable Installation
+uid: portable-installation
+uid: portable-installation
 ---
 
 # Portable Installation

@@ -1,5 +1,7 @@
 ---
 title: Groups
+uid: groups
+uid: groups
 ---
 
 # Groups

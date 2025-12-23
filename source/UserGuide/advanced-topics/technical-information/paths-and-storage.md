@@ -1,5 +1,7 @@
 ---
 title: Paths and Storage
+uid: paths-and-storage
+uid: paths-and-storage
 ---
 
 # Paths and Storage

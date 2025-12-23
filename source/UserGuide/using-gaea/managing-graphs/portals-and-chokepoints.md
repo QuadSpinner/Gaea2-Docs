@@ -1,5 +1,7 @@
 ---
 title: Portals and Chokepoints
+uid: portals-and-chokepoints
+uid: portals-and-chokepoints
 ---
 
 # Portals and Chokepoints

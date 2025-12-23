@@ -1,5 +1,7 @@
 ---
 title: RockMap
+uid: rockmap
+uid: rockmap
 ---
 
 

@@ -1,5 +1,7 @@
 ---
 title: Constant
+uid: constant
+uid: constant
 ---
 
 

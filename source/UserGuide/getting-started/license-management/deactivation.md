@@ -1,5 +1,7 @@
 ---
 title: Deactivation
+uid: deactivation
+uid: deactivation
 ---
 
 # Deactivation

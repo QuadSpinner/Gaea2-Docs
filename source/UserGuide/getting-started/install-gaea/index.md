@@ -1,6 +1,8 @@
 ---
 icon: box
 title: Install Gaea
+uid: install-gaea
+uid: install-gaea
 ---
 
 # Install Gaea

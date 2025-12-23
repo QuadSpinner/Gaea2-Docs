@@ -1,5 +1,7 @@
 ---
 title: Terrain View
+uid: terrain-view
+uid: terrain-view
 ---
 
 # Terrain View

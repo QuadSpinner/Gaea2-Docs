@@ -1,5 +1,7 @@
 ---
 title: LightX
+uid: lightx
+uid: lightx
 ---
 
 

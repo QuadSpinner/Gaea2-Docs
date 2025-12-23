@@ -1,5 +1,7 @@
 ---
 title: Binding Variables
+uid: binding-variables
+uid: binding-variables
 ---
 
 # Binding Variables

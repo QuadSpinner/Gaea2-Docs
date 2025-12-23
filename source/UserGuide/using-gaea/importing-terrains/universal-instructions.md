@@ -1,5 +1,7 @@
 ---
 title: Universal Instructions
+uid: universal-instructions
+uid: universal-instructions
 ---
 
 # Universal Instructions

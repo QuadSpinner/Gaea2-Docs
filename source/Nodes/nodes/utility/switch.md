@@ -1,5 +1,7 @@
 ---
 title: Switch
+uid: switch
+uid: switch
 ---
 
 

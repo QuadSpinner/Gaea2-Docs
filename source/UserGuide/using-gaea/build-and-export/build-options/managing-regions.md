@@ -1,6 +1,8 @@
 ---
 icon: sparkles
 title: Managing Regions
+uid: managing-regions
+uid: managing-regions
 ---
 
 # Managing Regions

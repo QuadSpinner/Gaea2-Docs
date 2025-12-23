@@ -1,5 +1,7 @@
 ---
 title: Vegetation
+uid: vegetation
+uid: vegetation
 ---
 
 # Vegetation
