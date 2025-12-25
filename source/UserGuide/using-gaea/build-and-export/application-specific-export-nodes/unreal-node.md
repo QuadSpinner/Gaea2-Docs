@@ -5,7 +5,7 @@ uid: unreal-node
 
 # Unreal Node
 
-<figure><img src="//.data/assets/Gaea_-_Untitled_10-13-41-AM.png"><figcaption><p>The Unreal Node can accept multiple inputs and save them for Unreal Engine consumption.</p></figcaption></figure>
+![The Unreal Node can accept multiple inputs and save them for Unreal Engine consumption.](/.data/assets/Gaea_-_Untitled_10-13-41-AM.png)
 
 The Unreal node is made to prepare your data to be imported into Unreal Engine very easily using the Gaea2Unreal bridge plugin. The Unreal node will resample the data to a Unreal friendly resolution (for example, a 2048 x 2048 build will become 2017 x 2017 to accommodate UE's considerations).
 
@@ -13,9 +13,9 @@ The Unreal node is made to prepare your data to be imported into Unreal Engine v
 
 You can add multiple inputs to the Unreal node.
 
-<figure><img src="//.data/assets/Gaea_-_Untitled_10-15-28-AM.png"><figcaption><p>You can add additional Input Ports by dropping a connection in the middle of the Unreal node and selecting "Add new port"</p></figcaption></figure>
+![You can add additional Input Ports by dropping a connection in the middle of the Unreal node and selecting "Add new port"](/.data/assets/Gaea_-_Untitled_10-15-28-AM.png)
 
-<figure><img src="//.data/assets/Gaea_-_Untitled_10-15-53-AM.png"><figcaption><p>You can also click the pink "Add Port" button in the Node Properties.</p></figcaption></figure>
+![You can also click the pink "Add Port" button in the Node Properties.](/.data/assets/Gaea_-_Untitled_10-15-53-AM.png)
 
 ### Target Size and Format
 
@@ -27,7 +27,7 @@ You can set the file format for all the exported files.
 RAW is currently not fully supported. Both PNG and R16 are fully supported right now, but we recommend using PNG for maximum compatibility.
 :::
 
-<figure><img src="//.data/assets/image (33).png"></figure>
+![](/.data/assets/image (33).png)
 
 ### Unreal Friendly Naming
 

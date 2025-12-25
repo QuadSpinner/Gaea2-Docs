@@ -19,7 +19,7 @@ If you drop it on a node, it will automatically connect itself to that node's ou
 
 You can drag the right edge of the Toolbox to switch between three layout styles depending on your preferences for verbosity or compactness.
 
-<div><figure><img src="/.data/assets/Gaea_-_Untitled_11-24-27-PM.png" width="107"><figcaption><p>Expanded</p></figcaption></figure> <figure><img src="/.data/assets/CKomeuEpQs.png" width="107"><figcaption><p>Compact</p></figcaption></figure> <figure><img src="/.data/assets/Z9GjprHpvl.png" width="107"><figcaption><p>Toolbar</p></figcaption></figure></div>
+<div>![Expanded](/.data/assets/Gaea_-_Untitled_11-24-27-PM.png) ![Compact](/.data/assets/CKomeuEpQs.png) ![Toolbar](/.data/assets/Z9GjprHpvl.png)</div>
 
 
 
@@ -27,7 +27,7 @@ You can drag the right edge of the Toolbox to switch between three layout styles
 
 Nodes inside the Toolbox are organized by Family. You can choose how to visualize this organization.
 
-<div><figure><img src="/.data/assets/Gaea_-_Untitled_11-25-16-PM.png"><figcaption><p>Nested Menus</p></figcaption></figure> <figure><img src="/.data/assets/Gaea_-_Untitled_11-25-46-PM.png"><figcaption><p>Flat Menu</p></figcaption></figure></div>
+<div>![Nested Menus](/.data/assets/Gaea_-_Untitled_11-25-16-PM.png) ![Flat Menu](/.data/assets/Gaea_-_Untitled_11-25-46-PM.png)</div>
 
 * **Nested (Default):** Toolbox menus are nested by Family then family members to avoid clutter.
 * **Flat:** All Families and family members are shown in a flat menu.
@@ -36,7 +36,7 @@ Nodes inside the Toolbox are organized by Family. You can choose how to visualiz
 
 Search in Gaea is more powerful than ever and is the recommended way to create nodes. You can bring up Search by right-clicking in an empty area of the Graph surface, or by pressing `Tab`.
 
-<figure><img src="/.data/assets/Gaea_-_Untitled_11-31-06-PM.png" width="362"><figcaption><p>Search for both Nodes (Grey) and Presets (Teal).</p></figcaption></figure>
+![Search for both Nodes (Grey) and Presets (Teal).](/.data/assets/Gaea_-_Untitled_11-31-06-PM.png)
 
 ### Nodes
 

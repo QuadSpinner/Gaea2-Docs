@@ -12,7 +12,7 @@ uid: batch-builds
 
 You can execute multiple builds using saved profiles using the Batch Builds dialog. Go to Build menu > Batch Builds to open the dialog.
 
-<figure><img src="/.data/assets/Batch_Build_Manager_07-33-43-PM.png"></figure>
+![](/.data/assets/Batch_Build_Manager_07-33-43-PM.png)
 
 Queue the different profiles you want to build and execute the batch. You can also save the batch as a `.bat` file for later execution or modification.
 

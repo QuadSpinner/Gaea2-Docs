@@ -38,6 +38,27 @@ body.dark {
   --pagefind-ui-tag: #252525;
 }
 
+#contents h1,
+#contents h2,
+#contents h3,
+#contents h4 {
+  font-weight: 400;
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.55);
+}
+#contents h1 {
+  font-size: 26px;
+}
+#contents h2 {
+  font-size: 22px;
+}
+#contents h3 {
+  font-size: 20px;
+}
+#contents h4 {
+  font-size: 20px;
+}
+
 .pagefind-ui {
   border-radius: 4px;
   border: 0;
@@ -450,4 +471,15 @@ body.dark {
 
 .text-right {
   text-align: right;
+}
+
+#site-search #searchPopup {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 8px 32px rgba(0, 0, 0, 0.5);
+  width: 25vw !important;
+  max-height: 60vh;
+  overflow: auto;
+  border-radius: 0.75rem;
+}
+#site-search mark {
+  background: rgba(255, 193, 7, 0.35);
 }/*# sourceMappingURL=styles.css.map */

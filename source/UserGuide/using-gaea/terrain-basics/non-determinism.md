@@ -14,7 +14,7 @@ In procedural terrain generation like in Gaea, non-deterministic output at diffe
 
 Because of these factors, the terrain can look different at varying resolutions, even with the same settings.
 
-<figure><img src="/.data/assets/rX.jpg"><figcaption><p>Determinism across 512, 1024, 2048, and 4096 resolutions.</p></figcaption></figure>
+![Determinism across 512, 1024, 2048, and 4096 resolutions.](/.data/assets/rX.jpg)
 
 Gaea's algorithms are optimized to reduce the difference across resolutions as much as possible, especially with Erosion_2, however depending on your terrain setup it may be unavoidable in some situations.
 

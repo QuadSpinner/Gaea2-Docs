@@ -7,7 +7,7 @@ uid: compare
 
 Compare is a low-level utility that helps you compare two Heightfields.
 
-<figure><img src="/.data/assets/compare.png"></figure>
+![](/.data/assets/compare.png)
 
 * **A/B**  
   The comparison guide placement.

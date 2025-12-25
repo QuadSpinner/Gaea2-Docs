@@ -7,7 +7,7 @@ uid: viewport-toolbar
 
 The Viewport Toolbar is a crucial component of the Gaea Viewport, equipped with a variety of tools and menus designed to enhance user interaction and efficiency. It provides easy access to navigation controls, display settings, lighting settings, facilitating a streamlined workflow in the Gaea Viewport environment.
 
-<figure><img src="//.data/assets/Viewport Toolbar.png" width="62"></figure>
+![](/.data/assets/Viewport Toolbar.png)
 
 
 
@@ -15,11 +15,11 @@ The Viewport Toolbar is a crucial component of the Gaea Viewport, equipped with 
 
 Lighting: Provides comprehensive set of options to modify the viewport lighting. User can modify settings for Sun, Light, Atmosphere.
 
-<figure><img src="//.data/assets/Viewport Lighting.png" width="350"><figcaption><p>Lighting properties</p></figcaption></figure>
+![Lighting properties](/.data/assets/Viewport Lighting.png)
 
 Render Style: Viewport preview renderer can be set from this option. User can select from Realistic Render, Clay Render, Visualize Data allows to view the raw data with render off. See [render-modes.md](../viewport/render-modes.html)
 
-<figure><img src="//.data/assets/Viewport Renderer (1).png" width="230"><figcaption><p>Render Style</p></figcaption></figure>
+![Render Style](/.data/assets/Viewport Renderer (1).png)
 
 Autolevel Masks:&#x20;
 
@@ -27,11 +27,11 @@ Toggle 2D Viewport: Shows/Hides 2D viewport.
 
 Viewport Tools: It provides tools to Pick Height/Color and provides various measurement tools. See [measurement-tools.md](../viewport/measurement-tools.html)
 
-<figure><img src="//.data/assets/Viewport Tools.png" width="227"><figcaption><p>Viewport Tools</p></figcaption></figure>
+![Viewport Tools](/.data/assets/Viewport Tools.png)
 
 Viewport Toolbar submenu: This submenu provides extended functionalities and settings for viewport.
 
-<figure><img src="//.data/assets/Viewport Submenu.png" width="226"><figcaption><p>More viewport options</p></figcaption></figure>
+![More viewport options](/.data/assets/Viewport Submenu.png)
 
 
 

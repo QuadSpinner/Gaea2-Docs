@@ -17,13 +17,13 @@ Your Gaea `.terrain` file can be as simple as one node, or have a hundred nodes 
 
 Create a new String variable. Give it a meaningful name, and set the Type to "Input". Then create a File node, and bind its File property to this Input variable.
 
-<div><figure><img src="/.data/assets/Gaea_-_Untitled_09-04-29-PM.png"></figure> <figure><img src="/.data/assets/Gaea_-_Untitled_09-04-52-PM.png"></figure> <figure><img src="/.data/assets/Gaea_-_Untitled_09-05-02-PM.png"></figure></div>
+<div>![](/.data/assets/Gaea_-_Untitled_09-04-29-PM.png) ![](/.data/assets/Gaea_-_Untitled_09-04-52-PM.png) ![](/.data/assets/Gaea_-_Untitled_09-05-02-PM.png)</div>
 
 
 
 For Output, create a variable and set the Type to Output. Create an Export node, set the format to `GaeaRaw`, the Location to `Explicit` and bind the Output Path to your variable.
 
-<figure><img src="/.data/assets/Gaea_-_HoudiniTest-001.terrain_09-09-59-PM.png" width="310"></figure>
+![](/.data/assets/Gaea_-_HoudiniTest-001.terrain_09-09-59-PM.png)
 
 
 
@@ -37,7 +37,7 @@ Let's say you only want to use Erosion2, create an Erosion2 node between the Fil
 
 For each parameter you wish to expose, open the Edit Parameter menu and select `Bind To > New Variable`.
 
-<figure><img src="/.data/assets/image (70).png"></figure>
+![](/.data/assets/image (70).png)
 
 Once all your properties are exposed, your .terrain file is ready for use in Houdini.
 
@@ -47,7 +47,7 @@ Not all properties can be exposed!
 Some properties with custom UI like Curve, CLUTer, Draw, and others may not bind to a parameter.
 :::
 
-<figure><img src="/.data/assets/Gaea_-_Untitled_09-15-05-PM.png"></figure>
+![](/.data/assets/Gaea_-_Untitled_09-15-05-PM.png)
 
 
 
@@ -55,7 +55,7 @@ Some properties with custom UI like Curve, CLUTer, Draw, and others may not bind
 
 In this larger example, we have created two outputs - one for the heightfield and one for color, so we can use Gaea's ColorErosion tools.
 
-<figure><img src="/.data/assets/Gaea_-_HoudiniTest-001.terrain_09-17-07-PM.png"></figure>
+![](/.data/assets/Gaea_-_HoudiniTest-001.terrain_09-17-07-PM.png)
 
 #### Design-Time Tip
 

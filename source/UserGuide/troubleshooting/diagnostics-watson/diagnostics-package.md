@@ -7,11 +7,11 @@ uid: diagnostics-package
 
 Gaea Diagnostics (Watson) can create a Diagnostics Package that can help our tech support technicians and developers examine crashes or incorrect behavior in Gaea.
 
-<figure><img src="/.data/assets/Watson_-_Gaea_Diagnostics_06-12-24-PM.png" width="286"></figure>
+![](/.data/assets/Watson_-_Gaea_Diagnostics_06-12-24-PM.png)
 
 It takes a few moments for the diagnosis to be completed. The resulting diagnostics package will be a `.zip` file that will be placed on your desktop for easy access. In most cases, you will want to email it to our [Tech Support team](https://quadspinner.com/support/).
 
-<figure><img src="/.data/assets/Watson_-_Gaea_Diagnostics_06-12-51-PM.png"></figure>
+![](/.data/assets/Watson_-_Gaea_Diagnostics_06-12-51-PM.png)
 
 You can expand this dialog to examine the contents of the package. Almost all data is plain text and can be examined.&#x20;
 
@@ -19,7 +19,7 @@ You can expand this dialog to examine the contents of the package. Almost all da
 
 To enable quick and hassle-free sharing, you can choose to send the Watson Log directly to our secure server. In return, you will be given a Log Receipt code such as `0A7-20241113`. If you are contacting our Tech Support team, you can give this code to them along with a description of your issue and we will retrieve it from our server and diagnose the issue.
 
-<figure><img src="/.data/assets/Gaea_Watson_06-13-21-PM.png" width="266"></figure>
+![](/.data/assets/Gaea_Watson_06-13-21-PM.png)
 
 :::info
 While it is risky to share a Diagnostics Log zip file publicly, like in Discord or Forums, it is completely safe to share the Log Receipt code. The code can only be used by authorized QuadSpinner team members to access your log.
@@ -52,7 +52,7 @@ All diagnostics logs are collected directly by QuadSpinner support - these are n
 
 Lastly, as we ask you trust us with your data, we trust you with ours. The zip file is editable. If you find any information you prefer not to share, you may remove it before submitting the package.&#x20;
 
-<figure><img src="/.data/assets/Package_Viewer_06-13-06-PM.png"></figure>
+![](/.data/assets/Package_Viewer_06-13-06-PM.png)
 
 However, please note that removing any data critical to Gaea's operation may hinder our ability to provide effective technical support so please be sure you know what information your are removing.
 

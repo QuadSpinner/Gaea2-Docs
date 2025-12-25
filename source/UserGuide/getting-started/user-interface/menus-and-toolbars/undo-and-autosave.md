@@ -9,7 +9,7 @@ uid: undo-and-autosave
 
 The Undo menu lists recent actions and allows you undo them.
 
-<figure><img src="//.data/assets/undo_menu.png"></figure>
+![](/.data/assets/undo_menu.png)
 
 The Undo menu also acts as a history readout, showing you exactly what changes were made in each step. For example, when a node value is changed, it will show you the name of the node, the name of the modified property, and the before and after values.
 
@@ -17,7 +17,7 @@ The Undo menu also acts as a history readout, showing you exactly what changes w
 
 The Autosave feature in Gaea is a crucial tool designed to automatically save your project at regular intervals. This ensures that your work is periodically backed up, minimizing data loss in the event of unexpected software shutdowns or system failures.
 
-<figure><img src="//.data/assets/image (38).png"></figure>
+![](/.data/assets/image (38).png)
 
 **Remind Me to Save Every.** This option allows you to set the frequency of the Autosave reminders. You can choose from the following intervals **5 minutes, 10 minutes, 15 minutes, 30 minutes.**
 

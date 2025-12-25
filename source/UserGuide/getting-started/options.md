@@ -10,7 +10,7 @@ uid: options
 
 The **General** tab provides essential application-wide preferences, controlling how Gaea launches, handles logs, updates, licensing, and diagnostic tools. These settings affect global behavior rather than project-specific options.
 
-<figure><img src="/.data/assets/Options_-_General_09-56-50-PM.png"></figure>
+![](/.data/assets/Options_-_General_09-56-50-PM.png)
 
 ***
 
@@ -57,7 +57,7 @@ Verbose logging should only be enabled when troubleshooting to avoid excessive d
 
 The **Paths** tab defines where Gaea stores and retrieves user data and project files. Properly configuring these paths ensures smooth operation, faster backups, and prevents accidental data loss or corruption.
 
-<figure><img src="/.data/assets/Options_-_Paths_09-56-52-PM.png"></figure>
+![](/.data/assets/Options_-_Paths_09-56-52-PM.png)
 
 ***
 
@@ -115,7 +115,7 @@ Storing builds in a separate drive or location is recommended, especially if you
 
 The **Toolbox** tab customizes the appearance, organization, and search behavior of the node toolbox, improving workflow efficiency and navigation within Gaea’s graph editor.
 
-<figure><img src="/.data/assets/Options_-_Toolbox_09-56-54-PM.png"></figure>
+![](/.data/assets/Options_-_Toolbox_09-56-54-PM.png)
 
 ***
 
@@ -179,7 +179,7 @@ Limits the number of search results displayed:
 
 The **Graph** tab controls the behavior, snapping, and visibility of certain interface elements within the node graph workspace, allowing customization of layout precision and shortcut handling.
 
-<figure><img src="/.data/assets/Options_-_Graph_09-56-57-PM.png"></figure>
+![](/.data/assets/Options_-_Graph_09-56-57-PM.png)
 
 ***
 
@@ -226,7 +226,7 @@ Determines the distance between snap points on the graph grid:
 
 The **Node** tab manages the appearance and interaction behavior of nodes in the graph workspace, allowing customization of visual style, connection handling, and data display precision.
 
-<figure><img src="/.data/assets/Options_-_Node_09-56-59-PM.png"></figure>
+![](/.data/assets/Options_-_Node_09-56-59-PM.png)
 
 ***
 
@@ -292,7 +292,7 @@ The **Node** tab manages the appearance and interaction behavior of nodes in the
 
 The **Data View** tab controls the appearance and expansion behavior of the Data View panel, allowing you to choose how icons are displayed and whether the view should auto-expand for easier navigation.
 
-<figure><img src="/.data/assets/Options_-_Data_View_09-57-01-PM.png"></figure>
+![](/.data/assets/Options_-_Data_View_09-57-01-PM.png)
 
 ***
 
@@ -325,7 +325,7 @@ Determines the visual style of icons shown in the Data View:
 
 The **Build** tab defines the default output location, file formats, and memory handling preferences for builds in Gaea. These settings apply globally unless overridden in individual project build settings.
 
-<figure><img src="/.data/assets/Options_-_Build_09-57-03-PM.png"></figure>
+![](/.data/assets/Options_-_Build_09-57-03-PM.png)
 
 ***
 
@@ -380,7 +380,7 @@ Specifies the output format for each data type:
 
 The **Cache** tab manages how Gaea stores temporary data and autosaves, allowing you to balance memory usage, disk performance, and long-term cleanup.
 
-<figure><img src="/.data/assets/Options_-_Cache_09-57-05-PM.png"></figure>
+![](/.data/assets/Options_-_Cache_09-57-05-PM.png)
 
 ***
 
@@ -435,7 +435,7 @@ The **Cache** tab manages how Gaea stores temporary data and autosaves, allowing
 
 The **Viewport** tab allows you to configure the visual display settings for Gaea’s 3D viewport. These options affect how terrains and masks are rendered during editing and previewing.
 
-<figure><img src="/.data/assets/Options_-_Viewport_09-57-08-PM.png"></figure>
+![](/.data/assets/Options_-_Viewport_09-57-08-PM.png)
 
 ***
 
@@ -495,7 +495,7 @@ The **Viewport** tab allows you to configure the visual display settings for Gae
 
 The **Navigation** tab allows you to customize how you interact with the 3D viewport using your mouse and keyboard. It provides full control over button assignments, sensitivity, and directional preferences.
 
-<figure><img src="/.data/assets/Options_-_Navigation_09-57-10-PM.png"></figure>
+![](/.data/assets/Options_-_Navigation_09-57-10-PM.png)
 
 ***
 
@@ -554,7 +554,7 @@ This section defines which mouse button performs each navigation action in the v
 
 The **Lazy Menu** tab lets you control the visibility and prominence of key panels and tools in the Lazy Menu interface. This helps declutter the UI or highlight frequently used options for faster access.
 
-<figure><img src="/.data/assets/Options_-_Lazy_Menu_09-57-12-PM.png"></figure>
+![](/.data/assets/Options_-_Lazy_Menu_09-57-12-PM.png)
 
 ***
 
@@ -597,7 +597,7 @@ Each menu item can be set to one of three modes:
 
 The **Compute** tab allows you to configure which available hardware devices are used for computation, optimizing performance across CPU and GPU resources.
 
-<figure><img src="/.data/assets/Options_-_Compute_09-57-14-PM.png"></figure>
+![](/.data/assets/Options_-_Compute_09-57-14-PM.png)
 
 ***
 
@@ -649,7 +649,7 @@ See [cpu-only-mode.md](../troubleshooting/diagnostics-watson/cpu-only-mode.html)
 
 The **Experimental** tab provides access to preview and in-development features of Gaea. These options are **not final** and may change or be removed in future updates. They can improve performance or alter behavior but may cause instability.
 
-<figure><img src="/.data/assets/Options_-_Experimental_09-57-20-PM.png"></figure>
+![](/.data/assets/Options_-_Experimental_09-57-20-PM.png)
 
 ***
 

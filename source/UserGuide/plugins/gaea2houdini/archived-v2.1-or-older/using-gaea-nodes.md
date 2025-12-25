@@ -9,19 +9,19 @@ uid: using-gaea-nodes
 
 Create a [Heightfield](https://www.sidefx.com/docs/houdini/nodes/sop/heightfield.html) node. Ensure the Division Mode is set to `By Axis` and Grid Samples are set to `1024`, `2048`, `4096`, or `8192`. These are the resolutions supported by Gaea.
 
-<figure><img src="//.data/assets/untitled.hip_-_Houdini_FX_20.5.410_-_Py3.11_08-15-11-PM.png"></figure>
+![](/.data/assets/untitled.hip_-_Houdini_FX_20.5.410_-_Py3.11_08-15-11-PM.png)
 
 Right-click and type `Gaea` to see a list of available Gaea nodes.
 
-<figure><img src="//.data/assets/untitled.hip_-_Houdini_FX_20.5.410_-_Py3.11_08-18-53-PM.png"></figure>
+![](/.data/assets/untitled.hip_-_Houdini_FX_20.5.410_-_Py3.11_08-18-53-PM.png)
 
 Create a Gaea node and connect it to the Heightfield output.
 
-<figure><img src="//.data/assets/untitled.hip_-_Houdini_FX_20.5.410_-_Py3.11_08-21-31-PM.png"></figure>
+![](/.data/assets/untitled.hip_-_Houdini_FX_20.5.410_-_Py3.11_08-21-31-PM.png)
 
 Select the Gaea node to edit its properties. Houdini will show you the results in the viewport.
 
-<figure><img src="//.data/assets/XHoudiniGaea2Houdinihipexample.hip_-_Houdini_Appre_08-58-55-PM.png"></figure>
+![](/.data/assets/XHoudiniGaea2Houdinihipexample.hip_-_Houdini_Appre_08-58-55-PM.png)
 
 ### Primitives / Generators
 
@@ -35,7 +35,7 @@ When you create a generator such as Mountain, Houdini will automatically create 
 
 Gaea nodes have two additional properties that control Gaea2Houdini's communication with the Gaea engine.
 
-<figure><img src="//.data/assets/untitled.hip_-_Houdini_FX_20.5.410_-_Py3.11_08-21-38-PM.png"></figure>
+![](/.data/assets/untitled.hip_-_Houdini_FX_20.5.410_-_Py3.11_08-21-38-PM.png)
 
 ### **Changing Default Port Value**
 

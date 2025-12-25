@@ -10,7 +10,7 @@ uid: uninstall-or-clean-install
 
 Before uninstalling Gaea, go to Help > About and select "**Release License**". This will release your license's activation slot. You can re-activate when you reinstall Gaea again or on another computer.
 
-<figure><img src="/.data/assets/About_01-58-02-AM.png"></figure>
+![](/.data/assets/About_01-58-02-AM.png)
 
 Once the license has been released, close Gaea. Go to Installed Apps in Windows Settings (or Add/Remove Programs in older versions) and uninstall Gaea.
 
@@ -22,7 +22,7 @@ If you are experiencing any unusual behavior, it is often a good idea to try a c
 
 Before performing a clean install, you can try a "Reset". Open Options in Gaea and select Factory Reset or open Gaea Diagnostics from the Start Menu and select "Reset to factory defaults". It also gives you an option backup your settings.
 
-<figure><img src="/.data/assets/Gaea_Diagnostics_04-47-41-AM.png" width="288"></figure>
+![](/.data/assets/Gaea_Diagnostics_04-47-41-AM.png)
 
 Once you have tried this reset, check if Gaea's errant behavior has been fixed.
 
@@ -30,7 +30,7 @@ If it is still not fixed, you can perform a clean install by first uninstalling 
 
 Releasing the license helps avoid re-authorization issues from a "double installation" on the same computer.
 
-<figure><img src="/.data/assets/About_01-58-02-AM.png"></figure>
+![](/.data/assets/About_01-58-02-AM.png)
 
 Once the license has been released, close Gaea. Go to Installed Apps in Windows Settings (or Add/Remove Programs in older versions) and uninstall Gaea.
 

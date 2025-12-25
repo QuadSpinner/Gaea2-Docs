@@ -5,4 +5,4 @@ uid: automation-view
 
 # Automation View
 
-{% include "//.data/includes/under-construction.md" %}
+{% include "/.data/includes/under-construction.md" %}

@@ -9,7 +9,7 @@ uid: understanding-erosion
 
 Erosion is a fundamental process in the natural world that plays a crucial role in shaping terrains. Gaea 2 takes inspiration from this natural phenomenon, meticulously mimicking the laws of nature to create realistic and dynamic landscapes. This powerful feature combines the rigor of scientific accuracy with the flexibility of artistic control, offering you an unparalleled tool for terrain creation.
 
-<figure><img src="/.data/assets/e4c_-_ACDSee_Photo_Studio_Home_2024_03-05-29-AM.jpg"></figure>
+![](/.data/assets/e4c_-_ACDSee_Photo_Studio_Home_2024_03-05-29-AM.jpg)
 
 By simply adding an erosion node and adjusting a control or two, you can achieve remarkable results with minimal effort. However, the true potential of Gaea 2’s erosion capabilities lies in the depth and nuance available within this versatile set of nodes. Whether you're looking for quick, beautiful results or seeking to fine-tune every aspect of your terrain's erosion, Gaea 2 provides the tools to make it happen.
 
@@ -17,7 +17,7 @@ By simply adding an erosion node and adjusting a control or two, you can achieve
 
 Erosion is the primary process through which we turn abstract and geometric shapes into believable terrains. It is one of the most crucial parts of any procedural terrain.
 
-<figure><img src="/.data/assets/erosion_s85.jpg"></figure>
+![](/.data/assets/erosion_s85.jpg)
 
 The Erosion node is the primary erosion node in Gaea. It provides sophisticated erosion with a very easy to use interface. The Erosion node provides control over the scale, where you can choose the size of the largest erosion feature and the overall scale of the terrain.
 
@@ -35,13 +35,13 @@ Let's explore this with a simple example.
 
 We start with a RadialGradient with absolutely no features. We apply Warp to add noise warping to the smooth shape to bring out some random detail. Then we apply 2 passes of Erosion_2 and let it automatically carve out realistic details into the terrain.
 
-<figure><img src="/.data/assets/Gaea_-_explain_erosion.terrain_10-45-41-PM.png"><figcaption><p>A basic RadialGradient primitive.</p></figcaption></figure>
+![A basic RadialGradient primitive.](/.data/assets/Gaea_-_explain_erosion.terrain_10-45-41-PM.png)
 
-<figure><img src="/.data/assets/Gaea_-_explain_erosion.terrain_10-45-43-PM.png"><figcaption><p>Add Warp (either with a Warp node, or the Warp modifier) to the RadialGradient.</p></figcaption></figure>
+![Add Warp (either with a Warp node, or the Warp modifier) to the RadialGradient.](/.data/assets/Gaea_-_explain_erosion.terrain_10-45-43-PM.png)
 
-<figure><img src="/.data/assets/Gaea_-_explain_erosion.terrain_10-45-46-PM.png"><figcaption><p>Erosion_2 pass 1 to create the larger gullies and fluvial structures.</p></figcaption></figure>
+![Erosion_2 pass 1 to create the larger gullies and fluvial structures.](/.data/assets/Gaea_-_explain_erosion.terrain_10-45-46-PM.png)
 
-<figure><img src="/.data/assets/Gaea_-_explain_erosion.terrain_10-45-48-PM.png"><figcaption><p>Erosion_2 pass 2 to soften some of the ridges and compact the terrain further.</p></figcaption></figure>
+![Erosion_2 pass 2 to soften some of the ridges and compact the terrain further.](/.data/assets/Gaea_-_explain_erosion.terrain_10-45-48-PM.png)
 
 You can replace the RadialGradient with any other shape - whether an imported heightmap, hand-drawn ridge shape, or another primitive - and Erosion will convert it into a realistic landscape.
 
@@ -49,9 +49,9 @@ You can replace the RadialGradient with any other shape - whether an imported he
 
 Gaea's Erosion can be adapted to a large variety of shapes and processes. You can do this by fine-tuning settings in Erosion_2 or by using EasyErosion which provides preset processes through a simple interface.
 
-<div><figure><img src="/.data/assets/Gaea_2.0_04-58-50-PM.jpg"></figure> <figure><img src="/.data/assets/Gaea_2.0_04-58-46-PM.jpg"></figure> <figure><img src="/.data/assets/Gaea_2.0_04-58-36-PM.jpg"></figure></div>
+<div>![](/.data/assets/Gaea_2.0_04-58-50-PM.jpg) ![](/.data/assets/Gaea_2.0_04-58-46-PM.jpg) ![](/.data/assets/Gaea_2.0_04-58-36-PM.jpg)</div>
 
-<div><figure><img src="/.data/assets/Gaea_2.0_04-58-32-PM.jpg"></figure> <figure><img src="/.data/assets/Gaea_2.0_04-57-49-PM.jpg"></figure> <figure><img src="/.data/assets/Gaea_2.0_04-58-14-PM.jpg"></figure></div>
+<div>![](/.data/assets/Gaea_2.0_04-58-32-PM.jpg) ![](/.data/assets/Gaea_2.0_04-57-49-PM.jpg) ![](/.data/assets/Gaea_2.0_04-58-14-PM.jpg)</div>
 
 
 

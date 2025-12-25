@@ -243,7 +243,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     if (!nav) return;
 
-    const headings = Array.from(content.querySelectorAll("h1, h2, h3, h4"))
+    const headings = Array.from(content.querySelectorAll("h1, h2, h3"))
         .filter(h => (h.textContent || "").trim().length > 0);
 
     if (!headings.length) return;

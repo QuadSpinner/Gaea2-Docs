@@ -7,7 +7,7 @@ uid: property-editor-toolbar
 
 Property Editor Toolbar in placed on top of Property Editor. It provides various options related to the selected node in graph.
 
-<figure><img src="//.data/assets/Property Editor Toolbar.png"><figcaption><p>Property Editor Toolbar</p></figcaption></figure>
+![Property Editor Toolbar](/.data/assets/Property Editor Toolbar.png)
 
 
 
@@ -15,7 +15,7 @@ Replace Node: This dropdown menu lists nodes related to the currently selected n
 
 State Management: This dropdown provides various options to manage selected node state.
 
-<figure><img src="//.data/assets/Property Editor StateManagement.png" width="227"><figcaption><p>State management</p></figcaption></figure>
+![State management](/.data/assets/Property Editor StateManagement.png)
 
 * **Revert Changes**: Undo recent modifications and return the selected properties to their previous state.
 * **Reset to Defaults**: Restore the default settings for the selected properties.
@@ -23,11 +23,11 @@ State Management: This dropdown provides various options to manage selected node
 
 Toggle Gizmo: Activates when a node supports gizmo functionality. When enabled, it displays the gizmo for the selected node in the 3D viewport.
 
-<figure><img src="//.data/assets/Toggle Gizmo.png" width="38"></figure>
+![](/.data/assets/Toggle Gizmo.png)
 
 Property Editor submenu: offers a suite of options that allow users to fine-tune the behavior and appearance of selected nodes within the project.
 
-<figure><img src="//.data/assets/Property Editor Submenu.png" width="227"><figcaption><p>More options</p></figcaption></figure>
+![More options](/.data/assets/Property Editor Submenu.png)
 
 **Render Intent (Override) Submenu** This submenu allows users to customize the rendering behavior of the selected node in the viewport. Options include:
 
@@ -41,4 +41,4 @@ Show Help for this Node: It opens documentation page for the selected node.
 
 Node-specific commands are accessible via the Property Editor toolbar. The accompanying image illustrates the toolbar for a combine node, highlighting two available command buttons: "Switch Inputs" for rearranging the node inputs and "Add Input" for introducing additional input.
 
-<figure><img src="//.data/assets/Property Editor Commands.png"><figcaption><p>Node specific commands</p></figcaption></figure>
+![Node specific commands](/.data/assets/Property Editor Commands.png)

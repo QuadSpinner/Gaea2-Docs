@@ -17,13 +17,13 @@ When using the [organizing-with-tabs.md](organizing-with-tabs.html), Portals can
 
 Any output port in a node can be converted to a portal. You can create a portal in many ways:
 
-<figure><img src="/.data/assets/Convert to Portal (1).png"><figcaption><p>Right-click a connection to bring up the Connection menu and select "Convert to Portal</p></figcaption></figure>
+![Right-click a connection to bring up the Connection menu and select "Convert to Portal](/.data/assets/Convert to Portal (1).png)
 
-<figure><img src="/.data/assets/Nm7n3sItlh.png"><figcaption><p>The connection is replaced with Portals.</p></figcaption></figure>
+![The connection is replaced with Portals.](/.data/assets/Nm7n3sItlh.png)
 
 Right-click an existing connection and select "Convert to Portal".
 
-<div><figure><img src="/.data/assets/image (48).png"><figcaption><p>Press P to bring up the Portal menu.</p></figcaption></figure> <figure><img src="/.data/assets/image (49).png"><figcaption><p>Create or delete Portal connections in the Portal menu.</p></figcaption></figure></div>
+<div>![Press P to bring up the Portal menu.](/.data/assets/image (48).png) ![Create or delete Portal connections in the Portal menu.](/.data/assets/image (49).png)</div>
 
 Right-click a node and select `Manage Portals` (shortcut key `P`). Then select the port you wish to convert to a Portal. If the Port has existing connections, they will be converted to portal connections.
 
@@ -33,7 +33,7 @@ If you press `Shift` while Converting a Port to a Portal in the Manage Portals m
 ![](</.data/assets/image (71).png>)
 :::
 
-<figure><img src="/.data/assets/Gaea_-_Untitled_09-30-27-PM.png"></figure>
+![](/.data/assets/Gaea_-_Untitled_09-30-27-PM.png)
 
 When you select "Connect to Portal" in the Portal menu for any incoming ports, you will get a Search popup with a list of available Portals.
 

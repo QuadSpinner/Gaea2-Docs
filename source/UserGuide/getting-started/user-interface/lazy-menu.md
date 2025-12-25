@@ -13,14 +13,14 @@ In true lazy fashion, when you use the Lazy Menu to navigate to a section, your 
 This extra level of laziness can be disabled in the [#general](../options.md#general) Options.
 :::
 
-<figure><img src="/.data/assets/lazy_menu.png"></figure>
+![](/.data/assets/lazy_menu.png)
 
 ### Editing Options
 
 You may not want all options to visible or maybe just want some options to stand out over others. You can edit the Lazy Menu in Options > [#lazy-menu](../options.md#lazy-menu).
 
-<figure><img src="/.data/assets/Gaea Viewport Lazy Menu1.png"><figcaption><p>Lazy Menu options</p></figcaption></figure>
+![Lazy Menu options](/.data/assets/Gaea Viewport Lazy Menu1.png)
 
 This modifies the Lazy Menu with your desired levels of visibility.
 
-<figure><img src="/.data/assets/lazy_menu_modified.png"></figure>
+![](/.data/assets/lazy_menu_modified.png)

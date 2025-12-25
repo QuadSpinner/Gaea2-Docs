@@ -83,7 +83,7 @@ uid: untitled
 * [Understanding Erosion](using-gaea/understanding-erosion/)
   * [Erosion_2](using-gaea/understanding-erosion/erosion_2/)
     * [Erosion_2 in Action](using-gaea/understanding-erosion/erosion_2/erosion_2-in-action.md)
-  * [Erosion\_1](using-gaea/understanding-erosion/erosion_1.md)
+  * [Erosion_1](using-gaea/understanding-erosion/erosion_1.md)
   * [Thermal_2](using-gaea/understanding-erosion/thermal_2.md)
   * [Thermal Erosion](using-gaea/understanding-erosion/thermal-erosion.md)
 * [Simulations](using-gaea/simulations/)

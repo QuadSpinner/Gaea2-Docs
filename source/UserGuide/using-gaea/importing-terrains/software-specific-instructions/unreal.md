@@ -11,7 +11,7 @@ If you wish to import it by yourself, use [unreal-node.md](/build-and-export/app
 
 
 
-<figure><img src="//.data/assets/new-import-settings.png"></figure>
+![](/.data/assets/new-import-settings.png)
 
 1. Enter **Landscape** mode.
 2. Click **Import from File**.

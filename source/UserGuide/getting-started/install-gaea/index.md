@@ -6,7 +6,7 @@ uid: install-gaea
 
 # Install Gaea
 
-<figure><img src="/.data/assets/gaea-ui2x.webp"><figcaption><p>The Gaea 2.0 User Interface</p></figcaption></figure>
+![The Gaea 2.0 User Interface](/.data/assets/gaea-ui2x.webp)
 
 ## Download Gaea
 
@@ -48,13 +48,13 @@ Gaea is available in various forms to provide flexible methods of deployment, wh
 
 ### Setup Executable
 
-<div align="left"><figure><img src="/.data/assets/image (43).png" width="82"><figcaption><p>EXE</p></figcaption></figure></div>
+<div align="left">![EXE](/.data/assets/image (43).png)</div>
 
 The setup exe is our primary - and recommended - way of installing Gaea. It provides for both [regular-installation.md](regular-installation.html)and [portable-installation.md](portable-installation.html)while also setting up additional registry entries required for the [gaea2unreal](/plugins/gaea2unreal/) and [gaea2houdini](/plugins/gaea2houdini/) bridges.
 
 ### 7-Zip Package
 
-<div align="left"><figure><img src="/.data/assets/image (44).png" width="81"><figcaption><p>7zip file</p></figcaption></figure></div>
+<div align="left">![7zip file](/.data/assets/image (44).png)</div>
 
 The 7-zip package contains the exact same files as the setup executable; however, it is purely portable and does not create registry entries. It is very useful for advanced users or for System Administrators to create custom deployments. See [mass-deployment.md](mass-deployment.html) on how to enable Gaea2Unreal and Gaea2Houdini functionality in pure portable installs such as this.
 
@@ -102,7 +102,7 @@ We provide a VirusTotal report for our installer on the download page.
 
 All Gaea binaries¹ are signed with a code-signing certificate provided after rigorous verification of our organization by a Certificate Authority. These signed files prevent tampering. You can open the file properties to see the certificate signature and ensure that each file has not been tampered with.
 
-<div align="left"><figure><img src="/.data/assets/Certificate_03-08-17-AM.png" width="302"></figure></div>
+<div align="left">![](/.data/assets/Certificate_03-08-17-AM.png)</div>
 
 ¹ Exe and DLL files legally within QuadSpinner's ownership.
 

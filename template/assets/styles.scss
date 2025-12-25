@@ -41,6 +41,35 @@ body.dark {
   --pagefind-ui-tag: #252525;
 }
 
+#contents {
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 400;
+    margin-top: 24px;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+}
+
 .pagefind-ui {
   border-radius: 4px;
   border: 0;
@@ -465,4 +494,18 @@ body.dark {
 
 .text-right {
   text-align: right;
+}
+
+#site-search {
+  #searchPopup {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 8px 32px rgba(0, 0, 0, 0.5);
+    width: 25vw !important;
+    max-height: 60vh;
+    overflow: auto;
+    border-radius: .75rem;
+  }
+
+  mark {
+    background: rgba(255, 193, 7, .35);
+  }
 }

@@ -21,7 +21,7 @@ To prevent specific nodes from being affected, you can try [baking-nodes](/using
 
 The fastest way to set up mutations, is to go to Build menu > Batch Build Manager and use the `Add Mutation` button to queue up as many mutations as you want.
 
-<figure><img src="/.data/assets/Batch_Build_Manager_08-19-54-PM.png"></figure>
+![](/.data/assets/Batch_Build_Manager_08-19-54-PM.png)
 
 If you find yourself repeating these builds, save the batch build as a Windows Batch (.bat) file.
 

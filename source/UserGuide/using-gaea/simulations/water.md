@@ -7,17 +7,17 @@ uid: water
 
 Create lakes, rivers, and even seas that follow physical rules, which not only produce a body of water, but also correspondingly affect the surrounding environment.
 
-<figure><img src="/.data/assets/water.webp"></figure>
+![](/.data/assets/water.webp)
 
 ### Lakes
 
-<figure><img src="/.data/assets/water-lakes.webp"></figure>
+![](/.data/assets/water-lakes.webp)
 
 ### Rivers
 
-<figure><img src="/.data/assets/water-rivers.webp"></figure>
+![](/.data/assets/water-rivers.webp)
 
 ### Sea&#x20;
 
-<figure><img src="/.data/assets/water-sea.webp"></figure>
+![](/.data/assets/water-sea.webp)
 
