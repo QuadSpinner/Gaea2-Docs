@@ -1,7 +1,7 @@
 ---
 icon: suitcase-medical
 title: Common Issues
-uid: common-issues
+uid: common-workarounds
 ---
 
 # Common Issues and Workarounds

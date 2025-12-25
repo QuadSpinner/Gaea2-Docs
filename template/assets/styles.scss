@@ -84,6 +84,13 @@ body.dark {
     color: var(--toc-link);
     text-decoration: none;
 
+    &:not(.disabled):hover {
+      text-decoration: none;
+      color: var(--toc-link-hover);
+      background-color: transparent;
+      border-bottom: 1px solid #777;
+    }
+
     &.active {
       text-decoration: none;
       border-bottom-width: 1px;
@@ -108,13 +115,6 @@ body.dark {
       &:nth-child(6) {
         border-bottom-color: #8dfa34;
       }
-    }
-
-    &:hover {
-      text-decoration: none;
-      color: var(--toc-link-hover);
-      background-color: transparent;
-      border-bottom: 1px solid #777;
     }
 
   }
@@ -445,7 +445,7 @@ body.dark {
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid transparent;
     transition: all linear 0.2s;
-    
+
     &:focus,
     &:-moz-focusring {
       background-color: rgba(0, 0, 0, 0.75);

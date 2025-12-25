@@ -1,66 +1,11 @@
 ---
 title: untitled
-uid: untitled
+uid: untitled3
 ---
 
 # Table of contents
 
 * [Home](/)
-
-## Getting Started
-
-* [Install Gaea](getting-started/install-gaea/)
-  * [Regular Installation](getting-started/install-gaea/regular-installation.md)
-  * [Portable Installation](getting-started/install-gaea/portable-installation.md)
-  * [Mass Deployment](getting-started/install-gaea/mass-deployment.md)
-  * [Troubleshooting](getting-started/install-gaea/troubleshooting.md)
-  * [Version Numbers](getting-started/install-gaea/version-numbers.md)
-  * [Uninstall or Clean Install](getting-started/install-gaea/uninstall-or-clean-install.md)
-* [License Management](getting-started/license-management/)
-  * [Activation](getting-started/license-management/activation.md)
-  * [Deactivation](getting-started/license-management/deactivation.md)
-  * [Hardware Thumbprint](getting-started/license-management/hardware-thumbprint.md)
-  * [Floating License](getting-started/license-management/floating-license.md)
-  * [Errors and Troubleshooting](getting-started/license-management/errors-and-troubleshooting.md)
-* [User Interface](getting-started/user-interface/)
-  * [Graph](getting-started/user-interface/graph.md)
-  * [Viewport](getting-started/user-interface/viewport/)
-    * [Render Modes](getting-started/user-interface/viewport/render-modes.md)
-    * [2D Viewport](getting-started/user-interface/viewport/2d-viewport.md)
-    * [Measurement Tools](getting-started/user-interface/viewport/measurement-tools.md)
-  * [Property Editor](getting-started/user-interface/property-editor/)
-    * [Modifier Stack](getting-started/user-interface/property-editor/modifier-stack.md)
-    * [Presets](getting-started/user-interface/property-editor/presets.md)
-    * [Binding Variables](getting-started/user-interface/property-editor/binding-variables.md)
-  * [Data Editor](getting-started/user-interface/data-editor/)
-    * [Terrain View](getting-started/user-interface/data-editor/terrain-view.md)
-    * [Export View](getting-started/user-interface/data-editor/export-view.md)
-    * [Automation View](getting-started/user-interface/data-editor/automation-view.md)
-  * [Menus and Toolbars](getting-started/user-interface/menus-and-toolbars/)
-    * [Main Menu](getting-started/user-interface/menus-and-toolbars/main-menu.md)
-    * [Undo and Autosave](getting-started/user-interface/menus-and-toolbars/undo-and-autosave.md)
-    * [Graph Toolbar](getting-started/user-interface/menus-and-toolbars/graph-toolbar.md)
-    * [Viewport Toolbar](getting-started/user-interface/menus-and-toolbars/viewport-toolbar.md)
-    * [Property Editor Toolbar](getting-started/user-interface/menus-and-toolbars/property-editor-toolbar.md)
-    * [Data Editor Toolbar](getting-started/user-interface/menus-and-toolbars/data-editor-toolbar.md)
-  * [Lazy Menu](getting-started/user-interface/lazy-menu.md)
-  * [Keyboard Shortcuts](getting-started/user-interface/keyboard-shortcuts.md)
-* [The Graph](getting-started/the-graph/)
-  * [Procedural Workflow](getting-started/the-graph/procedural-workflow.md)
-  * [Toolbox and Search](getting-started/the-graph/toolbox-and-search.md)
-  * [Lock Preview and Underlays](getting-started/the-graph/lock-preview-and-underlays.md)
-  * [Suspending Engine](getting-started/the-graph/suspending-engine.md)
-  * [Graph Conveniences](getting-started/the-graph/graph-conveniences.md)
-  * [Portals and Chokepoints](getting-started/the-graph/portals-and-chokepoints.md)
-  * [Organizing with Tabs](getting-started/the-graph/organizing-with-tabs.md)
-  * [Annotations](getting-started/the-graph/annotations.md)
-  * [Groups](getting-started/the-graph/groups.md)
-* [Options](getting-started/options.md)
-* [Autosave and Recovery](getting-started/autosave-and-recovery.md)
-* [Command-line Interface](getting-started/command-line-interface.md)
-* [For Gaea 1 Users](getting-started/for-gaea-1-users/)
-  * [Migration Guide](getting-started/for-gaea-1-users/migration-guide.md)
-  * [Node Changes](getting-started/for-gaea-1-users/node-changes.md)
 
 ## Using Gaea
 

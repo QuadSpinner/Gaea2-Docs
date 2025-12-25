@@ -1,7 +1,7 @@
 ---
 icon: stethoscope
-title: untitled
-uid: untitled
+title: Diagnostics
+uid: diagnostics
 ---
 
 # Diagnostics (Watson)

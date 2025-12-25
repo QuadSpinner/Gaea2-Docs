@@ -1,7 +1,7 @@
 ---
 icon: power-off
 title: Home
-uid: home-user-guide
+uid: home-getting-started
 ---
 
 ## Gaea 2 Documentation
