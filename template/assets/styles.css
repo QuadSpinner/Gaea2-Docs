@@ -10,12 +10,6 @@
   --toc-border-active: #000;
   --toc-chevron: rgba(0, 0, 0, 0.55);
   --page-header: rgba(0, 0, 0, 0.05);
-  --danger--callout: #d25049;
-  --info--callout: #4ff0b7;
-  --note--callout: #457dcd;
-  --success--callout: #579d5a;
-  --tip--callout: #347d39;
-  --warning--callout: #b88827;
 }
 
 html[data-bs-theme=dark],
@@ -28,12 +22,6 @@ body.dark {
   --toc-border: rgba(255, 255, 255, 0.18);
   --toc-border-active: #00abd7;
   --toc-chevron: rgba(255, 255, 255, 0.55);
-  --danger--callout: #d25049;
-  --info--callout: #4ff0b7;
-  --note--callout: #457dcd;
-  --success--callout: #579d5a;
-  --tip--callout: #347d39;
-  --warning--callout: #b88827;
 }
 
 #contents h1,
@@ -137,7 +125,7 @@ body.dark {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding-left: 18px;
+  padding-left: 0px;
 }
 #site-nav ul li a:hover,
 #site-nav-2 ul li a:hover {
@@ -295,6 +283,13 @@ body.dark {
 #page-nav ul li.h4 > a {
   font-size: 13px;
   font-weight: 500;
+}
+
+.small img {
+  width: 50%;
+  height: auto;
+  display: block;
+  text-align: center;
 }
 
 .note {
@@ -455,6 +450,16 @@ body.dark {
   border-radius: 4px;
   padding: 16px;
   margin-bottom: 36px;
+}
+.head-block .doc-title span:nth-child(1) {
+  font-size: 11px;
+  font-weight: 600;
+  display: block;
+}
+.head-block .doc-title span:nth-child(2) {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .site-title {

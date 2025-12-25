@@ -12,7 +12,7 @@
 </head>
 
 <body data-hive="%%HIVE%%" data-hive-shortname="%%SHORTNAME%%" data-slug="%%SLUG%%">
-    <div class="container-xl">
+    <div class="container-fluid">
         <header class="mt-5">
             <div class="row head-block">
                 <div class="col-2">
@@ -49,14 +49,13 @@
                         <a class="p-2 nav-item" data-hive="Node Reference" href="/Reference">Nodes</a>
                         <a class="p-2 nav-item" data-hive="Guides" href="/Guides">Guides</a>
                         <a class="p-2 nav-item" data-hive="Videos" href="/Guides">Videos</a>
-                        <div class="flex-fill nav-item disabled p-2"></div>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
                         <a class="p-2 nav-item" data-hive="Developers" href="/Developers">Developers</a>
                         <a class="p-2 nav-item" data-hive="Changelog" href="/Changelog">Changelog</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
                     </div>
                 </div>
             </div>
-
-
         </header>
 
         <div class="page-wrapper">
@@ -102,7 +101,7 @@
                     </div>
                     <div class="row align-top">
 
-                        <div class="col px-5">
+                        <div class="col col-lg-6 px-5">
                             <main id="contents">%%CONTENT%%</main>
                         </div>
                         <div class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
