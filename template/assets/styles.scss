@@ -11,34 +11,34 @@
   --toc-border: #ccc;
   --toc-border-active: #000;
   --toc-chevron: rgba(0, 0, 0, 0.55);
-  --pagefind-ui-scale: 1;
-  --pagefind-ui-primary: #034ad8;
-  --pagefind-ui-text: #393939;
-  --pagefind-ui-background: #ffffff;
-  --pagefind-ui-border: #eeeeee;
-  --pagefind-ui-tag: #eeeeee;
-  --pagefind-ui-border-width: 2px;
-  --pagefind-ui-border-radius: 8px;
-  --pagefind-ui-image-border-radius: 8px;
-  --pagefind-ui-image-box-ratio: 3 / 2;
-  --pagefind-ui-font: "Segoe UI", sans-serif;
+  --page-header: rgba(0, 0, 0, 0.05);
+
+  --danger--callout: #d25049;
+  --info--callout: #4ff0b7;
+  --note--callout: #457dcd;
+  --success--callout: #579d5a;
+  --tip--callout: #347d39;
+  --warning--callout: #b88827;
 }
 
 html[data-bs-theme="dark"],
 body.dark {
   // Dark (tuned for contrast on dark backgrounds)
+  --page-header: rgba(255, 255, 255, 0.05);
   --toc-section: rgba(255, 255, 255, 0.92);
   --toc-link: rgba(255, 255, 255, 0.62);
   --toc-link-hover: rgba(255, 255, 255, 0.86);
-  --toc-link-active: rgba(255, 255, 255, 0.95);
+  --toc-link-active: #00abd7;
   --toc-border: rgba(255, 255, 255, 0.18);
-  --toc-border-active: rgba(255, 255, 255, 0.55);
+  --toc-border-active: #00abd7;
   --toc-chevron: rgba(255, 255, 255, 0.55);
-  --pagefind-ui-primary: #eeeeee;
-  --pagefind-ui-text: #eeeeee;
-  --pagefind-ui-background: #1c1c1c;
-  --pagefind-ui-border: #2a2a2a;
-  --pagefind-ui-tag: #252525;
+
+  --danger--callout: #d25049;
+  --info--callout: #4ff0b7;
+  --note--callout: #457dcd;
+  --success--callout: #579d5a;
+  --tip--callout: #347d39;
+  --warning--callout: #b88827;
 }
 
 #contents {
@@ -70,112 +70,18 @@ body.dark {
 
 }
 
-.pagefind-ui {
-  border-radius: 4px;
-  border: 0;
-  background: none;
-  z-index: 59829;
-
-  .pagefind-ui__form.svelte-e9gkc3::before {
-    top: 9px !important;
-  }
-
-  &:focus,
-  &:-moz-focusring {
-    border: 1px solid #4ff0b7;
-    box-shadow: none !important;
-  }
-
-  .pagefind-ui__search-input {
-    font-size: 14px !important;
-    font-weight: 400 !important;
-    height: 32px !important;
-    border: 1px solid #aaa;
-
-
-  }
-
-  .pagefind-ui__search-clear {
-    top: 8px !important;
-    height: 16px !important;
-  }
-
-  .pagefind-ui__drawer {
-    position: absolute;
-    background: #000;
-    z-index: 59829;
-    width: 28vw;
-    padding: 8px;
-    border-radius: 6px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 8px 32px rgba(0, 0, 0, 0.5);
-
-    .pagefind-ui__results-area {
-      margin-top: 0px !important;
-
-      .pagefind-ui__message {
-        padding-left: 64px;
-      }
-    }
-
-    .pagefind-ui__result-thumb {
-      display: none !important;
-    }
-
-    mark {
-      background: none !important;
-      color: #fff !important;
-      text-decoration: underline !important;
-      text-decoration-color: #ffcc00 !important;
-      text-decoration-skip-ink: all !important;
-    }
-
-    .pagefind-ui__result {
-      border: 0;
-      margin: 4px;
-      background-color: #373939;
-      padding: 0px !important;
-      border-radius: 6px;
-
-      .pagefind-ui__result-nested {
-
-        .pagefind-ui__result-title {
-          font-weight: 600;
-          font-size: 13px;
-        }
-
-        .pagefind-ui__result-link::before {
-          display: none;
-        }
-
-      }
-
-      * {
-        font-size: smaller;
-      }
-
-      .pagefind-ui__result-inner {
-        padding: 6px 12px;
-        margin: 0 !important;
-      }
-
-      .pagefind-ui__result-excerpt {
-        color: #aaa;
-      }
-    }
-  }
-}
-
 .hive-nav {
 
+  margin-top: 36px;
   margin-bottom: 36px;
 
   .nav-item {
     padding: 0;
     margin: 0;
-    border-bottom: 1px solid var(--tblr-body-color);
+    border-bottom: 1px solid var(--toc-border);
     font-size: 11px;
     font-weight: 600;
-    transition: all linear 0.2s;
+    transition: color linear 0.2s;
     text-align: center;
     color: var(--toc-link);
     text-decoration: none;
@@ -183,7 +89,7 @@ body.dark {
     &.active {
       text-decoration: none;
       border-bottom-width: 1px;
-      color: var(--toc-link-active);
+      color: var(--toc-section);
 
       &:nth-child(1) {
         border-bottom-color: #ffcc00;
@@ -195,6 +101,14 @@ body.dark {
 
       &:nth-child(3) {
         border-bottom-color: #fa3473;
+      }
+
+      &:nth-child(5) {
+        border-bottom-color: #c067f0;
+      }
+
+      &:nth-child(6) {
+        border-bottom-color: #8dfa34;
       }
     }
 
@@ -234,7 +148,7 @@ body.dark {
 
     li {
       list-style: none;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 500;
       padding-top: 3px;
       padding-bottom: 3px;
@@ -351,7 +265,14 @@ body.dark {
 
 // On-page TOC (same palette)
 #page-nav {
-  width: 260px;
+  * {
+    white-space: normal;
+    /* not single-line */
+    overflow-wrap: anywhere;
+    /* break long tokens/urls */
+    word-break: break-word;
+    /* fallback */
+  }
 
   ul {
     margin: 0;
@@ -372,6 +293,11 @@ body.dark {
         align-items: center;
         gap: 1px;
         padding-left: 18px;
+        flex-wrap: wrap;
+        /* allows items to wrap to next line */
+        min-width: 0;
+        /* critical for flex children to shrink */
+        max-width: 100%;
 
         &:hover {
           color: var(--toc-link-hover);
@@ -498,14 +424,55 @@ body.dark {
 
 #site-search {
   #searchPopup {
+    background: #111;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 8px 32px rgba(0, 0, 0, 0.5);
-    width: 25vw !important;
+    min-width: 25vw !important;
+    width: 100%;
     max-height: 60vh;
     overflow: auto;
-    border-radius: .75rem;
+    border-radius: 4px;
+
+    .list-group-item {
+      font-size: smaller;
+    }
+  }
+
+  #searchBox {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 11px;
+    padding: 3px 12px;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+
+    &:focus,
+    &:-moz-focusring {
+      border-bottom: 1px solid #4ff0b7;
+      box-shadow: none !important;
+    }
   }
 
   mark {
     background: rgba(255, 193, 7, .35);
   }
+}
+
+
+.hive-bar {
+
+  .navbar-nav {
+    .navbar-item {
+      .nav-link {
+        color: #ffcc00;
+        padding: 0 !important;
+      }
+    }
+  }
+}
+
+.head-block {
+  background: var(--page-header);
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 36px;
 }
