@@ -7,7 +7,7 @@ uid: unreal-quickstart
 
 The easiest way to import a Gaea terrain into Unreal Engine is to use the [gaea2unreal](/../plugins/gaea2unreal/) plugin.
 
-If you wish to import it by yourself, use [unreal-node.md](/build-and-export/application-specific-export-nodes/unreal-node.html) to prepare the output to fit your terrain size as required by Unreal Engine. Then you can manually import the terrain.
+If you wish to import it by yourself, use [unreal-node](/build-and-export/application-specific-export-nodes/unreal-node.html) to prepare the output to fit your terrain size as required by Unreal Engine. Then you can manually import the terrain.
 
 
 

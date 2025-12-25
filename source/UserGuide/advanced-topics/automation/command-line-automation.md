@@ -7,7 +7,7 @@ uid: command-line-automation
 
 Gaea's Build Swarm (`Gaea.Swarm.exe`) can be automated via the command line interface.
 
-See [command-line-interface.md](/getting-started/command-line-interface.html) for details on the full CLI available in both Gaea.exe and Gaea.Swarm.exe&#x20;
+See [command-line-interface](/getting-started/command-line-interface.html) for details on the full CLI available in both Gaea.exe and Gaea.Swarm.exe&#x20;
 
 ## Arguments
 
@@ -51,5 +51,5 @@ switchErosionProcess=1
 Variable names cannot be repeated.
 :::
 
-To see how variables can be bound to node properties, see [variables.md](/developers/scripting-and-expressions/variables.html)
+To see how variables can be bound to node properties, see [variables](/developers/scripting-and-expressions/variables.html)
 

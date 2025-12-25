@@ -18,7 +18,7 @@ When you change a property, the effect is immediately applied and made visible i
 * **Color**: They allow you to choose a color for the color production nodes.
 * **File**: They allow you to choose a file from your computer.
 
-Sliders with unmodified (default) values are shown with slightly muted colors. This can be controlled through [options.md](/options.html).
+Sliders with unmodified (default) values are shown with slightly muted colors. This can be controlled through [options](/options.html).
 
 Some nodes may have unique controls specific to them.
 

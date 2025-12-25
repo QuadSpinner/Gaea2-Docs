@@ -11,7 +11,7 @@ uid: using-modifiers
 
 The Modifier Stack provides quick access to common adjustments, masks, and modifications that you may wish to apply to a node. Traditionally, node-based software would require you to create an additional node for each such adjustment - often resulting in complicated graphs that are difficult to manage.
 
-For basic information about Modifiers, see [modifier-stack.md](/getting-started/user-interface/property-editor/modifier-stack.html)
+For basic information about Modifiers, see [modifier-stack](/getting-started/user-interface/property-editor/modifier-stack.html)
 
 ### Fast and Less Overhead
 

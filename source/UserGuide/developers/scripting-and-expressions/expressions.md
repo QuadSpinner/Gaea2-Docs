@@ -7,7 +7,7 @@ uid: expressions
 
 Expressions are modifiers applied to either a property, such as a slider, or to the variable bound to the property. It allows you to make modifications to the incoming value.
 
-Unlike [variables.md](variables.html), Expressions are not centralized and reused. They exist on a single property.
+Unlike [variables](variables.html), Expressions are not centralized and reused. They exist on a single property.
 
 :::info
 At the moment, only Float (decimal) and Int (whole number) properties support Expressions.

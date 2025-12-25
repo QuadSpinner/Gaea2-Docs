@@ -14,11 +14,11 @@ The Swarm is a separate command line executable so it runs faster without a UI b
 
 All options for the Build Swarm for a specific file can be set in the [build-options](/using-gaea/build-and-export/build-options/).&#x20;
 
-Some additional options can be set via [command-line-automation.md](../automation/command-line-automation.html).
+Some additional options can be set via [command-line-automation](../automation/command-line-automation.html).
 
 ## Automation
 
-See [command-line-automation.md](../automation/command-line-automation.html) and [variables.md](/developers/scripting-and-expressions/variables.html) for automation scenarios.
+See [command-line-automation](../automation/command-line-automation.html) and [variables](/developers/scripting-and-expressions/variables.html) for automation scenarios.
 
 ## Post Action Report
 

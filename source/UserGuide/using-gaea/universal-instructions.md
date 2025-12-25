@@ -64,6 +64,6 @@ If you can accept it as a value in meters, and your plane has been set a size in
 If you have to enter a relative value, you can use the Height-Scale Ratio - either directly or to come up with an application specific value relative to your terrain.
 
 :::info
-Scale in terrains is an important concept. See [dimensions-and-scale.md](/advanced-topics/technical-information/dimensions-and-scale.html) to understand how scale works in Gaea and how it would convert to other applications.
+Scale in terrains is an important concept. See [dimensions-and-scale](/advanced-topics/technical-information/dimensions-and-scale.html) to understand how scale works in Gaea and how it would convert to other applications.
 :::
 

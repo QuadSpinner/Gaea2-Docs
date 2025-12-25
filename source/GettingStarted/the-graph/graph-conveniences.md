@@ -39,7 +39,7 @@ When you drag a connection from an Out port and connect it to another Out port, 
 
 ## Portals
 
-For detailed information on Portals, see [portals-and-chokepoints.md](portals-and-chokepoints.html)
+For detailed information on Portals, see [portals-and-chokepoints](portals-and-chokepoints.html)
 
 ### Convert Connection to Portal
 

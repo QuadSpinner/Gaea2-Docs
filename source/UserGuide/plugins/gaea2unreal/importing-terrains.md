@@ -13,7 +13,7 @@ Importing terrains into Unreal Engine can be a complicated process, especially w
 
 ### Exporting your Terrain <a href="#exporting-your-terrain" id="exporting-your-terrain"></a>
 
-See the [unreal-node.md](/using-gaea/build-and-export/application-specific-export-nodes/unreal-node.html) section on how to prepare your terrain for export.
+See the [unreal-node](/using-gaea/build-and-export/application-specific-export-nodes/unreal-node.html) section on how to prepare your terrain for export.
 
 ### Importing into Unreal Engine 5 <a href="#importing-into-unreal-engine-5" id="importing-into-unreal-engine-5"></a>
 
@@ -29,4 +29,4 @@ Click `Create Landscape` and you're done!
 
 ![](/.data/assets/image.webp)
 
-See the [importing-weight-maps.md](importing-weight-maps.html) section to see how to expand on this import process by importing additional assets as weight maps.
+See the [importing-weight-maps](importing-weight-maps.html) section to see how to expand on this import process by importing additional assets as weight maps.

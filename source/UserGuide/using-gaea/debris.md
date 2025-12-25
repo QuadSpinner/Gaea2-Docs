@@ -45,6 +45,6 @@ See the Debris examples that ship with Gaea to see how layering multiple simulat
 ![](/.data/assets/image (55).png)
 
 :::info
-When using multiple Debris nodes, you can use [accumulators.md](../managing-graphs/accumulators.html) to combine all the output masks for colorization and other purposes.
+When using multiple Debris nodes, you can use [accumulators](../managing-graphs/accumulators.html) to combine all the output masks for colorization and other purposes.
 :::
 

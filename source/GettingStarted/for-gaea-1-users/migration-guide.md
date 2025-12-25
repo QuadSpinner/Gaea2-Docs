@@ -19,6 +19,6 @@ If you used fixed filenames, you can refresh the input in Gaea 2.0 whenever you 
 
 Many of the GeoPrimitives and all of the LookDev nodes have been retired. These have been replaced with the new Landscape and Surface nodes.​​​ Some nodes have been renamed for clarity.
 
-See [node-changes.md](node-changes.html) for a detailed list of changes.
+See [node-changes](node-changes.html) for a detailed list of changes.
 
 ### ​ <a href="#undefined" id="undefined"></a>

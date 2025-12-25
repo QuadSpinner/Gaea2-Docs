@@ -35,5 +35,5 @@ In addition to the array of Modifiers available, three unique Modifiers exist th
 
 
 
-For strategies on using Modifiers, see [using-modifiers.md](/../using-gaea/managing-graphs/using-modifiers.html).
+For strategies on using Modifiers, see [using-modifiers](/../using-gaea/managing-graphs/using-modifiers.html).
 

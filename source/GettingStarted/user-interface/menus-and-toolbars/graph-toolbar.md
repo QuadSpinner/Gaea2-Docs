@@ -38,7 +38,7 @@ The Graph Toolbar is an essential interface within the graph environment, design
 
 
 
-* **Suspend Engine**: Lets you toggle the Gaea engine, see [suspending-engine.md](/the-graph/suspending-engine.html)
+* **Suspend Engine**: Lets you toggle the Gaea engine, see [suspending-engine](/the-graph/suspending-engine.html)
 * **Graph toolbar submenu**: Incorporate extended functionalities and settings found in the main graph menu for comprehensive control.
 
 ![Graph toolbar submenu](/.data/assets/Graph Submenu.png)

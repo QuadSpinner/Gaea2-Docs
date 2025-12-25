@@ -7,6 +7,10 @@ window.SITE_TOC = [
     "title": "Install Gaea",
     "children": [
       {
+        "title": "Overview",
+        "url": "/introduction/install-gaea/index.html"
+      },
+      {
         "title": "Regular Installation",
         "url": "/introduction/install-gaea/regular-installation.html"
       },
@@ -173,6 +177,10 @@ window.SITE_TOC = [
   {
     "title": "The Graph",
     "children": [
+      {
+        "title": "Overview",
+        "url": "/introduction/the-graph/index.html"
+      },
       {
         "title": "Procedural Workflow",
         "url": "/introduction/the-graph/procedural-workflow.html"

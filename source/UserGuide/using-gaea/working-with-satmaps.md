@@ -15,7 +15,7 @@ This tech was originally pioneered by QuadSpinner for GeoGlyph in 2014, Gaea's l
 
 <div>![](/.data/assets/Gaea_-_Untitled_03-22-12-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-22-15-AM.png)</div>
 
-This TextureMap node is attached to a SatMap node. The SatMap is adapted to the mask as described in [crafting-masks.md](crafting-masks.html).
+This TextureMap node is attached to a SatMap node. The SatMap is adapted to the mask as described in [crafting-masks](crafting-masks.html).
 
 ## Editing SatMaps
 
@@ -51,6 +51,6 @@ The final tweaks come from Hue/Saturation/Luminosity editing.
 
 ***
 
-SatMaps are one of the crucial aspects of colorizing your terrains. You can elevate your SatMaps by combining them with a Mixer as explained in [layering-textures.md](layering-textures.html).
+SatMaps are one of the crucial aspects of colorizing your terrains. You can elevate your SatMaps by combining them with a Mixer as explained in [layering-textures](layering-textures.html).
 
-And finally, add [colorerosion.md](colorerosion.html) to add a new level of realism to your texture maps.
+And finally, add [colorerosion](colorerosion.html) to add a new level of realism to your texture maps.

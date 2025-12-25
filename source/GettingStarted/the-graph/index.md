@@ -26,31 +26,31 @@ Each node is a heightfield processor that performs a single task. By connecting 
 Node graphs go from left to right, never the opposite. They represent a one-way flow.
 :::
 
-To learn more about node graphs, see [procedural-workflow.md](procedural-workflow.html).
+To learn more about node graphs, see @procedural-workflow.
 
-Also see [lock-preview-and-underlays.md](lock-preview-and-underlays.html).
+Also see @lock-preview-and-underlays.
 
 ### Conveniences
 
 Gaea supplies several quality-of-life features which make it easier to work with complex graphs. For instance, you can quickly create structures as merges (Combining two nodes), interject a node within an existing network, re-organize a complex graph area with Chokepoints, and more.
 
-See [graph-conveniences.md](graph-conveniences.html)
+See @graph-conveniences.
 
 ## Separating and Organizing the Graph
 
 ### Tabs
 
-The Infinity Graph allows you to split your terrain graph across multiple Tabs using [portals-and-chokepoints.md](portals-and-chokepoints.html). This allows you to separate concerns - such as creating the main shape, producing colors, exporting masks, and so on. By reducing the clutter, complex processes become easier to visualize and modify.
+The Infinity Graph allows you to split your terrain graph across multiple Tabs using @portals-and-chokepoints. This allows you to separate concerns - such as creating the main shape, producing colors, exporting masks, and so on. By reducing the clutter, complex processes become easier to visualize and modify.
 
 You can move select nodes to different tabs. Portals will be created as required to ensure your connections stay intact.
 
-For more information see [organizing-with-tabs.md](organizing-with-tabs.html)
+For more information see @organizing-with-tabs.
 
 ### Groups
 
 You can group a set of nodes in a collapsible container called a Group. Groups can be assigned colors and icons, and can also be collapsed to hide the nodes within them. They are a great way to organize your graphs.
 
-For more information see [#groups](./#groups)
+For more information see @groups
 
 
 

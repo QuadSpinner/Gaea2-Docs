@@ -52,6 +52,6 @@ Gaea.exe -activate "C:\Downloads\Gaea-XYZ123.lic"
 :::info
 Please note, Gaea may not be able to use a UNC network path such as `\\path\share\file.lic` due to limitations in .NET. You should instead mount the share as a drive if possible.
 
-Alternatively, see [mass-deployment.md](../install-gaea/mass-deployment.html) for additional solutions for network deployments.
+Alternatively, see [mass-deployment](../install-gaea/mass-deployment.html) for additional solutions for network deployments.
 :::
 

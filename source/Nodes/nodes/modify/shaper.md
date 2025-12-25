@@ -11,7 +11,7 @@ The Shaper node can bulk up, or bulk down, a terrain. Shaper is mainly created t
 Shaper also lets you work in "local areas" so the effect is applied non-uniformly to the terrain. Additionally, you can also preserve fine details.
 
 :::info
-Shaper is a very useful tool that is fast and effective. You can use it through the [adjust.md](adjust.html) node as well as the [Modifier Stack](/getting-started/user-interface/property-editor/modifier-stack). However, the Shaper node is the only way to use the advanced options.
+Shaper is a very useful tool that is fast and effective. You can use it through the [adjust](adjust.html) node as well as the [Modifier Stack](/getting-started/user-interface/property-editor/modifier-stack). However, the Shaper node is the only way to use the advanced options.
 :::
 
 ## Properties

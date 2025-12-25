@@ -44,5 +44,5 @@ The `-profile <name>` or `-p <name>` argument can be used to specify a profile d
 
 
 
-See also [creating-mutations.md](/advanced-topics/build-swarm/creating-mutations.html)
+See also [creating-mutations](/advanced-topics/build-swarm/creating-mutations.html)
 

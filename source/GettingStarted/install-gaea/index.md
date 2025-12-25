@@ -37,7 +37,7 @@ For GPU compute: NVIDIA cards need CUDA 12.5; AMD cards need HIP 6.0.
 :::
 
 :::info
-RAM may depend on project requirements. See [calculating-memory-requirements.md](/advanced-topics/technical-information/calculating-memory-requirements.html).
+RAM may depend on project requirements. See [calculating-memory-requirements](/advanced-topics/technical-information/calculating-memory-requirements.html).
 :::
 
 ***
@@ -50,13 +50,13 @@ Gaea is available in various forms to provide flexible methods of deployment, wh
 
 <div align="left">![EXE](/.data/assets/image (43).png)</div>
 
-The setup exe is our primary - and recommended - way of installing Gaea. It provides for both [regular-installation.md](regular-installation.html)and [portable-installation.md](portable-installation.html)while also setting up additional registry entries required for the [gaea2unreal](/plugins/gaea2unreal/) and [gaea2houdini](/plugins/gaea2houdini/) bridges.
+The setup exe is our primary - and recommended - way of installing Gaea. It provides for both [regular-installation](regular-installation.html)and [portable-installation](portable-installation.html)while also setting up additional registry entries required for the [gaea2unreal](/plugins/gaea2unreal/) and [gaea2houdini](/plugins/gaea2houdini/) bridges.
 
 ### 7-Zip Package
 
 <div align="left">![7zip file](/.data/assets/image (44).png)</div>
 
-The 7-zip package contains the exact same files as the setup executable; however, it is purely portable and does not create registry entries. It is very useful for advanced users or for System Administrators to create custom deployments. See [mass-deployment.md](mass-deployment.html) on how to enable Gaea2Unreal and Gaea2Houdini functionality in pure portable installs such as this.
+The 7-zip package contains the exact same files as the setup executable; however, it is purely portable and does not create registry entries. It is very useful for advanced users or for System Administrators to create custom deployments. See [mass-deployment](mass-deployment.html) on how to enable Gaea2Unreal and Gaea2Houdini functionality in pure portable installs such as this.
 
 ### winget CLI Install
 

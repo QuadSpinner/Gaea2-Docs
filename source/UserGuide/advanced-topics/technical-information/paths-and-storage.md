@@ -29,7 +29,7 @@ For example, if your install location is: `D:\Programs\CG\Gaea\` then the Data f
 
 ## Your Gaea Files
 
-These paths can be changed in the [options.md](/getting-started/options.html) dialog.
+These paths can be changed in the [options](/getting-started/options.html) dialog.
 
 ### Documents
 

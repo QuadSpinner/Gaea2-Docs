@@ -41,6 +41,6 @@ The heightfield should always be the primary input.
 
 ## Building
 
-When you build your terrain (See [..](../)) the Unreal node will save all the appropriate asset files along with a JSON definition file. This is the key file you will need for [importing-terrains.md](/../plugins/gaea2unreal/importing-terrains.html).
+When you build your terrain (See [..](../)) the Unreal node will save all the appropriate asset files along with a JSON definition file. This is the key file you will need for [importing-terrains](/../plugins/gaea2unreal/importing-terrains.html).
 
 See the next section on how to set up your exported terrain in Unreal Engine.

@@ -13,7 +13,7 @@ To enable CPU only mode, start Gaea Diagnostics from the Start Menu. Select "Run
 
 This will start Gaea in CPU only mode. It will now remain in CPU only mode, including when running the Gaea Build CLI.
 
-To re-enable multiple device usage, you can go to the [Broken link](broken-reference) tab in [options.md](/getting-started/options.html).
+To re-enable multiple device usage, you can go to the [Broken link](broken-reference) tab in [options](/getting-started/options.html).
 
 ![](/.data/assets/Options_11-01-25-AM.png)
 

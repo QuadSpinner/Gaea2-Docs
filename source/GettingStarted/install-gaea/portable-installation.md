@@ -16,7 +16,7 @@ Our new installer makes it very easy to install Gaea, even when you may not have
 
 ### Choosing the Installation Type
 
-To begin the installation select [regular-installation.md](regular-installation.html) or Portable Installation. If you don't have Administrator privileges, select Portable Installation.
+To begin the installation select [regular-installation](regular-installation.html) or Portable Installation. If you don't have Administrator privileges, select Portable Installation.
 
 ![](/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM (1).png)
 
@@ -66,5 +66,5 @@ Gaea is now installed and you are ready to create [terrain-basics](/using-gaea/t
 
 
 
-Facing issues? See [troubleshooting.md](troubleshooting.html)
+Facing issues? See [troubleshooting](troubleshooting.html)
 
