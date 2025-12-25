@@ -71,8 +71,6 @@ body.dark {
 }
 
 .hive-nav {
-
-  margin-top: 36px;
   margin-bottom: 36px;
 
   .nav-item {
@@ -438,16 +436,20 @@ body.dark {
   }
 
   #searchBox {
-    border-radius: 0;
+    border-radius: 4px;
     box-shadow: none;
     font-size: 11px;
     padding: 3px 12px;
-    border: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-
+    min-width: 40vw;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid transparent;
+    transition: all linear 0.2s;
+    
     &:focus,
     &:-moz-focusring {
-      border-bottom: 1px solid #4ff0b7;
+      background-color: rgba(0, 0, 0, 0.75);
+      border: 1px solid #4ff0b7;
       box-shadow: none !important;
     }
   }
@@ -475,4 +477,10 @@ body.dark {
   border-radius: 4px;
   padding: 16px;
   margin-bottom: 36px;
+}
+
+.site-title {
+  padding-left: 12px;
+  font-weight: 400;
+  color: var(--toc-section);
 }
