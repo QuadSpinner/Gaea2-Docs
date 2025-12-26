@@ -103,6 +103,8 @@
 
                         <div id="content-holder" class="col col-lg-6 px-5">
                             <main id="contents">%%CONTENT%%</main>
+
+                            <div id="next-nav" class="d-flex justify-content-between"></div>
                         </div>
                         <div class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
                             <br>
@@ -160,6 +162,97 @@
     <script src="/assets/TOC_%%SHORTNAME%%.js"></script>
     <script src="/assets/TOC.js"></script>
     <script src="/assets/search.js"></script>
+    <script>
+
+
+        function normalizeUrl(u) {
+            const url = new URL(u, location.origin);
+            url.hash = "";
+            url.search = "";
+            let p = url.pathname;
+            if (p.length > 1 && p.endsWith("/")) p = p.slice(0, -1);
+            url.pathname = p;
+            return url.toString();
+        }
+
+        // B) Prev/next among “siblings” under the same parent <ul>
+        // - skips li.divider
+        // - if sibling is a group, picks closest leaf inside it:
+        //   prev => last leaf in that sibling subtree
+        //   next => first leaf in that sibling subtree
+        function getPrevNextSiblings(host) {
+            const current = normalizeUrl(location.href);
+
+            const hit = Array.from(host.querySelectorAll("a[href]:not(.toc-group)"))
+                .find((a) => normalizeUrl(a.href) === current);
+
+            if (!hit) return { prev: null, next: null };
+
+            const li = hit.closest("li");
+            if (!li) return { prev: null, next: null };
+
+            return {
+                prev: findSiblingLeaf(li, -1),
+                next: findSiblingLeaf(li, +1),
+            };
+
+            function findSiblingLeaf(li, dir) {
+                let sib = dir < 0 ? li.previousElementSibling : li.nextElementSibling;
+
+                while (sib) {
+                    if (sib.classList?.contains("divider")) {
+                        sib = dir < 0 ? sib.previousElementSibling : sib.nextElementSibling;
+                        continue;
+                    }
+
+                    const leaf = dir < 0 ? lastLeafIn(sib) : firstLeafIn(sib);
+                    if (leaf) return leaf;
+
+                    sib = dir < 0 ? sib.previousElementSibling : sib.nextElementSibling;
+                }
+
+                return null;
+            }
+
+            function firstLeafIn(li) {
+                const direct = li.querySelector(':scope > a[href]:not(.toc-group)');
+                if (direct) return direct;
+                return li.querySelector('a[href]:not(.toc-group)');
+            }
+
+            function lastLeafIn(li) {
+                const leaves = li.querySelectorAll('a[href]:not(.toc-group)');
+                return leaves.length ? leaves[leaves.length - 1] : null;
+            }
+        }
+        window.addEventListener("DOMContentLoaded", () => {
+            const host = document.querySelector("#site-nav");
+            const { prev, next } = getPrevNextSiblings(host);
+        
+            const box = document.querySelector("#next-nav");
+            if (!box) return;
+
+            box.innerHTML = "";
+
+            if (prev) {
+                const a = document.createElement("a");
+                a.className = "nav-prev btn btn-sm";
+                a.href = prev.getAttribute("href") || prev.href;
+                a.textContent = (prev.textContent || "").trim() || "Previous";
+                box.appendChild(a);
+            }
+
+            if (next) {
+                const a = document.createElement("a");
+                a.className = "nav-next btn btn-sm";
+                a.href = next.getAttribute("href") || next.href;
+                a.textContent = (next.textContent || "").trim() || "Next";
+                box.appendChild(a);
+            }
+
+        });
+
+    </script>
 </body>
 
 </html>

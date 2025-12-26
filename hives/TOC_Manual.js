@@ -323,27 +323,6 @@ window.SITE_TOC = [
     "title": "Advanced Topics",
     "children": [
       {
-        "title": "Automation",
-        "children": [
-          {
-            "title": "Automation",
-            "url": "/Guide/advanced-topics/automation/"
-          },
-          {
-            "title": "Command Line Automation",
-            "url": "/Guide/advanced-topics/automation/command-line-automation.html"
-          },
-          {
-            "title": "Managing Input and Output",
-            "url": "/Guide/advanced-topics/automation/managing-input-and-output.html"
-          },
-          {
-            "title": "Building a Bridge with the CLI",
-            "url": "/Guide/advanced-topics/automation/building-a-bridge-with-the-cli.html"
-          }
-        ]
-      },
-      {
         "title": "Build Swarm",
         "children": [
           {
@@ -388,6 +367,27 @@ window.SITE_TOC = [
             "url": "/Guide/advanced-topics/technical-information/calculating-memory-requirements.html"
           }
         ]
+      },
+      {
+        "title": "Automation",
+        "children": [
+          {
+            "title": "Automation",
+            "url": "/Guide/advanced-topics/automation/"
+          },
+          {
+            "title": "Command Line Automation",
+            "url": "/Guide/advanced-topics/automation/command-line-automation.html"
+          },
+          {
+            "title": "Managing Input and Output",
+            "url": "/Guide/advanced-topics/automation/managing-input-and-output.html"
+          },
+          {
+            "title": "Building a Bridge with the CLI",
+            "url": "/Guide/advanced-topics/automation/building-a-bridge-with-the-cli.html"
+          }
+        ]
       }
     ]
   },
@@ -395,7 +395,7 @@ window.SITE_TOC = [
     "title": "Plugins",
     "children": [
       {
-        "title": "Gaea 2houdini",
+        "title": "Gaea2Houdini",
         "children": [
           {
             "title": "Gaea2Houdini",
@@ -420,7 +420,7 @@ window.SITE_TOC = [
         ]
       },
       {
-        "title": "Gaea 2unreal",
+        "title": "Gaea2Unreal",
         "children": [
           {
             "title": "Gaea2Unreal",

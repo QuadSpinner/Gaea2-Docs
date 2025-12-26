@@ -21,7 +21,7 @@ blended using Combine with another node.
 The uniform height "block" terrain can be used with Combine in `Max`
 mode to create a flat area at the specified height in a terrain.
 
-![](/.images/ref/Constant/Constant.webp)
+![](/.data/ref/Constant/Constant.webp)
 
 #### Color
 

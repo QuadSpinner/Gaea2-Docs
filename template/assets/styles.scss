@@ -535,3 +535,14 @@ body.dark {
   font-weight: 400;
   color: var(--toc-section);
 }
+
+#next-nav {
+  margin-top: 36px;
+  .nav-next::after {
+    content: " →"
+  }
+
+  .nav-prev::before {
+    content: "← "
+  }
+}

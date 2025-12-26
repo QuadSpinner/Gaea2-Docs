@@ -168,6 +168,7 @@ function initGlobalToc({
   // ---------- NEW: match current URL, set active, expand ancestors ----------
   markCurrentUrlActive();
 
+
   function markCurrentUrlActive() {
     const current = normalizeUrl(location.href);
 
@@ -313,3 +314,4 @@ window.addEventListener("DOMContentLoaded", () => {
     if (!ul.children.length) ul.remove();
   });
 });
+

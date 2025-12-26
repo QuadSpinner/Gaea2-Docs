@@ -9,7 +9,7 @@ order: 06
 
 Erosion is the cornerstone of all terrains. It simulates hydraulic erosion on the terrain to turn any shape into a realistic looking terrain.
 
-![](/.images/ref/Erosion/Erosion--Default.webp)
+![](/.data/ref/Erosion/Erosion--Default.webp)
 
 It provides sophisticated erosion with a very easy to use interface. The Erosion node provides control over the scale, where you can choose the size of the largest erosion feature, as well as the overall scale of the terrain.
 
@@ -24,26 +24,26 @@ Both `Strength` and `Rock Softness` parameters affect the aggressiveness of eros
 
 Lesser strength means dissolved soil will be dropped earlier because of lower water transport capacity, and lesser softness means that the rock will be eroded slower but dissolved sediment will be dropped farther. This results in different distribution of deposits, gullies, and shapes of erosion features.
 
-![Low Strength with very high Rock Softness retains the general shape. Fewer cracks or fluvial grooves are created, while some soft sediment is accumulated on slopes.](/.images/ref/Erosion/Erosion--LowStrength-HighSoftness.webp)
+![Low Strength with very high Rock Softness retains the general shape. Fewer cracks or fluvial grooves are created, while some soft sediment is accumulated on slopes.](/.data/ref/Erosion/Erosion--LowStrength-HighSoftness.webp)
 
-![High Strength with very low Rock Softness creates a heavily eroded terrain with plenty of soft sediment.](/.images/ref/Erosion/Erosion--HighStrength-LowSoftness.webp)
+![High Strength with very low Rock Softness creates a heavily eroded terrain with plenty of soft sediment.](/.data/ref/Erosion/Erosion--HighStrength-LowSoftness.webp)
 
 #### Downcutting
 
 `Downcutting` effectively transports sediment far away from its origin. If shorter transport distance is desired, for example, for faster alternating between erosion/deposition, set this parameter to `0.0`, or set `Inhibition` to higher values.
 
-![High downcutting with medium Inhibition creates lots of deep fluvial grooves, as well as excess sediments that flow downslope.](/.images/ref/Erosion/Erosion--Downcutting.webp)
+![High downcutting with medium Inhibition creates lots of deep fluvial grooves, as well as excess sediments that flow downslope.](/.data/ref/Erosion/Erosion--Downcutting.webp)
 
-![High downcutting with very little or no Inhibition will create the same deep fluvial grooves, but no excess sediments.](/.images/ref/Erosion/Erosion--Downcutting-NoInhibition.webp)
+![High downcutting with very little or no Inhibition will create the same deep fluvial grooves, but no excess sediments.](/.data/ref/Erosion/Erosion--Downcutting-NoInhibition.webp)
 
 
 #### Scale and Feature Size
 
 The size of the "features" created during the erosion process - namely the width of largest valleys and ridges between them - is controlled by the `Feature Scale` option is where you can achieve artistic control over the erosion process.
 
-![Default Feature Size of 2000 (meters).](/.images/ref/Erosion/Erosion--Default.webp)
+![Default Feature Size of 2000 (meters).](/.data/ref/Erosion/Erosion--Default.webp)
 
-![Reduced Feature Size of 50 (meters).](/.images/ref/Erosion/Erosion--SmallFeatures.webp)
+![Reduced Feature Size of 50 (meters).](/.data/ref/Erosion/Erosion--SmallFeatures.webp)
 
 The *Real Scale* option automatically controls the general scale (the extents of the terrain and the vertical scale), using the scale set in the Terrain Definition. Although it can be turned off to manually change the 'physics' of the erosion system, although it is not recommended for most scenarios.
 
