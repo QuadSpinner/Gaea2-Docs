@@ -1,3 +1,2 @@
-gaea2houdini|Gaea 2houdini
-images|Images
 nodes|Nodes
+gaea2houdini|Gaea2houdini

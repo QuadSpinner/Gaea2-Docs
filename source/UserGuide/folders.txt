@@ -1,5 +1,5 @@
-advanced-topics|Advanced Topics
-developers|Developers
-plugins|Plugins
-troubleshooting|Troubleshooting
 using-gaea|Using Gaea
+advanced-topics|Advanced Topics
+plugins|Plugins
+developers|Developers
+troubleshooting|Troubleshooting

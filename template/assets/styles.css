@@ -95,16 +95,30 @@ body.dark {
   border-bottom-color: #8dfa34;
 }
 
-#site-nav,
-#site-nav-2 {
-  width: 260px;
-}
 #site-nav h3.toc-section,
 #site-nav-2 h3.toc-section {
   margin: 12px 0 6px;
   font-size: 12px;
   font-weight: 600;
   color: var(--toc-section);
+}
+#site-nav .divider,
+#site-nav-2 .divider {
+  list-style: none;
+  position: relative;
+  height: 0.5rem;
+  margin: 0;
+}
+#site-nav .divider::before,
+#site-nav-2 .divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 1px solid var(--toc-border);
+  opacity: 0.25;
 }
 #site-nav ul.toc-section-list,
 #site-nav-2 ul.toc-section-list {

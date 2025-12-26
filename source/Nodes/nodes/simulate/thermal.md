@@ -20,14 +20,14 @@ Thermal Stress Anisotropy governs how erosion and the resulting rocks deposits a
 
 The image below shows a simplified version of how Thermal Stress Anisotropy affects a terrain.
 
-![](/images/thermal_stress_anisotropy.webp)
+![](/.images/thermal_stress_anisotropy.webp)
 
 
 #### Combining with Hydraulic Erosion
 
 In the real world, hydraulic and thermal erosion occur together. You can mimic this behavior by chaining Thermal and Erosion (or Wizard) nodes, as shown in the Layering Erosion section in erosions.
 
-![Chained sequence of Wizard/Erosion and Thermal nodes](/images/ref/chain-thermal-erosion.webp)
+![Chained sequence of Wizard/Erosion and Thermal nodes](/.images/ref/chain-thermal-erosion.webp)
 
 Selective Processing can be a very powerful tool in such a chain of nodes, for both Thermal and Erosion.
 

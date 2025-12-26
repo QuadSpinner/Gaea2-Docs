@@ -1,9 +1,9 @@
-colorize|Colorize
-derive|Derive
-modify|Modify
-output|Output
 primitive|Primitive
-simulate|Simulate
-surface|Surface
 terrain|Terrain
+modify|Modify
+surface|Surface
+simulate|Simulate
+derive|Derive
+colorize|Colorize
+output|Output
 utility|Utility

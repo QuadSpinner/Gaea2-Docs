@@ -3,6 +3,7 @@ icon: '3'
 title: Elaborate Terrains
 uid: elaborate-terrains
 order: 03
+section: true
 ---
 
 # Elaborate Terrains

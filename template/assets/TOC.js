@@ -45,7 +45,14 @@ function initGlobalToc({
     ul.className = "toc-section-list";
     host.appendChild(ul);
 
-    for (const child of node.children) ul.appendChild(renderNode(child));
+    for (const child of node.children) {
+      if (child.section) {
+        var div = document.createElement("li");
+        div.classList.add("divider");
+        ul.appendChild(div)
+      }
+      ul.appendChild(renderNode(child));
+    }
   }
 
   // ---------- initial collapsed ----------
@@ -218,7 +225,14 @@ function initGlobalToc({
 
       const ul = document.createElement("ul");
       li.appendChild(ul);
-      for (const c of node.children) ul.appendChild(renderNode(c));
+      for (const c of node.children) {
+        if (c.section) {
+          var div = document.createElement("li");
+          div.classList.add("divider");
+          ul.appendChild(div)
+        }
+        ul.appendChild(renderNode(c));
+      }
     } else {
       const a = document.createElement("a");
       a.href = node.url ?? "#";
@@ -235,67 +249,67 @@ function initGlobalToc({
 // - No collapse, no scrollspy, no animation
 // - Includes h1..h4 and nests them by heading level
 window.addEventListener("DOMContentLoaded", () => {
-    const content = document.querySelector("#contents");
-    if (!content) return;
+  const content = document.querySelector("#contents");
+  if (!content) return;
 
-    const nav =
-        document.querySelector("#page-nav");
+  const nav =
+    document.querySelector("#page-nav");
 
-    if (!nav) return;
+  if (!nav) return;
 
-    const headings = Array.from(content.querySelectorAll("h1, h2, h3"))
-        .filter(h => (h.textContent || "").trim().length > 0);
+  const headings = Array.from(content.querySelectorAll("h1, h2, h3"))
+    .filter(h => (h.textContent || "").trim().length > 0);
 
-    if (!headings.length) return;
+  if (!headings.length) return;
 
-    const slugify = (s) =>
-        s.toLowerCase().trim().replace(/[\s\W-]+/g, "-").replace(/^-+|-+$/g, "").replace(/-+/g, "-");
+  const slugify = (s) =>
+    s.toLowerCase().trim().replace(/[\s\W-]+/g, "-").replace(/^-+|-+$/g, "").replace(/-+/g, "-");
 
-    function ensureId(el) {
-        if (el.id) return el.id;
-        let base = slugify(el.textContent.trim()) || "section";
-        let id = base, i = 2;
-        while (document.getElementById(id)) id = `${base}-${i++}`;
-        el.id = id;
-        return id;
+  function ensureId(el) {
+    if (el.id) return el.id;
+    let base = slugify(el.textContent.trim()) || "section";
+    let id = base, i = 2;
+    while (document.getElementById(id)) id = `${base}-${i++}`;
+    el.id = id;
+    return id;
+  }
+
+  nav.innerHTML = "";
+
+  const rootUl = document.createElement("ul");
+  nav.appendChild(rootUl);
+
+  // stack of { level, ul }
+  const stack = [{ level: 0, ul: rootUl }];
+
+  for (const h of headings) {
+    const level = parseInt(h.tagName.substring(1), 10); // 1..4
+    const text = h.textContent.trim();
+    const id = ensureId(h);
+
+    while (stack.length && stack[stack.length - 1].level >= level) {
+      stack.pop();
     }
 
-    nav.innerHTML = "";
+    const parentUl = stack[stack.length - 1].ul;
 
-    const rootUl = document.createElement("ul");
-    nav.appendChild(rootUl);
+    const li = document.createElement("li");
+    li.className = `h${level}`;
 
-    // stack of { level, ul }
-    const stack = [{ level: 0, ul: rootUl }];
+    const a = document.createElement("a");
+    a.href = `#${id}`;
+    a.textContent = text;
 
-    for (const h of headings) {
-        const level = parseInt(h.tagName.substring(1), 10); // 1..4
-        const text = h.textContent.trim();
-        const id = ensureId(h);
+    li.appendChild(a);
+    parentUl.appendChild(li);
 
-        while (stack.length && stack[stack.length - 1].level >= level) {
-            stack.pop();
-        }
+    const childUl = document.createElement("ul");
+    li.appendChild(childUl);
+    stack.push({ level, ul: childUl });
+  }
 
-        const parentUl = stack[stack.length - 1].ul;
-
-        const li = document.createElement("li");
-        li.className = `h${level}`;
-
-        const a = document.createElement("a");
-        a.href = `#${id}`;
-        a.textContent = text;
-
-        li.appendChild(a);
-        parentUl.appendChild(li);
-
-        const childUl = document.createElement("ul");
-        li.appendChild(childUl);
-        stack.push({ level, ul: childUl });
-    }
-
-    // remove empty uls
-    nav.querySelectorAll("li > ul").forEach(ul => {
-        if (!ul.children.length) ul.remove();
-    });
+  // remove empty uls
+  nav.querySelectorAll("li > ul").forEach(ul => {
+    if (!ul.children.length) ul.remove();
+  });
 });

@@ -1,14 +1,14 @@
 window.SITE_TOC = [
   {
     "title": "Home",
-    "url": "/introduction/"
+    "url": "/introduction/./"
   },
   {
     "title": "Install Gaea",
     "children": [
       {
-        "title": "Overview",
-        "url": "/introduction/install-gaea/index.html"
+        "title": "Install Gaea",
+        "url": "/introduction/install-gaea/"
       },
       {
         "title": "Regular Installation",
@@ -40,6 +40,10 @@ window.SITE_TOC = [
     "title": "License Management",
     "children": [
       {
+        "title": "License Management",
+        "url": "/introduction/license-management/"
+      },
+      {
         "title": "Activation",
         "url": "/introduction/license-management/activation.html"
       },
@@ -65,56 +69,26 @@ window.SITE_TOC = [
     "title": "User Interface",
     "children": [
       {
+        "title": "User Interface",
+        "url": "/introduction/user-interface/"
+      },
+      {
         "title": "Graph",
         "url": "/introduction/user-interface/graph.html"
       },
       {
-        "title": "Viewport",
-        "children": [
-          {
-            "title": "Overview",
-            "url": "/introduction/user-interface/viewport/"
-          },
-          {
-            "title": "Render Modes",
-            "url": "/introduction/user-interface/viewport/render-modes.html"
-          },
-          {
-            "title": "2D Viewport",
-            "url": "/introduction/user-interface/viewport/2d-viewport.html"
-          },
-          {
-            "title": "Measurement Tools",
-            "url": "/introduction/user-interface/viewport/measurement-tools.html"
-          }
-        ]
+        "title": "Lazy Menu",
+        "url": "/introduction/user-interface/lazy-menu.html"
       },
       {
-        "title": "Property Editor",
-        "children": [
-          {
-            "title": "Overview",
-            "url": "/introduction/user-interface/property-editor/"
-          },
-          {
-            "title": "Modifier Stack",
-            "url": "/introduction/user-interface/property-editor/modifier-stack.html"
-          },
-          {
-            "title": "Presets",
-            "url": "/introduction/user-interface/property-editor/presets.html"
-          },
-          {
-            "title": "Binding Variables",
-            "url": "/introduction/user-interface/property-editor/binding-variables.html"
-          }
-        ]
+        "title": "Keyboard Shortcuts",
+        "url": "/introduction/user-interface/keyboard-shortcuts.html"
       },
       {
         "title": "Data Editor",
         "children": [
           {
-            "title": "Overview",
+            "title": "Data Editor",
             "url": "/introduction/user-interface/data-editor/"
           },
           {
@@ -135,7 +109,7 @@ window.SITE_TOC = [
         "title": "Menus and Toolbars",
         "children": [
           {
-            "title": "Overview",
+            "title": "Menus and Toolbars",
             "url": "/introduction/user-interface/menus-and-toolbars/"
           },
           {
@@ -165,12 +139,46 @@ window.SITE_TOC = [
         ]
       },
       {
-        "title": "Lazy Menu",
-        "url": "/introduction/user-interface/lazy-menu.html"
+        "title": "Property Editor",
+        "children": [
+          {
+            "title": "Property Editor",
+            "url": "/introduction/user-interface/property-editor/"
+          },
+          {
+            "title": "Modifier Stack",
+            "url": "/introduction/user-interface/property-editor/modifier-stack.html"
+          },
+          {
+            "title": "Presets",
+            "url": "/introduction/user-interface/property-editor/presets.html"
+          },
+          {
+            "title": "Binding Variables",
+            "url": "/introduction/user-interface/property-editor/binding-variables.html"
+          }
+        ]
       },
       {
-        "title": "Keyboard Shortcuts",
-        "url": "/introduction/user-interface/keyboard-shortcuts.html"
+        "title": "Viewport",
+        "children": [
+          {
+            "title": "Viewport",
+            "url": "/introduction/user-interface/viewport/"
+          },
+          {
+            "title": "Render Modes",
+            "url": "/introduction/user-interface/viewport/render-modes.html"
+          },
+          {
+            "title": "2D Viewport",
+            "url": "/introduction/user-interface/viewport/2d-viewport.html"
+          },
+          {
+            "title": "Measurement Tools",
+            "url": "/introduction/user-interface/viewport/measurement-tools.html"
+          }
+        ]
       }
     ]
   },
@@ -178,8 +186,8 @@ window.SITE_TOC = [
     "title": "The Graph",
     "children": [
       {
-        "title": "Overview",
-        "url": "/introduction/the-graph/index.html"
+        "title": "The Graph",
+        "url": "/introduction/the-graph/"
       },
       {
         "title": "Procedural Workflow",
@@ -216,10 +224,15 @@ window.SITE_TOC = [
       {
         "title": "Groups",
         "url": "/introduction/the-graph/groups.html"
-      },
+      }
+    ]
+  },
+  {
+    "title": "Misc",
+    "children": [
       {
         "title": "Options",
-        "url": "/introduction/options.html"
+        "url": "/introduction/misc/options.html"
       },
       {
         "title": "Autosave and Recovery",
@@ -234,6 +247,10 @@ window.SITE_TOC = [
   {
     "title": "For Gaea 1 Users",
     "children": [
+      {
+        "title": "For Gaea 1 Users",
+        "url": "/introduction/for-gaea-1-users/"
+      },
       {
         "title": "Migration Guide",
         "url": "/introduction/for-gaea-1-users/migration-guide.html"
