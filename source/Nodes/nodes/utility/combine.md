@@ -1,6 +1,7 @@
 ---
 title: Combine
 uid: combine
+order: 03
 ---
 
 # Combine

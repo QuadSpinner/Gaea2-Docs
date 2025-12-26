@@ -1,6 +1,7 @@
 ---
 title: Node Changes
 uid: node-changes
+order: 02
 ---
 
 # Node Changes

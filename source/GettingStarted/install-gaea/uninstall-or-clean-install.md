@@ -2,6 +2,7 @@
 icon: trash-xmark
 title: Uninstall or Clean Install
 uid: uninstall-or-clean-install
+order: 06
 ---
 
 # Uninstall or Clean Install

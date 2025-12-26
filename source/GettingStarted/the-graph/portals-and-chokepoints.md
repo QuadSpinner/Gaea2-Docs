@@ -1,6 +1,7 @@
 ---
 title: Portals and Chokepoints
 uid: portals-and-chokepoints
+order: 06
 ---
 
 # Portals and Chokepoints

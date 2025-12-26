@@ -1,6 +1,7 @@
 ---
 title: Toolbox and Search
 uid: toolbox-and-search
+order: 02
 ---
 
 # Toolbox and Search

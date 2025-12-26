@@ -60,7 +60,7 @@ uid: untitled2
 * [Organizing with Tabs](the-graph/organizing-with-tabs.md)
 * [Annotations](the-graph/annotations.md)
 * [Groups](the-graph/groups.md)
-* [Options](options.md)
+* [Options](misc/options.md)
 * [Autosave and Recovery](misc/autosave-and-recovery.md)
 * [Command-line Interface](misc/command-line-interface.md)
 

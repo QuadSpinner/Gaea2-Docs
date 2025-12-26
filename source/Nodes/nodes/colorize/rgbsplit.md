@@ -1,6 +1,7 @@
 ---
 title: RGBSplit
 uid: rgbsplit
+order: 06
 ---
 
 

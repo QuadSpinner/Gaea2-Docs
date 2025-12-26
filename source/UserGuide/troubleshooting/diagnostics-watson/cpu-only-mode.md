@@ -1,6 +1,7 @@
 ---
 title: CPU Only Mode
 uid: cpu-only-mode
+order: 02
 ---
 
 # CPU Only Mode

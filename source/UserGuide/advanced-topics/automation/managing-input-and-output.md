@@ -1,6 +1,7 @@
 ---
 title: Managing Input and Output
 uid: managing-input-and-output
+order: 02
 ---
 
 # Managing Input and Output

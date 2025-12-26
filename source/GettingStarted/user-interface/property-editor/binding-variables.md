@@ -1,6 +1,7 @@
 ---
 title: Binding Variables
 uid: binding-variables
+order: 03
 ---
 
 # Binding Variables

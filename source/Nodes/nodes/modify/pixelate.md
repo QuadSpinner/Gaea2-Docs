@@ -1,6 +1,7 @@
 ---
 title: Pixelate
 uid: pixelate
+order: 25
 ---
 
 # Pixelate

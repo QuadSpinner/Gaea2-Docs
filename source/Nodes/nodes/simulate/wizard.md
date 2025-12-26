@@ -1,6 +1,7 @@
 ---
 title: Wizard
 uid: wizard
+order: 24
 ---
 
 

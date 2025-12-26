@@ -3,6 +3,7 @@ hidden: true
 icon: x-ray
 title: Anatomy of Node
 uid: anatomy-of-node
+order: 03
 ---
 
 # Anatomy of Node

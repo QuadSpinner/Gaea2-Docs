@@ -1,6 +1,7 @@
 ---
 title: Math Node
 uid: math-node
+order: 03
 ---
 
 # Math Node

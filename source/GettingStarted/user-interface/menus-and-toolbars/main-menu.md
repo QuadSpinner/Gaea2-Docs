@@ -1,6 +1,7 @@
 ---
 title: Main Menu
 uid: main-menu
+order: 01
 ---
 
 # Main Menu

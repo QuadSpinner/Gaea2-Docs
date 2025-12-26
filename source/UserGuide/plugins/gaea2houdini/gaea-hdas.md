@@ -1,6 +1,7 @@
 ---
 title: Gaea HDAs
 uid: gaea-hdas
+order: 03
 ---
 
 # Gaea SOP Nodes

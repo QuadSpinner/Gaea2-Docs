@@ -47,8 +47,17 @@ body.dark {
 
 .hive-nav {
   margin-bottom: 36px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 .hive-nav .nav-item {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow-wrap: normal;
   padding: 0;
   margin: 0;
   border-bottom: 1px solid var(--toc-border);
@@ -93,7 +102,7 @@ body.dark {
 #site-nav h3.toc-section,
 #site-nav-2 h3.toc-section {
   margin: 12px 0 6px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--toc-section);
 }
@@ -114,7 +123,7 @@ body.dark {
 #site-nav ul li,
 #site-nav-2 ul li {
   list-style: none;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -233,7 +242,7 @@ body.dark {
 }
 #page-nav ul li {
   list-style: none;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -251,6 +260,8 @@ body.dark {
   min-width: 0;
   /* critical for flex children to shrink */
   max-width: 100%;
+  line-height: normal;
+  font-size: 12px;
 }
 #page-nav ul li a:hover {
   color: var(--toc-link-hover);
@@ -262,11 +273,16 @@ body.dark {
   padding: 0;
 }
 #page-nav ul li > ul > li {
+  border-left: 1px dotted var(--toc-border);
+  line-height: 24px;
+}
+#page-nav ul li > ul > li > ul > li {
   border-left: 1px solid var(--toc-border);
   padding-left: 18px;
   margin: 0;
+  line-height: 24px;
 }
-#page-nav ul li > ul > li > a {
+#page-nav ul li > ul > li > ul > li > a {
   padding-left: 0;
 }
 #page-nav ul li.h1 > a {

@@ -1,6 +1,7 @@
 ---
 title: Paths and Storage
 uid: paths-and-storage
+order: 03
 ---
 
 # Paths and Storage

@@ -1,6 +1,7 @@
 ---
 title: Shade
 uid: shade
+order: 08
 ---
 
 

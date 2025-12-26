@@ -1,6 +1,7 @@
 ---
 title: Creating Mutations
 uid: creating-mutations
+order: 01
 ---
 
 # Creating Mutations

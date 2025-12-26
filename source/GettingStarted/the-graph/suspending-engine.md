@@ -1,6 +1,7 @@
 ---
 title: Suspending Engine
 uid: suspending-engine
+order: 04
 ---
 
 # Suspending Engine

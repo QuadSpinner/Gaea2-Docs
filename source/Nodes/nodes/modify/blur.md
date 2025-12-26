@@ -1,6 +1,7 @@
 ---
 title: Blur
 uid: blur
+order: 05
 ---
 
 

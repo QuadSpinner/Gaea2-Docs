@@ -1,6 +1,7 @@
 ---
 title: Deactivation
 uid: deactivation
+order: 02
 ---
 
 # Deactivation

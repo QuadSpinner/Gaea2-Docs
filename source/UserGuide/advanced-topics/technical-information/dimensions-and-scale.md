@@ -1,6 +1,7 @@
 ---
 title: Dimensions and Scale
 uid: dimensions-and-scale
+order: 04
 ---
 
 # Dimensions and Scale

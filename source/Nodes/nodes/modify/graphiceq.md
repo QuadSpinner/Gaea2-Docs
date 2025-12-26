@@ -1,6 +1,7 @@
 ---
 title: GraphicEQ
 uid: graphiceq
+order: 19
 ---
 
 # GraphicEQ

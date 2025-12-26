@@ -59,7 +59,18 @@ body.dark {
 .hive-nav {
   margin-bottom: 36px;
 
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+
   .nav-item {
+    flex: 0 0 auto; // don’t shrink/wrap items
+    white-space: nowrap; // single line
+    word-break: keep-all;
+    overflow-wrap: normal;
+
     padding: 0;
     margin: 0;
     border-bottom: 1px solid var(--toc-border);
@@ -81,6 +92,7 @@ body.dark {
       text-decoration: none;
       border-bottom-width: 1px;
       color: var(--toc-section);
+
 
       &:nth-child(1) {
         border-bottom-color: #ffcc00;
@@ -112,7 +124,7 @@ body.dark {
 
   h3.toc-section {
     margin: 12px 0 6px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     color: var(--toc-section);
   }
@@ -132,7 +144,7 @@ body.dark {
 
     li {
       list-style: none;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 500;
       padding-top: 3px;
       padding-bottom: 3px;
@@ -264,7 +276,7 @@ body.dark {
 
     li {
       list-style: none;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 500;
       padding-top: 0px;
       padding-bottom: 0px;
@@ -282,6 +294,8 @@ body.dark {
         min-width: 0;
         /* critical for flex children to shrink */
         max-width: 100%;
+        line-height: normal;
+        font-size: 12px;
 
         &:hover {
           color: var(--toc-link-hover);
@@ -296,9 +310,15 @@ body.dark {
       }
 
       >ul>li {
+        border-left: 1px dotted var(--toc-border);
+        line-height: 24px;
+      }
+
+      >ul>li>ul>li {
         border-left: 1px solid var(--toc-border);
         padding-left: 18px;
         margin: 0;
+        line-height: 24px;
 
         >a {
           padding-left: 0;
@@ -328,8 +348,8 @@ body.dark {
 }
 
 
-.small{
-  img{
+.small {
+  img {
     width: 50%;
     height: auto;
     display: block;
@@ -480,7 +500,7 @@ body.dark {
       font-weight: 600;
       display: block;
     }
-    
+
     span:nth-child(2) {
       display: block;
       font-size: 24px;

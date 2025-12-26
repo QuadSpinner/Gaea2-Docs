@@ -1,6 +1,7 @@
 ---
 title: Slope
 uid: slope
+order: 10
 ---
 
 # Slope

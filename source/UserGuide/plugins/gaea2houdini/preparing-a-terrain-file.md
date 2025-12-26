@@ -1,6 +1,7 @@
 ---
 title: Preparing a Terrain File
 uid: preparing-a-terrain-file
+order: 02
 ---
 
 # Preparing a Terrain File

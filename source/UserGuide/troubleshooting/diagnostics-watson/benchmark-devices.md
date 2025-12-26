@@ -1,6 +1,7 @@
 ---
 title: Benchmark Devices
 uid: benchmark-devices
+order: 03
 ---
 
 # Benchmark Devices

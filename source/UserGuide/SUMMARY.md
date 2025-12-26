@@ -1,6 +1,6 @@
 ---
 title: untitled
-uid: untitled3
+uid: untitled
 ---
 
 # Table of contents
@@ -93,8 +93,6 @@ uid: untitled3
   * [Preparing a Terrain File](plugins/gaea2houdini/preparing-a-terrain-file.md)
   * [Gaea HDAs](plugins/gaea2houdini/gaea-hdas.md)
   * [Source Code](plugins/gaea2houdini/source-code.md)
-  * [Archived (v2.1 or older)](plugins/gaea2houdini/archived-v2.1-or-older/)
-    * [Using Gaea Nodes](plugins/gaea2houdini/archived-v2.1-or-older/using-gaea-nodes.md)
 * [Gaea2Unreal](plugins/gaea2unreal/)
   * [Installing Gaea2Unreal](plugins/gaea2unreal/installing-gaea2unreal.md)
   * [Importing Terrains](plugins/gaea2unreal/importing-terrains.md)

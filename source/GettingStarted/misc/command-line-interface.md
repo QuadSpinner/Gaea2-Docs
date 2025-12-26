@@ -2,6 +2,7 @@
 icon: rectangle-terminal
 title: Command-line Interface
 uid: command-line-interface
+order: 03
 ---
 
 # Command-line Interface

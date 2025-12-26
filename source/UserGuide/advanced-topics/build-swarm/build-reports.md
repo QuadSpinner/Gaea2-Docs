@@ -1,6 +1,7 @@
 ---
 title: Build Reports
 uid: build-reports
+order: 02
 ---
 
 # Build Reports

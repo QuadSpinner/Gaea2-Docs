@@ -1,6 +1,7 @@
 ---
 title: Recurve
 uid: recurve
+order: 26
 ---
 
 # Recurve

@@ -1,6 +1,7 @@
 ---
 title: Clip
 uid: clip
+order: 07
 ---
 
 # Clip

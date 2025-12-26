@@ -1,6 +1,7 @@
 ---
 title: Lazy Menu
 uid: lazy-menu
+order: 01
 ---
 
 # Lazy Menu

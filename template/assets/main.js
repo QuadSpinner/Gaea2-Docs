@@ -11,6 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
 (() => {
     const STORAGE_KEY = "bs-theme"; // "light" | "dark" | "system"
     const root = document.documentElement;
@@ -98,3 +99,45 @@ window.addEventListener("DOMContentLoaded", () => {
     window.setThemeMode = applyMode; // setThemeMode("light"|"dark"|"system")
 })();
 
+
+(() => {
+    const KEY = "layout.container"; // "xl" | "fluid"
+    const container = document.getElementById("expanding-container");
+    const contentcontainer = document.getElementById("content-holder");
+    const button = document.getElementById("cmd-expand");
+    if (!container || !button) return;
+
+    function getStored() {
+        try { return localStorage.getItem(KEY); } catch { return null; }
+    }
+    function setStored(v) {
+        try { localStorage.setItem(KEY, v); } catch { }
+    }
+
+    function apply(mode) {
+        const isFluid = mode === "fluid";
+        container.classList.toggle("container-fluid", isFluid);
+        container.classList.toggle("container-xl", !isFluid);
+
+        contentcontainer.classList.toggle("col-lg-6", isFluid);
+        setStored(mode);
+    }
+
+    // init: default to existing state or stored value
+    const stored = getStored();
+    if (stored === "xl" || stored === "fluid") {
+        apply(stored);
+    } else {
+        // infer from DOM once, then store
+        apply(container.classList.contains("container-fluid") ? "fluid" : "xl");
+    }
+
+    button.addEventListener("click", (e) => {
+        e.preventDefault();
+        const next = container.classList.contains("container-fluid") ? "xl" : "fluid";
+        apply(next);
+    });
+
+    // optional API
+    window.setContainerMode = apply; // setContainerMode("xl"|"fluid")
+})();

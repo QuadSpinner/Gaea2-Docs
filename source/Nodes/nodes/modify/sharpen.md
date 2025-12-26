@@ -1,6 +1,7 @@
 ---
 title: Sharpen
 uid: sharpen
+order: 28
 ---
 
 

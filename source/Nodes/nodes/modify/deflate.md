@@ -1,6 +1,7 @@
 ---
 title: Deflate
 uid: deflate
+order: 09
 ---
 
 # Deflate

@@ -2,6 +2,7 @@
 icon: usb-drive
 title: Portable Installation
 uid: portable-installation
+order: 02
 ---
 
 # Portable Installation

@@ -1,6 +1,7 @@
 ---
 title: Calculating Memory Requirements
 uid: calculating-memory-requirements
+order: 05
 ---
 
 # Calculating Memory Requirements

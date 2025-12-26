@@ -1,6 +1,7 @@
 ---
 title: Lock Preview and Underlays
 uid: lock-preview-and-underlays
+order: 03
 ---
 
 # Lock Preview and Underlays

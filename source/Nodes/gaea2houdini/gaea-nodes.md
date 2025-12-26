@@ -1,6 +1,7 @@
 ---
 title: Gaea Nodes
 uid: gaea-nodes
+order: 01
 ---
 
 # Gaea Nodes

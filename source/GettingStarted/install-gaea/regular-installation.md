@@ -2,6 +2,7 @@
 icon: shield-halved
 title: Regular Installation
 uid: regular-installation
+order: 01
 ---
 
 # Regular Installation

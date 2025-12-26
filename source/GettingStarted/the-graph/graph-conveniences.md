@@ -1,6 +1,7 @@
 ---
 title: Graph Conveniences
 uid: graph-conveniences
+order: 05
 ---
 
 # Graph Conveniences

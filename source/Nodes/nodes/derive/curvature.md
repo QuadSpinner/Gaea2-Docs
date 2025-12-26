@@ -1,6 +1,7 @@
 ---
 title: Curvature
 uid: curvature
+order: 02
 ---
 
 # Curvature

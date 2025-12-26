@@ -1,6 +1,7 @@
 ---
 title: ThermalShaper
 uid: thermalshaper
+order: 33
 ---
 
 

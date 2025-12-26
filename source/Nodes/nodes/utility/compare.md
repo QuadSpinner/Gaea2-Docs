@@ -1,6 +1,7 @@
 ---
 title: Compare
 uid: compare
+order: 04
 ---
 
 # Compare

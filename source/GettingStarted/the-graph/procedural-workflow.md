@@ -1,6 +1,7 @@
 ---
 title: Procedural Workflow
 uid: procedural-workflow
+order: 01
 ---
 
 # Procedural Workflow

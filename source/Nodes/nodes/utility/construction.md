@@ -2,6 +2,7 @@
 hidden: true
 title: Construction
 uid: construction
+order: 05
 ---
 
 # Construction

@@ -1,6 +1,7 @@
 ---
 title: LinearGradient
 uid: lineargradient
+order: 13
 ---
 
 

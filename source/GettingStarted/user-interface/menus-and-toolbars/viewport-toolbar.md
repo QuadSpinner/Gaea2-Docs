@@ -1,6 +1,7 @@
 ---
 title: Viewport Toolbar
 uid: viewport-toolbar
+order: 04
 ---
 
 # Viewport Toolbar

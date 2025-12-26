@@ -1,6 +1,7 @@
 ---
 title: Keyboard Shortcuts
 uid: keyboard-shortcuts
+order: 02
 ---
 
 # Keyboard Shortcuts
