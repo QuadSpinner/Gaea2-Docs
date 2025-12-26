@@ -1,8 +1,10 @@
 // Global TOC (perfect-height animation + optional accordion per level)
 // Root-level section headings render as <h3> (not collapsible)
-// NEW: expands + sets active on the exact link that matches current URL
+// Expands + sets active on the exact link that matches current URL
+// NEW: if a node has `icon`, render it as <img src="/assets/svg/pages/<icon>.svg">
+
 window.addEventListener("DOMContentLoaded", () => {
-  ["#site-nav", "#site-nav-2"].forEach(hostSelector => {
+  ["#site-nav", "#site-nav-2"].forEach((hostSelector) => {
     initGlobalToc({
       hostSelector,
       toc: window.SITE_TOC,
@@ -18,9 +20,11 @@ function initGlobalToc({
 } = {}) {
   const host = document.querySelector(hostSelector);
   if (!host || !toc) {
-    var holder = document.querySelector("#nav-holder");
-    holder.classList.add("d-none");
-    holder.classList.remove("d-lg-block");
+    const holder = document.querySelector("#nav-holder");
+    if (holder) {
+      holder.classList.add("d-none");
+      holder.classList.remove("d-lg-block");
+    }
     return;
   }
 
@@ -30,7 +34,6 @@ function initGlobalToc({
 
   // ---------- build ----------
   let topUl = null;
-  const ensureTopUl = () => (topUl ??= (host.appendChild(document.createElement("ul")), topUl));
 
   for (const node of roots) {
     const isTopSection = !node.url && Array.isArray(node.children) && node.children.length;
@@ -43,7 +46,8 @@ function initGlobalToc({
 
     const h3 = document.createElement("h3");
     h3.className = "toc-section";
-    h3.textContent = node.title ?? "Section";
+    addIcon(h3, node.icon);
+    h3.appendChild(document.createTextNode(node.title ?? "Section"));
     host.appendChild(h3);
 
     const ul = document.createElement("ul");
@@ -52,17 +56,17 @@ function initGlobalToc({
 
     for (const child of node.children) {
       if (child.section) {
-        var div = document.createElement("li");
+        const div = document.createElement("li");
         div.classList.add("divider");
-        ul.appendChild(div)
+        ul.appendChild(div);
       }
       ul.appendChild(renderNode(child));
     }
   }
 
   // ---------- initial collapsed ----------
-  host.querySelectorAll("li.active").forEach(li => li.classList.remove("active"));
-  host.querySelectorAll("li > ul").forEach(ul => (ul.style.height = "0px"));
+  host.querySelectorAll("li.active").forEach((li) => li.classList.remove("active"));
+  host.querySelectorAll("li > ul").forEach((ul) => (ul.style.height = "0px"));
 
   // ---------- animation helpers ----------
   const animState = new WeakMap(); // ul -> {cancel, onEnd}
@@ -131,7 +135,7 @@ function initGlobalToc({
     }
 
     li.classList.remove("active");
-    li.querySelectorAll("li.active").forEach(desc => {
+    li.querySelectorAll("li.active").forEach((desc) => {
       desc.classList.remove("active");
       const ul = desc.querySelector(":scope > ul");
       if (ul) ul.style.height = "0px";
@@ -142,7 +146,7 @@ function initGlobalToc({
     const parentUl = li.parentElement;
     if (!parentUl) return;
 
-    parentUl.querySelectorAll(":scope > li.active").forEach(sib => {
+    parentUl.querySelectorAll(":scope > li.active").forEach((sib) => {
       if (sib !== li) closeSubtree(sib, true);
     });
   }
@@ -170,35 +174,29 @@ function initGlobalToc({
     if (li) toggleGroup(li);
   });
 
-  // ---------- NEW: match current URL, set active, expand ancestors ----------
+  // ---------- match current URL, set active, expand ancestors ----------
   markCurrentUrlActive();
-
 
   function markCurrentUrlActive() {
     const current = normalizeUrl(location.href);
 
-    // exact match against rendered leaf links
     const links = Array.from(host.querySelectorAll('a[href]:not(.toc-group)'));
-    const hit = links.find(a => normalizeUrl(a.href) === current);
+    const hit = links.find((a) => normalizeUrl(a.href) === current);
     if (!hit) return;
 
-    // clear existing active in this nav
-    host.querySelectorAll("li.active").forEach(li => li.classList.remove("active"));
-    host.querySelectorAll("a.active").forEach(a => a.classList.remove("active"));
-    host.querySelectorAll("li > ul").forEach(ul => (ul.style.height = "0px"));
+    host.querySelectorAll("li.active").forEach((li) => li.classList.remove("active"));
+    host.querySelectorAll("a.active").forEach((a) => a.classList.remove("active"));
+    host.querySelectorAll("li > ul").forEach((ul) => (ul.style.height = "0px"));
 
     hit.classList.add("active");
 
-    // expand all ancestor groups
     let li = hit.closest("li");
     while (li) {
       const parentLi = li.parentElement?.closest("li");
       if (!parentLi) break;
 
-      // open parent group (and its UL)
       openGroup(parentLi);
 
-      // if openGroup set height auto only after transition, still OK; we want it open now
       const ul = parentLi.querySelector(":scope > ul");
       if (ul) ul.style.height = "auto";
 
@@ -207,7 +205,6 @@ function initGlobalToc({
   }
 
   function normalizeUrl(u) {
-    // normalize trailing slashes + strip hash/query
     const url = new URL(u, location.origin);
     url.hash = "";
     url.search = "";
@@ -216,6 +213,33 @@ function initGlobalToc({
     url.pathname = p;
     return url.toString();
   }
+
+  // ---------- icon helper ----------
+  function addIcon(el, icon) {
+    if (!icon) return;
+
+    const i = document.createElement("i");
+
+    // `icon` can be either:
+    // - "fa-sharp-duotone fa-thin fa-dog" (full class list), or
+    // - "fa-dog" (just the glyph; we'll add your defaults)
+    const cls = String(icon).trim();
+
+    if (cls.includes("fa-")) {
+      if (cls.includes(" ")) {
+        i.className = cls;
+      } else {
+        i.className = `fa-sharp-duotone fa-thin ${cls}`;
+      }
+    } else {
+      // if you pass just "dog" or similar, map to fa-dog
+      i.className = `fa-sharp-duotone fa-thin fa-${cls}`;
+    }
+
+    i.classList.add("toc-icon");
+    el.appendChild(i);
+  }
+
 
   // ---------- node renderer ----------
   function renderNode(node) {
@@ -226,30 +250,31 @@ function initGlobalToc({
       const a = document.createElement("a");
       a.href = "#";
       a.classList.add("toc-group");
-      a.textContent = node.title ?? "Untitled";
+      addIcon(a, node.icon);
+      a.appendChild(document.createTextNode(node.title ?? "Untitled"));
       li.appendChild(a);
 
       const ul = document.createElement("ul");
       li.appendChild(ul);
       for (const c of node.children) {
         if (c.section) {
-          var div = document.createElement("li");
+          const div = document.createElement("li");
           div.classList.add("divider");
-          ul.appendChild(div)
+          ul.appendChild(div);
         }
         ul.appendChild(renderNode(c));
       }
     } else {
       const a = document.createElement("a");
       a.href = node.url ?? "#";
-      a.textContent = node.title ?? node.url ?? "Untitled";
+      addIcon(a, node.icon);
+      a.appendChild(document.createTextNode(node.title ?? node.url ?? "Untitled"));
       li.appendChild(a);
     }
 
     return li;
   }
 }
-
 
 // Simple on-page TOC (single #content)
 // - No collapse, no scrollspy, no animation

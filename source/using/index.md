@@ -6,11 +6,11 @@ uid: home-user-guide
 
 ## Gaea 2 Documentation
 
-![](.data/assets/Wallpaper.png)
+![](/.data/assets/Wallpaper.png)
 
 **Welcome to the official Gaea 2.0 documentation**, your gateway to unlocking the full potential of the most advanced terrain generation software on the market. Whether you’re just starting or a seasoned professional, this guide is designed to provide you with everything you need to create stunning, complex terrains with ease and precision.
 
-![](.data/assets/gaea-ui2x.webp)
+![](/.data/assets/gaea-ui2x.webp)
 
 :::info
 info

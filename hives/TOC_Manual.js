@@ -1,7 +1,8 @@
 window.SITE_TOC = [
   {
     "title": "Home",
-    "url": "/manual/./"
+    "url": "/manual/./",
+    "icon": "power-off"
   },
   {
     "title": "Using Gaea",
@@ -11,7 +12,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Terrain Basics",
-            "url": "/manual/using-gaea/terrain-basics/"
+            "url": "/manual/using-gaea/terrain-basics/",
+            "icon": "play"
           },
           {
             "title": "Introduction",
@@ -68,7 +70,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Understanding Erosion",
-            "url": "/manual/using-gaea/understanding-erosion/"
+            "url": "/manual/using-gaea/understanding-erosion/",
+            "icon": "cloud-showers"
           },
           {
             "title": "Erosion_1",
@@ -102,7 +105,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Simulations",
-            "url": "/manual/using-gaea/simulations/"
+            "url": "/manual/using-gaea/simulations/",
+            "icon": "cloud-sun-rain"
           },
           {
             "title": "Snowfall",
@@ -127,7 +131,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Crafting the Surface",
-            "url": "/manual/using-gaea/crafting-the-surface/"
+            "url": "/manual/using-gaea/crafting-the-surface/",
+            "icon": "hand-horns"
           },
           {
             "title": "Noises, Primitives, and Landscapes",
@@ -152,7 +157,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Colorizing and Textures",
-            "url": "/manual/using-gaea/colorizing-and-textures/"
+            "url": "/manual/using-gaea/colorizing-and-textures/",
+            "icon": "palette"
           },
           {
             "title": "Crafting Masks",
@@ -181,7 +187,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Importing Terrains",
-            "url": "/manual/using-gaea/importing-terrains/"
+            "url": "/manual/using-gaea/importing-terrains/",
+            "icon": "box-open"
           },
           {
             "title": "Common Issues",
@@ -211,7 +218,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Managing Graphs",
-            "url": "/manual/using-gaea/managing-graphs/"
+            "url": "/manual/using-gaea/managing-graphs/",
+            "icon": "person-to-portal"
           },
           {
             "title": "Using Modifiers",
@@ -244,7 +252,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Baking Nodes",
-            "url": "/manual/using-gaea/baking-nodes/"
+            "url": "/manual/using-gaea/baking-nodes/",
+            "icon": "fire"
           },
           {
             "title": "Linchpin Nodes",
@@ -257,7 +266,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Build and Export",
-            "url": "/manual/using-gaea/build-and-export/"
+            "url": "/manual/using-gaea/build-and-export/",
+            "icon": "box-taped"
           },
           {
             "title": "Exporting Nodes",
@@ -289,7 +299,8 @@ window.SITE_TOC = [
             "children": [
               {
                 "title": "Build Options",
-                "url": "/manual/using-gaea/build-and-export/build-options/"
+                "url": "/manual/using-gaea/build-and-export/build-options/",
+                "icon": "sparkles"
               },
               {
                 "title": "Managing Regions",
@@ -303,7 +314,8 @@ window.SITE_TOC = [
             "children": [
               {
                 "title": "Mesh Exports",
-                "url": "/manual/using-gaea/build-and-export/mesh-exports/"
+                "url": "/manual/using-gaea/build-and-export/mesh-exports/",
+                "icon": "sparkles"
               },
               {
                 "title": "Tangent-Space Normals and Warped Maps",
@@ -341,7 +353,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Build Swarm",
-            "url": "/manual/advanced-topics/build-swarm/"
+            "url": "/manual/advanced-topics/build-swarm/",
+            "icon": "cubes-stacked"
           },
           {
             "title": "Creating Mutations",
@@ -358,7 +371,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Technical Information",
-            "url": "/manual/advanced-topics/technical-information/"
+            "url": "/manual/advanced-topics/technical-information/",
+            "icon": "head-side-gear"
           },
           {
             "title": "File Formats",
@@ -387,7 +401,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Automation",
-            "url": "/manual/advanced-topics/automation/"
+            "url": "/manual/advanced-topics/automation/",
+            "icon": "square-terminal"
           },
           {
             "title": "Command Line Automation",
@@ -413,7 +428,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Gaea2Houdini",
-            "url": "/manual/plugins/gaea2houdini/"
+            "url": "/manual/plugins/gaea2houdini/",
+            "icon": "h"
           },
           {
             "title": "Installing Gaea2Houdini",
@@ -438,7 +454,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Gaea2Unreal",
-            "url": "/manual/plugins/gaea2unreal/"
+            "url": "/manual/plugins/gaea2unreal/",
+            "icon": "u"
           },
           {
             "title": "Installing Gaea2Unreal",
@@ -483,7 +500,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Scripting and Expressions",
-            "url": "/manual/developers/scripting-and-expressions/"
+            "url": "/manual/developers/scripting-and-expressions/",
+            "icon": "gear-code"
           },
           {
             "title": "Variables",
@@ -514,7 +532,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Diagnostics",
-            "url": "/manual/troubleshooting/diagnostics-watson/"
+            "url": "/manual/troubleshooting/diagnostics-watson/",
+            "icon": "stethoscope"
           },
           {
             "title": "Diagnostics Package",
@@ -535,7 +554,8 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Terrains",
-            "url": "/manual/troubleshooting/terrains/"
+            "url": "/manual/troubleshooting/terrains/",
+            "icon": "circle-xmark"
           },
           {
             "title": "Common Errors",

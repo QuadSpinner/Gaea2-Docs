@@ -1,14 +1,16 @@
 window.SITE_TOC = [
   {
     "title": "Home",
-    "url": "/introduction/./"
+    "url": "/introduction/./",
+    "icon": "power-off"
   },
   {
     "title": "Install Gaea",
     "children": [
       {
         "title": "Install Gaea",
-        "url": "/introduction/install-gaea/"
+        "url": "/introduction/install-gaea/",
+        "icon": "box"
       },
       {
         "title": "Regular Installation",
@@ -47,7 +49,8 @@ window.SITE_TOC = [
     "children": [
       {
         "title": "License Management",
-        "url": "/introduction/license-management/"
+        "url": "/introduction/license-management/",
+        "icon": "key"
       },
       {
         "title": "Activation",
@@ -76,7 +79,8 @@ window.SITE_TOC = [
     "children": [
       {
         "title": "User Interface",
-        "url": "/introduction/user-interface/"
+        "url": "/introduction/user-interface/",
+        "icon": "sidebar-flip"
       },
       {
         "title": "Graph",
@@ -193,7 +197,8 @@ window.SITE_TOC = [
     "children": [
       {
         "title": "The Graph",
-        "url": "/introduction/the-graph/"
+        "url": "/introduction/the-graph/",
+        "icon": "diagram-project"
       },
       {
         "title": "Procedural Workflow",
@@ -258,7 +263,8 @@ window.SITE_TOC = [
     "children": [
       {
         "title": "For Gaea 1 Users",
-        "url": "/introduction/for-gaea-1-users/"
+        "url": "/introduction/for-gaea-1-users/",
+        "icon": "arrows-turn-right"
       },
       {
         "title": "Migration Guide",
