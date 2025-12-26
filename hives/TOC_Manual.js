@@ -1,7 +1,7 @@
 window.SITE_TOC = [
   {
     "title": "Home",
-    "url": "/Guide/./"
+    "url": "/manual/./"
   },
   {
     "title": "Using Gaea",
@@ -11,48 +11,55 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Terrain Basics",
-            "url": "/Guide/using-gaea/terrain-basics/"
+            "url": "/manual/using-gaea/terrain-basics/"
           },
           {
             "title": "Introduction",
-            "url": "/Guide/using-gaea/terrain-basics/introduction.html"
+            "url": "/manual/using-gaea/terrain-basics/introduction.html",
+            "icon": "\u00271\u0027"
           },
           {
             "title": "Large Mountains, Effects",
-            "url": "/Guide/using-gaea/terrain-basics/large-mountains-effects.html"
+            "url": "/manual/using-gaea/terrain-basics/large-mountains-effects.html",
+            "icon": "\u00272\u0027"
           },
           {
             "title": "Elaborate Terrains",
-            "url": "/Guide/using-gaea/terrain-basics/elaborate-terrains.html",
+            "url": "/manual/using-gaea/terrain-basics/elaborate-terrains.html",
+            "icon": "\u00273\u0027",
             "section": true
           },
           {
             "title": "Advanced Methods",
-            "url": "/Guide/using-gaea/terrain-basics/advanced-methods.html"
+            "url": "/manual/using-gaea/terrain-basics/advanced-methods.html",
+            "icon": "\u00274\u0027"
           },
           {
             "title": "Exporting Elements",
-            "url": "/Guide/using-gaea/terrain-basics/exporting-elements.html"
+            "url": "/manual/using-gaea/terrain-basics/exporting-elements.html",
+            "icon": "\u00275\u0027"
           },
           {
             "title": "Masks",
-            "url": "/Guide/using-gaea/terrain-basics/masks.html"
+            "url": "/manual/using-gaea/terrain-basics/masks.html",
+            "icon": "\u00276\u0027"
           },
           {
             "title": "Importing Meshes",
-            "url": "/Guide/using-gaea/terrain-basics/importing-meshes.html"
+            "url": "/manual/using-gaea/terrain-basics/importing-meshes.html",
+            "icon": "\u00277\u0027"
           },
           {
             "title": "Non-Determinism",
-            "url": "/Guide/using-gaea/terrain-basics/non-determinism.html"
+            "url": "/manual/using-gaea/terrain-basics/non-determinism.html"
           },
           {
             "title": "Scale and Resolution",
-            "url": "/Guide/using-gaea/terrain-basics/scale-and-resolution.html"
+            "url": "/manual/using-gaea/terrain-basics/scale-and-resolution.html"
           },
           {
             "title": "Memory Requirements",
-            "url": "/Guide/using-gaea/terrain-basics/memory-requirements.html"
+            "url": "/manual/using-gaea/terrain-basics/memory-requirements.html"
           }
         ]
       },
@@ -61,30 +68,30 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Understanding Erosion",
-            "url": "/Guide/using-gaea/understanding-erosion/"
+            "url": "/manual/using-gaea/understanding-erosion/"
           },
           {
             "title": "Erosion_1",
-            "url": "/Guide/using-gaea/understanding-erosion/erosion_1.html"
+            "url": "/manual/using-gaea/understanding-erosion/erosion_1.html"
           },
           {
             "title": "Thermal_2",
-            "url": "/Guide/using-gaea/understanding-erosion/thermal_2.html"
+            "url": "/manual/using-gaea/understanding-erosion/thermal_2.html"
           },
           {
             "title": "Thermal Erosion",
-            "url": "/Guide/using-gaea/understanding-erosion/thermal-erosion.html"
+            "url": "/manual/using-gaea/understanding-erosion/thermal-erosion.html"
           },
           {
             "title": "Erosion 2",
             "children": [
               {
                 "title": "Erosion_2",
-                "url": "/Guide/using-gaea/understanding-erosion/erosion_2/"
+                "url": "/manual/using-gaea/understanding-erosion/erosion_2/"
               },
               {
                 "title": "Erosion_2 in Action",
-                "url": "/Guide/using-gaea/understanding-erosion/erosion_2/erosion_2-in-action.html"
+                "url": "/manual/using-gaea/understanding-erosion/erosion_2/erosion_2-in-action.html"
               }
             ]
           }
@@ -95,23 +102,23 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Simulations",
-            "url": "/Guide/using-gaea/simulations/"
+            "url": "/manual/using-gaea/simulations/"
           },
           {
             "title": "Snowfall",
-            "url": "/Guide/using-gaea/simulations/snowfall.html"
+            "url": "/manual/using-gaea/simulations/snowfall.html"
           },
           {
             "title": "Debris",
-            "url": "/Guide/using-gaea/simulations/debris.html"
+            "url": "/manual/using-gaea/simulations/debris.html"
           },
           {
             "title": "Water",
-            "url": "/Guide/using-gaea/simulations/water.html"
+            "url": "/manual/using-gaea/simulations/water.html"
           },
           {
             "title": "Vegetation",
-            "url": "/Guide/using-gaea/simulations/vegetation.html"
+            "url": "/manual/using-gaea/simulations/vegetation.html"
           }
         ]
       },
@@ -120,23 +127,23 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Crafting the Surface",
-            "url": "/Guide/using-gaea/crafting-the-surface/"
+            "url": "/manual/using-gaea/crafting-the-surface/"
           },
           {
             "title": "Noises, Primitives, and Landscapes",
-            "url": "/Guide/using-gaea/crafting-the-surface/noises-primitives-and-landscapes.html"
+            "url": "/manual/using-gaea/crafting-the-surface/noises-primitives-and-landscapes.html"
           },
           {
             "title": "Erosion",
-            "url": "/Guide/using-gaea/crafting-the-surface/erosion.html"
+            "url": "/manual/using-gaea/crafting-the-surface/erosion.html"
           },
           {
             "title": "Surface Nodes",
-            "url": "/Guide/using-gaea/crafting-the-surface/surface-nodes.html"
+            "url": "/manual/using-gaea/crafting-the-surface/surface-nodes.html"
           },
           {
             "title": "Transpose Shapes",
-            "url": "/Guide/using-gaea/crafting-the-surface/transpose-shapes.html"
+            "url": "/manual/using-gaea/crafting-the-surface/transpose-shapes.html"
           }
         ]
       },
@@ -145,27 +152,27 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Colorizing and Textures",
-            "url": "/Guide/using-gaea/colorizing-and-textures/"
+            "url": "/manual/using-gaea/colorizing-and-textures/"
           },
           {
             "title": "Crafting Masks",
-            "url": "/Guide/using-gaea/colorizing-and-textures/crafting-masks.html"
+            "url": "/manual/using-gaea/colorizing-and-textures/crafting-masks.html"
           },
           {
             "title": "Working with SatMaps",
-            "url": "/Guide/using-gaea/colorizing-and-textures/working-with-satmaps.html"
+            "url": "/manual/using-gaea/colorizing-and-textures/working-with-satmaps.html"
           },
           {
             "title": "Synthesizing Colors",
-            "url": "/Guide/using-gaea/colorizing-and-textures/synthesizing-colors.html"
+            "url": "/manual/using-gaea/colorizing-and-textures/synthesizing-colors.html"
           },
           {
             "title": "Layering Textures",
-            "url": "/Guide/using-gaea/colorizing-and-textures/layering-textures.html"
+            "url": "/manual/using-gaea/colorizing-and-textures/layering-textures.html"
           },
           {
             "title": "ColorErosion",
-            "url": "/Guide/using-gaea/colorizing-and-textures/colorerosion.html"
+            "url": "/manual/using-gaea/colorizing-and-textures/colorerosion.html"
           }
         ]
       },
@@ -174,26 +181,26 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Importing Terrains",
-            "url": "/Guide/using-gaea/importing-terrains/"
+            "url": "/manual/using-gaea/importing-terrains/"
           },
           {
             "title": "Common Issues",
-            "url": "/Guide/using-gaea/importing-terrains/common-issues.html"
+            "url": "/manual/using-gaea/importing-terrains/common-issues.html"
           },
           {
             "title": "Universal Instructions",
-            "url": "/Guide/using-gaea/importing-terrains/universal-instructions.html"
+            "url": "/manual/using-gaea/importing-terrains/universal-instructions.html"
           },
           {
             "title": "Software Specific Instructions",
             "children": [
               {
                 "title": "Software-specific Instructions",
-                "url": "/Guide/using-gaea/importing-terrains/software-specific-instructions/"
+                "url": "/manual/using-gaea/importing-terrains/software-specific-instructions/"
               },
               {
                 "title": "Unreal",
-                "url": "/Guide/using-gaea/importing-terrains/software-specific-instructions/unreal.html"
+                "url": "/manual/using-gaea/importing-terrains/software-specific-instructions/unreal.html"
               }
             ]
           }
@@ -204,31 +211,31 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Managing Graphs",
-            "url": "/Guide/using-gaea/managing-graphs/"
+            "url": "/manual/using-gaea/managing-graphs/"
           },
           {
             "title": "Using Modifiers",
-            "url": "/Guide/using-gaea/managing-graphs/using-modifiers.html"
+            "url": "/manual/using-gaea/managing-graphs/using-modifiers.html"
           },
           {
             "title": "Portals and Chokepoints",
-            "url": "/Guide/using-gaea/managing-graphs/portals-and-chokepoints.html"
+            "url": "/manual/using-gaea/managing-graphs/portals-and-chokepoints.html"
           },
           {
             "title": "Visualizing Scale",
-            "url": "/Guide/using-gaea/managing-graphs/visualizing-scale.html"
+            "url": "/manual/using-gaea/managing-graphs/visualizing-scale.html"
           },
           {
             "title": "Accumulators",
-            "url": "/Guide/using-gaea/managing-graphs/accumulators.html"
+            "url": "/manual/using-gaea/managing-graphs/accumulators.html"
           },
           {
             "title": "Data View",
-            "url": "/Guide/using-gaea/managing-graphs/data-view.html"
+            "url": "/manual/using-gaea/managing-graphs/data-view.html"
           },
           {
             "title": "Navigating Complex Graphs",
-            "url": "/Guide/using-gaea/managing-graphs/navigating-complex-graphs.html"
+            "url": "/manual/using-gaea/managing-graphs/navigating-complex-graphs.html"
           }
         ]
       },
@@ -237,11 +244,11 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Baking Nodes",
-            "url": "/Guide/using-gaea/baking-nodes/"
+            "url": "/manual/using-gaea/baking-nodes/"
           },
           {
             "title": "Linchpin Nodes",
-            "url": "/Guide/using-gaea/baking-nodes/linchpin-nodes.html"
+            "url": "/manual/using-gaea/baking-nodes/linchpin-nodes.html"
           }
         ]
       },
@@ -250,38 +257,44 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Build and Export",
-            "url": "/Guide/using-gaea/build-and-export/"
+            "url": "/manual/using-gaea/build-and-export/"
           },
           {
             "title": "Exporting Nodes",
-            "url": "/Guide/using-gaea/build-and-export/exporting-nodes.html"
+            "url": "/manual/using-gaea/build-and-export/exporting-nodes.html",
+            "icon": "sparkles"
           },
           {
             "title": "Tiled Builds",
-            "url": "/Guide/using-gaea/build-and-export/tiled-builds.html"
+            "url": "/manual/using-gaea/build-and-export/tiled-builds.html",
+            "icon": "sparkles"
           },
           {
             "title": "Using Regions",
-            "url": "/Guide/using-gaea/build-and-export/using-regions.html"
+            "url": "/manual/using-gaea/build-and-export/using-regions.html",
+            "icon": "sparkles"
           },
           {
             "title": "Profiles and Batch Builds",
-            "url": "/Guide/using-gaea/build-and-export/profiles-and-batch-builds.html"
+            "url": "/manual/using-gaea/build-and-export/profiles-and-batch-builds.html",
+            "icon": "sparkles"
           },
           {
             "title": "Batch Builds",
-            "url": "/Guide/using-gaea/build-and-export/batch-builds.html"
+            "url": "/manual/using-gaea/build-and-export/batch-builds.html",
+            "icon": "sparkles"
           },
           {
             "title": "Build Options",
             "children": [
               {
                 "title": "Build Options",
-                "url": "/Guide/using-gaea/build-and-export/build-options/"
+                "url": "/manual/using-gaea/build-and-export/build-options/"
               },
               {
                 "title": "Managing Regions",
-                "url": "/Guide/using-gaea/build-and-export/build-options/managing-regions.html"
+                "url": "/manual/using-gaea/build-and-export/build-options/managing-regions.html",
+                "icon": "sparkles"
               }
             ]
           },
@@ -290,11 +303,12 @@ window.SITE_TOC = [
             "children": [
               {
                 "title": "Mesh Exports",
-                "url": "/Guide/using-gaea/build-and-export/mesh-exports/"
+                "url": "/manual/using-gaea/build-and-export/mesh-exports/"
               },
               {
                 "title": "Tangent-Space Normals and Warped Maps",
-                "url": "/Guide/using-gaea/build-and-export/mesh-exports/tangent-space-normals-and-warped-maps.html"
+                "url": "/manual/using-gaea/build-and-export/mesh-exports/tangent-space-normals-and-warped-maps.html",
+                "icon": "sparkles"
               }
             ]
           },
@@ -303,15 +317,15 @@ window.SITE_TOC = [
             "children": [
               {
                 "title": "Application Specific Export Nodes",
-                "url": "/Guide/using-gaea/build-and-export/application-specific-export-nodes/"
+                "url": "/manual/using-gaea/build-and-export/application-specific-export-nodes/"
               },
               {
                 "title": "Unreal Node",
-                "url": "/Guide/using-gaea/build-and-export/application-specific-export-nodes/unreal-node.html"
+                "url": "/manual/using-gaea/build-and-export/application-specific-export-nodes/unreal-node.html"
               },
               {
                 "title": "Unity Node",
-                "url": "/Guide/using-gaea/build-and-export/application-specific-export-nodes/unity-node.html"
+                "url": "/manual/using-gaea/build-and-export/application-specific-export-nodes/unity-node.html"
               }
             ]
           }
@@ -327,15 +341,15 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Build Swarm",
-            "url": "/Guide/advanced-topics/build-swarm/"
+            "url": "/manual/advanced-topics/build-swarm/"
           },
           {
             "title": "Creating Mutations",
-            "url": "/Guide/advanced-topics/build-swarm/creating-mutations.html"
+            "url": "/manual/advanced-topics/build-swarm/creating-mutations.html"
           },
           {
             "title": "Build Reports",
-            "url": "/Guide/advanced-topics/build-swarm/build-reports.html"
+            "url": "/manual/advanced-topics/build-swarm/build-reports.html"
           }
         ]
       },
@@ -344,27 +358,27 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Technical Information",
-            "url": "/Guide/advanced-topics/technical-information/"
+            "url": "/manual/advanced-topics/technical-information/"
           },
           {
             "title": "File Formats",
-            "url": "/Guide/advanced-topics/technical-information/file-formats.html"
+            "url": "/manual/advanced-topics/technical-information/file-formats.html"
           },
           {
             "title": "Learning and Predictive System",
-            "url": "/Guide/advanced-topics/technical-information/learning-and-predictive-system.html"
+            "url": "/manual/advanced-topics/technical-information/learning-and-predictive-system.html"
           },
           {
             "title": "Paths and Storage",
-            "url": "/Guide/advanced-topics/technical-information/paths-and-storage.html"
+            "url": "/manual/advanced-topics/technical-information/paths-and-storage.html"
           },
           {
             "title": "Dimensions and Scale",
-            "url": "/Guide/advanced-topics/technical-information/dimensions-and-scale.html"
+            "url": "/manual/advanced-topics/technical-information/dimensions-and-scale.html"
           },
           {
             "title": "Calculating Memory Requirements",
-            "url": "/Guide/advanced-topics/technical-information/calculating-memory-requirements.html"
+            "url": "/manual/advanced-topics/technical-information/calculating-memory-requirements.html"
           }
         ]
       },
@@ -373,19 +387,19 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Automation",
-            "url": "/Guide/advanced-topics/automation/"
+            "url": "/manual/advanced-topics/automation/"
           },
           {
             "title": "Command Line Automation",
-            "url": "/Guide/advanced-topics/automation/command-line-automation.html"
+            "url": "/manual/advanced-topics/automation/command-line-automation.html"
           },
           {
             "title": "Managing Input and Output",
-            "url": "/Guide/advanced-topics/automation/managing-input-and-output.html"
+            "url": "/manual/advanced-topics/automation/managing-input-and-output.html"
           },
           {
             "title": "Building a Bridge with the CLI",
-            "url": "/Guide/advanced-topics/automation/building-a-bridge-with-the-cli.html"
+            "url": "/manual/advanced-topics/automation/building-a-bridge-with-the-cli.html"
           }
         ]
       }
@@ -399,23 +413,23 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Gaea2Houdini",
-            "url": "/Guide/plugins/gaea2houdini/"
+            "url": "/manual/plugins/gaea2houdini/"
           },
           {
             "title": "Installing Gaea2Houdini",
-            "url": "/Guide/plugins/gaea2houdini/installing-gaea2houdini.html"
+            "url": "/manual/plugins/gaea2houdini/installing-gaea2houdini.html"
           },
           {
             "title": "Preparing a Terrain File",
-            "url": "/Guide/plugins/gaea2houdini/preparing-a-terrain-file.html"
+            "url": "/manual/plugins/gaea2houdini/preparing-a-terrain-file.html"
           },
           {
             "title": "Gaea HDAs",
-            "url": "/Guide/plugins/gaea2houdini/gaea-hdas.html"
+            "url": "/manual/plugins/gaea2houdini/gaea-hdas.html"
           },
           {
             "title": "Source Code",
-            "url": "/Guide/plugins/gaea2houdini/source-code.html"
+            "url": "/manual/plugins/gaea2houdini/source-code.html"
           }
         ]
       },
@@ -424,23 +438,23 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Gaea2Unreal",
-            "url": "/Guide/plugins/gaea2unreal/"
+            "url": "/manual/plugins/gaea2unreal/"
           },
           {
             "title": "Installing Gaea2Unreal",
-            "url": "/Guide/plugins/gaea2unreal/installing-gaea2unreal.html"
+            "url": "/manual/plugins/gaea2unreal/installing-gaea2unreal.html"
           },
           {
             "title": "Importing Terrains",
-            "url": "/Guide/plugins/gaea2unreal/importing-terrains.html"
+            "url": "/manual/plugins/gaea2unreal/importing-terrains.html"
           },
           {
             "title": "Importing Weight Maps",
-            "url": "/Guide/plugins/gaea2unreal/importing-weight-maps.html"
+            "url": "/manual/plugins/gaea2unreal/importing-weight-maps.html"
           },
           {
             "title": "Source Code",
-            "url": "/Guide/plugins/gaea2unreal/source-code.html"
+            "url": "/manual/plugins/gaea2unreal/source-code.html"
           }
         ]
       }
@@ -451,34 +465,37 @@ window.SITE_TOC = [
     "children": [
       {
         "title": "TOR Platform SDK",
-        "url": "/Guide/developers/tor-platform-sdk.html"
+        "url": "/manual/developers/tor-platform-sdk.html",
+        "icon": "square-terminal"
       },
       {
         "title": "Macros",
-        "url": "/Guide/developers/macros.html"
+        "url": "/manual/developers/macros.html",
+        "icon": "gear-complex-code"
       },
       {
         "title": "Anatomy of Node",
-        "url": "/Guide/developers/anatomy-of-node.html"
+        "url": "/manual/developers/anatomy-of-node.html",
+        "icon": "x-ray"
       },
       {
         "title": "Scripting and Expressions",
         "children": [
           {
             "title": "Scripting and Expressions",
-            "url": "/Guide/developers/scripting-and-expressions/"
+            "url": "/manual/developers/scripting-and-expressions/"
           },
           {
             "title": "Variables",
-            "url": "/Guide/developers/scripting-and-expressions/variables.html"
+            "url": "/manual/developers/scripting-and-expressions/variables.html"
           },
           {
             "title": "Expressions",
-            "url": "/Guide/developers/scripting-and-expressions/expressions.html"
+            "url": "/manual/developers/scripting-and-expressions/expressions.html"
           },
           {
             "title": "Math Node",
-            "url": "/Guide/developers/scripting-and-expressions/math-node.html"
+            "url": "/manual/developers/scripting-and-expressions/math-node.html"
           }
         ]
       }
@@ -489,26 +506,27 @@ window.SITE_TOC = [
     "children": [
       {
         "title": "Common Issues",
-        "url": "/Guide/troubleshooting/common-issues-and-workarounds.html"
+        "url": "/manual/troubleshooting/common-issues-and-workarounds.html",
+        "icon": "suitcase-medical"
       },
       {
         "title": "Diagnostics Watson",
         "children": [
           {
             "title": "Diagnostics",
-            "url": "/Guide/troubleshooting/diagnostics-watson/"
+            "url": "/manual/troubleshooting/diagnostics-watson/"
           },
           {
             "title": "Diagnostics Package",
-            "url": "/Guide/troubleshooting/diagnostics-watson/diagnostics-package.html"
+            "url": "/manual/troubleshooting/diagnostics-watson/diagnostics-package.html"
           },
           {
             "title": "CPU Only Mode",
-            "url": "/Guide/troubleshooting/diagnostics-watson/cpu-only-mode.html"
+            "url": "/manual/troubleshooting/diagnostics-watson/cpu-only-mode.html"
           },
           {
             "title": "Benchmark Devices",
-            "url": "/Guide/troubleshooting/diagnostics-watson/benchmark-devices.html"
+            "url": "/manual/troubleshooting/diagnostics-watson/benchmark-devices.html"
           }
         ]
       },
@@ -517,15 +535,15 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Terrains",
-            "url": "/Guide/troubleshooting/terrains/"
+            "url": "/manual/troubleshooting/terrains/"
           },
           {
             "title": "Common Errors",
-            "url": "/Guide/troubleshooting/terrains/common-errors.html"
+            "url": "/manual/troubleshooting/terrains/common-errors.html"
           },
           {
             "title": "Terrain Quality",
-            "url": "/Guide/troubleshooting/terrains/terrain-quality.html"
+            "url": "/manual/troubleshooting/terrains/terrain-quality.html"
           }
         ]
       }

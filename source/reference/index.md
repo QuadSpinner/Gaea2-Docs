@@ -1,6 +1,6 @@
 ---
-title: Readme
-uid: readme
+title: Home
+uid: reference-home
 ---
 
 # Readme

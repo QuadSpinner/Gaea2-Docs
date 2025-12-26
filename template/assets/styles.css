@@ -12,6 +12,13 @@
   --page-header: rgba(0, 0, 0, 0.05);
 }
 
+body {
+  background-image: linear-gradient(0deg, rgb(19, 28, 31) -20%, rgb(14, 17, 18) 20%, rgb(24, 24, 27) 100%);
+  background-size: 200vh;
+  background-position: 0% 0%;
+  background-attachment: fixed;
+}
+
 html[data-bs-theme=dark],
 body.dark {
   --page-header: rgba(255, 255, 255, 0.05);
@@ -24,13 +31,16 @@ body.dark {
   --toc-chevron: rgba(255, 255, 255, 0.55);
 }
 
+#contents {
+  color: var(--tblr-body-color);
+}
 #contents h1,
 #contents h2,
 #contents h3,
 #contents h4 {
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 24px;
-  color: rgba(255, 255, 255, 0.55);
+  color: #fff;
 }
 #contents h1 {
   font-size: 26px;
@@ -476,10 +486,12 @@ body.dark {
 }
 
 .head-block {
-  background: var(--page-header);
+  background-color: rgba(0, 0, 0, 0.35) !important;
   border-radius: 4px;
   padding: 16px;
   margin-bottom: 36px;
+  z-index: 500;
+  position: relative;
 }
 .head-block .doc-title span:nth-child(1) {
   font-size: 11px;
@@ -491,6 +503,9 @@ body.dark {
   font-size: 24px;
   font-weight: 300;
 }
+.head-block.glow {
+  background-color: #242427 !important;
+}
 
 .site-title {
   padding-left: 12px;
@@ -498,12 +513,66 @@ body.dark {
   color: var(--toc-section);
 }
 
-#next-nav {
-  margin-top: 36px;
+#next-nav .nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1;
+  white-space: nowrap;
 }
-#next-nav .nav-next::after {
-  content: " →";
+#next-nav .nav-btn::before, #next-nav .nav-btn::after {
+  content: "";
+  width: 1em;
+  height: 1em;
+  flex: 0 0 1em;
+  background-color: currentColor;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
 }
 #next-nav .nav-prev::before {
-  content: "← ";
+  -webkit-mask-image: url(/assets/svg/chevron-prev.svg);
+  mask-image: url(/assets/svg/chevron-prev.svg);
+}
+#next-nav .nav-prev::after {
+  content: none;
+}
+#next-nav .nav-next::after {
+  -webkit-mask-image: url(/assets/svg/chevron-next.svg);
+  mask-image: url(/assets/svg/chevron-next.svg);
+}
+#next-nav .nav-next::before {
+  content: none;
+}
+
+footer {
+  font-size: 12px;
+}
+footer a {
+  font-size: 12px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.35) !important;
+  border: 1.5px solid rgb(14, 16, 17);
+  box-shadow: none;
+}
+.card .card-title,
+.card h1,
+.card h2,
+.card h3 {
+  margin-top: 0 !important;
+  color: #fff;
+}
+.card .card-title a,
+.card h1 a,
+.card h2 a,
+.card h3 a {
+  color: #fff;
+}
+.card .card-body {
+  font-size: 12px;
 }

@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="/assets/site.css" />
     <link rel="stylesheet" href="/assets/themes.css" />
     <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/glow.css" />
+    <link rel="stylesheet" href="/assets/glow.js" />
     <link rel="stylesheet" href="/assets/print.css" />
 </head>
 
 <body data-hive="%%HIVE%%" data-hive-shortname="%%SHORTNAME%%" data-slug="%%SLUG%%">
     <div class="container-fluid" id="expanding-container">
         <header class="mt-5">
-            <div class="row head-block">
+            <div class="row glow head-block">
                 <div class="col-lg-2 col-sm-12">
                     <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" />
                     <a href="/" class="site-title" aria-label="Gaea Docs">Gaea Documentation</a>
@@ -44,14 +46,14 @@
             <div class="row">
                 <div class="col">
                     <div class="d-flex hive-nav">
-                        <a class="p-2 nav-item" data-hive="Getting Started" href="/Introduction">Getting Started</a>
-                        <a class="p-2 nav-item" data-hive="Using Gaea" href="/Guide">Using Gaea</a>
-                        <a class="p-2 nav-item" data-hive="Node Reference" href="/Reference">Nodes</a>
-                        <a class="p-2 nav-item" data-hive="Guides" href="/Guides">Guides</a>
-                        <a class="p-2 nav-item" data-hive="Videos" href="/Guides">Videos</a>
+                        <a class="p-2 nav-item" data-hive="Getting Started" href="/introduction">Getting Started</a>
+                        <a class="p-2 nav-item" data-hive="Using Gaea" href="/using">Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive="Node Reference" href="/reference">Nodes</a>
+                        <a class="p-2 nav-item" data-hive="Guides" href="/guides">Guides</a>
+                        <a class="p-2 nav-item" data-hive="Videos" href="/videos">Videos</a>
                         <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
-                        <a class="p-2 nav-item" data-hive="Developers" href="/Developers">Developers</a>
-                        <a class="p-2 nav-item" data-hive="Changelog" href="/Changelog">Changelog</a>
+                        <a class="p-2 nav-item" data-hive="Developers" href="/developers">Developers</a>
+                        <a class="p-2 nav-item" data-hive="Changelog" href="/changelog">Changelog</a>
                         <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
                     </div>
                 </div>
@@ -61,7 +63,7 @@
         <div class="page-wrapper">
 
             <div class="row">
-                <div class="col-2 d-none d-lg-block">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
                     <nav id="site-nav"></nav>
                 </div>
                 <div class="col">
@@ -104,7 +106,10 @@
                         <div id="content-holder" class="col col-lg-6 px-5">
                             <main id="contents">%%CONTENT%%</main>
 
-                            <div id="next-nav" class="d-flex justify-content-between"></div>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
                         </div>
                         <div class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
                             <br>
@@ -225,32 +230,43 @@
                 return leaves.length ? leaves[leaves.length - 1] : null;
             }
         }
+
+
         window.addEventListener("DOMContentLoaded", () => {
             const host = document.querySelector("#site-nav");
-            const { prev, next } = getPrevNextSiblings(host);
-        
             const box = document.querySelector("#next-nav");
-            if (!box) return;
+            if (!host || !box) return;
+
+            const { prev, next } = getPrevNextSiblings(host);
 
             box.innerHTML = "";
 
-            if (prev) {
-                const a = document.createElement("a");
-                a.className = "nav-prev btn btn-sm";
-                a.href = prev.getAttribute("href") || prev.href;
-                a.textContent = (prev.textContent || "").trim() || "Previous";
-                box.appendChild(a);
-            }
+            const makeBtn = (type, linkEl, fallbackText) => {
+                if (!linkEl) return null;
 
-            if (next) {
-                const a = document.createElement("a");
-                a.className = "nav-next btn btn-sm";
-                a.href = next.getAttribute("href") || next.href;
-                a.textContent = (next.textContent || "").trim() || "Next";
-                box.appendChild(a);
-            }
+                const href = linkEl.getAttribute("href") || linkEl.href;
+                const text = (linkEl.textContent || "").trim() || fallbackText;
 
+                const a = document.createElement("a");
+                a.className = `nav-btn nav-${type} btn btn-sm`;
+                a.href = href;
+
+                // text wrapped so CSS can position icon
+                const span = document.createElement("span");
+                span.className = "nav-btn-text";
+                span.textContent = text;
+
+                a.appendChild(span);
+                return a;
+            };
+
+            const prevBtn = makeBtn("prev", prev, "Previous");
+            const nextBtn = makeBtn("next", next, "Next");
+
+            if (prevBtn) box.appendChild(prevBtn);
+            if (nextBtn) box.appendChild(nextBtn);
         });
+
 
     </script>
 </body>

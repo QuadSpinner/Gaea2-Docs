@@ -17,7 +17,12 @@ function initGlobalToc({
   accordion = true,
 } = {}) {
   const host = document.querySelector(hostSelector);
-  if (!host || !toc) return;
+  if (!host || !toc) {
+    var holder = document.querySelector("#nav-holder");
+    holder.classList.add("d-none");
+    holder.classList.remove("d-lg-block");
+    return;
+  }
 
   host.innerHTML = "";
 

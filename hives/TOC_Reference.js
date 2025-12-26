@@ -1,11 +1,12 @@
 window.SITE_TOC = [
   {
-    "title": "Readme",
-    "url": "/Reference/./"
+    "title": "Home",
+    "url": "/reference/./"
   },
   {
     "title": "Node Map",
-    "url": "/Reference/node-map.html"
+    "url": "/reference/node-map.html",
+    "icon": "location-dot"
   },
   {
     "title": "Nodes",
@@ -14,104 +15,100 @@ window.SITE_TOC = [
         "title": "Primitive",
         "children": [
           {
-            "title": "\uD83D\uDFE2 Primitive",
-            "url": "/Reference/nodes/primitive/"
-          },
-          {
             "title": "Cellular",
-            "url": "/Reference/nodes/primitive/cellular.html"
+            "url": "/reference/nodes/primitive/cellular.html"
           },
           {
             "title": "Cellular3D",
-            "url": "/Reference/nodes/primitive/cellular3d.html"
+            "url": "/reference/nodes/primitive/cellular3d.html"
           },
           {
             "title": "Cone",
-            "url": "/Reference/nodes/primitive/cone.html"
+            "url": "/reference/nodes/primitive/cone.html"
           },
           {
             "title": "Constant",
-            "url": "/Reference/nodes/primitive/constant.html"
+            "url": "/reference/nodes/primitive/constant.html"
           },
           {
             "title": "Cracks",
-            "url": "/Reference/nodes/primitive/cracks.html"
+            "url": "/reference/nodes/primitive/cracks.html"
           },
           {
             "title": "CutNoise",
-            "url": "/Reference/nodes/primitive/cutnoise.html"
+            "url": "/reference/nodes/primitive/cutnoise.html"
           },
           {
             "title": "DotNoise",
-            "url": "/Reference/nodes/primitive/dotnoise.html"
+            "url": "/reference/nodes/primitive/dotnoise.html"
           },
           {
             "title": "Draw",
-            "url": "/Reference/nodes/primitive/draw.html"
+            "url": "/reference/nodes/primitive/draw.html"
           },
           {
             "title": "DriftNoise",
-            "url": "/Reference/nodes/primitive/driftnoise.html"
+            "url": "/reference/nodes/primitive/driftnoise.html"
           },
           {
             "title": "File",
-            "url": "/Reference/nodes/primitive/file.html"
+            "url": "/reference/nodes/primitive/file.html"
           },
           {
             "title": "Gabor",
-            "url": "/Reference/nodes/primitive/gabor.html"
+            "url": "/reference/nodes/primitive/gabor.html"
           },
           {
             "title": "Hemisphere",
-            "url": "/Reference/nodes/primitive/hemisphere.html"
+            "url": "/reference/nodes/primitive/hemisphere.html"
           },
           {
             "title": "LinearGradient",
-            "url": "/Reference/nodes/primitive/lineargradient.html"
+            "url": "/reference/nodes/primitive/lineargradient.html"
           },
           {
             "title": "LineNoise",
-            "url": "/Reference/nodes/primitive/linenoise.html"
+            "url": "/reference/nodes/primitive/linenoise.html"
           },
           {
             "title": "MultiFractal",
-            "url": "/Reference/nodes/primitive/multifractal.html"
+            "url": "/reference/nodes/primitive/multifractal.html"
           },
           {
             "title": "Noise",
-            "url": "/Reference/nodes/primitive/noise.html"
+            "url": "/reference/nodes/primitive/noise.html"
           },
           {
             "title": "Object",
-            "url": "/Reference/nodes/primitive/object.html"
+            "url": "/reference/nodes/primitive/object.html"
           },
           {
             "title": "Pattern",
-            "url": "/Reference/nodes/primitive/pattern.html"
+            "url": "/reference/nodes/primitive/pattern.html"
           },
           {
             "title": "Perlin",
-            "url": "/Reference/nodes/primitive/perlin.html"
+            "url": "/reference/nodes/primitive/perlin.html"
           },
           {
             "title": "RadialGradient",
-            "url": "/Reference/nodes/primitive/radialgradient.html"
+            "url": "/reference/nodes/primitive/radialgradient.html"
           },
           {
             "title": "Shape",
-            "url": "/Reference/nodes/primitive/shape.html"
+            "url": "/reference/nodes/primitive/shape.html"
           },
           {
             "title": "TileInput",
-            "url": "/Reference/nodes/primitive/tileinput.html"
+            "url": "/reference/nodes/primitive/tileinput.html"
           },
           {
             "title": "Voronoi",
-            "url": "/Reference/nodes/primitive/voronoi.html"
+            "url": "/reference/nodes/primitive/voronoi.html"
           },
           {
             "title": "WaveShine",
-            "url": "/Reference/nodes/primitive/waveshine.html"
+            "url": "/reference/nodes/primitive/waveshine.html"
           }
         ]
       },
@@ -119,64 +116,60 @@ window.SITE_TOC = [
         "title": "Terrain",
         "children": [
           {
-            "title": "\uD83D\uDFE2 Terrain",
-            "url": "/Reference/nodes/terrain/"
-          },
-          {
             "title": "Canyon",
-            "url": "/Reference/nodes/terrain/canyon.html"
+            "url": "/reference/nodes/terrain/canyon.html"
           },
           {
             "title": "Crater",
-            "url": "/Reference/nodes/terrain/crater.html"
+            "url": "/reference/nodes/terrain/crater.html"
           },
           {
             "title": "CraterField",
-            "url": "/Reference/nodes/terrain/craterfield.html"
+            "url": "/reference/nodes/terrain/craterfield.html"
           },
           {
             "title": "DuneSea",
-            "url": "/Reference/nodes/terrain/dunesea.html"
+            "url": "/reference/nodes/terrain/dunesea.html"
           },
           {
             "title": "Island",
-            "url": "/Reference/nodes/terrain/island.html"
+            "url": "/reference/nodes/terrain/island.html"
           },
           {
             "title": "Mountain",
-            "url": "/Reference/nodes/terrain/mountain.html"
+            "url": "/reference/nodes/terrain/mountain.html"
           },
           {
             "title": "MountainRange",
-            "url": "/Reference/nodes/terrain/mountainrange.html"
+            "url": "/reference/nodes/terrain/mountainrange.html"
           },
           {
             "title": "MountainSide",
-            "url": "/Reference/nodes/terrain/mountainside.html"
+            "url": "/reference/nodes/terrain/mountainside.html"
           },
           {
             "title": "Plates",
-            "url": "/Reference/nodes/terrain/plates.html"
+            "url": "/reference/nodes/terrain/plates.html"
           },
           {
             "title": "Ridge",
-            "url": "/Reference/nodes/terrain/ridge.html"
+            "url": "/reference/nodes/terrain/ridge.html"
           },
           {
             "title": "Rugged",
-            "url": "/Reference/nodes/terrain/rugged.html"
+            "url": "/reference/nodes/terrain/rugged.html"
           },
           {
             "title": "Slump",
-            "url": "/Reference/nodes/terrain/slump.html"
+            "url": "/reference/nodes/terrain/slump.html"
           },
           {
             "title": "Uplift",
-            "url": "/Reference/nodes/terrain/uplift.html"
+            "url": "/reference/nodes/terrain/uplift.html"
           },
           {
             "title": "Volcano",
-            "url": "/Reference/nodes/terrain/volcano.html"
+            "url": "/reference/nodes/terrain/volcano.html"
           }
         ]
       },
@@ -184,172 +177,168 @@ window.SITE_TOC = [
         "title": "Modify",
         "children": [
           {
-            "title": "\uD83D\uDD35 Modify",
-            "url": "/Reference/nodes/modify/"
-          },
-          {
             "title": "Adjust",
-            "url": "/Reference/nodes/modify/adjust.html"
+            "url": "/reference/nodes/modify/adjust.html"
           },
           {
             "title": "Aperture",
-            "url": "/Reference/nodes/modify/aperture.html"
+            "url": "/reference/nodes/modify/aperture.html"
           },
           {
             "title": "Autolevel",
-            "url": "/Reference/nodes/modify/autolevel.html"
+            "url": "/reference/nodes/modify/autolevel.html"
           },
           {
             "title": "BlobRemover",
-            "url": "/Reference/nodes/modify/blobremover.html"
+            "url": "/reference/nodes/modify/blobremover.html"
           },
           {
             "title": "Blur",
-            "url": "/Reference/nodes/modify/blur.html"
+            "url": "/reference/nodes/modify/blur.html"
           },
           {
             "title": "Clamp",
-            "url": "/Reference/nodes/modify/clamp.html"
+            "url": "/reference/nodes/modify/clamp.html"
           },
           {
             "title": "Clip",
-            "url": "/Reference/nodes/modify/clip.html"
+            "url": "/reference/nodes/modify/clip.html"
           },
           {
             "title": "Curve",
-            "url": "/Reference/nodes/modify/curve.html"
+            "url": "/reference/nodes/modify/curve.html"
           },
           {
             "title": "Deflate",
-            "url": "/Reference/nodes/modify/deflate.html"
+            "url": "/reference/nodes/modify/deflate.html"
           },
           {
             "title": "Denoise",
-            "url": "/Reference/nodes/modify/denoise.html"
+            "url": "/reference/nodes/modify/denoise.html"
           },
           {
             "title": "Dilate",
-            "url": "/Reference/nodes/modify/dilate.html"
+            "url": "/reference/nodes/modify/dilate.html"
           },
           {
             "title": "DirectionalWarp",
-            "url": "/Reference/nodes/modify/directionalwarp.html"
+            "url": "/reference/nodes/modify/directionalwarp.html"
           },
           {
             "title": "Distance",
-            "url": "/Reference/nodes/modify/distance.html"
+            "url": "/reference/nodes/modify/distance.html"
           },
           {
             "title": "Equalize",
-            "url": "/Reference/nodes/modify/equalize.html"
+            "url": "/reference/nodes/modify/equalize.html"
           },
           {
             "title": "Extend",
-            "url": "/Reference/nodes/modify/extend.html"
+            "url": "/reference/nodes/modify/extend.html"
           },
           {
             "title": "Filter",
-            "url": "/Reference/nodes/modify/filter.html"
+            "url": "/reference/nodes/modify/filter.html"
           },
           {
             "title": "Flip",
-            "url": "/Reference/nodes/modify/flip.html"
+            "url": "/reference/nodes/modify/flip.html"
           },
           {
             "title": "Fold",
-            "url": "/Reference/nodes/modify/fold.html"
+            "url": "/reference/nodes/modify/fold.html"
           },
           {
             "title": "GraphicEQ",
-            "url": "/Reference/nodes/modify/graphiceq.html"
+            "url": "/reference/nodes/modify/graphiceq.html"
           },
           {
             "title": "Heal",
-            "url": "/Reference/nodes/modify/heal.html"
+            "url": "/reference/nodes/modify/heal.html"
           },
           {
             "title": "Match",
-            "url": "/Reference/nodes/modify/match.html"
+            "url": "/reference/nodes/modify/match.html"
           },
           {
             "title": "Median",
-            "url": "/Reference/nodes/modify/median.html"
+            "url": "/reference/nodes/modify/median.html"
           },
           {
             "title": "Meshify",
-            "url": "/Reference/nodes/modify/meshify.html"
+            "url": "/reference/nodes/modify/meshify.html"
           },
           {
             "title": "Origami",
-            "url": "/Reference/nodes/modify/origami.html"
+            "url": "/reference/nodes/modify/origami.html"
           },
           {
             "title": "Pixelate",
-            "url": "/Reference/nodes/modify/pixelate.html"
+            "url": "/reference/nodes/modify/pixelate.html"
           },
           {
             "title": "Recurve",
-            "url": "/Reference/nodes/modify/recurve.html"
+            "url": "/reference/nodes/modify/recurve.html"
           },
           {
             "title": "Shaper",
-            "url": "/Reference/nodes/modify/shaper.html"
+            "url": "/reference/nodes/modify/shaper.html"
           },
           {
             "title": "Sharpen",
-            "url": "/Reference/nodes/modify/sharpen.html"
+            "url": "/reference/nodes/modify/sharpen.html"
           },
           {
             "title": "SlopeBlur",
-            "url": "/Reference/nodes/modify/slopeblur.html"
+            "url": "/reference/nodes/modify/slopeblur.html"
           },
           {
             "title": "SlopeWarp",
-            "url": "/Reference/nodes/modify/slopewarp.html"
+            "url": "/reference/nodes/modify/slopewarp.html"
           },
           {
             "title": "SoftClip",
-            "url": "/Reference/nodes/modify/softclip.html"
+            "url": "/reference/nodes/modify/softclip.html"
           },
           {
             "title": "Swirl",
-            "url": "/Reference/nodes/modify/swirl.html"
+            "url": "/reference/nodes/modify/swirl.html"
           },
           {
             "title": "ThermalShaper",
-            "url": "/Reference/nodes/modify/thermalshaper.html"
+            "url": "/reference/nodes/modify/thermalshaper.html"
           },
           {
             "title": "Threshold",
-            "url": "/Reference/nodes/modify/threshold.html"
+            "url": "/reference/nodes/modify/threshold.html"
           },
           {
             "title": "Transform",
-            "url": "/Reference/nodes/modify/transform.html"
+            "url": "/reference/nodes/modify/transform.html"
           },
           {
             "title": "Transform3D",
-            "url": "/Reference/nodes/modify/transform3d.html"
+            "url": "/reference/nodes/modify/transform3d.html"
           },
           {
             "title": "Transpose",
-            "url": "/Reference/nodes/modify/transpose.html"
+            "url": "/reference/nodes/modify/transpose.html"
           },
           {
             "title": "TriplanarDisplacement",
-            "url": "/Reference/nodes/modify/triplanardisplacement.html"
+            "url": "/reference/nodes/modify/triplanardisplacement.html"
           },
           {
             "title": "VariableBlur",
-            "url": "/Reference/nodes/modify/variableblur.html"
+            "url": "/reference/nodes/modify/variableblur.html"
           },
           {
             "title": "Warp",
-            "url": "/Reference/nodes/modify/warp.html"
+            "url": "/reference/nodes/modify/warp.html"
           },
           {
             "title": "Whorl",
-            "url": "/Reference/nodes/modify/whorl.html"
+            "url": "/reference/nodes/modify/whorl.html"
           }
         ]
       },
@@ -357,92 +346,88 @@ window.SITE_TOC = [
         "title": "Surface",
         "children": [
           {
-            "title": "\uD83D\uDFE1 Surface",
-            "url": "/Reference/nodes/surface/"
-          },
-          {
             "title": "Bomber",
-            "url": "/Reference/nodes/surface/bomber.html"
+            "url": "/reference/nodes/surface/bomber.html"
           },
           {
             "title": "Bulbous",
-            "url": "/Reference/nodes/surface/bulbous.html"
+            "url": "/reference/nodes/surface/bulbous.html"
           },
           {
             "title": "Contours",
-            "url": "/Reference/nodes/surface/contours.html"
+            "url": "/reference/nodes/surface/contours.html"
           },
           {
             "title": "Craggy",
-            "url": "/Reference/nodes/surface/craggy.html"
+            "url": "/reference/nodes/surface/craggy.html"
           },
           {
             "title": "Distress",
-            "url": "/Reference/nodes/surface/distress.html"
+            "url": "/reference/nodes/surface/distress.html"
           },
           {
             "title": "FractalTerraces",
-            "url": "/Reference/nodes/surface/fractalterraces.html"
+            "url": "/reference/nodes/surface/fractalterraces.html"
           },
           {
             "title": "Grid",
-            "url": "/Reference/nodes/surface/grid.html"
+            "url": "/reference/nodes/surface/grid.html"
           },
           {
             "title": "GroundTexture",
-            "url": "/Reference/nodes/surface/groundtexture.html"
+            "url": "/reference/nodes/surface/groundtexture.html"
           },
           {
             "title": "Outcrops",
-            "url": "/Reference/nodes/surface/outcrops.html"
+            "url": "/reference/nodes/surface/outcrops.html"
           },
           {
             "title": "Pockmarks",
-            "url": "/Reference/nodes/surface/pockmarks.html"
+            "url": "/reference/nodes/surface/pockmarks.html"
           },
           {
             "title": "RockNoise",
-            "url": "/Reference/nodes/surface/rocknoise.html"
+            "url": "/reference/nodes/surface/rocknoise.html"
           },
           {
             "title": "Rockscape",
-            "url": "/Reference/nodes/surface/rockscape.html"
+            "url": "/reference/nodes/surface/rockscape.html"
           },
           {
             "title": "Roughen",
-            "url": "/Reference/nodes/surface/roughen.html"
+            "url": "/reference/nodes/surface/roughen.html"
           },
           {
             "title": "Sand",
-            "url": "/Reference/nodes/surface/sand.html"
+            "url": "/reference/nodes/surface/sand.html"
           },
           {
             "title": "Sandstone",
-            "url": "/Reference/nodes/surface/sandstone.html"
+            "url": "/reference/nodes/surface/sandstone.html"
           },
           {
             "title": "Shatter",
-            "url": "/Reference/nodes/surface/shatter.html"
+            "url": "/reference/nodes/surface/shatter.html"
           },
           {
             "title": "Shear",
-            "url": "/Reference/nodes/surface/shear.html"
+            "url": "/reference/nodes/surface/shear.html"
           },
           {
             "title": "Steps",
-            "url": "/Reference/nodes/surface/steps.html"
+            "url": "/reference/nodes/surface/steps.html"
           },
           {
             "title": "Stones",
-            "url": "/Reference/nodes/surface/stones.html"
+            "url": "/reference/nodes/surface/stones.html"
           },
           {
             "title": "Stratify",
-            "url": "/Reference/nodes/surface/stratify.html"
+            "url": "/reference/nodes/surface/stratify.html"
           },
           {
             "title": "Terraces",
-            "url": "/Reference/nodes/surface/terraces.html"
+            "url": "/reference/nodes/surface/terraces.html"
           }
         ]
       },
@@ -450,108 +435,104 @@ window.SITE_TOC = [
         "title": "Simulate",
         "children": [
           {
-            "title": "\uD83D\uDFE0 Simulate",
-            "url": "/Reference/nodes/simulate/"
-          },
-          {
             "title": "Anastomosis",
-            "url": "/Reference/nodes/simulate/anastomosis.html"
+            "url": "/reference/nodes/simulate/anastomosis.html"
           },
           {
             "title": "Crumble",
-            "url": "/Reference/nodes/simulate/crumble.html"
+            "url": "/reference/nodes/simulate/crumble.html"
           },
           {
             "title": "Debris",
-            "url": "/Reference/nodes/simulate/debris.html"
+            "url": "/reference/nodes/simulate/debris.html"
           },
           {
             "title": "Dusting",
-            "url": "/Reference/nodes/simulate/dusting.html"
+            "url": "/reference/nodes/simulate/dusting.html"
           },
           {
             "title": "EasyErosion",
-            "url": "/Reference/nodes/simulate/easyerosion.html"
+            "url": "/reference/nodes/simulate/easyerosion.html"
           },
           {
             "title": "Erosion",
-            "url": "/Reference/nodes/simulate/erosion.html"
+            "url": "/reference/nodes/simulate/erosion.html"
           },
           {
             "title": "Erosion2",
-            "url": "/Reference/nodes/simulate/erosion2.html"
+            "url": "/reference/nodes/simulate/erosion2.html"
           },
           {
             "title": "Glacier",
-            "url": "/Reference/nodes/simulate/glacier.html"
+            "url": "/reference/nodes/simulate/glacier.html"
           },
           {
             "title": "Hillify",
-            "url": "/Reference/nodes/simulate/hillify.html"
+            "url": "/reference/nodes/simulate/hillify.html"
           },
           {
             "title": "HydroFix",
-            "url": "/Reference/nodes/simulate/hydrofix.html"
+            "url": "/reference/nodes/simulate/hydrofix.html"
           },
           {
             "title": "IceFloe",
-            "url": "/Reference/nodes/simulate/icefloe.html"
+            "url": "/reference/nodes/simulate/icefloe.html"
           },
           {
             "title": "Lake",
-            "url": "/Reference/nodes/simulate/lake.html"
+            "url": "/reference/nodes/simulate/lake.html"
           },
           {
             "title": "Lichtenberg",
-            "url": "/Reference/nodes/simulate/lichtenberg.html"
+            "url": "/reference/nodes/simulate/lichtenberg.html"
           },
           {
             "title": "Rivers",
-            "url": "/Reference/nodes/simulate/rivers.html"
+            "url": "/reference/nodes/simulate/rivers.html"
           },
           {
             "title": "Scree",
-            "url": "/Reference/nodes/simulate/scree.html"
+            "url": "/reference/nodes/simulate/scree.html"
           },
           {
             "title": "Sea",
-            "url": "/Reference/nodes/simulate/sea.html"
+            "url": "/reference/nodes/simulate/sea.html"
           },
           {
             "title": "Sediments",
-            "url": "/Reference/nodes/simulate/sediments.html"
+            "url": "/reference/nodes/simulate/sediments.html"
           },
           {
             "title": "Shrubs",
-            "url": "/Reference/nodes/simulate/shrubs.html"
+            "url": "/reference/nodes/simulate/shrubs.html"
           },
           {
             "title": "Snow",
-            "url": "/Reference/nodes/simulate/snow.html"
+            "url": "/reference/nodes/simulate/snow.html"
           },
           {
             "title": "Snowfield",
-            "url": "/Reference/nodes/simulate/snowfield.html"
+            "url": "/reference/nodes/simulate/snowfield.html"
           },
           {
             "title": "Thermal",
-            "url": "/Reference/nodes/simulate/thermal.html"
+            "url": "/reference/nodes/simulate/thermal.html"
           },
           {
             "title": "Thermal2",
-            "url": "/Reference/nodes/simulate/thermal2.html"
+            "url": "/reference/nodes/simulate/thermal2.html"
           },
           {
             "title": "Trees",
-            "url": "/Reference/nodes/simulate/trees.html"
+            "url": "/reference/nodes/simulate/trees.html"
           },
           {
             "title": "Wizard",
-            "url": "/Reference/nodes/simulate/wizard.html"
+            "url": "/reference/nodes/simulate/wizard.html"
           },
           {
             "title": "Wizard2",
-            "url": "/Reference/nodes/simulate/wizard2.html"
+            "url": "/reference/nodes/simulate/wizard2.html"
           }
         ]
       },
@@ -559,60 +540,56 @@ window.SITE_TOC = [
         "title": "Derive",
         "children": [
           {
-            "title": "\u26AA Derive",
-            "url": "/Reference/nodes/derive/"
-          },
-          {
             "title": "Angle",
-            "url": "/Reference/nodes/derive/angle.html"
+            "url": "/reference/nodes/derive/angle.html"
           },
           {
             "title": "Curvature",
-            "url": "/Reference/nodes/derive/curvature.html"
+            "url": "/reference/nodes/derive/curvature.html"
           },
           {
             "title": "FlowMap",
-            "url": "/Reference/nodes/derive/flowmap.html"
+            "url": "/reference/nodes/derive/flowmap.html"
           },
           {
             "title": "FlowMapClassic",
-            "url": "/Reference/nodes/derive/flowmapclassic.html"
+            "url": "/reference/nodes/derive/flowmapclassic.html"
           },
           {
             "title": "Height",
-            "url": "/Reference/nodes/derive/height.html"
+            "url": "/reference/nodes/derive/height.html"
           },
           {
             "title": "Normals",
-            "url": "/Reference/nodes/derive/normals.html"
+            "url": "/reference/nodes/derive/normals.html"
           },
           {
             "title": "Occlusion",
-            "url": "/Reference/nodes/derive/occlusion.html"
+            "url": "/reference/nodes/derive/occlusion.html"
           },
           {
             "title": "Peaks",
-            "url": "/Reference/nodes/derive/peaks.html"
+            "url": "/reference/nodes/derive/peaks.html"
           },
           {
             "title": "RockMap",
-            "url": "/Reference/nodes/derive/rockmap.html"
+            "url": "/reference/nodes/derive/rockmap.html"
           },
           {
             "title": "Slope",
-            "url": "/Reference/nodes/derive/slope.html"
+            "url": "/reference/nodes/derive/slope.html"
           },
           {
             "title": "Soil",
-            "url": "/Reference/nodes/derive/soil.html"
+            "url": "/reference/nodes/derive/soil.html"
           },
           {
             "title": "TextureBase",
-            "url": "/Reference/nodes/derive/texturebase.html"
+            "url": "/reference/nodes/derive/texturebase.html"
           },
           {
             "title": "Texturizer",
-            "url": "/Reference/nodes/derive/texturizer.html"
+            "url": "/reference/nodes/derive/texturizer.html"
           }
         ]
       },
@@ -620,60 +597,56 @@ window.SITE_TOC = [
         "title": "Colorize",
         "children": [
           {
-            "title": "\uD83D\uDFE3 Colorize",
-            "url": "/Reference/nodes/colorize/"
-          },
-          {
             "title": "CLUTer",
-            "url": "/Reference/nodes/colorize/cluter.html"
+            "url": "/reference/nodes/colorize/cluter.html"
           },
           {
             "title": "ColorErosion",
-            "url": "/Reference/nodes/colorize/colorerosion.html"
+            "url": "/reference/nodes/colorize/colorerosion.html"
           },
           {
             "title": "Gamma",
-            "url": "/Reference/nodes/colorize/gamma.html"
+            "url": "/reference/nodes/colorize/gamma.html"
           },
           {
             "title": "HSL",
-            "url": "/Reference/nodes/colorize/hsl.html"
+            "url": "/reference/nodes/colorize/hsl.html"
           },
           {
             "title": "RGBMerge",
-            "url": "/Reference/nodes/colorize/rgbmerge.html"
+            "url": "/reference/nodes/colorize/rgbmerge.html"
           },
           {
             "title": "RGBSplit",
-            "url": "/Reference/nodes/colorize/rgbsplit.html"
+            "url": "/reference/nodes/colorize/rgbsplit.html"
           },
           {
             "title": "SatMap",
-            "url": "/Reference/nodes/colorize/satmap.html"
+            "url": "/reference/nodes/colorize/satmap.html"
           },
           {
             "title": "Splat",
-            "url": "/Reference/nodes/colorize/splat.html"
+            "url": "/reference/nodes/colorize/splat.html"
           },
           {
             "title": "SuperColor",
-            "url": "/Reference/nodes/colorize/supercolor.html"
+            "url": "/reference/nodes/colorize/supercolor.html"
           },
           {
             "title": "Synth",
-            "url": "/Reference/nodes/colorize/synth.html"
+            "url": "/reference/nodes/colorize/synth.html"
           },
           {
             "title": "Tint",
-            "url": "/Reference/nodes/colorize/tint.html"
+            "url": "/reference/nodes/colorize/tint.html"
           },
           {
             "title": "WaterColor",
-            "url": "/Reference/nodes/colorize/watercolor.html"
+            "url": "/reference/nodes/colorize/watercolor.html"
           },
           {
             "title": "Weathering",
-            "url": "/Reference/nodes/colorize/weathering.html"
+            "url": "/reference/nodes/colorize/weathering.html"
           }
         ]
       },
@@ -681,60 +654,56 @@ window.SITE_TOC = [
         "title": "Output",
         "children": [
           {
-            "title": "\uD83D\uDD34 Output",
-            "url": "/Reference/nodes/output/"
-          },
-          {
             "title": "AO",
-            "url": "/Reference/nodes/output/ao.html"
+            "url": "/reference/nodes/output/ao.html"
           },
           {
             "title": "Cartography",
-            "url": "/Reference/nodes/output/cartography.html"
+            "url": "/reference/nodes/output/cartography.html"
           },
           {
             "title": "Export",
-            "url": "/Reference/nodes/output/export.html"
+            "url": "/reference/nodes/output/export.html"
           },
           {
             "title": "Halftone",
-            "url": "/Reference/nodes/output/halftone.html"
+            "url": "/reference/nodes/output/halftone.html"
           },
           {
             "title": "LightX",
-            "url": "/Reference/nodes/output/lightx.html"
+            "url": "/reference/nodes/output/lightx.html"
           },
           {
             "title": "Mesher",
-            "url": "/Reference/nodes/output/mesher.html"
+            "url": "/reference/nodes/output/mesher.html"
           },
           {
             "title": "PointCloud",
-            "url": "/Reference/nodes/output/pointcloud.html"
+            "url": "/reference/nodes/output/pointcloud.html"
           },
           {
             "title": "Shade",
-            "url": "/Reference/nodes/output/shade.html"
+            "url": "/reference/nodes/output/shade.html"
           },
           {
             "title": "Sunlight",
-            "url": "/Reference/nodes/output/sunlight.html"
+            "url": "/reference/nodes/output/sunlight.html"
           },
           {
             "title": "TextureBaker",
-            "url": "/Reference/nodes/output/texturebaker.html"
+            "url": "/reference/nodes/output/texturebaker.html"
           },
           {
             "title": "Unity",
-            "url": "/Reference/nodes/output/unity.html"
+            "url": "/reference/nodes/output/unity.html"
           },
           {
             "title": "Unreal",
-            "url": "/Reference/nodes/output/unreal.html"
+            "url": "/reference/nodes/output/unreal.html"
           },
           {
             "title": "VFX",
-            "url": "/Reference/nodes/output/vfx.html"
+            "url": "/reference/nodes/output/vfx.html"
           }
         ]
       },
@@ -742,107 +711,103 @@ window.SITE_TOC = [
         "title": "Utility",
         "children": [
           {
-            "title": "\u26AB Utility",
-            "url": "/Reference/nodes/utility/"
-          },
-          {
             "title": "MeshWarp",
-            "url": "/Reference/nodes/utility/meshwarp.html"
+            "url": "/reference/nodes/utility/meshwarp.html"
           },
           {
             "title": "Accumulator",
-            "url": "/Reference/nodes/utility/accumulator.html"
+            "url": "/reference/nodes/utility/accumulator.html"
           },
           {
             "title": "Chokepoint",
-            "url": "/Reference/nodes/utility/chokepoint.html"
+            "url": "/reference/nodes/utility/chokepoint.html"
           },
           {
             "title": "Combine",
-            "url": "/Reference/nodes/utility/combine.html"
+            "url": "/reference/nodes/utility/combine.html"
           },
           {
             "title": "Compare",
-            "url": "/Reference/nodes/utility/compare.html"
+            "url": "/reference/nodes/utility/compare.html"
           },
           {
             "title": "Construction",
-            "url": "/Reference/nodes/utility/construction.html"
+            "url": "/reference/nodes/utility/construction.html"
           },
           {
             "title": "DataExtractor",
-            "url": "/Reference/nodes/utility/dataextractor.html"
+            "url": "/reference/nodes/utility/dataextractor.html"
           },
           {
             "title": "Edge",
-            "url": "/Reference/nodes/utility/edge.html"
+            "url": "/reference/nodes/utility/edge.html"
           },
           {
             "title": "Gate",
-            "url": "/Reference/nodes/utility/gate.html"
+            "url": "/reference/nodes/utility/gate.html"
           },
           {
             "title": "Layers",
-            "url": "/Reference/nodes/utility/layers.html"
+            "url": "/reference/nodes/utility/layers.html"
           },
           {
             "title": "LoopBegin",
-            "url": "/Reference/nodes/utility/loopbegin.html"
+            "url": "/reference/nodes/utility/loopbegin.html"
           },
           {
             "title": "LoopEnd",
-            "url": "/Reference/nodes/utility/loopend.html"
+            "url": "/reference/nodes/utility/loopend.html"
           },
           {
             "title": "Mask",
-            "url": "/Reference/nodes/utility/mask.html"
+            "url": "/reference/nodes/utility/mask.html"
           },
           {
             "title": "Math",
-            "url": "/Reference/nodes/utility/math.html"
+            "url": "/reference/nodes/utility/math.html"
           },
           {
             "title": "Mixer",
-            "url": "/Reference/nodes/utility/mixer.html"
+            "url": "/reference/nodes/utility/mixer.html"
           },
           {
             "title": "Repeat",
-            "url": "/Reference/nodes/utility/repeat.html"
+            "url": "/reference/nodes/utility/repeat.html"
           },
           {
             "title": "Reseed",
-            "url": "/Reference/nodes/utility/reseed.html"
+            "url": "/reference/nodes/utility/reseed.html"
           },
           {
             "title": "Route",
-            "url": "/Reference/nodes/utility/route.html"
+            "url": "/reference/nodes/utility/route.html"
           },
           {
             "title": "Seamless",
-            "url": "/Reference/nodes/utility/seamless.html"
+            "url": "/reference/nodes/utility/seamless.html"
           },
           {
             "title": "Switch",
-            "url": "/Reference/nodes/utility/switch.html"
+            "url": "/reference/nodes/utility/switch.html"
           },
           {
             "title": "Var",
-            "url": "/Reference/nodes/utility/var.html"
+            "url": "/reference/nodes/utility/var.html"
           }
         ]
       }
     ]
   },
   {
-    "title": "Gaea2houdini",
+    "title": "Gaea2Houdini",
     "children": [
       {
         "title": "Gaea Nodes",
-        "url": "/Reference/gaea2houdini/gaea-nodes.html"
+        "url": "/reference/gaea2houdini/gaea-nodes.html"
       },
       {
         "title": "TOR Processor",
-        "url": "/Reference/gaea2houdini/tor-processor.html"
+        "url": "/reference/gaea2houdini/tor-processor.html"
       }
     ]
   }

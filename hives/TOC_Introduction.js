@@ -12,27 +12,33 @@ window.SITE_TOC = [
       },
       {
         "title": "Regular Installation",
-        "url": "/introduction/install-gaea/regular-installation.html"
+        "url": "/introduction/install-gaea/regular-installation.html",
+        "icon": "shield-halved"
       },
       {
         "title": "Portable Installation",
-        "url": "/introduction/install-gaea/portable-installation.html"
+        "url": "/introduction/install-gaea/portable-installation.html",
+        "icon": "usb-drive"
       },
       {
         "title": "Mass Deployment",
-        "url": "/introduction/install-gaea/mass-deployment.html"
+        "url": "/introduction/install-gaea/mass-deployment.html",
+        "icon": "network-wired"
       },
       {
         "title": "Troubleshooting",
-        "url": "/introduction/install-gaea/troubleshooting.html"
+        "url": "/introduction/install-gaea/troubleshooting.html",
+        "icon": "suitcase-medical"
       },
       {
         "title": "Version Numbers",
-        "url": "/introduction/install-gaea/version-numbers.html"
+        "url": "/introduction/install-gaea/version-numbers.html",
+        "icon": "code-branch"
       },
       {
         "title": "Uninstall or Clean Install",
-        "url": "/introduction/install-gaea/uninstall-or-clean-install.html"
+        "url": "/introduction/install-gaea/uninstall-or-clean-install.html",
+        "icon": "trash-xmark"
       }
     ]
   },
@@ -232,15 +238,18 @@ window.SITE_TOC = [
     "children": [
       {
         "title": "Options",
-        "url": "/introduction/misc/options.html"
+        "url": "/introduction/misc/options.html",
+        "icon": "sliders-simple"
       },
       {
         "title": "Autosave and Recovery",
-        "url": "/introduction/misc/autosave-and-recovery.html"
+        "url": "/introduction/misc/autosave-and-recovery.html",
+        "icon": "light-emergency-on"
       },
       {
         "title": "Command-line Interface",
-        "url": "/introduction/misc/command-line-interface.html"
+        "url": "/introduction/misc/command-line-interface.html",
+        "icon": "rectangle-terminal"
       }
     ]
   },

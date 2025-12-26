@@ -1,0 +1,30 @@
+.glow::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, rgb(0, 255, 255), coral, rgb(0, 255, 187), hotpink, purple, orange, skyblue);
+    background-size: 300%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate 100s linear infinite;  
+  }
+  
+  @keyframes animate {
+    0%{
+      background-position: 0 0;
+    }
+    50%{
+      background-position: 400% 0;
+    }
+    100%{
+      background-postition: 0 0;
+    }
+  }
+  
+  .glow::after{
+    filter: blur(40px);
+    opacity: 0.1;
+  }
+  
