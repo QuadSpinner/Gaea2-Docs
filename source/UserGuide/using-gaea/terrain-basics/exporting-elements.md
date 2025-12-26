@@ -65,7 +65,7 @@ In this example below, the mountain uses a baked lightmap on an unlit shader in 
 
 
 
-See [build-and-export](../build-and-export/) for more specifics.
+See @build-and-export for more specifics.
 
 
 

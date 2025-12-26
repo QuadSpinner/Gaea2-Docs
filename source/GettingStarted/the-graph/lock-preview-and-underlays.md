@@ -12,7 +12,7 @@ Locking preview to a node shows only the that node in the viewport. When a node 
 
 To pin a node, right-click it and select `Lock Preview`. You can also select the node and press `F`. Now when you edit any other node before the locked node, the changes will propagate all the way to the locked node every time.
 
-The locked node can be accessed quickly from the Toolbar in the [data-editor](../user-interface/data-editor/). It is shown as a green link.
+The locked node can be accessed quickly from the Toolbar in the @data-editor. It is shown as a green link.
 
 ![NOTE: Nodes that are not a descendant of the Locked Node will not be updated until the lock is released.](/.data/assets/image (5).png)
 
@@ -36,4 +36,4 @@ To see a flat preview, click `V` to temporarily toggle a flat preview in the vie
 
 Be mindful when you modify nodes that are before the Underlay. If they are part of the chain that leads up to the Underlay node, modifying them will cause all nodes in between to update as well, much like normal Lock Preview. This can make Gaea slow when working in 2K or higher preview resolution.
 
-If Gaea detects such an Underlay, it will show a warning in the [property-editor](../user-interface/property-editor/).
+If Gaea detects such an Underlay, it will show a warning in the @property-editor.

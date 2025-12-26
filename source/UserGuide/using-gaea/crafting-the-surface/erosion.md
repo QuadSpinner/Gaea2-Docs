@@ -14,7 +14,7 @@ Gaea's simulations of natural processes are the cornerstone of creating rich, be
 
 Creating simple erosion can give you great terrains, especially when powered by Erosion_2. However, you can take it several levels further. Creating multiple erosion passes and infusing different processes in between, lets you create very complex visuals.
 
-See [understanding-erosion](../understanding-erosion/) and [Erosion_2](../understanding-erosion/erosion_2/).
+See @understanding-erosion and [Erosion_2](../understanding-erosion/erosion_2/).
 
 
 

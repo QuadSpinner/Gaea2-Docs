@@ -12,13 +12,13 @@ Portals are a unique concept in graph-based applications. Pioneered in Gaea 1.0,
 
 Like a "wormhole", Portals allow you to connect nodes across vast gaps (or short ones) without visible connections. They not only improve your quality of life, but also dramatically change how you think of and use graphs.
 
-When using the [organizing-with-tabs](organizing-with-tabs.html), Portals can be used to connect nodes across different graphs.
+When using the @organizing-with-tabs, Portals can be used to connect nodes across different graphs.
 
 ### Creating Portals
 
 Any output port in a node can be converted to a portal. You can create a portal in many ways:
 
-![Right-click a connection to bring up the Connection menu and select "Convert to Portal](/.data/assets/Convert to Portal (1).png)
+!@Right-click a connection to bring up the Connection menu and select "Convert to Portal.png)
 
 ![The connection is replaced with Portals.](/.data/assets/Nm7n3sItlh.png)
 

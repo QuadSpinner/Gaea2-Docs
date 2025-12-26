@@ -17,10 +17,10 @@ Our new installer makes it very easy to install Gaea, whether you are at home wi
 
 ### Choosing the Installation Type
 
-To begin the installation select Regular or [portable-installation](portable-installation.html). In most cases, Regular Installation is the safest and recommended option.
+To begin the installation select Regular or @portable-installation. In most cases, Regular Installation is the safest and recommended option.
 
 :::warning
-:shield: You will require Administrator Privileges for a Regular Installation. If you don't have them, you can choose to go for a [portable-installation](portable-installation.html).
+:shield: You will require Administrator Privileges for a Regular Installation. If you don't have them, you can choose to go for a @portable-installation.
 :::
 
 ![](/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM (1).png)
@@ -63,7 +63,7 @@ For users who have been issued a file-based key, just drag and drop the file (us
 
 ***
 
-Gaea is now installed and you are ready to create [terrain-basics](/using-gaea/terrain-basics/)!
+Gaea is now installed and you are ready to create @terrain-basics!
 
 
 

@@ -49,7 +49,7 @@ The option "When Closing File" is saved with the file and persisted, however, "W
 
 * **Reduced Memory Usage**: By storing preview images on the disk, Gaea frees up RAM, which can significantly enhance system responsiveness, especially in memory-constrained environments.
 * **Faster Reload Times**: When reopening a project, Gaea can quickly load the cached previews from the disk, speeding up the initialization process as the terrain does not need to be reprocessed from scratch.
-* **Linchpin Nodes:** Gaea utilizes [linchpin-nodes.md](linchpin-nodes.html)to reduce the amount of data that needs to be loaded into memory for any work session or build.
+* **Linchpin Nodes:** Gaea utilizes @linchpin-nodes.mdto reduce the amount of data that needs to be loaded into memory for any work session or build.
 
 This feature is designed to strike a balance between performance and resource utilization, making Gaea more efficient, especially when dealing with complex and resource-intensive projects.
 

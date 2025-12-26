@@ -13,7 +13,7 @@ In its most basic form, mutations update the seeds used by all nodes in the terr
 This provides a clean and predictable way to generate multiple mutations.
 
 :::info
-To prevent specific nodes from being affected, you can try [baking-nodes](/using-gaea/baking-nodes/).
+To prevent specific nodes from being affected, you can try @baking-nodes.
 :::
 
 

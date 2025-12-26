@@ -23,4 +23,4 @@ Some nodes like the classic Erosion provide a separate option to force Determini
 
 ### Forcing Determinism
 
-One of the best ways to ensure a specific shape, especially at an early stage in your graph, is by [baking-nodes](../baking-nodes/) at a resolution you like. Gaea will then upscale them at whatever final resolution you use and further low-yield Erosion or other effects can help compensate for the upscaling artifacts.
+One of the best ways to ensure a specific shape, especially at an early stage in your graph, is by @baking-nodes at a resolution you like. Gaea will then upscale them at whatever final resolution you use and further low-yield Erosion or other effects can help compensate for the upscaling artifacts.

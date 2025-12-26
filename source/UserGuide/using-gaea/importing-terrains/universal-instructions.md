@@ -6,9 +6,9 @@ order: 01
 
 # Universal Instructions
 
-Gaea terrains are consumed in other applications in two ways: as a mesh or as a displacement map. In this section, we will cover the general principles for importing terrains. For more details about specific software, see the [software-specific-instructions](software-specific-instructions/).
+Gaea terrains are consumed in other applications in two ways: as a mesh or as a displacement map. In this section, we will cover the general principles for importing terrains. For more details about specific software, see the @software-specific-instructions.
 
-Game engines may also consume it as a Landscape / Terrain object. Each engine has strict, and often dramatically unique requirements so they're not included in these universal instructions. See the individual [software-specific-instructions](software-specific-instructions/)for those use cases as well.
+Game engines may also consume it as a Landscape / Terrain object. Each engine has strict, and often dramatically unique requirements so they're not included in these universal instructions. See the individual @software-specific-instructionsfor those use cases as well.
 
 ## Mesh Output
 
@@ -60,11 +60,11 @@ The vertical amount for the displacement can differ based on the application.&#x
 
 ![](/.data/assets/Build Options Terrain (2).png)
 
-If you can accept it as a value in meters, and your plane has been set a size in meters equivalent to the Terrain Width in the Gaea [build-options](../build-and-export/build-options/), then you can apply the same height as the Terrain Height.
+If you can accept it as a value in meters, and your plane has been set a size in meters equivalent to the Terrain Width in the Gaea @build-options, then you can apply the same height as the Terrain Height.
 
 If you have to enter a relative value, you can use the Height-Scale Ratio - either directly or to come up with an application specific value relative to your terrain.
 
 :::info
-Scale in terrains is an important concept. See [dimensions-and-scale.md](/advanced-topics/technical-information/dimensions-and-scale.html) to understand how scale works in Gaea and how it would convert to other applications.
+Scale in terrains is an important concept. See @dimensions-and-scale.md to understand how scale works in Gaea and how it would convert to other applications.
 :::
 

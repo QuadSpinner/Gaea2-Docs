@@ -15,7 +15,7 @@ Gaea is primarily an asset generator designed for creating and exporting terrain
 
 <div>![Mesher node properties](/.data/assets/image (41).png) ![Export node for Bitmap export](/.data/assets/image (3).png)</div>
 
-* **Node Types**: Utilize specific output nodes, such as Mesher for mesh generation, Point Cloud for simple XY point cloud export, or platform-specific nodes like [unreal-node.md](application-specific-export-nodes/unreal-node.html) and [unity-node.md](application-specific-export-nodes/unity-node.html), to export your assets.
+* **Node Types**: Utilize specific output nodes, such as Mesher for mesh generation, Point Cloud for simple XY point cloud export, or platform-specific nodes like @unreal-node.md and @unity-node.md, to export your assets.
 * **Customization**: Depending on the output node type, you can adjust settings such as map sizes for Unreal, file naming conventions, or mesh topology and vertex count for Mesher.
 * **Naming Conventions**: The name of the exported file matches the name of the Output node, streamlining asset management and integration into other projects.
 
@@ -28,14 +28,14 @@ Gaea is primarily an asset generator designed for creating and exporting terrain
 * **File Naming**: Exported files are named in the format `<Name or NodeName>_<PortName>.<extension>`, ensuring clarity and order in file management.
 
 :::info
-You can disable `_Out` suffix for the Primary Port in [build-options](build-options/).
+You can disable `_Out` suffix for the Primary Port in @build-options.
 :::
 
 ### Export Settings and Options
 
 ![](/.data/assets/image (4).png)
 
-**File name.** The node name is used by default for the export filename, however, you change the name in the Export Items list in the Build Tab in [data-editor](/getting-started/user-interface/data-editor/) or in the [build-options](build-options/).
+**File name.** The node name is used by default for the export filename, however, you change the name in the Export Items list in the Build Tab in @data-editor or in the @build-options.
 
 **File Formats.** Gaea supports a wide range of file formats, allowing you to choose the best option based on the requirements of the receiving application or your workflow needs.
 
@@ -47,7 +47,7 @@ You can disable `_Out` suffix for the Primary Port in [build-options](build-opti
 * **Mark All/None.** Quickly select or deselect all available export options for efficiency and convenience.
 
 :::info
-For automation scenarios where you wish to explicitly name the output file, see [managing-input-and-output.md](/advanced-topics/automation/managing-input-and-output.html) in [automation](/advanced-topics/automation/)
+For automation scenarios where you wish to explicitly name the output file, see @managing-input-and-output.md in [automation](/advanced-topics/automation/)
 :::
 
 

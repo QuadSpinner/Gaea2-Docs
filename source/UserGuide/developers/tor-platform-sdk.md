@@ -18,7 +18,7 @@ The TOR Platform is built on Microsoft .NET 8.0 and is programmed using C#.
 
 This part of the documentation discusses features that will be released in the future.
 
-The current [scripting-and-expressions](scripting-and-expressions/) features are a basic built-in exposure of the SDK features.
+The current @scripting-and-expressions features are a basic built-in exposure of the SDK features.
 :::
 
 ### &#x20;Extensibility

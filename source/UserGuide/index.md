@@ -28,31 +28,31 @@ This documentation is organized to help you quickly find the information you nee
 
 Begin your journey with Gaea by learning how to install, configure, and navigate the software. This section covers:
 
-* [install-gaea](getting-started/install-gaea/): Learn how to set up Gaea for your needs, whether through a regular or portable installation, mass deployment, or troubleshooting potential issues.
-* [license-management](getting-started/license-management/): Manage your licenses and ensure smooth transition when moving computers.
-* [user-interface](getting-started/user-interface/): Dive into the layout, panels, and customization options to make your workflow smoother.
-* [for-gaea-1-users](getting-started/for-gaea-1-users/): A migration guide for existing users of Gaea 1.0 to see how Gaea 2.0 changes and improves your workflow.
+* @install-gaea: Learn how to set up Gaea for your needs, whether through a regular or portable installation, mass deployment, or troubleshooting potential issues.
+* @license-management: Manage your licenses and ensure smooth transition when moving computers.
+* @user-interface: Dive into the layout, panels, and customization options to make your workflow smoother.
+* @for-gaea-1-users: A migration guide for existing users of Gaea 1.0 to see how Gaea 2.0 changes and improves your workflow.
 
 ### Using Gaea
 
 Explore Gaea’s terrain creation tools, techniques, and workflows. Key areas include:
 
-* [terrain-basics](using-gaea/terrain-basics/): Get started with the core concepts of how terrains work in Gaea.
-* [crafting-the-surface](using-gaea/crafting-the-surface/): Shape and sculpt your terrains using a variety of nodes and tools.
-* [understanding-erosion](using-gaea/understanding-erosion/): Master the erosion processes that bring realism to your terrains.
+* @terrain-basics: Get started with the core concepts of how terrains work in Gaea.
+* @crafting-the-surface: Shape and sculpt your terrains using a variety of nodes and tools.
+* @understanding-erosion: Master the erosion processes that bring realism to your terrains.
 * [simulations](using-gaea/simulations/): Explore variation natural process simulations such as snow, debris, and more.
-* [colorizing-and-textures](using-gaea/colorizing-and-textures/): Add detail and depth with advanced color and texture techniques.
-* [managing-graphs](using-gaea/managing-graphs/): Kick off your project with the right foundation.
-* [baking-nodes](using-gaea/baking-nodes/): Optimize your terrains by baking nodes for better performance.
-* [build-and-export](using-gaea/build-and-export/): Export your work for use in other applications or game engines.
-* [importing-terrains](using-gaea/importing-terrains/): Bring in external data to enhance your terrain projects.
+* @colorizing-and-textures: Add detail and depth with advanced color and texture techniques.
+* @managing-graphs: Kick off your project with the right foundation.
+* @baking-nodes: Optimize your terrains by baking nodes for better performance.
+* @build-and-export: Export your work for use in other applications or game engines.
+* @importing-terrains: Bring in external data to enhance your terrain projects.
 
 ### Advanced Topics
 
 For those looking to push Gaea to its limits, delve into these advanced features:
 
-* [build-swarm](advanced-topics/build-swarm/): Learn about the Gaea Build CLI works.
-* [technical-information](advanced-topics/technical-information/): Understand the under-the-hood details that power Gaea.
+* @build-swarm: Learn about the Gaea Build CLI works.
+* @technical-information: Understand the under-the-hood details that power Gaea.
 * [automation](advanced-topics/automation/): Discover how to automate repetitive tasks to save time and maintain consistency.
 
 ### Plugins
@@ -67,7 +67,7 @@ Extend Gaea’s functionality with powerful plugins designed to integrate seamle
 Find solutions to common (and uncommon) issues:
 
 * [terrains](troubleshooting/terrains/): Understand terrain problems, output artifacts, and explore various workarounds.&#x20;
-* [diagnostics-watson](troubleshooting/diagnostics-watson/): Use Gaea's Diagnostics tool to find and fix common problems.
+* @diagnostics-watson: Use Gaea's Diagnostics tool to find and fix common problems.
 
 ## Getting Help
 

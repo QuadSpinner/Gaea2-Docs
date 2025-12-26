@@ -63,7 +63,7 @@ An additional way to reduce mesh size is to export a high resolution displacemen
 ## How to Conserve Memory
 
 * Break your project into multiple files - for example, terrain shape creation in one project and color production in another.
-* [baking-nodes](/using-gaea/baking-nodes/) allows you to offload large portions of data from active memory to disk.
+* @baking-nodes allows you to offload large portions of data from active memory to disk.
 * Try to use fewer nodes when possible. Use Modifiers instead of Nodes to reduce overhead.
 
 

@@ -12,13 +12,13 @@ The Graph Toolbar is an essential interface within the graph environment, design
 
 *   **Bookmarks Menu**: Allows users to mark and quickly navigate to specific nodes.
 
-    See[#node-bookmarks](/the-graph/graph-conveniences.md#node-bookmarks)
+    See@#node-bookmarks
 *   **Node Conveniences Menu**: Offers shortcuts to commonly used node functions.
 
     See [#organization](/the-graph/graph-conveniences.md#organization)
 *   **Bake Menu**: Provides all baking related options.
 
-    See [baking-nodes](/../using-gaea/baking-nodes/)
+    See @baking-nodes
 *   **Refresh Node**: Refreshes the node.
 
     Builds the selected node.
@@ -39,7 +39,7 @@ The Graph Toolbar is an essential interface within the graph environment, design
 
 
 
-* **Suspend Engine**: Lets you toggle the Gaea engine, see [suspending-engine](/the-graph/suspending-engine.html)
+* **Suspend Engine**: Lets you toggle the Gaea engine, see @suspending-engine
 * **Graph toolbar submenu**: Incorporate extended functionalities and settings found in the main graph menu for comprehensive control.
 
 ![Graph toolbar submenu](/.data/assets/Graph Submenu.png)

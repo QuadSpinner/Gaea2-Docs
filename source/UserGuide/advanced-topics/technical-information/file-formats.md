@@ -56,7 +56,7 @@ Gaea saves files in the formats mentioned below.
 
 Gaea terrain projects are saved as a `.terrain` file. All Gaea editions can read this format.
 
-See [#advanced-automation](../automation/command-line-automation.md#advanced-automation) for manipulating this file format.
+See @#advanced-automation for manipulating this file format.
 
 
 

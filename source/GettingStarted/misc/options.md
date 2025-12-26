@@ -614,7 +614,7 @@ Lists all available computer devices that Gaea can use for processing terrains.
 
 **Scan Hardware and Determine Speeds**: Initiates a scan of all hardware to evaluate processing capabilities and optimize device selection. Once done, a score for each device and technology is shown in the list.
 
-See [benchmark-devices](../troubleshooting/diagnostics-watson/benchmark-devices.html) for additional information.
+See @benchmark-devices for additional information.
 
 ### Driver Issues <a href="#driver-issues" id="driver-issues"></a>
 
@@ -626,7 +626,7 @@ Gaea can be forced to run using CPU only. This may not necessarily bring perform
 
 If you are experiencing instabilities, disabling GPU and Accelerators may improve stability.
 
-See [cpu-only-mode](../troubleshooting/diagnostics-watson/cpu-only-mode.html)
+See @cpu-only-mode
 
 ***
 

@@ -20,7 +20,7 @@ You can add multiple inputs to the Unreal node.
 
 ### Target Size and Format
 
-The node's Target Size property lets you select the resample size. It is recommended that you select your Gaea build resolution to be the closest to the size you need. Based on your current Build Resolution set in the [build-options](../build-options/), you will be given a recommended Target Size.
+The node's Target Size property lets you select the resample size. It is recommended that you select your Gaea build resolution to be the closest to the size you need. Based on your current Build Resolution set in the @build-options, you will be given a recommended Target Size.
 
 You can set the file format for all the exported files.
 
@@ -42,6 +42,6 @@ The heightfield should always be the primary input.
 
 ## Building
 
-When you build your terrain (See [..](../)) the Unreal node will save all the appropriate asset files along with a JSON definition file. This is the key file you will need for [importing-terrains.md](/../plugins/gaea2unreal/importing-terrains.html).
+When you build your terrain (See [..](../)) the Unreal node will save all the appropriate asset files along with a JSON definition file. This is the key file you will need for @importing-terrains.md.
 
 See the next section on how to set up your exported terrain in Unreal Engine.

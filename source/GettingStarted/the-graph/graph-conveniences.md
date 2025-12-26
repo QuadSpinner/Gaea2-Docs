@@ -40,7 +40,7 @@ When you drag a connection from an Out port and connect it to another Out port, 
 
 ## Portals
 
-For detailed information on Portals, see [portals-and-chokepoints](portals-and-chokepoints.html)
+For detailed information on Portals, see @portals-and-chokepoints
 
 ### Convert Connection to Portal
 
@@ -80,7 +80,7 @@ Allows you to bookmark selected node. When a node is bookmarked, it is shown in 
 
 ### Select Nodes
 
-You can select all nodes upstream (ancestors) or downstream (descendants) of a specific node from the Node menu or the [#graph-toolbar](../user-interface/menus-and-toolbars/#graph-toolbar).
+You can select all nodes upstream (ancestors) or downstream (descendants) of a specific node from the Node menu or the @#graph-toolbar.
 
 ![](/.data/assets/Select Nodes.png)
 

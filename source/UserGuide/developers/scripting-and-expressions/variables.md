@@ -102,5 +102,5 @@ To delete a variable, toggle Edit Mode, right-click the variable and select Dele
 
 ## Manipulating Variables from the Command Line
 
-See [command-line-automation](/advanced-topics/automation/command-line-automation.html)
+See @command-line-automation
 

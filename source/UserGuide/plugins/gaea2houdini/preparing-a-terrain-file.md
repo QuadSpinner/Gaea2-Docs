@@ -28,7 +28,7 @@ For Output, create a variable and set the Type to Output. Create an Export node,
 
 
 
-Now you can put anything between these nodes and expose their properties. These properties will show up in Houdini in the [#gaea-terrain-processor-sop-node](gaea-hdas.md#gaea-terrain-processor-sop-node).
+Now you can put anything between these nodes and expose their properties. These properties will show up in Houdini in the @#gaea-terrain-processor-sop-node.
 
 ## Examples
 
@@ -70,4 +70,4 @@ Turn on `Discard Alt in Final Build` so this alternate route is never used durin
 
 You don't need to always expose properties directly. You can create independent variables, bind them to one or more properties, and use Expressions to filter the values. This lets you create a fully functional node-based terrain process with properties of your own.
 
-See [scripting-and-expressions](/developers/scripting-and-expressions/) for further details.
+See @scripting-and-expressions for further details.

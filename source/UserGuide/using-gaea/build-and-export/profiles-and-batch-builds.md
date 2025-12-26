@@ -41,9 +41,9 @@ You can execute multiple builds using saved profiles using the Batch Builds dial
 
 Queue the different profiles you want to build and execute the batch. You can also save the batch as a `.bat` file for later execution or modification.
 
-The `-profile <name>` or `-p <name>` argument can be used to specify a profile during a [build-swarm](/advanced-topics/build-swarm/) execution. It is recommended that the \<name> be wrapped in `""` quotation marks to prevent incorrect parsing.
+The `-profile <name>` or `-p <name>` argument can be used to specify a profile during a @build-swarm execution. It is recommended that the \<name> be wrapped in `""` quotation marks to prevent incorrect parsing.
 
 
 
-See also [creating-mutations.md](/advanced-topics/build-swarm/creating-mutations.html)
+See also @creating-mutations.md
 

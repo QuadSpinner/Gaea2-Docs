@@ -23,7 +23,7 @@ uid: build-options
 * **Tile Size**: Set the size of each tile (e.g., 1024x1024 pixels).
 * **Blending**: Determines the blending percentage between adjacent tiles for smooth transitions.
 
-See [scale-and-resolution.md](/terrain-basics/scale-and-resolution.html)
+See @scale-and-resolution.md
 
 ## **Build**
 
@@ -88,7 +88,7 @@ You can disable `_Out` suffix for the Primary Port in [.](./).
 * **Height**: Set the maximum physical height of the terrain in meters.
 * **Scale Display**: Displays the current scale in meters per pixel (e.g.,`2.441m/px`) and the Height-Scale Ratio.
 
-See [scale-and-resolution.md](/terrain-basics/scale-and-resolution.html)for more information.
+See @scale-and-resolution.mdfor more information.
 
 ## **Regions**
 
@@ -98,7 +98,7 @@ Right-Click on regions surface and click on "Add Region" to add region.  Once th
 
 ![](/.data/assets/Build Option Add Region Menu.png)
 
-See [managing-regions.md](managing-regions.html) for more information.
+See @managing-regions.md for more information.
 
 ## Profiles
 
@@ -106,14 +106,14 @@ Build Profiles let you save all Build Settings in a named preset. If you find yo
 
 ![](/.data/assets/Build Options Profile.webp)
 
-See [#using-profiles](../profiles-and-batch-builds.md#using-profiles)
+See @#using-profiles
 
 ## Commands
 
-**Execute Build.** Starts the [build-swarm](/../advanced-topics/build-swarm/)for the current file and outputs a full resolution build as specified in the Build Options.
+**Execute Build.** Starts the @build-swarmfor the current file and outputs a full resolution build as specified in the Build Options.
 
 **Copy Command Line.** Displays the command line for the current file, including fully qualified paths and any variables with their default values.
 
 ![](/.data/assets/command_line_example.png)
 
-See [command-line-automation.md](/../advanced-topics/automation/command-line-automation.html)for further details on how to use the Command Line.
+See @command-line-automation.mdfor further details on how to use the Command Line.

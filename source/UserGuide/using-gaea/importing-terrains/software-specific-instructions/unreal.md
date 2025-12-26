@@ -8,7 +8,7 @@ order: 01
 
 The easiest way to import a Gaea terrain into Unreal Engine is to use the [gaea2unreal](/../plugins/gaea2unreal/) plugin.
 
-If you wish to import it by yourself, use [unreal-node.md](/build-and-export/application-specific-export-nodes/unreal-node.html) to prepare the output to fit your terrain size as required by Unreal Engine. Then you can manually import the terrain.
+If you wish to import it by yourself, use @unreal-node.md to prepare the output to fit your terrain size as required by Unreal Engine. Then you can manually import the terrain.
 
 
 
@@ -28,5 +28,5 @@ If the Z-scale calculation feels too complex or you are not getting accurate res
 
 You can follow the exact instructions on Unreal's official documentation:
 
-[https://dev.epicgames.com/documentation/en-us/unreal-engine/importing-and-exporting-landscape-heightmaps-in-unreal-engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/importing-and-exporting-landscape-heightmaps-in-unreal-engine)&#x20;
+@https://dev.epicgames.com/documentation/en-us/unreal-engine/importing-and-exporting-landscape-heightmaps-in-unreal-engine&#x20;
 

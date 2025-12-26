@@ -63,7 +63,7 @@ Meshes can be exported in 2 scales: Normalized and Metric.
 * Normalized scale enforces a strict `0..1` range for values along all 3 axes.
 * Metric scale enforces `1 unit = 1 meter`, so a typical Gaea terrain of `5000` meters would be `0..5000` units.
 
-The main advantage of Normalized meshes is that many modern OBJ importers let you apply a scale multiplier, which you can use to scale the terrain very easily. You just need to use the width of the terrain in meters (see [scale-and-resolution.md](/terrain-basics/scale-and-resolution.html)). For example, the default terrain is 5000 meters wide. You can use `5000` as a multiplier when importing, and your terrain should scale to 5000 meters.
+The main advantage of Normalized meshes is that many modern OBJ importers let you apply a scale multiplier, which you can use to scale the terrain very easily. You just need to use the width of the terrain in meters (see @scale-and-resolution.md). For example, the default terrain is 5000 meters wide. You can use `5000` as a multiplier when importing, and your terrain should scale to 5000 meters.
 
 ### **Texture Mapping**
 
@@ -79,7 +79,7 @@ This is especially useful with OBJ since it is plain-text format, most parsers c
 
 ### **Normal Mapping**
 
-Mesher will generate normals in your mesh. However, if you want to generate global-space normals, you can use the Normals node, or for tangent-space normals you can use the MeshWarp node as shown in [tangent-space-normals-and-warped-maps.md](tangent-space-normals-and-warped-maps.html).
+Mesher will generate normals in your mesh. However, if you want to generate global-space normals, you can use the Normals node, or for tangent-space normals you can use the MeshWarp node as shown in @tangent-space-normals-and-warped-maps.md.
 
 :::info
 Some DCC Apps will fail to import meshes if Normals are not available. You can alternatively use auto-smoothing/auto-normals at 30-degrees for a generic import.

@@ -8,7 +8,7 @@ order: 01
 
 Gaea's Build Swarm (`Gaea.Swarm.exe`) can be automated via the command line interface.
 
-See [command-line-interface](/getting-started/command-line-interface.html) for details on the full CLI available in both Gaea.exe and Gaea.Swarm.exe&#x20;
+See @command-line-interface for details on the full CLI available in both Gaea.exe and Gaea.Swarm.exe&#x20;
 
 ## Arguments
 
@@ -18,7 +18,7 @@ The Build Swarm can accept the following arguments:
 
 ![](/.data/assets/command_line_example.png)
 
-The [build-options](/using-gaea/build-and-export/build-options/) window has a helpful button to Show Command Line that will show the current file's Build Command Line including all variables. It is useful to copy this and then modify it as needed.
+The @build-options window has a helpful button to Show Command Line that will show the current file's Build Command Line including all variables. It is useful to copy this and then modify it as needed.
 
 
 

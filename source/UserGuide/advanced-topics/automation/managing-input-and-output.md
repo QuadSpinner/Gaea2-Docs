@@ -6,9 +6,9 @@ order: 02
 
 # Managing Input and Output
 
-It is crucial to be able to modify the Input and Output filenames for automating a workflow via [command-line-automation](command-line-automation.html).
+It is crucial to be able to modify the Input and Output filenames for automating a workflow via @command-line-automation.
 
-To do so, you need to bind the filename / path properties of Input and Output nodes to variables and modify the values through the Command Line or by[#using-files-for-variables](command-line-automation.md#using-files-for-variables).
+To do so, you need to bind the filename / path properties of Input and Output nodes to variables and modify the values through the Command Line or by@#using-files-for-variables.
 
 ## Input
 

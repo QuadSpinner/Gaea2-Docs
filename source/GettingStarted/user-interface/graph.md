@@ -12,4 +12,4 @@ Gaea's advanced graph-based workflow is the key to creating sophisticated terrai
 
 ![](/.data/assets/image (55).png)
 
-See [the-graph](../the-graph/) for a detailed overview of this very important part of the Gaea interface.
+See @the-graph for a detailed overview of this very important part of the Gaea interface.

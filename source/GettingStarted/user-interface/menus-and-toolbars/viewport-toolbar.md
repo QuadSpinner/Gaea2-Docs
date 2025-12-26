@@ -18,7 +18,7 @@ Lighting: Provides comprehensive set of options to modify the viewport lighting.
 
 ![Lighting properties](/.data/assets/Viewport Lighting.png)
 
-Render Style: Viewport preview renderer can be set from this option. User can select from Realistic Render, Clay Render, Visualize Data allows to view the raw data with render off. See [render-modes](../viewport/render-modes.html)
+Render Style: Viewport preview renderer can be set from this option. User can select from Realistic Render, Clay Render, Visualize Data allows to view the raw data with render off. See @render-modes
 
 ![Render Style](/.data/assets/Viewport Renderer (1).png)
 
@@ -26,7 +26,7 @@ Autolevel Masks:&#x20;
 
 Toggle 2D Viewport: Shows/Hides 2D viewport.
 
-Viewport Tools: It provides tools to Pick Height/Color and provides various measurement tools. See [measurement-tools](../viewport/measurement-tools.html)
+Viewport Tools: It provides tools to Pick Height/Color and provides various measurement tools. See @measurement-tools
 
 ![Viewport Tools](/.data/assets/Viewport Tools.png)
 
