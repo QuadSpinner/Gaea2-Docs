@@ -18,7 +18,7 @@ Gaea's advanced graph-based workflow is the key to creating sophisticated terrai
 
 If you have not used node-based workflows before, they may look intimidating, but they aren't. Gaea provides an artist-friendly workflow where you are not required to create complex graphs to get good results.
 
-![](/.data/assets/image (12).png)
+![](/.data/assets/image%20(12).png)
 
 Each node is a heightfield processor that performs a single task. By connecting several nodes, you can create an elaborate program or "recipe" for creating a complex process. Some nodes provide more than one output and input. These additional "ports" can be used for more sophisticated processing of your terrain.
 

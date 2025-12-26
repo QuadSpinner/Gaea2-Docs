@@ -134,7 +134,7 @@ body.dark {
 
   h3.toc-section {
     margin: 12px 0 6px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--toc-section);
   }
@@ -157,6 +157,9 @@ body.dark {
     }
   }
 
+  i {
+    color: #4c5854;
+  }
 
   ul.toc-section-list {
     margin: 0;
@@ -173,7 +176,7 @@ body.dark {
 
     li {
       list-style: none;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 500;
       padding-top: 3px;
       padding-bottom: 3px;
@@ -243,7 +246,7 @@ body.dark {
 
             >li {
               border-left: 1px solid var(--toc-border);
-              padding-left: 18px;
+              padding-left: 36px;
 
               >a {
                 color: var(--toc-link);
@@ -576,6 +579,11 @@ body.dark {
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-position: center;
     }
+
+    &:hover{
+      color: #4ff0b7;
+      border: 1px solid #25282e;
+    }
   }
 
   // --- icons ---
@@ -587,7 +595,12 @@ body.dark {
       -webkit-mask-image: url(#{$icon-prev});
       mask-image: url(#{$icon-prev});
     }
-    &::after { content: none; } // hide unused
+
+    &::after {
+      content: none;
+    }
+
+    // hide unused
   }
 
   .nav-next {
@@ -595,7 +608,12 @@ body.dark {
       -webkit-mask-image: url(#{$icon-next});
       mask-image: url(#{$icon-next});
     }
-    &::before { content: none; } // hide unused
+
+    &::before {
+      content: none;
+    }
+
+    // hide unused
   }
 }
 

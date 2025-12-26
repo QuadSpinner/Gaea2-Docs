@@ -1,5 +1,4 @@
 ---
-icon: sparkles
 title: Batch Builds
 uid: batch-builds
 order: 04

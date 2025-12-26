@@ -1,9 +1,9 @@
-terrain-basics|Terrain Basics
-understanding-erosion|Understanding Erosion
-simulations|Simulations
-crafting-the-surface|Crafting the Surface
-colorizing-and-textures|Colorizing and Textures
-importing-terrains|Importing Terrains
-managing-graphs|Managing Graphs
-baking-nodes|Baking Nodes
-build-and-export|Build and Export
+terrain-basics|Terrain Basics|play
+understanding-erosion|Understanding Erosion|cloud-showers
+simulations|Simulations|cloud-sun-rain
+crafting-the-surface|Crafting the Surface|hand-horns
+colorizing-and-textures|Colorizing and Textures|palette
+importing-terrains|Importing Terrains|box-open
+managing-graphs|Managing Graphs|person-to-portal
+baking-nodes|Baking Nodes|fire
+build-and-export|Build and Export|box-taped

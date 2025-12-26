@@ -1,16 +1,15 @@
 window.SITE_TOC = [
   {
-    "title": "Home",
-    "url": "/introduction/./",
-    "icon": "power-off"
+    "title": "Overview",
+    "url": "/introduction/./"
   },
   {
     "title": "Install Gaea",
+    "icon": "box",
     "children": [
       {
-        "title": "Install Gaea",
-        "url": "/introduction/install-gaea/",
-        "icon": "box"
+        "title": "Overview",
+        "url": "/introduction/install-gaea/"
       },
       {
         "title": "Regular Installation",
@@ -46,11 +45,11 @@ window.SITE_TOC = [
   },
   {
     "title": "License Management",
+    "icon": "key",
     "children": [
       {
-        "title": "License Management",
-        "url": "/introduction/license-management/",
-        "icon": "key"
+        "title": "Overview",
+        "url": "/introduction/license-management/"
       },
       {
         "title": "Activation",
@@ -76,11 +75,11 @@ window.SITE_TOC = [
   },
   {
     "title": "User Interface",
+    "icon": "sidebar-flip",
     "children": [
       {
-        "title": "User Interface",
-        "url": "/introduction/user-interface/",
-        "icon": "sidebar-flip"
+        "title": "Overview",
+        "url": "/introduction/user-interface/"
       },
       {
         "title": "Graph",
@@ -98,7 +97,7 @@ window.SITE_TOC = [
         "title": "Data Editor",
         "children": [
           {
-            "title": "Data Editor",
+            "title": "Overview",
             "url": "/introduction/user-interface/data-editor/"
           },
           {
@@ -119,7 +118,7 @@ window.SITE_TOC = [
         "title": "Menus and Toolbars",
         "children": [
           {
-            "title": "Menus and Toolbars",
+            "title": "Overview",
             "url": "/introduction/user-interface/menus-and-toolbars/"
           },
           {
@@ -152,7 +151,7 @@ window.SITE_TOC = [
         "title": "Property Editor",
         "children": [
           {
-            "title": "Property Editor",
+            "title": "Overview",
             "url": "/introduction/user-interface/property-editor/"
           },
           {
@@ -173,7 +172,7 @@ window.SITE_TOC = [
         "title": "Viewport",
         "children": [
           {
-            "title": "Viewport",
+            "title": "Overview",
             "url": "/introduction/user-interface/viewport/"
           },
           {
@@ -194,11 +193,11 @@ window.SITE_TOC = [
   },
   {
     "title": "The Graph",
+    "icon": "diagram-project",
     "children": [
       {
-        "title": "The Graph",
-        "url": "/introduction/the-graph/",
-        "icon": "diagram-project"
+        "title": "Overview",
+        "url": "/introduction/the-graph/"
       },
       {
         "title": "Procedural Workflow",
@@ -260,11 +259,11 @@ window.SITE_TOC = [
   },
   {
     "title": "For Gaea 1 Users",
+    "icon": "arrows-turn-right",
     "children": [
       {
-        "title": "For Gaea 1 Users",
-        "url": "/introduction/for-gaea-1-users/",
-        "icon": "arrows-turn-right"
+        "title": "Overview",
+        "url": "/introduction/for-gaea-1-users/"
       },
       {
         "title": "Migration Guide",

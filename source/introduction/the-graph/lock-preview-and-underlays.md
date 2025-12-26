@@ -14,7 +14,7 @@ To pin a node, right-click it and select `Lock Preview`. You can also select the
 
 The locked node can be accessed quickly from the Toolbar in the @data-editor. It is shown as a green link.
 
-![NOTE: Nodes that are not a descendant of the Locked Node will not be updated until the lock is released.](/.data/assets/image (5).png)
+![NOTE: Nodes that are not a descendant of the Locked Node will not be updated until the lock is released.](/.data/assets/image%20(5).png)
 
 ## Using Underlays <a href="#pin-node-as-underlay" id="pin-node-as-underlay"></a>
 

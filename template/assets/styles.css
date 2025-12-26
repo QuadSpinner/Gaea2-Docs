@@ -108,7 +108,7 @@ body.dark {
 #site-nav h3.toc-section,
 #site-nav-2 h3.toc-section {
   margin: 12px 0 6px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--toc-section);
 }
@@ -130,6 +130,10 @@ body.dark {
   border-top: 1px solid var(--toc-border);
   opacity: 0.25;
 }
+#site-nav i,
+#site-nav-2 i {
+  color: #4c5854;
+}
 #site-nav ul.toc-section-list,
 #site-nav-2 ul.toc-section-list {
   margin: 0;
@@ -147,7 +151,7 @@ body.dark {
 #site-nav ul li,
 #site-nav-2 ul li {
   list-style: none;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -215,7 +219,7 @@ body.dark {
 #site-nav ul li:has(> ul).active > ul > li,
 #site-nav-2 ul li:has(> ul).active > ul > li {
   border-left: 1px solid var(--toc-border);
-  padding-left: 18px;
+  padding-left: 36px;
 }
 #site-nav ul li:has(> ul).active > ul > li > a,
 #site-nav-2 ul li:has(> ul).active > ul > li > a {
@@ -532,6 +536,10 @@ body.dark {
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
+}
+#next-nav .nav-btn:hover {
+  color: #4ff0b7;
+  border: 1px solid #25282e;
 }
 #next-nav .nav-prev::before {
   -webkit-mask-image: url(/assets/svg/chevron-prev.svg);

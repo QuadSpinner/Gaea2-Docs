@@ -28,7 +28,7 @@ You can set the file format for all the exported files.
 RAW is currently not fully supported. Both PNG and R16 are fully supported right now, but we recommend using PNG for maximum compatibility.
 :::
 
-![](/.data/assets/image (33).png)
+![](/.data/assets/image%20(33).png)
 
 ### Unreal Friendly Naming
 

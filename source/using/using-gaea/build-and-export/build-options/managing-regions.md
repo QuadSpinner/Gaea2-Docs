@@ -1,5 +1,4 @@
 ---
-icon: sparkles
 title: Managing Regions
 uid: managing-regions
 order: 01

@@ -18,6 +18,7 @@ X:\Docs\Gaea2-Docs\staging\using\advanced-topics\automation\managing-input-and-o
 X:\Docs\Gaea2-Docs\staging\using\advanced-topics\build-swarm\build-reports.md
 X:\Docs\Gaea2-Docs\staging\using\advanced-topics\technical-information\file-formats.md
 X:\Docs\Gaea2-Docs\staging\using\plugins\gaea2houdini\preparing-a-terrain-file.md
+X:\Docs\Gaea2-Docs\staging\using\using-gaea\colorizing-and-textures\working-with-satmaps.md
 X:\Docs\Gaea2-Docs\staging\using\using-gaea\managing-graphs\using-modifiers.md
 X:\Docs\Gaea2-Docs\staging\using\using-gaea\build-and-export\build-options\index.md
 X:\Docs\Gaea2-Docs\staging\using\using-gaea\importing-terrains\software-specific-instructions\unreal.md

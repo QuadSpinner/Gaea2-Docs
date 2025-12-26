@@ -1,5 +1,5 @@
 ---
-icon: gear-complex-code
+icon: puzzle-piece
 title: Macros
 uid: macros
 order: 02

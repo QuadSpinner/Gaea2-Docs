@@ -1,5 +1,4 @@
 ---
-icon: sparkles
 title: Profiles and Batch Builds
 uid: profiles-and-batch-builds
 order: 03

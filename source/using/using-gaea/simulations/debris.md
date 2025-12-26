@@ -43,7 +43,7 @@ You vary debris sizes and even layer multiple Debris simulations to mix and matc
 
 See the Debris examples that ship with Gaea to see how layering multiple simulations work.
 
-![](/.data/assets/image (55).png)
+![](/.data/assets/image%20(55).png)
 
 :::info
 When using multiple Debris nodes, you can use [accumulators.md](../managing-graphs/accumulators.html) to combine all the output masks for colorization and other purposes.

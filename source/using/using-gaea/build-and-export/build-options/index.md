@@ -1,5 +1,4 @@
 ---
-icon: sparkles
 title: Build Options
 uid: build-options
 ---

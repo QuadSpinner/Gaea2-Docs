@@ -1,6 +1,6 @@
-install-gaea|Install Gaea
-license-management|License Management
-user-interface|User Interface
-the-graph|The Graph
+install-gaea|Install Gaea|box
+license-management|License Management|key
+user-interface|User Interface|sidebar-flip
+the-graph|The Graph|diagram-project
 misc|Misc
-for-gaea-1-users|For Gaea 1 Users
+for-gaea-1-users|For Gaea 1 Users|arrows-turn-right

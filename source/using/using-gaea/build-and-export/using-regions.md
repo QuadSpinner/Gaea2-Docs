@@ -1,5 +1,4 @@
 ---
-icon: sparkles
 title: Using Regions
 uid: using-regions
 order: 02

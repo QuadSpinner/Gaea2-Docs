@@ -224,18 +224,7 @@ function initGlobalToc({
     // - "fa-sharp-duotone fa-thin fa-dog" (full class list), or
     // - "fa-dog" (just the glyph; we'll add your defaults)
     const cls = String(icon).trim();
-
-    if (cls.includes("fa-")) {
-      if (cls.includes(" ")) {
-        i.className = cls;
-      } else {
-        i.className = `fa-sharp-duotone fa-thin ${cls}`;
-      }
-    } else {
-      // if you pass just "dog" or similar, map to fa-dog
-      i.className = `fa-sharp-duotone fa-thin fa-${cls}`;
-    }
-
+    i.className = `fa-regular fa-${cls}`;
     i.classList.add("toc-icon");
     el.appendChild(i);
   }

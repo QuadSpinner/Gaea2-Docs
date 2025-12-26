@@ -22,7 +22,7 @@ In this example, there are 3 Debris nodes that require 2 ports from each node to
 
 These connections, as well as the two Combine nodes, can be replaced by two Accumulator nodes. One set to Debris Mask, the other to Debris Color.
 
-![](/.data/assets/image (22).png)
+![](/.data/assets/image%20(22).png)
 
 :::warning
 The Accumulator will only add nodes that have been built. To ensure all required nodes are built, connect the last node you will use for masking with the Accumulator output to the Accumulator Input. This will not affect the Accumulator but will ensure that all appropriate nodes are built.

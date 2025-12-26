@@ -6,7 +6,7 @@ order: 01
 
 # Using Modifiers
 
-![](/.data/assets/image (26).png)
+![](/.data/assets/image%20(26).png)
 
 ## Modifiers
 
@@ -24,7 +24,7 @@ Modifiers work as a post-process so updating them does not require re-building t
 
 If a terrain (or mask) is not the exact height values you need, you can use the Height Remap modifier to adjust both the lower and upper extent of your terrain. Bringing up the bottom "raises" the terrain from the bottom, while "lowering" the top makes the terrain shorter.
 
-![](/.data/assets/image (65).png)
+![](/.data/assets/image%20(65).png)
 
 Inversely, bringing the top beyond 1.0 makes your terrain taller than the original range.
 
@@ -32,13 +32,13 @@ Inversely, bringing the top beyond 1.0 makes your terrain taller than the origin
 
 By simply applying Autolevel, Equalize, or Shaper (positive value) you can take a weak mask and make it stronger.
 
-<div>![](/.data/assets/image (63).png) ![](/.data/assets/image (64).png)</div>
+![](/.data/assets/image%20(63).png){.w-50} ![](/.data/assets/image%20(64).png){.w-50}
 
 ### Dropping the Terrain
 
 The "Drop" modifier removes any "empty" space under the terrain, forcing it to drop to the "floor".
 
-![](/.data/assets/image (68).png)
+![](/.data/assets/image%20(68).png)
 
 <div>![Normal Perlin](/.data/assets/Gaea_-_Untitled_02-55-12-AM.jpg) ![Dropped Perlin](/.data/assets/Gaea_-_Untitled_02-55-15-AM.jpg)</div>
 
@@ -48,15 +48,15 @@ Using Shaper, you can bulk up or bulk down a terrain. It can apply to masks as w
 
 ![Original terrain](/.data/assets/Gaea_-_Untitled_02-52-42-AM.jpg)
 
-<div>![Shaper at +50](/.data/assets/Gaea_-_Untitled_02-52-58-AM.jpg) !@Shaper at -50</div>
+![Shaper at +50](/.data/assets/Gaea_-_Untitled_02-52-58-AM.jpg) !@Shaper at -50
 
 ### Restrict Effect to Slope or Height
 
 You can easily restrict the effect of a node to a height or slope range by adding a "Mask by Height" or "Mask by Slope" modifier on the effect node.
 
-![](/.data/assets/image (67).png)
+![](/.data/assets/image%20(67).png)
 
-![](/.data/assets/image (66).png)
+![](/.data/assets/image%20(66).png){.w-50}
 
 :::info
 You can attach a DataExtractor node to any node that uses a Mask by Height/Slope modifier, and get the exact mask generated as a separate output.
@@ -70,9 +70,11 @@ The Min and Max modifiers are one of the most powerful tools in Gaea.
 
 Sometimes you want a bit of crunchy detail to breakup the edges of your mask or introduce some uneven variations. Add a Warp modifier with the appropriate Size and Strength to change the mask.
 
-![](/.data/assets/image (69).png)
+![](/.data/assets/image%20(69).png){.w-50}
 
-<div>![](/.data/assets/threshold1.jpg) ![](/.data/assets/threshold2.jpg)</div>
+![](/.data/assets/threshold1.jpg) 
+
+![](/.data/assets/threshold2.jpg)
 
 :::info
 Try mixing with Min or Max modifiers for broader options.

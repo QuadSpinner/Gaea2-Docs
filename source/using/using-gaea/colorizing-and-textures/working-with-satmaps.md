@@ -54,4 +54,4 @@ The final tweaks come from Hue/Saturation/Luminosity editing.
 
 SatMaps are one of the crucial aspects of colorizing your terrains. You can elevate your SatMaps by combining them with a Mixer as explained in @layering-textures.md.
 
-And finally, add [colorerosion.md](colorerosion.html) to add a new level of realism to your texture maps.
+And finally, add @colorerosion to add a new level of realism to your texture maps.

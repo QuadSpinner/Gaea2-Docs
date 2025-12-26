@@ -1,2 +1,2 @@
-diagnostics-watson|Diagnostics Watson
-terrains|Terrains
+diagnostics-watson|Diagnostics Watson|stethoscope
+terrains|Terrains|circle-xmark

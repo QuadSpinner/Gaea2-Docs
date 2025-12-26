@@ -1,5 +1,4 @@
 ---
-icon: sparkles
 title: Exporting Nodes
 uid: exporting-nodes
 order: 01
@@ -9,11 +8,11 @@ order: 01
 
 Gaea is primarily an asset generator designed for creating and exporting terrains to be used in other applications. It supports all major heightfield and mesh formats, ensuring compatibility with various platforms and rendering tools.
 
-![Output/Export Nodes in the Gaea Toolbox](/.data/assets/image (42).png)
+![Output/Export Nodes in the Gaea Toolbox](/.data/assets/image%20(42).png)
 
 ## **Output Nodes**
 
-<div>![Mesher node properties](/.data/assets/image (41).png) ![Export node for Bitmap export](/.data/assets/image (3).png)</div>
+<div>![Mesher node properties](/.data/assets/image%20(41).png) ![Export node for Bitmap export](/.data/assets/image%20(3).png)</div>
 
 * **Node Types**: Utilize specific output nodes, such as Mesher for mesh generation, Point Cloud for simple XY point cloud export, or platform-specific nodes like @unreal-node.md and @unity-node.md, to export your assets.
 * **Customization**: Depending on the output node type, you can adjust settings such as map sizes for Unreal, file naming conventions, or mesh topology and vertex count for Mesher.
@@ -21,7 +20,7 @@ Gaea is primarily an asset generator designed for creating and exporting terrain
 
 ### **Mark for Export**
 
-![Data View's BUILD Tab showing nodes marked for export.](/.data/assets/image (39).png)
+![Data View's BUILD Tab showing nodes marked for export.](/.data/assets/image%20(39).png)
 
 * **Shortcut Key**: Right-click a node and select `Mark for Export` or press `F3` on any node to mark it for export. This flexibility allows you to export multiple node outputs simultaneously.
 * **Build Tab and Settings**: The Build tab and Build Settings window display all nodes marked for export. Here, you can change the output format, select which ports to export, and rename the export files.
@@ -33,7 +32,7 @@ You can disable `_Out` suffix for the Primary Port in @build-options.
 
 ### Export Settings and Options
 
-![](/.data/assets/image (4).png)
+![](/.data/assets/image%20(4).png)
 
 **File name.** The node name is used by default for the export filename, however, you change the name in the Export Items list in the Build Tab in @data-editor or in the @build-options.
 

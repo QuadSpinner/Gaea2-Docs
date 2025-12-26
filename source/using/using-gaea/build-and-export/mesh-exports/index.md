@@ -1,5 +1,4 @@
 ---
-icon: sparkles
 title: Mesh Exports
 uid: mesh-exports
 ---
@@ -12,7 +11,7 @@ Gaea uses the Mesher node to translate a heightfield/terrain into a structured m
 
 You can choose between Triangles (Tris), Quads, and Adaptive Tris using our proprietary _Sophia_ algorithm.
 
-![](/.data/assets/image (2).png)
+![](/.data/assets/image%20(2).png)
 
 ## Displaced Grid Export
 

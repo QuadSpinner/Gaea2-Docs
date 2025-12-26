@@ -1,2 +1,2 @@
-gaea2houdini|Gaea2Houdini
-gaea2unreal|Gaea2Unreal
+gaea2houdini|Gaea2Houdini|h
+gaea2unreal|Gaea2Unreal|u

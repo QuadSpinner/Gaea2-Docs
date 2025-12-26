@@ -38,7 +38,7 @@ Let's say you only want to use Erosion2, create an Erosion2 node between the Fil
 
 For each parameter you wish to expose, open the Edit Parameter menu and select `Bind To > New Variable`.
 
-![](/.data/assets/image (70).png)
+![](/.data/assets/image%20(70).png)
 
 Once all your properties are exposed, your .terrain file is ready for use in Houdini.
 

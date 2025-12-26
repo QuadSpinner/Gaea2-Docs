@@ -10,6 +10,6 @@ order: 01
 
 Gaea's advanced graph-based workflow is the key to creating sophisticated terrains. This open-ended workflow gives you the flexibility to create almost any kind of results that you want.
 
-![](/.data/assets/image (55).png)
+![](/.data/assets/image%20(55).png)
 
 See @the-graph for a detailed overview of this very important part of the Gaea interface.
