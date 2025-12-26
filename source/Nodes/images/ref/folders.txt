@@ -1,0 +1,23 @@
+Anastomosis|Anastomosis
+Badlands|Badlands
+CLUTer|CLU Ter
+Combine|Combine
+Constant|Constant
+Cracks|Cracks
+Crater|Crater
+Draw|Draw
+Dunes|Dunes
+Erosion|Erosion
+Fault|Fault
+Gradient|Gradient
+Igneous|Igneous
+Lakes|Lakes
+Mountain|Mountain
+Perlin|Perlin
+Plates|Plates
+Range|Range
+Shaper|Shaper
+SlopeNoise|Slope Noise
+Snowfall|Snowfall
+Voronoi|Voronoi
+Voronoi+|Voronoi
