@@ -18,7 +18,7 @@ Create lakes, rivers, and even seas that follow physical rules, which not only p
 
 ![](/.data/assets/water-rivers.webp)
 
-### Sea&#x20;
+### Sea 
 
 ![](/.data/assets/water-sea.webp)
 

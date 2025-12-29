@@ -1,33 +1,37 @@
 ---
-icon: usb-drive
-title: Portable Installation
-uid: portable-installation
-order: 02
+icon: shield-halved
+title: Regular Installation
+uid: regular-installation
+order: 01
 ---
 
-# Portable Installation
+# Regular Installation
 
 Please make sure you have read the [.](./)page.
 
 ## Running the Setup
 
-Our new installer makes it very easy to install Gaea, even when you may not have Administrator privileges.
+Our new installer makes it very easy to install Gaea, whether you are at home with full Administrator privileges or in a restricted environment at work.
 
 ![](/.data/assets/QuadSpinner_Gaea_2.0_Setup_09-55-53-PM.png)
 
 ### Choosing the Installation Type
 
-To begin the installation select @regular-installation or Portable Installation. If you don't have Administrator privileges, select Portable Installation.
+To begin the installation select Regular or @portable-installation. In most cases, Regular Installation is the safest and recommended option.
+
+:::warning
+:shield: You will require Administrator Privileges for a Regular Installation. If you don't have them, you can choose to go for a @portable-installation.
+:::
 
 ![](/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM (1).png)
 
 ### Choosing the Path
 
-Next, select where you would like to install Gaea.&#x20;
+Next, select the path where you would like to install Gaea. In most cases, saving to the Program Files folder is recommended for safety. Click Install to begin the process.
 
-By default, it will install to `C:\Users\YOU\AppData\Local\Programs\Gaea 2.0`
-
-You can save to a more accessible or memorable path if you prefer. You can install it on a USB drive.
+:::danger
+When installing to a network drive, it must be installed on a network share hosted as a drive and not a UNC path. Gaea may not work properly on UNC paths.
+:::
 
 Gaea will now install. You will be given an option to launch Gaea once the installation is finished.
 
@@ -45,7 +49,7 @@ You can set your Gaea Projects storage path here, and select the navigation styl
 
 ### License Key
 
-If you have a License Key, you can also enter it here to activate all the features of your Gaea Edition. You can find the License Key in the email you received after purchasing Gaea 2.&#x20;
+If you have a License Key, you can also enter it here to activate all the features of your Gaea Edition. You can find the License Key in the email you received after purchasing Gaea 2. 
 
 :::info
 If you have forgotten your License Key, you can click "Forgot your key?" to log into the User Area on the QuadSpinner website.

@@ -24,7 +24,7 @@ The default location for a Portable Installation is:
 
 If Gaea is installed in a portable location, the Data folder is located adjacent to the Gaea.exe file.
 
-For example, if your install location is: `D:\Programs\CG\Gaea\` then the Data folder will be stored at `D:\Programs\CG\Gaea\Data\`&#x20;
+For example, if your install location is: `D:\Programs\CG\Gaea\` then the Data folder will be stored at `D:\Programs\CG\Gaea\Data\` 
 
 
 

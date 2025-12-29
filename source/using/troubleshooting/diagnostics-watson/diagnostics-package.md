@@ -14,7 +14,7 @@ It takes a few moments for the diagnosis to be completed. The resulting diagnost
 
 ![](/.data/assets/Watson_-_Gaea_Diagnostics_06-12-51-PM.png)
 
-You can expand this dialog to examine the contents of the package. Almost all data is plain text and can be examined.&#x20;
+You can expand this dialog to examine the contents of the package. Almost all data is plain text and can be examined. 
 
 ### Send Online
 
@@ -34,7 +34,7 @@ If you prefer to send the data directly, you can simply attach the `.zip` file g
 
 ## Package Contents
 
-The diagnostics package contains:&#x20;
+The diagnostics package contains: 
 
 * Execution logs for Gaea, these are detailed chronological entries of events inside the program - especially technical readouts and error traces.
 * Copy of your settings so we can recreate the same environment during our tests.
@@ -51,7 +51,7 @@ All diagnostics logs are collected directly by QuadSpinner support - these are n
 
 ### Editable Logs
 
-Lastly, as we ask you trust us with your data, we trust you with ours. The zip file is editable. If you find any information you prefer not to share, you may remove it before submitting the package.&#x20;
+Lastly, as we ask you trust us with your data, we trust you with ours. The zip file is editable. If you find any information you prefer not to share, you may remove it before submitting the package. 
 
 ![](/.data/assets/Package_Viewer_06-13-06-PM.png)
 

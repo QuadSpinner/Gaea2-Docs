@@ -33,7 +33,7 @@ Gaea's Status Bar shows the currently allocated memory in the bottom right corne
 The fewer nodes you use, the better. The higher number of nodes makes your graph more complex and slower to process. Also, each node takes up a certain amount of space. While Gaea tries to free up as much space as possible once a node is processed, it's not always possible to economize.
 
 :::warning
-In all these examples, we are assuming that the node has a **single output port**. If it has multiple outputs, then the size of the node is increased.&#x20;
+In all these examples, we are assuming that the node has a **single output port**. If it has multiple outputs, then the size of the node is increased. 
 
 For example, at 4096 x 4096, **Ridge, Adjust,** or **Shaper** would be`64MB,`while **Erosion2** would be`256MB`because it has 4 output ports.
 :::
@@ -48,7 +48,7 @@ While 16K may not seem like much on the surface, the sheer processing power requ
 
 This is why we recommend a minimum of 64GB RAM for processing 16K builds, increasing to 128GB whenever possible.
 
-While Gaea would recycle memory in between, there would still be some large spikes.&#x20;
+While Gaea would recycle memory in between, there would still be some large spikes. 
 
 ### Exporting Optimized Meshes
 

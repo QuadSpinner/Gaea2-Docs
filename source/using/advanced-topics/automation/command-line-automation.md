@@ -8,7 +8,7 @@ order: 01
 
 Gaea's Build Swarm (`Gaea.Swarm.exe`) can be automated via the command line interface.
 
-See @command-line-interface for details on the full CLI available in both Gaea.exe and Gaea.Swarm.exe&#x20;
+See @command-line-interface for details on the full CLI available in both Gaea.exe and Gaea.Swarm.exe 
 
 ## Arguments
 

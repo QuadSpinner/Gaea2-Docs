@@ -15,7 +15,7 @@ Gaea2Houdini ships in [SideFX Labs](https://www.sidefx.com/products/sidefx-labs/
 You can find further details on SideFX Labs' Installation process [in their documentation](https://www.sidefx.com/docs/houdini/labs/#install).
 
 :::warning
-Choose the **Daily Build** to install the version with the Gaea2Houdini plugin, until it is made available in the Production Build.&#x20;
+Choose the **Daily Build** to install the version with the Gaea2Houdini plugin, until it is made available in the Production Build. 
 :::
 
 ## Install Gaea
@@ -23,6 +23,6 @@ Choose the **Daily Build** to install the version with the Gaea2Houdini plugin, 
 Before using Gaea2Houdini, make sure Gaea 2.0 has been [installed ](/getting-started/install-gaea/)and [activated](/getting-started/license-management/activation.md). Gaea2Houdini requires a `Professional` or `Enterprise` license.
 
 :::danger
-It is important to install Gaea as a @regular-installation otherwise the communication between Gaea and Houdini may not work.&#x20;
+It is important to install Gaea as a @regular-installation otherwise the communication between Gaea and Houdini may not work. 
 :::
 

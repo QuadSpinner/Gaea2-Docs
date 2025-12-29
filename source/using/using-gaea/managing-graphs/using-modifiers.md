@@ -12,7 +12,7 @@ order: 01
 
 The Modifier Stack provides quick access to common adjustments, masks, and modifications that you may wish to apply to a node. Traditionally, node-based software would require you to create an additional node for each such adjustment - often resulting in complicated graphs that are difficult to manage.
 
-For basic information about Modifiers, see @modifier-stack.md
+For basic information about Modifiers, see @modifier-stack
 
 ### Fast and Less Overhead
 
@@ -48,7 +48,9 @@ Using Shaper, you can bulk up or bulk down a terrain. It can apply to masks as w
 
 ![Original terrain](/.data/assets/Gaea_-_Untitled_02-52-42-AM.jpg)
 
-![Shaper at +50](/.data/assets/Gaea_-_Untitled_02-52-58-AM.jpg) !@Shaper at -50
+![Shaper at +50](/.data/assets/Gaea_-_Untitled_02-52-58-AM.jpg) 
+
+![Shaper at -50](...)
 
 ### Restrict Effect to Slope or Height
 

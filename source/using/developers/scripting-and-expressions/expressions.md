@@ -16,7 +16,7 @@ At the moment, only Float (decimal) and Int (whole number) properties support Ex
 
 ## Create an Expression
 
-Click the Property Binding menu next to a property and select Expression.&#x20;
+Click the Property Binding menu next to a property and select Expression. 
 
 ![](/.data/assets/expr_create.png)
 
@@ -40,9 +40,9 @@ You want the Height of the FractalTerrace to be proportionally linked to the Hei
 
 ## Additional Functions and Strategies
 
-You can also use other variables in your expressions by simply using their name as a variable.&#x20;
+You can also use other variables in your expressions by simply using their name as a variable. 
 
-For example, if you have two variables called Height and Strength, you can create the expression:&#x20;
+For example, if you have two variables called Height and Strength, you can create the expression: 
 
 ```
 x * (Height / Strength)

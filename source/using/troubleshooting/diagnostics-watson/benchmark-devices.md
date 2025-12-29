@@ -20,6 +20,6 @@ The score signifies the performance factor of each device. A higher score indica
 
 ### Compute Options
 
-The benchmark data is also available via the [Compute Tab](broken-reference) tab in [options](/getting-started/options.html).&#x20;
+The benchmark data is also available via the [Compute Tab](broken-reference) tab in [options](/getting-started/options.html). 
 
 ![](/.data/assets/Options_11-09-14-AM.png)

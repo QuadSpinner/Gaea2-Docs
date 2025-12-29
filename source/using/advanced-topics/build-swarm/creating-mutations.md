@@ -31,9 +31,9 @@ Use the `[Mutation]` token in the [#build](/using-gaea/build-and-export/build-op
 
 For example:
 
-`<Builds>\[Filename]\[+++]\[Mutation]`&#x20;
+`<Builds>\[Filename]\[+++]\[Mutation]` 
 
-or&#x20;
+or 
 
 `<Builds>\[Filename]\[Region]_[Mutation]`
 :::

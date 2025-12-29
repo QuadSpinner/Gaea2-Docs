@@ -20,7 +20,7 @@ Consider this graph. It shows how Gaea unloads 4 of the 5 baked nodes by identif
 
 ### Explanation
 
-The Perlin node is connected to 3 different nodes, which eventually come to a single Combine node. The Erosion node here relies only on the Combine, so keeping the data for the previous 4 nodes is unnecessary.&#x20;
+The Perlin node is connected to 3 different nodes, which eventually come to a single Combine node. The Erosion node here relies only on the Combine, so keeping the data for the previous 4 nodes is unnecessary. 
 
 When you bake the Combine node, Gaea will detect that it is the linchpin and unload the previous nodes. Non-crucial nodes such as these are depicted with a dotted border to show that they are not loaded.
 

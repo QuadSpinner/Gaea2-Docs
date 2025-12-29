@@ -141,3 +141,26 @@ window.addEventListener("DOMContentLoaded", () => {
     // optional API
     window.setContainerMode = apply; // setContainerMode("xl"|"fluid")
 })();
+
+
+$(document).ready(function () {
+
+    $(".image-row > p").each(function () {
+        $(this).replaceWith($(this).contents());
+    });
+    $(".image-row-vertical > p").each(function () {
+        $(this).replaceWith($(this).contents());
+    });
+    // unwrap <figure> if it's directly wrapped by a <p>
+    $("#contents img").each(function () {
+        if ($(this).attr("alt") != null) {
+            $(this).wrap("<figure></figure>");
+            $(this).after("<figcaption>" + $(this).attr("alt") + "</figcaption>");
+        }
+    });
+
+
+
+
+
+});

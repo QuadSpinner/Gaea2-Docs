@@ -15,7 +15,7 @@ A single iteration is appropriate in most cases. For extremely noisy terrains th
 ## Properties
 
 * Type
-  * **OnePass**:&#x20;
+  * **OnePass**: 
   * **TwoPass**:
   * **Pixels**  
   Removes only isolated pixels.

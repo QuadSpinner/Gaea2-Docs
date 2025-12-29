@@ -12,7 +12,7 @@ The Swarm is a separate command line executable so it runs faster without a UI b
 
 ## Options
 
-All options for the Build Swarm for a specific file can be set in the @build-options.&#x20;
+All options for the Build Swarm for a specific file can be set in the @build-options. 
 
 Some additional options can be set via @command-line-automation.
 

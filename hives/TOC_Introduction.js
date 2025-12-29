@@ -4,78 +4,80 @@ window.SITE_TOC = [
     "url": "/introduction/./"
   },
   {
-    "title": "Install Gaea",
-    "icon": "box",
+    "title": "Install and License",
     "children": [
       {
-        "title": "Overview",
-        "url": "/introduction/install-gaea/"
+        "title": "Install Gaea",
+        "children": [
+          {
+            "title": "Overview",
+            "url": "/introduction/install/install-gaea/"
+          },
+          {
+            "title": "Regular Installation",
+            "url": "/introduction/install/install-gaea/regular-installation.html",
+            "icon": "shield-halved"
+          },
+          {
+            "title": "Portable Installation",
+            "url": "/introduction/install/install-gaea/portable-installation.html",
+            "icon": "usb-drive"
+          },
+          {
+            "title": "Mass Deployment",
+            "url": "/introduction/install/install-gaea/mass-deployment.html",
+            "icon": "network-wired"
+          },
+          {
+            "title": "Troubleshooting",
+            "url": "/introduction/install/install-gaea/troubleshooting.html",
+            "icon": "suitcase-medical"
+          },
+          {
+            "title": "Version Numbers",
+            "url": "/introduction/install/install-gaea/version-numbers.html",
+            "icon": "code-branch"
+          },
+          {
+            "title": "Uninstall or Clean Install",
+            "url": "/introduction/install/install-gaea/uninstall-or-clean-install.html",
+            "icon": "trash-xmark"
+          }
+        ]
       },
       {
-        "title": "Regular Installation",
-        "url": "/introduction/install-gaea/regular-installation.html",
-        "icon": "shield-halved"
-      },
-      {
-        "title": "Portable Installation",
-        "url": "/introduction/install-gaea/portable-installation.html",
-        "icon": "usb-drive"
-      },
-      {
-        "title": "Mass Deployment",
-        "url": "/introduction/install-gaea/mass-deployment.html",
-        "icon": "network-wired"
-      },
-      {
-        "title": "Troubleshooting",
-        "url": "/introduction/install-gaea/troubleshooting.html",
-        "icon": "suitcase-medical"
-      },
-      {
-        "title": "Version Numbers",
-        "url": "/introduction/install-gaea/version-numbers.html",
-        "icon": "code-branch"
-      },
-      {
-        "title": "Uninstall or Clean Install",
-        "url": "/introduction/install-gaea/uninstall-or-clean-install.html",
-        "icon": "trash-xmark"
-      }
-    ]
-  },
-  {
-    "title": "License Management",
-    "icon": "key",
-    "children": [
-      {
-        "title": "Overview",
-        "url": "/introduction/license-management/"
-      },
-      {
-        "title": "Activation",
-        "url": "/introduction/license-management/activation.html"
-      },
-      {
-        "title": "Deactivation",
-        "url": "/introduction/license-management/deactivation.html"
-      },
-      {
-        "title": "Hardware Thumbprint",
-        "url": "/introduction/license-management/hardware-thumbprint.html"
-      },
-      {
-        "title": "Floating License",
-        "url": "/introduction/license-management/floating-license.html"
-      },
-      {
-        "title": "Errors and Troubleshooting",
-        "url": "/introduction/license-management/errors-and-troubleshooting.html"
+        "title": "License Management",
+        "children": [
+          {
+            "title": "Overview",
+            "url": "/introduction/install/license-management/"
+          },
+          {
+            "title": "Activation",
+            "url": "/introduction/install/license-management/activation.html"
+          },
+          {
+            "title": "Deactivation",
+            "url": "/introduction/install/license-management/deactivation.html"
+          },
+          {
+            "title": "Hardware Thumbprint",
+            "url": "/introduction/install/license-management/hardware-thumbprint.html"
+          },
+          {
+            "title": "Floating License",
+            "url": "/introduction/install/license-management/floating-license.html"
+          },
+          {
+            "title": "Errors and Troubleshooting",
+            "url": "/introduction/install/license-management/errors-and-troubleshooting.html"
+          }
+        ]
       }
     ]
   },
   {
     "title": "User Interface",
-    "icon": "sidebar-flip",
     "children": [
       {
         "title": "Overview",
@@ -193,7 +195,6 @@ window.SITE_TOC = [
   },
   {
     "title": "The Graph",
-    "icon": "diagram-project",
     "children": [
       {
         "title": "Overview",
@@ -204,36 +205,46 @@ window.SITE_TOC = [
         "url": "/introduction/the-graph/procedural-workflow.html"
       },
       {
-        "title": "Toolbox and Search",
-        "url": "/introduction/the-graph/toolbox-and-search.html"
+        "title": "Basic Workflow",
+        "children": [
+          {
+            "title": "Toolbox and Search",
+            "url": "/introduction/the-graph/basic-workflow/toolbox-and-search.html"
+          },
+          {
+            "title": "Lock Preview and Underlays",
+            "url": "/introduction/the-graph/basic-workflow/lock-preview-and-underlays.html"
+          },
+          {
+            "title": "Suspending Engine",
+            "url": "/introduction/the-graph/basic-workflow/suspending-engine.html"
+          },
+          {
+            "title": "Graph Conveniences",
+            "url": "/introduction/the-graph/basic-workflow/graph-conveniences.html"
+          }
+        ]
       },
       {
-        "title": "Lock Preview and Underlays",
-        "url": "/introduction/the-graph/lock-preview-and-underlays.html"
-      },
-      {
-        "title": "Suspending Engine",
-        "url": "/introduction/the-graph/suspending-engine.html"
-      },
-      {
-        "title": "Graph Conveniences",
-        "url": "/introduction/the-graph/graph-conveniences.html"
-      },
-      {
-        "title": "Portals and Chokepoints",
-        "url": "/introduction/the-graph/portals-and-chokepoints.html"
-      },
-      {
-        "title": "Organizing with Tabs",
-        "url": "/introduction/the-graph/organizing-with-tabs.html"
-      },
-      {
-        "title": "Annotations",
-        "url": "/introduction/the-graph/annotations.html"
-      },
-      {
-        "title": "Groups",
-        "url": "/introduction/the-graph/groups.html"
+        "title": "Organizing Graphs",
+        "children": [
+          {
+            "title": "Portals and Chokepoints",
+            "url": "/introduction/the-graph/organization/portals-and-chokepoints.html"
+          },
+          {
+            "title": "Organizing with Tabs",
+            "url": "/introduction/the-graph/organization/organizing-with-tabs.html"
+          },
+          {
+            "title": "Annotations",
+            "url": "/introduction/the-graph/organization/annotations.html"
+          },
+          {
+            "title": "Groups",
+            "url": "/introduction/the-graph/organization/groups.html"
+          }
+        ]
       }
     ]
   },
@@ -259,7 +270,6 @@ window.SITE_TOC = [
   },
   {
     "title": "For Gaea 1 Users",
-    "icon": "arrows-turn-right",
     "children": [
       {
         "title": "Overview",

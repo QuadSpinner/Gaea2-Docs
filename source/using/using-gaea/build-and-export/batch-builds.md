@@ -20,6 +20,6 @@ The `-profile <name>` or `-p <name>` argument can be used to specify a profile d
 
 ## Mutations
 
-The Batch Build window also allows you to create various mutations of your terrain. You can add mutations with or without profiles.&#x20;
+The Batch Build window also allows you to create various mutations of your terrain. You can add mutations with or without profiles. 
 
 Mutations allow you to build different versions of the same terrain by simply randomizing the Seed properties of all nodes. The `--Seed` command line argument allows you to specify a specific "global seed" that serves as your Mutation Seed for predictable use.

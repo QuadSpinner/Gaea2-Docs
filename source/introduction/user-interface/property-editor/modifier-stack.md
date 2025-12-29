@@ -20,7 +20,7 @@ The Modifier Stack can be used to re-order the Modifiers applied to the node. Of
 The Modifier Stack is the evolution of the Post Process Stack found in Gaea 1. Modifiers are more flexible, powerful, and memory efficient.
 :::
 
-In addition to the array of Modifiers available, three unique Modifiers exist that are not directly available as nodes: Influence, Min, and Max.&#x20;
+In addition to the array of Modifiers available, three unique Modifiers exist that are not directly available as nodes: Influence, Min, and Max. 
 
 ## Modifiers
 

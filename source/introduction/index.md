@@ -40,7 +40,7 @@ Explore Gaea’s terrain creation tools, techniques, and workflows. Key areas in
 * @terrain-basics: Get started with the core concepts of how terrains work in Gaea.
 * @crafting-the-surface: Shape and sculpt your terrains using a variety of nodes and tools.
 * @understanding-erosion: Master the erosion processes that bring realism to your terrains.
-* [simulations](using-gaea/simulations/): Explore variation natural process simulations such as snow, debris, and more.
+* @simulations: Explore variation natural process simulations such as snow, debris, and more.
 * @colorizing-and-textures: Add detail and depth with advanced color and texture techniques.
 * @managing-graphs: Kick off your project with the right foundation.
 * @baking-nodes: Optimize your terrains by baking nodes for better performance.
@@ -53,21 +53,21 @@ For those looking to push Gaea to its limits, delve into these advanced features
 
 * @build-swarm: Learn about the Gaea Build CLI works.
 * @technical-information: Understand the under-the-hood details that power Gaea.
-* [automation](advanced-topics/automation/): Discover how to automate repetitive tasks to save time and maintain consistency.
+* @automation: Discover how to automate repetitive tasks to save time and maintain consistency.
 
 ### Plugins
 
 Extend Gaea’s functionality with powerful plugins designed to integrate seamlessly into your workflow:
 
-* [gaea2houdini](plugins/gaea2houdini/): Bridge your Gaea terrains into Houdini for advanced VFX and simulations.
-* [gaea2unreal](plugins/gaea2unreal/): Integrate your terrains into Unreal Engine for breathtaking environments.
+* @gaea2houdini: Bridge your Gaea terrains into Houdini for advanced VFX and simulations.
+* @gaea2unreal: Integrate your terrains into Unreal Engine for breathtaking environments.
 
 ### Troubleshooting
 
 Find solutions to common (and uncommon) issues:
 
-* [terrains](troubleshooting/terrains/): Understand terrain problems, output artifacts, and explore various workarounds.&#x20;
-* @diagnostics-watson: Use Gaea's Diagnostics tool to find and fix common problems.
+* @terrains: Understand terrain problems, output artifacts, and explore various workarounds. 
+* @diagnostics: Use Gaea's Diagnostics tool to find and fix common problems.
 
 ## Getting Help
 

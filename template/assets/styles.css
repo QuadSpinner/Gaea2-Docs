@@ -1,6 +1,61 @@
 @charset "UTF-8";
+figure figcaption {
+  font-size: 10px;
+  font-weight: 600;
+  opacity: 0.6;
+  padding: 6px;
+}
+
+.center-small {
+  display: block;
+}
+.center-small img,
+.center-small .img-fluid {
+  width: 50% !important;
+  display: block;
+  height: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Container that holds the images */
+.image-row {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+.image-row figure,
+.image-row img,
+.image-row .img-fluid {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+.image-row-vertical {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+.image-row-vertical figure,
+.image-row-vertical img,
+.image-row-vertical .img-fluid {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 50%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
 :root {
   --tblr-font-sans-serif: "Segoe UI";
+  --tblr-body-color: #c0c0c0;
   --tblr-dark-mode-border-color-translucent: rgba(110, 110, 110, 0.14);
   --toc-section: #111;
   --toc-link: #777;
@@ -554,6 +609,11 @@ body.dark {
 }
 #next-nav .nav-next::before {
   content: none;
+}
+
+code {
+  background-color: #333;
+  border-radius: 1px;
 }
 
 footer {

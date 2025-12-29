@@ -21,7 +21,7 @@ This part of the documentation discusses features that will be released in the f
 The current @scripting-and-expressions features are a basic built-in exposure of the SDK features.
 :::
 
-### &#x20;Extensibility
+###  Extensibility
 
 The TOR Platform SDK lets developers write their own custom nodes and plugins for Gaea using C# and C++.
 

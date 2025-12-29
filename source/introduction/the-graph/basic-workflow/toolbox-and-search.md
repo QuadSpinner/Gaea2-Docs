@@ -12,7 +12,7 @@ The handy Toolbox sits inside the graph, giving you quick drag-drop access to al
 
 Nodes are organized by function into families and are color-coded for easy identification. Each node has an icon that shows its family, making it easy to recognize at a glance its purpose.
 
-You can click an item to create it in the center of the current graph view. Or you can drag and drop the node to a specific location from the toolbox to your Graph surface.&#x20;
+You can click an item to create it in the center of the current graph view. Or you can drag and drop the node to a specific location from the toolbox to your Graph surface. 
 
 If you drop it on a node, it will automatically connect itself to that node's output.
 
@@ -20,7 +20,11 @@ If you drop it on a node, it will automatically connect itself to that node's ou
 
 You can drag the right edge of the Toolbox to switch between three layout styles depending on your preferences for verbosity or compactness.
 
-<div>![Expanded](/.data/assets/Gaea_-_Untitled_11-24-27-PM.png) ![Compact](/.data/assets/CKomeuEpQs.png) ![Toolbar](/.data/assets/Z9GjprHpvl.png)</div>
+:::image-row-vertical
+![Expanded](/.data/assets/Gaea_-_Untitled_11-24-27-PM.png) 
+![Compact](/.data/assets/CKomeuEpQs.png) 
+![Toolbar](/.data/assets/Z9GjprHpvl.png)
+:::
 
 
 
@@ -28,16 +32,17 @@ You can drag the right edge of the Toolbox to switch between three layout styles
 
 Nodes inside the Toolbox are organized by Family. You can choose how to visualize this organization.
 
-<div>![Nested Menus](/.data/assets/Gaea_-_Untitled_11-25-16-PM.png) ![Flat Menu](/.data/assets/Gaea_-_Untitled_11-25-46-PM.png)</div>
-
-* **Nested (Default):** Toolbox menus are nested by Family then family members to avoid clutter.
-* **Flat:** All Families and family members are shown in a flat menu.
+:::image-row
+![Nested (Default): Toolbox menus are nested by Family then family members to avoid clutter](/.data/assets/Gaea_-_Untitled_11-25-16-PM.png)
+![Flat: All Families and family members are shown in a flat menu](/.data/assets/Gaea_-_Untitled_11-25-46-PM.png)
+:::
 
 ## Search
 
 Search in Gaea is more powerful than ever and is the recommended way to create nodes. You can bring up Search by right-clicking in an empty area of the Graph surface, or by pressing `Tab`.
-
+:::image-row-vertical
 ![Search for both Nodes (Grey) and Presets (Teal).](/.data/assets/Gaea_-_Untitled_11-31-06-PM.png)
+:::
 
 ### Nodes
 
@@ -45,11 +50,11 @@ Search in Gaea is more powerful than ever and is the recommended way to create n
 
 ### Presets
 
-* The search menu also displays presets alongside nodes. To specifically search for presets, begin your query with an underscore (\_). This will prioritize presets in the search results, showing them at the top of the list.
+* The search menu also displays presets alongside nodes. To specifically search for presets, begin your query with an underscore (_). This will prioritize presets in the search results, showing them at the top of the list.
 
 ### Portals
 
-* To manage portals, right-click on a node and select "Manage portals." Alternatively, you can press the \`P\` key to open the node portal menu directly.
+* To manage portals, right-click on a node and select "Manage portals." Alternatively, you can press the `P` key to open the node portal menu directly.
 * Click on the input port and select "Connect to portal." This will display all the portals created on the output port of other nodes.
 * Choose the desired portal from the menu to establish a portal connection.
 
@@ -70,6 +75,3 @@ The predictions are just a suggestion. They show up separately from the Search m
 When Search appears, it will attempt to detect if any patterns exist and try to suggest nodes that you are likely to use.
 
 For example, if you find yourself connecting Autolevel to the Flow output of the Erosion node, then dragging out a connection from the Flow port and dropping it into empty space on the Graph surface will bring up the Search menu, where Autolevel may be one of the suggested nodes.
-
-
-

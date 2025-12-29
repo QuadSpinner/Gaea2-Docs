@@ -5,7 +5,7 @@ uid: simulation-erosion-2
 
 # Erosion_2
 
-The **Erosion_2** node in Gaea 2 is a powerful new erosion algorithm designed to enhance terrain shaping capabilities beyond the traditional Classic Erosion.&#x20;
+The **Erosion_2** node in Gaea 2 is a powerful new erosion algorithm designed to enhance terrain shaping capabilities beyond the traditional Classic Erosion. 
 
 ![](/.data/assets/Gaea_-_TalusNode002.terrain_09-02-33-PM - Copy.jpg)
 
@@ -15,7 +15,7 @@ Despite its complexity, Erosion_2 remains user-friendly and delivers determinist
 
 ## Using Erosion_2
 
-The **Erosion_2** node offers extensive control over the erosion process, allowing users to shape terrain with a range of new options and refinements.&#x20;
+The **Erosion_2** node offers extensive control over the erosion process, allowing users to shape terrain with a range of new options and refinements. 
 
 {% embed url="https://youtu.be/We4Pg_gdsVA" %}
 
@@ -85,7 +85,7 @@ This group of controls are useful for artistic control over the simulation, from
 
 #### Shape
 
-The Shape control allows you choose between retaining the original shape (low values) or allowing erosion to naturally reshape the peaks of the terrain (high values).&#x20;
+The Shape control allows you choose between retaining the original shape (low values) or allowing erosion to naturally reshape the peaks of the terrain (high values). 
 
 This processing is low-level Thermal erosion wrapped within Hydraulic erosion simulation.
 

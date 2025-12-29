@@ -22,7 +22,7 @@ Render Style: Viewport preview renderer can be set from this option. User can se
 
 ![Render Style](/.data/assets/Viewport Renderer (1).png)
 
-Autolevel Masks:&#x20;
+Autolevel Masks: 
 
 Toggle 2D Viewport: Shows/Hides 2D viewport.
 

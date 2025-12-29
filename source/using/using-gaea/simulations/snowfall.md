@@ -12,7 +12,7 @@ order: 01
 
 The Gaea Snow node is a powerful snowfall precipitation simulator. It uses advanced physics to simulate particles of snow with realistic clumping, adhesion, melt, thaw, and settling.
 
-The simulation realistically simulates sequences of snowfall, melting, and settling that occur in real life.&#x20;
+The simulation realistically simulates sequences of snowfall, melting, and settling that occur in real life. 
 
 ![](/.data/assets/snow2.webp)
 

@@ -8,7 +8,7 @@ order: 02
 
 The Unity node lets you export your heightfield as a `^2+1` heightmap.
 
-You can add up to 10 inputs.&#x20;
+You can add up to 10 inputs. 
 
 ![](/.data/assets/image%20(31).png)
 

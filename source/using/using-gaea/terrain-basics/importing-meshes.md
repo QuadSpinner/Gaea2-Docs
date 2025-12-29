@@ -11,7 +11,7 @@ Gaea 2.1 introduces the Object node which can be used to import 3D models and ra
 
 ![](/.data/assets/image%20(58).png)
 
-Once imported, the model will behave exactly like any other Gaea generated terrain, and you can do anything with it.&#x20;
+Once imported, the model will behave exactly like any other Gaea generated terrain, and you can do anything with it. 
 
 ![](/.data/assets/image%20(57).png)
 

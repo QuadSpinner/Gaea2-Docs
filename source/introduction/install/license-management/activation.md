@@ -14,7 +14,7 @@ A license key is an alphanumeric string in the format: `XXXX-XXXX-XXXX-XXXX` Thi
 
 ### **License File**
 
-A license file is usually provided as a `Gaea-XYZ123.lic` where `XYZ123` is your Transaction ID and should be kept private for your own security.&#x20;
+A license file is usually provided as a `Gaea-XYZ123.lic` where `XYZ123` is your Transaction ID and should be kept private for your own security. 
 
 ## Loading a License
 

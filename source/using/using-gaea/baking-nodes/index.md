@@ -28,11 +28,11 @@ Selecting a higher resolution for baking is beneficial when working on detailed 
 
 ### Cache Previews to Disk
 
-The Cache Previews to Disk feature, previously known as "Session Cache," allows Gaea to save processed node previews to your hard drive instead of keeping them in memory.&#x20;
+The Cache Previews to Disk feature, previously known as "Session Cache," allows Gaea to save processed node previews to your hard drive instead of keeping them in memory. 
 
 This feature is instrumental in optimizing the performance of Gaea by minimizing memory usage, which is especially beneficial in projects with extensive graphs or high-resolution data.
 
-* **When Closing File:** Saves all previews and in-memory build results to disk when a file is closed. Next time when the file is opened,&#x20;
+* **When Closing File:** Saves all previews and in-memory build results to disk when a file is closed. Next time when the file is opened, 
 * **When Idle**: Automatically bakes the graph when the system is not actively being used, and a node has not been modified for a few minutes. It optimizes time by utilizing idle periods for processing. This also helps speed up caching when the file is closed (if that option is set).
 
 Either option can be set independently.

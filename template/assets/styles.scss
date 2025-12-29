@@ -1,6 +1,8 @@
+@use "_content.scss";
+
 :root {
   --tblr-font-sans-serif: "Segoe UI";
-
+  --tblr-body-color: #c0c0c0;
   --tblr-dark-mode-border-color-translucent: rgba(110, 110, 110, 0.14);
 
   // Light
@@ -580,7 +582,7 @@ body.dark {
       -webkit-mask-position: center;
     }
 
-    &:hover{
+    &:hover {
       color: #4ff0b7;
       border: 1px solid #25282e;
     }
@@ -617,7 +619,10 @@ body.dark {
   }
 }
 
-
+code{
+  background-color: #333;
+  border-radius: 1px;
+}
 
 footer {
   font-size: 12px;

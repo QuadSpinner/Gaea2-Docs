@@ -14,7 +14,7 @@ In Gaea, terrain is represented using a heightfield, which is essentially a grid
 
 Gaea uses a vertical ratio to maintain scale. This is because we describe the world in meters (e.g., `5000m x 5000m x 2500m`) to retain a consistent scale, but we use pixels in specific sizes (e.g., `4096px x 4096px`) to store our data (as needed by CG applications) which is a finite and arbitrary unit which can't map to pixels. In addition, each pixel's value is stored as a high-precision decimal value (`0.005893f`) which is also an arbitrary, but ratio-based, unit.
 
-Therefore, we use a simple formula to create and retain the height of the terrain:&#x20;
+Therefore, we use a simple formula to create and retain the height of the terrain: 
 
 $$
 \text{Compression Ratio} = \frac{\text{Height}}{\text{Scale}} = \frac{2500}{5000} = 0.5

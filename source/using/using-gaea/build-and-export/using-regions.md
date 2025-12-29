@@ -34,7 +34,7 @@ The Gate node lets you quickly bake and unbake necessary nodes. Simply put a Gat
 
 ### Negligible Loss of quality
 
-While it may feel like baking nodes may lead to lower quality, in reality you won't experience any reduction in quality.&#x20;
+While it may feel like baking nodes may lead to lower quality, in reality you won't experience any reduction in quality. 
 
 The initial shape may be somewhat lower quality depending on the ratio of the Region, but when you apply Erosion or any other procedural simulation or effect, Gaea renders a full resolution result where almost all of the low-resolution detail is replaced by high quality modifications.
 

@@ -10,7 +10,7 @@ uid: install-gaea
 
 Download Gaea from [https://quadspinner.com/download/](https://quadspinner.com/download/)
 
-You will also require [.NET 8.0](https://download.visualstudio.microsoft.com/download/pr/7f4d5cbc-4449-4ea5-9578-c467821f251f/b9b19f89d0642bf78f4b612c6a741637/dotnet-runtime-8.0.0-win-x64.exe) and [Visual C++ Runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe).&#x20;
+You will also require [.NET 8.0](https://download.visualstudio.microsoft.com/download/pr/7f4d5cbc-4449-4ea5-9578-c467821f251f/b9b19f89d0642bf78f4b612c6a741637/dotnet-runtime-8.0.0-win-x64.exe) and [Visual C++ Runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe). 
 
 The Gaea installer will download and install those if needed. An internet connection will be required to do that. If you are going to install in an air-gaped/offline environment, then you may want to install those beforehand.
 
@@ -70,7 +70,7 @@ Due to the slower time PR acceptance on the winget-pkgs repo, there may be newer
 
 # Security Concerns
 
-## Windows SmartScreen&#x20;
+## Windows SmartScreen 
 
 When you run the Gaea installer, Microsoft SmartScreen may warn you about running the application. You can check the validity of the installer by clicking "More Info". If the Publisher information shows QuadSpinner, that means it is signed by a Certificate Authority verified certificate.
 

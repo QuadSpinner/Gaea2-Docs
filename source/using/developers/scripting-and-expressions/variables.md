@@ -60,7 +60,7 @@ If you open the Property Binding menu, and select to Bind to > Unbind, you can u
 
 ![](/.data/assets/vars_unbind.png)
 
-When unbinding, you can choose to just unbind that property and leave the Variable as it is, or delete the variable as well.&#x20;
+When unbinding, you can choose to just unbind that property and leave the Variable as it is, or delete the variable as well. 
 
 :::warning
 Deleting a variable will unbind any other properties that may be bound to it.

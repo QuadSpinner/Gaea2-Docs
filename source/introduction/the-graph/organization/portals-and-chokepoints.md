@@ -8,7 +8,7 @@ order: 06
 
 ## Portals
 
-Portals are a unique concept in graph-based applications. Pioneered in Gaea 1.0, Portals have now become a mainstay in many graph-based applications.&#x20;
+Portals are a unique concept in graph-based applications. Pioneered in Gaea 1.0, Portals have now become a mainstay in many graph-based applications. 
 
 Like a "wormhole", Portals allow you to connect nodes across vast gaps (or short ones) without visible connections. They not only improve your quality of life, but also dramatically change how you think of and use graphs.
 

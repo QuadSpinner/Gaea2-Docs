@@ -34,7 +34,7 @@ The Height Picker tool provides essential elevation data with a single click, ma
 
 ## Measurement Tool
 
-The Measurement Tool in Gaea’s 2D viewport allows you to measure the distance between two points on your terrain.&#x20;
+The Measurement Tool in Gaea’s 2D viewport allows you to measure the distance between two points on your terrain. 
 
 ### **How to Use the Measurement Tool**
 

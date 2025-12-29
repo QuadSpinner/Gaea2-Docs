@@ -18,7 +18,7 @@ Export the file as 32-bit to remove the banding and avoid lossy formats such as 
 
 ### Terrain looks faceted
 
-The Normals were not imported properly in your mesh. You can use a Smooth / Autosmooth modifier in your app to fix it, or re-import the mesh and ensure Normals are imported.&#x20;
+The Normals were not imported properly in your mesh. You can use a Smooth / Autosmooth modifier in your app to fix it, or re-import the mesh and ensure Normals are imported. 
 
 ### Terrain is inside out
 

@@ -29,7 +29,7 @@ The node graph is the workspace in Gaea where you visually connect different nod
 #### **Node Chain**
 
 * **Sequential Connection**: Nodes are connected in a sequence to form a chain. Each node processes its input and passes the result to the next node in the sequence.
-* **Dependency**: The output of one node often depends on its predecessor, which underscores how crucial the order of the nodes is to the final outcome.&#x20;
+* **Dependency**: The output of one node often depends on its predecessor, which underscores how crucial the order of the nodes is to the final outcome. 
 
 #### **Adjustable Parameters**
 

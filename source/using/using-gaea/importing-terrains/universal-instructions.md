@@ -12,7 +12,7 @@ Game engines may also consume it as a Landscape / Terrain object. Each engine ha
 
 ## Mesh Output
 
-Use the Mesher node to output the terrain as an OBJ or other support mesh.&#x20;
+Use the Mesher node to output the terrain as an OBJ or other support mesh. 
 
 ![](/.data/assets/sophia.webp)
 
@@ -50,13 +50,13 @@ Use Mark for Export, or Output nodes to save your terrain as a displacement map.
 * Give it fewer segments (it is still recommended they be power-of-2, such as 64, 128, 256, etc.).
 * Add a subdivision modifier or setting to the mesh.
 
-### Adding the Displacement&#x20;
+### Adding the Displacement 
 
 Depending on your target CG application, there can be two different ways to apply displacement: a Displace / Displacement modifier, or a Displacement slot or node in your shader/material.
 
-Apply either and then assign it the heightmap from Gaea.&#x20;
+Apply either and then assign it the heightmap from Gaea. 
 
-The vertical amount for the displacement can differ based on the application.&#x20;
+The vertical amount for the displacement can differ based on the application. 
 
 ![](/.data/assets/Build Options Terrain (2).png)
 

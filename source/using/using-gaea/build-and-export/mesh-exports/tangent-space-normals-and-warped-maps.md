@@ -24,7 +24,7 @@ The MeshWarp node, along with generating tangent-space normals, will also apply 
 
 ![](/.data/assets/image%20(1).png)
 
-Drag and drop a connection on the MeshWarp node and select "Add new port" to add additional ports.&#x20;
+Drag and drop a connection on the MeshWarp node and select "Add new port" to add additional ports. 
 
 ### LOD Export
 

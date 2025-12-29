@@ -89,7 +89,7 @@ Defines the default directory where all Gaea project files (`*.terrain`, `*.gmac
 ***
 
 :::danger
-**Do not store project or user folders inside the Gaea installation directory.**&#x20;
+**Do not store project or user folders inside the Gaea installation directory.** 
 
 Example: If Gaea is installed in `D:\Gaea\`, avoid setting your paths to `D:\Gaea\Docs`.
 
@@ -97,7 +97,7 @@ Example: If Gaea is installed in `D:\Gaea\`, avoid setting your paths to `D:\Gae
 :::
 
 :::success
-**Projects are lightweight**, but **Builds can be large**.&#x20;
+**Projects are lightweight**, but **Builds can be large**. 
 
 Storing builds in a separate drive or location is recommended, especially if you frequently back up project folders.
 :::

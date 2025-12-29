@@ -28,5 +28,5 @@ If the Z-scale calculation feels too complex or you are not getting accurate res
 
 You can follow the exact instructions on Unreal's official documentation:
 
-@https://dev.epicgames.com/documentation/en-us/unreal-engine/importing-and-exporting-landscape-heightmaps-in-unreal-engine&#x20;
+@https://dev.epicgames.com/documentation/en-us/unreal-engine/importing-and-exporting-landscape-heightmaps-in-unreal-engine 
 

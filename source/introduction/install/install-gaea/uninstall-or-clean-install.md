@@ -43,14 +43,14 @@ Download a fresh installer from the [QuadSpinner Website](https://quadspinner.co
 
 To remove all traces of Gaea data, you can delete the following folders:
 
-* Run `Gaea.exe -deactivate` to release the license.&#x20;
+* Run `Gaea.exe -deactivate` to release the license. 
   * Or do it via the About box.
 * Install Folder (usually `C:\Program Files\QuadSpinner\Gaea 2`)
 * [Data Folder](/advanced-topics/technical-information/paths-and-storage.md) (`C:\Users\<you>\AppData\Roaming\QuadSpinner\Gaea\2.0` or inside Install Folder in case of portable installation)
   * For just erasing settings: delete the `Settings` subfolder only.
 * Viewport Logs `C:\Users\<you>\AppData\LocalLow\QuadSpinner\`
 * Registry
-  * `HKEY_LOCAL_MACHINE\SOFTWARE\QuadSpinner\Gaea\2.0`&#x20;
+  * `HKEY_LOCAL_MACHINE\SOFTWARE\QuadSpinner\Gaea\2.0` 
   * `HKEY_CLASSES_ROOT\.terrain`
   * `HKEY_CLASSES_ROOT\Gaea Terrain Files`
 * Start Menu and Desktop shortcuts entries

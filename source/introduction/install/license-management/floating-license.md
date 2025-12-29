@@ -22,7 +22,7 @@ You can install your floating license the same way as described in @#license-fil
 
 ### Acquiring a License
 
-When you start Gaea, it will contact the online license server to acquire a floating license.&#x20;
+When you start Gaea, it will contact the online license server to acquire a floating license. 
 
 If your maximum number of licenses/seats have been assigned at that moment, you will be notified. In that case, you have to wait until a license slot has been released.
 
@@ -38,7 +38,7 @@ In case you lose the network connection or the software crashes, then recover it
 
 ### Refreshing or Re-acquiring the License
 
-The `Refresh` button in the Help > About dialog can be used to force a re-verification and re-acquisition of your license token.&#x20;
+The `Refresh` button in the Help > About dialog can be used to force a re-verification and re-acquisition of your license token. 
 
 The accompanying `Release` button can be used to release the currently acquired license token and revert the running instance of Gaea to the Community Edition. A new license will be re-acquiring on the next run.
 
@@ -50,7 +50,7 @@ See the email you received during purchase to know which address and ports to al
 
 ## Gaea Build Swarm
 
-Gaea UI and Gaea Build Swarm are both applications that use the Gaea Engine to build terrains. Each requires a separate license to run.&#x20;
+Gaea UI and Gaea Build Swarm are both applications that use the Gaea Engine to build terrains. Each requires a separate license to run. 
 
 If you only have a single license for a specific workstation, you can choose the "Close and Build" option when starting a build from the Build menu. This will close Gaea and release the license so the Swarm can use it.
 
