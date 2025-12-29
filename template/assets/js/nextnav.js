@@ -97,5 +97,7 @@
 
         if (prevBtn) box.appendChild(prevBtn);
         if (nextBtn) box.appendChild(nextBtn);
+
+        if(!prevBtn && !nextBtn) box.outerHTML = "";
     });
 })();

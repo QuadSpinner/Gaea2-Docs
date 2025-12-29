@@ -136,7 +136,7 @@ body.dark {
 
   h3.toc-section {
     margin: 12px 0 6px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--toc-section);
   }
@@ -152,10 +152,10 @@ body.dark {
       position: absolute;
       left: 0;
       right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      border-top: 1px solid var(--toc-border);
-      opacity: .25;
+      top: 75%;
+      transform: translateY(-75%) translateX(10%);
+      border-top: 1.5px solid var(--toc-border);
+      opacity: .5;
     }
   }
 
@@ -408,6 +408,11 @@ body.dark {
     font-size: 12px;
     font-weight: 600;
   }
+
+  code{
+    background: $c;
+    color: #000;
+  }
 }
 
 .note {
@@ -558,6 +563,9 @@ body.dark {
 }
 
 #next-nav {
+  border-top: 1px solid var(--toc-border);
+  padding-top: 32px;
+
   .nav-btn {
     display: inline-flex;
     align-items: center;
@@ -619,7 +627,7 @@ body.dark {
   }
 }
 
-code{
+code {
   background-color: #333;
   border-radius: 1px;
 }

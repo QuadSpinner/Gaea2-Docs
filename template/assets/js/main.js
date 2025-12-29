@@ -117,7 +117,7 @@ window.addEventListener("DOMContentLoaded", () => {
     function apply(mode) {
         const isFluid = mode === "fluid";
         container.classList.toggle("container-fluid", isFluid);
-        container.classList.toggle("container-xl", !isFluid);
+        container.classList.toggle("container-xxl", !isFluid);
 
         contentcontainer.classList.toggle("col-lg-6", isFluid);
         setStored(mode);

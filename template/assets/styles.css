@@ -1,9 +1,19 @@
 @charset "UTF-8";
+figure {
+  text-align: center;
+}
 figure figcaption {
   font-size: 10px;
   font-weight: 600;
   opacity: 0.6;
   padding: 6px;
+  display: block;
+}
+figure img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 4px;
 }
 
 .center-small {
@@ -16,6 +26,7 @@ figure figcaption {
   height: auto !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  border-radius: 4px;
 }
 
 /* Container that holds the images */
@@ -163,7 +174,7 @@ body.dark {
 #site-nav h3.toc-section,
 #site-nav-2 h3.toc-section {
   margin: 12px 0 6px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--toc-section);
 }
@@ -180,10 +191,10 @@ body.dark {
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  border-top: 1px solid var(--toc-border);
-  opacity: 0.25;
+  top: 75%;
+  transform: translateY(-75%) translateX(10%);
+  border-top: 1.5px solid var(--toc-border);
+  opacity: 0.5;
 }
 #site-nav i,
 #site-nav-2 i {
@@ -405,6 +416,10 @@ body.dark {
   font-size: 12px;
   font-weight: 600;
 }
+.note code {
+  background: #457dcd;
+  color: #000;
+}
 
 .tip {
   border: 1px solid #347d39;
@@ -419,6 +434,10 @@ body.dark {
   margin: 0;
   font-size: 12px;
   font-weight: 600;
+}
+.tip code {
+  background: #347d39;
+  color: #000;
 }
 
 .success {
@@ -435,6 +454,10 @@ body.dark {
   font-size: 12px;
   font-weight: 600;
 }
+.success code {
+  background: #579d5a;
+  color: #000;
+}
 
 .warning {
   border: 1px solid #b88827;
@@ -449,6 +472,10 @@ body.dark {
   margin: 0;
   font-size: 12px;
   font-weight: 600;
+}
+.warning code {
+  background: #b88827;
+  color: #000;
 }
 
 .danger {
@@ -465,6 +492,10 @@ body.dark {
   font-size: 12px;
   font-weight: 600;
 }
+.danger code {
+  background: #d25049;
+  color: #000;
+}
 
 .info {
   border: 1px solid #4ff0b7;
@@ -479,6 +510,10 @@ body.dark {
   margin: 0;
   font-size: 12px;
   font-weight: 600;
+}
+.info code {
+  background: #4ff0b7;
+  color: #000;
 }
 
 .doc-dropdown .dropdown-toggle {
@@ -572,6 +607,10 @@ body.dark {
   color: var(--toc-section);
 }
 
+#next-nav {
+  border-top: 1px solid var(--toc-border);
+  padding-top: 32px;
+}
 #next-nav .nav-btn {
   display: inline-flex;
   align-items: center;

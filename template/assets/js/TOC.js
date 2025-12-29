@@ -224,7 +224,7 @@ function initGlobalToc({
     // - "fa-sharp-duotone fa-thin fa-dog" (full class list), or
     // - "fa-dog" (just the glyph; we'll add your defaults)
     const cls = String(icon).trim();
-    i.className = `fa-regular fa-${cls}`;
+    i.className = `fa-duotone fa-solid fa-${cls}`;
     i.classList.add("toc-icon");
     el.appendChild(i);
   }
@@ -269,11 +269,17 @@ function initGlobalToc({
 // - No collapse, no scrollspy, no animation
 // - Includes h1..h4 and nests them by heading level
 window.addEventListener("DOMContentLoaded", () => {
+
+  if (document.body?.dataset?.slug === "home") {
+    document.querySelector("#page-naver")?.remove();
+    return;
+  }
+
+
   const content = document.querySelector("#contents");
   if (!content) return;
 
-  const nav =
-    document.querySelector("#page-nav");
+  const nav = document.querySelector("#page-nav");
 
   if (!nav) return;
 
@@ -282,8 +288,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (!headings.length) return;
 
-  const slugify = (s) =>
-    s.toLowerCase().trim().replace(/[\s\W-]+/g, "-").replace(/^-+|-+$/g, "").replace(/-+/g, "-");
+  const slugify = (s) => s.toLowerCase().trim().replace(/[\s\W-]+/g, "-").replace(/^-+|-+$/g, "").replace(/-+/g, "-");
 
   function ensureId(el) {
     if (el.id) return el.id;

@@ -4,9 +4,17 @@ figure {
         font-weight: 600;
         opacity: 0.6;
         padding: 6px;
+        display: block;
+    }
+
+    text-align: center;
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;border-radius: 4px;
     }
 }
-
 
 .center-small {
 
@@ -19,6 +27,7 @@ figure {
         height: auto !important;
         margin-left: auto !important;
         margin-right: auto !important;
+        border-radius: 4px;
     }
 
 }
