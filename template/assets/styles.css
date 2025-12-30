@@ -661,7 +661,6 @@ body.dark {
   border-radius: 4px;
   padding: 16px;
   margin-bottom: 36px;
-  z-index: 500;
   position: relative;
 }
 .head-block .doc-title {
@@ -735,4 +734,8 @@ footer {
 }
 footer a {
   font-size: 12px;
+}
+
+div[data-popper-placement], #searchPopup {
+  z-index: 999999;
 }

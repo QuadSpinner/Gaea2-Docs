@@ -1,7 +1,3 @@
-
-graph|The Graph
-data-editor|Data Editor
-menus-and-toolbars|Menus and Toolbars
-property-editor|Property Editor
-viewport|Viewport
-navigation|Navigation
+interface|The Interface
+graph|The Infinity Graph
+features|Other Features

@@ -4,22 +4,182 @@ window.SITE_TOC = [
     "url": "/ui/./"
   },
   {
-    "title": "Options",
-    "url": "/ui/options.html",
-    "icon": "sliders-simple"
+    "title": "The Interface",
+    "children": [
+      {
+        "title": "Property Editor",
+        "children": [
+          {
+            "title": "Overview",
+            "url": "/ui/interface/property-editor/"
+          },
+          {
+            "title": "Modifier Stack",
+            "url": "/ui/interface/property-editor/modifier-stack.html"
+          },
+          {
+            "title": "Presets",
+            "url": "/ui/interface/property-editor/presets.html"
+          },
+          {
+            "title": "Binding Variables",
+            "url": "/ui/interface/property-editor/binding-variables.html"
+          }
+        ]
+      },
+      {
+        "title": "Data Editor",
+        "children": [
+          {
+            "title": "Overview",
+            "url": "/ui/interface/data-editor/"
+          },
+          {
+            "title": "Terrain View",
+            "url": "/ui/interface/data-editor/terrain-view.html"
+          },
+          {
+            "title": "Export View",
+            "url": "/ui/interface/data-editor/export-view.html"
+          },
+          {
+            "title": "Automation View",
+            "url": "/ui/interface/data-editor/automation-view.html"
+          }
+        ]
+      },
+      {
+        "title": "Menus and Toolbars",
+        "children": [
+          {
+            "title": "Overview",
+            "url": "/ui/interface/menus-and-toolbars/"
+          },
+          {
+            "title": "Main Menu",
+            "url": "/ui/interface/menus-and-toolbars/main-menu.html"
+          },
+          {
+            "title": "Undo and Autosave",
+            "url": "/ui/interface/menus-and-toolbars/undo-and-autosave.html"
+          },
+          {
+            "title": "Graph Toolbar",
+            "url": "/ui/interface/menus-and-toolbars/graph-toolbar.html"
+          },
+          {
+            "title": "Viewport Toolbar",
+            "url": "/ui/interface/menus-and-toolbars/viewport-toolbar.html"
+          },
+          {
+            "title": "Property Editor Toolbar",
+            "url": "/ui/interface/menus-and-toolbars/property-editor-toolbar.html"
+          },
+          {
+            "title": "Data Editor Toolbar",
+            "url": "/ui/interface/menus-and-toolbars/data-editor-toolbar.html"
+          }
+        ]
+      },
+      {
+        "title": "Viewport",
+        "children": [
+          {
+            "title": "Overview",
+            "url": "/ui/interface/viewport/"
+          },
+          {
+            "title": "Render Modes",
+            "url": "/ui/interface/viewport/render-modes.html"
+          },
+          {
+            "title": "2D Viewport",
+            "url": "/ui/interface/viewport/2d-viewport.html"
+          },
+          {
+            "title": "Measurement Tools",
+            "url": "/ui/interface/viewport/measurement-tools.html"
+          }
+        ]
+      },
+      {
+        "title": "Navigation",
+        "children": [
+          {
+            "title": "Lazy Menu",
+            "url": "/ui/interface/navigation/lazy-menu.html"
+          },
+          {
+            "title": "Keyboard Shortcuts",
+            "url": "/ui/interface/navigation/keyboard-shortcuts.html"
+          }
+        ]
+      },
+      {
+        "title": "Options",
+        "children": [
+          {
+            "title": "Overview",
+            "url": "/ui/interface/options/"
+          },
+          {
+            "title": "General",
+            "url": "/ui/interface/options/general.html"
+          },
+          {
+            "title": "Paths",
+            "url": "/ui/interface/options/paths.html"
+          },
+          {
+            "title": "Toolbox",
+            "url": "/ui/interface/options/toolbox.html"
+          },
+          {
+            "title": "Graph",
+            "url": "/ui/interface/options/graph.html"
+          },
+          {
+            "title": "Node",
+            "url": "/ui/interface/options/node.html"
+          },
+          {
+            "title": "Data View",
+            "url": "/ui/interface/options/data-view.html"
+          },
+          {
+            "title": "Build",
+            "url": "/ui/interface/options/build.html"
+          },
+          {
+            "title": "Cache",
+            "url": "/ui/interface/options/cache.html"
+          },
+          {
+            "title": "Viewport",
+            "url": "/ui/interface/options/viewport.html"
+          },
+          {
+            "title": "Navigation",
+            "url": "/ui/interface/options/navigation.html"
+          },
+          {
+            "title": "Lazy Menu",
+            "url": "/ui/interface/options/lazy-menu.html"
+          },
+          {
+            "title": "Compute",
+            "url": "/ui/interface/options/compute.html"
+          },
+          {
+            "title": "Experimental",
+            "url": "/ui/interface/options/experimental.html"
+          }
+        ]
+      }
+    ]
   },
   {
-    "title": "Autosave and Recovery",
-    "url": "/ui/autosave-and-recovery.html",
-    "icon": "light-emergency-on"
-  },
-  {
-    "title": "Command-line Interface",
-    "url": "/ui/command-line-interface.html",
-    "icon": "rectangle-terminal"
-  },
-  {
-    "title": "The Graph",
+    "title": "The Infinity Graph",
     "children": [
       {
         "title": "Overview",
@@ -74,111 +234,17 @@ window.SITE_TOC = [
     ]
   },
   {
-    "title": "Data Editor",
+    "title": "Other Features",
     "children": [
       {
-        "title": "Overview",
-        "url": "/ui/data-editor/"
+        "title": "Autosave and Recovery",
+        "url": "/ui/features/autosave-and-recovery.html",
+        "icon": "light-emergency-on"
       },
       {
-        "title": "Terrain View",
-        "url": "/ui/data-editor/terrain-view.html"
-      },
-      {
-        "title": "Export View",
-        "url": "/ui/data-editor/export-view.html"
-      },
-      {
-        "title": "Automation View",
-        "url": "/ui/data-editor/automation-view.html"
-      }
-    ]
-  },
-  {
-    "title": "Menus and Toolbars",
-    "children": [
-      {
-        "title": "Overview",
-        "url": "/ui/menus-and-toolbars/"
-      },
-      {
-        "title": "Main Menu",
-        "url": "/ui/menus-and-toolbars/main-menu.html"
-      },
-      {
-        "title": "Undo and Autosave",
-        "url": "/ui/menus-and-toolbars/undo-and-autosave.html"
-      },
-      {
-        "title": "Graph Toolbar",
-        "url": "/ui/menus-and-toolbars/graph-toolbar.html"
-      },
-      {
-        "title": "Viewport Toolbar",
-        "url": "/ui/menus-and-toolbars/viewport-toolbar.html"
-      },
-      {
-        "title": "Property Editor Toolbar",
-        "url": "/ui/menus-and-toolbars/property-editor-toolbar.html"
-      },
-      {
-        "title": "Data Editor Toolbar",
-        "url": "/ui/menus-and-toolbars/data-editor-toolbar.html"
-      }
-    ]
-  },
-  {
-    "title": "Property Editor",
-    "children": [
-      {
-        "title": "Overview",
-        "url": "/ui/property-editor/"
-      },
-      {
-        "title": "Modifier Stack",
-        "url": "/ui/property-editor/modifier-stack.html"
-      },
-      {
-        "title": "Presets",
-        "url": "/ui/property-editor/presets.html"
-      },
-      {
-        "title": "Binding Variables",
-        "url": "/ui/property-editor/binding-variables.html"
-      }
-    ]
-  },
-  {
-    "title": "Viewport",
-    "children": [
-      {
-        "title": "Overview",
-        "url": "/ui/viewport/"
-      },
-      {
-        "title": "Render Modes",
-        "url": "/ui/viewport/render-modes.html"
-      },
-      {
-        "title": "2D Viewport",
-        "url": "/ui/viewport/2d-viewport.html"
-      },
-      {
-        "title": "Measurement Tools",
-        "url": "/ui/viewport/measurement-tools.html"
-      }
-    ]
-  },
-  {
-    "title": "Navigation",
-    "children": [
-      {
-        "title": "Lazy Menu",
-        "url": "/ui/navigation/lazy-menu.html"
-      },
-      {
-        "title": "Keyboard Shortcuts",
-        "url": "/ui/navigation/keyboard-shortcuts.html"
+        "title": "Command-line Interface",
+        "url": "/ui/features/command-line-interface.html",
+        "icon": "rectangle-terminal"
       }
     ]
   }
