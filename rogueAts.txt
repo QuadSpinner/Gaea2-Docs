@@ -1,10 +1,10 @@
-X:\Docs\Gaea2-Docs\staging\introduction\misc\autosave-and-recovery.md
-X:\Docs\Gaea2-Docs\staging\introduction\install\install-gaea\mass-deployment.md
-X:\Docs\Gaea2-Docs\staging\introduction\install\license-management\floating-license.md
-X:\Docs\Gaea2-Docs\staging\introduction\the-graph\basic-workflow\graph-conveniences.md
-X:\Docs\Gaea2-Docs\staging\introduction\the-graph\organization\portals-and-chokepoints.md
-X:\Docs\Gaea2-Docs\staging\introduction\user-interface\menus-and-toolbars\graph-toolbar.md
-X:\Docs\Gaea2-Docs\staging\introduction\user-interface\menus-and-toolbars\undo-and-autosave.md
+X:\Docs\Gaea2-Docs\staging\install\install\install-gaea\mass-deployment.md
+X:\Docs\Gaea2-Docs\staging\install\install\license-management\floating-license.md
+X:\Docs\Gaea2-Docs\staging\ui\autosave-and-recovery.md
+X:\Docs\Gaea2-Docs\staging\ui\menus-and-toolbars\graph-toolbar.md
+X:\Docs\Gaea2-Docs\staging\ui\menus-and-toolbars\undo-and-autosave.md
+X:\Docs\Gaea2-Docs\staging\ui\graph\basic-workflow\graph-conveniences.md
+X:\Docs\Gaea2-Docs\staging\ui\graph\organization\portals-and-chokepoints.md
 X:\Docs\Gaea2-Docs\staging\using\advanced-topics\automation\managing-input-and-output.md
 X:\Docs\Gaea2-Docs\staging\using\advanced-topics\build-swarm\build-reports.md
 X:\Docs\Gaea2-Docs\staging\using\advanced-topics\technical-information\file-formats.md

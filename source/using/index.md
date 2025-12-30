@@ -4,34 +4,11 @@ title: Home
 uid: home-user-guide
 ---
 
-## Gaea 2 Documentation
-
-![](/.data/assets/Wallpaper.png)
+## User Guide
 
 **Welcome to the official Gaea 2.0 documentation**, your gateway to unlocking the full potential of the most advanced terrain generation software on the market. Whether you’re just starting or a seasoned professional, this guide is designed to provide you with everything you need to create stunning, complex terrains with ease and precision.
 
 ![](/.data/assets/gaea-ui2x.webp)
-
-:::info
-info
-:::
-
-:::success
-success
-:::
-
-## What’s Inside
-
-This documentation is organized to help you quickly find the information you need:
-
-### Getting Started
-
-Begin your journey with Gaea by learning how to install, configure, and navigate the software. This section covers:
-
-* @install-gaea: Learn how to set up Gaea for your needs, whether through a regular or portable installation, mass deployment, or troubleshooting potential issues.
-* @license-management: Manage your licenses and ensure smooth transition when moving computers.
-* @user-interface: Dive into the layout, panels, and customization options to make your workflow smoother.
-* @for-gaea-1-users: A migration guide for existing users of Gaea 1.0 to see how Gaea 2.0 changes and improves your workflow.
 
 ### Using Gaea
 
@@ -67,7 +44,7 @@ Extend Gaea’s functionality with powerful plugins designed to integrate seamle
 Find solutions to common (and uncommon) issues:
 
 * @terrains: Understand terrain problems, output artifacts, and explore various workarounds.
-* @diagnostics-watson: Use Gaea's Diagnostics tool to find and fix common problems.
+* @diagnostics: Use Gaea's Diagnostics tool to find and fix common problems.
 
 ## Getting Help
 

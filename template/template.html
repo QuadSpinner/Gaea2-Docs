@@ -46,14 +46,15 @@
             <div class="row">
                 <div class="col">
                     <div class="d-flex hive-nav">
-                        <a class="p-2 nav-item" data-hive="Getting Started" href="/introduction">Getting Started</a>
-                        <a class="p-2 nav-item" data-hive="Using Gaea" href="/using">Using Gaea</a>
-                        <a class="p-2 nav-item" data-hive="Node Reference" href="/reference">Nodes</a>
-                        <a class="p-2 nav-item" data-hive="Guides" href="/guides">Guides</a>
-                        <a class="p-2 nav-item" data-hive="Videos" href="/videos">Videos</a>
+                        <a class="p-2 nav-item" data-hive="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive="User Interface" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive="Using Gaea" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive="Node Reference" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive="Guides" href="/guides"><i class="fa-duotone fa-light fa-book-sparkles"></i> Guides</a>
+                        <a class="p-2 nav-item" data-hive="Videos" href="/videos"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
                         <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
-                        <a class="p-2 nav-item" data-hive="Developers" href="/developers">Developers</a>
-                        <a class="p-2 nav-item" data-hive="Changelog" href="/changelog">Changelog</a>
+                        <a class="p-2 nav-item" data-hive="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive="Changelog" href="/changelog"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Changelog</a>
                         <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
                     </div>
                 </div>
@@ -67,20 +68,24 @@
                     <nav id="site-nav"></nav>
                 </div>
                 <div class="col">
-                    <div class="head-block">
-                        <div class="d-block d-lg-none">
-                            <a data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
-                                <img src="/assets/svg/global-toc.svg" alt="">
-                                Contents
-                            </a>
-                            <br>
-                            <br>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="doc-title">
-                                %%PAGETITLE%%
+                    <div class="d-block d-lg-none">
+                        <a data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+                            <img src="/assets/svg/global-toc.svg" alt="">
+                            Contents
+                        </a>
+                    </div>
+                    <div class="row align-top">
+
+                        <div id="content-holder" class="col col-lg-6 px-5">
+                            <main id="contents">%%CONTENT%%</main>
+
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
                             </div>
-                            <div class="d-lg-flex d-none d-print-none justify-content-between align-items-center">
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
                                 <div class="dropdown d-flex doc-dropdown">
                                     <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
                                         <img src="/assets/svg/commands.svg" alt="">
@@ -95,30 +100,19 @@
                                         <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
                                     </div>
                                 </div>
-                                <a href="#" id="cmd-expand" class="d-flex mx-5" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Toggle Layout Expansion" data-bs-original-title="Toggle Layout Expansion">
+                                <a href="#" id="cmd-expand" class="d-flex btn btnx mx-5" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Toggle Layout Expansion" data-bs-original-title="Toggle Layout Expansion">
                                     <img src="/assets/svg/expand.svg" alt="">
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row align-top">
-
-                        <div id="content-holder" class="col col-lg-6 px-5">
-                            <main id="contents">%%CONTENT%%</main>
-
-                            <div id="next-nav" class="d-flex justify-content-between">
-                                <a href="" id="btn-prev" class="btn btn-small"></a>
-                                <a href="" id="btn-next" class="btn btn-small"></a>
-                            </div>
-                        </div>
-                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
                             <br>
-                            <div class="d-block">
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
                                 <img src="/assets/svg/page-toc.svg" alt="">
                                 <strong>On this page</strong>
                                 <br>
-                            </div>
-                            <div id="page-nav">
+                                <div id="page-nav">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -136,20 +130,19 @@
                 <div class="col-lg-auto ms-lg-auto text-right">
                     <ul class="list-inline list-inline-dots mb-0">
                         <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
-                        <li class="list-inline-item"><a href="/license.html" class="link-secondary">License</a></li>
                         <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
                     </ul>
+                    <p>Documentation is provided under the permissive <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
                 </div>
                 <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-left">
                     <div class="row">
                         <div class="col"></div>
                         <div class="col"></div>
                     </div>
-                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" /> 
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
                     using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
                     <br>
                     <br>
-                    Documentation released under the permissive <a>
                     Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
                 </div>
             </div>

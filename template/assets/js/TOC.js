@@ -274,8 +274,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#page-naver")?.remove();
     return;
   }
-
-
+  
   const content = document.querySelector("#contents");
   if (!content) return;
 

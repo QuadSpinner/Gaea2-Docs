@@ -1,4 +1,7 @@
+
+graph|The Graph
 data-editor|Data Editor
 menus-and-toolbars|Menus and Toolbars
 property-editor|Property Editor
 viewport|Viewport
+navigation|Navigation

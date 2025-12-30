@@ -15,8 +15,7 @@ uid: home
       <a href="/introduction">Getting Started</a>
     </h3>
     <div >
-      Are you suggesting that coconuts migrate? No, no, no! Yes, yes. A bit. But she's got a wart.
-      You ...
+      Information about installing and administering Gaea on a network, license activation.
     </div>
    
   </div>

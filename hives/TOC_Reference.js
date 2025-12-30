@@ -12,7 +12,7 @@ window.SITE_TOC = [
     "title": "Nodes",
     "children": [
       {
-        "title": "Primitive",
+        "title": "\uD83D\uDFE2 Primitive",
         "children": [
           {
             "title": "Cellular",
@@ -113,7 +113,7 @@ window.SITE_TOC = [
         ]
       },
       {
-        "title": "Terrain",
+        "title": "\uD83D\uDFE2 Terrain",
         "children": [
           {
             "title": "Canyon",
@@ -174,7 +174,7 @@ window.SITE_TOC = [
         ]
       },
       {
-        "title": "Modify",
+        "title": "\uD83D\uDD35 Modify",
         "children": [
           {
             "title": "Adjust",
@@ -343,7 +343,7 @@ window.SITE_TOC = [
         ]
       },
       {
-        "title": "Surface",
+        "title": "\uD83D\uDFE1 Surface",
         "children": [
           {
             "title": "Bomber",
@@ -432,7 +432,7 @@ window.SITE_TOC = [
         ]
       },
       {
-        "title": "Simulate",
+        "title": "\uD83D\uDFE0 Simulate",
         "children": [
           {
             "title": "Anastomosis",
@@ -537,7 +537,7 @@ window.SITE_TOC = [
         ]
       },
       {
-        "title": "Derive",
+        "title": "\u26AA Derive",
         "children": [
           {
             "title": "Angle",
@@ -594,7 +594,7 @@ window.SITE_TOC = [
         ]
       },
       {
-        "title": "Colorize",
+        "title": "\uD83D\uDFE3 Colorize",
         "children": [
           {
             "title": "CLUTer",
@@ -651,7 +651,7 @@ window.SITE_TOC = [
         ]
       },
       {
-        "title": "Output",
+        "title": "\uD83D\uDD34 Output",
         "children": [
           {
             "title": "AO",
@@ -708,7 +708,7 @@ window.SITE_TOC = [
         ]
       },
       {
-        "title": "Utility",
+        "title": "\u26AB Utility",
         "children": [
           {
             "title": "MeshWarp",

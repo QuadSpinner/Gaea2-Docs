@@ -1,3 +1,67 @@
+#contents {
+
+    color: var(--tblr-body-color);
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: 300;
+        margin-top: 24px;
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+}
+
+code {
+    background-color: #333;
+    border-radius: 1px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+
+    border: 1.5px solid rgb(14, 16, 17);
+    box-shadow: none;
+
+    .card-title,
+    h1,
+    h2,
+    h3 {
+        margin-top: 0 !important;
+        color: #fff;
+
+        a {
+            color: #fff
+        }
+    }
+
+    .card-body {
+        font-size: 12px;
+    }
+}
+
+
 figure {
     figcaption {
         font-size: 10px;
@@ -12,7 +76,8 @@ figure {
     img {
         margin-left: auto;
         margin-right: auto;
-        display: block;border-radius: 4px;
+        display: block;
+        border-radius: 4px;
     }
 }
 
@@ -64,5 +129,33 @@ figure {
         height: auto;
         object-fit: contain;
         display: block;
+    }
+}
+
+
+.reference-tables {
+    table {
+        width: 50% !important;
+
+        thead {
+            background: #111;
+        }
+
+        th, td {
+            border: 1px solid #fff1;
+            padding: 8px;
+        }
+
+        td:nth-child(1) {
+            width: 20%;
+        }
+
+        td:nth-child(2) {
+            width: 70%;
+        }
+
+        td:nth-child(3) {
+            width: 20%;
+        }
     }
 }

@@ -7,6 +7,8 @@ order: 01
 
 # Node Map
 
+
+:::reference-tables
 ### Primitive
 
 | Family   | Node                                              | Code  |
@@ -236,3 +238,5 @@ order: 01
 |           | [Mask](nodes/utility/mask/)                   | `ma`  |
 |           | [MathX](nodes/utility/mathx/)                 | `mx`  |
 |           | [Var](nodes/utility/var/)                     | `var` |
+
+:::
