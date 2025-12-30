@@ -7,7 +7,7 @@ uid: simulation-erosion-2
 
 The **Erosion_2** node in Gaea 2 is a powerful new erosion algorithm designed to enhance terrain shaping capabilities beyond the traditional Classic Erosion. 
 
-![](/.data/assets/Gaea_-_TalusNode002.terrain_09-02-33-PM - Copy.jpg)
+![](/.data/assets/Gaea_-_TalusNode002.terrain_09-02-33-PM---Copy.jpg)
 
 Despite its complexity, Erosion_2 remains user-friendly and delivers deterministic results with up to 10x faster performance, even on the CPU.
 
@@ -95,7 +95,7 @@ In conjunction with Shape, the Shape Sharpness control lets you shape the terrai
 
 The Shape Detail Scale control is very important when it comes to surface structure. This control lets you choose how much concentric smaller details are simulated - from the largest ravines to the finest gullies within them. This is a very useful tool for reducing unnecessary detail - especially for distant terrains or if you plan add further detail using [Surface nodes](/crafting-the-surface/surface-nodes.md).
 
-![](/.data/assets/Gaea_-_Wasteland-001.terrain_01-32-19-AM - Copy.jpg)
+![](/.data/assets/Gaea_-_Wasteland-001.terrain_01-32-19-AM---Copy.jpg)
 
 ### Orographic Influence
 

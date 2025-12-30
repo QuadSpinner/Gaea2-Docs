@@ -36,5 +36,5 @@ This node can be used with or without Snow.
 
 The Glacier node takes Snow or other custom input and converts it into thick sheets of ice. The surface can be converted into a variety of surfaces, including directional sloped grooves, fluvial breakage, complex substructure, and more.
 
-![](/.data/assets/Gaea_-_site_followRivers-015.terrain_04-35-25-AM - Copy.jpg)
+![](/.data/assets/Gaea_-_site_followRivers-015.terrain_04-35-25-AM---Copy.jpg)
 

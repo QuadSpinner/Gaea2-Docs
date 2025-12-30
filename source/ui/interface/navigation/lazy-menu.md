@@ -11,7 +11,7 @@ The Lazy Menu can be brought up anywhere in the primary Gaea UI by pressing `F1`
 :::info
 In true lazy fashion, when you use the Lazy Menu to navigate to a section, your cursor will also be moved there!
 
-This extra level of laziness can be disabled in the @options.md#general Options.
+This extra level of laziness can be disabled in the @options-general Options.
 :::
 
 ![](/.data/assets/lazy_menu.png)
@@ -20,7 +20,7 @@ This extra level of laziness can be disabled in the @options.md#general Options.
 
 You may not want all options to visible or maybe just want some options to stand out over others. You can edit the Lazy Menu in Options > @options#lazy-menu.
 
-![Lazy Menu options](/.data/assets/Gaea Viewport Lazy Menu1.png)
+![Lazy Menu options](/.data/assets/Gaea-Viewport-Lazy-Menu1.png)
 
 This modifies the Lazy Menu with your desired levels of visibility.
 

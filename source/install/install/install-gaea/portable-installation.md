@@ -19,7 +19,7 @@ Our new installer makes it very easy to install Gaea, even when you may not have
 
 To begin the installation select @regular-installation or Portable Installation. If you don't have Administrator privileges, select Portable Installation.
 
-![](/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM (1).png)
+![](/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM-(1).png)
 
 ### Choosing the Path
 

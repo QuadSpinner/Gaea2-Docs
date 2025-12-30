@@ -25,6 +25,9 @@
 #contents table {
   width: 100%;
 }
+#contents img {
+  max-height: 40vh;
+}
 
 code {
   background-color: #333;
@@ -620,7 +623,7 @@ body.dark {
 }
 
 #site-search #searchPopup {
-  background: #111;
+  background: #171717;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 8px 32px rgba(0, 0, 0, 0.5);
   min-width: 25vw !important;
   width: 100%;
@@ -628,8 +631,20 @@ body.dark {
   overflow: auto;
   border-radius: 4px;
 }
+#site-search #searchPopup hr {
+  margin: 2px 24px;
+}
 #site-search #searchPopup .list-group-item {
-  font-size: smaller;
+  margin: 8px;
+  border-radius: 4px;
+  padding: 18px;
+  width: 98%;
+  border: 0;
+  transition: all ease 0.2s;
+}
+#site-search #searchPopup .list-group-item .fw-semibold {
+  font-weight: 600;
+  color: var(--tblr-link-color);
 }
 #site-search #searchBox {
   border-radius: 4px;
@@ -736,6 +751,7 @@ footer a {
   font-size: 12px;
 }
 
-div[data-popper-placement], #searchPopup {
+div[data-popper-placement],
+#searchPopup {
   z-index: 999999;
 }

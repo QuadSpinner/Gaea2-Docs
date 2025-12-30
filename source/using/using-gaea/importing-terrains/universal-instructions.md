@@ -58,7 +58,7 @@ Apply either and then assign it the heightmap from Gaea.
 
 The vertical amount for the displacement can differ based on the application. 
 
-![](/.data/assets/Build Options Terrain (2).png)
+![](/.data/assets/Build-Options-Terrain-(2).png)
 
 If you can accept it as a value in meters, and your plane has been set a size in meters equivalent to the Terrain Width in the Gaea @build-options, then you can apply the same height as the Terrain Height.
 

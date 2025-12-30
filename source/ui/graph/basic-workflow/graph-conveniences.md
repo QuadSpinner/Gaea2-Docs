@@ -46,13 +46,13 @@ For detailed information on Portals, see @portals-and-chokepoints
 
 Right-click on a connection and select "Convert to Portal" (or press `Ctrl + P` to convert an existing connection to a Portal. This will also convert the Out port to a Portal.
 
-![](/.data/assets/Convert to Portal.png)
+![](/.data/assets/Convert-to-Portal.png)
 
 Other connections associated with that Port will not be affected.
 
 ## Insert Node
 
-![](/.data/assets/Insert Node.png)
+![](/.data/assets/Insert-Node.png)
 
 * Right-click on a connection and choose "Insert node." This action opens a search menu.
 * Select the node you wish to insert from this menu, and it will be automatically placed between the existing connection.
@@ -65,7 +65,7 @@ When you press `P` to bring up the Portal Management menu and select an In port,
 
 ### Navigate Menu
 
-![](/.data/assets/Navigate Menu.png)
+![](/.data/assets/Navigate-Menu.png)
 
 * Press the `,` key while a node is selected to open the navigate menu. This menu displays all incoming and outgoing connections linked to the selected node.
 * Click on a connection within the menu to select and automatically navigate to the corresponding node.
@@ -82,7 +82,7 @@ Allows you to bookmark selected node. When a node is bookmarked, it is shown in 
 
 You can select all nodes upstream (ancestors) or downstream (descendants) of a specific node from the Node menu or the @#graph-toolbar.
 
-![](/.data/assets/Select Nodes.png)
+![](/.data/assets/Select-Nodes.png)
 
 ### Group/Ungroup nodes
 

@@ -16,7 +16,7 @@ You can create the preset by selecting "Create Preset" from the "Presets" menu i
 
 It will open a create preset dialog.
 
-![Create Preset dialog](/.data/assets/Create Preset.png)
+![Create Preset dialog](/.data/assets/Create-Preset.png)
 
 Enter a meaningful name for the preset. 
 
@@ -24,7 +24,7 @@ Checking the option "Make these the default settings for this type of node" will
 
 Clicking on "Create Preset" button will create the preset. We have named the preset "Long Duration". This new preset will now be visible in preset menu. clicking on this preset will apply its settings to the selected node.
 
-![](/.data/assets/Preset Added.png)
+![](/.data/assets/Preset-Added.png)
 
 You can create multiple presets with various node settings. 
 

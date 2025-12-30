@@ -8,7 +8,7 @@ order: 03
 
 The Graph Toolbar is an essential interface within the graph environment, designed to enhance user efficiency and interaction. It hosts a variety of tools and menus that facilitate complex graph operations. Key features include:
 
-<div align="center" data-full-width="false">![](/.data/assets/Gaea_7l3gBgyyni.png)</div>
+![](/.data/assets/Gaea_7l3gBgyyni.png)
 
 *   **Bookmarks Menu**: Allows users to mark and quickly navigate to specific nodes.
 
@@ -25,7 +25,7 @@ The Graph Toolbar is an essential interface within the graph environment, design
 
     Right-clicking on "Refresh Node" Provides menu option to "Refresh all nodes", clicking on this refreshes all nodes in graph.
 
-![Refresh all nodes](/.data/assets/Gaea Refresh all nodes.png)
+![Refresh all nodes](/.data/assets/Gaea-Refresh-all-nodes.png)
 
 
 
@@ -35,14 +35,14 @@ The Graph Toolbar is an essential interface within the graph environment, design
 
     Right-clicking on "Mutate Node" provides menu option to "Mutate all nodes", clicking on this mutates all nodes in graph.
 
-![Mutate all nodes](/.data/assets/Gaea Mutate all nodes.png)
+![Mutate all nodes](/.data/assets/Gaea-Mutate-all-nodes.png)
 
 
 
 * **Suspend Engine**: Lets you toggle the Gaea engine, see @suspending-engine
 * **Graph toolbar submenu**: Incorporate extended functionalities and settings found in the main graph menu for comprehensive control.
 
-![Graph toolbar submenu](/.data/assets/Graph Submenu.png)
+![Graph toolbar submenu](/.data/assets/Graph-Submenu.png)
 
 
 

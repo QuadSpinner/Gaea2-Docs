@@ -101,7 +101,7 @@ body.dark {
       }
 
 
-      
+
       &:nth-child(6) {
         border-bottom-color: #67dbf0;
       }
@@ -438,13 +438,13 @@ body.dark {
 
 // red
 
-.btnx{
-      font-size: 10px;
-    padding: 3px 12px;
-    min-height: auto;
-    box-shadow: none;
-    border-radius: 24px;
-    border-width: 1.5px;
+.btnx {
+  font-size: 10px;
+  padding: 3px 12px;
+  min-height: auto;
+  box-shadow: none;
+  border-radius: 24px;
+  border-width: 1.5px;
 }
 
 .doc-dropdown {
@@ -479,7 +479,7 @@ body.dark {
 
 #site-search {
   #searchPopup {
-    background: #111;
+    background: #171717;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 8px 32px rgba(0, 0, 0, 0.5);
     min-width: 25vw !important;
     width: 100%;
@@ -487,8 +487,22 @@ body.dark {
     overflow: auto;
     border-radius: 4px;
 
+    hr{
+      margin: 2px 24px;
+    }
+
     .list-group-item {
-      font-size: smaller;
+      margin: 8px;
+      border-radius: 4px;
+      padding: 18px;
+      width: 98%;
+      border: 0;
+      transition: all ease 0.2s;
+
+      .fw-semibold {
+        font-weight: 600;
+        color: var(--tblr-link-color);
+      }
     }
   }
 
@@ -638,6 +652,7 @@ footer {
 }
 
 
-div[data-popper-placement], #searchPopup{
+div[data-popper-placement],
+#searchPopup {
   z-index: 999999;
 }

@@ -7,7 +7,7 @@ uid: build-options
 
 ## **Resolution**
 
-![](/.data/assets/Build Options Resolution (2).png)
+![](/.data/assets/Build-Options-Resolution-(2).png)
 
 * **Region: Select the build scope, options can be Whole terrain or select a region from the dropdown.**
 * **Resolution**: Select the output resolution of the terrain (e.g., 2K, 4K). Higher resolutions provide more detail but require more memory.
@@ -26,7 +26,7 @@ See @scale-and-resolution.md
 
 ## **Build**
 
-![](/.data/assets/Build Options Build (2).png)
+![](/.data/assets/Build-Options-Build-(2).png)
 
 * **Build Destination**: Specify the output folder for build files.
 * **Maintain a static folder with the latest copy**: Keeps a copy of the latest build in a static location.
@@ -42,7 +42,7 @@ See @scale-and-resolution.md
 
 ## **Tiles**
 
-![](/.data/assets/Build Options Tiles (2).png)
+![](/.data/assets/Build-Options-Tiles-(2).png)
 
 * **Tile Suffix Pattern**: Choose a suffix format for naming tiles (e.g., `_y%Y%_x%X%`).
 * **Add Leading Zeroes**: Adds leading zeroes to tile numbers for consistent filename length.
@@ -56,7 +56,7 @@ See @scale-and-resolution.md
 
 The Exportable Nodes section lists all nodes marked for export. You can modify their options here.
 
-![](/.data/assets/Build Option Nodes (1).png)
+![](/.data/assets/Build-Option-Nodes-(1).png)
 
 **Port Selection.** From the export menu, you can select specific ports (such as Enabled, Out, Flow, Wear, or Deposits) to export, providing control over the data being exported and optimizing resource usage.
 
@@ -77,11 +77,11 @@ You can disable `_Out` suffix for the Primary Port in [.](./).
 
 **Post-Build Script**: Enter command-line instructions to execute automatically after the build completes. This can automate additional tasks like file organization or further processing.
 
-![](/.data/assets/Build Options Script (2).png)
+![](/.data/assets/Build-Options-Script-(2).png)
 
 ## **Terrain**
 
-![](/.data/assets/Build Options Terrain (2).png)
+![](/.data/assets/Build-Options-Terrain-(2).png)
 
 * **Width**: Set the physical width of the terrain in meters.
 * **Height**: Set the maximum physical height of the terrain in meters.
@@ -95,7 +95,7 @@ Regions allows you to take a portion of your terrain and upscale it to a higher 
 
 Right-Click on regions surface and click on "Add Region" to add region.  Once the region is created, it can be resized by resized handles on the bottom right of region.
 
-![](/.data/assets/Build Option Add Region Menu.png)
+![](/.data/assets/Build-Option-Add-Region-Menu.png)
 
 See @managing-regions.md for more information.
 
@@ -103,7 +103,7 @@ See @managing-regions.md for more information.
 
 Build Profiles let you save all Build Settings in a named preset. If you find yourself creating multiple versions of your terrain, or creating different output types, you can switch between the different build settings swiftly with Profiles.
 
-![](/.data/assets/Build Options Profile.webp)
+![](/.data/assets/Build-Options-Profile.webp)
 
 See @#using-profiles
 

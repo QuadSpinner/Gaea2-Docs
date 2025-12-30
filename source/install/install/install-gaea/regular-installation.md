@@ -23,7 +23,7 @@ To begin the installation select Regular or @portable-installation. In most case
 :shield: You will require Administrator Privileges for a Regular Installation. If you don't have them, you can choose to go for a @portable-installation.
 :::
 
-![](/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM (1).png)
+![](/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM-(1).png)
 
 ### Choosing the Path
 

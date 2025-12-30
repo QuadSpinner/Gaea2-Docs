@@ -224,7 +224,7 @@ function initGlobalToc({
     // - "fa-sharp-duotone fa-thin fa-dog" (full class list), or
     // - "fa-dog" (just the glyph; we'll add your defaults)
     const cls = String(icon).trim();
-    i.className = `fa-duotone fa-solid fa-${cls}`;
+    i.className = `fa-duotone fa-light fa-${cls}`;
     i.classList.add("toc-icon");
     el.appendChild(i);
   }

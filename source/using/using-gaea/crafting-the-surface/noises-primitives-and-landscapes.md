@@ -28,6 +28,6 @@ Both Landscapes and Primitives will have some level of natural processing built-
 
 Basic Primitives, while being deceptively simple, are foundational components of Gaea. They provide low-level access to shape generation that can be used to create both precise shapes - whether geometric or naturalistic - or create randomness that can mimic nature.
 
-![](/.data/assets/Gaea_-_explain_erosion.terrain_10-45-41-PM (1).png)
+![](/.data/assets/Gaea_-_explain_erosion.terrain_10-45-41-PM-(1).png)
 
 Advanced users will be able to craft complex outputs from these primitives.

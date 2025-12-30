@@ -16,7 +16,14 @@ When working in a specific resolution, each node generates single channel (heigh
 
 The table below describes the size of the cache of a single node at different resolutions.
 
-<table data-full-width="false"><thead><tr><th align="center">Resolution</th><th align="right">Size in Memory (Heightfield)</th><th align="right">Size in Memory (RGB)</th></tr></thead><tbody><tr><td align="center">1024 x 1024</td><td align="right">4MB</td><td align="right">12MB</td></tr><tr><td align="center">2048 x 2048</td><td align="right">16MB</td><td align="right">48MB</td></tr><tr><td align="center">4096 x 4096</td><td align="right">64MB</td><td align="right">192MB</td></tr><tr><td align="center">8192 x 8192</td><td align="right">256MB</td><td align="right">768MB</td></tr><tr><td align="center">16384 x 16384</td><td align="right">1024MB</td><td align="right">3072MB</td></tr></tbody></table>
+|   Resolution  | Size in Memory (Heightfield) | Size in Memory (RGB) |
+| :-----------: | ---------------------------: | -------------------: |
+|  1024 x 1024  |                          4MB |                 12MB |
+|  2048 x 2048  |                         16MB |                 48MB |
+|  4096 x 4096  |                         64MB |                192MB |
+|  8192 x 8192  |                        256MB |                768MB |
+| 16384 x 16384 |                       1024MB |               3072MB |
+
 
 During the lifetime of a node's process, dozens - sometimes hundreds - of datasets may be created, altered, and discarded. This is one of the reasons why Gaea requires large amounts of memory when processing.
 
