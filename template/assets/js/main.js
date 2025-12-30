@@ -153,7 +153,7 @@ $(document).ready(function () {
     });
     // unwrap <figure> if it's directly wrapped by a <p>
     $("#contents img").each(function () {
-        if ($(this).attr("alt") != null) {
+        if ($(this).attr("alt") != null && !$(this).hasClass("card-img-top")) {
             $(this).wrap("<figure></figure>");
             $(this).after("<figcaption>" + $(this).attr("alt") + "</figcaption>");
         }

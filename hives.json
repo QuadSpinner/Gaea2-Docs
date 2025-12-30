@@ -1,0 +1,17 @@
+{
+  "RootFolder": "X:\\Docs\\Gaea2-Docs",
+  "SourceRoot": "Source",
+  "StagingRoot": "staging",
+  "TemplatesFolder": "template",
+  "HtmlTemplate": "template\\template.html",
+  "Hives": [
+    { "Name": "Home", "Folder": "",         "ShortName": "Home",      "IsHome": true,  "Url": "/" },
+    { "Name": "Install", "Folder": "install", "ShortName": "Install", "Url": "/install" },
+    { "Name": "User Interface", "Folder": "ui", "ShortName": "UI", "Url": "/ui" },
+    { "Name": "Using Gaea", "Folder": "using", "ShortName": "Using", "Url": "/using" },
+    { "Name": "Node Reference", "Folder": "reference", "ShortName": "Reference", "Url": "/reference" },
+    { "Name": "Guides", "Folder": "guides", "ShortName": "Guides", "Url": "/guides" },
+    { "Name": "Developers", "Folder": "developers", "ShortName": "Developers", "Url": "/developers" },
+    { "Name": "Release History", "Folder": "history", "ShortName": "History", "Url": "/history" }
+  ]
+}

@@ -20,7 +20,6 @@ window.SITE_TOC = [
   },
   {
     "title": "Scripting and Expressions",
-    "icon": "gear-code",
     "children": [
       {
         "title": "Overview",

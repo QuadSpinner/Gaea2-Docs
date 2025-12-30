@@ -7,6 +7,23 @@ window.SITE_TOC = [
     "title": "The Interface",
     "children": [
       {
+        "title": "Graph",
+        "children": [
+          {
+            "title": "Overview",
+            "url": "/ui/interface/graph/"
+          },
+          {
+            "title": "Toolbox and Search",
+            "url": "/ui/interface/graph/toolbox-and-search.html"
+          },
+          {
+            "title": "Procedural Workflow",
+            "url": "/ui/interface/graph/procedural-workflow.html"
+          }
+        ]
+      },
+      {
         "title": "Property Editor",
         "children": [
           {
@@ -24,6 +41,27 @@ window.SITE_TOC = [
           {
             "title": "Binding Variables",
             "url": "/ui/interface/property-editor/binding-variables.html"
+          }
+        ]
+      },
+      {
+        "title": "Viewport",
+        "children": [
+          {
+            "title": "Overview",
+            "url": "/ui/interface/viewport/"
+          },
+          {
+            "title": "Render Modes",
+            "url": "/ui/interface/viewport/render-modes.html"
+          },
+          {
+            "title": "2D Viewport",
+            "url": "/ui/interface/viewport/2d-viewport.html"
+          },
+          {
+            "title": "Measurement Tools",
+            "url": "/ui/interface/viewport/measurement-tools.html"
           }
         ]
       },
@@ -78,27 +116,6 @@ window.SITE_TOC = [
           {
             "title": "Data Editor Toolbar",
             "url": "/ui/interface/menus-and-toolbars/data-editor-toolbar.html"
-          }
-        ]
-      },
-      {
-        "title": "Viewport",
-        "children": [
-          {
-            "title": "Overview",
-            "url": "/ui/interface/viewport/"
-          },
-          {
-            "title": "Render Modes",
-            "url": "/ui/interface/viewport/render-modes.html"
-          },
-          {
-            "title": "2D Viewport",
-            "url": "/ui/interface/viewport/2d-viewport.html"
-          },
-          {
-            "title": "Measurement Tools",
-            "url": "/ui/interface/viewport/measurement-tools.html"
           }
         ]
       },
@@ -179,34 +196,26 @@ window.SITE_TOC = [
     ]
   },
   {
-    "title": "The Infinity Graph",
+    "title": "Using the Graph",
     "children": [
-      {
-        "title": "Overview",
-        "url": "/ui/graph/"
-      },
-      {
-        "title": "Procedural Workflow",
-        "url": "/ui/graph/procedural-workflow.html"
-      },
       {
         "title": "Basic Workflow",
         "children": [
           {
-            "title": "Toolbox and Search",
-            "url": "/ui/graph/basic-workflow/toolbox-and-search.html"
+            "title": "Graph Conveniences",
+            "url": "/ui/graph/basic-workflow/graph-conveniences.html"
           },
           {
-            "title": "Lock Preview and Underlays",
-            "url": "/ui/graph/basic-workflow/lock-preview-and-underlays.html"
+            "title": "Lock Preview",
+            "url": "/ui/graph/basic-workflow/lock-preview.html"
+          },
+          {
+            "title": "Underlays",
+            "url": "/ui/graph/basic-workflow/underlays.html"
           },
           {
             "title": "Suspending Engine",
             "url": "/ui/graph/basic-workflow/suspending-engine.html"
-          },
-          {
-            "title": "Graph Conveniences",
-            "url": "/ui/graph/basic-workflow/graph-conveniences.html"
           }
         ]
       },
