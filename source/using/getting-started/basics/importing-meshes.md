@@ -1,5 +1,5 @@
 ---
-icon: '7'
+icon: 7
 title: Importing Meshes
 uid: importing-meshes
 order: 07

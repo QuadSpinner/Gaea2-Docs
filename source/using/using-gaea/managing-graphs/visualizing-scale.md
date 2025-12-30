@@ -12,7 +12,7 @@ Gaea 2.1 ships with multiple pre-defined overlays that you can use for showing r
 
 ![](/.data/assets/image%20(15).png)
 
-{% include "/.data/includes/this-feature-is-to-be-intro....md" %}
+
 
 A great way to visualize specific scale is to create your own overlay with precise shapes and sizes.
 

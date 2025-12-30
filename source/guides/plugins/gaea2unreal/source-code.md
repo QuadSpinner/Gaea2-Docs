@@ -8,4 +8,4 @@ order: 04
 
 The source code for the plugin can be found at:
 
-{% embed url="https://github.com/QuadSpinner/Gaea2Unreal" %}
+![youtube.com](https://github.com/QuadSpinner/Gaea2Unreal)

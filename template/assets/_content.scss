@@ -31,10 +31,16 @@
         width: 100%;
     }
 
-    img{
-        max-height: 40vh;        
+    img {
+        max-height: 40vh;
     }
 
+    iframe {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
 }
 
 code {
@@ -63,6 +69,7 @@ code {
     .card-body {
         font-size: 12px;
     }
+
 }
 
 
@@ -145,7 +152,8 @@ figure {
             background: #111;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid #fff1;
             padding: 8px;
         }

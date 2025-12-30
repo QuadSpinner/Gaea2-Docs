@@ -8,7 +8,7 @@ order: 03
 
 
 
-{% include "/.data/includes/this-feature-is-to-be-intro....md" %}
+
 
 Build Profiles let you save all Build Settings in a named preset. If you find yourself creating multiple versions of your terrain, or creating different output types, you can switch between the different build settings swiftly with Profiles.
 

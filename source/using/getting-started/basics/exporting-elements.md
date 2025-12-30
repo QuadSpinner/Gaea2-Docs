@@ -1,5 +1,5 @@
 ---
-icon: '5'
+icon: 5
 title: Exporting Elements
 uid: exporting-elements
 order: 05

@@ -1,5 +1,4 @@
+getting-started|Getting Started
 using-gaea|Using Gaea
 advanced-topics|Advanced Topics
-plugins|Plugins
-developers|Developers
 troubleshooting|Troubleshooting

@@ -1,5 +1,5 @@
 ---
-icon: '2'
+icon: 2
 title: Large Mountains, Effects
 uid: large-mountains-effects
 order: 02
@@ -9,10 +9,10 @@ order: 02
 
 ## Making a High Mountain
 
-{% embed url="https://www.youtube.com/watch?v=lal2cS8Fjvo" %}
+![youtube.com](https://www.youtube.com/watch?v=lal2cS8Fjvo)
 
 
 
 ## Masking Effects
 
-{% embed url="https://www.youtube.com/watch?v=hAmKE37swH0" %}
+![youtube.com](https://www.youtube.com/watch?v=hAmKE37swH0)

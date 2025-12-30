@@ -17,7 +17,7 @@ Despite its complexity, Erosion_2 remains user-friendly and delivers determinist
 
 The **Erosion_2** node offers extensive control over the erosion process, allowing users to shape terrain with a range of new options and refinements. 
 
-{% embed url="https://youtu.be/We4Pg_gdsVA" %}
+![youtube.com](https://youtu.be/We4Pg_gdsVA" %}
 
 ![](/.data/assets/Gaea_-_Erosion_-_Mineral_Deposits_and_ColorErosion_12-02-58-AM.png)
 

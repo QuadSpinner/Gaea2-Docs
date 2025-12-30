@@ -1,5 +1,5 @@
 ---
-icon: '6'
+icon: 6
 title: Masks
 uid: masks
 order: 06

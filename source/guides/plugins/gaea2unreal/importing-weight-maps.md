@@ -6,7 +6,7 @@ order: 03
 
 # Importing Weight Maps
 
-{% embed url="https://youtu.be/X0GrFlcWwpg" fullWidth="false" %}
+![youtube.com](https://youtu.be/X0GrFlcWwpg)
 
 ## Importing Weightmaps
 

@@ -8,7 +8,7 @@ uid: scripting-and-expressions
 
 Gaea is built around a very powerful, flexible, and extensible core. With Gaea 2.1.1 we are introducing a range of new advanced power-user features that can help you transform a Gaea project into a parametric powerhouse.
 
-{% embed url="https://www.youtube.com/watch?v=hqgtH7-pyt4" %}
+![youtube.com](https://www.youtube.com/watch?v=hqgtH7-pyt4)
 
 These offerings are the first portion of what will be the @tor-platform-sdk.
 

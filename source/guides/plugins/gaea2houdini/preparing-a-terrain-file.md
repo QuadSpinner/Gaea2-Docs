@@ -8,7 +8,7 @@ order: 02
 
 ## Using Gaea2Houdini
 
-{% embed url="https://www.youtube.com/watch?v=h_K_MdGAxSo" %}
+![youtube.com](https://www.youtube.com/watch?v=h_K_MdGAxSo)
 
 ## Examples
 

@@ -1,0 +1,3 @@
+general|General Usage
+apps|By Application
+plugins|Plugins

@@ -1,0 +1,2 @@
+basics|The Basics|play
+important|Important Information|info

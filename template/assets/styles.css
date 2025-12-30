@@ -28,6 +28,12 @@
 #contents img {
   max-height: 40vh;
 }
+#contents iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
 
 code {
   background-color: #333;
@@ -127,7 +133,8 @@ figure img {
 .reference-tables table thead {
   background: #111;
 }
-.reference-tables table th, .reference-tables table td {
+.reference-tables table th,
+.reference-tables table td {
   border: 1px solid rgba(255, 255, 255, 0.0666666667);
   padding: 8px;
 }

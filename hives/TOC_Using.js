@@ -4,66 +4,77 @@ window.SITE_TOC = [
     "url": "/using/./"
   },
   {
-    "title": "Using Gaea",
+    "title": "Getting Started",
     "children": [
       {
-        "title": "Terrain Basics",
+        "title": "Overview",
+        "url": "/using/getting-started/"
+      },
+      {
+        "title": "The Basics",
         "icon": "play",
         "children": [
           {
-            "title": "Overview",
-            "url": "/using/using-gaea/terrain-basics/"
-          },
-          {
             "title": "Introduction",
-            "url": "/using/using-gaea/terrain-basics/introduction.html",
-            "icon": "\u00271\u0027"
+            "url": "/using/getting-started/basics/introduction.html",
+            "icon": "1"
           },
           {
             "title": "Large Mountains, Effects",
-            "url": "/using/using-gaea/terrain-basics/large-mountains-effects.html",
-            "icon": "\u00272\u0027"
+            "url": "/using/getting-started/basics/large-mountains-effects.html",
+            "icon": "2"
           },
           {
             "title": "Elaborate Terrains",
-            "url": "/using/using-gaea/terrain-basics/elaborate-terrains.html",
-            "icon": "\u00273\u0027",
+            "url": "/using/getting-started/basics/elaborate-terrains.html",
+            "icon": "3",
             "section": true
           },
           {
             "title": "Advanced Methods",
-            "url": "/using/using-gaea/terrain-basics/advanced-methods.html",
-            "icon": "\u00274\u0027"
+            "url": "/using/getting-started/basics/advanced-methods.html",
+            "icon": "4"
           },
           {
             "title": "Exporting Elements",
-            "url": "/using/using-gaea/terrain-basics/exporting-elements.html",
-            "icon": "\u00275\u0027"
+            "url": "/using/getting-started/basics/exporting-elements.html",
+            "icon": "5"
           },
           {
             "title": "Masks",
-            "url": "/using/using-gaea/terrain-basics/masks.html",
-            "icon": "\u00276\u0027"
+            "url": "/using/getting-started/basics/masks.html",
+            "icon": "6"
           },
           {
             "title": "Importing Meshes",
-            "url": "/using/using-gaea/terrain-basics/importing-meshes.html",
-            "icon": "\u00277\u0027"
-          },
-          {
-            "title": "Non-Determinism",
-            "url": "/using/using-gaea/terrain-basics/non-determinism.html"
-          },
-          {
-            "title": "Scale and Resolution",
-            "url": "/using/using-gaea/terrain-basics/scale-and-resolution.html"
-          },
-          {
-            "title": "Memory Requirements",
-            "url": "/using/using-gaea/terrain-basics/memory-requirements.html"
+            "url": "/using/getting-started/basics/importing-meshes.html",
+            "icon": "7"
           }
         ]
       },
+      {
+        "title": "Important Information",
+        "icon": "info",
+        "children": [
+          {
+            "title": "Non-Determinism",
+            "url": "/using/getting-started/important/non-determinism.html"
+          },
+          {
+            "title": "Scale and Resolution",
+            "url": "/using/getting-started/important/scale-and-resolution.html"
+          },
+          {
+            "title": "Memory Requirements",
+            "url": "/using/getting-started/important/memory-requirements.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Using Gaea",
+    "children": [
       {
         "title": "Understanding Erosion",
         "icon": "cloud-showers",
@@ -188,27 +199,6 @@ window.SITE_TOC = [
           {
             "title": "Overview",
             "url": "/using/using-gaea/importing-terrains/"
-          },
-          {
-            "title": "Common Issues",
-            "url": "/using/using-gaea/importing-terrains/common-issues.html"
-          },
-          {
-            "title": "Universal Instructions",
-            "url": "/using/using-gaea/importing-terrains/universal-instructions.html"
-          },
-          {
-            "title": "Software Specific Instructions",
-            "children": [
-              {
-                "title": "Overview",
-                "url": "/using/using-gaea/importing-terrains/software-specific-instructions/"
-              },
-              {
-                "title": "Unreal",
-                "url": "/using/using-gaea/importing-terrains/software-specific-instructions/unreal.html"
-              }
-            ]
           }
         ]
       },
@@ -407,105 +397,6 @@ window.SITE_TOC = [
           {
             "title": "Building a Bridge with the CLI",
             "url": "/using/advanced-topics/automation/building-a-bridge-with-the-cli.html"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Plugins",
-    "children": [
-      {
-        "title": "Gaea2Houdini",
-        "icon": "h",
-        "children": [
-          {
-            "title": "Overview",
-            "url": "/using/plugins/gaea2houdini/"
-          },
-          {
-            "title": "Installing Gaea2Houdini",
-            "url": "/using/plugins/gaea2houdini/installing-gaea2houdini.html"
-          },
-          {
-            "title": "Preparing a Terrain File",
-            "url": "/using/plugins/gaea2houdini/preparing-a-terrain-file.html"
-          },
-          {
-            "title": "Gaea HDAs",
-            "url": "/using/plugins/gaea2houdini/gaea-hdas.html"
-          },
-          {
-            "title": "Source Code",
-            "url": "/using/plugins/gaea2houdini/source-code.html"
-          }
-        ]
-      },
-      {
-        "title": "Gaea2Unreal",
-        "icon": "u",
-        "children": [
-          {
-            "title": "Overview",
-            "url": "/using/plugins/gaea2unreal/"
-          },
-          {
-            "title": "Installing Gaea2Unreal",
-            "url": "/using/plugins/gaea2unreal/installing-gaea2unreal.html"
-          },
-          {
-            "title": "Importing Terrains",
-            "url": "/using/plugins/gaea2unreal/importing-terrains.html"
-          },
-          {
-            "title": "Importing Weight Maps",
-            "url": "/using/plugins/gaea2unreal/importing-weight-maps.html"
-          },
-          {
-            "title": "Source Code",
-            "url": "/using/plugins/gaea2unreal/source-code.html"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Developers",
-    "children": [
-      {
-        "title": "TOR Platform SDK",
-        "url": "/using/developers/tor-platform-sdk.html",
-        "icon": "square-terminal"
-      },
-      {
-        "title": "Macros",
-        "url": "/using/developers/macros.html",
-        "icon": "puzzle-piece"
-      },
-      {
-        "title": "Anatomy of Node",
-        "url": "/using/developers/anatomy-of-node.html",
-        "icon": "x-ray"
-      },
-      {
-        "title": "Scripting and Expressions",
-        "icon": "gear-code",
-        "children": [
-          {
-            "title": "Overview",
-            "url": "/using/developers/scripting-and-expressions/"
-          },
-          {
-            "title": "Variables",
-            "url": "/using/developers/scripting-and-expressions/variables.html"
-          },
-          {
-            "title": "Expressions",
-            "url": "/using/developers/scripting-and-expressions/expressions.html"
-          },
-          {
-            "title": "Math Node",
-            "url": "/using/developers/scripting-and-expressions/math-node.html"
           }
         ]
       }

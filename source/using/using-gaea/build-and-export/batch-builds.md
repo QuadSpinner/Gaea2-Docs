@@ -6,7 +6,7 @@ order: 04
 
 # Batch Builds
 
-{% include "/.data/includes/this-feature-is-to-be-intro....md" %}
+
 
 ## Running Batch Builds
 

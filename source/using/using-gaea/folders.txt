@@ -1,4 +1,3 @@
-terrain-basics|Terrain Basics|play
 understanding-erosion|Understanding Erosion|cloud-showers
 simulations|Simulations|cloud-sun-rain
 crafting-the-surface|Crafting the Surface|hand-horns

@@ -6,7 +6,7 @@ order: 22
 
 # Thermal2
 
-{% embed url="https://www.youtube.com/watch?v=C9KpUG8u2WM" %}
+![youtube.com](https://www.youtube.com/watch?v=C9KpUG8u2WM)
 
 **Erosion**
 
