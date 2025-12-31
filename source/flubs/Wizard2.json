@@ -1,0 +1,172 @@
+﻿[
+  {
+    "Name": "Erosion",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Power",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Low",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Med",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Ultra",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Depth",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Low",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Med",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Ultra",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Scale",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Low",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Med",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Ultra",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Deposits",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Low",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Med",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Ultra",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Flow",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Low",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Med",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Ultra",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Shape",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Low",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Med",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Ultra",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Detail",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Low",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Med",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Ultra",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  },
+  {
+    "Name": "Advanced",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Convert",
+    "Description": ""
+  }
+]

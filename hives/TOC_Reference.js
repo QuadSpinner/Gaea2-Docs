@@ -12,8 +12,16 @@ window.SITE_TOC = [
     "title": "Nodes",
     "children": [
       {
+        "title": "Overview",
+        "url": "/reference/nodes/"
+      },
+      {
         "title": "\uD83D\uDFE2 Primitive",
         "children": [
+          {
+            "title": "Overview",
+            "url": "/reference/nodes/primitive/"
+          },
           {
             "title": "Cellular",
             "url": "/reference/nodes/primitive/cellular.html"
@@ -116,6 +124,10 @@ window.SITE_TOC = [
         "title": "\uD83D\uDFE2 Terrain",
         "children": [
           {
+            "title": "Overview",
+            "url": "/reference/nodes/terrain/"
+          },
+          {
             "title": "Canyon",
             "url": "/reference/nodes/terrain/canyon.html"
           },
@@ -176,6 +188,10 @@ window.SITE_TOC = [
       {
         "title": "\uD83D\uDD35 Modify",
         "children": [
+          {
+            "title": "Overview",
+            "url": "/reference/nodes/modify/"
+          },
           {
             "title": "Adjust",
             "url": "/reference/nodes/modify/adjust.html"
@@ -346,6 +362,10 @@ window.SITE_TOC = [
         "title": "\uD83D\uDFE1 Surface",
         "children": [
           {
+            "title": "Overview",
+            "url": "/reference/nodes/surface/"
+          },
+          {
             "title": "Bomber",
             "url": "/reference/nodes/surface/bomber.html"
           },
@@ -434,6 +454,10 @@ window.SITE_TOC = [
       {
         "title": "\uD83D\uDFE0 Simulate",
         "children": [
+          {
+            "title": "Overview",
+            "url": "/reference/nodes/simulate/"
+          },
           {
             "title": "Anastomosis",
             "url": "/reference/nodes/simulate/anastomosis.html"
@@ -540,6 +564,10 @@ window.SITE_TOC = [
         "title": "\u26AA Derive",
         "children": [
           {
+            "title": "Overview",
+            "url": "/reference/nodes/derive/"
+          },
+          {
             "title": "Angle",
             "url": "/reference/nodes/derive/angle.html"
           },
@@ -596,6 +624,10 @@ window.SITE_TOC = [
       {
         "title": "\uD83D\uDFE3 Colorize",
         "children": [
+          {
+            "title": "Overview",
+            "url": "/reference/nodes/colorize/"
+          },
           {
             "title": "CLUTer",
             "url": "/reference/nodes/colorize/cluter.html"
@@ -654,6 +686,10 @@ window.SITE_TOC = [
         "title": "\uD83D\uDD34 Output",
         "children": [
           {
+            "title": "Overview",
+            "url": "/reference/nodes/output/"
+          },
+          {
             "title": "AO",
             "url": "/reference/nodes/output/ao.html"
           },
@@ -710,6 +746,10 @@ window.SITE_TOC = [
       {
         "title": "\u26AB Utility",
         "children": [
+          {
+            "title": "Overview",
+            "url": "/reference/nodes/utility/"
+          },
           {
             "title": "MeshWarp",
             "url": "/reference/nodes/utility/meshwarp.html"
@@ -801,6 +841,10 @@ window.SITE_TOC = [
   {
     "title": "Gaea2Houdini",
     "children": [
+      {
+        "title": "Overview",
+        "url": "/reference/gaea2houdini/"
+      },
       {
         "title": "Gaea Nodes",
         "url": "/reference/gaea2houdini/gaea-nodes.html"

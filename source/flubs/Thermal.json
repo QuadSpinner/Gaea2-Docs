@@ -1,0 +1,58 @@
+﻿[
+  {
+    "Name": "Erosion",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Duration",
+    "Description": "Duration of the thermal erosion process."
+  },
+  {
+    "Name": "Strength",
+    "Description": "Strength of the thermal erosion process."
+  },
+  {
+    "Name": "Anisotropy",
+    "Description": "Thermal erosion's anisotropy that affects how rock is affected, and deposits formed. See the Anisotropy section for details."
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  },
+  {
+    "Name": "Talus",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Angle",
+    "Description": ""
+  },
+  {
+    "Name": "Settling",
+    "Description": ""
+  },
+  {
+    "Name": "Sediment Removal",
+    "Description": "Amount of sediment to be removed."
+  },
+  {
+    "Name": "Scale",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Feature Scale",
+    "Description": "Scale of the largest feature in the terrain."
+  },
+  {
+    "Name": "Real Scale",
+    "Description": "Use the scale defined in the terrain. Disable to access addtional options and modify erosion's physics."
+  },
+  {
+    "Name": "Terrain Scale",
+    "Description": "Scale of the terrain. Available when Real Scale is turned Off"
+  },
+  {
+    "Name": "Verticality",
+    "Description": "Height of the terrain.Available when Real Scale is turned Off"
+  }
+]

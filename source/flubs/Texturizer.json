@@ -1,0 +1,84 @@
+﻿[
+  {
+    "Name": "Style",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "A",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "B",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "C",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "D",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "E",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "F",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "G",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "H",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "I",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "J",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "K",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "L",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Factor",
+    "Description": ""
+  },
+  {
+    "Name": "Secondary",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  },
+  {
+    "Name": "Components",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Flows",
+    "Description": ""
+  },
+  {
+    "Name": "Slope",
+    "Description": ""
+  },
+  {
+    "Name": "Soil",
+    "Description": ""
+  }
+]

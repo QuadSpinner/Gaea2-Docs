@@ -1,0 +1,58 @@
+﻿[
+  {
+    "Name": "Style",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "New",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Classic",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Scale",
+    "Description": "The scale of the volcano."
+  },
+  {
+    "Name": "Formation",
+    "Description": ""
+  },
+  {
+    "Name": "Height",
+    "Description": ""
+  },
+  {
+    "Name": "Rim",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Soft",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Sharp",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Shape",
+    "Description": ""
+  },
+  {
+    "Name": "X",
+    "Description": "Horizontal placement of craterfield."
+  },
+  {
+    "Name": "Y",
+    "Description": "Vertical placement of craterfield."
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process."
+  }
+]

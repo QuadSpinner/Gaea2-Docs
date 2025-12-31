@@ -1,0 +1,96 @@
+﻿[
+  {
+    "Name": "Pattern",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "FloydSteinberg",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Riemersma",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Threshold",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Checks",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "O2X2",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "O3X3",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "O4X4",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "O8X8",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "H3X4A",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "H6X6A",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "H8X8A",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "H3X4O",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "H6X6O",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "H8X8O",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "H36X16O",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "C5X5B",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "C5X5W",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "C6X6B",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "C6X6W",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "C7X7B",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "C7X7W",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "DIA",
+        "Description": "<desc>"
+      }
+    ]
+  }
+]

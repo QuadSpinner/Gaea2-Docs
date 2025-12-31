@@ -1,0 +1,28 @@
+﻿[
+  {
+    "Name": "Transforms",
+    "Description": ""
+  },
+  {
+    "Name": "Quality",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Draft",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Medium",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Add Input",
+    "Description": ""
+  }
+]

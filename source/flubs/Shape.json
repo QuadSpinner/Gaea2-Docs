@@ -1,0 +1,52 @@
+﻿[
+  {
+    "Name": "Geometry",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Circle",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Rectangle",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Sides",
+    "Description": ""
+  },
+  {
+    "Name": "Uniform",
+    "Description": ""
+  },
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Scale X",
+    "Description": ""
+  },
+  {
+    "Name": "Scale Y",
+    "Description": ""
+  },
+  {
+    "Name": "Thickness",
+    "Description": ""
+  },
+  {
+    "Name": "Height",
+    "Description": ""
+  },
+  {
+    "Name": "X",
+    "Description": ""
+  },
+  {
+    "Name": "Y",
+    "Description": ""
+  }
+]

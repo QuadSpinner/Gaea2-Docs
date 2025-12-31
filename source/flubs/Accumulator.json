@@ -1,0 +1,60 @@
+﻿[
+  {
+    "Name": "Type",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "SnowMask",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "SnowDepth",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Rivers",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "WaterMask",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "WaterDepth",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "ShoreMask",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "DebrisMask",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "DebrisColor",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Trees",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "TreeDeadZones",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "TreeFreshwater",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Restrict to Group",
+    "Description": ""
+  },
+  {
+    "Name": "Warning",
+    "Description": ""
+  }
+]

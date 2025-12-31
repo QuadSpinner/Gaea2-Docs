@@ -1,0 +1,30 @@
+﻿[
+  {
+    "Name": "Gradient Data",
+    "Description": ""
+  },
+  {
+    "Name": "Autolevel Input",
+    "Description": ""
+  },
+  {
+    "Name": "Reverse",
+    "Description": "Reverses the mapping of the gradient."
+  },
+  {
+    "Name": "Bias",
+    "Description": ""
+  },
+  {
+    "Name": "Hue",
+    "Description": ""
+  },
+  {
+    "Name": "Saturation",
+    "Description": ""
+  },
+  {
+    "Name": "Lightness",
+    "Description": ""
+  }
+]

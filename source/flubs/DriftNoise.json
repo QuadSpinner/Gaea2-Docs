@@ -1,0 +1,42 @@
+﻿[
+  {
+    "Name": "Passes",
+    "Description": ""
+  },
+  {
+    "Name": "Chaos",
+    "Description": "Gives uneveness to the overlapping shelves."
+  },
+  {
+    "Name": "Scale Large",
+    "Description": ""
+  },
+  {
+    "Name": "Scale Small",
+    "Description": ""
+  },
+  {
+    "Name": "Turbulence Large",
+    "Description": ""
+  },
+  {
+    "Name": "Turbulence Small",
+    "Description": ""
+  },
+  {
+    "Name": "Wind Direction Large",
+    "Description": ""
+  },
+  {
+    "Name": "Wind Direction Small",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process."
+  },
+  {
+    "Name": "Overlap Shapes",
+    "Description": ""
+  }
+]

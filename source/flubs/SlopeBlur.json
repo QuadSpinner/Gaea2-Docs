@@ -1,0 +1,80 @@
+﻿[
+  {
+    "Name": "Intensity",
+    "Description": "Lorem ipsum"
+  },
+  {
+    "Name": "Iterations",
+    "Description": "Lorem ipsum"
+  },
+  {
+    "Name": "Direction",
+    "Description": "Lorem ipsum"
+  },
+  {
+    "Name": "Asymmetry",
+    "Description": "Lorem ipsum"
+  },
+  {
+    "Name": "Normalized",
+    "Description": "Lorem ipsum"
+  },
+  {
+    "Name": "Window",
+    "Description": "Lorem ipsum",
+    "Flubs": [
+      {
+        "Name": "Bell",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Box",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Quality",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Quality",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Low",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Medium",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Ultra",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Antialiasing",
+    "Description": "Lorem ipsum",
+    "Flubs": [
+      {
+        "Name": "Off",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "x4",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "x16",
+        "Description": "<desc>"
+      }
+    ]
+  }
+]

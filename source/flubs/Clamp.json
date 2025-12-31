@@ -1,0 +1,24 @@
+﻿[
+  {
+    "Name": "Mode",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Standard",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Normalized",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Value",
+    "Description": ""
+  },
+  {
+    "Name": "Drop",
+    "Description": ""
+  }
+]

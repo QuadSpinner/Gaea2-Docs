@@ -1,0 +1,38 @@
+﻿[
+  {
+    "Name": "Lake Formation",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Precipitation",
+    "Description": ""
+  },
+  {
+    "Name": "Small Lakes",
+    "Description": ""
+  },
+  {
+    "Name": "Flood Control",
+    "Description": ""
+  },
+  {
+    "Name": "Water Floor",
+    "Description": ""
+  },
+  {
+    "Name": "Shore Formation",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Shore Size",
+    "Description": ""
+  },
+  {
+    "Name": "Altitude Bias",
+    "Description": ""
+  },
+  {
+    "Name": "Size Bias",
+    "Description": ""
+  }
+]

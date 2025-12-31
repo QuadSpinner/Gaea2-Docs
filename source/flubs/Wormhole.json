@@ -1,0 +1,16 @@
+﻿[
+  {
+    "Name": "Direction",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Input",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Output",
+        "Description": "<desc>"
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+﻿[
+  {
+    "Name": "Primary",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Creep",
+    "Description": ""
+  },
+  {
+    "Name": "Amount",
+    "Description": ""
+  },
+  {
+    "Name": "Washed Out",
+    "Description": ""
+  },
+  {
+    "Name": "Inverse",
+    "Description": ""
+  },
+  {
+    "Name": "Dirt",
+    "Description": ""
+  },
+  {
+    "Name": "Darker",
+    "Description": ""
+  },
+  {
+    "Name": "Post Processing",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Hue",
+    "Description": ""
+  },
+  {
+    "Name": "Saturation",
+    "Description": ""
+  },
+  {
+    "Name": "Lightness",
+    "Description": ""
+  }
+]

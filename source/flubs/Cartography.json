@@ -1,0 +1,174 @@
+﻿[
+  {
+    "Name": "Map Style",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Accuracy",
+    "Description": ""
+  },
+  {
+    "Name": "Gradient Style",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Smooth",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "LargeContours",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "AllContours",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Equalize Gradient",
+    "Description": ""
+  },
+  {
+    "Name": "Reverse",
+    "Description": ""
+  },
+  {
+    "Name": "Erode",
+    "Description": ""
+  },
+  {
+    "Name": "Land",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Land Palette",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Classic",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Minimal",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "FertileRed",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "FertileGreen",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "RedBlueSpectrum",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "MineralsYellow",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "FertileCool",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "FertileMurky",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Land Contours",
+    "Description": ""
+  },
+  {
+    "Name": "Land Contour Intenstity",
+    "Description": ""
+  },
+  {
+    "Name": "Land Bias",
+    "Description": ""
+  },
+  {
+    "Name": "Water Palette",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Classic",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "BlackSea",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Caribbean",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Water Contours",
+    "Description": ""
+  },
+  {
+    "Name": "Water Contour Intenstity",
+    "Description": ""
+  },
+  {
+    "Name": "Water Bias",
+    "Description": ""
+  },
+  {
+    "Name": "Trim",
+    "Description": ""
+  },
+  {
+    "Name": "Line Art",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Grid Count",
+    "Description": ""
+  },
+  {
+    "Name": "Grid Intenstity",
+    "Description": ""
+  },
+  {
+    "Name": "Grid Style",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "OverWater",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "OverLand",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Everywhere",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Boundary Thickness",
+    "Description": ""
+  },
+  {
+    "Name": "Contour Thickness",
+    "Description": ""
+  },
+  {
+    "Name": "Grid Thickness",
+    "Description": ""
+  }
+]

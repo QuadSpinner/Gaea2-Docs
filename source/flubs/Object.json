@@ -1,0 +1,62 @@
+﻿[
+  {
+    "Name": "Mesh",
+    "Description": ""
+  },
+  {
+    "Name": "Relative Path",
+    "Description": ""
+  },
+  {
+    "Name": "Position",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Drop to Floor",
+    "Description": ""
+  },
+  {
+    "Name": "Offset X",
+    "Description": ""
+  },
+  {
+    "Name": "Offset Y",
+    "Description": ""
+  },
+  {
+    "Name": "Offset Z",
+    "Description": ""
+  },
+  {
+    "Name": "Scale",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Rotation",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Pitch",
+    "Description": ""
+  },
+  {
+    "Name": "Yaw",
+    "Description": ""
+  },
+  {
+    "Name": "Roll",
+    "Description": ""
+  },
+  {
+    "Name": "Quality",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Antialiasing",
+    "Description": ""
+  }
+]

@@ -1,0 +1,28 @@
+﻿[
+  {
+    "Name": "Power",
+    "Description": "The strength of the inflate/deflate operation. Higher values cause drastic shifts in shape formation."
+  },
+  {
+    "Name": "Scale",
+    "Description": "The amount of details to preserve. Higher values cause more prominent shapes to form."
+  },
+  {
+    "Name": "Iterations",
+    "Description": ""
+  },
+  {
+    "Name": "Style",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Inward",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Outward",
+        "Description": "<desc>"
+      }
+    ]
+  }
+]

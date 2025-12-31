@@ -1,0 +1,42 @@
+﻿[
+  {
+    "Name": "Albedo",
+    "Description": ""
+  },
+  {
+    "Name": "Light Diffusion",
+    "Description": ""
+  },
+  {
+    "Name": "Ambient Occlusion",
+    "Description": ""
+  },
+  {
+    "Name": "Rock Occlusion",
+    "Description": ""
+  },
+  {
+    "Name": "Normals",
+    "Description": ""
+  },
+  {
+    "Name": "Detail Normals",
+    "Description": ""
+  },
+  {
+    "Name": "Bump",
+    "Description": ""
+  },
+  {
+    "Name": "Displacement",
+    "Description": ""
+  },
+  {
+    "Name": "Mesh",
+    "Description": ""
+  },
+  {
+    "Name": "LOD",
+    "Description": ""
+  }
+]

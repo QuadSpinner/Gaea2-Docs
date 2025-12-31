@@ -1,0 +1,84 @@
+﻿[
+  {
+    "Name": "Snow",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Duration",
+    "Description": ""
+  },
+  {
+    "Name": "Intensity",
+    "Description": ""
+  },
+  {
+    "Name": "Settle Duration",
+    "Description": ""
+  },
+  {
+    "Name": "Melt",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Melt Type",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Uniform",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Directional",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Melt",
+    "Description": ""
+  },
+  {
+    "Name": "Melt Remnants",
+    "Description": ""
+  },
+  {
+    "Name": "Direction",
+    "Description": ""
+  },
+  {
+    "Name": "Snow Line",
+    "Description": ""
+  },
+  {
+    "Name": "Advanced",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Slip-off angle",
+    "Description": ""
+  },
+  {
+    "Name": "Adhered snow mass",
+    "Description": ""
+  },
+  {
+    "Name": "Model scale",
+    "Description": ""
+  },
+  {
+    "Name": "Real Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Terrain Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Verticality",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]

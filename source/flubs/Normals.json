@@ -1,0 +1,60 @@
+﻿[
+  {
+    "Name": "Type",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Standard",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Detail",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Width",
+    "Description": ""
+  },
+  {
+    "Name": "Height",
+    "Description": ""
+  },
+  {
+    "Name": "Detail Size",
+    "Description": ""
+  },
+  {
+    "Name": "Handedness",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Left",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Right",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Up Axis",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "YUp",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "ZUp",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Information 1",
+    "Description": ""
+  }
+]

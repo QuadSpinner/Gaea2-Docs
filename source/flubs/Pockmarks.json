@@ -1,0 +1,34 @@
+﻿[
+  {
+    "Name": "Pockmarks",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Size",
+    "Description": ""
+  },
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Depth",
+    "Description": ""
+  },
+  {
+    "Name": "Density",
+    "Description": ""
+  },
+  {
+    "Name": "Multiplier",
+    "Description": ""
+  },
+  {
+    "Name": "Invert",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]

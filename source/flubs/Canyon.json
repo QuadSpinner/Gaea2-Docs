@@ -1,0 +1,72 @@
+﻿[
+  {
+    "Name": "Structure",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Style",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Classic",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Eroded",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Eroded2",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Strata",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Both",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Scale",
+    "Description": "The scale of the canyon."
+  },
+  {
+    "Name": "Slot",
+    "Description": ""
+  },
+  {
+    "Name": "Valley",
+    "Description": ""
+  },
+  {
+    "Name": "Surrounding",
+    "Description": ""
+  },
+  {
+    "Name": "Depth",
+    "Description": "The depth of the canyon."
+  },
+  {
+    "Name": "Structual Warp",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process."
+  },
+  {
+    "Name": "Formation",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Detail Warp",
+    "Description": ""
+  },
+  {
+    "Name": "Alternate Style",
+    "Description": ""
+  }
+]

@@ -1,0 +1,18 @@
+﻿[
+  {
+    "Name": "Clip",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Min",
+    "Description": ""
+  },
+  {
+    "Name": "Max",
+    "Description": ""
+  },
+  {
+    "Name": "Auto Clip",
+    "Description": ""
+  }
+]

@@ -1,0 +1,18 @@
+﻿[
+  {
+    "Name": "Meshify",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Vertices",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  },
+  {
+    "Name": "Detail Sensitivity",
+    "Description": ""
+  }
+]

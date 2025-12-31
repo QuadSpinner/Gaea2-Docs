@@ -1,0 +1,50 @@
+﻿[
+  {
+    "Name": "Format",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "PLY",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "PLY_BINARY",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "XYZ",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "CSV",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Scale",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Normalized",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Meter",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Kilometer",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Center Pivot",
+    "Description": ""
+  },
+  {
+    "Name": "Ignore Zero Values",
+    "Description": ""
+  }
+]

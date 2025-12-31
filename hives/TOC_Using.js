@@ -15,6 +15,10 @@ window.SITE_TOC = [
         "icon": "play",
         "children": [
           {
+            "title": "Overview",
+            "url": "/using/getting-started/basics/"
+          },
+          {
             "title": "Introduction",
             "url": "/using/getting-started/basics/introduction.html",
             "icon": "1"
@@ -57,6 +61,10 @@ window.SITE_TOC = [
         "icon": "info",
         "children": [
           {
+            "title": "Overview",
+            "url": "/using/getting-started/important/"
+          },
+          {
             "title": "Non-Determinism",
             "url": "/using/getting-started/important/non-determinism.html"
           },
@@ -75,6 +83,10 @@ window.SITE_TOC = [
   {
     "title": "Using Gaea",
     "children": [
+      {
+        "title": "Overview",
+        "url": "/using/using-gaea/"
+      },
       {
         "title": "Understanding Erosion",
         "icon": "cloud-showers",
@@ -291,6 +303,10 @@ window.SITE_TOC = [
     "title": "Advanced Topics",
     "children": [
       {
+        "title": "Overview",
+        "url": "/using/advanced-topics/"
+      },
+      {
         "title": "Build Swarm",
         "icon": "cubes-stacked",
         "children": [
@@ -369,6 +385,10 @@ window.SITE_TOC = [
   {
     "title": "Troubleshooting",
     "children": [
+      {
+        "title": "Overview",
+        "url": "/using/troubleshooting/"
+      },
       {
         "title": "Common Issues",
         "url": "/using/troubleshooting/common-issues-and-workarounds.html",

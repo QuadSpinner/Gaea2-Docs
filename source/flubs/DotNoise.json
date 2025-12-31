@@ -1,0 +1,78 @@
+﻿[
+  {
+    "Name": "Style",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Dot",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Square",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Iterations",
+    "Description": ""
+  },
+  {
+    "Name": "Multiplier",
+    "Description": ""
+  },
+  {
+    "Name": "Size",
+    "Description": ""
+  },
+  {
+    "Name": "Height",
+    "Description": ""
+  },
+  {
+    "Name": "Blend Mode",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Blend",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Add",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Subtract",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Difference",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Multiply",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Screen",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Max",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Min",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]

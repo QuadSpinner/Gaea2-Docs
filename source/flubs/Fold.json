@@ -1,0 +1,28 @@
+﻿[
+  {
+    "Name": "Waveform",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Sine",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Triangle",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Sawtooth",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Folds",
+    "Description": ""
+  },
+  {
+    "Name": "Symmetric",
+    "Description": ""
+  }
+]

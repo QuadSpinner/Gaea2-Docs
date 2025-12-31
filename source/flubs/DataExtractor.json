@@ -1,0 +1,32 @@
+﻿[
+  {
+    "Name": "Data",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "ModifierMask",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Difference",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Boundary",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "MixerMask",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Layer",
+    "Description": ""
+  },
+  {
+    "Name": "Level",
+    "Description": ""
+  }
+]

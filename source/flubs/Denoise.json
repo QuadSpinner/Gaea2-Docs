@@ -1,0 +1,28 @@
+﻿[
+  {
+    "Name": "Type",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "OnePass",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "TwoPass",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Pixels",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Amount",
+    "Description": ""
+  },
+  {
+    "Name": "Passes",
+    "Description": ""
+  }
+]

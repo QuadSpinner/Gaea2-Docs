@@ -1,0 +1,38 @@
+﻿[
+  {
+    "Name": "Erosion",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Duration",
+    "Description": ""
+  },
+  {
+    "Name": "Strength",
+    "Description": ""
+  },
+  {
+    "Name": "Anisotropy",
+    "Description": ""
+  },
+  {
+    "Name": "Talus",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Angle",
+    "Description": ""
+  },
+  {
+    "Name": "Sediment Removal",
+    "Description": ""
+  },
+  {
+    "Name": "Scale",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Feature Scale",
+    "Description": ""
+  }
+]

@@ -1,0 +1,28 @@
+﻿[
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Direction",
+    "Description": ""
+  },
+  {
+    "Name": "Edge Behavior",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Clip",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Repeat",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Mirror",
+        "Description": "<desc>"
+      }
+    ]
+  }
+]

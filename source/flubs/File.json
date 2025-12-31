@@ -1,0 +1,46 @@
+﻿[
+  {
+    "Name": "File",
+    "Description": "The file to load."
+  },
+  {
+    "Name": "Relative Path",
+    "Description": ""
+  },
+  {
+    "Name": "Is RGB",
+    "Description": ""
+  },
+  {
+    "Name": "Enforce Linear Gamma",
+    "Description": "Enforces linear Gamma in the loaded terrain."
+  },
+  {
+    "Name": "Allow Unclamped",
+    "Description": ""
+  },
+  {
+    "Name": "Crop to Square",
+    "Description": ""
+  },
+  {
+    "Name": "Prepare for Bridge",
+    "Description": ""
+  },
+  {
+    "Name": "Information Houdini",
+    "Description": ""
+  },
+  {
+    "Name": "Caching",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Purge Cache",
+    "Description": ""
+  },
+  {
+    "Name": "Never Cache",
+    "Description": ""
+  }
+]

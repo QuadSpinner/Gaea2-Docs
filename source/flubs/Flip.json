@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Name": "Type",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "X",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Y",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "XY",
+        "Description": "<desc>"
+      }
+    ]
+  }
+]

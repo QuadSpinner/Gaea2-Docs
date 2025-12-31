@@ -1,0 +1,24 @@
+﻿[
+  {
+    "Name": "Strength",
+    "Description": ""
+  },
+  {
+    "Name": "Direction",
+    "Description": ""
+  },
+  {
+    "Name": "Edge Behaviour",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Edge",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Mirror",
+        "Description": "<desc>"
+      }
+    ]
+  }
+]

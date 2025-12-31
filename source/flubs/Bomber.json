@@ -1,0 +1,124 @@
+﻿[
+  {
+    "Name": "Iterations",
+    "Description": ""
+  },
+  {
+    "Name": "Multiplier",
+    "Description": ""
+  },
+  {
+    "Name": "Size",
+    "Description": ""
+  },
+  {
+    "Name": "Size Distribution",
+    "Description": ""
+  },
+  {
+    "Name": "Rotation",
+    "Description": ""
+  },
+  {
+    "Name": "Proportional",
+    "Description": "Enforce proportional scaling, or allow non-proportional modifications."
+  },
+  {
+    "Name": "Variable Height",
+    "Description": ""
+  },
+  {
+    "Name": "Height",
+    "Description": ""
+  },
+  {
+    "Name": "Distribution",
+    "Description": "The method of distribution",
+    "Flubs": [
+      {
+        "Name": "Random",
+        "Description": "A randomized distribution that results in pure chaotic patterns."
+      },
+      {
+        "Name": "Grid",
+        "Description": "A normalized grid distribution function that results in a systematic pattern."
+      }
+    ]
+  },
+  {
+    "Name": "Jitter",
+    "Description": "The random offset applied to each instance while distributing."
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process."
+  },
+  {
+    "Name": "Fade Edges",
+    "Description": ""
+  },
+  {
+    "Name": "Blend Mode",
+    "Description": "How the base terrain and bombed instances are merged.",
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Blend",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Add",
+        "Description": "Adds the two values together."
+      },
+      {
+        "Name": "Subtract",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Difference",
+        "Description": " Creates the difference of the two inputs."
+      },
+      {
+        "Name": "Multiply",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Screen",
+        "Description": "Adds the two inputs without overexposing the output."
+      },
+      {
+        "Name": "Max",
+        "Description": "Selects the higher of the two."
+      },
+      {
+        "Name": "Min",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Quality",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Draft",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Medium",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Add Input",
+    "Description": ""
+  }
+]

@@ -1,0 +1,30 @@
+﻿[
+  {
+    "Name": "Gabor",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Size",
+    "Description": ""
+  },
+  {
+    "Name": "Entropy",
+    "Description": ""
+  },
+  {
+    "Name": "Anisotropy",
+    "Description": ""
+  },
+  {
+    "Name": "Azimuth",
+    "Description": ""
+  },
+  {
+    "Name": "Gain",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process."
+  }
+]

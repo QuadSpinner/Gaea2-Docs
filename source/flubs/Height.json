@@ -1,0 +1,10 @@
+﻿[
+  {
+    "Name": "Range",
+    "Description": ""
+  },
+  {
+    "Name": "Falloff",
+    "Description": "The soft falloff at the maximum edge."
+  }
+]

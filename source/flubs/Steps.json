@@ -1,0 +1,18 @@
+﻿[
+  {
+    "Name": "Steps",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Density",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]

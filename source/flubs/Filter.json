@@ -1,0 +1,52 @@
+﻿[
+  {
+    "Name": "Mode",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "LowPass",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "HighPass",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "LowShelf",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "HighShelf",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "BandPass",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Notch",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Bell",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Frequency",
+    "Description": ""
+  },
+  {
+    "Name": "Gain",
+    "Description": ""
+  },
+  {
+    "Name": "Q",
+    "Description": ""
+  },
+  {
+    "Name": "Keep DC",
+    "Description": ""
+  }
+]

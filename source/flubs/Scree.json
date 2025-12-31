@@ -1,0 +1,30 @@
+﻿[
+  {
+    "Name": "Stones",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Height",
+    "Description": ""
+  },
+  {
+    "Name": "Density",
+    "Description": ""
+  },
+  {
+    "Name": "Spread",
+    "Description": ""
+  },
+  {
+    "Name": "Edge",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]

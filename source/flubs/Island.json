@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Name": "Size",
+    "Description": ""
+  },
+  {
+    "Name": "Chaos",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process."
+  }
+]

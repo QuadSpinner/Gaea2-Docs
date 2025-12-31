@@ -1,0 +1,82 @@
+﻿[
+  {
+    "Name": "Impact",
+    "Description": "The intensity of the process. Higher values create stronger physical impacts within the erosion process."
+  },
+  {
+    "Name": "Width",
+    "Description": ""
+  },
+  {
+    "Name": "Depth",
+    "Description": ""
+  },
+  {
+    "Name": "Downcutting",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Destructive",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Pits",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Flows",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Rivers",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Riversx2",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Riversx4",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Flooding",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Floodingx2",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Flooding_x4",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Quality",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Quarter",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Third",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Half",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Full",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Smooth Edges",
+    "Description": ""
+  }
+]

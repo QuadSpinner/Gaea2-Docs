@@ -1,0 +1,36 @@
+﻿[
+  {
+    "Name": "Width",
+    "Description": ""
+  },
+  {
+    "Name": "Depth",
+    "Description": ""
+  },
+  {
+    "Name": "Oriented",
+    "Description": ""
+  },
+  {
+    "Name": "Quality",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Quarter",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Third",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Half",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Full",
+        "Description": "<desc>"
+      }
+    ]
+  }
+]

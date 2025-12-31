@@ -1,0 +1,18 @@
+﻿[
+  {
+    "Name": "Influence",
+    "Description": "The influence of the shaping on the input terrain. Mid-values can give you good balance between the stark shape and the original terrain."
+  },
+  {
+    "Name": "Shape",
+    "Description": "Negative values will condense the terrain into concise, sharp ridges, while positive values will bulk up the terrain by adding bulge."
+  },
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Microdetail Preservation",
+    "Description": ""
+  }
+]

@@ -7,7 +7,12 @@ window.SITE_TOC = [
     "title": "The Interface",
     "children": [
       {
+        "title": "Overview",
+        "url": "/ui/interface/"
+      },
+      {
         "title": "Graph",
+        "icon": "diagram-project",
         "children": [
           {
             "title": "Overview",
@@ -122,6 +127,10 @@ window.SITE_TOC = [
       {
         "title": "Navigation",
         "children": [
+          {
+            "title": "Overview",
+            "url": "/ui/interface/navigation/"
+          },
           {
             "title": "Lazy Menu",
             "url": "/ui/interface/navigation/lazy-menu.html"
@@ -248,8 +257,16 @@ window.SITE_TOC = [
     "title": "Using the Graph",
     "children": [
       {
+        "title": "Overview",
+        "url": "/ui/graph/"
+      },
+      {
         "title": "Basic Workflow",
         "children": [
+          {
+            "title": "Overview",
+            "url": "/ui/graph/basic-workflow/"
+          },
           {
             "title": "Graph Conveniences",
             "url": "/ui/graph/basic-workflow/graph-conveniences.html"
@@ -271,6 +288,10 @@ window.SITE_TOC = [
       {
         "title": "Organizing Graphs",
         "children": [
+          {
+            "title": "Overview",
+            "url": "/ui/graph/organization/"
+          },
           {
             "title": "Portals and Chokepoints",
             "url": "/ui/graph/organization/portals-and-chokepoints.html"
@@ -294,6 +315,10 @@ window.SITE_TOC = [
   {
     "title": "Other Features",
     "children": [
+      {
+        "title": "Overview",
+        "url": "/ui/features/"
+      },
       {
         "title": "Autosave and Recovery",
         "url": "/ui/features/autosave-and-recovery.html",

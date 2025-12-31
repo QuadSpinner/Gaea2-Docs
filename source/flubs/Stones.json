@@ -1,0 +1,22 @@
+﻿[
+  {
+    "Name": "Stones",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Height",
+    "Description": ""
+  },
+  {
+    "Name": "Density",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]

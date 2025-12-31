@@ -1,0 +1,70 @@
+﻿[
+  {
+    "Name": "Snowfall",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Strength",
+    "Description": ""
+  },
+  {
+    "Name": "Snowline",
+    "Description": ""
+  },
+  {
+    "Name": "Falloff",
+    "Description": ""
+  },
+  {
+    "Name": "Distribution",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Directional",
+    "Description": ""
+  },
+  {
+    "Name": "Direction",
+    "Description": ""
+  },
+  {
+    "Name": "Peaks",
+    "Description": ""
+  },
+  {
+    "Name": "Coverage",
+    "Description": ""
+  },
+  {
+    "Name": "Slope Coverage",
+    "Description": ""
+  },
+  {
+    "Name": "Flow",
+    "Description": ""
+  },
+  {
+    "Name": "Effects",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Melt",
+    "Description": ""
+  },
+  {
+    "Name": "Gritty",
+    "Description": ""
+  },
+  {
+    "Name": "Include Existing Snow",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  },
+  {
+    "Name": "Artistic Control",
+    "Description": ""
+  }
+]

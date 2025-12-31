@@ -7,6 +7,10 @@ window.SITE_TOC = [
     "title": "Gaea 2.2",
     "children": [
       {
+        "title": "Overview",
+        "url": "/history/gaea-2.2/"
+      },
+      {
         "title": "2.2.0.3",
         "url": "/history/gaea-2.2/2.2.0.3.html"
       },
@@ -28,6 +32,10 @@ window.SITE_TOC = [
     "title": "Gaea 2.1",
     "children": [
       {
+        "title": "Overview",
+        "url": "/history/gaea-2.1/"
+      },
+      {
         "title": "2.1.2.0",
         "url": "/history/gaea-2.1/2.1.2.0.html"
       },
@@ -44,6 +52,10 @@ window.SITE_TOC = [
   {
     "title": "Gaea 2.0",
     "children": [
+      {
+        "title": "Overview",
+        "url": "/history/gaea-2.0/"
+      },
       {
         "title": "2.0.6.0",
         "url": "/history/gaea-2.0/2.0.6.0.html"
@@ -109,6 +121,10 @@ window.SITE_TOC = [
   {
     "title": "Early Access",
     "children": [
+      {
+        "title": "Overview",
+        "url": "/history/early-access/"
+      },
       {
         "title": "2.0.0.16-rc",
         "url": "/history/early-access/2.0.0.16-rc.html"

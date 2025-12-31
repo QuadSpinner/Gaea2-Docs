@@ -1,0 +1,70 @@
+﻿[
+  {
+    "Name": "Scale",
+    "Description": "The perceptual scale of the mountain."
+  },
+  {
+    "Name": "Height",
+    "Description": "Changes the height of the mountain."
+  },
+  {
+    "Name": "Style",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Basic",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Eroded",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Old",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Alpine",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Strata",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Bulk",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Low",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Medium",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Reduce Details",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process."
+  },
+  {
+    "Name": "X",
+    "Description": ""
+  },
+  {
+    "Name": "Y",
+    "Description": ""
+  }
+]

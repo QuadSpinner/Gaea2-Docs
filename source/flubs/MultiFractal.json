@@ -1,0 +1,160 @@
+﻿[
+  {
+    "Name": "Fractal",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Noise Type",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "FBM",
+        "Description": "Use for varied noise."
+      },
+      {
+        "Name": "Billowy",
+        "Description": "Use for lower, more bulbous shapes."
+      },
+      {
+        "Name": "Ridged",
+        "Description": "Use for sharp shapes."
+      }
+    ]
+  },
+  {
+    "Name": "Auto Octaves",
+    "Description": "Automatically sets the octaves."
+  },
+  {
+    "Name": "Octaves",
+    "Description": "Number of octaves, higher values create more complexity."
+  },
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Relative Feature Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Roughness",
+    "Description": "Lower value creates smoother shapes, higher value creates rough shapes."
+  },
+  {
+    "Name": "Edge smoothing",
+    "Description": "Smoothes the shape of the terrain."
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process."
+  },
+  {
+    "Name": "Variation",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Type",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "SecondaryFractal",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "SelfModulation",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Variation",
+    "Description": ""
+  },
+  {
+    "Name": "Smoothness",
+    "Description": ""
+  },
+  {
+    "Name": "Contrast",
+    "Description": ""
+  },
+  {
+    "Name": "Damping",
+    "Description": ""
+  },
+  {
+    "Name": "Bias",
+    "Description": ""
+  },
+  {
+    "Name": "Position",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Rotation",
+    "Description": ""
+  },
+  {
+    "Name": "Anisotropy",
+    "Description": ""
+  },
+  {
+    "Name": "Offset X",
+    "Description": ""
+  },
+  {
+    "Name": "Offset Y",
+    "Description": ""
+  },
+  {
+    "Name": "Warp",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Perturb",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "No warping."
+      },
+      {
+        "Name": "Simple",
+        "Description": "Simple, soft warping."
+      },
+      {
+        "Name": "Complex",
+        "Description": "Complex, turbulence warping."
+      }
+    ]
+  },
+  {
+    "Name": "Relative Size",
+    "Description": ""
+  },
+  {
+    "Name": "Strength",
+    "Description": ""
+  },
+  {
+    "Name": "Complexity",
+    "Description": ""
+  },
+  {
+    "Name": "Roughness",
+    "Description": "Lower value creates smoother shapes, higher value creates rough shapes."
+  },
+  {
+    "Name": "Attenuation",
+    "Description": ""
+  },
+  {
+    "Name": "Iterations",
+    "Description": ""
+  },
+  {
+    "Name": "Relative Anisotropy",
+    "Description": ""
+  }
+]

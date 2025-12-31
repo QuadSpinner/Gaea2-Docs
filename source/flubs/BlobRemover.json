@@ -1,0 +1,18 @@
+﻿[
+  {
+    "Name": "Range",
+    "Description": ""
+  },
+  {
+    "Name": "Connectivity",
+    "Description": ""
+  },
+  {
+    "Name": "Enforce Quantization",
+    "Description": ""
+  },
+  {
+    "Name": "Quantization",
+    "Description": ""
+  }
+]

@@ -1,0 +1,70 @@
+﻿[
+  {
+    "Name": "Size",
+    "Description": ""
+  },
+  {
+    "Name": "Erosion",
+    "Description": ""
+  },
+  {
+    "Name": "Breakage",
+    "Description": ""
+  },
+  {
+    "Name": "Roughness",
+    "Description": ""
+  },
+  {
+    "Name": "Jitter",
+    "Description": ""
+  },
+  {
+    "Name": "Clusters",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Off",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Large",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Small",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Shattered",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Relief",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Off",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Sharp",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Soft",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Stratified",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]

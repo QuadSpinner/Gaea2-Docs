@@ -1,0 +1,78 @@
+﻿[
+  {
+    "Name": "Structure",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Slope",
+    "Description": ""
+  },
+  {
+    "Name": "Flows",
+    "Description": ""
+  },
+  {
+    "Name": "Soil",
+    "Description": ""
+  },
+  {
+    "Name": "Patches",
+    "Description": ""
+  },
+  {
+    "Name": "Chaos",
+    "Description": ""
+  },
+  {
+    "Name": "Peaks",
+    "Description": ""
+  },
+  {
+    "Name": "Processing",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Accentuate",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Off",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Old",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "New",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Enhance",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Autolevel",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Equalize",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Reverse",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]

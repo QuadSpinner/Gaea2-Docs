@@ -176,6 +176,67 @@ function initGlobalToc({
 
   // ---------- match current URL, set active, expand ancestors ----------
   markCurrentUrlActive();
+  // Add this at the end of initGlobalToc() after markCurrentUrlActive();
+  renderCurrentFolderSubLinks("#show-sublinks");
+
+  function renderCurrentFolderSubLinks(hostSelector = "#show-sublinks") {
+    const out = document.querySelector(hostSelector);
+    if (!out) return;
+
+    // find current active leaf
+    const active = host.querySelector('a[href]:not(.toc-group).active');
+    if (!active) return;
+
+    // current folder UL = where the active leaf lives
+    const currentUl = active.closest("ul");
+    if (!currentUl) return;
+
+    // clone ONE level of siblings from that UL, but as a fresh UL with fresh nodes
+    const ul = document.createElement("ul");
+    ul.className = "sub-links";
+
+    const sibLis = Array.from(currentUl.querySelectorAll(":scope > li"))
+      .filter(li => !li.classList.contains("divider"));
+
+    for (const li of sibLis) {
+      const item = document.createElement("li");
+
+      // leaf sibling
+      const leafA = li.querySelector(":scope > a[href]:not(.toc-group)");
+      if (leafA) {
+        const a = document.createElement("a");
+        a.href = leafA.getAttribute("href") || leafA.href;
+        a.textContent = (leafA.textContent || "").trim();
+        if (leafA.classList.contains("active")) a.classList.add("active");
+        item.appendChild(a);
+        ul.appendChild(item);
+        continue;
+      }
+
+      // folder/group sibling: use its group label, and link to FIRST leaf inside it (same behavior as your sections)
+      const groupA = li.querySelector(":scope > a.toc-group");
+      if (groupA) {
+        const title = (groupA.textContent || "").trim() || "Untitled";
+        const firstLeaf = li.querySelector('a[href]:not(.toc-group)');
+        const href = firstLeaf ? (firstLeaf.getAttribute("href") || firstLeaf.href) : "#";
+
+        const a = document.createElement("a");
+        a.href = href;
+        a.textContent = title;
+        item.appendChild(a);
+
+        ul.appendChild(item);
+        continue;
+      }
+    }
+
+    out.innerHTML = "";
+    out.appendChild(ul);
+  }
+
+  // ---------- NEW: breadcrumbs ----------
+  // expects a container like: <ol id="breadcrumbs" class="breadcrumb" aria-label="breadcrumbs"></ol>
+  buildBreadcrumbs("#breadcrumbs", "Home", "/");
 
   function markCurrentUrlActive() {
     const current = normalizeUrl(location.href);
@@ -219,16 +280,13 @@ function initGlobalToc({
     if (!icon) return;
 
     const i = document.createElement("i");
-
-    // `icon` can be either:
-    // - "fa-sharp-duotone fa-thin fa-dog" (full class list), or
-    // - "fa-dog" (just the glyph; we'll add your defaults)
     const cls = String(icon).trim();
-    i.className = `fa-duotone fa-light fa-${cls}`;
+
+    // Your chosen convention: icon contains the suffix only (e.g. "dog"), render fa-dog
+    i.className = `fa-duotone fa-solid fa-${cls}`;
     i.classList.add("toc-icon");
     el.appendChild(i);
   }
-
 
   // ---------- node renderer ----------
   function renderNode(node) {
@@ -263,6 +321,102 @@ function initGlobalToc({
 
     return li;
   }
+
+  // ---------- breadcrumbs ----------
+  function buildBreadcrumbs(olSelector, homeTitle = "Home", homeUrl = "/") {
+    const ol = document.querySelector(olSelector);
+    if (!ol) return;
+
+    const active = host.querySelector('a[href]:not(.toc-group).active');
+    if (!active) return;
+
+    const chain = [];
+
+    // 1) leaf
+    chain.push({
+      title: (active.textContent || "").trim() || "Untitled",
+      url: active.getAttribute("href") || active.href
+    });
+
+    // 2) parent groups (li > a.toc-group)  ---- FIX: give them a real URL
+    let li = active.closest("li");
+    while (li) {
+      const parentLi = li.parentElement?.closest("li");
+      if (!parentLi) break;
+
+      const groupA = parentLi.querySelector(":scope > a.toc-group");
+      if (groupA) {
+        const groupTitle = (groupA.textContent || "").trim() || "Untitled";
+
+        const firstLeaf = parentLi.querySelector(":scope > ul")?.querySelector('a[href]:not(.toc-group)');
+        const groupUrl = firstLeaf ? (firstLeaf.getAttribute("href") || firstLeaf.href) : null;
+
+        chain.push({
+          title: groupTitle,
+          url: groupUrl || null
+        });
+      }
+
+      li = parentLi;
+    }
+
+    // 3) top section crumb (already uses first leaf under the section)
+    const sec = findTopSectionCrumb(active);
+    if (sec) chain.push(sec);
+
+    chain.reverse();
+
+    // render
+    ol.innerHTML = "";
+    ol.classList.add("breadcrumb");
+    ol.setAttribute("aria-label", "breadcrumbs");
+
+    ol.appendChild(makeCrumb(homeTitle, homeUrl, false));
+
+    for (let i = 0; i < chain.length; i++) {
+      const isLast = i === chain.length - 1;
+      const c = chain[i];
+
+      // if still no url, fall back to "#"
+      ol.appendChild(makeCrumb(c.title, c.url || "#", isLast));
+    }
+  }
+
+
+  function makeCrumb(title, url, isActive) {
+    const li = document.createElement("li");
+    li.className = "breadcrumb-item" + (isActive ? " active" : "");
+    if (isActive) li.setAttribute("aria-current", "page");
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.textContent = title;
+
+    li.appendChild(a);
+    return li;
+  }
+
+  // replace findTopSectionTitle() with this
+  function findTopSectionCrumb(activeAnchor) {
+    const sectionUl = activeAnchor.closest("ul.toc-section-list");
+    if (!sectionUl) return null;
+
+    // h3 just before this section list
+    let h3 = sectionUl.previousElementSibling;
+    while (h3 && !(h3.tagName === "H3" && h3.classList.contains("toc-section"))) {
+      h3 = h3.previousElementSibling;
+    }
+
+    const title = h3 ? (h3.textContent || "").trim() : null;
+    if (!title) return null;
+
+    // section link = first leaf link under this section title
+    const firstLeaf = sectionUl.querySelector('a[href]:not(.toc-group)');
+    const url = firstLeaf ? (firstLeaf.getAttribute("href") || firstLeaf.href) : null;
+
+    return { title, url: url || "#" };
+  }
+
 }
 
 // Simple on-page TOC (single #content)
@@ -274,7 +428,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#page-naver")?.remove();
     return;
   }
-  
+
   const content = document.querySelector("#contents");
   if (!content) return;
 

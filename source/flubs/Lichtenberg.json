@@ -1,0 +1,44 @@
+﻿[
+  {
+    "Name": "Style",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "A",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "B",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "C",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Complexity",
+    "Description": ""
+  },
+  {
+    "Name": "Depth",
+    "Description": ""
+  },
+  {
+    "Name": "Expand",
+    "Description": ""
+  },
+  {
+    "Name": "Bias",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]

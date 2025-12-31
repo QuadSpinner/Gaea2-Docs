@@ -1,7 +1,7 @@
 ---
 icon: suitcase-medical
 title: Troubleshooting
-uid: troubleshooting
+uid: troubleshooting-install
 order: 04
 ---
 

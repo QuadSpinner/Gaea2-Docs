@@ -1,0 +1,30 @@
+﻿[
+  {
+    "Name": "Count",
+    "Description": ""
+  },
+  {
+    "Name": "Subdivision",
+    "Description": ""
+  },
+  {
+    "Name": "Accuracy",
+    "Description": ""
+  },
+  {
+    "Name": "Lines",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Line Intensity",
+    "Description": ""
+  },
+  {
+    "Name": "Sub Intensity",
+    "Description": ""
+  },
+  {
+    "Name": "Line Thickness",
+    "Description": ""
+  }
+]

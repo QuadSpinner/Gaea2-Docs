@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Name": "Tiles",
+    "Description": "The number of repititions on either axis."
+  },
+  {
+    "Name": "Compensate Height",
+    "Description": ""
+  },
+  {
+    "Name": "Height",
+    "Description": ""
+  }
+]

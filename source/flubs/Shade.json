@@ -1,0 +1,52 @@
+﻿[
+  {
+    "Name": "Render Style",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "TableTop",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "HillShade",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Occlusion",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "SoftLight",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Sun Azimuth",
+    "Description": ""
+  },
+  {
+    "Name": "Sun Elevation",
+    "Description": ""
+  },
+  {
+    "Name": "Sunlight",
+    "Description": ""
+  },
+  {
+    "Name": "Shade Bias",
+    "Description": ""
+  },
+  {
+    "Name": "Soft Shadows",
+    "Description": ""
+  },
+  {
+    "Name": "Reflected Light",
+    "Description": ""
+  },
+  {
+    "Name": "High Quality",
+    "Description": ""
+  }
+]

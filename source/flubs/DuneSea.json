@@ -1,0 +1,92 @@
+﻿[
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Dune Type",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "A",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "B",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "C",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "D",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Chaos",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Low",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Medium",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Undulation",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Low",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Medium",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Direction",
+    "Description": ""
+  },
+  {
+    "Name": "Height",
+    "Description": ""
+  },
+  {
+    "Name": "Softness",
+    "Description": ""
+  },
+  {
+    "Name": "Sharpness",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]

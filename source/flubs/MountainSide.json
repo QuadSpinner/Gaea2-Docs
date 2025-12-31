@@ -1,0 +1,58 @@
+﻿[
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Detail",
+    "Description": ""
+  },
+  {
+    "Name": "Type",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Slope",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Peak",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Style",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Basic",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Eroded",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Old",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Alpine",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Strata",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Direction",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]

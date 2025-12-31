@@ -7,6 +7,10 @@ window.SITE_TOC = [
     "title": "Bridges",
     "children": [
       {
+        "title": "Overview",
+        "url": "/guides/bridges/"
+      },
+      {
         "title": "Gaea2Houdini",
         "icon": "h",
         "children": [
@@ -75,6 +79,10 @@ window.SITE_TOC = [
         "title": "Apps",
         "icon": "rocket-launch",
         "children": [
+          {
+            "title": "Overview",
+            "url": "/guides/use-in/apps/"
+          },
           {
             "title": "3dsmax",
             "url": "/guides/use-in/apps/3dsmax.html"

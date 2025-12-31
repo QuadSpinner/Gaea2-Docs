@@ -1,0 +1,28 @@
+﻿[
+  {
+    "Name": "Edit Mode",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Consume",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Modify",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Variable Name",
+    "Description": ""
+  },
+  {
+    "Name": "Expression",
+    "Description": ""
+  },
+  {
+    "Name": "Default Value",
+    "Description": ""
+  }
+]

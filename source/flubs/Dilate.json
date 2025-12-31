@@ -1,0 +1,40 @@
+﻿[
+  {
+    "Name": "Size",
+    "Description": ""
+  },
+  {
+    "Name": "Shape",
+    "Description": ""
+  },
+  {
+    "Name": "Iterations",
+    "Description": ""
+  },
+  {
+    "Name": "Kernel",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Cross",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Rectangle",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Line",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "LineVertical",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Invert",
+    "Description": ""
+  }
+]

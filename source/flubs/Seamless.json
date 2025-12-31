@@ -1,0 +1,18 @@
+﻿[
+  {
+    "Name": "Edge",
+    "Description": "The amount of blending across the opposite edges."
+  },
+  {
+    "Name": "Shift X",
+    "Description": "Shift blending on the X axis."
+  },
+  {
+    "Name": "Shift Y",
+    "Description": "Shift blending on the Y axis."
+  },
+  {
+    "Name": "Preview Tiling",
+    "Description": ""
+  }
+]

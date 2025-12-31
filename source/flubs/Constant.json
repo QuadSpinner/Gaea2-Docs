@@ -1,0 +1,28 @@
+﻿[
+  {
+    "Name": "Constant",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Output",
+    "Description": "The type of output to create.",
+    "Flubs": [
+      {
+        "Name": "Height",
+        "Description": "Create a flat terrain of the specified height."
+      },
+      {
+        "Name": "Color",
+        "Description": "Create a flat color output of the specified color."
+      }
+    ]
+  },
+  {
+    "Name": "Height",
+    "Description": "The height of the blank terrain."
+  },
+  {
+    "Name": "Color",
+    "Description": "The color to use for creating a flat, color output."
+  }
+]

@@ -1,0 +1,26 @@
+﻿[
+  {
+    "Name": "File",
+    "Description": "Lorem ipsum"
+  },
+  {
+    "Name": "Relative Path",
+    "Description": ""
+  },
+  {
+    "Name": "Enforce Linear Gamma",
+    "Description": "Lorem ipsum"
+  },
+  {
+    "Name": "Flip Y",
+    "Description": "Lorem ipsum"
+  },
+  {
+    "Name": "Purge Cache",
+    "Description": ""
+  },
+  {
+    "Name": "Tile Info",
+    "Description": ""
+  }
+]

@@ -1,0 +1,46 @@
+﻿[
+  {
+    "Name": "Passes",
+    "Description": ""
+  },
+  {
+    "Name": "Iterations",
+    "Description": ""
+  },
+  {
+    "Name": "Spacing",
+    "Description": ""
+  },
+  {
+    "Name": "Intensity",
+    "Description": ""
+  },
+  {
+    "Name": "Convexity",
+    "Description": ""
+  },
+  {
+    "Name": "Tilt",
+    "Description": ""
+  },
+  {
+    "Name": "Direction",
+    "Description": ""
+  },
+  {
+    "Name": "Chaos",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  },
+  {
+    "Name": "Chipped",
+    "Description": ""
+  },
+  {
+    "Name": "Chipping",
+    "Description": ""
+  }
+]

@@ -1,4 +1,4 @@
-graph|Graph
+graph|Graph|diagram-project
 property-editor|Property Editor
 viewport|Viewport
 data-editor|Data Editor

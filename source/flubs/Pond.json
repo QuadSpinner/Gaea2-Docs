@@ -1,0 +1,34 @@
+﻿[
+  {
+    "Name": "Lake Formation",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Depth",
+    "Description": ""
+  },
+  {
+    "Name": "Spread",
+    "Description": ""
+  },
+  {
+    "Name": "Warp",
+    "Description": ""
+  },
+  {
+    "Name": "X",
+    "Description": ""
+  },
+  {
+    "Name": "Y",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]

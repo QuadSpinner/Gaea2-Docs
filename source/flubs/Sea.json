@@ -1,0 +1,48 @@
+﻿[
+  {
+    "Name": "Sea",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Global",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Surrounding",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Level",
+    "Description": "The water level in the sea."
+  },
+  {
+    "Name": "Coastal Erosion",
+    "Description": "Perform erosion on the coastal areas."
+  },
+  {
+    "Name": "Shore Size",
+    "Description": "The size of the shore created with coastal erosion."
+  },
+  {
+    "Name": "Shore Height",
+    "Description": "The height of the shore created with coastal erosion."
+  },
+  {
+    "Name": "Variation",
+    "Description": "The amount of variation on the coast."
+  },
+  {
+    "Name": "Uniform Variations",
+    "Description": ""
+  },
+  {
+    "Name": "Extra Cliff Details",
+    "Description": "Add extra details to the cliff on the terrain."
+  },
+  {
+    "Name": "Render Surface",
+    "Description": ""
+  }
+]

@@ -1,0 +1,32 @@
+﻿[
+  {
+    "Name": "Method",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Harsh",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Rocky",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Rough",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Strength",
+    "Description": ""
+  },
+  {
+    "Name": "Coverage",
+    "Description": ""
+  },
+  {
+    "Name": "Density",
+    "Description": ""
+  }
+]

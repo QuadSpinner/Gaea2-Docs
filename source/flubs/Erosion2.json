@@ -1,0 +1,102 @@
+﻿[
+  {
+    "Name": "General",
+    "IsGroup": true,
+    "Description": ""
+  },
+  {
+    "Name": "Duration",
+    "Description": "Controls how long erosion runs. Longer durations produce more elaborate terrain reshaping, while shorter durations help preserve original forms."
+  },
+  {
+    "Name": "Downcutting",
+    "Description": "Governs how deeply water cuts into the terrain, carving valleys and channels."
+  },
+  {
+    "Name": "Erosion Scale",
+    "Description": "Sets the overall size of erosion features, from fine gullies to massive ravines."
+  },
+  {
+    "Name": "Seed",
+    "Description": "Randomizes the erosion pattern while keeping other settings the same."
+  },
+  {
+    "Name": "Sediment Discharge",
+    "IsGroup": true,
+    "Description": "Defines how different sediment types are transported and deposited during erosion."
+  },
+  {
+    "Name": "Suspended Load",
+    "Description": "Fine, light sediments that travel far and fill gullies with subtle detail."
+  },
+  {
+    "Name": "Discharge Angle",
+    "Description": "Sets the slope at which suspended load settles."
+  },
+  {
+    "Name": "Bed Load",
+    "Description": "Heavier sediments like gravel that fill and shape gullies and slopes."
+  },
+  {
+    "Name": "Discharge Angle",
+    "Description": "Sets the slope angle for bed load deposition."
+  },
+  {
+    "Name": "Coarse Sediments",
+    "Description": "The heaviest materials (boulders, scree) that deposit on steep slopes."
+  },
+  {
+    "Name": "Discharge Angle",
+    "Description": "Controls the slope threshold for coarse sediment settling."
+  },
+  {
+    "Name": "Shape",
+    "IsGroup": true,
+    "Description": "Enables artistic control over how erosion reshapes terrain."
+  },
+  {
+    "Name": "Shape",
+    "Description": "Balances between preserving the original shape and allowing natural reshaping."
+  },
+  {
+    "Name": "Shape Sharpness",
+    "Description": "Defines how sharp or concave ridges become after erosion."
+  },
+  {
+    "Name": "Shape Detail Scale",
+    "Description": "Sets the scale of simulated details, from broad ravines to fine gullies."
+  },
+  {
+    "Name": "Orographic Influence",
+    "IsGroup": true,
+    "Description": "Controls how rainfall-driven erosion is applied across terrain features."
+  },
+  {
+    "Name": "Enable",
+    "Description": "Toggles orographic influence on or off."
+  },
+  {
+    "Name": "Directional Precipitation",
+    "Description": "Simulates rain falling more intensely from one direction to create rain shadows."
+  },
+  {
+    "Name": "Direction",
+    "Description": "Sets the direction from which rainfall comes most strongly."
+  },
+  {
+    "Name": "Rain Shadow",
+    "Description": "Controls how strongly terrain blocks rainfall from certain directions."
+  },
+  {
+    "Name": "Slope",
+    "Description": "Limits rainfall effects to specific elevation ranges."
+  },
+  {
+    "Name": "Altitude",
+    "Description": "Limits rainfall effects to specific slope ranges."
+  },
+  {
+    "Name": "Reverse",
+    "Description": "Inverts the influence mask for creative control."
+  }
+]

@@ -1,0 +1,72 @@
+﻿[
+  {
+    "Name": "Data",
+    "Description": ""
+  },
+  {
+    "Name": "Sampling",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Samples",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "_8",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "_16",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "_24",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "_36",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "_64",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "_128",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "_256",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "_1024",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "_2048",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Fuzzy",
+    "Description": "The amount of fuzziness on bitmap image."
+  },
+  {
+    "Name": "Offset",
+    "Description": ""
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process."
+  },
+  {
+    "Name": "Synthesize Colors",
+    "Description": ""
+  },
+  {
+    "Name": "Export JSON",
+    "Description": ""
+  }
+]

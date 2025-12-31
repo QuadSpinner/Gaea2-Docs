@@ -7,6 +7,10 @@ window.SITE_TOC = [
     "title": "Install and License",
     "children": [
       {
+        "title": "Overview",
+        "url": "/install/install/"
+      },
+      {
         "title": "Install Gaea",
         "children": [
           {

@@ -1,0 +1,24 @@
+﻿[
+  {
+    "Name": "Curve Spline",
+    "Description": ""
+  },
+  {
+    "Name": "Mode",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Absolute",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Relative",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Fit Curve",
+    "Description": ""
+  }
+]

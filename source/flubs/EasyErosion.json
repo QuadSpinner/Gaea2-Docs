@@ -1,0 +1,114 @@
+﻿[
+  {
+    "Name": "Erosion",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Style",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Simple",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Ancient",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Ancient2",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Alpine",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Rocky",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Exposed",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Flows",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Flows2",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Flows3",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Strata",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Withered",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "SoftSoil",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "SoftSoil2",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Dessicated",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Thin",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Style Editor",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Influence",
+    "Description": ""
+  },
+  {
+    "Name": "Direction",
+    "Description": ""
+  },
+  {
+    "Name": "Bias Angle",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "X",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "N",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "E",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "S",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "W",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]

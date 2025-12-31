@@ -1,0 +1,16 @@
+﻿[
+  {
+    "Name": "Mode",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Height",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Histogram",
+        "Description": "<desc>"
+      }
+    ]
+  }
+]

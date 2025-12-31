@@ -1,0 +1,28 @@
+﻿[
+  {
+    "Name": "Clip Mode",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "AboveThreshold",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "BelowThreshold",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Threshold",
+    "Description": ""
+  },
+  {
+    "Name": "Softness",
+    "Description": ""
+  },
+  {
+    "Name": "Clipping",
+    "Description": ""
+  }
+]

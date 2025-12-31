@@ -4,49 +4,50 @@ title: User Interface
 uid: user-interface
 ---
 
-# User Interface
+# User Interface Overview
 
-# Primary Interface
+Gaea’s interface is built around a simple loop: **build your terrain in the graph**, **preview it in the viewport**, and **refine it in the property editor**.
 
-Gaea’s primary interface is built around a node graph workflow: you assemble terrains by connecting nodes, preview results at any stage, and finalize outputs through the build system.
+## Infinity Graph
 
-## Main Areas
+At the center of Gaea is the **Infinity Graph**—a node-based workspace where you create terrain logic by placing nodes and connecting them into a flow. The graph is designed to scale from small experiments to large production graphs without forcing a rigid structure.
 
-### Graph Canvas
+## Viewport
 
-The center workspace where you create and connect nodes.
+The **Viewport** is your primary preview area. It supports both 3D viewing (with an optional 2D viewport) so you can evaluate terrain shape, scale, and detail while you work.
 
-* **Nodes** represent terrain operations (shape, erosion, texturing, utilities).
-* **Connections** define data flow (heightfields, masks, color, etc.).
-* **Branching** lets you explore variants without duplicating entire graphs.
+The **Viewport Toolbar** provides quick controls for:
 
-### Node Library
+* **Preview resolution** (from 512 up to 4096)
+* **Lighting and atmosphere** (sun/light/atmosphere controls)
+* **Render styles** (for example realistic, clay, or data-visualization styles)
+* **Viewport toggles and tools**, including showing/hiding the 2D viewport and measurement/picking tools
 
-The catalog of available nodes, typically grouped by category.
+The viewport can be used **embedded** in the main layout or as a **floating window**. Navigation includes Orbit, Free/WASD, and Orthographic modes, along with controls for common viewport elements (grid/bounds/compass) and camera save/load.
 
-* Add nodes by searching, browsing categories, or using quick-add actions.
-* Common workflow: place a generator → shape/simulate → refine → output.
+## Property Editor
 
-### Properties Panel
+When you select a node, its settings appear in the **Properties panel (right side)**. Changes are applied immediately and reflected in the viewport, supporting rapid iteration.
 
-The node inspector where you edit parameters for the selected node.
+Properties may include:
 
-* Parameters are typically organized into logical groups.
-* Changing a value updates previews downstream (depending on preview/build settings).
-* Many nodes expose advanced controls for quality vs speed tradeoffs.
+* Numeric values and sliders
+* Toggles and dropdowns
+* Color controls
+* File pickers and related inputs
 
-### Viewport / Preview
+A **Property Editor Toolbar** provides node-focused actions such as replacing the selected node with a related one, managing state (revert/reset/save state), and enabling gizmos for nodes that support viewport manipulators.
 
-A live preview of the selected node’s output.
+## Modifiers
 
-* Switch between 2D and 3D views depending on context.
-* Use visualization modes (height, slope, masks, color) to debug your graph.
-* Navigation and display controls are available via the viewport toolbar.
+Gaea also supports a **Modifier Stack**, which lets you apply lightweight, post-process adjustments to a node’s output. Modifiers are intended for quick refinements without having to rebuild or restructure large parts of your graph.
 
-### Build and Output
+## Data View
 
-The finalization pipeline that produces exportable results.
+On the **right side of the Graph**, the **Data View** offers tabs for inspecting and navigating project information. The Terrain view includes a node tree organized by Tabs → Groups → Nodes, plus filters that help you locate specific nodes quickly (by type, export-marked, heavy nodes, error nodes, and more).
 
-* Configure resolution, range, tiling, file formats, and output targets.
-* Builds can be run locally or via build acceleration features (when configured).
-* Outputs are typically authored from dedicated output nodes or build settings.
+## Menus and Fast Access
+
+Gaea’s **Main Menu** follows standard application organization (File, Edit, Graph, Node, Preview, Project, Tools, Help), providing access to project management, graph tools, baking/build/export actions, and diagnostics.
+
+For faster navigation, the **Lazy Menu (F1)** provides a configurable, keyboard-first hub for jumping to key UI areas and tools (such as Graph, Viewport, Properties, Modifiers, Node Tree, Variables, and Build controls).

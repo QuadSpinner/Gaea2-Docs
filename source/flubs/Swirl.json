@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Name": "Size",
+    "Description": ""
+  },
+  {
+    "Name": "X",
+    "Description": "Horizontal placement of swirl."
+  },
+  {
+    "Name": "Y",
+    "Description": "Vertical placement of swirl."
+  }
+]

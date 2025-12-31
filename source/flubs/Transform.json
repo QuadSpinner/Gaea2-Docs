@@ -1,0 +1,132 @@
+﻿[
+  {
+    "Name": "Position",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Offset X",
+    "Description": ""
+  },
+  {
+    "Name": "Offset Y",
+    "Description": ""
+  },
+  {
+    "Name": "Offset Z",
+    "Description": ""
+  },
+  {
+    "Name": "Scale",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Uniform",
+    "Description": "This applies uniform scale."
+  },
+  {
+    "Name": "Scale",
+    "Description": ""
+  },
+  {
+    "Name": "Scale X",
+    "Description": "The non-uniform scale on the X axis."
+  },
+  {
+    "Name": "Scale Y",
+    "Description": "The non-uniform scale on the Y axis."
+  },
+  {
+    "Name": "Rotation",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Angle",
+    "Description": "The angle of rotation of the terrain."
+  },
+  {
+    "Name": "Settings",
+    "IsGroup": true, "Description": ""
+  },
+  {
+    "Name": "Blend Mode",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Blend",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Add",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Subtract",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Difference",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Multiply",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Screen",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Max",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Min",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Edges",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Thin",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Wide",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Soft",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Quality",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Draft",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Medium",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>"
+      }
+    ]
+  }
+]

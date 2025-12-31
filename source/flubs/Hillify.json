@@ -1,0 +1,38 @@
+﻿[
+  {
+    "Name": "Coverage",
+    "Description": ""
+  },
+  {
+    "Name": "Creep",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Moderate",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Aggressive",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Surface",
+    "Description": "",
+    "Flubs": [
+      {
+        "Name": "Smooth",
+        "Description": "<desc>"
+      },
+      {
+        "Name": "Eroded",
+        "Description": "<desc>"
+      }
+    ]
+  },
+  {
+    "Name": "Seed",
+    "Description": ""
+  }
+]
