@@ -2,6 +2,7 @@
 title: Underlays
 uid: underlays
 order: 03
+icon: layer-minus
 ---
 
 # Using Underlays <a href="#pin-node-as-underlay" id="pin-node-as-underlay"></a>

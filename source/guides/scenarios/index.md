@@ -1,7 +1,6 @@
 ---
-title: Guides
-uid: guides-home
-order: 01
+title: apps
+uid: scenarios
 ---
 
 # In this section

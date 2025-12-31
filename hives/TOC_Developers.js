@@ -1,6 +1,6 @@
 window.SITE_TOC = [
   {
-    "title": "Overview",
+    "title": "Developers",
     "url": "/developers/./"
   },
   {
@@ -22,7 +22,7 @@ window.SITE_TOC = [
     "title": "Scripting and Expressions",
     "children": [
       {
-        "title": "Overview",
+        "title": "Scripting and Expressions",
         "url": "/developers/scripting-and-expressions/"
       },
       {

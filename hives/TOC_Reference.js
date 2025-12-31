@@ -1,6 +1,6 @@
 window.SITE_TOC = [
   {
-    "title": "Overview",
+    "title": "Home",
     "url": "/reference/./"
   },
   {
@@ -842,7 +842,7 @@ window.SITE_TOC = [
     "title": "Gaea2Houdini",
     "children": [
       {
-        "title": "Overview",
+        "title": "Gaea2Houdini",
         "url": "/reference/gaea2houdini/"
       },
       {

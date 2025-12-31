@@ -18,13 +18,6 @@
   --page-header: rgba(0, 0, 0, 0.05);
 }
 
-body {
-  background-image: linear-gradient(0deg, rgb(19, 28, 31) -20%, rgb(14, 17, 18) 20%, rgb(24, 24, 27) 100%);
-  background-size: 200vh;
-  background-position: 0% 0%;
-  background-attachment: fixed;
-}
-
 html[data-bs-theme=dark],
 body.dark {
   --page-header: rgba(255, 255, 255, 0.05);
@@ -35,6 +28,13 @@ body.dark {
   --toc-border: rgba(255, 255, 255, 0.18);
   --toc-border-active: #00abd7;
   --toc-chevron: rgba(255, 255, 255, 0.55);
+}
+
+body {
+  background-image: linear-gradient(0deg, var(--prime) -600%, rgb(16, 16, 16) 40%, rgb(24, 24, 24) 100%);
+  background-size: 200vh;
+  background-position: 0% 0%;
+  background-attachment: fixed;
 }
 
 body[data-hive-shortname=Home] {
@@ -125,8 +125,10 @@ body[data-hive-shortname=History], .hive-nav .nav-item:nth-child(7) {
 }
 
 code {
-  background-color: #333;
-  border-radius: 1px;
+  background-color: #111;
+  border-radius: 3px;
+  border: 1px solid #333;
+  border-top-color: #aaa;
 }
 
 .card {
@@ -288,6 +290,11 @@ figure img {
   width: 70%;
 }
 
+#site-nav,
+#site-nav-2 {
+  --toc-link: #ccc;
+  --toc-link-active: var(--prime);
+}
 #site-nav h3.toc-section,
 #site-nav-2 h3.toc-section {
   margin: 12px 0 6px;
@@ -335,7 +342,7 @@ figure img {
 #site-nav ul li,
 #site-nav-2 ul li {
   list-style: none;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -416,7 +423,7 @@ figure img {
 }
 #site-nav ul li:has(> ul).active > ul > li:has(> a.active),
 #site-nav-2 ul li:has(> ul).active > ul > li:has(> a.active) {
-  border-left: 1px solid var(--toc-border-active);
+  border-left: 1px solid var(--prime);
 }
 #site-nav ul li:has(> ul).active > ul > li:has(> a.active) > a,
 #site-nav-2 ul li:has(> ul).active > ul > li:has(> a.active) > a {
@@ -502,6 +509,126 @@ figure img {
   font-weight: 500;
 }
 
+.note {
+  --prime: $c;
+  border: 1.5px solid #78ccf2;
+  color: #78ccf2;
+  background-color: color-mix(in srgb, #78ccf2 20%, #000 60%);
+  border-radius: 3px;
+  padding: 8px 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.note p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.note code {
+  background: #78ccf2;
+  color: #000;
+}
+
+.tip {
+  --prime: $c;
+  border: 1.5px solid #7dcb82;
+  color: #7dcb82;
+  background-color: color-mix(in srgb, #7dcb82 20%, #000 60%);
+  border-radius: 3px;
+  padding: 8px 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.tip p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.tip code {
+  background: #7dcb82;
+  color: #000;
+}
+
+.success {
+  --prime: $c;
+  border: 1.5px solid #669368;
+  color: #669368;
+  background-color: color-mix(in srgb, #669368 20%, #000 60%);
+  border-radius: 3px;
+  padding: 8px 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.success p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.success code {
+  background: #669368;
+  color: #000;
+}
+
+.warning {
+  --prime: $c;
+  border: 1.5px solid #d8b368;
+  color: #d8b368;
+  background-color: color-mix(in srgb, #d8b368 20%, #000 60%);
+  border-radius: 3px;
+  padding: 8px 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.warning p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.warning code {
+  background: #d8b368;
+  color: #000;
+}
+
+.danger {
+  --prime: $c;
+  border: 1.5px solid #e87a74;
+  color: #e87a74;
+  background-color: color-mix(in srgb, #e87a74 20%, #000 60%);
+  border-radius: 3px;
+  padding: 8px 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.danger p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.danger code {
+  background: #e87a74;
+  color: #000;
+}
+
+.info {
+  --prime: $c;
+  border: 1.5px solid #5fbe9d;
+  color: #5fbe9d;
+  background-color: color-mix(in srgb, #5fbe9d 20%, #000 60%);
+  border-radius: 3px;
+  padding: 8px 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.info p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.info code {
+  background: #5fbe9d;
+  color: #000;
+}
+
 a {
   color: var(--prime);
 }
@@ -558,120 +685,6 @@ a:hover {
   height: auto;
   display: block;
   text-align: center;
-}
-
-.note {
-  border: 1px solid #78ccf2;
-  color: #78ccf2;
-  background-color: rgba(120, 204, 242, 0.18);
-  border-radius: 8px;
-  padding: 18px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.note p {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 600;
-}
-.note code {
-  background: #78ccf2;
-  color: #000;
-}
-
-.tip {
-  border: 1px solid #7dcb82;
-  color: #7dcb82;
-  background-color: rgba(125, 203, 130, 0.18);
-  border-radius: 8px;
-  padding: 18px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.tip p {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 600;
-}
-.tip code {
-  background: #7dcb82;
-  color: #000;
-}
-
-.success {
-  border: 1px solid #669368;
-  color: #669368;
-  background-color: rgba(102, 147, 104, 0.18);
-  border-radius: 8px;
-  padding: 18px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.success p {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 600;
-}
-.success code {
-  background: #669368;
-  color: #000;
-}
-
-.warning {
-  border: 1px solid #d8b368;
-  color: #d8b368;
-  background-color: rgba(216, 179, 104, 0.18);
-  border-radius: 8px;
-  padding: 18px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.warning p {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 600;
-}
-.warning code {
-  background: #d8b368;
-  color: #000;
-}
-
-.danger {
-  border: 1px solid #e87a74;
-  color: #e87a74;
-  background-color: rgba(232, 122, 116, 0.18);
-  border-radius: 8px;
-  padding: 18px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.danger p {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 600;
-}
-.danger code {
-  background: #e87a74;
-  color: #000;
-}
-
-.info {
-  border: 1px solid #5fbe9d;
-  color: #5fbe9d;
-  background-color: rgba(95, 190, 157, 0.18);
-  border-radius: 8px;
-  padding: 18px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.info p {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 600;
-}
-.info code {
-  background: #5fbe9d;
-  color: #000;
 }
 
 .btnx {
@@ -865,6 +878,13 @@ div[data-popper-placement],
 #breadcrumbs {
   font-size: 10px;
   font-weight: 600;
+}
+
+.breadcrumb a {
+  color: var(--prime) !important;
+}
+.breadcrumb .active a {
+  color: #eee !important;
 }
 
 .top-bar {

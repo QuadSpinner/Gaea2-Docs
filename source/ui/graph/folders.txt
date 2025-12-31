@@ -1,2 +1,2 @@
-basic-workflow|Basic Workflow
-organization|Organizing Graphs
+basic-workflow|Basic Workflow|diagram-next
+organization|Organizing Graphs|frame

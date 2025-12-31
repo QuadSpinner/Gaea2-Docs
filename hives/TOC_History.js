@@ -1,6 +1,6 @@
 window.SITE_TOC = [
   {
-    "title": "Overview",
+    "title": "Gaea Release History",
     "url": "/history/./"
   },
   {

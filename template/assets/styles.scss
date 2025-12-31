@@ -2,6 +2,7 @@
 @use "_content.scss";
 @use "_toc.scss";
 @use "_pagenav.scss";
+@use "_uniqs.scss";
 
 @mixin phone {
   @media only screen and (max-width: 980px) {
@@ -79,56 +80,6 @@ a {
     display: block;
     text-align: center;
   }
-}
-
-@mixin callout($c, $a: 0.18) {
-  border: 1px solid $c;
-  color: $c;
-  background-color: rgba(red($c), green($c), blue($c), $a);
-  border-radius: 8px;
-  padding: 18px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-
-  p {
-    margin: 0;
-    font-size: 12px;
-    font-weight: 600;
-  }
-
-  code {
-    background: $c;
-    color: #000;
-  }
-}
-
-.note {
-  @include callout(#78ccf2);
-}
-
-// blue
-.tip {
-  @include callout(#7dcb82);
-}
-
-// green
-.success {
-  @include callout(#669368);
-}
-
-// lighter green
-.warning {
-  @include callout(#d8b368);
-}
-
-// amber
-.danger {
-  @include callout(#e87a74);
-}
-
-// red
-.info {
-  @include callout(#5fbe9d);
 }
 
 // red
@@ -381,6 +332,16 @@ div[data-popper-placement],
 #breadcrumbs {
   font-size: 10px;
   font-weight: 600;
+}
+
+.breadcrumb {
+  a {
+    color: var(--prime) !important;
+  }
+
+  .active a {
+    color: #eee !important;
+  }
 }
 
 .top-bar {

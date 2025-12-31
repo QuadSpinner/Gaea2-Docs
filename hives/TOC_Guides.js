@@ -1,79 +1,135 @@
 window.SITE_TOC = [
   {
-    "title": "Overview",
+    "title": "Guides",
     "url": "/guides/./"
   },
   {
-    "title": "Bridges",
+    "title": "Scenarios",
     "children": [
       {
         "title": "Overview",
-        "url": "/guides/bridges/"
+        "url": "/guides/scenarios/"
       },
       {
-        "title": "Gaea2Houdini",
-        "icon": "h",
+        "title": "Pro Tips",
+        "icon": "lightbulb",
         "children": [
           {
-            "title": "Overview",
-            "url": "/guides/bridges/gaea2houdini/"
+            "title": "Common Issues",
+            "url": "/guides/scenarios/helpful-info/"
           },
           {
-            "title": "Installing Gaea2Houdini",
-            "url": "/guides/bridges/gaea2houdini/installing-gaea2houdini.html"
+            "title": "File Format Gotchas",
+            "url": "/guides/scenarios/helpful-info/format-gotchas.html"
           },
           {
-            "title": "Preparing a Terrain File",
-            "url": "/guides/bridges/gaea2houdini/preparing-a-terrain-file.html"
+            "title": "Match or Correct Heights",
+            "url": "/guides/scenarios/helpful-info/match-height.html"
           },
           {
-            "title": "Gaea HDAs",
-            "url": "/guides/bridges/gaea2houdini/gaea-hdas.html"
+            "title": "Using Normalized Output",
+            "url": "/guides/scenarios/helpful-info/normalized-output.html"
           },
           {
-            "title": "Source Code",
-            "url": "/guides/bridges/gaea2houdini/source-code.html"
+            "title": "Avoid Roundtrips",
+            "url": "/guides/scenarios/helpful-info/roundtrip.html"
           }
         ]
       },
       {
-        "title": "Gaea2Unreal",
-        "icon": "u",
+        "title": "Conserve Memory",
+        "icon": "memory",
         "children": [
           {
-            "title": "Overview",
-            "url": "/guides/bridges/gaea2unreal/"
+            "title": "Bake and Offload Data",
+            "url": "/guides/scenarios/conserve-memory/bake-and-offload.html"
           },
           {
-            "title": "Installing Gaea2Unreal",
-            "url": "/guides/bridges/gaea2unreal/installing-gaea2unreal.html"
-          },
+            "title": "Separate a Project",
+            "url": "/guides/scenarios/conserve-memory/break-project.html"
+          }
+        ]
+      },
+      {
+        "title": "Working with Meshes",
+        "icon": "hexagon-nodes",
+        "children": [
           {
-            "title": "Importing Terrains",
-            "url": "/guides/bridges/gaea2unreal/importing-terrains.html"
-          },
-          {
-            "title": "Importing Weight Maps",
-            "url": "/guides/bridges/gaea2unreal/importing-weight-maps.html"
-          },
-          {
-            "title": "Source Code",
-            "url": "/guides/bridges/gaea2unreal/source-code.html"
+            "title": "Tangent-Space Normals and Warped Maps",
+            "url": "/guides/scenarios/meshes/tangent-space-normals-and-warped-maps.html"
           }
         ]
       }
     ]
   },
   {
-    "title": "Use Gaea In...",
+    "title": "Use in DCC Apps",
     "children": [
       {
-        "title": "Overview",
+        "title": "Universal Instructions",
         "url": "/guides/use-in/"
       },
       {
-        "title": "Software-specific Instructions",
-        "url": "/guides/use-in/software.html"
+        "title": "Bridges",
+        "icon": "bridge-water",
+        "children": [
+          {
+            "title": "Overview",
+            "url": "/guides/use-in/bridges/"
+          },
+          {
+            "title": "Gaea2Houdini",
+            "icon": "h",
+            "children": [
+              {
+                "title": "Gaea2Houdini",
+                "url": "/guides/use-in/bridges/gaea2houdini/"
+              },
+              {
+                "title": "Installing Gaea2Houdini",
+                "url": "/guides/use-in/bridges/gaea2houdini/installing-gaea2houdini.html"
+              },
+              {
+                "title": "Preparing a Terrain File",
+                "url": "/guides/use-in/bridges/gaea2houdini/preparing-a-terrain-file.html"
+              },
+              {
+                "title": "Gaea HDAs",
+                "url": "/guides/use-in/bridges/gaea2houdini/gaea-hdas.html"
+              },
+              {
+                "title": "Source Code",
+                "url": "/guides/use-in/bridges/gaea2houdini/source-code.html"
+              }
+            ]
+          },
+          {
+            "title": "Gaea2Unreal",
+            "icon": "u",
+            "children": [
+              {
+                "title": "Gaea2Unreal",
+                "url": "/guides/use-in/bridges/gaea2unreal/"
+              },
+              {
+                "title": "Installing Gaea2Unreal",
+                "url": "/guides/use-in/bridges/gaea2unreal/installing-gaea2unreal.html"
+              },
+              {
+                "title": "Importing Terrains",
+                "url": "/guides/use-in/bridges/gaea2unreal/importing-terrains.html"
+              },
+              {
+                "title": "Importing Weight Maps",
+                "url": "/guides/use-in/bridges/gaea2unreal/importing-weight-maps.html"
+              },
+              {
+                "title": "Source Code",
+                "url": "/guides/use-in/bridges/gaea2unreal/source-code.html"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Apps",
@@ -96,14 +152,6 @@ window.SITE_TOC = [
             "url": "/guides/use-in/apps/cinema4d.html"
           },
           {
-            "title": "CryEngine",
-            "url": "/guides/use-in/apps/cryengine.html"
-          },
-          {
-            "title": "Godot",
-            "url": "/guides/use-in/apps/godot.html"
-          },
-          {
             "title": "Houdini",
             "url": "/guides/use-in/apps/houdini.html"
           },
@@ -112,38 +160,38 @@ window.SITE_TOC = [
             "url": "/guides/use-in/apps/maya.html"
           },
           {
-            "title": "Unigine",
-            "url": "/guides/use-in/apps/unigine.html"
-          },
-          {
-            "title": "Unity",
-            "url": "/guides/use-in/apps/unity.html"
-          },
-          {
             "title": "ZBrush",
             "url": "/guides/use-in/apps/zbrush.html"
-          },
-          {
-            "title": "Unreal",
-            "url": "/guides/use-in/apps/unreal.html"
           }
         ]
       },
       {
-        "title": "Pro Tips",
-        "icon": "lightbulb",
+        "title": "Engines",
+        "icon": "gamepad",
         "children": [
           {
             "title": "Overview",
-            "url": "/guides/use-in/helpful-info/"
+            "url": "/guides/use-in/engines/"
           },
           {
-            "title": "Tangent-Space Normals and Warped Maps",
-            "url": "/guides/use-in/helpful-info/tangent-space-normals-and-warped-maps.html"
+            "title": "CryEngine",
+            "url": "/guides/use-in/engines/cryengine.html"
           },
           {
-            "title": "Roundtrips",
-            "url": "/guides/use-in/helpful-info/roundtrip.html"
+            "title": "Godot",
+            "url": "/guides/use-in/engines/godot.html"
+          },
+          {
+            "title": "Unigine",
+            "url": "/guides/use-in/engines/unigine.html"
+          },
+          {
+            "title": "Unity",
+            "url": "/guides/use-in/engines/unity.html"
+          },
+          {
+            "title": "Unreal",
+            "url": "/guides/use-in/engines/unreal.html"
           }
         ]
       }

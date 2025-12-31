@@ -2,6 +2,7 @@
 title: Portals and Chokepoints
 uid: portals-and-chokepoints
 order: 06
+icon: person-to-portal
 ---
 
 # Portals and Chokepoints

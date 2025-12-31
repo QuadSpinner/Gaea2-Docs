@@ -2,6 +2,7 @@
 title: Lock Preview
 uid: lock-preview
 order: 02
+icon: anchor-lock
 ---
 
 # Lock Preview

@@ -1,7 +1,8 @@
 graph|Graph|diagram-project
-property-editor|Property Editor
-viewport|Viewport
-data-editor|Data Editor
-menus-and-toolbars|Menus and Toolbars
-navigation|Navigation
-options|Options
+property-editor|Property Editor|sidebar-flip
+viewport|Viewport|camera-retro
+data-editor|Data Editor|pen-field
+menus-and-toolbars|Menus and Toolbars|bars-progress
+navigation|Navigation|compass
+options|Options|gear
+build-options|Build Options|gear-complex

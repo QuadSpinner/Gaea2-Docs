@@ -1,6 +1,6 @@
 window.SITE_TOC = [
   {
-    "title": "Overview",
+    "title": "User Interface",
     "url": "/ui/./"
   },
   {
@@ -15,7 +15,7 @@ window.SITE_TOC = [
         "icon": "diagram-project",
         "children": [
           {
-            "title": "Overview",
+            "title": "The Graph",
             "url": "/ui/interface/graph/"
           },
           {
@@ -30,9 +30,10 @@ window.SITE_TOC = [
       },
       {
         "title": "Property Editor",
+        "icon": "sidebar-flip",
         "children": [
           {
-            "title": "Overview",
+            "title": "Property Editor",
             "url": "/ui/interface/property-editor/"
           },
           {
@@ -51,9 +52,10 @@ window.SITE_TOC = [
       },
       {
         "title": "Viewport",
+        "icon": "camera-retro",
         "children": [
           {
-            "title": "Overview",
+            "title": "Viewport",
             "url": "/ui/interface/viewport/"
           },
           {
@@ -72,9 +74,10 @@ window.SITE_TOC = [
       },
       {
         "title": "Data Editor",
+        "icon": "pen-field",
         "children": [
           {
-            "title": "Overview",
+            "title": "Data Editor",
             "url": "/ui/interface/data-editor/"
           },
           {
@@ -93,9 +96,10 @@ window.SITE_TOC = [
       },
       {
         "title": "Menus and Toolbars",
+        "icon": "bars-progress",
         "children": [
           {
-            "title": "Overview",
+            "title": "Menus and Toolbars",
             "url": "/ui/interface/menus-and-toolbars/"
           },
           {
@@ -126,6 +130,7 @@ window.SITE_TOC = [
       },
       {
         "title": "Navigation",
+        "icon": "compass",
         "children": [
           {
             "title": "Overview",
@@ -143,9 +148,10 @@ window.SITE_TOC = [
       },
       {
         "title": "Options",
+        "icon": "gear",
         "children": [
           {
-            "title": "Overview",
+            "title": "Options",
             "url": "/ui/interface/options/"
           },
           {
@@ -204,9 +210,10 @@ window.SITE_TOC = [
       },
       {
         "title": "Build Options",
+        "icon": "gear-complex",
         "children": [
           {
-            "title": "Overview",
+            "title": "Build Options",
             "url": "/ui/interface/build-options/"
           },
           {
@@ -262,6 +269,7 @@ window.SITE_TOC = [
       },
       {
         "title": "Basic Workflow",
+        "icon": "diagram-next",
         "children": [
           {
             "title": "Overview",
@@ -269,24 +277,29 @@ window.SITE_TOC = [
           },
           {
             "title": "Graph Conveniences",
-            "url": "/ui/graph/basic-workflow/graph-conveniences.html"
+            "url": "/ui/graph/basic-workflow/graph-conveniences.html",
+            "icon": "handshake"
           },
           {
             "title": "Lock Preview",
-            "url": "/ui/graph/basic-workflow/lock-preview.html"
+            "url": "/ui/graph/basic-workflow/lock-preview.html",
+            "icon": "anchor-lock"
           },
           {
             "title": "Underlays",
-            "url": "/ui/graph/basic-workflow/underlays.html"
+            "url": "/ui/graph/basic-workflow/underlays.html",
+            "icon": "layer-minus"
           },
           {
             "title": "Suspending Engine",
-            "url": "/ui/graph/basic-workflow/suspending-engine.html"
+            "url": "/ui/graph/basic-workflow/suspending-engine.html",
+            "icon": "play-pause"
           }
         ]
       },
       {
         "title": "Organizing Graphs",
+        "icon": "frame",
         "children": [
           {
             "title": "Overview",
@@ -294,19 +307,23 @@ window.SITE_TOC = [
           },
           {
             "title": "Portals and Chokepoints",
-            "url": "/ui/graph/organization/portals-and-chokepoints.html"
+            "url": "/ui/graph/organization/portals-and-chokepoints.html",
+            "icon": "person-to-portal"
           },
           {
             "title": "Organizing with Tabs",
-            "url": "/ui/graph/organization/organizing-with-tabs.html"
+            "url": "/ui/graph/organization/organizing-with-tabs.html",
+            "icon": "rectangle-history"
           },
           {
             "title": "Annotations",
-            "url": "/ui/graph/organization/annotations.html"
+            "url": "/ui/graph/organization/annotations.html",
+            "icon": "note-sticky"
           },
           {
             "title": "Groups",
-            "url": "/ui/graph/organization/groups.html"
+            "url": "/ui/graph/organization/groups.html",
+            "icon": "object-group"
           }
         ]
       }

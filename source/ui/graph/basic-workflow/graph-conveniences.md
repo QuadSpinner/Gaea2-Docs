@@ -2,6 +2,7 @@
 title: Graph Conveniences
 uid: graph-conveniences
 order: 01
+icon: handshake
 ---
 
 # Graph Conveniences

@@ -1,6 +1,6 @@
 window.SITE_TOC = [
   {
-    "title": "Overview",
+    "title": "Home",
     "url": "/install/./"
   },
   {
@@ -14,7 +14,7 @@ window.SITE_TOC = [
         "title": "Install Gaea",
         "children": [
           {
-            "title": "Overview",
+            "title": "Install Gaea",
             "url": "/install/install/install-gaea/"
           },
           {
@@ -53,7 +53,7 @@ window.SITE_TOC = [
         "title": "License Management",
         "children": [
           {
-            "title": "Overview",
+            "title": "License Management",
             "url": "/install/install/license-management/"
           },
           {
@@ -84,7 +84,7 @@ window.SITE_TOC = [
     "title": "For Gaea 1 Users",
     "children": [
       {
-        "title": "Overview",
+        "title": "For Gaea 1 Users",
         "url": "/install/for-gaea-1-users/"
       },
       {

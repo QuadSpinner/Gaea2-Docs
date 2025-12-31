@@ -20,14 +20,6 @@
   --page-header: rgba(0, 0, 0, 0.05);
 }
 
-body {
-
-  background-image: linear-gradient(0deg, rgb(19, 28, 31) -20%, rgba(14, 17, 18, 1) 20%, rgba(24, 24, 27, 1) 100%);
-  background-size: 200vh;
-  background-position: 0% 0%;
-  background-attachment: fixed;
-} 
-
 html[data-bs-theme="dark"],
 body.dark {
   // Dark (tuned for contrast on dark backgrounds)
@@ -40,6 +32,14 @@ body.dark {
   --toc-border-active: #00abd7;
   --toc-chevron: rgba(255, 255, 255, 0.55);
 }
+
+body {
+  background-image: linear-gradient(0deg, var(--prime) -600%, rgba(16, 16, 16, 1) 40%, rgba(24, 24, 24, 1) 100%);
+  background-size: 200vh;
+  background-position: 0% 0%;
+  background-attachment: fixed;
+} 
+
 
 body[data-hive-shortname="Home"]{ --prime: #ffcc00; }
 body[data-hive-shortname="Install"],.hive-nav .nav-item:nth-child(1){ --prime: #4e99a6; }

@@ -1,2 +1,2 @@
-bridges|Bridges
-use-in|Use Gaea In...
+scenarios|Scenarios
+use-in|Use in DCC Apps
