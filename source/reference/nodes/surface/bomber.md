@@ -11,7 +11,7 @@ order: 01
 
 The Bomber node takes an input heightfield and "stamps" or bombs it across the entire surface of the terrain using the randomization properties you set.
 
-If your terrain has a hard edge, you can turn on Fade Edges. Or for more precise control, try using the [edge](../utility/edge.html) or [clip](../modify/clip.html)before applying the Bomber node.
+If your terrain has a hard edge, you can turn on Fade Edges. Or for more precise control, try using the @edge or @clip before applying the Bomber node.
 
 ## Properties
 

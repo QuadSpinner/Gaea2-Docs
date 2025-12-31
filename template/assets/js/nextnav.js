@@ -98,6 +98,44 @@
         if (prevBtn) box.appendChild(prevBtn);
         if (nextBtn) box.appendChild(nextBtn);
 
-        if(!prevBtn && !nextBtn) box.outerHTML = "";
+        if (!prevBtn && !nextBtn) box.outerHTML = "";
     });
+})();
+
+(() => {
+    function isTypingTarget(el) {
+        if (!el) return false;
+        const tag = (el.tagName || "").toUpperCase();
+        return tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || el.isContentEditable;
+    }
+
+    async function copySlug() {
+        const slug = document.body?.dataset?.slug;
+        if (!slug) return;
+
+        const text = "@" + slug;
+
+        try {
+            await navigator.clipboard.writeText(text);
+        } catch {
+            const ta = document.createElement("textarea");
+            ta.value = text;
+            ta.setAttribute("readonly", "");
+            ta.style.position = "fixed";
+            ta.style.left = "-9999px";
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand("copy");
+            ta.remove();
+        }
+    }
+
+
+    window.addEventListener("keydown", (e) => {
+        if (isTypingTarget(e.target)) return;
+        if (e.ctrlKey && (e.key === "F2" || e.code === "F2")) {
+            e.preventDefault();
+            copySlug();
+        }
+    }, { capture: true });
 })();

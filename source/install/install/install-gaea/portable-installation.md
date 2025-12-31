@@ -67,5 +67,5 @@ Gaea is now installed and you are ready to create @terrain-basics!
 
 
 
-Facing issues? See [troubleshooting](troubleshooting.html)
+Facing issues? See @troubleshooting
 

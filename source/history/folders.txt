@@ -1,0 +1,4 @@
+gaea-2.2|Gaea 2.2
+gaea-2.1|Gaea 2.1
+gaea-2.0|Gaea 2.0
+early-access|Early Access

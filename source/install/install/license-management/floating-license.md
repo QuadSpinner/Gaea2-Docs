@@ -10,7 +10,7 @@ order: 04
 
 ### Installing a License
 
-Activating a Floating License on a workstation is the same as loading a user key for a standard [activation](activation.html). The only difference is your key will have a `FL-` prefix. Just enter the key in the Activation dialog, or via `Help > Manage License`, or `Help > About > Load License`.
+Activating a Floating License on a workstation is the same as loading a user key for a standard @activation. The only difference is your key will have a `FL-` prefix. Just enter the key in the Activation dialog, or via `Help > Manage License`, or `Help > About > Load License`.
 
 :::info
 ## File Based Licenses

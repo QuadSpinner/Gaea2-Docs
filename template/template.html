@@ -19,26 +19,26 @@
     "@context": "https://schema.org",
     "@graph": [
         {
-        "@type": "TechArticle",
-        "@id": "https://docs.gaea.app%%HREF%%#article",
-        "headline": "%%TITLE%% - Gaea Documentation",
-        "description": "Gaea Documentation",
-        "url": "https://docs.gaea.app%%HREF%%",
-        "isPartOf": {
-            "@type": "WebSite",
-            "@id": "https://docs.gaea.app/#website",
-            "name": "Gaea Docs",
-            "url": "https://docs.gaea.app"
-        }
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app%%HREF%%#article",
+            "headline": "%%TITLE%% - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app%%HREF%%",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
         },
         {
-        "@type": "BreadcrumbList",
-        "@id": "https://docs.gaea.app%%HREF%%#breadcrumbs",
-        "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
-            { "@type": "ListItem", "position": 2, "name": "%%HIVE%%", "item": "https://docs.gaea.app%%HIVEPATH%%" },
-            { "@type": "ListItem", "position": 3, "name": "%%TITLE%%", "item": "https://docs.gaea.app%%HREF%%" }
-        ]
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app%%HREF%%#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "%%HIVE%%", "item": "https://docs.gaea.app%%HIVEPATH%%" },
+                { "@type": "ListItem", "position": 3, "name": "%%TITLE%%", "item": "https://docs.gaea.app%%HREF%%" }
+            ]
         }
     ]
     }
@@ -97,7 +97,13 @@
                     <nav id="site-nav"></nav>
                 </div>
                 <div class="col">
-                    <div class="d-block d-lg-none">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>%%HIVE%%</h3>
+                        <h2>%%TITLE%%</h2>
+                        <hr>
+                    </div>
+                    <div class="d-block d-lg-none d-print-none">
                         <a data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
                             <img src="/assets/svg/global-toc.svg" alt="">
                             Contents

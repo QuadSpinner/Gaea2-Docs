@@ -20,7 +20,7 @@ Choose the **Daily Build** to install the version with the Gaea2Houdini plugin, 
 
 ## Install Gaea
 
-Before using Gaea2Houdini, make sure Gaea 2.0 has been [installed ](/getting-started/install-gaea/)and [activated](/getting-started/license-management/activation.md). Gaea2Houdini requires a `Professional` or `Enterprise` license.
+Before using Gaea2Houdini, make sure Gaea 2.0 has been [installed](@install-gaea) and [activated](@activation). Gaea2Houdini requires a `Professional` or `Enterprise` license.
 
 :::danger
 It is important to install Gaea as a @regular-installation otherwise the communication between Gaea and Houdini may not work. 

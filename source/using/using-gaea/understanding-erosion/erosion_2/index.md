@@ -75,7 +75,7 @@ Coarse sediments produce the most dramatic deposits—such as scree, debris pile
 Sedimentation and Downcutting are deeply linked as Sedimentation can be a direct product of Downcutting. Experiment with your terrain to see how downcutting can become a force multiplier for your sedimentation.
 :::
 
-Bed Load and Coarse Sediments also create wonderful shapes that is favorable for adding Scree, Debris simulations, or [ColorErosion](/colorizing-and-textures/colorerosion.md).
+Bed Load and Coarse Sediments also create wonderful shapes that is favorable for adding Scree, Debris simulations, or @colorerosion.
 
 ### Shape Control
 
@@ -93,7 +93,7 @@ This processing is low-level Thermal erosion wrapped within Hydraulic erosion si
 
 In conjunction with Shape, the Shape Sharpness control lets you shape the terrain to have more concave, sharp ridges. This is a great way to get the right kind of look for your terrain.
 
-The Shape Detail Scale control is very important when it comes to surface structure. This control lets you choose how much concentric smaller details are simulated - from the largest ravines to the finest gullies within them. This is a very useful tool for reducing unnecessary detail - especially for distant terrains or if you plan add further detail using [Surface nodes](/crafting-the-surface/surface-nodes.md).
+The Shape Detail Scale control is very important when it comes to surface structure. This control lets you choose how much concentric smaller details are simulated - from the largest ravines to the finest gullies within them. This is a very useful tool for reducing unnecessary detail - especially for distant terrains or if you plan add further detail using @surface-nodes.
 
 ![](/.data/assets/Gaea_-_Wasteland-001.terrain_01-32-19-AM---Copy.jpg)
 

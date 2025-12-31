@@ -19,5 +19,5 @@ This node does not have any properties or controls.
 :::info
 For more convenient usage, try the Autolevel via Modifiers. See [Using Modifiers](/using-gaea/managing-graphs/using-modifiers)
 
-Or you can try the [adjust](adjust.html) node which is an easier to use node and provides additional functionality.
+Or you can try the @adjust node which is an easier to use node and provides additional functionality.
 :::

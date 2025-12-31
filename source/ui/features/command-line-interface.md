@@ -11,7 +11,7 @@ Gaea provides two command line interfaces. One for the UI and for the Build Swar
 
 ## Gaea.exe
 
-You can use the CLI for [activation](license-management/activation.html) and [deactivation](license-management/deactivation.html) as well as setting the Proxy, or enforcing @cpu-only-mode or enabling Verbose logging for detailed diagnostics.
+You can use the CLI for @activation and @deactivation as well as setting the Proxy, or enforcing @cpu-only-mode or enabling Verbose logging for detailed diagnostics.
 
 ```sh
 USAGE: 
