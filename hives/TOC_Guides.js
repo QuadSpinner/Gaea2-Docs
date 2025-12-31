@@ -4,37 +4,7 @@ window.SITE_TOC = [
     "url": "/guides/./"
   },
   {
-    "title": "General Usage",
-    "children": [
-      {
-        "title": "Overview",
-        "url": "/guides/general/"
-      },
-      {
-        "title": "Common Issues",
-        "url": "/guides/general/common-issues.html"
-      },
-      {
-        "title": "Universal Instructions",
-        "url": "/guides/general/universal-instructions.html"
-      }
-    ]
-  },
-  {
-    "title": "By Application",
-    "children": [
-      {
-        "title": "Overview",
-        "url": "/guides/apps/"
-      },
-      {
-        "title": "Unreal",
-        "url": "/guides/apps/unreal.html"
-      }
-    ]
-  },
-  {
-    "title": "Plugins",
+    "title": "Bridges",
     "children": [
       {
         "title": "Gaea2Houdini",
@@ -42,23 +12,23 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Overview",
-            "url": "/guides/plugins/gaea2houdini/"
+            "url": "/guides/bridges/gaea2houdini/"
           },
           {
             "title": "Installing Gaea2Houdini",
-            "url": "/guides/plugins/gaea2houdini/installing-gaea2houdini.html"
+            "url": "/guides/bridges/gaea2houdini/installing-gaea2houdini.html"
           },
           {
             "title": "Preparing a Terrain File",
-            "url": "/guides/plugins/gaea2houdini/preparing-a-terrain-file.html"
+            "url": "/guides/bridges/gaea2houdini/preparing-a-terrain-file.html"
           },
           {
             "title": "Gaea HDAs",
-            "url": "/guides/plugins/gaea2houdini/gaea-hdas.html"
+            "url": "/guides/bridges/gaea2houdini/gaea-hdas.html"
           },
           {
             "title": "Source Code",
-            "url": "/guides/plugins/gaea2houdini/source-code.html"
+            "url": "/guides/bridges/gaea2houdini/source-code.html"
           }
         ]
       },
@@ -68,23 +38,104 @@ window.SITE_TOC = [
         "children": [
           {
             "title": "Overview",
-            "url": "/guides/plugins/gaea2unreal/"
+            "url": "/guides/bridges/gaea2unreal/"
           },
           {
             "title": "Installing Gaea2Unreal",
-            "url": "/guides/plugins/gaea2unreal/installing-gaea2unreal.html"
+            "url": "/guides/bridges/gaea2unreal/installing-gaea2unreal.html"
           },
           {
             "title": "Importing Terrains",
-            "url": "/guides/plugins/gaea2unreal/importing-terrains.html"
+            "url": "/guides/bridges/gaea2unreal/importing-terrains.html"
           },
           {
             "title": "Importing Weight Maps",
-            "url": "/guides/plugins/gaea2unreal/importing-weight-maps.html"
+            "url": "/guides/bridges/gaea2unreal/importing-weight-maps.html"
           },
           {
             "title": "Source Code",
-            "url": "/guides/plugins/gaea2unreal/source-code.html"
+            "url": "/guides/bridges/gaea2unreal/source-code.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Use Gaea In...",
+    "children": [
+      {
+        "title": "Overview",
+        "url": "/guides/use-in/"
+      },
+      {
+        "title": "Software-specific Instructions",
+        "url": "/guides/use-in/software.html"
+      },
+      {
+        "title": "Apps",
+        "icon": "rocket-launch",
+        "children": [
+          {
+            "title": "3dsmax",
+            "url": "/guides/use-in/apps/3dsmax.html"
+          },
+          {
+            "title": "Blender",
+            "url": "/guides/use-in/apps/blender.html"
+          },
+          {
+            "title": "Cinema4D",
+            "url": "/guides/use-in/apps/cinema4d.html"
+          },
+          {
+            "title": "CryEngine",
+            "url": "/guides/use-in/apps/cryengine.html"
+          },
+          {
+            "title": "Godot",
+            "url": "/guides/use-in/apps/godot.html"
+          },
+          {
+            "title": "Houdini",
+            "url": "/guides/use-in/apps/houdini.html"
+          },
+          {
+            "title": "Maya",
+            "url": "/guides/use-in/apps/maya.html"
+          },
+          {
+            "title": "Unigine",
+            "url": "/guides/use-in/apps/unigine.html"
+          },
+          {
+            "title": "Unity",
+            "url": "/guides/use-in/apps/unity.html"
+          },
+          {
+            "title": "ZBrush",
+            "url": "/guides/use-in/apps/zbrush.html"
+          },
+          {
+            "title": "Unreal",
+            "url": "/guides/use-in/apps/unreal.html"
+          }
+        ]
+      },
+      {
+        "title": "Pro Tips",
+        "icon": "lightbulb",
+        "children": [
+          {
+            "title": "Overview",
+            "url": "/guides/use-in/helpful-info/"
+          },
+          {
+            "title": "Tangent-Space Normals and Warped Maps",
+            "url": "/guides/use-in/helpful-info/tangent-space-normals-and-warped-maps.html"
+          },
+          {
+            "title": "Roundtrips",
+            "url": "/guides/use-in/helpful-info/roundtrip.html"
           }
         ]
       }

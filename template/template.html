@@ -1,22 +1,60 @@
 <!doctype html>
-<html lang="en" data-bs-theme="light" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>%%TITLE%% - QuadSpinner Gaea</title>
+    <title>%%TITLE%% - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app%%HREF%%">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
-    
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="%%TITLE%% - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app%%HREF%%">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+        "@type": "TechArticle",
+        "@id": "https://docs.gaea.app%%HREF%%#article",
+        "headline": "%%TITLE%% - Gaea Documentation",
+        "description": "Gaea Documentation",
+        "url": "https://docs.gaea.app%%HREF%%",
+        "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://docs.gaea.app/#website",
+            "name": "Gaea Docs",
+            "url": "https://docs.gaea.app"
+        }
+        },
+        {
+        "@type": "BreadcrumbList",
+        "@id": "https://docs.gaea.app%%HREF%%#breadcrumbs",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+            { "@type": "ListItem", "position": 2, "name": "%%HIVE%%", "item": "https://docs.gaea.app%%HIVEPATH%%" },
+            { "@type": "ListItem", "position": 3, "name": "%%TITLE%%", "item": "https://docs.gaea.app%%HREF%%" }
+        ]
+        }
+    ]
+    }
+    </script>
     <link rel="stylesheet" href="/assets/site.css" />
     <link rel="stylesheet" href="/assets/themes.css" />
     <link rel="stylesheet" href="/assets/styles.css" />
     <link rel="stylesheet" href="/assets/glow.css" />
     <link rel="stylesheet" href="/assets/print.css" />
+
     <script src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body data-hive="%%HIVE%%" data-hive-shortname="%%SHORTNAME%%" data-slug="%%SLUG%%">
-    <div class="container-fluid" id="expanding-container">
+    <div class="container-xxl" id="expanding-container">
         <header class="mt-5">
             <div class="row glow head-block">
                 <div class="col-lg-2 col-sm-12">
@@ -32,17 +70,7 @@
                             <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
                         </div>
                     </div>
-                </div>
-                <div class="col-1 justify-content-end d-print-none text-right">
-                    <div class="nav-item">
-                        <a href="#" class="nav-link px-0 hide-theme-dark" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Enable dark mode" data-bs-original-title="Enable dark mode">
-                            <img src="/assets/svg/moon.svg" alt="">
-                        </a>
-                        <a href="#" class="nav-link px-0 hide-theme-light" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Enable light mode" data-bs-original-title="Enable light mode">
-                            <img src="/assets/svg/sun.svg" alt="">
-                        </a>
-                    </div>
-                </div>
+                </div>                
             </div>
 
             <div class="row">
@@ -64,7 +92,6 @@
         </header>
 
         <div class="page-wrapper">
-
             <div class="row">
                 <div class="col-2 d-none d-lg-block" id="nav-holder">
                     <nav id="site-nav"></nav>
@@ -77,10 +104,8 @@
                         </a>
                     </div>
                     <div class="row align-top">
-
-                        <div id="content-holder" class="col col-lg-6 px-5">
+                        <div id="content-holder" class="col px-5">
                             <main id="contents">%%CONTENT%%</main>
-
                             <div id="next-nav" class="d-flex justify-content-between">
                                 <a href="" id="btn-prev" class="btn btn-small"></a>
                                 <a href="" id="btn-next" class="btn btn-small"></a>
@@ -102,9 +127,6 @@
                                         <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
                                     </div>
                                 </div>
-                                <a href="#" id="cmd-expand" class="d-flex btn btnx mx-5" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Toggle Layout Expansion" data-bs-original-title="Toggle Layout Expansion">
-                                    <img src="/assets/svg/expand.svg" alt="">
-                                </a>
                             </div>
                             <br>
                             <div class="d-block sticky-xxl-top">
@@ -133,7 +155,7 @@
                     <ul class="list-inline list-inline-dots mb-0">
                         <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
                         <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
-                    </ul>     
+                    </ul>
                     <br>
                     <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
                 </div>

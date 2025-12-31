@@ -1,3 +1,2 @@
-general|General Usage
-apps|By Application
-plugins|Plugins
+bridges|Bridges
+use-in|Use Gaea In...

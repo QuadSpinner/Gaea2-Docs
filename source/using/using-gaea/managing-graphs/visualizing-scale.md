@@ -77,7 +77,7 @@ You can use the Route node's toggle to quickly show and hide the version with th
 <div>![Route toggled on.](/.data/assets/image%20(13).png) ![Route toggled off.](/.data/assets/image%20(14).png)</div>
 
 :::info
-Make the Transform's output into a [Portal](portals-and-chokepoints.md) and reuse it wherever needed in the graph without cluttering the workspace.
+Make the Transform's output into a @portals-and-chokepoints and reuse it wherever needed in the graph without cluttering the workspace.
 :::
 
 ### Creating a Custom Reference Object

@@ -1,7 +1,7 @@
 ---
 title: Managing Regions
 uid: managing-regions
-order: 01
+order: 03
 ---
 
 # Managing Regions

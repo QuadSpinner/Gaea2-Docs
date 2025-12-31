@@ -22,7 +22,7 @@ Landscapes help create the "ground", while the Primitives help create standalone
 
 ![](/.data/assets/Gaea_2.0_09-49-36-PM.png)
 
-Both Landscapes and Primitives will have some level of natural processing built-in, such as Erosion, and will mostly have the option to turn it off as well. However, these are meant only as a starting point. You will need to add proper @erosion and possibly other @surface-nodes.md to turn it into a more realistic environment.
+Both Landscapes and Primitives will have some level of natural processing built-in, such as Erosion, and will mostly have the option to turn it off as well. However, these are meant only as a starting point. You will need to add proper @erosion and possibly other @surface-nodes to turn it into a more realistic environment.
 
 ## Basic Primitives
 

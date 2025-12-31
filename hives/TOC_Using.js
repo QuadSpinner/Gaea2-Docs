@@ -259,6 +259,10 @@ window.SITE_TOC = [
             "url": "/using/using-gaea/build-and-export/"
           },
           {
+            "title": "Mesh Exports",
+            "url": "/using/using-gaea/build-and-export/mesh-exports.html"
+          },
+          {
             "title": "Exporting Nodes",
             "url": "/using/using-gaea/build-and-export/exporting-nodes.html"
           },
@@ -267,59 +271,15 @@ window.SITE_TOC = [
             "url": "/using/using-gaea/build-and-export/tiled-builds.html"
           },
           {
-            "title": "Using Regions",
-            "url": "/using/using-gaea/build-and-export/using-regions.html"
-          },
-          {
-            "title": "Profiles and Batch Builds",
-            "url": "/using/using-gaea/build-and-export/profiles-and-batch-builds.html"
-          },
-          {
-            "title": "Batch Builds",
-            "url": "/using/using-gaea/build-and-export/batch-builds.html"
-          },
-          {
-            "title": "Build Options",
-            "icon": "sparkles",
+            "title": "Regions",
             "children": [
               {
                 "title": "Overview",
-                "url": "/using/using-gaea/build-and-export/build-options/"
+                "url": "/using/using-gaea/build-and-export/regions/"
               },
               {
                 "title": "Managing Regions",
-                "url": "/using/using-gaea/build-and-export/build-options/managing-regions.html"
-              }
-            ]
-          },
-          {
-            "title": "Mesh Exports",
-            "icon": "sparkles",
-            "children": [
-              {
-                "title": "Overview",
-                "url": "/using/using-gaea/build-and-export/mesh-exports/"
-              },
-              {
-                "title": "Tangent-Space Normals and Warped Maps",
-                "url": "/using/using-gaea/build-and-export/mesh-exports/tangent-space-normals-and-warped-maps.html"
-              }
-            ]
-          },
-          {
-            "title": "Application Specific Export Nodes",
-            "children": [
-              {
-                "title": "Overview",
-                "url": "/using/using-gaea/build-and-export/application-specific-export-nodes/"
-              },
-              {
-                "title": "Unreal Node",
-                "url": "/using/using-gaea/build-and-export/application-specific-export-nodes/unreal-node.html"
-              },
-              {
-                "title": "Unity Node",
-                "url": "/using/using-gaea/build-and-export/application-specific-export-nodes/unity-node.html"
+                "url": "/using/using-gaea/build-and-export/regions/managing-regions.html"
               }
             ]
           }
@@ -345,6 +305,10 @@ window.SITE_TOC = [
           {
             "title": "Build Reports",
             "url": "/using/advanced-topics/build-swarm/build-reports.html"
+          },
+          {
+            "title": "Profiles and Batch Builds",
+            "url": "/using/advanced-topics/build-swarm/profiles-and-batch-builds.html"
           }
         ]
       },

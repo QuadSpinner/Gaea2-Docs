@@ -192,6 +192,55 @@ window.SITE_TOC = [
             "url": "/ui/interface/options/experimental.html"
           }
         ]
+      },
+      {
+        "title": "Build Options",
+        "children": [
+          {
+            "title": "Overview",
+            "url": "/ui/interface/build-options/"
+          },
+          {
+            "title": "Resolution",
+            "url": "/ui/interface/build-options/resolution.html"
+          },
+          {
+            "title": "Build",
+            "url": "/ui/interface/build-options/build.html"
+          },
+          {
+            "title": "Build Path Tokens",
+            "url": "/ui/interface/build-options/build-tokens.html"
+          },
+          {
+            "title": "Tiles",
+            "url": "/ui/interface/build-options/tiles.html"
+          },
+          {
+            "title": "Nodes",
+            "url": "/ui/interface/build-options/nodes.html"
+          },
+          {
+            "title": "Script",
+            "url": "/ui/interface/build-options/script.html"
+          },
+          {
+            "title": "Terrain",
+            "url": "/ui/interface/build-options/terrain.html"
+          },
+          {
+            "title": "Regions",
+            "url": "/ui/interface/build-options/regions.html"
+          },
+          {
+            "title": "Profiles",
+            "url": "/ui/interface/build-options/profiles.html"
+          },
+          {
+            "title": "Commands",
+            "url": "/ui/interface/build-options/commands.html"
+          }
+        ]
       }
     ]
   },

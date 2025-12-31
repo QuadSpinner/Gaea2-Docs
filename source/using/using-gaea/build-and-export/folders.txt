@@ -1,3 +1,1 @@
-build-options|Build Options|sparkles
-mesh-exports|Mesh Exports|sparkles
-application-specific-export-nodes|Application Specific Export Nodes
+regions|Regions

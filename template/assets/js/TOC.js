@@ -270,7 +270,7 @@ function initGlobalToc({
 // - Includes h1..h4 and nests them by heading level
 window.addEventListener("DOMContentLoaded", () => {
 
-  if (document.body?.dataset?.slug === "home") {
+  if (document.body?.dataset?.hiveShortname === "Home") {
     document.querySelector("#page-naver")?.remove();
     return;
   }

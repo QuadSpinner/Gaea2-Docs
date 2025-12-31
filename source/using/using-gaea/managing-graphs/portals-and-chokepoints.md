@@ -8,4 +8,4 @@ order: 02
 
 
 
-For basic information, see @portals-and-chokepoints.md
+For basic information, see @portals-and-chokepoints

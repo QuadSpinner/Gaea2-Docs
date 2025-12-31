@@ -1,6 +1,7 @@
 ---
 title: Build Options
 uid: build-options
+order: 01
 ---
 
 # Build Options
@@ -22,7 +23,7 @@ uid: build-options
 * **Tile Size**: Set the size of each tile (e.g., 1024x1024 pixels).
 * **Blending**: Determines the blending percentage between adjacent tiles for smooth transitions.
 
-See @scale-and-resolution.md
+See @scale-and-resolution
 
 ## **Build**
 
@@ -34,11 +35,12 @@ See @scale-and-resolution.md
 * **Copy the .terrain file to the build folder**: Saves a copy of the .terrain file in the build directory.
 * **Remove Primary port name in Build output**: Removes the primary port name from output filenames.
 *   **File Overwrite Mode**:
-
     * **Overwrite**: Replaces existing files with the same name.
     * **Increment**: Appends an incremental number to the filename to prevent overwriting.
 
-    Token can be used in the Build Path of Build Destination, the specified token will be replaced by the respective value.
+Token can be used in the Build Path of Build Destination, the specified token will be replaced by the respective value.
+
+See @build-tokens for details.
 
 ## **Tiles**
 
@@ -87,7 +89,7 @@ You can disable `_Out` suffix for the Primary Port in [.](./).
 * **Height**: Set the maximum physical height of the terrain in meters.
 * **Scale Display**: Displays the current scale in meters per pixel (e.g.,`2.441m/px`) and the Height-Scale Ratio.
 
-See @scale-and-resolution.mdfor more information.
+See @scale-and-resolutionfor more information.
 
 ## **Regions**
 
@@ -97,7 +99,7 @@ Right-Click on regions surface and click on "Add Region" to add region.  Once th
 
 ![](/.data/assets/Build-Option-Add-Region-Menu.png)
 
-See @managing-regions.md for more information.
+See @managing-regions for more information.
 
 ## Profiles
 
@@ -115,4 +117,4 @@ See @#using-profiles
 
 ![](/.data/assets/command_line_example.png)
 
-See @command-line-automation.mdfor further details on how to use the Command Line.
+See @command-line-automation for further details on how to use the Command Line.

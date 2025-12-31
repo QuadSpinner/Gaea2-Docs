@@ -1,0 +1,2 @@
+apps|Apps|rocket-launch
+helpful-info|Pro Tips|lightbulb
