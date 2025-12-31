@@ -2,6 +2,25 @@
 
     color: var(--tblr-body-color);
 
+    a {
+        color: var(--prime);
+        text-decoration-color: var(--prime);
+        text-decoration: underline;
+        text-decoration-skip-ink: all;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 1px;
+        transition: all linear 0.1s;
+
+
+        &:hover {
+            color: var(--prime);
+            text-decoration: underline;
+            text-decoration-skip-ink: all;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+        }
+    }
+
     h1,
     h2,
     h3,

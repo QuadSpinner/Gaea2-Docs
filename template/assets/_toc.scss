@@ -28,7 +28,7 @@
   }
 
   i {
-    color: #619280;
+    color: var(--prime);
     font-weight: 100;
   }
 
@@ -60,14 +60,14 @@
         padding-left: 0px;
 
         &:hover {
-          color: var(--toc-link-hover);
+          color: var(--prime);
           text-decoration: none;
         }
-      }
+      } 
 
       // ACTIVE LINK (selected page)
       >a.active {
-        color: var(--toc-link-active);
+        color: var(--prime);
         font-weight: 600;
         text-decoration: none;
       }

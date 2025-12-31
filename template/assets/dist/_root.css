@@ -1,4 +1,3 @@
-
 :root {
   --tblr-font-sans-serif: "Segoe UI";
   --tblr-body-color: #c0c0c0;
@@ -8,8 +7,6 @@
   --tblr-link-decoration: none;
   --tblr-link-hover-color: #389170;
   --tblr-link-hover-color-rgb: 56, 145, 112;
-
-  // Light
   --toc-section: #111;
   --toc-link: #777;
   --toc-link-hover: #25282e;
@@ -21,16 +18,14 @@
 }
 
 body {
-
-  background-image: linear-gradient(0deg, rgb(19, 28, 31) -20%, rgba(14, 17, 18, 1) 20%, rgba(24, 24, 27, 1) 100%);
+  background-image: linear-gradient(0deg, #131c1f -20%, #0e1112 20%, #18181b 100%);
   background-size: 200vh;
   background-position: 0% 0%;
   background-attachment: fixed;
-} 
+}
 
-html[data-bs-theme="dark"],
+html[data-bs-theme=dark],
 body.dark {
-  // Dark (tuned for contrast on dark backgrounds)
   --page-header: rgba(255, 255, 255, 0.05);
   --toc-section: rgba(255, 255, 255, 0.92);
   --toc-link: rgba(255, 255, 255, 0.62);
@@ -41,11 +36,34 @@ body.dark {
   --toc-chevron: rgba(255, 255, 255, 0.55);
 }
 
-body[data-hive-shortname="Home"]{ --prime: #ffcc00; }
-body[data-hive-shortname="Install"],.hive-nav .nav-item:nth-child(1){ --prime: #4e99a6; }
-body[data-hive-shortname="UI"],.hive-nav .nav-item:nth-child(2){ --prime: #a34563; }
-body[data-hive-shortname="Using"],.hive-nav .nav-item:nth-child(3){ --prime: #4fba88; }
-body[data-hive-shortname="Reference"],.hive-nav .nav-item:nth-child(4){ --prime: #4c799a; }
-body[data-hive-shortname="Guides"],.hive-nav .nav-item:nth-child(5){ --prime: #8a61a4; }
-body[data-hive-shortname="Developers"],.hive-nav .nav-item:nth-child(6){ --prime: #c9708c; }
-body[data-hive-shortname="History"],.hive-nav .nav-item:nth-child(7){ --prime: #a7b076; }
+body[data-hive-shortname=Home] {
+  --prime: #ffcc00;
+}
+
+body[data-hive-shortname=Install] {
+  --prime: #4e99a6;
+}
+
+body[data-hive-shortname=UI] {
+  --prime: #a34563;
+}
+
+body[data-hive-shortname=Using] {
+  --prime: #4fba88;
+}
+
+body[data-hive-shortname=Reference] {
+  --prime: #8dfa34;
+}
+
+body[data-hive-shortname=Guides] {
+  --prime: #67dbf0;
+}
+
+body[data-hive-shortname=Developers] {
+  --prime: #fa3473;
+}
+
+body[data-hive-shortname=History] {
+  --prime: #c067f0;
+}

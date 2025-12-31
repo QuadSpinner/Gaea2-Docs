@@ -10,6 +10,26 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("cmd-ask-claude").setAttribute("href", `https://claude.ai/new?q=Read%20${encoded}%20and%20answer%20questions%20about%20the%20content.`);
 });
 
+// Ensure the active item in .hive-nav is visible inside its horizontal scrolling container
+window.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector(".hive-nav");
+  if (!nav) return;
+
+  const active = nav.querySelector("a.active");
+  if (!active) return;
+
+  // Prefer native behavior when available
+  if (typeof active.scrollIntoView === "function") {
+    active.scrollIntoView({ block: "nearest", inline: "center" });
+    return;
+  }
+
+  // Fallback: manual horizontal centering
+  const nr = nav.getBoundingClientRect();
+  const ar = active.getBoundingClientRect();
+  const delta = (ar.left - nr.left) - (nr.width / 2 - ar.width / 2);
+  nav.scrollLeft += delta;
+});
 
 $(document).ready(function () {
 
