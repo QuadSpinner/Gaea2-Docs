@@ -1,3 +1,4 @@
 helpful-info|Pro Tips|lightbulb
+large-projects|Large Projects|truck-container
 conserve-memory|Conserve Memory|memory
 meshes|Working with Meshes|hexagon-nodes
