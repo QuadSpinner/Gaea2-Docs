@@ -357,28 +357,6 @@ window.SITE_TOC = [
             "url": "/using/advanced-topics/technical-information/calculating-memory-requirements.html"
           }
         ]
-      },
-      {
-        "title": "Automation",
-        "icon": "square-terminal",
-        "children": [
-          {
-            "title": "Automation",
-            "url": "/using/advanced-topics/automation/"
-          },
-          {
-            "title": "Command Line Automation",
-            "url": "/using/advanced-topics/automation/command-line-automation.html"
-          },
-          {
-            "title": "Managing Input and Output",
-            "url": "/using/advanced-topics/automation/managing-input-and-output.html"
-          },
-          {
-            "title": "Building a Bridge with the CLI",
-            "url": "/using/advanced-topics/automation/building-a-bridge-with-the-cli.html"
-          }
-        ]
       }
     ]
   },

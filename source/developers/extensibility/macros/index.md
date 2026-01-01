@@ -2,7 +2,7 @@
 icon: puzzle-piece
 title: Macros
 uid: macros
-order: 02
+order: 01
 ---
 
 # Macros

@@ -2,6 +2,7 @@
 title: Expressions
 uid: expressions
 order: 02
+icon: function
 ---
 
 # Expressions

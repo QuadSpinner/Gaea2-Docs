@@ -1,6 +1,7 @@
 ---
 title: Variables
 uid: variables
+icon: xmark
 order: 01
 ---
 

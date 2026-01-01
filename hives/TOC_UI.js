@@ -340,11 +340,6 @@ window.SITE_TOC = [
         "title": "Autosave and Recovery",
         "url": "/ui/features/autosave-and-recovery.html",
         "icon": "light-emergency-on"
-      },
-      {
-        "title": "Command-line Interface",
-        "url": "/ui/features/command-line-interface.html",
-        "icon": "rectangle-terminal"
       }
     ]
   }

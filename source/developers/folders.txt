@@ -1,1 +1,2 @@
-scripting-and-expressions|Scripting and Expressions
+automation|Automation
+extensibility|Extensibility

@@ -2,6 +2,7 @@
 title: Math Node
 uid: math-node
 order: 03
+icon: calculator-simple
 ---
 
 # Math Node

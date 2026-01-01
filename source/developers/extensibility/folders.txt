@@ -1,0 +1,3 @@
+macros|Macros|puzzle-piece
+scripting-and-expressions|Scripting and Expressions|gear-code
+sdk|SDK|lightbulb-gear
