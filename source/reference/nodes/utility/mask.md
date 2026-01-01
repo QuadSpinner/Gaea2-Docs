@@ -10,7 +10,7 @@ order: 12
 Gaea 2 introduces the new `Mask` node which allows you to mask the node/effect **after** it has been created. You can connect the Mask node after an effect has been applied. For example, in a `Mountain > Erosion > Mask scenario`, the Mask will automatically use the applied mask between Mountain and Erosion.
 
 :::warning
-If you're looking for 2D drawing node from Gaea 1, see [draw](../primitive/draw.html)
+If you're looking for 2D drawing node from Gaea 1, see @draw
 :::
 
 If you have multiple nodes that create the "effect" you wish to mask, just connect the second port of the Mask node to the desired "before" node. For example, in `Mountain > Erosion > Sandstone > Thermal2 > Mask`, you would connect the second input to Mountain.

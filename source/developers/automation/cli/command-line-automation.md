@@ -52,5 +52,5 @@ switchErosionProcess=1
 Variable names cannot be repeated.
 :::
 
-To see how variables can be bound to node properties, see [variables](/developers/scripting-and-expressions/variables.html)
+To see how variables can be bound to node properties, see @variables
 

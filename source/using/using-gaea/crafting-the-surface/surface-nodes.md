@@ -56,7 +56,7 @@ The Rocky family of nodes provides powerful rock "growth" on your existing terra
 
 ![](/.data/assets/craggy.jpg)
 
-**Stones** helps add small, superficial stones to the surface. These are random, and not physically driven like [debris.md](../simulations/debris.html).
+**Stones** helps add small, superficial stones to the surface. These are random, and not physically driven like @debris.
 
 ![](/.data/assets/stones.jpg)
 

@@ -11,7 +11,7 @@ order: 02
 In Gaea, terrain creation and manipulation are handled through a node-based system. This system may be new if you're accustomed to different types of software interfaces. Understanding how nodes work and interact in Gaea will enable you to efficiently create complex and realistic terrains.
 
 :::info
-You can skip straight to creating your first terrain in [introduction](/using-gaea/terrain-basics/introduction.html)
+You can skip straight to creating your first terrain in @introduction.
 :::
 
 

@@ -36,7 +36,7 @@ Property Editor submenu: offers a suite of options that allow users to fine-tune
 * **Heightfield**: Interprets the output as a height map, ideal for terrain visualization.
 * **Mask**: Renders the output as a mask.
 
-Presets: This option allows users to create and apply presets for the current node. Presets can be managed and selected from the preset submenu to quickly configure node settings. See [presets](../property-editor/presets.html)
+Presets: This option allows users to create and apply presets for the current node. Presets can be managed and selected from the preset submenu to quickly configure node settings. See @presets.
 
 Show Help for this Node: It opens documentation page for the selected node.
 

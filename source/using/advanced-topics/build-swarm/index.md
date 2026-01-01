@@ -18,7 +18,7 @@ Some additional options can be set via @command-line-automation.
 
 ## Automation
 
-See @command-line-automation and [variables](/developers/scripting-and-expressions/variables.html) for automation scenarios.
+See @command-line-automation and @variables for automation scenarios.
 
 ## Post Action Report
 
