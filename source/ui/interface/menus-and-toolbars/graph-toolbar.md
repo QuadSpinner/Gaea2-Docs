@@ -10,24 +10,14 @@ The Graph Toolbar is an essential interface within the graph environment, design
 
 ![](/.data/assets/Gaea_7l3gBgyyni.png)
 
-*   **Bookmarks Menu**: Allows users to mark and quickly navigate to specific nodes.
-
-    See@#node-bookmarks
-*   **Node Conveniences Menu**: Offers shortcuts to commonly used node functions.
-
-    See [#organization](/the-graph/graph-conveniences.md#organization)
-*   **Bake Menu**: Provides all baking related options.
-
-    See @baking-nodes
-*   **Refresh Node**: Refreshes the node.
-
-    Builds the selected node.
+*   **Bookmarks Menu**: Allows users to mark and quickly navigate to specific nodes. See @node-bookmarks
+*   **Node Conveniences Menu**: Offers shortcuts to commonly used node functions. See @organization
+*   **Bake Menu**: Provides all baking related options. See @baking-nodes
+*   **Refresh Node**: Refreshes the node. Builds the selected node.
 
     Right-clicking on "Refresh Node" Provides menu option to "Refresh all nodes", clicking on this refreshes all nodes in graph.
 
 ![Refresh all nodes](/.data/assets/Gaea-Refresh-all-nodes.png)
-
-
 
 *   **Mutate Node**: Mutates the selected node.
 
@@ -37,14 +27,10 @@ The Graph Toolbar is an essential interface within the graph environment, design
 
 ![Mutate all nodes](/.data/assets/Gaea-Mutate-all-nodes.png)
 
-
-
 * **Suspend Engine**: Lets you toggle the Gaea engine, see @suspending-engine
 * **Graph toolbar submenu**: Incorporate extended functionalities and settings found in the main graph menu for comprehensive control.
 
 ![Graph toolbar submenu](/.data/assets/Graph-Submenu.png)
-
-
 
 * Add Note: Adds a note object to graph surface.
 * Zoom: Zoom options.
@@ -56,7 +42,5 @@ The Graph Toolbar is an essential interface within the graph environment, design
 * Show Grid: Toggle the visibility of the grid overlay on the graph.
 * Snap to Grid: Enable or disable alignment of items to the grid lines.
 * Snap to Items: Toggle whether items snap to align with other items on the graph.
-
-
 
 This toolbar streamlines workflow by grouping critical tools in one accessible location, enhancing the user's ability to manage and optimize graph operations efficiently.

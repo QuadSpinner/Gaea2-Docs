@@ -6,10 +6,6 @@ order: 03
 
 # Profiles and Batch Builds
 
-
-
-
-
 Build Profiles let you save all Build Settings in a named preset. If you find yourself creating multiple versions of your terrain, or creating different output types, you can switch between the different build settings swiftly with Profiles.
 
 ![The Profiles tab lets you preview and manage profiles.](/.data/assets/Build_Settings_and_Regions_08-00-36-PM.png)

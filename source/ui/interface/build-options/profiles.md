@@ -10,4 +10,4 @@ Build Profiles let you save all Build Settings in a named preset. If you find yo
 
 ![](/.data/assets/Build-Options-Profile.webp)
 
-See @#using-profiles
+See @profiles-and-batch-builds

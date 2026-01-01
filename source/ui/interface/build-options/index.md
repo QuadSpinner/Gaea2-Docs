@@ -89,7 +89,7 @@ You can disable `_Out` suffix for the Primary Port in [.](./).
 * **Height**: Set the maximum physical height of the terrain in meters.
 * **Scale Display**: Displays the current scale in meters per pixel (e.g.,`2.441m/px`) and the Height-Scale Ratio.
 
-See @scale-and-resolutionfor more information.
+See @scale-and-resolution for more information.
 
 ## **Regions**
 
@@ -107,7 +107,7 @@ Build Profiles let you save all Build Settings in a named preset. If you find yo
 
 ![](/.data/assets/Build-Options-Profile.webp)
 
-See @#using-profiles
+See @profiles-and-batch-builds
 
 ## Commands
 

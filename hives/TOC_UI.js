@@ -137,6 +137,11 @@ window.SITE_TOC = [
             "url": "/ui/interface/navigation/"
           },
           {
+            "title": "Node Bookmarks",
+            "url": "/ui/interface/navigation/node-bookmarks.html",
+            "icon": "bookmark"
+          },
+          {
             "title": "Lazy Menu",
             "url": "/ui/interface/navigation/lazy-menu.html"
           },

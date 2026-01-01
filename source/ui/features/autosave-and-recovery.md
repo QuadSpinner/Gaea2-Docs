@@ -16,7 +16,7 @@ The Autosave feature in Gaea is a crucial tool designed to automatically save yo
 **Remind Me to Save Every.** This option allows you to set the frequency of the Autosave reminders. You can choose from the following intervals **5 minutes, 10 minutes, 15 minutes, 30 minutes.**
 
 :::warning
-Selecting one of these options will configure the application to remind you to save your work at the chosen interval. Gaea autosaves every 10 minutes by default, and saves a Disaster Recovery file every 5 seconds (see @#disaster-recovery)
+Selecting one of these options will configure the application to remind you to save your work at the chosen interval. Gaea autosaves every 10 minutes by default, and saves a Disaster Recovery file every 5 seconds (see below).
 :::
 
 **Reset Timer.** Selecting 'Reset Timer' will restart the countdown of the current Autosave interval. This is useful when you want to make sure that a save happens at a specific point during your work session.
@@ -35,13 +35,12 @@ Selecting one of these options will configure the application to remind you to s
 * **Adjust Frequency**: Adjust the Autosave frequency based on the complexity and duration of your tasks. More frequent saves are recommended for larger, more complex projects.
 * **Check Autosave Files**: Periodically check the Autosave files to confirm they are being created as expected. This verification helps to avoid potential data loss.
 
-***
 
 ## Disaster Recovery
 
 Sometimes your Gaea instance might crash, or a hardware failure may cause your computer to crash or reboot. Gaea uses a background thread to save your latest action every 5 seconds.
 
-In your [Gaea Data Folder](install-gaea/) you will find a `\Autosaves\recovery.terrain` file.
+In your [Gaea Data Folder](@paths-and-storage) you will find a `\Autosaves\recovery.terrain` file.
 
 :::danger
 It is important to check both the `recovery` and `autosave` files which are also in the same folder. If the 5-second-time that saves recovery information has not fired before the crash, then you may need to use the most recent autosave as the latest recovery file may not have saved. This does not happen often, but it is a possibility.
