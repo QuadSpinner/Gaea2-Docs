@@ -18,7 +18,7 @@ This is a preview of an unreleased feature, and subject to change.
 
 Let's take a look at the basic structure of a Gaea Node:
 
-```csharp
+```
 import QuadSpinner.TOR.Framework;
 import QuadSpinner.Gaea.Engine;
 import QuadSpinner.Gaea.Engine.Framework;

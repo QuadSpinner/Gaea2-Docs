@@ -1,4 +1,0 @@
----
-title: CryEngine
-uid: cryengine
----

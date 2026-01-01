@@ -67,7 +67,7 @@
     }
 }
 
-code {
+code:not(pre > code) {
     background-color: #111;
     border-radius: 3px;
     border: 1px solid #333;

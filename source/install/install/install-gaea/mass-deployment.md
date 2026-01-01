@@ -19,25 +19,65 @@ The easiest way to install and activate Gaea is to run the following script / ba
 
 The `%ACTIVATION_KEY%` can either be a License Key such as `AAA-BBBB-CCCC-DDDD` or a fully qualified path to a `XYZ1234.lic` offline license file.
 
+:::important
+If you are using a `.lic` file for activation, please replace %ACTIVATION_KEY% with "%ACTIVATION_KEY%" in all scripts.
+:::
+
 ```batch
 @echo off
-SET INSTALLER=Gaea-2.0.3.0.exe
-SET ACTIVATION_KEY=your_activation_key_here
+setlocal EnableExtensions
 
-:: Install Gaea silently
-"%~dp0%INSTALLER%" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
+rem ===== CONFIG =====
+set "INSTALLER=Gaea-2.2.7.0.exe"
+set "ACTIVATION_KEY=your_activation_key_here"
+set "DEFAULT_INSTALL_DIR=%ProgramFiles%\QuadSpinner\Gaea 2"
+set "LOG_FILE=%TEMP%\Gaea_Install.log"
 
-:: Wait for the installation to finish
-timeout /t 5 /nobreak > NUL
+rem ===== PREP =====
+pushd "%~dp0" || (echo ERROR: Failed to access script directory.& exit /b 1)
 
-:: Change directory to the installation path (Adjust the path as necessary)
-cd "C:\Program Files\QuadSpinner\Gaea 2"
+rem Admin check (required if installing under Program Files)
+net session >nul 2>&1
+if errorlevel 1 (
+  echo ERROR: Administrator privileges are required for this installation type.
+  echo        Right-click the .bat and select "Run as administrator".
+  exit /b 1
+)
 
-:: Activate Gaea
-Gaea.exe -activate %ACTIVATION_KEY%
+if not exist "%INSTALLER%" (
+  echo ERROR: Installer not found: "%CD%\%INSTALLER%"
+  exit /b 1
+)
 
-echo Installation and activation completed.
-pause
+rem ===== INSTALL =====
+echo Installing "%INSTALLER%"...
+start "" /wait "%INSTALLER%" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /LOG="%LOG_FILE%"
+set "RC=%ERRORLEVEL%"
+if not "%RC%"=="0" (
+  echo ERROR: Installer returned exit code %RC%.
+  echo See log: "%LOG_FILE%"
+  exit /b %RC%
+)
+
+rem ===== LOCATE GAEA.EXE =====
+set "GAEA_EXE=%DEFAULT_INSTALL_DIR%\Gaea.exe"
+if not exist "%GAEA_EXE%" (
+  echo ERROR: Could not find Gaea.exe at "%GAEA_EXE%"
+  echo If you installed to a custom location, update DEFAULT_INSTALL_DIR in this script.
+  exit /b 2
+)
+
+rem ===== ACTIVATE =====
+echo Activating...
+"%GAEA_EXE%" -activate %ACTIVATION_KEY%
+set "RC=%ERRORLEVEL%"
+if not "%RC%"=="0" (
+  echo ERROR: Activation failed with exit code %RC%.
+  exit /b %RC%
+)
+
+echo SUCCESS: Installation + activation completed.
+exit /b 0
 ```
 
 :::danger
@@ -52,31 +92,51 @@ Ensure you have 7-zip installed and added to PATH.
 
 ```batch
 @echo off
-SET ARCHIVE=Gaea-2.0.3.0.7z
-SET ACTIVATION_KEY=your_activation_key_here
-SET INSTALL_PATH=C:\Path\To\Desired\Installation\Location
+setlocal EnableExtensions
 
-:: Ensure 7-Zip is installed and available in the PATH
-where 7z >nul 2>&1
-if %ERRORLEVEL% neq 0 (
-    echo 7-Zip not found. Please install it and add to the system PATH.
-    exit /b 1
+set "ARCHIVE=Gaea-2.2.7.0.7z"
+set "ACTIVATION_KEY=your_activation_key_here"
+set "INSTALL_PATH=C:\Path\To\Desired\Installation\Location"
+
+pushd "%~dp0" || (echo ERROR: Failed to access script directory.& exit /b 1)
+
+where 7z.exe >nul 2>&1
+if errorlevel 1 (
+  echo ERROR: 7-Zip not found (7z.exe). Install it or add it to PATH.
+  exit /b 1
 )
 
-:: Create installation directory if it does not exist
+if not exist "%ARCHIVE%" (
+  echo ERROR: Archive not found: "%CD%\%ARCHIVE%"
+  exit /b 1
+)
+
 if not exist "%INSTALL_PATH%" mkdir "%INSTALL_PATH%"
 
-:: Extract the archive to the installation path
-7z x "%~dp0%ARCHIVE%" -o"%INSTALL_PATH%" -y
+echo Extracting...
+7z x "%ARCHIVE%" -o"%INSTALL_PATH%" -y
+if errorlevel 1 (
+  echo ERROR: Extraction failed.
+  exit /b 1
+)
 
-:: Change directory to the installation path
-cd "%INSTALL_PATH%"
+rem Find Gaea.exe (handles archives that unpack into subfolders)
+set "GAEA_EXE="
+for /r "%INSTALL_PATH%" %%F in (Gaea.exe) do (
+  set "GAEA_EXE=%%F"
+  goto :found
+)
+:found
 
-:: Activate Gaea
-Gaea.exe -activate %ACTIVATION_KEY%
+if not defined GAEA_EXE (
+  echo ERROR: Could not locate Gaea.exe under "%INSTALL_PATH%".
+  exit /b 2
+)
 
-echo Installation and activation completed.
-pause
+echo Activating using "%GAEA_EXE%"...
+"%GAEA_EXE%" -activate %ACTIVATION_KEY%
+exit /b %ERRORLEVEL%
+
 ```
 
 ### Zip File
@@ -85,30 +145,43 @@ Alternatively, if 7-zip is not acceptable in your network environment, you can c
 
 ```batch
 @echo off
-SET ZIP_FILE=Gaea-2.0.3.0.zip
-SET ACTIVATION_KEY=your_activation_key_here
-SET INSTALL_PATH=C:\Path\To\Desired\Installation\Location
+setlocal EnableExtensions
 
-:: Ensure PowerShell is available
-powershell -command "exit" >nul 2>&1
-if %ERRORLEVEL% neq 0 (
-    echo PowerShell is required but not available.
-    exit /b 1
+set "ZIP_FILE=Gaea-2.2.7.0.zip"
+set "ACTIVATION_KEY=your_activation_key_here"
+set "INSTALL_PATH=C:\Path\To\Desired\Installation\Location"
+
+pushd "%~dp0" || (echo ERROR: Failed to access script directory.& exit /b 1)
+
+if not exist "%ZIP_FILE%" (
+  echo ERROR: ZIP not found: "%CD%\%ZIP_FILE%"
+  exit /b 1
 )
 
-:: Create installation directory if it does not exist
 if not exist "%INSTALL_PATH%" mkdir "%INSTALL_PATH%"
 
-:: Extract the ZIP file using PowerShell
-powershell -command "Expand-Archive -Path '%~dp0%ZIP_FILE%' -DestinationPath '%INSTALL_PATH%' -Force"
+echo Extracting...
+powershell -NoProfile -ExecutionPolicy Bypass -Command ^
+  "Expand-Archive -LiteralPath '%CD%\%ZIP_FILE%' -DestinationPath '%INSTALL_PATH%' -Force"
+if errorlevel 1 (
+  echo ERROR: Expand-Archive failed.
+  exit /b 1
+)
 
-:: Change directory to the installation path
-cd "%INSTALL_PATH%"
+rem Find Gaea.exe
+set "GAEA_EXE="
+for /r "%INSTALL_PATH%" %%F in (Gaea.exe) do (
+  set "GAEA_EXE=%%F"
+  goto :found
+)
+:found
 
-:: Activate Gaea
-Gaea.exe -activate %ACTIVATION_KEY%
+if not defined GAEA_EXE (
+  echo ERROR: Could not locate Gaea.exe under "%INSTALL_PATH%".
+  exit /b 2
+)
 
-echo Installation and activation completed.
-pause
-
+echo Activating...
+"%GAEA_EXE%" -activate %ACTIVATION_KEY%
+exit /b %ERRORLEVEL%
 ```
