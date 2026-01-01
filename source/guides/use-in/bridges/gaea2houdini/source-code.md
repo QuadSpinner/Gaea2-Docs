@@ -8,4 +8,5 @@ order: 04
 
 The source code for the plugin can be found at:
 
-![youtube.com](https://github.com/QuadSpinner/Gaea2Houdini)
+
+![GitHub](https://github.com/QuadSpinner/Gaea2Houdini)

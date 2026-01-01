@@ -17,4 +17,3 @@ This will start Gaea in CPU only mode. It will now remain in CPU only mode, incl
 To re-enable multiple device usage, you can go to the [Broken link](broken-reference) tab in [options](/getting-started/options.html).
 
 ![](/.data/assets/Options_11-01-25-AM.png)
-

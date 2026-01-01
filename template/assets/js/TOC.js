@@ -372,6 +372,7 @@ function initGlobalToc({
     ol.setAttribute("aria-label", "breadcrumbs");
 
     ol.appendChild(makeCrumb(homeTitle, homeUrl, false));
+    ol.appendChild(makeCrumb(document.body.dataset.hive, document.body.dataset.hiveLink, false));
 
     for (let i = 0; i < chain.length; i++) {
       const isLast = i === chain.length - 1;

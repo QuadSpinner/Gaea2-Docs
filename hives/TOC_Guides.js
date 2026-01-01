@@ -79,15 +79,11 @@ window.SITE_TOC = [
           },
           {
             "title": "Gaea2Houdini",
-            "icon": "h",
+            "icon": "hat-wizard",
             "children": [
               {
                 "title": "Gaea2Houdini",
                 "url": "/guides/use-in/bridges/gaea2houdini/"
-              },
-              {
-                "title": "Installing Gaea2Houdini",
-                "url": "/guides/use-in/bridges/gaea2houdini/installing-gaea2houdini.html"
               },
               {
                 "title": "Preparing a Terrain File",
@@ -105,7 +101,7 @@ window.SITE_TOC = [
           },
           {
             "title": "Gaea2Unreal",
-            "icon": "u",
+            "icon": "alien-8bit",
             "children": [
               {
                 "title": "Gaea2Unreal",

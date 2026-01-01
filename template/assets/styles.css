@@ -722,6 +722,12 @@ a:hover {
   text-align: right;
 }
 
+@media only screen and (max-width: 980px) {
+  .text-center-mobile {
+    text-align: center !important;
+  }
+}
+
 #site-search #searchPopup {
   background: #171717;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 8px 32px rgba(0, 0, 0, 0.5);

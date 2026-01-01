@@ -81,7 +81,7 @@ Allows you to bookmark selected node. When a node is bookmarked, it is shown in 
 
 ### Select Nodes
 
-You can select all nodes upstream (ancestors) or downstream (descendants) of a specific node from the Node menu or the @#graph-toolbar.
+You can select all nodes upstream (ancestors) or downstream (descendants) of a specific node from the Node menu or the @graph-toolbar.
 
 ![](/.data/assets/Select-Nodes.png)
 

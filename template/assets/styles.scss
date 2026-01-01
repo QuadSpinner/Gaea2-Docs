@@ -123,6 +123,14 @@ a {
   text-align: right;
 }
 
+
+.text-center-mobile{
+  @include phone{
+    text-align: center !important;
+  }
+}
+
+
 #site-search {
   #searchPopup {
     background: #171717;

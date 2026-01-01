@@ -14,5 +14,4 @@ Begin your journey with Gaea by learning how to install, configure, and navigate
 
 * @install-gaea: Learn how to set up Gaea for your needs, whether through a regular or portable installation, mass deployment, or troubleshooting potential issues.
 * @license-management: Manage your licenses and ensure smooth transition when moving computers.
-* @user-interface: Dive into the layout, panels, and customization options to make your workflow smoother.
 * @for-gaea-1-users: A migration guide for existing users of Gaea 1.0 to see how Gaea 2.0 changes and improves your workflow.
