@@ -1,0 +1,262 @@
+#contents {
+
+    color: var(--tblr-body-color);
+
+    a {
+        color: var(--prime);
+        text-decoration-color: var(--prime);
+        text-decoration: underline;
+        text-decoration-skip-ink: all;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 1px;
+        transition: all linear 0.1s;
+
+
+        &:hover {
+            color: var(--prime);
+            text-decoration: underline;
+            text-decoration-skip-ink: all;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: 300;
+        margin-top: 24px;
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    img {
+        max-height: 40vh;
+    }
+
+    iframe {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+    
+    #show-sublinks {
+
+        padding: 32px 12px;
+    }
+}
+
+code:not(pre > code) {
+    background-color: #111;
+    border-radius: 3px;
+    border: 1px solid #333;
+    border-top-color: #aaa;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+
+    border: 1.5px solid rgb(14, 16, 17);
+    box-shadow: none;
+
+    .card-title,
+    h1,
+    h2,
+    h3 {
+        margin-top: 0 !important;
+        color: #fff;
+
+        a {
+            color: #fff
+        }
+    }
+
+    .card-body {
+        font-size: 12px;
+    }
+
+}
+
+
+figure {
+    figcaption {
+        font-size: 10px;
+        font-weight: 600;
+        opacity: 0.6;
+        padding: 6px;
+        display: block;
+    }
+
+    text-align: center;
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 4px;
+    }
+}
+
+.center-small {
+
+    display: block;
+
+    img,
+    .img-fluid {
+        width: 50% !important;
+        display: block;
+        height: auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        border-radius: 4px;
+    }
+
+}
+
+/* Container that holds the images */
+.image-row {
+    display: flex;
+    gap: 12px;
+    align-items: stretch;
+
+    figure,
+    img,
+    .img-fluid {
+        flex: 1 1 0;
+        min-width: 0;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+}
+
+.image-row-vertical {
+    display: flex;
+    gap: 12px;
+    align-items: stretch;
+
+    figure,
+    img,
+    .img-fluid {
+        flex: 1 1 0;
+        min-width: 0;
+        width: 50%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+}
+
+
+.reference-tables {
+    table {
+        width: 50% !important;
+
+        thead {
+            background: #111;
+        }
+
+        th,
+        td {
+            border: 1px solid #fff1;
+            padding: 8px;
+        }
+
+        td:nth-child(1) {
+            width: 20%;
+        }
+
+        td:nth-child(2) {
+            width: 70%;
+        }
+
+        td:nth-child(3) {
+            width: 20%;
+        }
+    }
+}
+
+
+.properties-table {
+    width: 100% !important;
+    border-radius: 4px;
+    font-size: 13px;
+
+    .head {
+
+        background: #101517;
+        text-align: left !important;
+    }
+
+    .title {
+        font-weight: 600;
+        text-align: left !important;
+    }
+
+    .title-desc {
+        font-weight: 400;
+        text-align: left !important;
+    }
+
+    th,
+    td {
+        vertical-align: top;
+        border: 1px solid #fff1;
+        padding: 8px;
+        font-size: 12px;
+
+        span {
+            display: block;
+        }
+
+        .choice {
+            padding-bottom: 6px;
+            font-weight: bold;
+        }
+
+        .choice-flat {
+            padding: 1em 0.4em 1em 0;
+            font-weight: bold;
+            float: left;
+        }
+
+        .choice-description {
+            padding-bottom: 0.3em;
+            padding-left: 0.8em;
+        }
+    }
+
+    td:nth-child(1) {
+        width: 30%;
+        font-weight: 600;
+        text-align: right !important;
+    }
+
+    td:nth-child(2) {
+        width: 70%;
+    }
+
+
+}

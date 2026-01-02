@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Using Normalized Output - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/guides/scenarios/helpful-info/normalized-output.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="Using Normalized Output - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/guides/scenarios/helpful-info/normalized-output.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/guides/scenarios/helpful-info/normalized-output.html#article",
+            "headline": "Using Normalized Output - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/guides/scenarios/helpful-info/normalized-output.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/guides/scenarios/helpful-info/normalized-output.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://docs.gaea.app/guides" },
+                { "@type": "ListItem", "position": 3, "name": "Using Normalized Output", "item": "https://docs.gaea.app/guides/scenarios/helpful-info/normalized-output.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="Guides" data-hive-shortname="Guides" data-hive-link="/guides" data-slug="normalized-output">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Guides" href="/guides"><i class="fa-duotone fa-light fa-book-sparkles"></i> Guides</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="/videos"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>Guides</h3>
+                        <h2>Using Normalized Output</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><h1 id="using-normalized-output-for-maximum-data-depth">Using Normalized Output for Maximum Data Depth</h1>
+<p>When you export a heightfield, you’re not really exporting “mountains” — you’re exporting numbers. And the <em>single biggest</em> quality win you can get (especially for 16-bit) is making sure those numbers use as much of the available range as possible before you save. That’s exactly what <strong>normalizing / autoleveling</strong> does: it remaps your current minimum height to 0 and maximum height to 1 (or to the full integer span), so you’re not wasting precision on empty headroom.</p>
+<h2 id="why-use-the-whole-range-matters">Why “use the whole range” matters</h2>
+<p>A stored heightfield has discrete steps:</p>
+<ul>
+<li><strong>16-bit integer</strong> heightmaps have <strong>65,536</strong> possible values (0–65535).</li>
+<li><strong>32-bit</strong> outputs are often <strong>32-bit float</strong> (EXR) or sometimes <strong>32-bit integer</strong>; either way, they can represent far more detail — <em>but</em> many pipelines still quantize, filter, or bake down later, so good range usage still helps.</li>
+</ul>
+<p>The key idea: <strong>the vertical “step size” equals (height range) / (number of code values)</strong>.</p>
+<p>So if your terrain’s meaningful heights only occupy, say, <strong>10%</strong> of the saved range (because you left lots of unused headroom above peaks or below sea level), you effectively throw away most of your bits. In 16-bit, using only 10% of the range gives you ~6,553 usable levels instead of 65,536 — that’s roughly <strong>12.7 bits of effective precision</strong>, not 16. Result: more visible terracing/banding, noisier erosion micro-detail, and worse downstream filtering.</p>
+<p>Normalizing/autoleveling fixes that by stretching your actual min→max to the full span, minimizing quantization error everywhere.</p>
+<h2 id="why-its-especially-important-for-16-bit">Why it’s especially important for 16-bit</h2>
+<p>16-bit is the common “game-friendly” choice, and it’s the most fragile:</p>
+<ul>
+<li><strong>Banding/terracing</strong> shows up first in gentle slopes and flats (dunes, plains, snowfields).</li>
+<li><strong>Erosion detail</strong> and small sediment variations can collapse into the same height code when the range is underused.</li>
+<li>Any later processing (blur, resample, mip generation, engine import) amplifies those errors.</li>
+</ul>
+<p>In practice, if you’re exporting 16-bit, normalization is one of those “free quality” steps that costs nothing and pays back everywhere.</p>
+<h2 id="but-i-need-real-world-meters--normalize-now-scale-later">“But I need real-world meters!” — normalize now, scale later</h2>
+<p>Normalization does <em>change absolute elevation</em> (it’s a remap), so the right workflow is:</p>
+<ol>
+<li><strong>Normalize/autolevel before saving</strong> to maximize precision.</li>
+<li>In your final DCC / engine (Houdini, Unreal, Unity, etc.), <strong>apply a vertical scale</strong> (height multiplier / displacement scale) to restore the intended meter range.</li>
+</ol>
+<p>Conceptually:</p>
+<ul>
+<li>Exported value:
+<code>v = (h − hmin) / (hmax − hmin)</code></li>
+<li>Reconstructed height in DCC:
+<code>h = v · (hmax − hmin) + hmin</code></li>
+</ul>
+<p>That means you can keep your terrain <em>numerically optimal</em> on disk, while still ending up with the correct real-world heights in the final scene.</p>
+<h3 id="practical-tip-save-the-metadata">Practical tip: save the metadata</h3>
+<p>If you want perfect reconstruction, keep track of (or export alongside) your terrain’s <strong>original min/max elevation</strong> (or your desired total relief in meters). Then your “Height Scale” in the DCC becomes deterministic instead of eyeballed.</p>
+<h2 id="a-note-on-tiles-avoid-per-tile-normalization-seams">A note on tiles: avoid per-tile normalization seams</h2>
+<p>One caveat: if you normalize <strong>each tile independently</strong>, each tile gets its <em>own</em> min/max, which can cause seams where values don’t match across borders.</p>
+<p>Best practice:</p>
+<ul>
+<li>Normalize <strong>before</strong> tiling (one global min/max), or</li>
+<li>Force a <strong>consistent min/max</strong> across all tiles.</li>
+</ul>
+<h2 id="the-bottom-line">The bottom line</h2>
+<p>Normalizing (autolevel) before saving is great because it:</p>
+<ul>
+<li>Uses the <strong>entire bit depth</strong> you’re paying for (critical in 16-bit).</li>
+<li>Preserves subtle slopes and micro-relief by <strong>minimizing quantization error</strong>.</li>
+<li>Keeps exports robust through resampling, filtering, and engine import.</li>
+<li>Lets you do the “artistically meaningful” part — <strong>real-world vertical scaling</strong> — later, non-destructively, in the final DCC app.</li>
+</ul>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_Guides.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>

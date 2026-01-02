@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visualizing Scale - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/using/using-gaea/managing-graphs/visualizing-scale.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="Visualizing Scale - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/using/using-gaea/managing-graphs/visualizing-scale.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/using/using-gaea/managing-graphs/visualizing-scale.html#article",
+            "headline": "Visualizing Scale - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/using/using-gaea/managing-graphs/visualizing-scale.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/using/using-gaea/managing-graphs/visualizing-scale.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "Using Gaea", "item": "https://docs.gaea.app/using" },
+                { "@type": "ListItem", "position": 3, "name": "Visualizing Scale", "item": "https://docs.gaea.app/using/using-gaea/managing-graphs/visualizing-scale.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="Using Gaea" data-hive-shortname="Using" data-hive-link="/using" data-slug="visualizing-scale">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="https://www.youtube.com/quadspinner" target="_blank"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>Using Gaea</h3>
+                        <h2>Visualizing Scale</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div class="note migration">
+                          <i class="fa-duotone fa-light fa-box-isometric-tape"></i> <strong>We are updating the docs...finally!</strong>
+                            <br> We are migrating our documentation and adding major updates. Please bear with us during this transtion.</div>
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><h1 id="visualizing-scale">Visualizing Scale</h1>
+<h2 id="using-overlays">Using Overlays</h2>
+<p>Gaea 2.1 ships with multiple pre-defined overlays that you can use for showing relative scale on your terrain. These are rendered on top of your terrain, so you can visualize it easily without modifying anything on your graph. You can change the overlay and its opacity in the Sky Editor.</p>
+<p><img src="/.data/assets/image%20(15).png" alt="" /></p>
+<p>A great way to visualize specific scale is to create your own overlay with precise shapes and sizes.</p>
+<h3 id="creating-a-custom-overlay">Creating a custom Overlay</h3>
+<p>You can load a custom Overlay in the Viewport Sky Editor.</p>
+<p>To craft precise shapes in an overlay, you can use the following simple formula.</p>
+<p>If your overlay is 2048 x 2048, then 2048 = 2500m (or whatever your <a href="/advanced-topics/technical-information/dimensions-and-scale.md#terrain-size-and-height">Terrain Width</a> is set in Gaea). Then <code>1m = 2048 / 2500m</code> (ie, <code>0.8192</code>). For 25m, you use <code>0.8192 x 25 = 20.48</code> so create a square in your design application that is 20.48 x 20.48 px in size and place it where you wish. 50m would be 40.96, and so on.</p>
+<p><img src="/.data/assets/image%20(16).png" alt="" /></p>
+<p>Save your square image as a PNG to maintain crisp edges. Then load it as a custom overlay in Gaea.</p>
+<p>Now you can visualize any specific area, shape, perimeter, etc. on your terrain.</p>
+<p><img src="/.data/assets/image%20(17).png" alt="" /></p>
+<h3 id="creating-overlays-in-gaea">Creating Overlays in Gaea</h3>
+<p>Use an app like <a href="https://icons8.com/lunacy?ref=quadspinner">Lunacy</a>, Figma, Illustrator, etc. to create a custom overlay. However, if you want to skip using external apps, you can easily create a simple overlay in Gaea.</p>
+<p><img src="/.data/assets/image%20(18).png" alt="" /></p>
+<p>Create a Constant setup like explained above. Then add a Curvature node, and set it to Vertical mode with 100% Falloff. This will create an outline for your cube.</p>
+<p><img src="/.data/assets/image%20(19).png" alt="" /></p>
+<p>You can optionally invert the output as Gaea's overlay is multiplied on top of your existing render. Once your visual is ready, right-click the 2D Viewport and select <code>Save to File</code> to save the file which you can use a custom overlay.</p>
+<p>You can create more elaborate overlays by using Grid, Halftone, Tint, and various other nodes.</p>
+<p><img src="/.data/assets/image%20(20).png" alt="" /></p>
+<h2 id="creating-a-3d-scale-dummy">Creating a 3D Scale Dummy</h2>
+<p>This technique will show you how to create a simple cube/block of a specific scale that you can add to your terrain preview.</p>
+<p>First we create a <code>Constant</code> node and set its value to 1.0. Then connect it to a <code>Transform</code> node.</p>
+<p><img src="/.data/assets/image%20(6).png" alt="" /></p>
+<p>In the Transform node, right-click Scale and enter a metric value such as <code>25m</code>. This will scale the Constant into a perfect 25 x 25m block. Additionally, you can add a <code>Height Remap</code> modifier and scale the block vertically to any specific size in the same way.</p>
+<div>![](/.data/assets/image%20(7).png) ![](/.data/assets/image%20(9).png)</div>
+<p>Now you have this scale block.</p>
+<p><img src="/.data/assets/image%20(8).png" alt="" /></p>
+<p>If you want to view it on your terrain, create a Combine node to Add this block on top of your terrain.</p>
+<p><img src="/.data/assets/image%20(11).png" alt="" /></p>
+<p>If you want to toggle this block and use it frequently in various places across your graph, you can use the Route utility node. Feed your main terrain into the <code>In</code> port and the Combined block output to the <code>Alternate</code> port.</p>
+<p><img src="/.data/assets/image%20(12).png" alt="Setup a Route node to conveniently hide the block when not needed." /></p>
+<p>You can use the Route node's toggle to quickly show and hide the version with the Block.</p>
+<div>![Route toggled on.](/.data/assets/image%20(13).png) ![Route toggled off.](/.data/assets/image%20(14).png)</div>
+<div class="info"><p>Make the Transform's output into a <a href="/ui/graph/organization/portals-and-chokepoints.html">Portals and Chokepoints</a> and reuse it wherever needed in the graph without cluttering the workspace.</p>
+</div>
+<h3 id="creating-a-custom-reference-object">Creating a Custom Reference Object</h3>
+<p>If you want to use a custom mesh instead of a block, you can use the Object node to import a mesh and scale it instead of using the Constant node.</p>
+<p><img src="/.data/assets/image%20(21).png" alt="" /></p>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_Using.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>

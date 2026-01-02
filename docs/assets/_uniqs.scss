@@ -1,0 +1,52 @@
+@mixin callout($c, $a: 0.18) {
+    --prime: $c;
+
+    border: 1.5px solid $c;
+    color: $c;
+    background-color: color-mix(in srgb, $c 20%, #000 60%);
+    border-radius: 3px;
+    padding: 8px 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    p {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    code {
+        background: $c;
+        color: #000;
+    }
+
+}
+
+.note {
+    @include callout(#78ccf2);
+}
+
+// blue
+.tip {
+    @include callout(#7dcb82);
+}
+
+// green
+.success {
+    @include callout(#669368);
+}
+
+// lighter green
+.warning {
+    @include callout(#d8b368);
+}
+
+// amber
+.danger {
+    @include callout(#e87a74);
+}
+
+// red
+.info {
+    @include callout(#5fbe9d);
+}

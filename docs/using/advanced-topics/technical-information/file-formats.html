@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>File Formats - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/using/advanced-topics/technical-information/file-formats.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="File Formats - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/using/advanced-topics/technical-information/file-formats.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/using/advanced-topics/technical-information/file-formats.html#article",
+            "headline": "File Formats - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/using/advanced-topics/technical-information/file-formats.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/using/advanced-topics/technical-information/file-formats.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "Using Gaea", "item": "https://docs.gaea.app/using" },
+                { "@type": "ListItem", "position": 3, "name": "File Formats", "item": "https://docs.gaea.app/using/advanced-topics/technical-information/file-formats.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="Using Gaea" data-hive-shortname="Using" data-hive-link="/using" data-slug="file-formats">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="https://www.youtube.com/quadspinner" target="_blank"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>Using Gaea</h3>
+                        <h2>File Formats</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div class="note migration">
+                          <i class="fa-duotone fa-light fa-box-isometric-tape"></i> <strong>We are updating the docs...finally!</strong>
+                            <br> We are migrating our documentation and adding major updates. Please bear with us during this transtion.</div>
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><h1 id="file-formats">File Formats</h1>
+<p>Gaea supports all modern (and some legacy) file formats for both flat files and meshes.</p>
+<h2 id="for-import">For Import</h2>
+<h3 id="bitmap-formats"><strong>Bitmap Formats</strong></h3>
+<table><thead><tr><th width="280">Format</th><th data-type="checkbox">32-bit</th><th data-type="checkbox">16-bit</th><th data-type="checkbox">8-bit</th></tr></thead><tbody><tr><td>OpenEXR</td><td>true</td><td>false</td><td>false</td></tr><tr><td>TIFF</td><td>true</td><td>true</td><td>true</td></tr><tr><td>PNG (64 / 16 / 8)</td><td>true</td><td>true</td><td>true</td></tr><tr><td>RAW (Float / Half / UShort)</td><td>true</td><td>true</td><td>false</td></tr><tr><td>JPG</td><td>false</td><td>false</td><td>false</td></tr><tr><td>Gaea RAW</td><td>true</td><td>false</td><td>false</td></tr></tbody></table>
+<div class="info"><p>Raw can be saved as .raw, .r16, and .r32 as required as different applications use different combinations of format and extensions.</p>
+</div>
+<h3 id="3d-formats">3D Formats</h3>
+<ul>
+<li>Wavefront OBJ (.obj)</li>
+<li>Autodesk Filmbox (.fbx)</li>
+<li>Collada (.dae)</li>
+<li>WebGL (.glTF/.glb)</li>
+<li>Point Cloud (.xyz)</li>
+</ul>
+<h2 id="for-import-1"><strong>For Import</strong></h2>
+<p>Gaea supports the following formats for importing data:</p>
+<ul>
+<li>.exr</li>
+<li>.tif/.tiff</li>
+<li>.webp/.jpeg</li>
+<li>.webp</li>
+<li>.svg</li>
+<li>.psd</li>
+<li>.hdr</li>
+<li>.pfm</li>
+<li>.r32</li>
+<li>.raw</li>
+<li>.bmp</li>
+</ul>
+<div class="info"><p>Gaea can also import 3D objects with the Object node.</p>
+</div>
+<h2 id="gaeas-project-formats-">Gaea's Project Formats <a href="#gaea-27s-project-formats" id="gaea-27s-project-formats"></a></h2>
+<p>Gaea saves files in the formats mentioned below.</p>
+<h3 id="terrain"><strong>.terrain</strong></h3>
+<p>Gaea terrain projects are saved as a <code>.terrain</code> file. All Gaea editions can read this format.</p>
+<p>See @#advanced-automation for manipulating this file format.</p>
+<h2 id="precision-">Precision <a href="#precision" id="precision"></a></h2>
+<p>Gaea stores and processes its heightfields in 32-bit floating points, which is compatible with all professional CGI applications.</p>
+<h3 id="32-bit"><strong>32-bit</strong></h3>
+<p>For practical purposes, exporting as either OpenEXR or TIFF will give you the best results and maximum compatibility with other applications. If you are using a custom pipeline, using R32 or PFM formats may be of more use. See the section below for those formats.</p>
+<div class="info"><p>If you are saving output from Gaea to bring back to Gaea either in the same or different file, we recommend using the <code>.r32</code> or <code>.graw</code> formats for maximum fidelity and efficiency.</p>
+</div>
+<h3 id="16-bit"><strong>16-bit</strong></h3>
+<p>While displacement/heightfield information requires 32-bit precision for accuracy; color maps, masks, and other secondary data which may have fewer levels of complexity can make use of 16-bit formats, such as PNG. This can help save on disk space as larger worlds will require a lot of storage space. Storing in 16-bit also helps performance.</p>
+<p>In fact, if your terrain does not contain many smooth details, you can even export your main displacement as 16-bit.</p>
+<p>Game engines, such as Unity, can only import RAW 16-bit (ushort) format terrains.</p>
+<h3 id="8-bit"><strong>8-bit</strong></h3>
+<p>In some cases, for example with black and white masks, you may not need a high level of precision at all. You can use 8-bit PNG or TIFF output which can increase performance and save disk space.</p>
+<p><strong>Custom Workflows Precision</strong></p>
+<p>If you are using Gaea in a custom workflow, such as automation, you may require the data to be as simple and efficiently readable as possible.</p>
+<h3 id="technical-details">Technical Details</h3>
+<p>32-bit float (.r32) and 16-bit ushort (.raw) are the simplest formats you can use. It is a simple binary array of <code>float</code> (IEEE 754) or <code>unsigned short</code>. The file has no header and can be read directly as a binary stream. The files will use Little Endian.</p>
+<p>The size of the heightfield should be square root of the byte length divided by the size of the type (4 bytes for <code>float</code>, 2 bytes for <code>ushort</code>).</p>
+<p>The <code>.r32</code> format will store values between <code>0.0f</code> and <code>1.0f</code>. While the <code>.raw</code> format will store values between <code>0</code> and <code>65535</code>.</p>
+<p>Both formats are recommended for heightfield (grayscale) data only.</p>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_Using.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>

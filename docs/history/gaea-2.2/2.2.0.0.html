@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2.2.0.0 - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/history/gaea-2.2/2.2.0.0.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="2.2.0.0 - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/history/gaea-2.2/2.2.0.0.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/history/gaea-2.2/2.2.0.0.html#article",
+            "headline": "2.2.0.0 - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/history/gaea-2.2/2.2.0.0.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/history/gaea-2.2/2.2.0.0.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "Release History", "item": "https://docs.gaea.app/history" },
+                { "@type": "ListItem", "position": 3, "name": "2.2.0.0", "item": "https://docs.gaea.app/history/gaea-2.2/2.2.0.0.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="Release History" data-hive-shortname="History" data-hive-link="/history" data-slug="2.2.0.0">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="https://www.youtube.com/quadspinner" target="_blank"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>Release History</h3>
+                        <h2>2.2.0.0</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div class="note migration">
+                          <i class="fa-duotone fa-light fa-box-isometric-tape"></i> <strong>We are updating the docs...finally!</strong>
+                            <br> We are migrating our documentation and adding major updates. Please bear with us during this transtion.</div>
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><h1 id="2200">2.2.0.0</h1>
+<p>This is a significant step forward in Gaea 2.0's journey. Gaea 2.2 includes a major upgrade for Erosion_2, Ice nodes, several new nodes, 20+ improvements to existing nodes, many key workflow enhancements, and over 100 bug fixes and stability updates.</p>
+<p>IMPORTANT: See Breaking Changes.</p>
+<p>Read more at <a href="https://blog.quadspinner.com/gaea-2-2-released/">https://blog.quadspinner.com/gaea-2-2-released/</a></p>
+<hr />
+<h4 id="new-nodes-"><strong>New Nodes</strong> <a href="#new-nodes" id="new-nodes"></a></h4>
+<ul>
+<li><strong>BlobRemover</strong> – Clean up noisy formations in terrain.</li>
+<li><strong>Distress</strong> – Introduce erosion and decay details.</li>
+<li><strong>Glacier</strong> - Add giant sheets of ice on your mountains.</li>
+<li><strong>IceFloe</strong> – Simulate fractured, frozen terrain features.</li>
+<li><strong>Shape</strong> – Create primitive terrain shapes.</li>
+<li><strong>Scree</strong> – Scatter rock debris naturally.</li>
+<li><strong>Snowfield</strong> – Specialized snow coverage node.</li>
+<li><strong>Var</strong> – Create and manipulate variables in advanced graphs.</li>
+<li><strong>Shrubs</strong> – Create vast, low-lying bushes and shrubs to accompany the Trees node.</li>
+<li><strong>Heal</strong> – Node from Gaea 1 ported to Gaea 2.</li>
+</ul>
+<hr />
+<h4 id="node-updates--improvements-"><strong>Node Updates &amp; Improvements</strong> <a href="#node-updates--improvements" id="node-updates--improvements"></a></h4>
+<ul>
+<li><strong>Crater</strong> – Now supports single placement and Gizmo.</li>
+<li><strong>Craterfield</strong> – Significant performance boost.</li>
+<li><strong>ColorErosion</strong> – Added Diffusion control for softening effects.</li>
+<li><strong>Debris</strong> – New <em>Scale</em> control and more art-directable output.</li>
+<li><strong>DriftNoise</strong> – Classic Gaea 1 look is now optional.</li>
+<li><strong>Erosion2</strong> – Major new algorithm upgrade with selective processing.
+<ul>
+<li><strong>Orographic Erosion</strong> controls.</li>
+<li><strong>Selective Precipitation</strong> mask input.</li>
+<li><strong>Direction Bias</strong> added.</li>
+<li>Improved deterministic output.</li>
+</ul>
+</li>
+<li><strong>Crumble</strong> – Directional Bias added.</li>
+<li><strong>EasyErosion</strong> – Direction Bias support.</li>
+<li><strong>Dusting</strong> – Slope coverage now optional.</li>
+<li><strong>ThermalShaper</strong> – Rewritten for faster GPU execution, and with additional controls.</li>
+<li><strong>Mixer</strong> – Supports Height/Slope inputs. Shows constant color if unconnected.</li>
+<li><strong>Sediments</strong> – Now includes <em>Fine</em> mode.</li>
+<li><strong>Snow</strong> – New <em>Model Scale</em> parameter. Secondary port display fixed.</li>
+<li><strong>Slope</strong> – <em>MicroAccent</em> parameter for finer control over slope selection.</li>
+<li><strong>Steps</strong> - Incorrect behavior has been fixed.</li>
+<li><strong>Peaks</strong> - Option to increase detection sensitivity.</li>
+<li><strong>RGBSplit</strong> – Enhanced with grayscale mode options.</li>
+<li><strong>RGBMerge</strong> – Better contamination handling and new enhancement options.</li>
+<li><strong>Recurve</strong> – Orientation improvements.</li>
+<li><strong>Transform</strong> – Supports Color inputs; position corrected to -1 to +1 range.</li>
+<li><strong>WaterColor</strong> – New HSL mode; sea visuals updated. No longer requires Guide input in Accumulation mode.</li>
+<li><strong>Blur</strong> – Now supports color maps.</li>
+<li><strong>MeshWarp</strong> – Renamed to <strong>TextureBaker</strong> for clarity.</li>
+<li><strong>GroundTexture</strong> – New simple Roughness mode.</li>
+</ul>
+<hr />
+<h4 id="workflow-enhancements-"><strong>Workflow Enhancements</strong> <a href="#workflow-enhancements" id="workflow-enhancements"></a></h4>
+<ul>
+<li><strong>Regions</strong> – Independent resolutions and improved management; internal code handling improved.</li>
+<li><strong>Autosaves</strong> – Easier access via File and Autosave menus.</li>
+<li><strong>Artifact Explorer</strong> – Inspect contents across multiple Gaea folders.</li>
+<li><strong>Example Browser</strong> – Access <strong>60 new curated example files</strong> from Start Dialog and File menu.</li>
+<li><strong>Camera Commands</strong> – Restore to Last Loaded or Default view.</li>
+<li><strong>Node Creation</strong> – Toolbox now auto-connects to selected nodes.</li>
+<li><strong>Draw Node</strong> – Now behaves predictably when duplicated.</li>
+<li><strong>Portal Menu</strong> – Improved UX, avoids cyclic connections.</li>
+<li><strong>CLI</strong> – Set resolution, license server, and other params.
+<ul>
+<li>New <code>--silent</code> switch to disable interactive UI.</li>
+<li>New <strong>SwarmHost</strong> middleware for building custom Bridges.</li>
+<li>Specify Build Path using <code>buildpath</code>.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="graph--ui-upgrades-"><strong>Graph &amp; UI Upgrades</strong> <a href="#graph--ui-upgrades" id="graph--ui-upgrades"></a></h4>
+<ul>
+<li><strong>Graph Autolayout</strong> – Improved stability and portal handling.</li>
+<li><strong>Node Placement</strong> – Smarter duplication and cleaner alignment.</li>
+<li><strong>DataView</strong> – More intuitive selection updates.</li>
+<li><strong>Treeview &amp; Regions</strong> – Enhanced layout, naming, and resizing from all sides.</li>
+<li><strong>Options Window</strong> – Reorganized for better clarity.</li>
+<li><strong>Mask Visualization</strong> – Multiple gradient presets; <strong>Viewport Mask Color options</strong> to visualize masks with different palettes.</li>
+<li><strong>UI Texts</strong> – Tooltip hints, last modified time, and improved sliders.</li>
+<li><strong>Zoom Extents</strong> – More stable, even on empty graphs.</li>
+<li><strong>Recent Menu</strong> – Shows last modified date in tooltip.</li>
+<li><strong>Render Modes</strong> – Faster rendering with improved mechanism and fewer memory allocations.
+<ul>
+<li><strong>Clay Render Mode</strong> now supports color maps.</li>
+<li>Switch Render Modes with double-key shortcuts: F1, 1; F1, 2; F1, 3.</li>
+<li>Lazy Menu tweaked for easier access.</li>
+<li>Viewport rendering improved overall.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="command-line--licensing-"><strong>Command Line &amp; Licensing</strong> <a href="#command-line--licensing" id="command-line--licensing"></a></h4>
+<ul>
+<li><strong>CLI</strong> – See Workflow Enhancements for new switches.</li>
+<li><strong>Floating Licenses</strong> – Supports <strong>Offline Fortress Server</strong> deployments.</li>
+<li><strong>GRAW</strong> – Improved read/write reliability; writes additional metadata.</li>
+<li><strong>Swarm</strong> – Honors <code>--ignorecache</code> switch.</li>
+</ul>
+<hr />
+<h4 id="performance--stability-"><strong>Performance &amp; Stability</strong> <a href="#performance--stability" id="performance--stability"></a></h4>
+<ul>
+<li><strong>Cache/Bake/Freeze</strong> – Major rewrite for reliability and speed.</li>
+<li><strong>Improved determinism</strong> on GPU nodes like Erosion2.</li>
+<li><strong>Improved node efficiency</strong> for Craterfield, Debris, etc.</li>
+<li><strong>Improved memory handling</strong> for 8K and 16K builds.</li>
+<li><strong>Aggressive memory recovery</strong> during 4K+ builds.</li>
+<li><strong>Smart Cache</strong> – Option to offload unused cache to disk.</li>
+<li><strong>Improved memory readout</strong> in Status Bar.</li>
+<li><strong>Faster undo stack</strong>, drag-drop modifiers, and layout performance.</li>
+<li><strong>Loading Baked Data</strong> better utilizes SSDs.</li>
+<li><strong>Accumulators</strong> – Memory management improved.</li>
+</ul>
+<hr />
+<h4 id="fixes-"><strong>FIXES</strong> <a href="#fixes" id="fixes"></a></h4>
+<p><strong>Critical crashes and data corruption</strong></p>
+<ul>
+<li>FIX: Deleting a graph tab could create node remnants that could corrupt a file.</li>
+<li>FIX: Major error that prevented undo operations.</li>
+<li>FIX: Bake required nodes could cause a crash.</li>
+<li>FIX: Crash when loading tabs in specific situations.</li>
+<li>FIX: Crash when removing portal.</li>
+<li>FIX: Crash if Gizmo hotkey used when node is unselected.</li>
+<li>FIX: Graph selection change could crash Gaea.</li>
+<li>FIX: Setting node filter criteria to heavy on empty graph could cause a crash.</li>
+<li>FIX: ZoomExtents would cause crash on empty graph.</li>
+<li>FIX: Potential crash when rendering ReadOuts if Cache is null.</li>
+<li>FIX: Weathering could fail during large builds if used before SatMaps.</li>
+</ul>
+<hr />
+<p><strong>Stability / reliability</strong></p>
+<ul>
+<li>FIX: Loading Baked Data better utilizes SSDs.</li>
+<li>FIX: Accumulators should not remain in memory if not used.</li>
+<li>FIX: Smart Cache: better orphan data detection and cleanup.</li>
+<li>FIX: Orphan data detection to fix obsolete data remnants from older versions of Gaea.</li>
+<li>FIX: Incorrect memory usage reported in some situations.</li>
+<li>FIX: Swarm would not honor <code>--ignorecache</code> switch.</li>
+<li>FIX: Gaea reinforces Nvidia Fallback Policy profile if removed.</li>
+<li>FIX: Cache folder would not be created when creating a job.</li>
+<li>FIX: GetCacheSize could fail if cache is missing. Should not cascade.</li>
+<li>FIX: Hybrid Build could fail in some instances when exporting a single output.</li>
+<li>FIX: Half (half-float) files were not being written.</li>
+<li>FIX: Migratory copy save can fail.</li>
+<li>FIX: Import caused inner exception when dialog closed without file selection or file was missing.</li>
+<li>FIX: IPs are now loaded through plain text. Needs testing!</li>
+</ul>
+<hr />
+<p><strong>Functional correctness / node behavior</strong></p>
+<ul>
+<li>FIX: WaterColor should not require Guide input if Accumulation mode is used.</li>
+<li>FIX: RGBSplit was broken.</li>
+<li>FIX: Snow extra inputs were working incorrectly.</li>
+<li>FIX: Secondary port display in Snow.</li>
+<li>FIX: Mixer should honor current input as Underlay if pinned underlay is not present.</li>
+<li>FIX: Transform position corrected to -1 to +1 range.</li>
+<li>FIX: Draw node is blank when duplicated.</li>
+<li>FIX: Thermal2 could create an excess border at the edges.</li>
+<li>FIX: Modifiers were not rebuilt when dragged and re-ordered.</li>
+<li>FIX: Modifiers were not added to the bottom of the stack.</li>
+<li>FIX: Modifier UI was not updating after modifier undo.</li>
+<li>FIX: Node export could be blocked in rare cases.</li>
+<li>FIX: Node render is outdated when reconnecting a node.</li>
+<li>FIX: Node added inside a group's bounds was not correctly assigned to the group.</li>
+<li>FIX: Node did not read state correctly in some situations.</li>
+<li>FIX: Switch can now bypass validation, and provide routing more accurately.</li>
+<li>FIX: Tint should not enforce defaults in struct parameters.</li>
+<li>FIX: Transpose's Insert and Embed may not work cleanly.</li>
+</ul>
+<hr />
+<p><strong>Graph, UI, and usability</strong></p>
+<ul>
+<li>FIX: Autolayout does not work on other rows of graph.</li>
+<li>FIX: Autolayout should ignore portals.</li>
+<li>FIX: Toolbox padding incorrect when confined to a small area.</li>
+<li>FIX: Portal Menu avoids cyclic connections.</li>
+<li>FIX: Clicking on region makes it shift to the left.</li>
+<li>FIX: Region position and size changed on reload.</li>
+<li>FIX: Regions management, internal code handling improved.</li>
+<li>FIX: Duplicate name checking on region renaming.</li>
+<li>FIX: Renaming node does not rename Portals.</li>
+<li>FIX: Search portal menu now does not show portals that can create cyclic connection.</li>
+<li>FIX: Node Creation Toolbox now auto-connects to selected nodes.</li>
+<li>FIX: Create connection was not calling OnSourceUpdated, affecting selection of newly created connection.</li>
+<li>FIX: Creating group without selected items could crash Gaea.</li>
+<li>FIX: Draw window borders were intrusive and overlapped.</li>
+<li>FIX: Prevent premature snapping to small node outputs.</li>
+<li>FIX: File node does not throw error if file is missing but cached.</li>
+<li>FIX: File Relative Paths fixed.</li>
+<li>FIX: Lighting Reset was broken.</li>
+<li>FIX: TaskDialog should be owned by top window.</li>
+<li>FIX: Setup title should show full version.</li>
+<li>FIX: Viewport overlay was not updating to region size in preview regions.</li>
+<li>FIX: Viewport Navigation was setting Sensitivity incorrectly.</li>
+<li>FIX: Zoom extents could cause crash in some cases.</li>
+<li>FIX: Viewport Navigation improved.</li>
+<li>FIX: Status Text was not displayed.</li>
+<li>FIX: Recent Menu shows last modified date in tooltip.</li>
+</ul>
+<hr />
+<p><strong>Undo/Redo, save/load, graph state</strong></p>
+<ul>
+<li>FIX: Do not Freeze if not dirty.</li>
+<li>FIX: Freeze not working on close.</li>
+<li>FIX: Frozen cache would not load; Offloaded GUID was not saved in metadata.</li>
+<li>FIX: Gaea would crash on undoing enum parameter value.</li>
+<li>FIX: Undo operations improved for graph changes.</li>
+<li>FIX: Undo values were not applying correctly.</li>
+<li>FIX: On file load bypass node not clearly identified.</li>
+<li>FIX: On file open graph elements did not show at saved position.</li>
+<li>FIX: Current graph contents were not visible on file load.</li>
+<li>FIX: Major error that prevented undo operations.</li>
+<li>FIX: Potential fix for Modifiers undo.</li>
+</ul>
+<hr />
+<p><strong>Misc / low severity</strong></p>
+<ul>
+<li>FIX: Added a pre-build warning if color nodes dependent on Height nodes were not connected.</li>
+<li>FIX: Connection issues fixed in &quot;move to tab&quot; option.</li>
+<li>FIX: EditorBase visibility issues.</li>
+<li>FIX: Event should be handled in Dispatcher.</li>
+<li>FIX: Graph nodes visibility issues, zoom state not maintained on file load.</li>
+<li>FIX: Grayscale caused issues by not passing a copy.</li>
+<li>FIX: GroundBrightness default was missing.</li>
+<li>FIX: Group auto-connect menu would not show enclosed portals.</li>
+<li>FIX: Old files were forced to use Zero Exposure and appeared black.</li>
+<li>FIX: Proper notification for Max Seat assignments for floating licenses.</li>
+<li>FIX: Race condition for checking BestDeviceActive.</li>
+<li>FIX: Repair File could break by importing custom default Preset for nodes.</li>
+<li>FIX: Route range was incorrect.</li>
+<li>FIX: Right-click crashed SliderY; FIX: Default should set both X and Y.</li>
+<li>FIX: Setting node filter criteria to heavy on empty graph could cause a crash.</li>
+<li>FIX: String Variable Editor could crash on null.</li>
+<li>FIX: Tiled Build failed with Unreal node.</li>
+<li>FIX: VisibilityTable did not work in some cases.</li>
+<li>FIX: Warn when Accumulator is not connected.</li>
+</ul>
+<p>And as usual, a few dozen internal fixes and improvements to improve stability based on your feedback.</p>
+<h3 id="breaking-changes-">Breaking Changes <a href="#breaking-changes" id="breaking-changes"></a></h3>
+<p>The following nodes may not be fully backward compatible with Gaea 2.1 or earlier builds.</p>
+<ul>
+<li>Trees</li>
+<li>Cellular3D</li>
+<li>Debris</li>
+<li>ThermalShaper (minor variance in results)</li>
+</ul>
+<p>It is highly recommended that if you migrate an active project from Gaea 2.1 to 2.2, that you make a backup first and ensure all your nodes are behaving properly.</p>
+<p>Gaea will attempt to create a Recovery copy in the Autosave folder for disaster recovery, but you should still keep a manual backup copy just in case.</p>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_History.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>

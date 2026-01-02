@@ -1,6 +1,6 @@
 {
   "port": 38445,
-  "path": "./staging",
+  "path": "./docs",
   "clr": "v4.0",
   "protocol": "http"
 }

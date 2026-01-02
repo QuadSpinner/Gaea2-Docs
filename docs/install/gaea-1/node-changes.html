@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Node Changes - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/install/gaea-1/node-changes.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="Node Changes - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/install/gaea-1/node-changes.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/install/gaea-1/node-changes.html#article",
+            "headline": "Node Changes - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/install/gaea-1/node-changes.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/install/gaea-1/node-changes.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "Install", "item": "https://docs.gaea.app/install" },
+                { "@type": "ListItem", "position": 3, "name": "Node Changes", "item": "https://docs.gaea.app/install/gaea-1/node-changes.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="Install" data-hive-shortname="Install" data-hive-link="/install" data-slug="node-changes">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="https://www.youtube.com/quadspinner" target="_blank"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>Install</h3>
+                        <h2>Node Changes</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div class="note migration">
+                          <i class="fa-duotone fa-light fa-box-isometric-tape"></i> <strong>We are updating the docs...finally!</strong>
+                            <br> We are migrating our documentation and adding major updates. Please bear with us during this transtion.</div>
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><h1 id="node-changes">Node Changes</h1>
+<p>This table lists all the node changes between Gaea 1.0 and 2.0.</p>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accumulator</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Adjust</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Anastomosis</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Angle</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AO</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Aperture</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Autolevel</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Blur</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Bomber</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Bulbous</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Canyon</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Cellular</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Cellular3D</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Chokepoint</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Clamp</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Clip</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>CLUTer</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>ColorErosion</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Combine</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Cone</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Constant</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Contours</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Cracks</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Craggy</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Crater</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>CraterField</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Crumble</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Curvature</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Curve</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>DataExtractor</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Debris</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Deflate</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Denoise</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Dilate</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>DirectionalWarp</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Distance</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>DotNoise</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Draw</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>DriftNoise</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>DuneSea</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Dusting</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>EasyErosion</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Edge</td>
+<td>Improved</td>
+<td>Formerly called &quot;Zero Borders&quot;</td>
+</tr>
+<tr>
+<td>Equalize</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Erosion</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Erosion2</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Extend</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>File</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Filter</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Flip</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FlowMap</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>FlowMapClassic</td>
+<td></td>
+<td>Formerly called &quot;Flow Map&quot;</td>
+</tr>
+<tr>
+<td>Fold</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>FractalTerraces</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Gabor</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Gamma</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>GraphicEQ</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>GroundTexture</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Halftone</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Height</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Hemisphere</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Hillify</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>HSL</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>HydroFix</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Island</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Lake</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Layers</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>LightX</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>LinearGradient</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>LineNoise</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>LoopBegin</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LoopEnd</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mask</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Match</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Median</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Meshify</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Mesher</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Mixer</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Mountain</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>MountainRange</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>MountainSide</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>MultiFractal</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Noise</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Normals</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Object</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Occlusion</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Origami</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Outcrops</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Peaks</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Perlin</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Pixelate</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Plates</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Pockmarks</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>PointCloud</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>RadialGradient</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Recurve</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Repeat</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Reseed</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>RGBMerge</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>RGBSplit</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Ridge</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Rivers</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>RockMap</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>RockNoise</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Rockscape</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Roughen</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Route</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Rugged</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Sand</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Sandstone</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>SatMap</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Sea</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Seamless</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Sediments</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Sharpen</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Shatter</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Shear</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Slope</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>SlopeBlur</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SlopeWarp</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Slump</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Snow</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>SoftClip</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Soil</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Splat</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Steps</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Stones</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Stratify</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Sunlight</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SuperColor</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Swirl</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Switch</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Synth</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Terraces</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>TextureBase</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Texturizer</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Thermal</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Thermal2</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>ThermalShaper</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Threshold</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>TileGate</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>TileInput</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Tint</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Transform</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Transpose</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Trees</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Unity</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Unreal</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>VariableBlur</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Volcano</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Voronoi</td>
+<td>Improved</td>
+<td></td>
+</tr>
+<tr>
+<td>Warp</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>WaveShine</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Weathering</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+<tr>
+<td>Whorl</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wizard2</td>
+<td>✨ New</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_Install.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>

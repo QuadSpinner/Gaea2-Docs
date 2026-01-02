@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Develop Regions Separately - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/guides/scenarios/large-projects/separate-regions.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="Develop Regions Separately - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/guides/scenarios/large-projects/separate-regions.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/guides/scenarios/large-projects/separate-regions.html#article",
+            "headline": "Develop Regions Separately - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/guides/scenarios/large-projects/separate-regions.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/guides/scenarios/large-projects/separate-regions.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://docs.gaea.app/guides" },
+                { "@type": "ListItem", "position": 3, "name": "Develop Regions Separately", "item": "https://docs.gaea.app/guides/scenarios/large-projects/separate-regions.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="Guides" data-hive-shortname="Guides" data-hive-link="/guides" data-slug="separate-regions">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Guides" href="/guides"><i class="fa-duotone fa-light fa-book-sparkles"></i> Guides</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="/videos"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>Guides</h3>
+                        <h2>Develop Regions Separately</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><h1 id="design-closeups-first-instead-of-zooming-in">Design Closeups First Instead of Zooming In</h1>
+<p>A lot of people coming from older World Machine workflows are used to the idea of “zooming in” after they’ve established a terrain: build a big landscape, pick an interesting region, then crank the resolution and refine the closeup.</p>
+<p>That can work with <strong>pure fractal detail</strong>, because fractals can add detail at any scale. But once you introduce <strong>physically-inspired processes</strong> (especially erosion) this “zoom later” approach starts to break down.</p>
+<h2 id="why-zooming-in-breaks-realism">Why zooming in breaks realism</h2>
+<p>Fractals don’t care about world scale. Erosion does.</p>
+<p>When you zoom into a region of a finished terrain and rebuild it at higher resolution, you often get:</p>
+<ul>
+<li><strong>Erosion fidelity mismatch</strong>: gullies, channels, and sediment patterns were computed at the original scale. Zooming changes your “meters per pixel,” so the same erosion settings no longer represent the same physical size.</li>
+<li><strong>Feature scale drift</strong>: what used to be a valley becomes a canyon, or what used to be believable rills become oversized grooves because the terrain’s context changed.</li>
+<li><strong>Loss of context</strong>: erosion depends on upstream drainage, slope continuity, and catchment area. Cropping/zooming can change flow behavior and produce different results.</li>
+<li><strong>Detail that looks pasted-on</strong>: you compensate with noise/fractals, but it can clash with the erosion language of the larger terrain.</li>
+</ul>
+<div class="tip"><p>If your closeup needs to hold up in a hero shot, treat it like its own asset with its own scale, erosion, and build budget.</p>
+</div>
+<h2 id="the-modern-gaea-approach">The modern Gaea approach</h2>
+<p>With Gaea, it’s usually better to build the “zoomed-in” element <strong>first</strong>, at the resolution and fidelity you need, and then place it into a larger landscape.</p>
+<p>Instead of “zooming into a world,” you “compose a world around a hero asset.”</p>
+<p>The key advantage: <strong>both the hero element and the surrounding landscape can live in the same graph</strong>, but they can be built independently at high resolution as needed.</p>
+<h2 id="example-workflow-a-volcano-and-its-surroundings">Example workflow: a volcano and its surroundings</h2>
+<p>Imagine you need:</p>
+<ul>
+<li>A hero 8K asset of the volcano crater and upper slopes for close shots</li>
+<li>A broader 8K (or lower) landscape that includes the volcano in context for wide shots</li>
+</ul>
+<h3 id="build-the-hero-volcano-first">Build the hero volcano first</h3>
+<ol>
+<li>Create the volcano at the intended real-world scale (crater size, slope angles, caldera shape).</li>
+<li>Run your erosion and detailing where it matters: rim breakup, ash flows, gullies, deposits.</li>
+<li>Keep this branch clean and focused so it can be built at 8K efficiently.</li>
+<li>Bake or export the volcano heightfield (and any masks you care about) so it becomes a stable “module.”</li>
+</ol>
+<h3 id="compose-it-into-a-larger-landscape">Compose it into a larger landscape</h3>
+<ol>
+<li>Build the surrounding terrain as its own branch (mountain ranges, plains, foothills).</li>
+<li>Use <strong>Transform</strong> to position and scale the volcano module correctly.</li>
+<li>Use <strong>Embed</strong>/<strong>Combine</strong>/<strong>Transpose</strong> as needed to seat the volcano into the landscape (clean integration beats brute-force blending).</li>
+</ol>
+<p>Now you have one graph that contains both:</p>
+<ul>
+<li>A high-fidelity volcano asset branch</li>
+<li>A larger world branch that provides context</li>
+</ul>
+<p>And you can build what you need, when you need it.</p>
+<div class="tip"><p>Think “modules” instead of “zoom levels.” Your volcano is a module with its own resolution target and erosion language, and the world is another module that supports it.</p>
+</div>
+<h2 id="why-this-is-better-long-term-than-the-old-zoom-workflow">Why this is better long-term than the old zoom workflow</h2>
+<ul>
+<li><strong>Safer iteration</strong>: you can change the surrounding world without risking the hero volcano (and vice versa).</li>
+<li><strong>Resolution where it matters</strong>: build the volcano at 8K for hero shots, while keeping the broader landscape cheaper until you truly need more.</li>
+<li><strong>Consistent scale</strong>: erosion, deposits, and micro-forms remain physically coherent because they were authored at the correct scale from the start.</li>
+<li><strong>Multiple deliverables</strong>: the same graph can output a hero asset for closeups and a wide environment for shots—without forcing one to compromise for the other.</li>
+</ul>
+<div class="tip"><p>If you try to “fix” a zoomed-in closeup by piling on fractal detail, it may look sharper, but it often won’t match the erosion scale language of the larger terrain. Viewers feel that mismatch immediately.</p>
+</div>
+<h2 id="the-only-real-cost-is-planning">The only real cost is planning</h2>
+<p>Yes, this approach asks you to plan a little earlier:</p>
+<ul>
+<li>Decide what is a hero element</li>
+<li>Decide what needs 8K fidelity</li>
+<li>Decide how it will integrate into the wider world</li>
+</ul>
+<p>But once you adopt it, you’ll find it’s <strong>easier, more predictable, and far less fragile</strong> than the old “zoom in after the fact” workflow—especially when erosion and realism matter.</p>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_Guides.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>

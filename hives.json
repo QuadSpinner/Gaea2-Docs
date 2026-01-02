@@ -1,7 +1,7 @@
 {
   "RootFolder": "X:\\Docs\\Gaea2-Docs",
   "SourceRoot": "Source",
-  "StagingRoot": "staging",
+  "StagingRoot": "docs",
   "TemplatesFolder": "template",
   "HtmlTemplate": "template\\template.html",
   "DataFolders": [".Data"],

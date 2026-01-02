@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2.1.0.0 - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/history/gaea-2.1/2.1.0.0.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="2.1.0.0 - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/history/gaea-2.1/2.1.0.0.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/history/gaea-2.1/2.1.0.0.html#article",
+            "headline": "2.1.0.0 - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/history/gaea-2.1/2.1.0.0.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/history/gaea-2.1/2.1.0.0.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "Release History", "item": "https://docs.gaea.app/history" },
+                { "@type": "ListItem", "position": 3, "name": "2.1.0.0", "item": "https://docs.gaea.app/history/gaea-2.1/2.1.0.0.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="Release History" data-hive-shortname="History" data-hive-link="/history" data-slug="2.1.0.0">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="https://www.youtube.com/quadspinner" target="_blank"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>Release History</h3>
+                        <h2>2.1.0.0</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div class="note migration">
+                          <i class="fa-duotone fa-light fa-box-isometric-tape"></i> <strong>We are updating the docs...finally!</strong>
+                            <br> We are migrating our documentation and adding major updates. Please bear with us during this transtion.</div>
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><h1 id="2100">2.1.0.0</h1>
+<p>{% hint style=&quot;success&quot; %}
+See <a href="https://gaea.app/blog-gaea-21">this blog post to read more</a>.
+{% endhint %}</p>
+<h3 id="new-features">New Features</h3>
+<p>Gaea 2.1 focuses on workflow improvements and stability. Build Regions allow you to isolate a portion of your terrain and build it at higher resolution and quality. The overhauled mesh workflow allows you to import meshes as heightfields, export heightfields as meshes with better efficiency and expanded support for various industry formats such as FBX, glTF, and more.</p>
+<p>‎</p>
+<p>‎</p>
+<p>There are many new features such as New Nodes, Custom Overlays, Turntable Animations, Tangent-Space Normals, and more.</p>
+<p>‎</p>
+<p>‎</p>
+<p>We have addressed over 100 issues that increase the stability of the software, including many top issues reported by users. We expect that you will find this the best version of Gaea yet!</p>
+<p>‎</p>
+<p>Please see the NOTES section for important compatibility information.</p>
+<p>‎</p>
+<p>Visit <a href="https://gaea.app/blog-gaea-21">our blog to read more</a> about this release.</p>
+<hr />
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>Sky Editor</strong>: Overlay images on terrain.</li>
+<li><strong>Readout Data View Panel</strong>: New panel for detailed node stats.</li>
+<li><strong>Normals Node</strong>: Added tangent-space normals (Work-in-Progress).</li>
+<li><strong>Turntable Animator</strong>: New feature (custom resolutions and supersampling pending).</li>
+<li><strong>Regions Support</strong>: Added support for defining and using regions.</li>
+<li><strong>Preset Search Enhancements</strong>: Use <code>_</code> to find presets.</li>
+<li><strong>Automatic Preset Shortcodes</strong>: Shortened names for presets (e.g., <code>LongPass → LP</code>).</li>
+<li><strong>Build Swarm Overhaul</strong>: Improved UI and functionality.</li>
+<li><strong>Command-Line Help for Swarm</strong>: Restored CLI help output.</li>
+<li><strong>Improved Micro-Detail Rendering</strong>: More accurate viewport display for details smaller than 1px.</li>
+</ul>
+<h2 id="nodes">Nodes</h2>
+<h3 id="new-nodes"><strong>New Nodes</strong></h3>
+<ul>
+<li><strong>AB Compare</strong>: Compare differences between two nodes.</li>
+<li><strong>Cartography</strong>: Generate maps for cartography.</li>
+<li><strong>Contours</strong>: Generate contour lines for terrains.</li>
+<li><strong>Grid</strong>: Generate grids for terrains.</li>
+<li><strong>Lichtenberg</strong>: Generate natural branching and flow networks.</li>
+<li><strong>Loop Nodes</strong>: Introduced looping functionality.</li>
+<li><strong>Math</strong>: Custom math-based node processing.</li>
+<li><strong>MeshWarp</strong>: Warp maps to mesh and generate tangent-space normals.</li>
+<li><strong>Object Node</strong>: Import 3D objects.</li>
+<li><strong>Transform3D</strong>: Manipulate terrains in 3D space.</li>
+<li><strong>Uplift</strong>: New terrain primitive node.</li>
+<li><strong>WaterColor</strong>: Colorization of water elements.</li>
+</ul>
+<h3 id="node-enhancements"><strong>Node Enhancements</strong></h3>
+<ul>
+<li><strong>Mesher</strong>: Improved for reducing sharp artifacts.</li>
+<li><strong>Clip Modifier</strong>: Added for precise adjustments.</li>
+<li><strong>Clip Node</strong>: Now features an <strong>AutoClip</strong> option.</li>
+<li><strong>MountainSide</strong>: Additional modes and features.</li>
+<li><strong>Sediments Node</strong>: Overhauled for <strong>physically accurate sedimentation</strong>, multiple passes, and extra masks.</li>
+<li><strong>Weathering Node</strong>: Rewritten for precision.</li>
+<li><strong>Synth Node</strong>: Manual synthesis added. You can now synthesize a gradient and edit it. Improved logic and quality.</li>
+<li><strong>Synth Node</strong>: Export Synth node data as XRGBA CSV for Unreal Engine.</li>
+<li><strong>Curve Node</strong>: <strong>Fit to Curve</strong> command and <strong>Relative Mode</strong> added.</li>
+<li><strong>Bomber Node</strong>: New <strong>Grid Mode</strong> and <strong>Jitter</strong> options.</li>
+<li><strong>Dilate Node</strong>: Now features an <strong>Invert</strong> option.</li>
+</ul>
+<h3 id="performance--stability-fixes"><strong>Performance &amp; Stability Fixes</strong></h3>
+<ul>
+<li><strong>PointCloud &amp; Normals Export</strong>: Tweaked for better accuracy.</li>
+<li><strong>Batch Builds in Build Menu</strong>: Now supports <strong>Profiles</strong>.</li>
+<li><strong>Accumulator Node</strong>: Now renders correctly when used as a <strong>Mask</strong>.</li>
+<li><strong>Height Modifier</strong>: Fixed excessive data storage issue.</li>
+<li><strong>MountainRange Node</strong>: Corrected out-of-range values.</li>
+<li><strong>Mesher</strong>: Improved progress reporting.</li>
+</ul>
+<h3 id="bug-fixes"><strong>Bug Fixes</strong></h3>
+<ul>
+<li><strong>LineNoise</strong>: Fixed visual artifacts.</li>
+<li><strong>Secondary Output Masks</strong>: Fixed for Canyon, FractalTerrace, SandStone, Stratify, and EasyErosion nodes.</li>
+<li><strong>Unreal Export</strong>: No longer <strong>autolevels all output</strong>.</li>
+<li><strong>Seamless Node</strong>: Fixed <strong>RGB channel bug</strong>.</li>
+<li><strong>Presets (Curve, Synth, CLUTer)</strong>: Now load correctly.</li>
+<li><strong>Dilate Node</strong>: Fixed data contamination issue.</li>
+<li><strong>Clamp Node</strong>: Now correctly affects <strong>0 values</strong>.</li>
+</ul>
+<h2 id="improvements">Improvements</h2>
+<h3 id="progress-reporting--ui"><strong>Progress Reporting &amp; UI</strong></h3>
+<ul>
+<li>Improved progress animations.</li>
+<li>More accurate status bar readouts.</li>
+<li>Enhanced progress reporting for <strong>Turntable</strong> animations and <strong>Bake</strong> operations.</li>
+<li>Improved <strong>Build Log</strong>: Now saved in the build destination folder for crash/failure debugging.</li>
+<li>Removed red coloration from <strong>Breakdown Chart</strong> at the end of a command-line build.</li>
+</ul>
+<h3 id="editor--workflow-enhancements"><strong>Editor &amp; Workflow Enhancements</strong></h3>
+<ul>
+<li><strong>Graph Shortcuts Restriction</strong>: Option to confine shortcuts to the graph area to prevent accidental actions (configurable in <strong>Options</strong>).</li>
+<li><strong>Graph Tabs</strong>: Now support longer names.</li>
+<li><strong>Easier Terrain Input</strong>: Simplified height and width entry.</li>
+<li><strong>Variable Editor</strong>: Improvements for better usability.</li>
+<li><strong>Gradient Editor</strong>: Redesigned for better control.</li>
+<li><strong>Minimal Color Picker</strong>: Streamlined UI for color selection.</li>
+<li><strong>SatMap List Display</strong>: Option to show as a single stack.</li>
+<li><strong>Lighting Editor</strong>: Improved UI and controls.</li>
+<li><strong>SatMap List Scaling</strong>: Supports stretching to show additional columns.</li>
+<li><strong>Shortcut</strong>: <code>Ctrl + Shift + F8</code> to <strong>Combine to Layers</strong>.</li>
+</ul>
+<h3 id="file-management--performance"><strong>File Management &amp; Performance</strong></h3>
+<ul>
+<li><strong>Build Path Separated</strong>: Build Path can now be managed separately from Projects folder.</li>
+<li><strong>Autosave on Version Mismatch</strong>: Automatically saves a copy when opening a file from an older version.</li>
+<li><strong>Improved File Repair</strong>: Better handling of older data.</li>
+<li><strong>Cleanup Options</strong>: Added option to delete logs and autosaves older than 45 days.</li>
+<li><strong>Path Token for Region Name</strong>: Added new option for paths.</li>
+<li><strong>Expanded Options Dialog</strong>: More settings and customizations.</li>
+<li><strong>Disable File Thumbnails</strong>: Added option to disable saving Thumbnails for terrain files.</li>
+</ul>
+<h3 id="quality-of-life-improvements"><strong>Quality of Life Improvements</strong></h3>
+<ul>
+<li><strong>Node Tooltip Changes</strong>: Now streamlined in favor of <strong>Readout Data View</strong>.</li>
+<li><strong>2D Viewport RGB Readout</strong>: Now supports pixel readouts.</li>
+<li><strong>Viewport Behavior Customization</strong>: Option to prevent clearing the viewport when unselecting a node.</li>
+<li><strong>Editor Controls for Gate Nodes</strong>: Improved usability and handling.</li>
+<li><strong>File Nodes Open Dialog</strong>: Now shows &quot;All Supported Extensions&quot; by default.</li>
+<li><strong>Nahimic Bloatware Detection</strong>: Improved warnings for potential issues.</li>
+<li><strong>Disable Micro-Animations</strong>: Added an option to turn them off for a snappier UI.</li>
+<li><strong>Improved notifications</strong>: Various errors or warnings in Build Swarm are now show in the window instead of just the log.</li>
+<li><strong>Change All Formats</strong>: Added menu to change all export formats at once.</li>
+<li><strong>Set Proxy from CLI</strong>: Added command line option to Set Proxy server.</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<h3 id="crashes--stability"><strong>Crashes &amp; Stability</strong></h3>
+<ul>
+<li>Fixed a crash when double-clicking a <strong>node’s port</strong> and interacting with the node.</li>
+<li>Fixed <strong>Swarm</strong> crashes caused by <code>[]</code> characters in paths.</li>
+<li>Fixed a <strong>race condition</strong> in Swarm device loading.</li>
+<li>Fixed <strong>file saving failures</strong> showing inadequate warnings.</li>
+<li>Prevented accidental <strong>parallel builds</strong> when using Refresh/Refresh All.</li>
+<li>Fixed a <strong>critical bug</strong> preventing <strong>Tiled Builds</strong>.</li>
+<li>Improved handling when <strong>Perforce</strong> or other source control locks files.</li>
+<li>Fixed <strong>non-numeric entry</strong> could crash Gaea.</li>
+<li>Fixed <strong>crash on selecting multiple nodes on startup</strong>.</li>
+<li>Fixed <strong>floating viewport crash</strong> in some instances.</li>
+<li>Fixed a major issue in <strong>Baking</strong> that prevented certain resolutions.</li>
+<li>Fixed an internal bug that could create rare errors while loading a file.</li>
+</ul>
+<h3 id="graph--ui-fixes"><strong>Graph &amp; UI Fixes</strong></h3>
+<ul>
+<li>Fixed where <strong>Onboarding dialog paths</strong> could not be set.</li>
+<li>Fixed <strong>graph connections</strong> disappearing until <code>ESC</code> was pressed.</li>
+<li>Fixed <strong>Combine Ports swapping</strong> breaking visuals.</li>
+<li>Fixed <strong>double-dots in recovery filenames</strong>.</li>
+<li>Fixed <strong>unnecessary tabs</strong> being created when using <strong>Repair File</strong>.</li>
+<li>Fixed an issue where <strong>deleting a tab</strong> would not refresh the graph.</li>
+<li>Fixed <strong>graph tab name trimming</strong> in <strong>Data View</strong>.</li>
+<li>Fixed <strong>keyboard shortcuts</strong> not honoring <code>Ctrl</code> in some situations.</li>
+<li>Fixed <strong>Search shortcut (Tab)</strong> not working in an empty graph.</li>
+<li>Fixed <strong>preset sorting</strong> issues in search results.</li>
+<li>Fixed <strong>inconsistent animation</strong> when deleting multiple items.</li>
+<li>Fixed an issue where <strong>canceling a node</strong> could freeze the engine.</li>
+<li>Fixed <strong>redundant shine effect</strong> on nodes already built.</li>
+<li>Fixed <strong>hidden Graph Tabs</strong> not hiding corresponding <strong>Data View</strong> nodes.</li>
+<li>Fixed <strong>Group menu</strong> was <strong>incorrectly zoomed</strong> when Graph was zoomed.</li>
+<li>Fixed connections being pasted in the <strong>incorrect graph</strong>.</li>
+<li>Fixed <strong>connection orphaning when moving nodes</strong> to <strong>another tab</strong>.</li>
+<li>Fixed Sand and SatMap <strong>shortcut conflict</strong>. Sand is now <code>sd</code>.</li>
+<li>Fixed <strong>Copy/Pasting multiple nodes</strong> could lead to <strong>incorrect movement</strong>.</li>
+<li>Fixed a bug where some <strong>Node Ports</strong> would <strong>lose their names</strong> when saved and re-opened.</li>
+<li>Fixed a bug where unnecessary Add Mask options were available to certain nodes.</li>
+<li>Fixed a bug where the Render Style would not change when loading a file.</li>
+<li>Fixed a logging issue where RPC errors were not logged for Floating Licenses.</li>
+</ul>
+<h3 id="data--export-fixes"><strong>Data &amp; Export Fixes</strong></h3>
+<ul>
+<li>Fixed <strong>Unbaking</strong> contaminating data.</li>
+<li>Fixed <strong>Range and Vector3 duplication</strong> issues.</li>
+<li>Fixed <strong>data contamination</strong> when duplicating and pasting nodes.</li>
+<li>Fixed <strong>some outputs not saving</strong> in the build folder.</li>
+</ul>
+<p>Many other internal changes have been made to improve the overall stability and performance of Gaea.</p>
+<h2 id="compatibility">Compatibility</h2>
+<p>Gaea 2.1 files are NOT backward compatible with older builds. Please make sure to back up your files before opening them in Gaea 2.1.</p>
+<p>Gaea will try to automatically create a copy of the older file in the Autosave folder when opening it for the first time.</p>
+<h2 id="using-regions">Using Regions</h2>
+<p>For detailed instructions, see <a href="https://gaea.app/docs-regions">the documentation</a>.</p>
+<ol>
+<li>Like with tiling, all &quot;Must Bake&quot; nodes must be baked. For convenience, add a Gate node where you want the baking to end and use the Bake Menu &gt; Bake Gates command to quickly bake all gates. You can use the Data View Tree Filter &quot;Requires Baking&quot; to see which nodes must be baked.</li>
+<li>Use the Regions tab in Build Settings to define your regions. Right-click to select current node as your preview. (You must save your file first.) This process will become easier as we add polish to these features.</li>
+<li>Once Regions are created and your bakeables are baked, use the Region dropdown next to the Preview Resolution dropdown, or the Preview &gt; Region menu to select a region to drill-down to.</li>
+<li>All non-baked nodes will act at whatever your preview or build resolution is. You can scale it to any resolution you like.</li>
+</ol>
+<p>You can set the Build Scope in Build Settings to a specific region and launch a build to build just that region.</p>
+<p>Additionally, you get Build Profiles to save and load build settings for various scopes.</p>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_History.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>

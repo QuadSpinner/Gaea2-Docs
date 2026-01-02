@@ -1,0 +1,51 @@
+
+:root {
+  --tblr-font-sans-serif: "Segoe UI";
+  --tblr-body-color: #c0c0c0;
+  --tblr-dark-mode-border-color-translucent: rgba(110, 110, 110, 0.14);
+  --tblr-link-color: #619280;
+  --tblr-link-color-rgb: 97, 146, 128;
+  --tblr-link-decoration: none;
+  --tblr-link-hover-color: #389170;
+  --tblr-link-hover-color-rgb: 56, 145, 112;
+  --prime: #ffcc00;
+  // Light
+  --toc-section: #111;
+  --toc-link: #777;
+  --toc-link-hover: #25282e;
+  --toc-link-active: #000;
+  --toc-border: #ccc;
+  --toc-border-active: #000;
+  --toc-chevron: rgba(0, 0, 0, 0.55);
+  --page-header: rgba(0, 0, 0, 0.05);
+}
+
+html[data-bs-theme="dark"],
+body.dark {
+  // Dark (tuned for contrast on dark backgrounds)
+  --page-header: rgba(255, 255, 255, 0.05);
+  --toc-section: rgba(255, 255, 255, 0.92);
+  --toc-link: rgba(255, 255, 255, 0.62);
+  --toc-link-hover: rgba(255, 255, 255, 0.86);
+  --toc-link-active: #619280;
+  --toc-border: rgba(255, 255, 255, 0.18);
+  --toc-border-active: #00abd7;
+  --toc-chevron: rgba(255, 255, 255, 0.55);
+}
+
+body {
+  background-image: linear-gradient(0deg, var(--prime) -600%, rgba(16, 16, 16, 1) 40%, rgba(24, 24, 24, 1) 100%);
+  background-size: 200vh;
+  background-position: 0% 0%;
+  background-attachment: fixed;
+} 
+
+
+body[data-hive-shortname="Home"], a[data-hive-shortname="Home"]{ --prime: #ffcc00; }
+body[data-hive-shortname="Install"], a[data-hive-shortname="Install"]{ --prime: #4e99a6; }
+body[data-hive-shortname="UI"], a[data-hive-shortname="UI"]{ --prime: #a34563; }
+body[data-hive-shortname="Using"], a[data-hive-shortname="Using"]{ --prime: #4fba88; }
+body[data-hive-shortname="Reference"], a[data-hive-shortname="Reference"]{ --prime: #4c799a; }
+body[data-hive-shortname="Guides"], a[data-hive-shortname="Guides"]{ --prime: #8a61a4; }
+body[data-hive-shortname="Developers"], a[data-hive-shortname="Developers"]{ --prime: #c9708c; }
+body[data-hive-shortname="History"], a[data-hive-shortname="History"]{ --prime: #a7b076; }

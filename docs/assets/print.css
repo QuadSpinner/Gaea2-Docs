@@ -1,0 +1,91 @@
+/* Print: force black on white, remove effects */
+@media print {
+  @page {
+    margin: 12mm;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Force all text to black and all backgrounds to white/none */
+  *,
+  *::before,
+  *::after {
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+  }
+
+  /* Kill theme variables if you use them */
+  :root,
+  [data-bs-theme] {
+    color-scheme: light !important;
+  }
+
+  /* Optional: borders become black */
+  hr,
+  table,
+  th,
+  td,
+  blockquote,
+  pre,
+  code,
+  .card,
+  .alert {
+    border-color: #000 !important;
+  }
+
+  /* Optional: links show URL */
+  a,
+  a:visited {
+    text-decoration: underline !important;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+  }
+
+  /* Optional: hide UI-only elements */
+  .no-print,
+  nav,
+  header,
+  footer,
+  .btn,
+  .tooltip,
+  .dropdown-menu {
+    display: none !important;
+  }
+
+  /* common helpers */
+  h1,
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  img,
+  svg,
+  pre,
+  .tip,
+  .important,
+  .alert,
+  .success,
+  .danger,
+  .warning,
+  .info,
+  blockquote {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Graph Conveniences - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/ui/graph/basic-workflow/graph-conveniences.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="Graph Conveniences - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/ui/graph/basic-workflow/graph-conveniences.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/ui/graph/basic-workflow/graph-conveniences.html#article",
+            "headline": "Graph Conveniences - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/ui/graph/basic-workflow/graph-conveniences.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/ui/graph/basic-workflow/graph-conveniences.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "User Interface", "item": "https://docs.gaea.app/ui" },
+                { "@type": "ListItem", "position": 3, "name": "Graph Conveniences", "item": "https://docs.gaea.app/ui/graph/basic-workflow/graph-conveniences.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="User Interface" data-hive-shortname="UI" data-hive-link="/ui" data-slug="graph-conveniences">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="https://www.youtube.com/quadspinner" target="_blank"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>User Interface</h3>
+                        <h2>Graph Conveniences</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div class="note migration">
+                          <i class="fa-duotone fa-light fa-box-isometric-tape"></i> <strong>We are updating the docs...finally!</strong>
+                            <br> We are migrating our documentation and adding major updates. Please bear with us during this transtion.</div>
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><h1 id="graph-conveniences">Graph Conveniences</h1>
+<p>Gaea supplies numerous quality-of-life features to help you create and navigate complex graphs with as little effort as possible. These conveniences can reduce your workload dramatically when adopted into your standard workflow.</p>
+<h2 id="create-nodes">Create Nodes</h2>
+<h3 id="shortcodes">Shortcodes</h3>
+<p>Each node has a corresponding shortcode. For example, Perlin is <code>p</code>, Mountain is <code>m</code>, Erosion2 is <code>e2</code>, Cone is <code>con</code>, and so on.</p>
+<p><img src="/.data/assets/Gaea_-_Untitled_11-31-06-PM.png" alt="" /></p>
+<p>You can enter the shortcode instead of the full name when searching for nodes.</p>
+<h3 id="chained-creation">Chained Creation</h3>
+<p>You can use shortcodes (or full names) to quickly create a linear sequence of nodes. As you press the <code>,</code> key, Gaea will expand the shortcode or the first matching node in the Search results.</p>
+<p>Enter <code>m,e2,e2,tb,sm</code> to create <code>Mountain &gt; Erosion2 &gt; Erosion2 &gt; TextureBase &gt; SatMap</code>.</p>
+<p><img src="/.data/assets/Gaea_-_Untitled_11-37-32-PM.gif" alt="Chained creation can help you quickly create several nodes at once." /></p>
+<h3 id="out-to-out">Out to Out</h3>
+<p>When you drag a connection from an Out port and connect it to another Out port, instead of denying the connection as a disallowed right-to-left direction flow, Gaea will create a <code>Combine</code> node and route both Out ports to the Combine node.</p>
+<p><img src="/.data/assets/Gaea_out-to-out.gif" alt="" /></p>
+<h3 id="multimix">MultiMix</h3>
+<p><strong>Combine:</strong> MultiMix can be called from the Graph toolbar or by simply pressing <code>F8</code>. It connects the primary Output of all selected nodes to one or more inputs in a <strong>Combine</strong> node.</p>
+<p><strong>Mixer:</strong> Alternatively, if you press <code>Ctrl + F8</code> or select the To Mixer option in the Graph toolbar, the outputs will be connected as Layer inputs for a <strong>Mixer</strong> node. This is useful when you want to layer multiple color textures and mask them using the Mixer node.</p>
+<h2 id="portals">Portals</h2>
+<p>For detailed information on Portals, see <a href="/ui/graph/organization/portals-and-chokepoints.html">Portals and Chokepoints</a></p>
+<h3 id="convert-connection-to-portal">Convert Connection to Portal</h3>
+<p>Right-click on a connection and select &quot;Convert to Portal&quot; (or press <code>Ctrl + P</code> to convert an existing connection to a Portal. This will also convert the Out port to a Portal.</p>
+<p><img src="/.data/assets/Convert-to-Portal.png" alt="" /></p>
+<p>Other connections associated with that Port will not be affected.</p>
+<h2 id="insert-node">Insert Node</h2>
+<p><img src="/.data/assets/Insert-Node.png" alt="" /></p>
+<ul>
+<li>Right-click on a connection and choose &quot;Insert node.&quot; This action opens a search menu.</li>
+<li>Select the node you wish to insert from this menu, and it will be automatically placed between the existing connection.</li>
+</ul>
+<h3 id="connect-to-portals">Connect to Portals</h3>
+<p>When you press <code>P</code> to bring up the Portal Management menu and select an In port, you will be presented with a list of available Portals that can be consumed.</p>
+<h2 id="navigation">Navigation</h2>
+<h3 id="navigate-menu">Navigate Menu</h3>
+<p><img src="/.data/assets/Navigate-Menu.png" alt="" /></p>
+<ul>
+<li>Press the <code>,</code> key while a node is selected to open the navigate menu. This menu displays all incoming and outgoing connections linked to the selected node.</li>
+<li>Click on a connection within the menu to select and automatically navigate to the corresponding node.</li>
+</ul>
+<h3 id="node-bookmarks">Node Bookmarks</h3>
+<p>Allows you to bookmark selected node. When a node is bookmarked, it is shown in the bookmark menu. Clicking on the node will select and navigate to that node.</p>
+<p><img src="/.data/assets/Gaea_-_Untitled_08-43-25-PM.png" alt="" /></p>
+<h2 id="organization">Organization</h2>
+<h3 id="select-nodes">Select Nodes</h3>
+<p>You can select all nodes upstream (ancestors) or downstream (descendants) of a specific node from the Node menu or the <a href="/ui/interface/menus-and-toolbars/graph-toolbar.html">Graph Toolbar</a>.</p>
+<p><img src="/.data/assets/Select-Nodes.png" alt="" /></p>
+<h3 id="groupungroup-nodes">Group/Ungroup nodes</h3>
+<p>To create a group, select multiple nodes and choose &quot;Group/Ungroup&quot; from the menu. This action groups the selected nodes together. Clicking &quot;Group/Ungroup&quot; again while a group is selected will ungroup the nodes, placing them individually back onto the graph.</p>
+<h3 id="combine-nodes">Combine nodes</h3>
+<p>Select two or more nodes and click on the &quot;Combine Nodes&quot; menu option. This will connect the selected nodes using a combine node.</p>
+<h3 id="convert-port-to-portals">Convert port to portals</h3>
+<p>This feature displays a list of output ports. Click on a port to convert it into a portal.</p>
+<h3 id="move-to-tab">Move to Tab</h3>
+<p>This option provides a list of graph tabs. Click on a tab to move the selected nodes to the selected tab.</p>
+<h3 id="auto-layout">Auto Layout</h3>
+<p>Pressing <code>F4</code> when one or more nodes are selected will automatically layout the nodes.</p>
+<h3 id="push-nodes">Push Nodes</h3>
+<p>Dragging the cursor on the graph while holding <code>Ctrl + Shift</code> lets you push all nodes to the right of the cursor. It is a handy tool to quickly organize portions of a graph.</p>
+<figure><img src="/.data/assets/Gaea_-_Mixer_and_ColorErosion.terrain_11-46-49-PM.gif"><figcaption><p>Push nodes with <code>Ctrl + Shift + LMB</code></p></figcaption></figure>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_UI.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>

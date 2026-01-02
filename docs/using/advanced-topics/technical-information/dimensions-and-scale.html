@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dimensions and Scale - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/using/advanced-topics/technical-information/dimensions-and-scale.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="Dimensions and Scale - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/using/advanced-topics/technical-information/dimensions-and-scale.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/using/advanced-topics/technical-information/dimensions-and-scale.html#article",
+            "headline": "Dimensions and Scale - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/using/advanced-topics/technical-information/dimensions-and-scale.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/using/advanced-topics/technical-information/dimensions-and-scale.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "Using Gaea", "item": "https://docs.gaea.app/using" },
+                { "@type": "ListItem", "position": 3, "name": "Dimensions and Scale", "item": "https://docs.gaea.app/using/advanced-topics/technical-information/dimensions-and-scale.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="Using Gaea" data-hive-shortname="Using" data-hive-link="/using" data-slug="dimensions-and-scale">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="https://www.youtube.com/quadspinner" target="_blank"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>Using Gaea</h3>
+                        <h2>Dimensions and Scale</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div class="note migration">
+                          <i class="fa-duotone fa-light fa-box-isometric-tape"></i> <strong>We are updating the docs...finally!</strong>
+                            <br> We are migrating our documentation and adding major updates. Please bear with us during this transtion.</div>
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><h1 id="dimensions-and-scale">Dimensions and Scale</h1>
+<h3 id="what-is-a-pixel-worth">What is a pixel worth?</h3>
+<p>In Gaea, terrain is represented using a heightfield, which is essentially a grid of pixels where each pixel’s value (ranging from 0 to 1) corresponds to a specific elevation point on the terrain. This system allows Gaea to model the terrain’s slopes and elevations with high precision.</p>
+<h3 id="scale-philosophy">Scale Philosophy</h3>
+<p>Gaea uses a vertical ratio to maintain scale. This is because we describe the world in meters (e.g., <code>5000m x 5000m x 2500m</code>) to retain a consistent scale, but we use pixels in specific sizes (e.g., <code>4096px x 4096px</code>) to store our data (as needed by CG applications) which is a finite and arbitrary unit which can't map to pixels. In addition, each pixel's value is stored as a high-precision decimal value (<code>0.005893f</code>) which is also an arbitrary, but ratio-based, unit.</p>
+<p>Therefore, we use a simple formula to create and retain the height of the terrain:</p>
+<p Compression="" Ratio="" Height="" Scale="">$$
+\text = \frac{\text}{\text} = \frac{2500}{5000} = 0.5
+$$</p>
+<p><img src="/.data/assets/scale--5000x2600.webp" alt="The default Gaea world is 5000m wide and 2500m tall, creating a perfect 0.5 ratio." /></p>
+<h3 id="terrain-size-and-height">Terrain Size and Height</h3>
+<p><strong>1. Size (Width and Sprawl)</strong></p>
+<ul>
+<li><strong>Size Specification</strong>: In Gaea, you can specify the physical dimensions of the terrain, often referred to as the width or sprawl, in meters. This dimension determines the horizontal extent of the terrain.</li>
+<li><strong>Impact on Design</strong>: Setting the size helps to define the scale of the landscape, affecting how terrain features like hills and valleys are spread across the terrain map.</li>
+</ul>
+<p><strong>2. Height</strong></p>
+<ul>
+<li><strong>Height Values</strong>: The heights within the heightfield are stored as values between 0 and 1. These values are scaled to represent the actual height range of your terrain in meters.</li>
+<li><strong>Example</strong>: A height value of 0.5 in a terrain with a maximum elevation of 100 meters represents an elevation of 50 meters.</li>
+</ul>
+<h3 id="understanding-vertical-compression-ratio">Understanding Vertical Compression Ratio</h3>
+<p><strong>Vertical Compression Ratio = Height / Scale</strong></p>
+<ul>
+<li><strong>Height</strong>: This is the maximum elevation difference in your terrain, from the lowest point (often represented as 0 in the heightfield) to the highest point (represented as 1).</li>
+<li><strong>Scale</strong>: This refers to the specified horizontal dimensions of the terrain.</li>
+</ul>
+<h3 id="purpose-of-the-compression-ratio"><strong>Purpose of the Compression Ratio</strong></h3>
+<ul>
+<li>The vertical Compression Ratio helps maintain a realistic representation of vertical and horizontal scales. It ensures that the terrain’s vertical scale (elevation) is proportionate to its horizontal scale (width/sprawl).</li>
+<li><strong>Interpreting the Ratio</strong>: A higher Compression Ratio indicates that the terrain features are more vertically exaggerated relative to their horizontal spread. Conversely, a lower ratio means the terrain is relatively flatter or more stretched out horizontally.</li>
+</ul>
+<h2 id="practical-example">Practical Example</h2>
+<p>Suppose you are creating a mountainous landscape:</p>
+<ul>
+<li><strong>Horizontal Size (Width/Sprawl)</strong>: 2000 meters</li>
+<li><strong>Maximum Elevation (Height)</strong>: 500 meters</li>
+</ul>
+<p>The vertical compression ratio would be calculated as:</p>
+<p Compression="" Ratio="" Height="" Scale="">$$
+\text = \frac{\text}{\text} = \frac{500}{2000} = 0.25
+$$</p>
+<p>This ratio tells us that for every 4 meters you move horizontally, there is a potential elevation change of 1 meter. This relatively low ratio indicates a gentle slope across the terrain.</p>
+<h3 id="importing-a-mesh-or-heightfield-object-in-your-3d-app">Importing a Mesh or Heightfield Object in your 3D App</h3>
+<p><strong>Scenario:</strong> You have a terrain mesh exported from Gaea where the maximum height is set to a specific value and the horizontal dimensions are defined. You want to ensure the mesh retains realistic proportions when imported into a 3D CG application.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+<li><strong>Import the Terrain Mesh</strong>
+<ul>
+<li>Open your 3D CG application and import the mesh file (typically in formats like OBJ, FBX, or another application-specific format) that you exported from Gaea.</li>
+</ul>
+</li>
+<li><strong>Calculate the Vertical Compression Ratio</strong>
+<ul>
+<li>Given <strong>Height</strong> (maximum vertical extent) and <strong>Scale</strong> (horizontal dimensions), compute the ratio. For example, if <strong>Height</strong> = 500 meters and <strong>Scale</strong> = 2000 meters, the ratio is (0.25).</li>
+</ul>
+</li>
+<li><strong>Adjust the Scale in Your 3D Application</strong>
+<ul>
+<li>Select the imported mesh in your application.</li>
+<li>Access the scaling tool or transformation properties.</li>
+<li>Set the scale along the vertical axis (often Z-axis) to the calculated Compression Ratio (e.g., 0.25), making sure the terrain's vertical scale aligns with its real-world dimensions.</li>
+<li>Keep the horizontal scales (X and Y axes) at their default (usually 1.0) to maintain the original width and sprawl.</li>
+</ul>
+</li>
+<li><strong>Apply the Scale</strong>
+<ul>
+<li>Apply or confirm the scaling transformation. This step may vary by software; it typically involves confirming the scale adjustment through a transformation apply, freeze, or reset scale function.</li>
+</ul>
+</li>
+<li><strong>Verify and Adjust if Necessary</strong>
+<ul>
+<li>Use tools available in your 3D application to check the terrain dimensions. This might include measuring tools or viewing properties that confirm the object's scale relative to the scene.</li>
+<li>Adjust further if the visual scale does not seem realistic or consistent with the intended design.</li>
+</ul>
+</li>
+</ol>
+<p>By adhering to these steps, the imported terrain mesh will reflect accurate proportions and the visualization will maintain the intended topographical features and realism, regardless of the 3D CG software used.</p>
+<h3 id="tips-for-users">Tips for Users</h3>
+<ul>
+<li><strong>Adjusting the Ratio</strong>: You can manipulate the look and feel of your terrain by adjusting either the height or the sprawl. Increasing the height while keeping the sprawl constant will make the terrain steeper.</li>
+<li><strong>Visual Impact</strong>: Use the Compression Ratio to guide the realism of your terrain. A ratio that closely matches real-world landscapes will yield more realistic results. A higher or lower ratio can be used to stylize the terrain according to specific artistic goals.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Understanding and utilizing the vertical Compression Ratio in Gaea allows you to create terrains that are visually balanced and scaled appropriately for the intended application. By controlling the height and size parameters, you can effectively shape the overall character of your digital landscape.</p>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_Using.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>

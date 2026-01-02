@@ -1,0 +1,156 @@
+#site-nav,
+#site-nav-2 {
+
+  --toc-link: #ccc;
+  --toc-link-active: var(--prime);
+
+  h3.toc-section {
+    margin: 12px 0 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--toc-section);
+  }
+
+  .divider {
+    list-style: none;
+    position: relative;
+    height: 0.5rem;
+    margin: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 75%;
+      transform: translateY(-75%) translateX(10%);
+      border-top: 1.5px solid var(--toc-border);
+      opacity: .5;
+    }
+  }
+
+  i {
+    color: var(--prime);
+    font-weight: 100;
+  }
+
+  ul.toc-section-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  >ul:nth-child(1) {
+    padding-left: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      font-size: 12px;
+      font-weight: 500;
+      padding-top: 3px;
+      padding-bottom: 3px;
+
+      a {
+        color: var(--toc-link);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding-left: 0px;
+
+        &:hover {
+          color: var(--prime);
+          text-decoration: none;
+        }
+      }
+
+      // ACTIVE LINK (selected page)
+      >a.active {
+        color: var(--prime);
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      >ul {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-2px);
+        transition: height 240ms ease, opacity 180ms ease, transform 180ms ease;
+        will-change: height, opacity, transform;
+        padding-left: 0;
+      }
+
+      &:has(> ul) {
+        >a.toc-group {
+          position: relative;
+          padding-left: 16px;
+
+          &::before {
+            content: "›";
+            position: absolute;
+            left: 0;
+            top: 0;
+            line-height: 1.2;
+            transition: transform 140ms ease, opacity 140ms ease;
+            opacity: 0.8;
+            color: var(--toc-chevron);
+          }
+        }
+
+        // OPEN GROUP (expanded)
+        &.active {
+          >a.toc-group {
+            color: var(--toc-link-active);
+          }
+
+          >a.toc-group::before {
+            transform: rotate(90deg);
+            opacity: 1;
+          }
+
+          >ul {
+            opacity: 1;
+            transform: translateY(0);
+
+            >li {
+              border-left: 1px solid var(--toc-border);
+              padding-left: 36px;
+
+              >a {
+                color: var(--toc-link);
+                text-decoration: none;
+
+                &:hover {
+                  color: var(--toc-link-hover);
+                }
+              }
+
+              // ACTIVE CHILD LI (so left border gets emphasized)
+              &:has(> a.active) {
+                border-left: 1px solid var(--prime);
+
+                >a {
+                  color: var(--toc-link-active);
+                  font-weight: 600;
+                }
+              }
+
+              &:first-child {
+                padding-top: 6px;
+              }
+
+              &:last-child {
+                padding-bottom: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

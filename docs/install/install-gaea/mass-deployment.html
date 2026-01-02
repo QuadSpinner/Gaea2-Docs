@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mass Deployment - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/install/install-gaea/mass-deployment.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="Mass Deployment - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/install/install-gaea/mass-deployment.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/install/install-gaea/mass-deployment.html#article",
+            "headline": "Mass Deployment - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/install/install-gaea/mass-deployment.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/install/install-gaea/mass-deployment.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "Install", "item": "https://docs.gaea.app/install" },
+                { "@type": "ListItem", "position": 3, "name": "Mass Deployment", "item": "https://docs.gaea.app/install/install-gaea/mass-deployment.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="Install" data-hive-shortname="Install" data-hive-link="/install" data-slug="mass-deployment">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="https://www.youtube.com/quadspinner" target="_blank"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>Install</h3>
+                        <h2>Mass Deployment</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div class="note migration">
+                          <i class="fa-duotone fa-light fa-box-isometric-tape"></i> <strong>We are updating the docs...finally!</strong>
+                            <br> We are migrating our documentation and adding major updates. Please bear with us during this transtion.</div>
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><h1 id="mass-deployment">Mass Deployment</h1>
+<p>Gaea can be deployed to a large number of workstations in multiple ways.</p>
+<div class="danger"><p>When installing to a network drive, it must be installed on a network share hosted as a drive and not a UNC path. Gaea may not work properly on UNC paths.</p>
+</div>
+<h2 id="unattended-installation">Unattended Installation</h2>
+<p>The easiest way to install and activate Gaea is to run the following script / batch file. Replace the path and activation key as required.</p>
+<p>The <code>%ACTIVATION_KEY%</code> can either be a License Key such as <code>AAA-BBBB-CCCC-DDDD</code> or a fully qualified path to a <code>XYZ1234.lic</code> offline license file.</p>
+<div class="important"><p>If you are using a <code>.lic</code> file for activation, please replace %ACTIVATION_KEY% with &quot;%ACTIVATION_KEY%&quot; in all scripts.</p>
+</div>
+<pre><code class="language-batch">@echo off
+setlocal EnableExtensions
+
+rem ===== CONFIG =====
+set &quot;INSTALLER=Gaea-2.2.7.0.exe&quot;
+set &quot;ACTIVATION_KEY=your_activation_key_here&quot;
+set &quot;DEFAULT_INSTALL_DIR=%ProgramFiles%\QuadSpinner\Gaea 2&quot;
+set &quot;LOG_FILE=%TEMP%\Gaea_Install.log&quot;
+
+rem ===== PREP =====
+pushd &quot;%~dp0&quot; || (echo ERROR: Failed to access script directory.&amp; exit /b 1)
+
+rem Admin check (required if installing under Program Files)
+net session &gt;nul 2&gt;&amp;1
+if errorlevel 1 (
+  echo ERROR: Administrator privileges are required for this installation type.
+  echo        Right-click the .bat and select &quot;Run as administrator&quot;.
+  exit /b 1
+)
+
+if not exist &quot;%INSTALLER%&quot; (
+  echo ERROR: Installer not found: &quot;%CD%\%INSTALLER%&quot;
+  exit /b 1
+)
+
+rem ===== INSTALL =====
+echo Installing &quot;%INSTALLER%&quot;...
+start &quot;&quot; /wait &quot;%INSTALLER%&quot; /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /LOG=&quot;%LOG_FILE%&quot;
+set &quot;RC=%ERRORLEVEL%&quot;
+if not &quot;%RC%&quot;==&quot;0&quot; (
+  echo ERROR: Installer returned exit code %RC%.
+  echo See log: &quot;%LOG_FILE%&quot;
+  exit /b %RC%
+)
+
+rem ===== LOCATE GAEA.EXE =====
+set &quot;GAEA_EXE=%DEFAULT_INSTALL_DIR%\Gaea.exe&quot;
+if not exist &quot;%GAEA_EXE%&quot; (
+  echo ERROR: Could not find Gaea.exe at &quot;%GAEA_EXE%&quot;
+  echo If you installed to a custom location, update DEFAULT_INSTALL_DIR in this script.
+  exit /b 2
+)
+
+rem ===== ACTIVATE =====
+echo Activating...
+&quot;%GAEA_EXE%&quot; -activate %ACTIVATION_KEY%
+set &quot;RC=%ERRORLEVEL%&quot;
+if not &quot;%RC%&quot;==&quot;0&quot; (
+  echo ERROR: Activation failed with exit code %RC%.
+  exit /b %RC%
+)
+
+echo SUCCESS: Installation + activation completed.
+exit /b 0
+</code></pre>
+<div class="danger"><p>Administrator privileges will be required!</p>
+</div>
+<h2 id="7-zip-based-deployment">7-Zip based Deployment</h2>
+<p>We provide 7z versions of each release so you can create your own installer if needed, or create direct deployments.</p>
+<p>Ensure you have 7-zip installed and added to PATH.</p>
+<pre><code class="language-batch">@echo off
+setlocal EnableExtensions
+
+set &quot;ARCHIVE=Gaea-2.2.7.0.7z&quot;
+set &quot;ACTIVATION_KEY=your_activation_key_here&quot;
+set &quot;INSTALL_PATH=C:\Path\To\Desired\Installation\Location&quot;
+
+pushd &quot;%~dp0&quot; || (echo ERROR: Failed to access script directory.&amp; exit /b 1)
+
+where 7z.exe &gt;nul 2&gt;&amp;1
+if errorlevel 1 (
+  echo ERROR: 7-Zip not found (7z.exe). Install it or add it to PATH.
+  exit /b 1
+)
+
+if not exist &quot;%ARCHIVE%&quot; (
+  echo ERROR: Archive not found: &quot;%CD%\%ARCHIVE%&quot;
+  exit /b 1
+)
+
+if not exist &quot;%INSTALL_PATH%&quot; mkdir &quot;%INSTALL_PATH%&quot;
+
+echo Extracting...
+7z x &quot;%ARCHIVE%&quot; -o&quot;%INSTALL_PATH%&quot; -y
+if errorlevel 1 (
+  echo ERROR: Extraction failed.
+  exit /b 1
+)
+
+rem Find Gaea.exe (handles archives that unpack into subfolders)
+set &quot;GAEA_EXE=&quot;
+for /r &quot;%INSTALL_PATH%&quot; %%F in (Gaea.exe) do (
+  set &quot;GAEA_EXE=%%F&quot;
+  goto :found
+)
+:found
+
+if not defined GAEA_EXE (
+  echo ERROR: Could not locate Gaea.exe under &quot;%INSTALL_PATH%&quot;.
+  exit /b 2
+)
+
+echo Activating using &quot;%GAEA_EXE%&quot;...
+&quot;%GAEA_EXE%&quot; -activate %ACTIVATION_KEY%
+exit /b %ERRORLEVEL%
+
+</code></pre>
+<h3 id="zip-file">Zip File</h3>
+<p>Alternatively, if 7-zip is not acceptable in your network environment, you can convert it to a zip file and deploy it with this alternate script:</p>
+<pre><code class="language-batch">@echo off
+setlocal EnableExtensions
+
+set &quot;ZIP_FILE=Gaea-2.2.7.0.zip&quot;
+set &quot;ACTIVATION_KEY=your_activation_key_here&quot;
+set &quot;INSTALL_PATH=C:\Path\To\Desired\Installation\Location&quot;
+
+pushd &quot;%~dp0&quot; || (echo ERROR: Failed to access script directory.&amp; exit /b 1)
+
+if not exist &quot;%ZIP_FILE%&quot; (
+  echo ERROR: ZIP not found: &quot;%CD%\%ZIP_FILE%&quot;
+  exit /b 1
+)
+
+if not exist &quot;%INSTALL_PATH%&quot; mkdir &quot;%INSTALL_PATH%&quot;
+
+echo Extracting...
+powershell -NoProfile -ExecutionPolicy Bypass -Command ^
+  &quot;Expand-Archive -LiteralPath '%CD%\%ZIP_FILE%' -DestinationPath '%INSTALL_PATH%' -Force&quot;
+if errorlevel 1 (
+  echo ERROR: Expand-Archive failed.
+  exit /b 1
+)
+
+rem Find Gaea.exe
+set &quot;GAEA_EXE=&quot;
+for /r &quot;%INSTALL_PATH%&quot; %%F in (Gaea.exe) do (
+  set &quot;GAEA_EXE=%%F&quot;
+  goto :found
+)
+:found
+
+if not defined GAEA_EXE (
+  echo ERROR: Could not locate Gaea.exe under &quot;%INSTALL_PATH%&quot;.
+  exit /b 2
+)
+
+echo Activating...
+&quot;%GAEA_EXE%&quot; -activate %ACTIVATION_KEY%
+exit /b %ERRORLEVEL%
+</code></pre>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_Install.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>

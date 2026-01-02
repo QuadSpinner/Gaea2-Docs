@@ -1,0 +1,29 @@
+---
+title: Clamp
+uid: clamp
+order: 06
+---
+
+
+
+
+Clamp allows you to control the height of the terrain. You can use it to squash the terrain, clip it at certain heights, or make it taller using the Extend operation.
+
+
+
+
+
+# Properties
+
+- Mode
+  - **Standard**  
+  <desc>
+  - **Normalized**  
+  <desc>
+- **Value**  
+  
+- **Drop**  
+  
+
+
+

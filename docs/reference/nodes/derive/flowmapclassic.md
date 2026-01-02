@@ -1,0 +1,36 @@
+---
+title: FlowMapClassic
+uid: flowmapclassic
+order: 04
+---
+
+
+
+# Properties
+
+- **Rainfall**  
+  
+- **Primary**  
+  
+- **Secondary**  
+  
+- **Tertiary**  
+  
+- **Quaternary**  
+  
+- **Simulate 2 X**  
+  
+- **Enhance**  
+  
+- Quality
+  - **Quarter**  
+  <desc>
+  - **Third**  
+  <desc>
+  - **Half**  
+  <desc>
+  - **Full**  
+  <desc>
+
+
+

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>File Format Gotchas - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/guides/scenarios/helpful-info/format-gotchas.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="File Format Gotchas - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/guides/scenarios/helpful-info/format-gotchas.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/guides/scenarios/helpful-info/format-gotchas.html#article",
+            "headline": "File Format Gotchas - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/guides/scenarios/helpful-info/format-gotchas.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/guides/scenarios/helpful-info/format-gotchas.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://docs.gaea.app/guides" },
+                { "@type": "ListItem", "position": 3, "name": "File Format Gotchas", "item": "https://docs.gaea.app/guides/scenarios/helpful-info/format-gotchas.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="Guides" data-hive-shortname="Guides" data-hive-link="/guides" data-slug="format-gotchas">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Guides" href="/guides"><i class="fa-duotone fa-light fa-book-sparkles"></i> Guides</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="/videos"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>Guides</h3>
+                        <h2>File Format Gotchas</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><p>Here are practical <strong>do’s and don’ts</strong> for the formats people most often feed into Gaea, tuned for the workflow:</p>
+<p>See <a href="/guides/scenarios/helpful-info/match-height.html">Match or Correct Heights</a> for a useful workflow using <strong>Constant (meters) → File (unclamped) → Autolevel → MATCH (Constant as Reference)</strong></p>
+<hr />
+<h2 id="geotiff-dem-common-gis-export-16-bit-int-32-bit-float">GeoTIFF DEM (common GIS export: 16-bit int, 32-bit float)</h2>
+<h3 id="do">Do</h3>
+<ul>
+<li><strong>Prefer 32-bit float GeoTIFF</strong> when available (best fidelity, handles negatives cleanly).</li>
+<li>Keep <strong>File = Unclamped</strong>, especially if the DEM includes <strong>below sea level</strong> or “no-data” borders.</li>
+<li><strong>Pre-handle NoData</strong> if your exporter encodes it as a huge negative (e.g., -32768) or huge positive—mask/crop it before Gaea if possible, or you’ll Autolevel against garbage.</li>
+<li>Use your <strong>Constant in meters</strong> as the “intended peak altitude” and MATCH to it.</li>
+</ul>
+<h3 id="dont">Don’t</h3>
+<ul>
+<li>Don’t export with “visualization scaling” (some GIS apps rescale for display); export <strong>raw elevation values</strong>.</li>
+<li>Don’t clamp on import; it can silently flatten valid extremes.</li>
+</ul>
+<hr />
+<h2 id="16-bit-png-very-common-heightmap-interchange">16-bit PNG (very common “heightmap” interchange)</h2>
+<h3 id="do-1">Do</h3>
+<ul>
+<li>Use <strong>16-bit grayscale</strong> PNG (not 8-bit).</li>
+<li>Ensure the PNG is <strong>linear</strong> data:
+<ul>
+<li>If your tool has a color management option, pick <strong>linear / data / non-color</strong>.</li>
+</ul>
+</li>
+<li>Treat 16-bit PNG as <em>precision-limited</em>: <strong>Autolevel is strongly recommended</strong> before any further math.</li>
+<li>Keep the File <strong>unclamped</strong>, then Autolevel, then MATCH to Constant.</li>
+</ul>
+<h3 id="dont-1">Don’t</h3>
+<ul>
+<li>Don’t use <strong>8-bit PNG</strong> for real terrain unless it’s purely stylized; banding will be obvious.</li>
+<li>Don’t let apps apply <strong>sRGB gamma</strong> to the heightmap (this bends elevations and ruins slopes).</li>
+<li>Don’t roundtrip through image editors that “helpfully” color manage or dither unless you’re sure it’s data-safe.</li>
+</ul>
+<hr />
+<h2 id="16-bit-tiff-popular-in-dccvfx-pipelines">16-bit TIFF (popular in DCC/VFX pipelines)</h2>
+<h3 id="do-2">Do</h3>
+<ul>
+<li>Prefer <strong>16-bit integer TIFF</strong> if the source is already quantized (like a generator exporting 16-bit).</li>
+<li>Confirm it’s <strong>single-channel grayscale</strong> (or at least that the height is in one channel consistently).</li>
+<li>Use <strong>linear / non-color</strong> handling in any app that touches it.</li>
+<li>Autolevel is still valuable: if the terrain only uses part of the range, you’re wasting bits.</li>
+</ul>
+<h3 id="dont-2">Don’t</h3>
+<ul>
+<li>Don’t assume “TIFF” means “high fidelity.” Many TIFFs are 8-bit, RGB, or color-managed.</li>
+<li>Don’t apply compression workflows that alter values (some pipelines do processing on save).</li>
+</ul>
+<hr />
+<h2 id="32-bit-exr-best-general-purpose-height-as-data-format">32-bit EXR (best general-purpose “height as data” format)</h2>
+<h3 id="do-3">Do</h3>
+<ul>
+<li>Prefer <strong>32-bit float EXR</strong> for maximum fidelity and safe negatives.</li>
+<li>Use EXR when you’ll do lots of downstream processing (erosion, remaps, reprojection, tiling).</li>
+<li>Still consider Autolevel <strong>if</strong> your data occupies a small numeric range or you’re going to bake down later.</li>
+</ul>
+<h3 id="dont-3">Don’t</h3>
+<ul>
+<li>Don’t treat EXR like an image: avoid color transforms, tone mapping, or display LUT baking.</li>
+<li>Don’t export “beauty” EXRs; export <strong>data</strong> EXRs (single channel if possible).</li>
+</ul>
+<hr />
+<h2 id="raw--r16--raw-engine-friendly-but-easy-to-mess-up">RAW / R16 / .raw (engine-friendly, but easy to mess up)</h2>
+<h3 id="do-4">Do</h3>
+<ul>
+<li>Use RAW when you control the pipeline end-to-end (e.g., Unreal landscape import).</li>
+<li><strong>Match bit-depth and endianness</strong> exactly (common: 16-bit, little-endian).</li>
+<li>Keep a record of:
+<ul>
+<li>resolution</li>
+<li>bit depth</li>
+<li>endian</li>
+<li>expected min/max elevation mapping</li>
+</ul>
+</li>
+<li>Use Autolevel + MATCH in Gaea so the RAW uses the <strong>full 0–65535</strong> span before export.</li>
+</ul>
+<h3 id="dont-4">Don’t</h3>
+<ul>
+<li>Don’t use RAW if you aren’t 100% sure of its format metadata—RAW has <strong>no header</strong>, so it’s easy to misread.</li>
+<li>Don’t change resolution midstream without a deliberate resample strategy.</li>
+</ul>
+<hr />
+<h2 id="8-bit-formats-pngjpg--only-for-masks-never-for-heights">8-bit formats (PNG/JPG) — only for masks, never for heights</h2>
+<h3 id="do-5">Do</h3>
+<ul>
+<li>Use 8-bit for <strong>masks</strong>, splatmaps, selectors, and weight maps.</li>
+<li>Dither or blur thoughtfully if banding in masks becomes visible.</li>
+</ul>
+<h3 id="dont-5">Don’t</h3>
+<ul>
+<li>Don’t use JPG for heights (lossy compression creates block artifacts and slope noise).</li>
+<li>Don’t use 8-bit PNG for final displacement unless it’s intentionally low-fi.</li>
+</ul>
+<hr />
+<h2 id="common-gotchas-format-agnostic">Common gotchas (format-agnostic)</h2>
+<h3 id="do-6">Do</h3>
+<ul>
+<li>Keep <strong>NoData</strong> out of your normalization range (crop/mask before Autolevel if needed).</li>
+<li>Work in <strong>linear</strong> data space end-to-end.</li>
+<li>For tiled terrains: normalize/match <strong>consistently</strong> (global intent), not per-tile randomness.</li>
+</ul>
+<h3 id="dont-6">Don’t</h3>
+<ul>
+<li>Don’t per-tile Autolevel with different min/max unless you <em>want</em> seams.</li>
+<li>Don’t let any stage “optimize” or “enhance” your heightmap like it’s a photo.</li>
+</ul>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_Guides.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>

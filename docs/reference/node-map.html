@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Node Map - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/reference/node-map.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="Node Map - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/reference/node-map.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/reference/node-map.html#article",
+            "headline": "Node Map - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/reference/node-map.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/reference/node-map.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "Node Reference", "item": "https://docs.gaea.app/reference" },
+                { "@type": "ListItem", "position": 3, "name": "Node Map", "item": "https://docs.gaea.app/reference/node-map.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="Node Reference" data-hive-shortname="Reference" data-hive-link="/reference" data-slug="node-map">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="https://www.youtube.com/quadspinner" target="_blank"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>Node Reference</h3>
+                        <h2>Node Map</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div class="note migration">
+                          <i class="fa-duotone fa-light fa-box-isometric-tape"></i> <strong>We are updating the docs...finally!</strong>
+                            <br> We are migrating our documentation and adding major updates. Please bear with us during this transtion.</div>
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><h1 id="node-map">Node Map</h1>
+<div class="reference-tables"><h3 id="primitive">Primitive</h3>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Node</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assets</td>
+<td><a href="/reference/nodes/primitive/file.html">File</a></td>
+<td><code>f</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/object.html">Object</a></td>
+<td><code>o</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/tileinput.html">TileInput</a></td>
+<td><code>til</code></td>
+</tr>
+<tr>
+<td>Basic</td>
+<td><a href="/reference/nodes/primitive/constant.html">Constant</a></td>
+<td><code>k</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/cracks.html">Cracks</a></td>
+<td><code>ck</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/draw.html">Draw</a></td>
+<td><code>vm</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/gabor.html">Gabor</a></td>
+<td><code>g</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/linenoise.html">LineNoise</a></td>
+<td><code>ln</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/noise.html">Noise</a></td>
+<td><code>kn</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/perlin.html">Perlin</a></td>
+<td><code>p</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/voronoi.html">Voronoi</a></td>
+<td><code>v</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/cutnoise.html">CutNoise</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/pattern.html">Pattern</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/shape.html">Shape</a></td>
+<td><code>s</code></td>
+</tr>
+<tr>
+<td>Extended</td>
+<td><a href="/reference/nodes/primitive/cellular.html">Cellular</a></td>
+<td><code>ll</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/cellular3d.html">Cellular3D</a></td>
+<td><code>c3</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/dotnoise.html">DotNoise</a></td>
+<td><code>do</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/driftnoise.html">DriftNoise</a></td>
+<td><code>dr</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/multifractal.html">MultiFractal</a></td>
+<td><code>mf</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/waveshine.html">WaveShine</a></td>
+<td><code>ws</code></td>
+</tr>
+<tr>
+<td>Gradient</td>
+<td><a href="/reference/nodes/primitive/cone.html">Cone</a></td>
+<td><code>con</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/hemisphere.html">Hemisphere</a></td>
+<td><code>do</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/lineargradient.html">LinearGradient</a></td>
+<td><code>lg</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/primitive/radialgradient.html">RadialGradient</a></td>
+<td><code>rg</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="terrain">Terrain</h3>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Node</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Landscape</td>
+<td><a href="/reference/nodes/terrain/canyon.html">Canyon</a></td>
+<td><code>ny</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/terrain/craterfield.html">CraterField</a></td>
+<td><code>cf</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/terrain/dunesea.html">DuneSea</a></td>
+<td><code>du</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/terrain/mountainrange.html">MountainRange</a></td>
+<td><code>mr</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/terrain/plates.html">Plates</a></td>
+<td><code>pl</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/terrain/ridge.html">Ridge</a></td>
+<td><code>ri</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/terrain/rugged.html">Rugged</a></td>
+<td><code>gg</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/terrain/slump.html">Slump</a></td>
+<td><code>um</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/terrain/uplift.html">Uplift</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Primitive</td>
+<td><a href="/reference/nodes/terrain/crater.html">Crater</a></td>
+<td><code>cra</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/terrain/island.html">Island</a></td>
+<td><code>is</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/terrain/mountain.html">Mountain</a></td>
+<td><code>m</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/terrain/mountainside.html">MountainSide</a></td>
+<td><code>ms</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/terrain/volcano.html">Volcano</a></td>
+<td><code>vo</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="modify">Modify</h3>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Node</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adjust</td>
+<td><a href="/reference/nodes/modify/adjust.html">Adjust</a></td>
+<td><code>fx</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/autolevel.html">Autolevel</a></td>
+<td><code>lv</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/clamp.html">Clamp</a></td>
+<td><code>cl</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/clip.html">Clip</a></td>
+<td><code>ci</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/denoise.html">Denoise</a></td>
+<td><code>dn</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/equalize.html">Equalize</a></td>
+<td><code>eq</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/extend.html">Extend</a></td>
+<td><code>xt</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/flip.html">Flip</a></td>
+<td><code>fp</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/match.html">Match</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/sharpen.html">Sharpen</a></td>
+<td><code>sx</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/threshold.html">Threshold</a></td>
+<td><code>th</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/transpose.html">Transpose</a></td>
+<td><code>tx</code></td>
+</tr>
+<tr>
+<td>Blur</td>
+<td><a href="/reference/nodes/modify/blur.html">Blur</a></td>
+<td><code>b</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/median.html">Median</a></td>
+<td><code>md</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/slopeblur.html">SlopeBlur</a></td>
+<td><code>sb</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/variableblur.html">VariableBlur</a></td>
+<td><code>vb</code></td>
+</tr>
+<tr>
+<td>Effect</td>
+<td><a href="/reference/nodes/modify/origami.html">Origami</a></td>
+<td><code>or</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/pixelate.html">Pixelate</a></td>
+<td><code>px</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/swirl.html">Swirl</a></td>
+<td><code>swi</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/whorl.html">Whorl</a></td>
+<td><code>wh</code></td>
+</tr>
+<tr>
+<td>Profile</td>
+<td><a href="/reference/nodes/modify/curve.html">Curve</a></td>
+<td><code>cu</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/deflate.html">Deflate</a></td>
+<td><code>df</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/filter.html">Filter</a></td>
+<td><code>fl</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/fold.html">Fold</a></td>
+<td><code>fo</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/graphiceq.html">GraphicEQ</a></td>
+<td><code>gq</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/recurve.html">Recurve</a></td>
+<td><code>rc</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/shaper.html">Shaper</a></td>
+<td><code>sp</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/softclip.html">SoftClip</a></td>
+<td><code>sc</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/thermalshaper.html">ThermalShaper</a></td>
+<td><code>ts</code></td>
+</tr>
+<tr>
+<td>Shape</td>
+<td><a href="/reference/nodes/modify/meshify.html">Meshify</a></td>
+<td><code>ms</code></td>
+</tr>
+<tr>
+<td>Transform</td>
+<td><a href="/reference/nodes/modify/aperture.html">Aperture</a></td>
+<td><code>ap</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/dilate.html">Dilate</a></td>
+<td><code>di</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/distance.html">Distance</a></td>
+<td><code>rt</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/transform.html">Transform</a></td>
+<td><code>t</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/transform3d.html">Transform3D</a></td>
+<td><code>t3</code></td>
+</tr>
+<tr>
+<td>Utilities</td>
+<td><a href="/reference/nodes/modify/blobremover.html">BlobRemover</a></td>
+<td><code>b</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/heal.html">Heal</a></td>
+<td><code>hl</code></td>
+</tr>
+<tr>
+<td>Warp</td>
+<td><a href="/reference/nodes/modify/directionalwarp.html">DirectionalWarp</a></td>
+<td><code>dw</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/slopewarp.html">SlopeWarp</a></td>
+<td><code>sw</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/warp.html">Warp</a></td>
+<td><code>w</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/modify/triplanardisplacement.html">TriplanarDisplacement</a></td>
+<td><code>3pd</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="surface">Surface</h3>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Node</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cartography</td>
+<td><a href="/reference/nodes/surface/contours.html">Contours</a></td>
+<td><code>cn</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/grid.html">Grid</a></td>
+<td><code>gr</code></td>
+</tr>
+<tr>
+<td>Rocky</td>
+<td><a href="/reference/nodes/surface/craggy.html">Craggy</a></td>
+<td><code>cg</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/outcrops.html">Outcrops</a></td>
+<td><code>oc</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/rocknoise.html">RockNoise</a></td>
+<td><code>rn</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/rockscape.html">Rockscape</a></td>
+<td><code>rs</code></td>
+</tr>
+<tr>
+<td>Scatter</td>
+<td><a href="/reference/nodes/surface/bomber.html">Bomber</a></td>
+<td><code>bo</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/pockmarks.html">Pockmarks</a></td>
+<td><code>on</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/stones.html">Stones</a></td>
+<td><code>on</code></td>
+</tr>
+<tr>
+<td>Structure</td>
+<td><a href="/reference/nodes/surface/bulbous.html">Bulbous</a></td>
+<td><code>bu</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/shatter.html">Shatter</a></td>
+<td><code>tt</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/shear.html">Shear</a></td>
+<td><code>sh</code></td>
+</tr>
+<tr>
+<td>Superficial</td>
+<td><a href="/reference/nodes/surface/groundtexture.html">GroundTexture</a></td>
+<td><code>gt</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/roughen.html">Roughen</a></td>
+<td><code>rog</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/sand.html">Sand</a></td>
+<td><code>sd</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/distress.html">Distress</a></td>
+<td><code>dst</code></td>
+</tr>
+<tr>
+<td>Terrace</td>
+<td><a href="/reference/nodes/surface/fractalterraces.html">FractalTerraces</a></td>
+<td><code>ft</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/sandstone.html">Sandstone</a></td>
+<td><code>ss</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/steps.html">Steps</a></td>
+<td><code>ste</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/stratify.html">Stratify</a></td>
+<td><code>ct</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/surface/terraces.html">Terraces</a></td>
+<td><code>st</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="simulate">Simulate</h3>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Node</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Erosion</td>
+<td><a href="/reference/nodes/simulate/anastomosis.html">Anastomosis</a></td>
+<td><code>an</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/crumble.html">Crumble</a></td>
+<td><code>cr</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/easyerosion.html">EasyErosion</a></td>
+<td><code>ee</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/erosion.html">Erosion</a></td>
+<td><code>ce</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/erosion2.html">Erosion2</a></td>
+<td><code>e2</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/hillify.html">Hillify</a></td>
+<td><code>hi</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/hydrofix.html">HydroFix</a></td>
+<td><code>hf</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/lichtenberg.html">Lichtenberg</a></td>
+<td><code>lct</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/sediments.html">Sediments</a></td>
+<td><code>sed</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/thermal.html">Thermal</a></td>
+<td><code>te</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/thermal2.html">Thermal2</a></td>
+<td><code>t2</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/wizard.html">Wizard</a></td>
+<td><code>z1</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/wizard2.html">Wizard2</a></td>
+<td><code>z2</code></td>
+</tr>
+<tr>
+<td>Scatter</td>
+<td><a href="/reference/nodes/simulate/debris.html">Debris</a></td>
+<td><code>db</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/scree.html">Scree</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Snow</td>
+<td><a href="/reference/nodes/simulate/dusting.html">Dusting</a></td>
+<td><code>ds</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/snow.html">Snow</a></td>
+<td><code>sn</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/glacier.html">Glacier</a></td>
+<td><code>gl</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/snowfield.html">Snowfield</a></td>
+<td><code>sf</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/icefloe.html">IceFloe</a></td>
+<td><code>if</code></td>
+</tr>
+<tr>
+<td>Vegetation</td>
+<td><a href="/reference/nodes/simulate/trees.html">Trees</a></td>
+<td><code>tr</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/shrubs.html">Shrubs</a></td>
+<td><code>shr</code></td>
+</tr>
+<tr>
+<td>Water</td>
+<td><a href="/reference/nodes/simulate/lake.html">Lake</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/rivers.html">Rivers</a></td>
+<td><code>rv</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/simulate/sea.html">Sea</a></td>
+<td><code>sea</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="derive">Derive</h3>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Node</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aspect</td>
+<td><a href="/reference/nodes/derive/angle.html">Angle</a></td>
+<td><code>ang</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/derive/curvature.html">Curvature</a></td>
+<td><code>cv</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/derive/height.html">Height</a></td>
+<td><code>h</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/derive/normals.html">Normals</a></td>
+<td><code>nm</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/derive/peaks.html">Peaks</a></td>
+<td><code>pk</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/derive/slope.html">Slope</a></td>
+<td><code>sl</code></td>
+</tr>
+<tr>
+<td>Generative</td>
+<td><a href="/reference/nodes/derive/flowmap.html">FlowMap</a></td>
+<td><code>fl</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/derive/flowmapclassic.html">FlowMapClassic</a></td>
+<td><code>fl1</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/derive/occlusion.html">Occlusion</a></td>
+<td><code>cc</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/derive/rockmap.html">RockMap</a></td>
+<td><code>km</code></td>
+</tr>
+<tr>
+<td>Texture</td>
+<td><a href="/reference/nodes/derive/soil.html">Soil</a></td>
+<td><code>so</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/derive/texturebase.html">TextureBase</a></td>
+<td><code>tb</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/derive/texturizer.html">Texturizer</a></td>
+<td><code>tz</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="colorize">Colorize</h3>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Node</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adjust</td>
+<td><a href="/reference/nodes/colorize/gamma.html">Gamma</a></td>
+<td><code>ga</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/colorize/hsl.html">HSL</a></td>
+<td><code>hu</code></td>
+</tr>
+<tr>
+<td>Color</td>
+<td><a href="/reference/nodes/colorize/cluter.html">CLUTer</a></td>
+<td><code>clt</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/colorize/satmap.html">SatMap</a></td>
+<td><code>sa</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/colorize/supercolor.html">SuperColor</a></td>
+<td><code>sc</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/colorize/synth.html">Synth</a></td>
+<td><code>sy</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/colorize/tint.html">Tint</a></td>
+<td><code>ti</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/colorize/watercolor.html">WaterColor</a></td>
+<td><code>wc</code></td>
+</tr>
+<tr>
+<td>Erosion</td>
+<td><a href="/reference/nodes/colorize/colorerosion.html">ColorErosion</a></td>
+<td><code>cx</code></td>
+</tr>
+<tr>
+<td>Surface</td>
+<td><a href="/reference/nodes/colorize/weathering.html">Weathering</a></td>
+<td><code>we</code></td>
+</tr>
+<tr>
+<td>Utilities</td>
+<td><a href="/reference/nodes/colorize/rgbmerge.html">RGBMerge</a></td>
+<td><code>rm</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/colorize/rgbsplit.html">RGBSplit</a></td>
+<td><code>rs</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/colorize/splat.html">Splat</a></td>
+<td><code>spl</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="output">Output</h3>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Node</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assets</td>
+<td><a href="/reference/nodes/output/export.html">Export</a></td>
+<td><code>ex</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/output/mesher.html">Mesher</a></td>
+<td><code>me</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/output/pointcloud.html">PointCloud</a></td>
+<td><code>pc</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/output/unity.html">Unity</a></td>
+<td><code>un</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/output/unreal.html">Unreal</a></td>
+<td><code>ue</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/output/vfx.html">VFX</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Render</td>
+<td><a href="/reference/nodes/output/ao.html">AO</a></td>
+<td><code>ao</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/output/cartography.html">Cartography</a></td>
+<td><code>crt</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/output/halftone.html">Halftone</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/output/lightx.html">LightX</a></td>
+<td><code>lx</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/output/sunlight.html">Sunlight</a></td>
+<td><code>si</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/output/shade.html">Shade</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Utilities</td>
+<td><a href="/reference/nodes/utility/meshwarp.html">MeshWarp</a></td>
+<td><code>nm</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/output/texturebaker.html">TextureBaker</a></td>
+<td><code>nm</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="utility">Utility</h3>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Node</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Routing</td>
+<td><a href="/reference/nodes/utility/chokepoint.html">Chokepoint</a></td>
+<td><code>cp</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/combine.html">Combine</a></td>
+<td><code>c</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/gate.html">Gate</a></td>
+<td><code>g8</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/layers.html">Layers</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/loopbegin.html">LoopBegin</a></td>
+<td><code>lb</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/loopend.html">LoopEnd</a></td>
+<td><code>le</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/mixer.html">Mixer</a></td>
+<td><code>mx</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/reseed.html">Reseed</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/route.html">Route</a></td>
+<td><code>ro</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/switch.html">Switch</a></td>
+<td><code>swt</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/construction.html">Construction</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/compare.html">Compare</a></td>
+<td><code>cm</code></td>
+</tr>
+<tr>
+<td>Structure</td>
+<td><a href="/reference/nodes/utility/edge.html">Edge</a></td>
+<td><code>ed</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/repeat.html">Repeat</a></td>
+<td><code>rp</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/seamless.html">Seamless</a></td>
+<td><code>sls</code></td>
+</tr>
+<tr>
+<td>Utilities</td>
+<td><a href="/reference/nodes/utility/accumulator.html">Accumulator</a></td>
+<td><code>cc</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/dataextractor.html">DataExtractor</a></td>
+<td><code>de</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/mask.html">Mask</a></td>
+<td><code>ma</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/math.html">Math</a>x</td>
+<td><code>mx</code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/reference/nodes/utility/var.html">Var</a></td>
+<td><code>var</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_Reference.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>

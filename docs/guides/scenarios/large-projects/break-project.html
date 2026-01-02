@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Separate a Project - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/guides/scenarios/large-projects/break-project.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="Separate a Project - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/guides/scenarios/large-projects/break-project.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/guides/scenarios/large-projects/break-project.html#article",
+            "headline": "Separate a Project - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/guides/scenarios/large-projects/break-project.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/guides/scenarios/large-projects/break-project.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://docs.gaea.app/guides" },
+                { "@type": "ListItem", "position": 3, "name": "Separate a Project", "item": "https://docs.gaea.app/guides/scenarios/large-projects/break-project.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="Guides" data-hive-shortname="Guides" data-hive-link="/guides" data-slug="break-project">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Guides" href="/guides"><i class="fa-duotone fa-light fa-book-sparkles"></i> Guides</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="/videos"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>Guides</h3>
+                        <h2>Separate a Project</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><h1 id="keep-projects-light-by-splitting-them-into-multiple-files">Keep Projects Light by Splitting Them Into Multiple Files</h1>
+<p>Big terrains get heavy fast. Even if your graph is well-optimized, a single “everything in one file” project can balloon memory use, slow previews, and make experimentation risky.</p>
+<p>A simple way to stay fast (and sane) is to <strong>break your project into multiple parts</strong>—then pass data forward by exporting stable results as <strong>Gaea RAW</strong> and ingesting them in the next file with a <strong>File</strong> node.</p>
+<div class="tip"><p>Think of each file as a “chapter”: Shape → Detail → Output. Keep each chapter focused and your iteration speed stays high.</p>
+</div>
+<h2 id="why-this-helps">Why this helps</h2>
+<p>Splitting a project into separate files gives you several practical wins:</p>
+<ul>
+<li><strong>Lower memory consumption</strong>: You only load the graphs you need for the task you’re doing right now.</li>
+<li><strong>Faster iteration</strong>: Smaller graphs preview and rebuild faster than monolithic ones.</li>
+<li><strong>Safer experimentation</strong>: Try new techniques in a new file without breaking a working baseline.</li>
+<li><strong>Collaboration-friendly</strong>: Different people can work on different portions (macro shape, erosion pass, texturing, masks) without stepping on each other.</li>
+<li><strong>Source control friendly</strong>: Smaller, purpose-built files reduce churn and make changes easier to track.</li>
+</ul>
+<h2 id="a-simple-split-that-works-well-shape-vs-detailing">A simple split that works well: Shape vs. Detailing</h2>
+<p>Most terrains naturally divide into two phases:</p>
+<h3 id="1-base-shape-file-macro">1. Base Shape File (macro)</h3>
+<p>Use this file for:</p>
+<ul>
+<li>Landmass, primary forms, broad elevation design</li>
+<li>Large-scale masks and region planning</li>
+<li>Any “foundation” work you don’t want to constantly re-run later</li>
+</ul>
+<p>When the macro shape is in a good place, <strong>export the key outputs as Gaea RAW</strong> (heightfield, and any critical masks you’ll need downstream).</p>
+<h3 id="2-detail-file-micro">2. Detail File (micro)</h3>
+<p>In a new file:</p>
+<ul>
+<li>Add a <strong>File</strong> node and ingest the RAW outputs</li>
+<li>Perform higher-cost detailing: erosion variants, sediment passes, fine noise, breakup, surface detail, specialized masks</li>
+<li>Iterate aggressively—because your upstream foundation is now stable and lightweight</li>
+</ul>
+<div class="tip"><p>If you’re unsure what will matter later, export one extra “utility” mask (e.g., broad slope/height zones). It’s cheap insurance for downstream flexibility.</p>
+</div>
+<h2 id="work-in-modules-even-inside-the-same-terrain">Work in modules (even inside the same terrain)</h2>
+<p>You can apply the same approach beyond “shape vs detail”:</p>
+<ul>
+<li><strong>Erosion Lab</strong>: A dedicated file just for erosion exploration—export the best result back into the pipeline.</li>
+<li><strong>Mask Factory</strong>: One file that produces clean masks (flow, wear zones, deposition regions) for use elsewhere.</li>
+<li><strong>Biome/Color Pass</strong>: Separate file for albedo/biome logic so you can iterate visuals without touching terrain structure.</li>
+</ul>
+<h2 id="variations-without-fear">Variations without fear</h2>
+<p>Instead of branching inside one giant graph, do it with files:</p>
+<ul>
+<li>Duplicate the detail file and try a new erosion method or experimental node chain.</li>
+<li>Keep your “gold master” foundation untouched.</li>
+<li>Swap between variations by pointing a File node at a different RAW export.</li>
+</ul>
+<p>This makes “what if we try…” almost free—because you’re not destabilizing the entire project.</p>
+<h2 id="team-workflow-benefits">Team workflow benefits</h2>
+<p>Splitting files makes it much easier to divide labor:</p>
+<ul>
+<li>Artist A: base landmass and macro design</li>
+<li>Artist B: erosion and surface detail</li>
+<li>Artist C: masks, biomes, and export packaging</li>
+</ul>
+<p>As long as everyone agrees on the <strong>shared interface</strong> (the RAW outputs and naming), the pipeline stays clean.</p>
+<h2 id="source-control-tips">Source control tips</h2>
+<p>Terrain files and RAW outputs are often large/binary, so a modular approach helps:</p>
+<ul>
+<li><p>Commit smaller <code>.terrain</code> files more frequently (less change risk).</p>
+</li>
+<li><p>Store large RAW exports in a predictable folder (and consider Git LFS if needed).</p>
+</li>
+<li><p>Use consistent names like:</p>
+<ul>
+<li><code>Terrain_BaseShape_v03.raw</code></li>
+<li><code>Terrain_Masks_Slope_v03.raw</code></li>
+<li><code>Terrain_Detail_ErosionA_v02.terrain</code></li>
+</ul>
+</li>
+</ul>
+<div class="tip"><p>When chaining files, keep your terrain definition consistent (scale, dimensions, and intended resolution). If you change the base terrain’s scale later, you’ll likely need to re-export RAW and refresh any downstream files that ingest it.</p>
+</div>
+<hr />
+<h1 id="organize-modular-projects-without-breaking-links">Organize Modular Projects Without Breaking Links</h1>
+<p>When you split a terrain into multiple <code>.terrain</code> files (Shape → Detail → Lookdev), you gain speed and stability—but you also introduce more <em>outputs</em> (RAWs, masks, builds) that need to stay predictable.</p>
+<p>A clean folder layout + stable “latest” build paths lets you iterate hard and <a href="/guides/scenarios/helpful-info/roundtrip.html">Avoid Roundtrips</a> in your DCC.</p>
+<div class="tip"><p>Design your folder structure so source files never move, RAW handoff files have stable names, and DCC links always point at a static “Latest” folder.</p>
+</div>
+<h2 id="recommended-folder-layout">Recommended folder layout</h2>
+<p>Here’s a practical structure that works for solo and teams:</p>
+<pre><code class="language-text">Project_Terrain/
+├── _docs/
+│   ├── notes.md
+│   └── refs/
+├── _dcc/
+│   ├── blender/
+│   ├── houdini/
+│   ├── maya/
+│   └── unreal/
+├── _gaea/
+│   ├── 00_shape/
+│   │   ├── Terrain_Shape.terrain
+│   │   └── exports/
+│   │       ├── Terrain_Shape_height.raw
+│   │       ├── Terrain_Shape_masks_height.raw
+│   │       └── Terrain_Shape_masks_slope.raw
+│   ├── 10_detail/
+│   │   ├── Terrain_Detail.terrain
+│   │   └── exports/
+│   │       ├── Terrain_Detail_deposition.raw
+│   │       ├── Terrain_Detail_flow.raw
+│   │       └── Terrain_Detail_height.raw
+│   └── 20_lookdev/
+│       ├── Terrain_Lookdev.terrain
+│       └── exports/
+│           ├── Terrain_Lookdev_color.exr
+│           └── Terrain_Lookdev_material_masks.exr
+├── _builds/
+│   ├── shape/
+│   │   ├── 2026-01-01_[+++]/
+│   │   └── Latest/
+│   ├── detail/
+│   │   ├── 2026-01-01_[+++]/
+│   │   └── Latest/
+│   └── final/
+│       ├── 2026-01-01_[+++]/
+│       └── Latest/
+└── _publish/
+    └── Latest/
+        ├── height.raw
+        ├── masks/
+        └── textures/
+</code></pre>
+<h3 id="what-goes-where">What goes where</h3>
+<ul>
+<li><strong><code>_gaea/</code></strong>: your editable <code>.terrain</code> files, split by stage</li>
+<li><strong><code>exports/</code></strong> inside each stage: <em>handoff</em> outputs (usually Gaea RAW + key masks) that the next stage ingests via <strong>File</strong></li>
+<li><strong><code>_builds/</code></strong>: heavy build outputs (8K/16K, multi-texture sets, etc.)</li>
+<li><strong><code>_publish/Latest/</code></strong>: optional “clean” packaging layer for the rest of the pipeline (especially helpful if you want DCC to reference one simple folder)</li>
+</ul>
+<h2 id="naming-conventions-that-scale">Naming conventions that scale</h2>
+<p>Keep names <em>semantic</em> and stable. Avoid embedding versions in filenames unless you truly need multiple variants live.</p>
+<h3 id="terrain-files">Terrain files</h3>
+<ul>
+<li><code>Terrain_Shape.terrain</code></li>
+<li><code>Terrain_Detail.terrain</code></li>
+<li><code>Terrain_Lookdev.terrain</code></li>
+</ul>
+<h3 id="raw-handoff-exports-stable-interface">RAW handoff exports (stable interface)</h3>
+<ul>
+<li><code>Terrain_Shape_height.raw</code></li>
+<li><code>Terrain_Shape_masks_slope.raw</code></li>
+<li><code>Terrain_Detail_height.raw</code></li>
+<li><code>Terrain_Detail_flow.raw</code></li>
+</ul>
+<div><p>Treat RAW exports like an API between files: stable names, stable meaning. If you change what a file outputs, change the name (or add a new output), not the path.</p>
+</div>
+<h2 id="avoid-roundtrips-with-latest-folders">Avoid roundtrips with “Latest” folders</h2>
+<p>This is the big workflow unlock.</p>
+<p>In your Build Destination, you can keep an incremental history <strong>and</strong> a stable folder for DCC links by enabling:</p>
+<ul>
+<li><code>Maintain a static folder with the latest copy</code> (in <a href="/ui/interface/build-options/index.html">Build Options</a>, Build tab)</li>
+</ul>
+<p>Then use an incremental destination pattern (like <code>[+++]</code>) for history, while your DCC always points to:</p>
+<ul>
+<li><code>_builds/final/Latest/</code></li>
+</ul>
+<p>Result:</p>
+<ul>
+<li>You keep per-build archives (numbered folders)</li>
+<li>Your DCC references never change (always <code>Latest</code>)</li>
+</ul>
+<div class="tip"><p>If your DCC points at numbered build folders, you’re guaranteeing roundtrips. Point it at Latest and keep numbered folders strictly as history.</p>
+</div>
+<p>You can read more about <a href="/guides/scenarios/helpful-info/roundtrip.html">Avoid Roundtrips</a>.</p>
+<h3 id="optional-snapshot-the-exact-terrain">Optional: snapshot the exact <code>.terrain</code></h3>
+<p>If you want perfect reproducibility for archived builds, enable:</p>
+<ul>
+<li><code>Copy the .terrain file to the build folder</code></li>
+</ul>
+<p>That gives you a time-stamped “this exact graph made this output” record.</p>
+<h2 id="a-handoff-first-workflow-that-stays-stable">A “handoff-first” workflow that stays stable</h2>
+<p><strong>In Shape file</strong></p>
+<ul>
+<li>Export: <code>Terrain_Shape_height.raw</code> (and a few masks)</li>
+<li>Next file ingests via File node (path stays constant)</li>
+</ul>
+<p><strong>In Detail file</strong></p>
+<ul>
+<li>Ingest shape RAW</li>
+<li>Export: <code>Terrain_Detail_height.raw</code> (+ detail masks)</li>
+<li>Lookdev ingests detail RAW (again: stable path)</li>
+</ul>
+<p><strong>In Final/Lookdev builds</strong></p>
+<ul>
+<li>Build to <code>_builds/final/[+++]/</code></li>
+<li>Let Gaea maintain <code>_builds/final/Latest/</code></li>
+<li>DCC references <code>_builds/final/Latest/…</code></li>
+</ul>
+<h2 id="team--source-control-notes">Team + source control notes</h2>
+<ul>
+<li><p>Put editable <code>.terrain</code> files under <code>_gaea/</code> and treat that as “source.”</p>
+</li>
+<li><p>Put <code>_builds/</code> in ignore rules (it’s usually huge and regenerable).</p>
+</li>
+<li><p>Decide whether RAW handoff exports live in version control:</p>
+<ul>
+<li><strong>Small team / fast iteration</strong>: keep RAWs out of VC, regenerate as needed</li>
+<li><strong>Distributed team / reproducibility</strong>: store critical RAW handoffs (or manage them via an asset system / LFS)</li>
+</ul>
+</li>
+</ul>
+<div class="warning"><p>If multiple people work in parallel, agree on the “contract” files:
+Terrain_Shape_height.raw, …_slope.raw, etc. Don’t rename them casually.</p>
+</div>
+<h2 id="one-more-trick-a-clean-publish-latest">One more trick: a clean “Publish Latest”</h2>
+<p>If your DCC wants a simplified structure, make <code>_publish/Latest/</code> the only folder external tools see.</p>
+<ul>
+<li>Copy (or script-copy) from <code>_builds/final/Latest/</code> into <code>_publish/Latest/</code></li>
+<li>Keep names consistent (<code>height.raw</code>, <code>masks/</code>, <code>textures/</code>)</li>
+<li>DCC points to <code>_publish/Latest/</code> forever</li>
+</ul>
+<p>This is especially nice when different Gaea stages output different internal naming, but your downstream pipeline expects a consistent package.</p>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_Guides.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+
+// On-page TOC (same palette)
+#page-nav {
+  * {
+    white-space: normal;
+    /* not single-line */
+    overflow-wrap: anywhere;
+    /* break long tokens/urls */
+    word-break: break-word;
+    /* fallback */
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      font-size: 12px;
+      font-weight: 500;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin: 0;
+      font-size: 12px;
+
+      a {
+        color: var(--toc-link);
+        display: inline-flex;
+        align-items: center;
+        gap: 1px;
+        padding-left: 18px;
+        flex-wrap: wrap;
+        /* allows items to wrap to next line */
+        min-width: 0;
+        /* critical for flex children to shrink */
+        max-width: 100%;
+        line-height: normal;
+        font-size: 12px;
+
+        &:hover {
+          color: var(--prime);
+          text-decoration: none;
+        }
+      }
+
+      >ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+
+      >ul>li {
+        border-left: 1px dotted var(--toc-border);
+        line-height: 24px;
+      }
+
+      >ul>li>ul>li {
+        border: none;
+        padding-left: 18px;
+        margin: 0;
+        line-height: 24px;
+      }
+
+      &.h1>a {
+        color: var(--toc-section);
+        font-weight: 600;
+        padding-left: 0;
+      }
+
+      &.h2>a {
+        font-weight: 600;
+      }
+
+      &.h3>a {
+        font-weight: 500;
+      }
+
+      &.h4>a {
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+  }
+
+
+
+}

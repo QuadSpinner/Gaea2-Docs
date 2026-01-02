@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Migrate from World Machine - Gaea Documentation - QuadSpinner</title>
+    <link rel="canonical" href="https://docs.gaea.app/guides/scenarios/drafts/wm-migration.html">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="generator" content="QuadSpinner AngryMonkey 2.0" />
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Gaea Docs">
+    <meta property="og:title" content="Migrate from World Machine - Gaea Documentation">
+    <meta property="og:url" content="https://docs.gaea.app/guides/scenarios/drafts/wm-migration.html">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://docs.gaea.app/guides/scenarios/drafts/wm-migration.html#article",
+            "headline": "Migrate from World Machine - Gaea Documentation",
+            "description": "Gaea Documentation",
+            "url": "https://docs.gaea.app/guides/scenarios/drafts/wm-migration.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://docs.gaea.app/#website",
+                "name": "Gaea Docs",
+                "url": "https://docs.gaea.app"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://docs.gaea.app/guides/scenarios/drafts/wm-migration.html#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.gaea.app" },
+                { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://docs.gaea.app/guides" },
+                { "@type": "ListItem", "position": 3, "name": "Migrate from World Machine", "item": "https://docs.gaea.app/guides/scenarios/drafts/wm-migration.html" }
+            ]
+        }
+    ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/site.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/themes.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/styles.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/glow.css?v=01.02.2026" />
+    <link rel="stylesheet" href="/assets/print.css?v=01.02.2026" />
+    <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-hive="Guides" data-hive-shortname="Guides" data-hive-link="/guides" data-slug="wm-migration">
+
+    <header class="top-bar d-flex d-lg-none d-print-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
+            <img src="/assets/svg/menu.svg" alt="Navigation">
+        </button>
+        <a href="/" class="main-title" aria-label="Gaea Docs">Gaea Documentation</a>
+    </header>
+
+    <div class="container-xxl" id="expanding-container">
+        <header class="mt-lg-5 mt-2">
+            <div class="row glow head-block">
+                <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-between">
+                    <img src="/assets/img/Gaea-Icon-64.png" width="24" height="24" alt="Logo" class="d-flex" />
+                    <a href="/" class="site-title d-flex" aria-label="Gaea Docs">Gaea Documentation</a>
+                </div>
+                <div class="px-lg-5 px-1 col d-print-none">
+                    <div class="position-relative" id="site-search">
+                        <input id="searchBox" class="form-control" type="search" placeholder="Search…" autocomplete="off">
+                        <div id="searchPopup" class="dropdown-menu w-100 shadow mt-1 p-0" style="display:none;">
+                            <div class="px-3 py-2 border-bottom small text-secondary" id="searchMeta">Type to search</div>
+                            <div id="searchResults" class="list-group list-group-flush"></div>
+                            <div id="searchEmpty" class="px-3 py-3 text-secondary" style="display:none;">No results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex hive-nav">
+                        <a class="p-2 nav-item" data-hive-shortname="Install" href="/install"><i class="fa-duotone fa-light fa-box-open"></i> Install</a>
+                        <a class="p-2 nav-item" data-hive-shortname="UI" href="/ui"><i class="fa-duotone fa-light fa-sidebar"></i> Interface</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Using" href="/using"><i class="fa-duotone fa-light fa-person-chalkboard"></i> Using Gaea</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Nodes" href="/reference"><i class="fa-duotone fa-light fa-notebook"></i> Nodes</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Guides" href="/guides"><i class="fa-duotone fa-light fa-book-sparkles"></i> Guides</a>
+                        <a class="p-2 nav-item" data-hive-shortname="Videos" href="/videos"><i class="fa-duotone fa-light fa-film-stack"></i> Videos</a>
+                        <div class="flex-fill d-none d-lg-flex nav-item disabled p-2"></div>
+                        <a class="p-2 nav-item" data-hive-shortname="Developers" href="/developers"><i class="fa-duotone fa-light fa-gear-code"></i> Developers</a>
+                        <a class="p-2 nav-item" data-hive-shortname="History" href="/history"><i class="fa-duotone fa-light fa-conveyor-belt-boxes"></i> Release History</a>
+                        <div class="flex-fill d-flx d-lg-none nav-item disabled p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block" id="nav-holder">
+                    <nav id="site-nav"></nav>
+                </div>
+                <div class="col">
+                    <div class="d-none d-print-block">
+                        <h1>Gaea Documentation</h1>
+                        <h3>Guides</h3>
+                        <h2>Migrate from World Machine</h2>
+                        <hr>
+                    </div>
+
+                    <div class="px-4 d-print-none">
+                        <div id="breadcrumbs"></div>
+                    </div>
+                    <div class="row align-top">
+                        <div id="content-holder" class="col px-5">
+                            <main id="contents"><h1 id="migrating-from-world-machine-to-gaea">Migrating from World Machine to Gaea</h1>
+<p>If you’re coming from World Machine, you already know the core idea: build terrains by chaining generators, modifiers, and erosion. What changes in Gaea is less the <em>goal</em> and more the <em>mindset</em>—how you structure graphs, how you handle scale, and how you iterate safely at high resolution.</p>
+<p>This guide highlights the biggest workflow shifts so you can get productive quickly and avoid the most common “WM habits” that cause friction.</p>
+<hr />
+<h1 id="the-key-mindset-shifts">The key mindset shifts</h1>
+<h2 id="stop-thinking-zoom-in-later">Stop thinking “zoom in later”</h2>
+<p>In older fractal-first workflows, it’s common to build a big world, then “zoom in” to get a hero area. Fractals tolerate that. Erosion and physically-inspired processes don’t.</p>
+<p>In Gaea, it’s usually safer to:</p>
+<ol>
+<li>Build the hero feature at the fidelity it needs.</li>
+<li>Integrate it into the wider landscape using composition tools (Transform, Combine, Transpose, Embed).</li>
+</ol>
+<p>This keeps erosion scale believable and lets you build the hero piece at 8K separately from the world when needed.</p>
+<h2 id="keep-the-initial-shape-clean">Keep the initial shape clean</h2>
+<p>WM users often front-load detail early (lots of noise on the base terrain). In Gaea, that tends to restrict how much procedural shaping and erosion can do later.</p>
+<p>A better pattern:</p>
+<ul>
+<li>Macro shape first (simple, readable forms)</li>
+<li>Erosion second (lets the terrain “tell the story”)</li>
+<li>Surface and micro detail last (finish and texture support)</li>
+</ul>
+<h2 id="think-in-modules-not-monoliths">Think in modules, not monoliths</h2>
+<p>Instead of one giant graph that does everything:</p>
+<ul>
+<li>Split work into logical stages (shape → detail → lookdev)</li>
+<li>Bake stable checkpoints</li>
+<li>Or separate into multiple <code>.terrain</code> files and pass data forward using Gaea RAW + File nodes</li>
+</ul>
+<p>This reduces memory use, improves iteration speed, and makes teamwork much easier.</p>
+<hr />
+<h1 id="a-major-workflow-upgrade-task-specific-nodes">A major workflow upgrade: task-specific nodes</h1>
+<p>One of the biggest differences you’ll feel immediately is that Gaea leans into <strong>task-specific tools</strong>.</p>
+<p>In World Machine, it’s common to “massage” a result out of lots of lower-level building blocks—especially for foundational shapes. Gaea still supports that approach, but you often don’t have to.</p>
+<h2 id="example-basic-forms-without-the-noise-gymnastics">Example: basic forms without the noise gymnastics</h2>
+<p>If you want a clean cone, crater, mesa, ridge, or other simple landform:</p>
+<ul>
+<li>In older workflows you might stack multiple noises, clamps, warps, and masks to sculpt a usable primitive.</li>
+<li>In Gaea, <strong>Primitives</strong> can give you ready-to-run base shapes immediately, so you can spend your time on the <em>terrain design</em> and <em>erosion language</em> instead of wrestling the base form into existence.</li>
+</ul>
+<h2 id="power-users-arent-boxed-in">Power users aren’t boxed in</h2>
+<p>This doesn’t mean Gaea is “only presets.” The low-level building blocks are still there:</p>
+<ul>
+<li>you can still construct shapes from noises, remaps, and custom masking,</li>
+<li>you can still design highly specific behaviors and art-direct every stage,</li>
+<li>you just have more purpose-built nodes available when you want to move faster.</li>
+</ul>
+<hr />
+<h1 id="translating-common-wm-habits-into-gaea-equivalents">Translating common WM habits into Gaea equivalents</h1>
+<h2 id="devices--nodes-plus-stronger-composition">“Devices” → Nodes, plus stronger composition</h2>
+<p>You’ll still chain operations, but Gaea leans heavily on <em>composition</em>:</p>
+<ul>
+<li><strong>Transform</strong> to place and scale features</li>
+<li><strong>Combine</strong> to merge heightfields and control blending</li>
+<li><strong>Embed</strong> to seat features into terrain convincingly (clean transitions)</li>
+<li><strong>Transpose</strong> to route masks/fields cleanly without spaghetti</li>
+</ul>
+<h2 id="layout-based-design--still-valid-often-cleaner-with-masks-and-modules">“Layout-based design” → Still valid, often cleaner with masks and modules</h2>
+<p>If you’re used to shaping with layout devices, you’ll feel at home—but you’ll often get better long-term results by:</p>
+<ul>
+<li>building hero features as reusable modules,</li>
+<li>using masks intentionally to control where erosion/details apply.</li>
+</ul>
+<h2 id="build-everything-at-final-res--build-smart-bake-smarter">“Build everything at final res” → Build smart, bake smarter</h2>
+<p>High-res everything-all-at-once is where memory and iteration speed go to die.</p>
+<p>In Gaea, you’ll get farther by:</p>
+<ol>
+<li>Working at a comfortable preview resolution.</li>
+<li>Baking stable sections.</li>
+<li>Building only what needs the expensive resolution (often in batches).</li>
+</ol>
+<hr />
+<h1 id="a-practical-migration-checklist">A practical migration checklist</h1>
+<h2 id="first-week-goals">First week goals</h2>
+<ol>
+<li>Rebuild one of your favorite WM terrains in Gaea at a modest resolution.</li>
+<li>Identify two “checkpoints” and bake them.</li>
+<li>Create one build profile for a quick preview build and one for final output.</li>
+</ol>
+<h2 id="your-new-default-graph-structure">Your new default graph structure</h2>
+<ol>
+<li>Macro Shape (clean forms, low noise)</li>
+<li>Primary Erosion (the big read)</li>
+<li>Secondary Detail (selective, controlled)</li>
+<li>Surface (micro detail, breakup, texture support)</li>
+<li>Outputs (height + the few masks you truly need)</li>
+</ol>
+<hr />
+<h1 id="the-most-common-pitfalls-for-wm-migrants">The most common pitfalls for WM migrants</h1>
+<h2 id="pitfall-why-does-my-erosion-look-wrong-when-i-change-scale">Pitfall: “Why does my erosion look wrong when I change scale?”</h2>
+<p>Because erosion is scale-sensitive. If you change extents, zoom/crop, or rebuild a region at a different scale, erosion settings may no longer represent the same physical reality.</p>
+<p>Fix:</p>
+<ul>
+<li>Decide scale early.</li>
+<li>Build hero elements at their intended scale.</li>
+<li>Compose them into the bigger world instead of zooming.</li>
+</ul>
+<h2 id="pitfall-over-noising-the-base-terrain">Pitfall: Over-noising the base terrain</h2>
+<p>Heavy early noise can “freeze” the terrain’s read and limit what erosion can do.</p>
+<p>Fix:</p>
+<ul>
+<li>Keep the base simple.</li>
+<li>Let erosion and surface nodes generate most detail.</li>
+</ul>
+<h2 id="pitfall-dcc-relinking-every-build">Pitfall: DCC relinking every build</h2>
+<p>If your output paths change every build, you get roundtrips.</p>
+<p>Fix:</p>
+<ul>
+<li>Use incremental build folders for history.</li>
+<li>Also maintain a static <code>Latest</code> output folder for stable DCC links.</li>
+</ul>
+<h2 id="pitfall-one-file-does-everything">Pitfall: One file does everything</h2>
+<p>Big monolithic graphs are harder to iterate, harder to debug, and harder to collaborate on.</p>
+<p>Fix:</p>
+<ul>
+<li>Separate stages into files (shape/detail/lookdev).</li>
+<li>Pass stable results forward as RAW.</li>
+<li>Keep “interfaces” (handoff files) named consistently.</li>
+</ul>
+<hr />
+<h1 id="a-recommended-migration-starter-project">A recommended “migration starter project”</h1>
+<p>If you want a structured exercise:</p>
+<ol>
+<li>Make a simple volcano using Primitives or a clean macro setup.</li>
+<li>Erode it until it reads well at mid distance.</li>
+<li>Build a separate surrounding landscape.</li>
+<li>Compose the volcano into the world with Transform/Embed/Combine.</li>
+<li>Build the volcano branch at 8K for closeups and the world branch at whatever the shot requires.</li>
+</ol>
+<p>This single exercise teaches the biggest Gaea advantage over the old “zoom later” habit: <strong>you can keep multiple scales in one graph without breaking physical plausibility.</strong></p>
+</main>
+                            <div id="next-nav" class="d-flex justify-content-between">
+                                <a href="" id="btn-prev" class="btn btn-small"></a>
+                                <a href="" id="btn-next" class="btn btn-small"></a>
+                            </div>
+                        </div>
+                        <div id="page-naver" class="col-3 d-none d-print-none d-lg-block page-nav-wrapper">
+                            <div class="d-lg-flex d-none d-print-none align-items-center">
+                                <div class="dropdown d-flex doc-dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="/assets/svg/commands.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-block sticky-xxl-top">
+                                <br>
+                                <br>
+                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <strong>On this page</strong>
+                                <br>
+                                <div id="page-nav">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <br>
+            <hr>
+            <br>
+            <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-12 text-left text-center-mobile my-4">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    Created by <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" />
+                    using <a href="https://github.com/quadspinner/angrymonkey2"><img src="/assets/img/AngryMonkey.png" alt="AngryMonkey" width="24" height="24" /></a>
+                    <br>
+                    <br>
+                    Copyright © 2016-2026 <a href="https://quadspinner.com" target="_blank" class="link-secondary">QuadSpinner</a>. All rights reserved.
+                </div>
+                <div class="col-lg-6 col-12 text-right text-center-mobile my-4">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="https://quadspinner.com/download" target="_blank" class="link-secondary" rel="noopener">Download Gaea</a></li>
+                        <li class="list-inline-item"><a href="https://QuadSpinner.com/legal/" target="_blank" class="link-secondary" rel="noopener">Legal Terms and Privacy</a></li>
+                    </ul>
+                    <br>
+                    <p>Documentation is provided under the <a href="https://github.com/QuadSpinner/Gaea2-Docs/?tab=MIT-1-ov-file#readme">MIT License</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Table of Contents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="site-nav-2"></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC_Guides.js?v=01.02.2026"></script>
+    <script src="/assets/js/TOC.js?v=01.02.2026"></script>
+    <script src="/assets/js/search.min.js?v=01.02.2026"></script>
+</body>
+
+</html>
