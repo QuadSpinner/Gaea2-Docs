@@ -65,29 +65,29 @@ uid: home
       </div>
     </div>
   </div>
-  <div class="col">
+  <!-- <div class="col">
     <div class="card">
-      <a href="/guides">
+      <a href="#">
         <img class="card-img-top" src="/.data/home/guides.webp" alt="" />
       </a>
       <div class="card-body">
         <h3 class="card-title">
-          <a href="/guides">Guides</a>
+          <a href="#">Guides</a>
         </h3>
         <div>
-          Read application-specific guides, specific techniques, features, and production scenarios.
+          COMING SOON! Read application-specific guides, specific techniques, features, and production scenarios.
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="col">
     <div class="card">
-      <a href="/videos">
+      <a href="https://www.youtube.com/quadspinner">
         <img class="card-img-top" src="/.data/home/video-tutorials.webp" alt="" />
       </a>
       <div class="card-body">
         <h3 class="card-title">
-          <a href="/videos">Video Tutorials</a>
+          <a href="https://www.youtube.com/quadspinner">Video Tutorials</a>
         </h3>
         <div>
           Watch video tutorials, node explainers, deep dives, and more.

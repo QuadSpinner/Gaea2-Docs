@@ -1,1 +1,4 @@
+X:\Docs\Gaea2-Docs\staging\using\using-gaea\build-and-export\index.md
+X:\Docs\Gaea2-Docs\staging\using\using-gaea\build-and-export\mesh-exports.md
+X:\Docs\Gaea2-Docs\staging\using\index.md
 X:\Docs\Gaea2-Docs\staging\install\install-gaea\mass-deployment.md

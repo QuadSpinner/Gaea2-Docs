@@ -124,8 +124,8 @@ a {
 }
 
 
-.text-center-mobile{
-  @include phone{
+.text-center-mobile {
+  @include phone {
     text-align: center !important;
   }
 }
@@ -390,4 +390,8 @@ div[data-popper-placement],
         #000 90%,
         transparent 100%);
   }
+}
+
+.migration {
+  font-size: 9px;
 }
