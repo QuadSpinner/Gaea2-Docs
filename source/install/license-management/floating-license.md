@@ -2,6 +2,7 @@
 title: Floating License
 uid: floating-license
 order: 04
+icon: key-skeleton-left-right
 ---
 
 # Floating License

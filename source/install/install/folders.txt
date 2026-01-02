@@ -1,2 +1,0 @@
-install-gaea|Install Gaea
-license-management|License Management

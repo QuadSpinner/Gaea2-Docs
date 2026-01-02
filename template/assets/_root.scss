@@ -8,7 +8,7 @@
   --tblr-link-decoration: none;
   --tblr-link-hover-color: #389170;
   --tblr-link-hover-color-rgb: 56, 145, 112;
-
+  --prime: #ffcc00;
   // Light
   --toc-section: #111;
   --toc-link: #777;
@@ -41,11 +41,11 @@ body {
 } 
 
 
-body[data-hive-shortname="Home"]{ --prime: #ffcc00; }
-body[data-hive-shortname="Install"],.hive-nav .nav-item:nth-child(1){ --prime: #4e99a6; }
-body[data-hive-shortname="UI"],.hive-nav .nav-item:nth-child(2){ --prime: #a34563; }
-body[data-hive-shortname="Using"],.hive-nav .nav-item:nth-child(3){ --prime: #4fba88; }
-body[data-hive-shortname="Reference"],.hive-nav .nav-item:nth-child(4){ --prime: #4c799a; }
-body[data-hive-shortname="Guides"],.hive-nav .nav-item:nth-child(5){ --prime: #8a61a4; }
-body[data-hive-shortname="Developers"],.hive-nav .nav-item:nth-child(6){ --prime: #c9708c; }
-body[data-hive-shortname="History"],.hive-nav .nav-item:nth-child(7){ --prime: #a7b076; }
+body[data-hive-shortname="Home"], a[data-hive-shortname="Home"]{ --prime: #ffcc00; }
+body[data-hive-shortname="Install"], a[data-hive-shortname="Install"]{ --prime: #4e99a6; }
+body[data-hive-shortname="UI"], a[data-hive-shortname="UI"]{ --prime: #a34563; }
+body[data-hive-shortname="Using"], a[data-hive-shortname="Using"]{ --prime: #4fba88; }
+body[data-hive-shortname="Reference"], a[data-hive-shortname="Reference"]{ --prime: #4c799a; }
+body[data-hive-shortname="Guides"], a[data-hive-shortname="Guides"]{ --prime: #8a61a4; }
+body[data-hive-shortname="Developers"], a[data-hive-shortname="Developers"]{ --prime: #c9708c; }
+body[data-hive-shortname="History"], a[data-hive-shortname="History"]{ --prime: #a7b076; }

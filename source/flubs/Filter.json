@@ -1,52 +1,52 @@
 ﻿[
   {
     "Name": "Mode",
-    "Description": "",
+    "Description": "Selects the filter response curve used to shape terrain detail by frequency (scale).",
     "Flubs": [
       {
         "Name": "LowPass",
-        "Description": "<desc>"
+        "Description": "Keeps large-scale forms and smooths out high-frequency detail."
       },
       {
         "Name": "HighPass",
-        "Description": "<desc>"
+        "Description": "Keeps fine detail and removes broad, low-frequency forms."
       },
       {
         "Name": "LowShelf",
-        "Description": "<desc>"
+        "Description": "Boosts or cuts low frequencies while leaving higher frequencies mostly unchanged."
       },
       {
         "Name": "HighShelf",
-        "Description": "<desc>"
+        "Description": "Boosts or cuts high frequencies while leaving lower frequencies mostly unchanged."
       },
       {
         "Name": "BandPass",
-        "Description": "<desc>"
+        "Description": "Keeps a band of mid frequencies and attenuates both low and high frequencies outside the band."
       },
       {
         "Name": "Notch",
-        "Description": "<desc>"
+        "Description": "Removes a narrow band of frequencies while leaving the rest mostly unchanged."
       },
       {
         "Name": "Bell",
-        "Description": "<desc>"
+        "Description": "Boosts or cuts a centered frequency band with a controllable bandwidth."
       }
     ]
   },
   {
     "Name": "Frequency",
-    "Description": ""
+    "Description": "The center/cutoff frequency of the filter (controls which detail scale is affected)."
   },
   {
     "Name": "Gain",
-    "Description": ""
+    "Description": "Amount of boost or cut applied (used by shelf and bell modes)."
   },
   {
     "Name": "Q",
-    "Description": ""
+    "Description": "Filter sharpness/bandwidth (higher Q = narrower, more selective band; lower Q = broader influence)."
   },
   {
     "Name": "Keep DC",
-    "Description": ""
+    "Description": "Preserves the overall baseline/average height (DC offset) so the filter affects detail without shifting the mean elevation."
   }
 ]

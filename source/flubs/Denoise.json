@@ -1,28 +1,28 @@
 ﻿[
   {
     "Name": "Type",
-    "Description": "",
+    "Description": "Selects the denoising method used to smooth noise while preserving overall features.",
     "Flubs": [
       {
         "Name": "OnePass",
-        "Description": "<desc>"
+        "Description": "Runs a single denoise pass for fast, moderate smoothing."
       },
       {
         "Name": "TwoPass",
-        "Description": "<desc>"
+        "Description": "Runs a stronger two-stage denoise for cleaner results with better feature retention."
       },
       {
         "Name": "Pixels",
-        "Description": "<desc>"
+        "Description": "Targets pixel-level speckle and stair-stepping artifacts, focusing on discrete noisy pixels."
       }
     ]
   },
   {
     "Name": "Amount",
-    "Description": ""
+    "Description": "Strength of the denoising effect (higher values smooth more, but can soften detail)."
   },
   {
     "Name": "Passes",
-    "Description": ""
+    "Description": "Number of denoise iterations to apply for the selected method."
   }
 ]

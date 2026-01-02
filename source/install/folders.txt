@@ -1,3 +1,3 @@
-install|Install and License
-misc|Misc
-for-gaea-1-users|For Gaea 1 Users
+install-gaea|Install Gaea
+license-management|License Management
+gaea1|Gaea 1 Users

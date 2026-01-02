@@ -1,34 +1,36 @@
 ﻿[
   {
     "Name": "Craterfield",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Controls for generating a field of craters: overall size, depth, and distribution density."
   },
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Controls the overall size (radius) of craters in the field."
   },
   {
     "Name": "Depth",
-    "Description": ""
+    "Description": "Controls how deep the craters carve into the terrain."
   },
   {
     "Name": "Density",
-    "Description": ""
+    "Description": "Controls how many craters are generated across the terrain (higher values create more impacts)."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "The randomization pattern or seed for the node's process."
   },
   {
     "Name": "Position",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Offsets the craterfield’s center position on the terrain."
   },
   {
     "Name": "X",
-    "Description": ""
+    "Description": "Offsets the craterfield along the X axis."
   },
   {
     "Name": "Y",
-    "Description": ""
+    "Description": "Offsets the craterfield along the Y axis."
   }
 ]

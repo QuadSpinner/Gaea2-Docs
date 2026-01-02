@@ -4,6 +4,7 @@
   "StagingRoot": "staging",
   "TemplatesFolder": "template",
   "HtmlTemplate": "template\\template.html",
+  "DataFolders": [".Data"],
   "Hives": [
     { "Name": "Home", "Folder": "",         "ShortName": "Home",      "IsHome": true,  "Url": "/" },
     { "Name": "Install", "Folder": "install", "ShortName": "Install", "Url": "/install" },

@@ -5,6 +5,6 @@
   },
   {
     "Name": "Automatic",
-    "Description": ""
+    "Description": "Tries to automatically set the correct gamma based on existing value."
   }
 ]

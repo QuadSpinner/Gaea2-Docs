@@ -2,6 +2,7 @@
 title: Deactivation
 uid: deactivation
 order: 02
+icon: lock-keyhole
 ---
 
 # Deactivation

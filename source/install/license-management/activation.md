@@ -2,6 +2,7 @@
 title: Activation
 uid: activation
 order: 01
+icon: key
 ---
 
 # Activation

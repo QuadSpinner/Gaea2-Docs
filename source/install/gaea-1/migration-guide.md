@@ -2,6 +2,7 @@
 title: Migration Guide
 uid: migration-guide
 order: 01
+icon: book-arrow-right
 ---
 
 # Migration Guide

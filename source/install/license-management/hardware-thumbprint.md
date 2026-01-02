@@ -2,6 +2,7 @@
 title: Hardware Thumbprint
 uid: hardware-thumbprint
 order: 03
+icon: fingerprint
 ---
 
 # Hardware Thumbprint

@@ -1,35 +1,35 @@
 ﻿[
   {
     "Name": "Iterations",
-    "Description": ""
+    "Description": "Number of instances the bombing operation will create."
   },
   {
     "Name": "Multiplier",
-    "Description": ""
+    "Description": "Quickly multiply the instances by increasing or decreasing this value."
   },
   {
     "Name": "Size",
-    "Description": ""
+    "Description": "The minimum and maximum relative size of bombed instances."
   },
   {
     "Name": "Size Distribution",
-    "Description": ""
+    "Description": "Uniformity of the size of the bombed instances."
   },
   {
     "Name": "Rotation",
-    "Description": ""
+    "Description": "The minimum and maximum range of rotations for the bombed instances."
   },
   {
     "Name": "Proportional",
-    "Description": "Enforce proportional scaling, or allow non-proportional modifications."
+    "Description": "Whether instances should maintain height vs size proportion or not."
   },
   {
     "Name": "Variable Height",
-    "Description": ""
+    "Description": "Allow variations in Height."
   },
   {
     "Name": "Height",
-    "Description": ""
+    "Description": "The minimum and maximum range of height variations for the bombed instances."
   },
   {
     "Name": "Distribution",
@@ -63,27 +63,27 @@
     "Flubs": [
       {
         "Name": "None",
-        "Description": "<desc>"
+        "Description": "Overwrite each instance."
       },
       {
         "Name": "Blend",
-        "Description": "<desc>"
+        "Description": "Blend instances."
       },
       {
         "Name": "Add",
-        "Description": "Adds the two values together."
+        "Description": "Adds instances on top."
       },
       {
         "Name": "Subtract",
-        "Description": "<desc>"
+        "Description": "Subtract each instance from the base and previous instances."
       },
       {
         "Name": "Difference",
-        "Description": " Creates the difference of the two inputs."
+        "Description": "Create difference between the base and each bombed instance."
       },
       {
         "Name": "Multiply",
-        "Description": "<desc>"
+        "Description": "Multiply the base with each bombed instance."
       },
       {
         "Name": "Screen",
@@ -91,17 +91,17 @@
       },
       {
         "Name": "Max",
-        "Description": "Selects the higher of the two."
+        "Description": "Retain the maximum height values of each bombed instance."
       },
       {
         "Name": "Min",
-        "Description": "<desc>"
+        "Description": "Retain the minimum height values of each bombed instance."
       }
     ]
   },
   {
     "Name": "Quality",
-    "Description": "",
+    "Description": "The level of quality to be used. Draft is recommended when working with high-resolution previews.",
     "Flubs": [
       {
         "Name": "Draft",

@@ -1,19 +1,19 @@
 ﻿[
   {
     "Name": "Type",
-    "Description": "",
+    "Description": "Selects which axis the input is mirrored across.",
     "Flubs": [
       {
         "Name": "X",
-        "Description": "<desc>"
+        "Description": "Flips the input horizontally (mirrors along the X axis)."
       },
       {
         "Name": "Y",
-        "Description": "<desc>"
+        "Description": "Flips the input vertically (mirrors along the Y axis)."
       },
       {
         "Name": "XY",
-        "Description": "<desc>"
+        "Description": "Flips both axes (180° mirror of the input)."
       }
     ]
   }
