@@ -20,6 +20,8 @@ You can keep them in the heightmap, or export a point-cloud for later use. You c
 
 The Debris simulation lets you control the emission source so you can place the debris as needed. In this image, the flow map of the terrain is provided as the Emitter Source, so the debris form only within those lanes and the take advantage of the inherent physics of the flows to create scree rivers.
 
+@erosion2 Wear data can often be a great source. @
+
 ![](/.data/assets/Gaea_-_cx1.terrain_06-47-11-AM---Copy.jpg)
 
 ## Friction and Restitution
