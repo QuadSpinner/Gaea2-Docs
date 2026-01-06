@@ -15,7 +15,7 @@ Once imported, the model will behave exactly like any other Gaea generated terra
 
 ![](/.data/assets/image%20(57).png)
 
-The Object node requires the original mesh to be present during build. If you are not going to have access to the mesh later, you may wish to [Bake the Object node](../baking-nodes/).
+The Object node requires the original mesh to be present during build. If you are not going to have access to the mesh later, you may wish to [Bake the Object node](@baking-nodes).
 
 :::info
 Please note that Gaea is a heightfield-first software. While we do our best to support as many kinds of meshes and objects, sometimes very large or very complex objects may not import that well. You may wish to use applications such as MeshLabs to simplify or recontainerize your mesh

@@ -27,7 +27,7 @@ Right-click an existing connection and select `Convert to Portal`.
 
 
 :::sidebyside
-![Press P to bring up the Portal menu.](/.data/assets/image%20(48).png) ![Create or delete Portal connections in the Portal menu.](/.data/assets/image%20(49).png)
+![Press P to bring up the Portal menu.](/.data/assets/image-(48).png) ![Create or delete Portal connections in the Portal menu.](/.data/assets/image-(49).png)
 :::
 
 Right-click a node and select `Manage Portals` (shortcut key `P`). Then select the port you wish to convert to a Portal. If the Port has existing connections, they will be converted to portal connections.
@@ -36,7 +36,7 @@ Right-click a node and select `Manage Portals` (shortcut key `P`). Then select t
 If you press `Shift` while Converting a Port to a Portal in the Manage Portals menu, a Chokepoint node will be created first and then its output will be turned into a Portal.
 :::
 
-![](</.data/assets/image%20(71).png>)
+![](</.data/assets/image-(71).png>)
 
 ![](/.data/assets/Gaea_-_Untitled_09-30-27-PM.png)
 

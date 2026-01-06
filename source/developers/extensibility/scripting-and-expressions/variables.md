@@ -71,7 +71,7 @@ Deleting a variable will unbind any other properties that may be bound to it.
 
 Gaea provides two easy way to display the Variables: as organized by you, or grouped by Nodes.
 
-<div>![Ungrouped / Custom Order](/.data/assets/vars_normalMode.png) ![Grouped by Nodes](/.data/assets/vars_groupByNode.png)</div>
+[Ungrouped / Custom Order](/.data/assets/vars_normalMode.png) ![Grouped by Nodes](/.data/assets/vars_groupByNode.png)
 
 In the **Grouped By Node** view, all variables bound to a node are grouped by node, unless you have a variable bound to two or more properties, then those variables are separated into the **MultiBound Properties** group.
 
@@ -93,7 +93,7 @@ In the Create Variable menu, you can choose UI Decorations: specifically, Separa
 
 You can see that Decorations are shown separately in Edit Mode. You can move them around and edit the UI as needed.
 
-<div>![Edit Mode](/.data/assets/vars_editMode.png) ![Custom UI modifications.](/.data/assets/vars_normalMode.png)</div>
+![Edit Mode](/.data/assets/vars_editMode.png) ![Custom UI modifications.](/.data/assets/vars_normalMode.png)
 
 When you switch back from Edit Mode, you will see that the custom UI has been implemented.
 
