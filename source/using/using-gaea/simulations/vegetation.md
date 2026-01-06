@@ -20,7 +20,7 @@ The Trees and Shrubs nodes operate on basically the same principle but different
 
 Here you can see 3 separate populations or "ecotopes" created with 3 different Trees nodes. Each avoiding the other, but intermingling and creating scatter points within their own zones.
 
-<div>![](/.data/assets/veg2.jpg) ![](/.data/assets/veg1.jpg) ![](/.data/assets/veg3.jpg)</div>
+![](/.data/assets/veg2.jpg) ![](/.data/assets/veg1.jpg) ![](/.data/assets/veg3.jpg)
 
 ![](/.data/assets/veg4.jpg)
 
@@ -34,13 +34,13 @@ Gaea's growth systems are powered by 3 major factors: growth or health, inhibito
 
 First, you decide whether your growth should seek water or avoid it.
 
-<div>![](/.data/assets/Gaea_-_docs-trees.terrain_03-48-49-AM.png) ![](/.data/assets/Gaea_-_docs-trees.terrain_03-49-59-AM.png)</div>
+![](/.data/assets/Gaea_-_docs-trees.terrain_03-48-49-AM.png) ![](/.data/assets/Gaea_-_docs-trees.terrain_03-49-59-AM.png)
 
 Health / Patches / Spread / Random help you control the patterns and extents of the population.
 
 ### Inhibitors
 
-<div>![](/.data/assets/Gaea_-_docs-trees.terrain_03-51-56-AM.png) ![](/.data/assets/Gaea_-_docs-trees.terrain_03-52-17-AM.png)</div>
+![](/.data/assets/Gaea_-_docs-trees.terrain_03-51-56-AM.png) ![](/.data/assets/Gaea_-_docs-trees.terrain_03-52-17-AM.png)
 
 Slope and Height are the most essential inhibitors. You can choose which range of slope and height allows these trees to grow.
 

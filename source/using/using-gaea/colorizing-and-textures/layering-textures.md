@@ -20,7 +20,7 @@ You can change the order of layer-blending by simply dragging and changing the o
 
 Each layer is assigned an ID color which is used to drive the "Simplified View" which is useful for checking how layers blend.
 
-<div>![](/.data/assets/mixer_real.jpg) ![](/.data/assets/mixer_flat.jpg)</div>
+![](/.data/assets/mixer_real.jpg) ![](/.data/assets/mixer_flat.jpg)
 
 When "Preserve Masks" is enabled, when in-built masks are such as Height or Slope are used, those masks are also exported as Out ports so you can use them for further masking later in the graph.
 

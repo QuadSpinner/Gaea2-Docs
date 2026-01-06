@@ -14,7 +14,7 @@ This tech was originally pioneered by QuadSpinner for GeoGlyph in 2014, Gaea's l
 
 
 
-<div>![](/.data/assets/Gaea_-_Untitled_03-22-12-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-22-15-AM.png)</div>
+![](/.data/assets/Gaea_-_Untitled_03-22-12-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-22-15-AM.png)
 
 This TextureMap node is attached to a SatMap node. The SatMap is adapted to the mask as described in @crafting-masks.
 
@@ -44,7 +44,7 @@ Here, we clip out most of the left half of the color map, and you can see how th
 
 The Roughness setting scatters the pixels of the color map to add the desired level of chaos and distortion.
 
-<div>![](/.data/assets/Gaea_-_Untitled_03-35-36-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-35-39-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-35-41-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-35-44-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-35-47-AM.png)</div>
+![](/.data/assets/Gaea_-_Untitled_03-35-36-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-35-39-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-35-41-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-35-44-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-35-47-AM.png)
 
 #### HSL
 
