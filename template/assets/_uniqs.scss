@@ -8,6 +8,8 @@
     padding: 8px 16px;
     margin-top: 16px;
     margin-bottom: 16px;
+    width: 60%;
+    display: block;
 
     p {
         margin: 0;
@@ -20,6 +22,10 @@
         color: #000;
     }
 
+    @media only screen and (max-width: 980px) {
+        width: 100% !important;
+    }
+
 }
 
 .note {
@@ -29,6 +35,14 @@
 // blue
 .tip {
     @include callout(#7dcb82);
+
+    i {
+        display: block;
+        margin: 8px;
+        margin-right: 32px;
+        float: left;
+        font-size: 18px;
+    }
 }
 
 // green

@@ -124,6 +124,34 @@ body[data-hive-shortname=History], a[data-hive-shortname=History] {
 #contents #show-sublinks {
   padding: 32px 12px;
 }
+#contents .aside {
+  float: right;
+  margin: 16px;
+  background-color: #0a0a0a;
+  border-radius: 8px;
+  padding: 48px;
+  width: 40%;
+  border: 1.5px solid #1a1a1a;
+  color: #d4d4d4;
+}
+@media only screen and (max-width: 980px) {
+  #contents .aside {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+}
+#contents .aside blockquote,
+#contents .aside h1, #contents .aside.big {
+  color: #d4d4d4;
+  font-feature-settings: normal;
+  font-size: 26px;
+  font-variation-settings: normal;
+  font-weight: 700;
+  letter-spacing: -0.9px;
+  line-height: 26px;
+  margin: 0;
+}
 
 code:not(pre > code) {
   background-color: #111;
@@ -283,12 +311,12 @@ figure img {
   padding-left: 0.8em;
 }
 .properties-table td:nth-child(1) {
-  width: 30%;
+  width: 20%;
   font-weight: 600;
   text-align: right !important;
 }
 .properties-table td:nth-child(2) {
-  width: 70%;
+  width: 80%;
 }
 
 #site-nav,
@@ -347,6 +375,10 @@ figure img {
   font-weight: 500;
   padding-top: 3px;
   padding-bottom: 3px;
+}
+#site-nav ul li:not(:has(a.toc-group)) a,
+#site-nav-2 ul li:not(:has(a.toc-group)) a {
+  padding-left: 18px;
 }
 #site-nav ul li a,
 #site-nav-2 ul li a {
@@ -519,6 +551,8 @@ figure img {
   padding: 8px 16px;
   margin-top: 16px;
   margin-bottom: 16px;
+  width: 60%;
+  display: block;
 }
 .note p {
   margin: 0;
@@ -528,6 +562,11 @@ figure img {
 .note code {
   background: #78ccf2;
   color: #000;
+}
+@media only screen and (max-width: 980px) {
+  .note {
+    width: 100% !important;
+  }
 }
 
 .tip {
@@ -539,6 +578,8 @@ figure img {
   padding: 8px 16px;
   margin-top: 16px;
   margin-bottom: 16px;
+  width: 60%;
+  display: block;
 }
 .tip p {
   margin: 0;
@@ -548,6 +589,18 @@ figure img {
 .tip code {
   background: #7dcb82;
   color: #000;
+}
+@media only screen and (max-width: 980px) {
+  .tip {
+    width: 100% !important;
+  }
+}
+.tip i {
+  display: block;
+  margin: 8px;
+  margin-right: 32px;
+  float: left;
+  font-size: 18px;
 }
 
 .success {
@@ -559,6 +612,8 @@ figure img {
   padding: 8px 16px;
   margin-top: 16px;
   margin-bottom: 16px;
+  width: 60%;
+  display: block;
 }
 .success p {
   margin: 0;
@@ -568,6 +623,11 @@ figure img {
 .success code {
   background: #669368;
   color: #000;
+}
+@media only screen and (max-width: 980px) {
+  .success {
+    width: 100% !important;
+  }
 }
 
 .warning {
@@ -579,6 +639,8 @@ figure img {
   padding: 8px 16px;
   margin-top: 16px;
   margin-bottom: 16px;
+  width: 60%;
+  display: block;
 }
 .warning p {
   margin: 0;
@@ -588,6 +650,11 @@ figure img {
 .warning code {
   background: #d8b368;
   color: #000;
+}
+@media only screen and (max-width: 980px) {
+  .warning {
+    width: 100% !important;
+  }
 }
 
 .danger {
@@ -599,6 +666,8 @@ figure img {
   padding: 8px 16px;
   margin-top: 16px;
   margin-bottom: 16px;
+  width: 60%;
+  display: block;
 }
 .danger p {
   margin: 0;
@@ -608,6 +677,11 @@ figure img {
 .danger code {
   background: #e87a74;
   color: #000;
+}
+@media only screen and (max-width: 980px) {
+  .danger {
+    width: 100% !important;
+  }
 }
 
 .info {
@@ -619,6 +693,8 @@ figure img {
   padding: 8px 16px;
   margin-top: 16px;
   margin-bottom: 16px;
+  width: 60%;
+  display: block;
 }
 .info p {
   margin: 0;
@@ -628,6 +704,11 @@ figure img {
 .info code {
   background: #5fbe9d;
   color: #000;
+}
+@media only screen and (max-width: 980px) {
+  .info {
+    width: 100% !important;
+  }
 }
 
 a {

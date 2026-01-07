@@ -1,6 +1,6 @@
 ---
 icon: play
-title: Terrain Basics
+title: terrain basics
 uid: terrain-basics
 ---
 

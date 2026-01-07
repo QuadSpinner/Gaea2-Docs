@@ -1,0 +1,514 @@
+{
+  "version": "1.0.0",
+  "entries": [
+    {
+      "id": "focus-1767741117867-ddm3lb5i1",
+      "uriString": "focus-section://focus-1767741117867-ddm3lb5i1",
+      "type": "section",
+      "label": "DOCS",
+      "children": [
+        {
+          "id": "focus-1767741101300-6tq3g7lmv",
+          "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/guides",
+          "type": "folder",
+          "label": "guides",
+          "children": [
+            {
+              "id": "focus-1767741101300-xakqezjil",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/guides/scenarios",
+              "type": "folder",
+              "label": "scenarios",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101300,
+                "relativePath": "source\\guides\\scenarios",
+                "order": 0
+              }
+            },
+            {
+              "id": "focus-1767741101300-o9ijbv852",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/guides/use-in",
+              "type": "folder",
+              "label": "use-in",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101300,
+                "relativePath": "source\\guides\\use-in",
+                "order": 1
+              }
+            },
+            {
+              "id": "focus-1767741101300-mu9w4abpz",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/guides/folders.txt",
+              "type": "file",
+              "label": "folders.txt",
+              "metadata": {
+                "dateAdded": 1767741101300,
+                "relativePath": "source\\guides\\folders.txt",
+                "order": 2
+              }
+            },
+            {
+              "id": "focus-1767741101300-1wao17eid",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/guides/index.md",
+              "type": "file",
+              "label": "index.md",
+              "metadata": {
+                "dateAdded": 1767741101300,
+                "relativePath": "source\\guides\\index.md",
+                "order": 3
+              }
+            }
+          ],
+          "metadata": {
+            "dateAdded": 1767741101300,
+            "relativePath": "source\\guides",
+            "order": 3
+          }
+        },
+        {
+          "id": "focus-1767741101310-ehax04w58",
+          "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/using",
+          "type": "folder",
+          "label": "using",
+          "children": [
+            {
+              "id": "focus-1767741101310-u639y9amh",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/using/advanced-topics",
+              "type": "folder",
+              "label": "advanced-topics",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101310,
+                "relativePath": "source\\using\\advanced-topics",
+                "order": 0
+              }
+            },
+            {
+              "id": "focus-1767741101310-va6ro0da4",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/using/getting-started",
+              "type": "folder",
+              "label": "getting-started",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101310,
+                "relativePath": "source\\using\\getting-started",
+                "order": 1
+              }
+            },
+            {
+              "id": "focus-1767741101310-4gr37076p",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/using/troubleshooting",
+              "type": "folder",
+              "label": "troubleshooting",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101310,
+                "relativePath": "source\\using\\troubleshooting",
+                "order": 2
+              }
+            },
+            {
+              "id": "focus-1767741101310-pnh2ynh3q",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/using/using-gaea",
+              "type": "folder",
+              "label": "using-gaea",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101310,
+                "relativePath": "source\\using\\using-gaea",
+                "order": 3
+              }
+            },
+            {
+              "id": "focus-1767741101310-xbi8enb29",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/using/folders.txt",
+              "type": "file",
+              "label": "folders.txt",
+              "metadata": {
+                "dateAdded": 1767741101310,
+                "relativePath": "source\\using\\folders.txt",
+                "order": 4
+              }
+            },
+            {
+              "id": "focus-1767741101310-xb59roc5i",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/using/index.md",
+              "type": "file",
+              "label": "index.md",
+              "metadata": {
+                "dateAdded": 1767741101310,
+                "relativePath": "source\\using\\index.md",
+                "order": 5
+              }
+            }
+          ],
+          "metadata": {
+            "dateAdded": 1767741101310,
+            "relativePath": "source\\using",
+            "order": 8
+          }
+        },
+        {
+          "id": "focus-1767741101302-vdr95gfu9",
+          "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/ui",
+          "type": "folder",
+          "label": "ui",
+          "children": [
+            {
+              "id": "focus-1767741101310-2rmjk3vf5",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/ui/features",
+              "type": "folder",
+              "label": "features",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101310,
+                "relativePath": "source\\ui\\features",
+                "order": 0
+              }
+            },
+            {
+              "id": "focus-1767741101310-cawzqu33s",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/ui/graph",
+              "type": "folder",
+              "label": "graph",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101310,
+                "relativePath": "source\\ui\\graph",
+                "order": 1
+              }
+            },
+            {
+              "id": "focus-1767741101310-talx2frkl",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/ui/interface",
+              "type": "folder",
+              "label": "interface",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101310,
+                "relativePath": "source\\ui\\interface",
+                "order": 2
+              }
+            },
+            {
+              "id": "focus-1767741101310-8ull1ubiy",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/ui/folders.txt",
+              "type": "file",
+              "label": "folders.txt",
+              "metadata": {
+                "dateAdded": 1767741101310,
+                "relativePath": "source\\ui\\folders.txt",
+                "order": 3
+              }
+            },
+            {
+              "id": "focus-1767741101310-cdu28daq2",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/ui/index.md",
+              "type": "file",
+              "label": "index.md",
+              "metadata": {
+                "dateAdded": 1767741101310,
+                "relativePath": "source\\ui\\index.md",
+                "order": 4
+              }
+            }
+          ],
+          "metadata": {
+            "dateAdded": 1767741101302,
+            "relativePath": "source\\ui",
+            "order": 7
+          }
+        },
+        {
+          "id": "focus-1767741101302-e6jv2htdu",
+          "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/reference",
+          "type": "folder",
+          "label": "reference",
+          "children": [
+            {
+              "id": "focus-1767741101302-8uik13n41",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/reference/gaea2houdini",
+              "type": "folder",
+              "label": "gaea2houdini",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101302,
+                "relativePath": "source\\reference\\gaea2houdini",
+                "order": 0
+              }
+            },
+            {
+              "id": "focus-1767741101302-whymwxdkx",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/reference/nodes",
+              "type": "folder",
+              "label": "nodes",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101302,
+                "relativePath": "source\\reference\\nodes",
+                "order": 1
+              }
+            },
+            {
+              "id": "focus-1767741101302-7d95prb1h",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/reference/folders.txt",
+              "type": "file",
+              "label": "folders.txt",
+              "metadata": {
+                "dateAdded": 1767741101302,
+                "relativePath": "source\\reference\\folders.txt",
+                "order": 2
+              }
+            },
+            {
+              "id": "focus-1767741101302-hqksk8x72",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/reference/index.md",
+              "type": "file",
+              "label": "index.md",
+              "metadata": {
+                "dateAdded": 1767741101302,
+                "relativePath": "source\\reference\\index.md",
+                "order": 3
+              }
+            },
+            {
+              "id": "focus-1767741101302-ea5ssug56",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/reference/node-map.md",
+              "type": "file",
+              "label": "node-map.md",
+              "metadata": {
+                "dateAdded": 1767741101302,
+                "relativePath": "source\\reference\\node-map.md",
+                "order": 4
+              }
+            }
+          ],
+          "metadata": {
+            "dateAdded": 1767741101302,
+            "relativePath": "source\\reference",
+            "order": 6
+          }
+        },
+        {
+          "id": "focus-1767741101301-qsblzr8ia",
+          "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/install",
+          "type": "folder",
+          "label": "install",
+          "children": [
+            {
+              "id": "focus-1767741101302-g3x9p0g0q",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/install/gaea-1",
+              "type": "folder",
+              "label": "gaea-1",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101302,
+                "relativePath": "source\\install\\gaea-1",
+                "order": 0
+              }
+            },
+            {
+              "id": "focus-1767741101302-z152vyq4z",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/install/install-gaea",
+              "type": "folder",
+              "label": "install-gaea",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101302,
+                "relativePath": "source\\install\\install-gaea",
+                "order": 1
+              }
+            },
+            {
+              "id": "focus-1767741101302-073fa2i0j",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/install/license-management",
+              "type": "folder",
+              "label": "license-management",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101302,
+                "relativePath": "source\\install\\license-management",
+                "order": 2
+              }
+            },
+            {
+              "id": "focus-1767741101302-wxn7i66xd",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/install/folders.txt",
+              "type": "file",
+              "label": "folders.txt",
+              "metadata": {
+                "dateAdded": 1767741101302,
+                "relativePath": "source\\install\\folders.txt",
+                "order": 3
+              }
+            },
+            {
+              "id": "focus-1767741101302-ehek28odz",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/install/index.md",
+              "type": "file",
+              "label": "index.md",
+              "metadata": {
+                "dateAdded": 1767741101302,
+                "relativePath": "source\\install\\index.md",
+                "order": 4
+              }
+            }
+          ],
+          "metadata": {
+            "dateAdded": 1767741101301,
+            "relativePath": "source\\install",
+            "order": 5
+          }
+        },
+        {
+          "id": "focus-1767741101299-zxnxh5hf8",
+          "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/developers",
+          "type": "folder",
+          "label": "developers",
+          "children": [
+            {
+              "id": "focus-1767741101300-qyid44amt",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/developers/automation",
+              "type": "folder",
+              "label": "automation",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101300,
+                "relativePath": "source\\developers\\automation",
+                "order": 0
+              }
+            },
+            {
+              "id": "focus-1767741101300-c83n4jkzf",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/developers/extensibility",
+              "type": "folder",
+              "label": "extensibility",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101300,
+                "relativePath": "source\\developers\\extensibility",
+                "order": 1
+              }
+            },
+            {
+              "id": "focus-1767741101300-n42gincx9",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/developers/folders.txt",
+              "type": "file",
+              "label": "folders.txt",
+              "metadata": {
+                "dateAdded": 1767741101300,
+                "relativePath": "source\\developers\\folders.txt",
+                "order": 2
+              }
+            },
+            {
+              "id": "focus-1767741101300-re37fk83n",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/developers/index.md",
+              "type": "file",
+              "label": "index.md",
+              "metadata": {
+                "dateAdded": 1767741101300,
+                "relativePath": "source\\developers\\index.md",
+                "order": 3
+              }
+            }
+          ],
+          "metadata": {
+            "dateAdded": 1767741101299,
+            "relativePath": "source\\developers",
+            "order": 2
+          }
+        },
+        {
+          "id": "focus-1767741101301-k7xt9wlbp",
+          "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/history",
+          "type": "folder",
+          "label": "history",
+          "children": [
+            {
+              "id": "focus-1767741101301-7uule37lq",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/history/early-access",
+              "type": "folder",
+              "label": "early-access",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101301,
+                "relativePath": "source\\history\\early-access",
+                "order": 0
+              }
+            },
+            {
+              "id": "focus-1767741101301-gl5p8sgk6",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/history/gaea-2.0",
+              "type": "folder",
+              "label": "gaea-2.0",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101301,
+                "relativePath": "source\\history\\gaea-2.0",
+                "order": 1
+              }
+            },
+            {
+              "id": "focus-1767741101301-ceaekni62",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/history/gaea-2.1",
+              "type": "folder",
+              "label": "gaea-2.1",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101301,
+                "relativePath": "source\\history\\gaea-2.1",
+                "order": 2
+              }
+            },
+            {
+              "id": "focus-1767741101301-b0wcmw4t0",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/history/gaea-2.2",
+              "type": "folder",
+              "label": "gaea-2.2",
+              "children": [],
+              "metadata": {
+                "dateAdded": 1767741101301,
+                "relativePath": "source\\history\\gaea-2.2",
+                "order": 3
+              }
+            },
+            {
+              "id": "focus-1767741101301-kgrlnpxwu",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/history/folders.txt",
+              "type": "file",
+              "label": "folders.txt",
+              "metadata": {
+                "dateAdded": 1767741101301,
+                "relativePath": "source\\history\\folders.txt",
+                "order": 4
+              }
+            },
+            {
+              "id": "focus-1767741101301-yjl8mghtc",
+              "uriString": "file:///x%3A/Docs/Gaea2-Docs/source/history/index.md",
+              "type": "file",
+              "label": "index.md",
+              "metadata": {
+                "dateAdded": 1767741101301,
+                "relativePath": "source\\history\\index.md",
+                "order": 5
+              }
+            }
+          ],
+          "metadata": {
+            "dateAdded": 1767741101301,
+            "relativePath": "source\\history",
+            "order": 4
+          }
+        }
+      ],
+      "metadata": {
+        "dateAdded": 1767741117867,
+        "order": 241
+      }
+    }
+  ],
+  "lastModified": 1767741145291
+}

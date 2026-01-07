@@ -54,6 +54,10 @@
       padding-top: 3px;
       padding-bottom: 3px;
 
+      &:not(:has(a.toc-group)) a {
+        padding-left: 18px;
+      }
+
       a {
         color: var(--toc-link);
         display: inline-flex;
