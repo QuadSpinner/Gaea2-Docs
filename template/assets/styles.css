@@ -327,9 +327,11 @@ figure img {
 #site-nav h3.toc-section,
 #site-nav-2 h3.toc-section {
   margin: 12px 0 6px;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 600;
-  color: var(--toc-section);
+  color: #999;
+  padding-left: 18px;
+  border-bottom: 1px dotted #333;
 }
 #site-nav .divider,
 #site-nav-2 .divider {
@@ -373,8 +375,8 @@ figure img {
   list-style: none;
   font-size: 12px;
   font-weight: 500;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 1px;
+  padding-bottom: 0px;
 }
 #site-nav ul li:not(:has(a.toc-group)) a,
 #site-nav-2 ul li:not(:has(a.toc-group)) a {
@@ -386,18 +388,26 @@ figure img {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  width: 100%;
   padding-left: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 #site-nav ul li a:hover,
 #site-nav-2 ul li a:hover {
   color: var(--prime);
   text-decoration: none;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 4px;
 }
 #site-nav ul li > a.active,
 #site-nav-2 ul li > a.active {
   color: var(--prime);
   font-weight: 600;
   text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  border-radius: 4px;
 }
 #site-nav ul li > ul,
 #site-nav-2 ul li > ul {
@@ -460,6 +470,8 @@ figure img {
 }
 #site-nav ul li:has(> ul).active > ul > li:has(> a.active) > a,
 #site-nav-2 ul li:has(> ul).active > ul > li:has(> a.active) > a {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
   color: var(--toc-link-active);
   font-weight: 600;
 }
@@ -568,6 +580,13 @@ figure img {
     width: 100% !important;
   }
 }
+.note i {
+  display: block;
+  margin: 8px;
+  margin-right: 32px;
+  float: left;
+  font-size: 18px;
+}
 
 .tip {
   --prime: $c;
@@ -629,6 +648,13 @@ figure img {
     width: 100% !important;
   }
 }
+.success i {
+  display: block;
+  margin: 8px;
+  margin-right: 32px;
+  float: left;
+  font-size: 18px;
+}
 
 .warning {
   --prime: $c;
@@ -655,6 +681,13 @@ figure img {
   .warning {
     width: 100% !important;
   }
+}
+.warning i {
+  display: block;
+  margin: 8px;
+  margin-right: 32px;
+  float: left;
+  font-size: 18px;
 }
 
 .danger {
@@ -683,6 +716,13 @@ figure img {
     width: 100% !important;
   }
 }
+.danger i {
+  display: block;
+  margin: 8px;
+  margin-right: 32px;
+  float: left;
+  font-size: 18px;
+}
 
 .info {
   --prime: $c;
@@ -709,6 +749,115 @@ figure img {
   .info {
     width: 100% !important;
   }
+}
+.info i {
+  display: block;
+  margin: 8px;
+  margin-right: 32px;
+  float: left;
+  font-size: 18px;
+}
+
+.x-note {
+  --prime: $c;
+  border: 1.5px solid #78ccf2;
+  color: #78ccf2;
+  background-color: color-mix(in srgb, #78ccf2 20%, #000 60%);
+  border-radius: 24px;
+  padding: 4px 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50%;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.x-tip {
+  --prime: $c;
+  border: 1.5px solid #7dcb82;
+  color: #7dcb82;
+  background-color: color-mix(in srgb, #7dcb82 20%, #000 60%);
+  border-radius: 24px;
+  padding: 4px 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50%;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.x-success {
+  --prime: $c;
+  border: 1.5px solid #669368;
+  color: #669368;
+  background-color: color-mix(in srgb, #669368 20%, #000 60%);
+  border-radius: 24px;
+  padding: 4px 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50%;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.x-warning {
+  --prime: $c;
+  border: 1.5px solid #d8b368;
+  color: #d8b368;
+  background-color: color-mix(in srgb, #d8b368 20%, #000 60%);
+  border-radius: 24px;
+  padding: 4px 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50%;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.x-danger {
+  --prime: $c;
+  border: 1.5px solid #e87a74;
+  color: #e87a74;
+  background-color: color-mix(in srgb, #e87a74 20%, #000 60%);
+  border-radius: 24px;
+  padding: 4px 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50%;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.x-info {
+  --prime: $c;
+  border: 1.5px solid #5fbe9d;
+  color: #5fbe9d;
+  background-color: color-mix(in srgb, #5fbe9d 20%, #000 60%);
+  border-radius: 24px;
+  padding: 4px 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50%;
+  font-size: 10px;
+  font-weight: 600;
 }
 
 a {

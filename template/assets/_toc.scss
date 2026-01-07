@@ -6,9 +6,11 @@
 
   h3.toc-section {
     margin: 12px 0 6px;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 600;
-    color: var(--toc-section);
+    color: #999;
+    padding-left: 18px;
+    border-bottom: 1px dotted #333;
   }
 
   .divider {
@@ -51,8 +53,8 @@
       list-style: none;
       font-size: 12px;
       font-weight: 500;
-      padding-top: 3px;
-      padding-bottom: 3px;
+      padding-top: 1px;
+      padding-bottom: 0px;
 
       &:not(:has(a.toc-group)) a {
         padding-left: 18px;
@@ -63,11 +65,16 @@
         display: inline-flex;
         align-items: center;
         gap: 6px;
+        width: 100%;
         padding-left: 0px;
+        padding-top: 4px;
+        padding-bottom: 4px;
 
         &:hover {
           color: var(--prime);
           text-decoration: none;
+          background: rgba(255, 255, 255, 0.04);
+          border-radius: 4px;
         }
       }
 
@@ -76,6 +83,10 @@
         color: var(--prime);
         font-weight: 600;
         text-decoration: none;
+        background: rgba(255, 255, 255, 0.1);
+        width: 100%;
+        border-radius: 4px;
+
       }
 
       >ul {
@@ -139,6 +150,9 @@
                 border-left: 1px solid var(--prime);
 
                 >a {
+                  background: rgba(255, 255, 255, 0.1);
+
+                  border-radius: 4px;
                   color: var(--toc-link-active);
                   font-weight: 600;
                 }
