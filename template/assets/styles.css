@@ -70,6 +70,21 @@ body[data-hive-shortname=History], a[data-hive-shortname=History] {
   --prime: #a7b076;
 }
 
+#content-header {
+  margin-top: 16px !important;
+}
+#content-header kbd {
+  display: inline-block;
+  margin-left: 6px;
+}
+#content-header .description {
+  color: #777;
+}
+#content-header .node-data hr,
+#content-header .node-data .hr {
+  margin: 1rem 0 !important;
+}
+
 #contents {
   color: var(--tblr-body-color);
 }
@@ -699,9 +714,13 @@ figure img {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  min-width: 50%;
+  width: 100%;
   font-size: 10px;
   font-weight: 600;
+}
+.x-note p {
+  margin: 0;
+  padding: 0;
 }
 
 .x-tip {
@@ -716,9 +735,13 @@ figure img {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  min-width: 50%;
+  width: 100%;
   font-size: 10px;
   font-weight: 600;
+}
+.x-tip p {
+  margin: 0;
+  padding: 0;
 }
 
 .x-success {
@@ -733,9 +756,13 @@ figure img {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  min-width: 50%;
+  width: 100%;
   font-size: 10px;
   font-weight: 600;
+}
+.x-success p {
+  margin: 0;
+  padding: 0;
 }
 
 .x-warning {
@@ -750,9 +777,13 @@ figure img {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  min-width: 50%;
+  width: 100%;
   font-size: 10px;
   font-weight: 600;
+}
+.x-warning p {
+  margin: 0;
+  padding: 0;
 }
 
 .x-danger {
@@ -767,9 +798,13 @@ figure img {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  min-width: 50%;
+  width: 100%;
   font-size: 10px;
   font-weight: 600;
+}
+.x-danger p {
+  margin: 0;
+  padding: 0;
 }
 
 .x-info {
@@ -784,9 +819,13 @@ figure img {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  min-width: 50%;
+  width: 100%;
   font-size: 10px;
   font-weight: 600;
+}
+.x-info p {
+  margin: 0;
+  padding: 0;
 }
 
 a {

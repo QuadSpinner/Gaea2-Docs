@@ -1,3 +1,26 @@
+#content-header {
+    margin-top: 16px !important;
+
+    kbd {
+        display: inline-block;
+        margin-left: 6px;
+    }
+
+    .description {
+        color: #777;
+    }
+
+    .node-data {
+
+
+        hr,
+        .hr {
+            margin: 1rem 0 !important;
+        }
+    }
+}
+
+
 #contents {
 
     color: var(--tblr-body-color);

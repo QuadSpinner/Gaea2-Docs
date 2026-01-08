@@ -47,9 +47,14 @@
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    min-width: 50%;
+    width: 100%;
     font-size: 10px;
     font-weight: 600;
+
+    p{
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .note { @include callout(#78ccf2);}
