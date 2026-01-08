@@ -1,84 +1,87 @@
 ﻿[
   {
     "Name": "Snow",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for simulating snow accumulation, behavior, and appearance in terrain generation."
   },
   {
     "Name": "Duration",
-    "Description": ""
+    "Description": "Controls the length of time snow accumulates on the terrain, affecting overall snow coverage and depth."
   },
   {
     "Name": "Intensity",
-    "Description": ""
+    "Description": "Determines the rate at which snow falls and accumulates, influencing the thickness and density of the snow layer."
   },
   {
     "Name": "Settle Duration",
-    "Description": ""
+    "Description": "Specifies the time it takes for freshly fallen snow to settle and compact, impacting the smoothness and stability of the snow surface."
   },
   {
     "Name": "Melt",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters related to the melting behavior and characteristics of snow."
   },
   {
     "Name": "Melt Type",
-    "Description": "",
+    "Description": "Defines the method by which snow melts from the terrain, affecting the pattern and distribution of melting.",
     "Flubs": [
       {
         "Name": "Uniform",
-        "Description": "<desc>"
+        "Description": "Snow melts evenly across the entire terrain, resulting in a consistent reduction of snow coverage."
       },
       {
         "Name": "Directional",
-        "Description": "<desc>"
+        "Description": "Snow melts preferentially in a specific direction, simulating effects such as sun exposure or wind, leading to uneven snow retreat."
       }
     ]
   },
   {
     "Name": "Melt",
-    "Description": ""
+    "Description": "Controls the overall rate and extent of snow melting, determining how quickly snow disappears from the terrain."
   },
   {
     "Name": "Melt Remnants",
-    "Description": ""
+    "Description": "Specifies the amount and appearance of snow left behind after melting, such as patches or traces of residual snow."
   },
   {
     "Name": "Direction",
-    "Description": ""
+    "Description": "Sets the primary direction for directional melting, influencing which areas of the terrain lose snow first."
   },
   {
     "Name": "Snow Line",
-    "Description": ""
+    "Description": "Defines the altitude or threshold below which snow does not accumulate, simulating natural snow lines on mountains."
   },
   {
     "Name": "Advanced",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing advanced parameters for fine-tuning snow simulation and behavior."
   },
   {
     "Name": "Slip-off angle",
-    "Description": ""
+    "Description": "Specifies the minimum slope angle at which snow will slide off, affecting snow accumulation on steep surfaces."
   },
   {
     "Name": "Adhered snow mass",
-    "Description": ""
+    "Description": "Controls the amount of snow that remains attached to surfaces, even on steep or vertical terrain."
   },
   {
     "Name": "Model scale",
-    "Description": ""
+    "Description": "Sets the scale of the terrain model, influencing how snow parameters are interpreted relative to real-world dimensions."
   },
   {
     "Name": "Real Scale",
-    "Description": ""
+    "Description": "Specifies the actual physical scale represented by the terrain, used for accurate snow simulation and parameter scaling."
   },
   {
     "Name": "Terrain Scale",
-    "Description": ""
+    "Description": "Adjusts the scaling factor for the terrain, affecting how snow features are distributed and visualized."
   },
   {
     "Name": "Verticality",
-    "Description": ""
+    "Description": "Controls the influence of vertical surfaces on snow accumulation, determining how much snow can adhere to cliffs and steep slopes."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Sets the randomization seed for snow distribution, ensuring reproducible results or introducing variation in snow patterns."
   }
 ]

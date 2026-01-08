@@ -1,66 +1,66 @@
 ﻿[
   {
     "Name": "Information",
-    "Description": ""
+    "Description": "Displays additional information or metadata about the aperture operation and its current settings."
   },
   {
     "Name": "Mode",
-    "Description": "",
+    "Description": "Specifies the morphological operation to apply to the input, affecting how features are expanded or contracted.",
     "Flubs": [
       {
         "Name": "Dilation",
-        "Description": "<desc>"
+        "Description": "Expands or grows features in the input by the specified shape and size, filling small holes and connecting nearby elements."
       },
       {
         "Name": "Erosion",
-        "Description": "<desc>"
+        "Description": "Contracts or shrinks features in the input by the specified shape and size, removing small details and separating connected elements."
       }
     ]
   },
   {
     "Name": "Size",
-    "Description": ""
+    "Description": "Sets the size of the structuring element (aperture) used for the operation. Larger values increase the effect's reach."
   },
   {
     "Name": "Shape",
-    "Description": "",
+    "Description": "Determines the geometric shape of the structuring element used for dilation or erosion, affecting the style of the transformation.",
     "Flubs": [
       {
         "Name": "Disk",
-        "Description": "<desc>"
+        "Description": "Uses a circular (disk-shaped) structuring element for smooth, rounded transformations."
       },
       {
         "Name": "Polygon",
-        "Description": "<desc>"
+        "Description": "Uses a regular polygon as the structuring element, allowing for custom-sided shapes."
       },
       {
         "Name": "Asterisk",
-        "Description": "<desc>"
+        "Description": "Uses a star or asterisk-shaped structuring element, emphasizing cross-like or radiating effects."
       },
       {
         "Name": "Line",
-        "Description": "<desc>"
+        "Description": "Uses a straight line as the structuring element, applying the effect directionally."
       },
       {
         "Name": "Corner",
-        "Description": "<desc>"
+        "Description": "Uses a corner-shaped structuring element, targeting angular or edge features."
       }
     ]
   },
   {
     "Name": "Vertices Count",
-    "Description": ""
+    "Description": "For polygon shapes, sets the number of vertices (sides) used, controlling the regularity and appearance of the structuring element."
   },
   {
     "Name": "Corner Angle",
-    "Description": ""
+    "Description": "Specifies the angle of the corner for the 'Corner' shape, adjusting the sharpness or openness of the structuring element."
   },
   {
     "Name": "Direction",
-    "Description": ""
+    "Description": "Sets the orientation or direction for directional shapes (such as Line or Asterisk), controlling the angle of the effect."
   },
   {
     "Name": "Antialiased",
-    "Description": ""
+    "Description": "If enabled, applies antialiasing to the aperture operation, smoothing the edges of the transformed features for a cleaner result."
   }
 ]

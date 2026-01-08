@@ -7,30 +7,102 @@
     "Name": "Mode",
     "Description": "",
     "Flubs": [
-{"Name": "Blend", "Description": "Simply overlays the source on top of the base without extra math.\nDirect normal blend; top layer replaces base with alpha control."},
-{"Name": "Add", "Description": "Brightens by adding the source to the base.\nLinear addition of source and base channels, clamped at max."},
-{"Name": "Screen", "Description": "Lightens by blending as if projected on a screen.\nInverts both, multiplies, then inverts; 1 - (1 - A) × (1 - B)."},
-{"Name": "Subtract", "Description": "Darkens by subtracting the source from the base.\nBase minus source per channel, clamps at zero."},
-{"Name": "Difference", "Description": "Emphasizes contrast by subtracting lower from higher values.\nAbsolute difference |A - B| for high-contrast edge-like results."},
-{"Name": "Multiply", "Description": "Darkens by multiplying source and base colors.\nChannel-wise multiplication; A × B, darkens with stacking."},
-{"Name": "Divide", "Description": "Lightens by dividing base by source.\nBase divided by source; A / B with normalization/scaling."},
-{"Name": "Divide2", "Description": "Alternative division with different scaling for smoother results.\nAlternate divide with different scaling/offset to reduce clipping."},
-{"Name": "Max", "Description": "Keeps the brighter value at each pixel.\nChannel-wise maximum; keeps highest of A and B."},
-{"Name": "Min", "Description": "Keeps the darker value at each pixel.\nChannel-wise minimum; keeps lowest of A and B."},
-{"Name": "Hypotenuse", "Description": "Combines channels using geometric distance for soft blending.\nsqrt(A² + B²); Euclidean combination for smooth, bright blend."},
-{"Name": "Overlay", "Description": "Combines multiply and screen for vivid contrast.\nCombines Multiply and Screen based on base brightness."},
-{"Name": "Power", "Description": "Raises base to the power of source for nonlinear effects.\nRaises base to source power; A ^ B per channel."},
-{"Name": "Exclusion", "Description": "Low-contrast version of Difference for softer inversion.\nA + B - 2AB; softer Difference with reduced contrast."},
-{"Name": "Dodge", "Description": "Brightens highlights by dividing inverted base by inverted source.\nA / (1 - B); brightens highlights aggressively."},
-{"Name": "Burn", "Description": "Darkens shadows by inverting, dividing, and inverting again.\n1 - (1 - A) / B; intensifies shadows via division."},
-{"Name": "SoftLight", "Description": "Gently lightens or darkens based on source brightness.\nConditional blend approximating diffused light on surface."},
-{"Name": "HardLight", "Description": "Strong contrast blend combining multiply and screen.\nScreen or Multiply based on source brightness threshold."},
-{"Name": "PinLight", "Description": "Replaces pixels selectively with lighter or darker values.\nReplaces mid-range with source; keeps extremes from base."},
-{"Name": "GrainMerge", "Description": "Adds source to base with mid-gray treated as transparent.\nA + B - 0.5; mid-gray = no change; good for texture merge."},
-{"Name": "GrainExtract", "Description": "Subtracts source from base, centering results on mid-gray.\nA - B + 0.5; isolates texture/detail difference."},
-{"Name": "Reflect", "Description": "Creates intense highlights by reflecting colors around white.\nA² / (1 - B); creates sharp highlight “reflection” effects."},
-{"Name": "Glow", "Description": "Emphasizes bright regions for a glowing effect.\nInverse Dodge-like; emphasizes light bloom by brightening source areas."},
-{"Name": "Phoenix", "Description": "Produces a fiery inversion by subtracting and swapping values.\nA - B + max(A, B); surreal color inversions with swap-like logic."},
+      {
+        "Name": "Blend",
+        "Description": "Simply overlays the source on top of the base without extra math.\nDirect normal blend; top layer replaces base with alpha control."
+      },
+      {
+        "Name": "Add",
+        "Description": "Brightens by adding the source to the base.\nLinear addition of source and base channels, clamped at max."
+      },
+      {
+        "Name": "Screen",
+        "Description": "Lightens by blending as if projected on a screen.\nInverts both, multiplies, then inverts; 1 - (1 - A) × (1 - B)."
+      },
+      {
+        "Name": "Subtract",
+        "Description": "Darkens by subtracting the source from the base.\nBase minus source per channel, clamps at zero."
+      },
+      {
+        "Name": "Difference",
+        "Description": "Emphasizes contrast by subtracting lower from higher values.\nAbsolute difference |A - B| for high-contrast edge-like results."
+      },
+      {
+        "Name": "Multiply",
+        "Description": "Darkens by multiplying source and base colors.\nChannel-wise multiplication; A × B, darkens with stacking."
+      },
+      {
+        "Name": "Divide",
+        "Description": "Lightens by dividing base by source.\nBase divided by source; A / B with normalization/scaling."
+      },
+      {
+        "Name": "Divide2",
+        "Description": "Alternative division with different scaling for smoother results.\nAlternate divide with different scaling/offset to reduce clipping."
+      },
+      {
+        "Name": "Max",
+        "Description": "Keeps the brighter value at each pixel.\nChannel-wise maximum; keeps highest of A and B."
+      },
+      {
+        "Name": "Min",
+        "Description": "Keeps the darker value at each pixel.\nChannel-wise minimum; keeps lowest of A and B."
+      },
+      {
+        "Name": "Hypotenuse",
+        "Description": "Combines channels using geometric distance for soft blending.\nsqrt(A² + B²); Euclidean combination for smooth, bright blend."
+      },
+      {
+        "Name": "Overlay",
+        "Description": "Combines multiply and screen for vivid contrast.\nCombines Multiply and Screen based on base brightness."
+      },
+      {
+        "Name": "Power",
+        "Description": "Raises base to the power of source for nonlinear effects.\nRaises base to source power; A ^ B per channel."
+      },
+      {
+        "Name": "Exclusion",
+        "Description": "Low-contrast version of Difference for softer inversion.\nA + B - 2AB; softer Difference with reduced contrast."
+      },
+      {
+        "Name": "Dodge",
+        "Description": "Brightens highlights by dividing inverted base by inverted source.\nA / (1 - B); brightens highlights aggressively."
+      },
+      {
+        "Name": "Burn",
+        "Description": "Darkens shadows by inverting, dividing, and inverting again.\n1 - (1 - A) / B; intensifies shadows via division."
+      },
+      {
+        "Name": "SoftLight",
+        "Description": "Gently lightens or darkens based on source brightness.\nConditional blend approximating diffused light on surface."
+      },
+      {
+        "Name": "HardLight",
+        "Description": "Strong contrast blend combining multiply and screen.\nScreen or Multiply based on source brightness threshold."
+      },
+      {
+        "Name": "PinLight",
+        "Description": "Replaces pixels selectively with lighter or darker values.\nReplaces mid-range with source; keeps extremes from base."
+      },
+      {
+        "Name": "GrainMerge",
+        "Description": "Adds source to base with mid-gray treated as transparent.\nA + B - 0.5; mid-gray = no change; good for texture merge."
+      },
+      {
+        "Name": "GrainExtract",
+        "Description": "Subtracts source from base, centering results on mid-gray.\nA - B + 0.5; isolates texture/detail difference."
+      },
+      {
+        "Name": "Reflect",
+        "Description": "Creates intense highlights by reflecting colors around white.\nA² / (1 - B); creates sharp highlight “reflection” effects."
+      },
+      {
+        "Name": "Glow",
+        "Description": "Emphasizes bright regions for a glowing effect.\nInverse Dodge-like; emphasizes light bloom by brightening source areas."
+      },
+      {
+        "Name": "Phoenix",
+        "Description": "Produces a fiery inversion by subtracting and swapping values.\nA - B + max(A, B); surreal color inversions with swap-like logic."
+      },
     ]
   },
   {

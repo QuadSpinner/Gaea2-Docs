@@ -1,42 +1,42 @@
 ﻿[
   {
     "Name": "Size",
-    "Description": ""
+    "Description": "Controls the overall scale of the 3D cellular pattern. Higher values produce larger, more widely spaced cells."
   },
   {
     "Name": "Gap",
-    "Description": ""
+    "Description": "Sets the distance or separation between individual cells, affecting the openness and density of the pattern."
   },
   {
     "Name": "Jitter X",
-    "Description": ""
+    "Description": "Applies random offset to cell positions along the X axis, introducing irregularity and breaking uniformity."
   },
   {
     "Name": "Jitter Y",
-    "Description": ""
+    "Description": "Applies random offset to cell positions along the Y axis, adding variation and natural randomness."
   },
   {
     "Name": "Jitter Z",
-    "Description": ""
+    "Description": "Applies random offset to cell positions along the Z axis, further enhancing the organic appearance of the 3D pattern."
   },
   {
     "Name": "Scale X",
-    "Description": ""
+    "Description": "Adjusts the scale of the cellular pattern along the X axis, stretching or compressing cells horizontally."
   },
   {
     "Name": "Scale Y",
-    "Description": ""
+    "Description": "Adjusts the scale of the cellular pattern along the Y axis, stretching or compressing cells vertically."
   },
   {
     "Name": "Scale Z",
-    "Description": ""
+    "Description": "Adjusts the scale of the cellular pattern along the Z axis, stretching or compressing cells in depth."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Randomization seed for generating unique variations of the 3D cellular pattern. Changing the seed produces different cell arrangements."
   },
   {
     "Name": "Normalize Input",
-    "Description": ""
+    "Description": "If enabled, normalizes the input values to a standard range before applying the cellular pattern, ensuring consistent results regardless of input scale."
   }
 ]

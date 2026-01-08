@@ -1,14 +1,14 @@
 ﻿[
   {
     "Name": "Hue",
-    "Description": ""
+    "Description": "Adjusts the hue of the input, shifting colors around the color wheel. Changing this value alters the overall color tone."
   },
   {
     "Name": "Saturation",
-    "Description": ""
+    "Description": "Controls the intensity or vividness of colors. Higher values produce more vibrant colors, while lower values result in muted or grayscale tones."
   },
   {
     "Name": "Lightness",
-    "Description": ""
+    "Description": "Sets the brightness of the colors. Increasing lightness makes the image lighter, while decreasing it darkens the image."
   }
 ]

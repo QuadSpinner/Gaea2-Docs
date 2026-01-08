@@ -1,70 +1,73 @@
 ﻿[
   {
     "Name": "Snowfall",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters related to the simulation and appearance of light snow accumulation (dusting) on the terrain."
   },
   {
     "Name": "Strength",
-    "Description": ""
+    "Description": "Controls the intensity of the snow dusting effect, determining how visible and thick the light snow layer appears."
   },
   {
     "Name": "Snowline",
-    "Description": ""
+    "Description": "Sets the elevation at which snow begins to appear, defining the lower boundary for snow coverage."
   },
   {
     "Name": "Falloff",
-    "Description": ""
+    "Description": "Controls the softness of the transition near the snowline, blending the snow edge smoothly into the terrain."
   },
   {
     "Name": "Distribution",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters that affect how the snow is distributed across the terrain, including directionality and coverage."
   },
   {
     "Name": "Directional",
-    "Description": ""
+    "Description": "Enables or adjusts wind-driven accumulation, causing snow to gather more on one side of terrain features."
   },
   {
     "Name": "Direction",
-    "Description": ""
+    "Description": "Sets the primary direction for wind-driven snow accumulation, simulating the effect of prevailing winds."
   },
   {
     "Name": "Peaks",
-    "Description": ""
+    "Description": "Controls additional snow accumulation on terrain peaks, enhancing coverage on high points."
   },
   {
     "Name": "Coverage",
-    "Description": ""
+    "Description": "Adjusts the overall amount of snow applied to the terrain, increasing or decreasing the extent of dusting."
   },
   {
     "Name": "Slope Coverage",
-    "Description": ""
+    "Description": "Modifies how much snow accumulates on slopes, allowing for more or less coverage on inclined surfaces."
   },
   {
     "Name": "Flow",
-    "Description": ""
+    "Description": "Simulates subtle downhill drift and redistribution of snow, mimicking natural snow movement due to gravity."
   },
   {
     "Name": "Effects",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing additional effects that modify the appearance and realism of the snow dusting."
   },
   {
     "Name": "Melt",
-    "Description": ""
+    "Description": "Reduces snow coverage in sun-exposed or warmer areas, simulating natural melting patterns."
   },
   {
     "Name": "Gritty",
-    "Description": ""
+    "Description": "Adds noise and texture variation to the snow, creating a more natural, patchy, and irregular appearance."
   },
   {
     "Name": "Include Existing Snow",
-    "Description": ""
+    "Description": "Allows the dusting effect to respect and blend with existing snow layers, ensuring seamless integration."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Randomizes the snow pattern, enabling varied results or reproducibility by changing the seed value."
   },
   {
     "Name": "Artistic Control",
-    "Description": ""
+    "Description": "Provides fine-tuning options for the overall look and style of the snow dusting, supporting creative or stylized results."
   }
 ]

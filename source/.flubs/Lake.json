@@ -1,38 +1,40 @@
 ﻿[
   {
     "Name": "Lake Formation",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for generating lakes on the terrain, including formation, placement, and water body characteristics."
   },
   {
     "Name": "Precipitation",
-    "Description": ""
+    "Description": "Controls the amount of water available for lake formation, influencing the size and number of lakes generated."
   },
   {
     "Name": "Small Lakes",
-    "Description": ""
+    "Description": "Enables or adjusts the creation of smaller lakes, increasing the frequency of minor water bodies across the terrain."
   },
   {
     "Name": "Flood Control",
-    "Description": ""
+    "Description": "Limits excessive flooding by managing water distribution, preventing lakes from overflowing or merging unnaturally."
   },
   {
     "Name": "Water Floor",
-    "Description": ""
+    "Description": "Sets the elevation of the lake bed, determining the minimum depth and base level of the water body."
   },
   {
     "Name": "Shore Formation",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for shaping and detailing the lake shorelines, including width and transition effects."
   },
   {
     "Name": "Shore Size",
-    "Description": ""
+    "Description": "Controls the width and extent of the shoreline around lakes, affecting how far the shore transitions into the surrounding terrain."
   },
   {
     "Name": "Altitude Bias",
-    "Description": ""
+    "Description": "Biases lake placement towards certain altitudes, favoring higher or lower terrain for lake formation."
   },
   {
     "Name": "Size Bias",
-    "Description": ""
+    "Description": "Adjusts the likelihood of generating larger or smaller lakes, influencing the overall distribution of lake sizes."
   }
 ]

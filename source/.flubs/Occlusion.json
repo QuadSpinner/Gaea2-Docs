@@ -1,10 +1,10 @@
 ﻿[
   {
     "Name": "Strength",
-    "Description": ""
+    "Description": "Controls the intensity of the occlusion effect. Higher values produce deeper and more pronounced shadowing in crevices and low areas."
   },
   {
     "Name": "Octaves",
-    "Description": ""
+    "Description": "Sets the number of detail layers used in the occlusion calculation. Increasing octaves adds finer detail and complexity to the occlusion shadows."
   }
 ]

@@ -8,7 +8,7 @@
     padding: 8px 16px;
     margin-top: 16px;
     margin-bottom: 16px;
-    width: 60%;
+    width: 100%;
     display: block;
 
     p {
@@ -22,18 +22,16 @@
         color: #000;
     }
 
-    @media only screen and (max-width: 980px) {
-        width: 100% !important;
-    }
+    
 
 
-    i {
-        display: block;
-        margin: 8px;
-        margin-right: 32px;
-        float: left;
-        font-size: 18px;
-    }
+    // i {
+    //     display: block;
+    //     margin: 8px;
+    //     margin-right: 32px;
+    //     float: left;
+    //     font-size: 18px;
+    // }
 }
 
 @mixin xnote($c, $a: 0.18) {

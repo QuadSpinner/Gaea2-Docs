@@ -423,14 +423,15 @@ figure img {
 #site-nav ul li:has(> ul) > a.toc-group,
 #site-nav-2 ul li:has(> ul) > a.toc-group {
   position: relative;
-  padding-left: 16px;
+  padding-left: 12px;
+  margin-left: 4px;
 }
 #site-nav ul li:has(> ul) > a.toc-group::before,
 #site-nav-2 ul li:has(> ul) > a.toc-group::before {
   content: "›";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -4px;
+  top: 4px;
   line-height: 1.2;
   transition: transform 140ms ease, opacity 140ms ease;
   opacity: 0.8;
@@ -563,7 +564,7 @@ figure img {
   padding: 8px 16px;
   margin-top: 16px;
   margin-bottom: 16px;
-  width: 60%;
+  width: 100%;
   display: block;
 }
 .note p {
@@ -575,18 +576,6 @@ figure img {
   background: #78ccf2;
   color: #000;
 }
-@media only screen and (max-width: 980px) {
-  .note {
-    width: 100% !important;
-  }
-}
-.note i {
-  display: block;
-  margin: 8px;
-  margin-right: 32px;
-  float: left;
-  font-size: 18px;
-}
 
 .tip {
   --prime: $c;
@@ -597,7 +586,7 @@ figure img {
   padding: 8px 16px;
   margin-top: 16px;
   margin-bottom: 16px;
-  width: 60%;
+  width: 100%;
   display: block;
 }
 .tip p {
@@ -609,18 +598,6 @@ figure img {
   background: #7dcb82;
   color: #000;
 }
-@media only screen and (max-width: 980px) {
-  .tip {
-    width: 100% !important;
-  }
-}
-.tip i {
-  display: block;
-  margin: 8px;
-  margin-right: 32px;
-  float: left;
-  font-size: 18px;
-}
 
 .success {
   --prime: $c;
@@ -631,7 +608,7 @@ figure img {
   padding: 8px 16px;
   margin-top: 16px;
   margin-bottom: 16px;
-  width: 60%;
+  width: 100%;
   display: block;
 }
 .success p {
@@ -643,18 +620,6 @@ figure img {
   background: #669368;
   color: #000;
 }
-@media only screen and (max-width: 980px) {
-  .success {
-    width: 100% !important;
-  }
-}
-.success i {
-  display: block;
-  margin: 8px;
-  margin-right: 32px;
-  float: left;
-  font-size: 18px;
-}
 
 .warning {
   --prime: $c;
@@ -665,7 +630,7 @@ figure img {
   padding: 8px 16px;
   margin-top: 16px;
   margin-bottom: 16px;
-  width: 60%;
+  width: 100%;
   display: block;
 }
 .warning p {
@@ -677,18 +642,6 @@ figure img {
   background: #d8b368;
   color: #000;
 }
-@media only screen and (max-width: 980px) {
-  .warning {
-    width: 100% !important;
-  }
-}
-.warning i {
-  display: block;
-  margin: 8px;
-  margin-right: 32px;
-  float: left;
-  font-size: 18px;
-}
 
 .danger {
   --prime: $c;
@@ -699,7 +652,7 @@ figure img {
   padding: 8px 16px;
   margin-top: 16px;
   margin-bottom: 16px;
-  width: 60%;
+  width: 100%;
   display: block;
 }
 .danger p {
@@ -711,18 +664,6 @@ figure img {
   background: #e87a74;
   color: #000;
 }
-@media only screen and (max-width: 980px) {
-  .danger {
-    width: 100% !important;
-  }
-}
-.danger i {
-  display: block;
-  margin: 8px;
-  margin-right: 32px;
-  float: left;
-  font-size: 18px;
-}
 
 .info {
   --prime: $c;
@@ -733,7 +674,7 @@ figure img {
   padding: 8px 16px;
   margin-top: 16px;
   margin-bottom: 16px;
-  width: 60%;
+  width: 100%;
   display: block;
 }
 .info p {
@@ -744,18 +685,6 @@ figure img {
 .info code {
   background: #5fbe9d;
   color: #000;
-}
-@media only screen and (max-width: 980px) {
-  .info {
-    width: 100% !important;
-  }
-}
-.info i {
-  display: block;
-  margin: 8px;
-  margin-right: 32px;
-  float: left;
-  font-size: 18px;
 }
 
 .x-note {

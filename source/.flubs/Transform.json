@@ -1,131 +1,135 @@
 ﻿[
   {
     "Name": "Position",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for adjusting the position of the terrain or object within the workspace."
   },
   {
     "Name": "Offset X",
-    "Description": ""
+    "Description": "Shifts the terrain or object horizontally along the X axis, allowing precise placement within the scene."
   },
   {
     "Name": "Offset Y",
-    "Description": ""
+    "Description": "Shifts the terrain or object horizontally along the Y axis, moving it forward or backward in the workspace."
   },
   {
     "Name": "Offset Z",
-    "Description": ""
+    "Description": "Moves the terrain or object vertically along the Z axis, raising or lowering its elevation."
   },
   {
     "Name": "Scale",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for scaling the terrain or object, affecting its size and proportions."
   },
   {
     "Name": "Uniform",
-    "Description": "This applies uniform scale."
+    "Description": "Applies uniform scaling to all axes, maintaining the original proportions of the terrain or object."
   },
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Controls the overall scale factor, resizing the terrain or object uniformly in all directions."
   },
   {
     "Name": "Scale X",
-    "Description": "The non-uniform scale on the X axis."
+    "Description": "The non-uniform scale on the X axis, allowing independent horizontal stretching or compression."
   },
   {
     "Name": "Scale Y",
-    "Description": "The non-uniform scale on the Y axis."
+    "Description": "The non-uniform scale on the Y axis, allowing independent vertical stretching or compression."
   },
   {
     "Name": "Rotation",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for rotating the terrain or object around its axes."
   },
   {
     "Name": "Angle",
-    "Description": "The angle of rotation of the terrain."
+    "Description": "The angle of rotation applied to the terrain or object, measured in degrees."
   },
   {
     "Name": "Settings",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing additional settings for the transform operation, such as blending and edge handling."
   },
   {
     "Name": "Blend Mode",
-    "Description": "",
+    "Description": "Specifies how the transformed terrain or object is merged with the underlying data or input.",
     "Flubs": [
       {
         "Name": "None",
-        "Description": "<desc>"
+        "Description": "No blending is applied; the transformed data overwrites the input."
       },
       {
         "Name": "Blend",
-        "Description": "<desc>"
+        "Description": "Blends the transformed data with the input using standard alpha or linear blending."
       },
       {
         "Name": "Add",
-        "Description": "<desc>"
+        "Description": "Adds the transformed values to the input, increasing elevation or intensity."
       },
       {
         "Name": "Subtract",
-        "Description": "<desc>"
+        "Description": "Subtracts the transformed values from the input, creating depressions or reductions."
       },
       {
         "Name": "Difference",
-        "Description": "<desc>"
+        "Description": "Emphasizes the difference between the transformed data and the input."
       },
       {
         "Name": "Multiply",
-        "Description": "<desc>"
+        "Description": "Multiplies the transformed data with the input, modulating the result."
       },
       {
         "Name": "Screen",
-        "Description": "<desc>"
+        "Description": "Uses a screen blend, lightening the result where both inputs are present."
       },
       {
         "Name": "Max",
-        "Description": "<desc>"
+        "Description": "Takes the maximum value between the transformed data and the input at each point."
       },
       {
         "Name": "Min",
-        "Description": "<desc>"
+        "Description": "Takes the minimum value between the transformed data and the input at each point."
       }
     ]
   },
   {
     "Name": "Edges",
-    "Description": "",
+    "Description": "Specifies how the edges of the transformed terrain or object are handled.",
     "Flubs": [
       {
         "Name": "None",
-        "Description": "<desc>"
+        "Description": "No special edge handling; edges may be abrupt or unblended."
       },
       {
         "Name": "Thin",
-        "Description": "<desc>"
+        "Description": "Applies a thin edge blend, softening the transition at the boundaries."
       },
       {
         "Name": "Wide",
-        "Description": "<desc>"
+        "Description": "Applies a wide edge blend, creating a broader transition zone at the boundaries."
       },
       {
         "Name": "Soft",
-        "Description": "<desc>"
+        "Description": "Applies a soft, gradual edge blend for smooth transitions."
       }
     ]
   },
   {
     "Name": "Quality",
-    "Description": "",
+    "Description": "Sets the processing quality for the transform operation.",
     "Flubs": [
       {
         "Name": "Draft",
-        "Description": "<desc>"
+        "Description": "Fastest processing with lower quality, suitable for previews."
       },
       {
         "Name": "Medium",
-        "Description": "<desc>"
+        "Description": "Balanced quality and performance for general use."
       },
       {
         "Name": "High",
-        "Description": "<desc>"
+        "Description": "Highest quality with the most detail, recommended for final output."
       }
     ]
   }

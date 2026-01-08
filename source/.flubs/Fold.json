@@ -1,28 +1,28 @@
 ﻿[
   {
     "Name": "Waveform",
-    "Description": "",
+    "Description": "Specifies the type of waveform used to apply the fold or wave transformation to the terrain. The waveform determines the shape and style of the folds.",
     "Flubs": [
       {
         "Name": "Sine",
-        "Description": "<desc>"
+        "Description": "Applies a smooth, sinusoidal wave pattern, creating gentle, rolling folds."
       },
       {
         "Name": "Triangle",
-        "Description": "<desc>"
+        "Description": "Applies a triangular wave pattern, resulting in sharp, angular folds with linear transitions."
       },
       {
         "Name": "Sawtooth",
-        "Description": "<desc>"
+        "Description": "Applies a sawtooth wave pattern, producing repeating, ramp-like folds with abrupt drops."
       }
     ]
   },
   {
     "Name": "Folds",
-    "Description": ""
+    "Description": "Controls the number of folds or wave repetitions applied across the terrain. Higher values create more frequent, closely spaced folds."
   },
   {
     "Name": "Symmetric",
-    "Description": ""
+    "Description": "Determines whether the folds are mirrored symmetrically across the center, producing balanced, repeating patterns."
   }
 ]

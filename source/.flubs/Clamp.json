@@ -1,24 +1,24 @@
 ﻿[
   {
     "Name": "Mode",
-    "Description": "",
+    "Description": "Specifies the clamping method used to restrict values within a certain range.",
     "Flubs": [
       {
         "Name": "Standard",
-        "Description": "<desc>"
+        "Description": "Applies a fixed minimum and maximum clamp to the input values, preserving their original scale."
       },
       {
         "Name": "Normalized",
-        "Description": "<desc>"
+        "Description": "Clamps and remaps the input values to a normalized 0–1 range, ensuring consistent output regardless of the original scale."
       }
     ]
   },
   {
     "Name": "Value",
-    "Description": ""
+    "Description": "Sets the clamp threshold or range. Values outside this range are limited to the specified minimum or maximum."
   },
   {
     "Name": "Drop",
-    "Description": ""
+    "Description": "Lowers the overall shape to lowest value, ie 'dropping' the entire shape to the 'floor'."
   }
 ]

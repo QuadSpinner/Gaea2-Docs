@@ -1,18 +1,18 @@
 ﻿[
   {
     "Name": "Range",
-    "Description": ""
+    "Description": "Controls the sensitivity of the blob detection. Higher values detect a wider range of blob sizes or intensities."
   },
   {
     "Name": "Connectivity",
-    "Description": ""
+    "Description": "Specifies how connected blobs must be to be considered a single shape. Higher connectivity allows blobs to be more loosely attached to larger shapes."
   },
   {
     "Name": "Enforce Quantization",
-    "Description": ""
+    "Description": "If enabled, forces the use of quantization during blob detection, improving efficiency and consistency in identifying blobs."
   },
   {
     "Name": "Quantization",
-    "Description": ""
+    "Description": "Sets the quantization level for blob detection, with values between 1 and 128. Lower values provide finer detail, while higher values group similar values together for faster and more efficient blob identification."
   }
 ]

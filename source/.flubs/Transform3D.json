@@ -1,54 +1,58 @@
 ﻿[
   {
     "Name": "Position",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for adjusting the 3D position of the object or mesh within the scene."
   },
   {
     "Name": "Drop to Floor",
-    "Description": ""
+    "Description": "Automatically positions the object so its lowest point rests on the ground plane, preventing it from floating or being embedded below the surface."
   },
   {
     "Name": "Offset X",
-    "Description": ""
+    "Description": "Shifts the object horizontally along the X axis, allowing precise placement within the 3D space."
   },
   {
     "Name": "Offset Y",
-    "Description": ""
+    "Description": "Shifts the object horizontally along the Y axis, moving it forward or backward in the 3D scene."
   },
   {
     "Name": "Offset Z",
-    "Description": ""
+    "Description": "Moves the object vertically along the Z axis, raising or lowering its elevation relative to the ground."
   },
   {
     "Name": "Scale",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for scaling the object or mesh, affecting its size and proportions in 3D space."
   },
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Uniformly scales the object in all directions, making it larger or smaller while maintaining proportions."
   },
   {
     "Name": "Rotation",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for rotating the object around its axes in 3D space."
   },
   {
     "Name": "Pitch",
-    "Description": ""
+    "Description": "Rotates the object around the X axis, tilting it forward or backward."
   },
   {
     "Name": "Yaw",
-    "Description": ""
+    "Description": "Rotates the object around the Y axis, turning it left or right."
   },
   {
     "Name": "Roll",
-    "Description": ""
+    "Description": "Rotates the object around the Z axis, spinning it clockwise or counterclockwise."
   },
   {
     "Name": "Quality",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters that affect the rendering quality of the transformed object or mesh."
   },
   {
     "Name": "Antialiasing",
-    "Description": ""
+    "Description": "Enables or adjusts antialiasing for the 3D transformation, reducing jagged edges and improving visual smoothness."
   }
 ]

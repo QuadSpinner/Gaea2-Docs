@@ -1,116 +1,116 @@
 ﻿[
   {
     "Name": "Format",
-    "Description": "",
+    "Description": "Specifies the file format for the exported output. Choose the format that best fits your workflow or target application.",
     "Flubs": [
       {
         "Name": "GaeaRaw",
-        "Description": "<desc>"
+        "Description": "Exports the data in Gaea's native RAW format, preserving full precision and compatibility with Gaea."
       },
       {
         "Name": "HalfRaw",
-        "Description": "<desc>"
+        "Description": "Exports the data as 16-bit half-precision RAW, balancing file size and detail."
       },
       {
         "Name": "HalfRaw16",
-        "Description": "<desc>"
+        "Description": "Exports the data as 16-bit half-precision RAW with explicit 16-bit formatting."
       },
       {
         "Name": "UshortRaw",
-        "Description": "<desc>"
+        "Description": "Exports the data as unsigned short (16-bit) RAW, suitable for many terrain and 3D applications."
       },
       {
         "Name": "UshortRaw16",
-        "Description": "<desc>"
+        "Description": "Exports the data as unsigned short (16-bit) RAW with explicit 16-bit formatting."
       },
       {
         "Name": "FloatRaw",
-        "Description": "<desc>"
+        "Description": "Exports the data as 32-bit floating point RAW, providing maximum precision for advanced workflows."
       },
       {
         "Name": "FloatRaw32",
-        "Description": "<desc>"
+        "Description": "Exports the data as 32-bit floating point RAW with explicit 32-bit formatting."
       },
       {
         "Name": "JPEG",
-        "Description": "<desc>"
+        "Description": "Exports the data as a JPEG image, using lossy compression for reduced file size and broad compatibility."
       },
       {
         "Name": "PNG8",
-        "Description": "<desc>"
+        "Description": "Exports the data as an 8-bit PNG image, suitable for masks and lightweight outputs."
       },
       {
         "Name": "PNG16",
-        "Description": "<desc>"
+        "Description": "Exports the data as a 16-bit PNG image, preserving more detail for heightfields and masks."
       },
       {
         "Name": "PNG64",
-        "Description": "<desc>"
+        "Description": "Exports the data as a 64-bit PNG image, supporting high dynamic range and advanced workflows."
       },
       {
         "Name": "TIFF8",
-        "Description": "<desc>"
+        "Description": "Exports the data as an 8-bit TIFF image, commonly used for masks and simple outputs."
       },
       {
         "Name": "TIFF16",
-        "Description": "<desc>"
+        "Description": "Exports the data as a 16-bit TIFF image, suitable for high-quality heightfields and masks."
       },
       {
         "Name": "TIFF32",
-        "Description": "<desc>"
+        "Description": "Exports the data as a 32-bit TIFF image, supporting high dynamic range and scientific workflows."
       },
       {
         "Name": "EXR",
-        "Description": "<desc>"
+        "Description": "Exports the data as an OpenEXR image, ideal for high dynamic range and professional VFX pipelines."
       }
     ]
   },
   {
     "Name": "Location",
-    "Description": "",
+    "Description": "Specifies where the exported file will be saved.",
     "Flubs": [
       {
         "Name": "BuildFolder",
-        "Description": "<desc>"
+        "Description": "Exports the file to the project's build/output folder."
       },
       {
         "Name": "Custom",
-        "Description": "<desc>"
+        "Description": "Allows you to specify a custom folder for the exported file."
       },
       {
         "Name": "Explicit",
-        "Description": "<desc>"
+        "Description": "Exports the file to an explicitly defined path, overriding other location settings."
       }
     ]
   },
   {
     "Name": "Output Path",
-    "Description": ""
+    "Description": "Defines the full file path or directory where the exported file will be saved."
   },
   {
     "Name": "If File Exists",
-    "Description": "",
+    "Description": "Determines what happens if a file with the same name already exists at the export location.",
     "Flubs": [
       {
         "Name": "Overwrite",
-        "Description": "<desc>"
+        "Description": "Replaces the existing file with the new export."
       },
       {
         "Name": "Increment",
-        "Description": "<desc>"
+        "Description": "Automatically increments the filename to avoid overwriting existing files."
       }
     ]
   },
   {
     "Name": "Information",
-    "Description": ""
+    "Description": "Displays additional information or metadata about the export process or output file."
   },
   {
     "Name": "Prepare for Bridge",
-    "Description": ""
+    "Description": "Prepares the exported file for use with the Bridge system, enabling compatibility with external tools or workflows."
   },
   {
     "Name": "Information Houdini",
-    "Description": ""
+    "Description": "Displays or stores metadata related to Houdini integration, such as file attributes or export status."
   }
 ]

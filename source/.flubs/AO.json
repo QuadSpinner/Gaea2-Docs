@@ -1,28 +1,28 @@
 ﻿[
   {
     "Name": "Quality",
-    "Description": "",
+    "Description": "Sets the processing resolution for the ambient occlusion calculation. Higher quality provides more accurate and detailed results, but may increase computation time.",
     "Flubs": [
       {
         "Name": "Low",
-        "Description": "<desc>"
+        "Description": "Fastest processing with minimal detail. Suitable for previews or low-fidelity outputs."
       },
       {
         "Name": "Medium",
-        "Description": "<desc>"
+        "Description": "Balanced processing speed and detail. Recommended for general use."
       },
       {
         "Name": "High",
-        "Description": "<desc>"
+        "Description": "High detail with slower processing. Use when fine ambient occlusion is required."
       },
       {
         "Name": "Ultra",
-        "Description": "<desc>"
+        "Description": "Maximum detail and accuracy. Best for final renders, but slowest to compute."
       }
     ]
   },
   {
     "Name": "Enhance",
-    "Description": ""
+    "Description": "Boosts the strength and clarity of the ambient occlusion effect, making shadows and depth more pronounced in the terrain."
   }
 ]

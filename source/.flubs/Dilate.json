@@ -1,40 +1,40 @@
 ﻿[
   {
     "Name": "Size",
-    "Description": ""
+    "Description": "Sets the size of the dilation effect. Larger values expand features more, increasing the reach of the dilation."
   },
   {
     "Name": "Shape",
-    "Description": ""
+    "Description": "Specifies the geometric shape used for the dilation operation, affecting how features are expanded."
   },
   {
     "Name": "Iterations",
-    "Description": ""
+    "Description": "Controls how many times the dilation process is repeated. More iterations result in greater expansion of features."
   },
   {
     "Name": "Kernel",
-    "Description": "",
+    "Description": "Selects the kernel type used for dilation, determining the pattern and direction of expansion.",
     "Flubs": [
       {
         "Name": "Cross",
-        "Description": "<desc>"
+        "Description": "Uses a cross-shaped kernel, expanding features in horizontal and vertical directions."
       },
       {
         "Name": "Rectangle",
-        "Description": "<desc>"
+        "Description": "Uses a rectangular kernel, expanding features uniformly in all directions."
       },
       {
         "Name": "Line",
-        "Description": "<desc>"
+        "Description": "Uses a line-shaped kernel, expanding features along a specified direction."
       },
       {
         "Name": "LineVertical",
-        "Description": "<desc>"
+        "Description": "Uses a vertical line kernel, expanding features only in the vertical direction."
       }
     ]
   },
   {
     "Name": "Invert",
-    "Description": ""
+    "Description": "Inverts the input before applying dilation, causing the operation to expand background areas instead of foreground features."
   }
 ]

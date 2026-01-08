@@ -1,18 +1,18 @@
 ﻿[
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Controls the overall size of the radial gradient. Increasing the scale expands the gradient outward, affecting a larger area of the terrain."
   },
   {
     "Name": "Height",
-    "Description": ""
+    "Description": "Sets the maximum height or intensity at the center of the radial gradient. Higher values create a more pronounced peak in the center."
   },
   {
     "Name": "X",
-    "Description": ""
+    "Description": "Specifies the horizontal position of the gradient's center. Adjust this value to move the gradient left or right across the terrain."
   },
   {
     "Name": "Y",
-    "Description": ""
+    "Description": "Specifies the vertical position of the gradient's center. Adjust this value to move the gradient up or down across the terrain."
   }
 ]

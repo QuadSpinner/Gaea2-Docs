@@ -1,30 +1,31 @@
 ﻿[
   {
     "Name": "Gabor",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for generating Gabor noise, a procedural pattern used for creating natural-looking textures and terrain features with directional and frequency control."
   },
   {
     "Name": "Size",
-    "Description": ""
+    "Description": "Controls the scale of the Gabor noise features. Larger values produce broader, more widely spaced patterns, while smaller values create finer details."
   },
   {
     "Name": "Entropy",
-    "Description": ""
+    "Description": "Adjusts the randomness or complexity of the Gabor noise. Higher entropy values result in more chaotic and less predictable patterns."
   },
   {
     "Name": "Anisotropy",
-    "Description": ""
+    "Description": "Determines the degree of directionality in the noise. Higher values stretch the pattern along a specific axis, creating elongated or striated features."
   },
   {
     "Name": "Azimuth",
-    "Description": ""
+    "Description": "Sets the orientation angle (in degrees) for the anisotropic direction of the Gabor noise, controlling the alignment of elongated features."
   },
   {
     "Name": "Gain",
-    "Description": ""
+    "Description": "Controls the amplitude or intensity of the Gabor noise, affecting the contrast and prominence of the generated features."
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process."
+    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different variations of the Gabor noise."
   }
 ]

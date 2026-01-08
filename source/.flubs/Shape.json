@@ -1,52 +1,52 @@
 ﻿[
   {
     "Name": "Geometry",
-    "Description": "",
+    "Description": "Specifies the base geometric shape used for the node. Determines the fundamental outline or profile of the generated object.",
     "Flubs": [
       {
         "Name": "Circle",
-        "Description": "<desc>"
+        "Description": "Generates a circular shape as the base geometry, resulting in round or elliptical forms."
       },
       {
         "Name": "Rectangle",
-        "Description": "<desc>"
+        "Description": "Generates a rectangular shape as the base geometry, resulting in box-like or elongated forms."
       }
     ]
   },
   {
     "Name": "Sides",
-    "Description": ""
+    "Description": "Defines the number of sides for polygonal shapes. Higher values create shapes closer to a circle, while lower values produce more angular forms."
   },
   {
     "Name": "Uniform",
-    "Description": ""
+    "Description": "When enabled, ensures that scaling and transformations are applied equally in all directions, maintaining the original proportions of the shape."
   },
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Controls the overall size of the shape, scaling it uniformly along both the X and Y axes."
   },
   {
     "Name": "Scale X",
-    "Description": ""
+    "Description": "Adjusts the width of the shape by scaling it along the X axis independently."
   },
   {
     "Name": "Scale Y",
-    "Description": ""
+    "Description": "Adjusts the height of the shape by scaling it along the Y axis independently."
   },
   {
     "Name": "Thickness",
-    "Description": ""
+    "Description": "Specifies the thickness of the shape's outline or border, or the width of a ring for hollow shapes."
   },
   {
     "Name": "Height",
-    "Description": ""
+    "Description": "Sets the vertical extent or elevation of the shape, often used to define extrusion or relief in terrain generation."
   },
   {
     "Name": "X",
-    "Description": ""
+    "Description": "Sets the horizontal position or offset of the shape along the X axis."
   },
   {
     "Name": "Y",
-    "Description": ""
+    "Description": "Sets the vertical position or offset of the shape along the Y axis."
   }
 ]

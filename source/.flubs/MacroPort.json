@@ -1,0 +1,38 @@
+﻿[
+  {
+    "Name": "Direction",
+    "Description": "Specifies whether the macro port is used for input or output connections. Determines the flow of data into or out of the macro node.",
+    "Flubs": [
+      {
+        "Name": "Input",
+        "Description": "Designates the port as an input, allowing data to be received by the macro node."
+      },
+      {
+        "Name": "Output",
+        "Description": "Designates the port as an output, allowing data to be sent from the macro node."
+      }
+    ]
+  },
+  {
+    "Name": "Display",
+    "Description": "Defines the type of data visualized or represented by the macro port. This helps users identify the nature of the connection in the node graph.",
+    "Flubs": [
+      {
+        "Name": "Heightfield",
+        "Description": "Represents terrain elevation data, typically used for heightmaps."
+      },
+      {
+        "Name": "Mask",
+        "Description": "Represents mask data, used for isolating or selecting specific regions in the terrain."
+      },
+      {
+        "Name": "Color",
+        "Description": "Represents color data, used for visual effects or texture information."
+      }
+    ]
+  },
+  {
+    "Name": "IsOptional",
+    "Description": "Indicates whether the macro port is optional. If true, the port does not require a connection for the macro node to function."
+  }
+]

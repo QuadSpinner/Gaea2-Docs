@@ -1,46 +1,46 @@
 ﻿[
   {
     "Name": "Passes",
-    "Description": ""
+    "Description": "Sets the number of erosion passes applied to simulate layered sandstone formation. More passes increase the detail and realism of the stratified effect."
   },
   {
     "Name": "Iterations",
-    "Description": ""
+    "Description": "Controls how many times the erosion process is repeated within each pass, refining the sandstone layering and surface features."
   },
   {
     "Name": "Spacing",
-    "Description": ""
+    "Description": "Determines the distance between individual sandstone layers, affecting the frequency and thickness of visible strata."
   },
   {
     "Name": "Intensity",
-    "Description": ""
+    "Description": "Adjusts the overall strength of the sandstone effect, influencing how pronounced the layers and erosion features appear."
   },
   {
     "Name": "Convexity",
-    "Description": ""
+    "Description": "Controls the curvature of the sandstone layers, making them appear more rounded (convex) or flat."
   },
   {
     "Name": "Tilt",
-    "Description": ""
+    "Description": "Applies an angular tilt to the sandstone layers, simulating geological tilting or shifting of strata."
   },
   {
     "Name": "Direction",
-    "Description": ""
+    "Description": "Sets the orientation of the sandstone layers, determining the primary direction in which the strata are aligned."
   },
   {
     "Name": "Chaos",
-    "Description": ""
+    "Description": "Introduces randomness and irregularity to the sandstone layers, creating a more natural and less uniform appearance."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Defines the randomization seed for procedural generation, ensuring unique but repeatable sandstone patterns."
   },
   {
     "Name": "Chipped",
-    "Description": ""
+    "Description": "Enables or controls the presence of chipped or broken edges in the sandstone, simulating natural weathering and breakage."
   },
   {
     "Name": "Chipping",
-    "Description": ""
+    "Description": "Adjusts the amount and detail of chipping applied to the sandstone layers, affecting the roughness and realism of eroded edges."
   }
 ]

@@ -1,15 +1,15 @@
 ﻿[
   {
     "Name": "Mode",
-    "Description": "",
+    "Description": "Specifies the method used to match the height of the current terrain to a reference terrain. Determines how the height adjustment is performed.",
     "Flubs": [
       {
         "Name": "Height",
-        "Description": "<desc>"
+        "Description": "Directly matches the height values of the current terrain to the reference terrain, aligning elevation point-for-point."
       },
       {
         "Name": "Histogram",
-        "Description": "<desc>"
+        "Description": "Matches the height distribution (histogram) of the current terrain to that of the reference terrain, preserving relative features while adjusting overall elevation statistics."
       }
     ]
   }

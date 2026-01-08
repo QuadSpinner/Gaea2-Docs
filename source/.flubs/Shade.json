@@ -1,52 +1,52 @@
 ﻿[
   {
     "Name": "Render Style",
-    "Description": "",
+    "Description": "Specifies the shading technique used to render the terrain. Each style provides a different visual representation for analysis or artistic purposes.",
     "Flubs": [
       {
         "Name": "TableTop",
-        "Description": "<desc>"
+        "Description": "Renders the terrain for a stylized overview."
       },
       {
         "Name": "HillShade",
-        "Description": "<desc>"
+        "Description": "Applies traditional hillshading to simulate sunlight and shadow, enhancing the perception of terrain relief and surface features."
       },
       {
         "Name": "Occlusion",
-        "Description": "<desc>"
+        "Description": "Highlights areas of the terrain that are occluded or in shadow, useful for analyzing light accessibility and terrain exposure."
       },
       {
         "Name": "SoftLight",
-        "Description": "<desc>"
+        "Description": "Uses a soft, diffuse lighting model to gently illuminate the terrain, reducing harsh shadows and creating a more natural look."
       }
     ]
   },
   {
     "Name": "Sun Azimuth",
-    "Description": ""
+    "Description": "Sets the horizontal angle of the sun in degrees, determining the direction from which sunlight is cast across the terrain."
   },
   {
     "Name": "Sun Elevation",
-    "Description": ""
+    "Description": "Controls the vertical angle of the sun above the horizon, affecting the length and intensity of shadows on the terrain."
   },
   {
     "Name": "Sunlight",
-    "Description": ""
+    "Description": "Adjusts the overall intensity or brightness of direct sunlight in the shading calculation."
   },
   {
     "Name": "Shade Bias",
-    "Description": ""
+    "Description": "Offsets the shading calculation to reduce or increase shadow strength, helping to fine-tune the balance between light and dark areas."
   },
   {
     "Name": "Soft Shadows",
-    "Description": ""
+    "Description": "Enables or adjusts the softness of shadows, creating more gradual transitions between light and shadow for a realistic effect."
   },
   {
     "Name": "Reflected Light",
-    "Description": ""
+    "Description": "Simulates indirect illumination by adding light reflected from surrounding terrain, enhancing realism and reducing overly dark shadowed areas."
   },
   {
     "Name": "High Quality",
-    "Description": ""
+    "Description": "Enables high-quality rendering for shading, using more advanced calculations for smoother gradients and more accurate lighting effects."
   }
 ]

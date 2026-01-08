@@ -1,48 +1,48 @@
 ﻿[
   {
     "Name": "Sea",
-    "Description": "",
+    "Description": "The main Sea node, responsible for generating the sea area in the terrain. Contains options to control the global and surrounding sea behavior.",
     "Flubs": [
       {
         "Name": "Global",
-        "Description": "<desc>"
+        "Description": "Enables the sea to cover the entire terrain globally, overriding local variations."
       },
       {
         "Name": "Surrounding",
-        "Description": "<desc>"
+        "Description": "Restricts the sea to only surround the terrain, creating a border or coastal effect rather than filling the entire area."
       }
     ]
   },
   {
     "Name": "Level",
-    "Description": "The water level in the sea."
+    "Description": "Controls the water level of the sea. Higher values raise the sea, submerging more terrain, while lower values expose more land."
   },
   {
     "Name": "Coastal Erosion",
-    "Description": "Perform erosion on the coastal areas."
+    "Description": "Applies erosion to the coastal areas where the sea meets the land, simulating natural shoreline wear and shaping."
   },
   {
     "Name": "Shore Size",
-    "Description": "The size of the shore created with coastal erosion."
+    "Description": "Determines the width of the shore created by coastal erosion. Larger values produce broader beaches or transition zones."
   },
   {
     "Name": "Shore Height",
-    "Description": "The height of the shore created with coastal erosion."
+    "Description": "Sets the elevation difference between the sea level and the top of the shore, affecting the steepness of the coastline."
   },
   {
     "Name": "Variation",
-    "Description": "The amount of variation on the coast."
+    "Description": "Controls the amount of natural variation and irregularity along the coastline, making the shore appear more organic and less uniform."
   },
   {
     "Name": "Uniform Variations",
-    "Description": ""
+    "Description": "When enabled, applies consistent variation along the entire coast, resulting in a more uniform shoreline appearance."
   },
   {
     "Name": "Extra Cliff Details",
-    "Description": "Add extra details to the cliff on the terrain."
+    "Description": "Adds additional detail and features to cliffs along the coast, enhancing realism and visual interest in steep shoreline areas."
   },
   {
     "Name": "Render Surface",
-    "Description": ""
+    "Description": "Determines whether the sea surface is rendered in the final terrain output. Enable to visualize the water surface."
   }
 ]

@@ -1,40 +1,40 @@
 ﻿[
   {
     "Name": "Mode",
-    "Description": "",
+    "Description": "Specifies the method used to transpose or rearrange the input data. Each mode determines how the transformation is applied.",
     "Flubs": [
       {
         "Name": "Transpose",
-        "Description": "<desc>"
+        "Description": "Swaps the X and Y axes of the input, effectively rotating the terrain or image by 90 degrees."
       },
       {
         "Name": "Embed",
-        "Description": "<desc>"
+        "Description": "Inserts the transposed data into a larger canvas or area, preserving the original orientation within a new context."
       },
       {
         "Name": "Insert",
-        "Description": "<desc>"
+        "Description": "Places the transposed data into a specific position within the output, allowing for targeted rearrangement."
       }
     ]
   },
   {
     "Name": "Amount",
-    "Description": ""
+    "Description": "Controls the degree or strength of the transposition effect, allowing for partial or full transformation."
   },
   {
     "Name": "Extend",
-    "Description": ""
+    "Description": "Determines whether the output is extended to accommodate the transposed data, preventing cropping or loss of information."
   },
   {
     "Name": "Flatten",
-    "Description": ""
+    "Description": "Flattens the result after transposition, removing any elevation or depth variations if enabled."
   },
   {
     "Name": "Threshold",
-    "Description": ""
+    "Description": "Sets a cutoff value for the transposition effect, limiting the transformation to areas above or below the specified threshold."
   },
   {
     "Name": "Boundary",
-    "Description": ""
+    "Description": "Defines how the edges or boundaries are handled during transposition, such as wrapping, clamping, or mirroring."
   }
 ]

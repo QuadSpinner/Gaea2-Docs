@@ -1,10 +1,10 @@
 ﻿[
   {
     "Name": "Range",
-    "Description": ""
+    "Description": "Sets the minimum and maximum elevation values to include in the mask. Only terrain within this height range is selected."
   },
   {
     "Name": "Falloff",
-    "Description": "The soft falloff at the maximum edge."
+    "Description": "Controls the softness of the mask transition at the range boundaries. Higher values create a smoother, more gradual blend from selected to unselected areas."
   }
 ]

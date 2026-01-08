@@ -1,58 +1,58 @@
 ﻿[
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Controls the overall size and extent of the mountain slope. Larger values create broader, more expansive slopes."
   },
   {
     "Name": "Detail",
-    "Description": ""
+    "Description": "Adjusts the amount of fine surface detail on the mountain. Higher values add more texture and small-scale features to the slope."
   },
   {
     "Name": "Type",
-    "Description": "",
+    "Description": "Determines the primary form of the mountain feature to generate.",
     "Flubs": [
       {
         "Name": "Slope",
-        "Description": "<desc>"
+        "Description": "Creates a continuous, sloping mountainside, ideal for simulating the flanks of large mountain ranges."
       },
       {
         "Name": "Peak",
-        "Description": "<desc>"
+        "Description": "Generates a prominent mountain peak, focusing elevation and detail toward a summit."
       }
     ]
   },
   {
     "Name": "Style",
-    "Description": "",
+    "Description": "Specifies the visual and geological style of the mountain slope, affecting erosion, layering, and surface character.",
     "Flubs": [
       {
         "Name": "Basic",
-        "Description": "<desc>"
+        "Description": "Produces a simple, unmodified slope or peak with minimal erosion or geological features."
       },
       {
         "Name": "Eroded",
-        "Description": "<desc>"
+        "Description": "Applies erosion effects to the mountain, creating realistic weathering, gullies, and worn surfaces."
       },
       {
         "Name": "Old",
-        "Description": "<desc>"
+        "Description": "Simulates an ancient mountain with softened features, rounded slopes, and significant erosion."
       },
       {
         "Name": "Alpine",
-        "Description": "<desc>"
+        "Description": "Creates sharp, rugged alpine features with steep faces and dramatic relief, typical of young mountain ranges."
       },
       {
         "Name": "Strata",
-        "Description": "<desc>"
+        "Description": "Adds visible geological strata or layers to the mountain, emphasizing sedimentary or volcanic banding."
       }
     ]
   },
   {
     "Name": "Direction",
-    "Description": ""
+    "Description": "Sets the orientation of the slope or peak, determining which direction the mountain face or ridge is aligned."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Defines the randomization seed for the node, ensuring reproducible or varied mountain shapes with each value."
   }
 ]

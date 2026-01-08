@@ -17,10 +17,10 @@
   },
   {
     "Name": "Autolevel",
-    "Description": ""
+    "Description": "Automatically adjusts the levels of the combined channels to maximize the output range."
   },
   {
     "Name": "Clamp Product",
-    "Description": ""
+    "Description": "Clamps the product of the R, G, and B channels to the 0..1 range, ensuring the output does not exceed valid limits."
   }
 ]

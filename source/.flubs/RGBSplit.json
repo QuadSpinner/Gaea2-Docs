@@ -1,27 +1,27 @@
 ﻿[
   {
     "Name": "Autolevel Channels",
-    "Description": ""
+    "Description": "Automatically adjusts the levels of each RGB channel independently, ensuring optimal contrast and brightness for each channel after splitting."
   },
   {
     "Name": "Method",
-    "Description": "",
+    "Description": "Specifies the algorithm used to split the RGB image into separate channels or grayscale outputs.",
     "Flubs": [
       {
         "Name": "Average",
-        "Description": "<desc>"
+        "Description": "Splits the image by averaging the values of the RGB channels, producing a single grayscale output based on the mean intensity."
       },
       {
         "Name": "BT601",
-        "Description": "<desc>"
+        "Description": "Uses the BT.601 standard for converting RGB to luminance, applying weighted coefficients for each channel to match broadcast video standards."
       },
       {
         "Name": "BT709",
-        "Description": "<desc>"
+        "Description": "Uses the BT.709 standard for RGB to luminance conversion, applying weights optimized for HD video and modern displays."
       },
       {
         "Name": "RedChannel",
-        "Description": "<desc>"
+        "Description": "Extracts only the red channel from the RGB image, outputting its values as a grayscale map."
       }
     ]
   }

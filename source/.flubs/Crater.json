@@ -1,58 +1,58 @@
 ﻿[
   {
     "Name": "Style",
-    "Description": "",
+    "Description": "Selects the overall appearance and shaping method for the crater.",
     "Flubs": [
       {
         "Name": "New",
-        "Description": "<desc>"
+        "Description": "Uses the modern crater generation algorithm, producing more realistic and detailed crater shapes."
       },
       {
         "Name": "Classic",
-        "Description": "<desc>"
+        "Description": "Applies the legacy crater style, creating traditional, stylized crater forms."
       }
     ]
   },
   {
     "Name": "Scale",
-    "Description": "The scale of the volcano."
+    "Description": "Controls the overall size of the crater. Higher values produce larger craters."
   },
   {
     "Name": "Formation",
-    "Description": ""
+    "Description": "Determines the formation characteristics of the crater, such as depth, width, and rim prominence."
   },
   {
     "Name": "Height",
-    "Description": ""
+    "Description": "Sets the maximum elevation or prominence of the crater above the base terrain."
   },
   {
     "Name": "Rim",
-    "Description": "",
+    "Description": "Specifies the sharpness and profile of the crater's rim.",
     "Flubs": [
       {
         "Name": "Soft",
-        "Description": "<desc>"
+        "Description": "Creates a gently sloping, eroded rim for a more weathered appearance."
       },
       {
         "Name": "Sharp",
-        "Description": "<desc>"
+        "Description": "Produces a steep, well-defined rim for a freshly formed or less eroded crater."
       }
     ]
   },
   {
     "Name": "Shape",
-    "Description": ""
+    "Description": "Defines the overall outline and contour of the crater, such as roundness or irregularity."
   },
   {
     "Name": "X",
-    "Description": "Horizontal placement of craterfield."
+    "Description": "Horizontal placement of the crater or crater field within the terrain."
   },
   {
     "Name": "Y",
-    "Description": "Vertical placement of craterfield."
+    "Description": "Vertical placement of the crater or crater field within the terrain."
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process."
+    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different crater variations."
   }
 ]

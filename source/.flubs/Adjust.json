@@ -1,38 +1,38 @@
 ﻿[
   {
     "Name": "Multiply",
-    "Description": ""
+    "Description": "Multiplies each value by a specified factor."
   },
   {
     "Name": "Shaper",
-    "Description": ""
+    "Description": "Applies a shaping function to modify the curve of values."
   },
   {
     "Name": "Clamp",
-    "Description": ""
+    "Description": "Restricts values to a specified minimum and maximum range."
   },
   {
     "Name": "Clip",
-    "Description": ""
+    "Description": "Limits values by cutting off those outside a given range."
   },
   {
     "Name": "Drop",
-    "Description": ""
+    "Description": "Removes values below or above a certain threshold."
   },
   {
     "Name": "Autolevel",
-    "Description": ""
+    "Description": "Automatically adjusts values to span the full output range."
   },
   {
     "Name": "Equalize",
-    "Description": ""
+    "Description": "Redistributes values to achieve a more uniform distribution."
   },
   {
     "Name": "Strong",
-    "Description": ""
+    "Description": "Enhances the contrast or intensity of values."
   },
   {
     "Name": "Invert",
-    "Description": ""
+    "Description": "Flips values to their opposite within the range."
   }
 ]

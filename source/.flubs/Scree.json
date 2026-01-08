@@ -1,30 +1,31 @@
 ﻿[
   {
     "Name": "Stones",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for generating scree—loose, small stones or rock fragments—scattered across the terrain, typically at the base of slopes or cliffs."
   },
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Controls the overall size of the scree stones. Higher values produce larger rock fragments, while lower values create finer gravel."
   },
   {
     "Name": "Height",
-    "Description": ""
+    "Description": "Sets the maximum elevation or prominence of the scree stones above the terrain surface."
   },
   {
     "Name": "Density",
-    "Description": ""
+    "Description": "Adjusts how many scree stones are distributed across the surface. Higher values increase the number of stones per area."
   },
   {
     "Name": "Spread",
-    "Description": ""
+    "Description": "Determines how widely the scree stones are scattered from their source, affecting the coverage area and natural dispersion."
   },
   {
     "Name": "Edge",
-    "Description": ""
+    "Description": "Controls the accumulation of scree along terrain edges or boundaries, allowing for more pronounced deposits at the base of slopes or cliffs."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Randomization seed for scree placement and variation. Changing the seed produces different scree patterns."
   }
 ]

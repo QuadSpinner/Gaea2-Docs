@@ -1,160 +1,164 @@
 ﻿[
   {
     "Name": "Fractal",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Settings related to the fractal noise generation. Adjust these to control the overall fractal structure and complexity."
   },
   {
     "Name": "Noise Type",
-    "Description": "",
+    "Description": "Selects the type of fractal noise used to generate the terrain. Each type produces distinct shapes and features.",
     "Flubs": [
       {
         "Name": "FBM",
-        "Description": "Use for varied noise."
+        "Description": "Fractal Brownian Motion. Produces varied, natural-looking noise with a balanced mix of peaks and valleys."
       },
       {
         "Name": "Billowy",
-        "Description": "Use for lower, more bulbous shapes."
+        "Description": "Creates softer, rounded, and bulbous shapes, ideal for rolling hills or smooth terrain."
       },
       {
         "Name": "Ridged",
-        "Description": "Use for sharp shapes."
+        "Description": "Generates sharp, jagged features, resulting in more dramatic and rugged terrain."
       }
     ]
   },
   {
     "Name": "Auto Octaves",
-    "Description": "Automatically sets the octaves."
+    "Description": "Automatically determines the optimal number of octaves for the fractal, balancing detail and performance."
   },
   {
     "Name": "Octaves",
-    "Description": "Number of octaves, higher values create more complexity."
+    "Description": "Specifies the number of noise layers (octaves) used. Higher values increase detail and complexity, but may impact performance."
   },
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Controls the overall size of the fractal features. Lower values create larger features, while higher values produce finer details."
   },
   {
     "Name": "Relative Feature Scale",
-    "Description": ""
+    "Description": "Adjusts the scale of features relative to the terrain size, allowing for proportional detail regardless of resolution."
   },
   {
     "Name": "Roughness",
-    "Description": "Lower value creates smoother shapes, higher value creates rough shapes."
+    "Description": "Determines the roughness of the fractal. Lower values result in smoother shapes, while higher values create more rugged, detailed surfaces."
   },
   {
     "Name": "Edge smoothing",
-    "Description": "Smoothes the shape of the terrain."
+    "Description": "Smooths the edges of the generated terrain, reducing harsh transitions and creating a more natural appearance."
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process."
+    "Description": "Sets the random seed for noise generation. Changing the seed produces different terrain patterns while keeping other settings the same."
   },
   {
     "Name": "Variation",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Settings related to introducing variation and modulation to the fractal, allowing for more diverse and interesting results."
   },
   {
     "Name": "Type",
-    "Description": "",
+    "Description": "Selects the method of applying variation to the fractal.",
     "Flubs": [
       {
         "Name": "SecondaryFractal",
-        "Description": "<desc>"
+        "Description": "Uses a secondary fractal to modulate the main fractal, adding additional layers of complexity and detail."
       },
       {
         "Name": "SelfModulation",
-        "Description": "<desc>"
+        "Description": "Applies self-modulation, where the fractal modulates itself to create more intricate and unique patterns."
       }
     ]
   },
   {
     "Name": "Variation",
-    "Description": ""
+    "Description": "Controls the amount or intensity of variation applied to the fractal, affecting the diversity of the generated terrain."
   },
   {
     "Name": "Smoothness",
-    "Description": ""
+    "Description": "Adjusts the smoothness of the variation, with higher values producing gentler transitions and lower values creating sharper changes."
   },
   {
     "Name": "Contrast",
-    "Description": ""
+    "Description": "Controls the contrast of the variation, increasing or decreasing the difference between high and low areas."
   },
   {
     "Name": "Damping",
-    "Description": ""
+    "Description": "Reduces the intensity of variation or modulation, helping to prevent overly chaotic or extreme results."
   },
   {
     "Name": "Bias",
-    "Description": ""
+    "Description": "Shifts the overall output of the variation, allowing you to favor higher or lower values in the resulting terrain."
   },
   {
     "Name": "Position",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Settings related to the spatial placement and orientation of the fractal pattern."
   },
   {
     "Name": "Rotation",
-    "Description": ""
+    "Description": "Rotates the fractal pattern, changing the orientation of features across the terrain."
   },
   {
     "Name": "Anisotropy",
-    "Description": ""
+    "Description": "Applies directional scaling to the fractal, stretching or compressing features along a specific axis."
   },
   {
     "Name": "Offset X",
-    "Description": ""
+    "Description": "Shifts the fractal pattern horizontally, moving features left or right across the terrain."
   },
   {
     "Name": "Offset Y",
-    "Description": ""
+    "Description": "Shifts the fractal pattern vertically, moving features up or down across the terrain."
   },
   {
     "Name": "Warp",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Settings for warping or distorting the fractal pattern, adding complexity and natural irregularities."
   },
   {
     "Name": "Perturb",
-    "Description": "",
+    "Description": "Selects the type of warping applied to the fractal pattern.",
     "Flubs": [
       {
         "Name": "None",
-        "Description": "No warping."
+        "Description": "No warping is applied. The fractal pattern remains unaltered."
       },
       {
         "Name": "Simple",
-        "Description": "Simple, soft warping."
+        "Description": "Applies basic, soft warping to the fractal, gently distorting features for a more natural look."
       },
       {
         "Name": "Complex",
-        "Description": "Complex, turbulence warping."
+        "Description": "Applies advanced, turbulent warping, creating highly irregular and dynamic terrain features."
       }
     ]
   },
   {
     "Name": "Relative Size",
-    "Description": ""
+    "Description": "Controls the size of the warp effect relative to the overall terrain, allowing for proportional distortion."
   },
   {
     "Name": "Strength",
-    "Description": ""
+    "Description": "Sets the intensity of the warp effect. Higher values produce more pronounced distortion."
   },
   {
     "Name": "Complexity",
-    "Description": ""
+    "Description": "Adjusts the complexity of the warp, increasing the number of layers or detail in the distortion."
   },
   {
     "Name": "Roughness",
-    "Description": "Lower value creates smoother shapes, higher value creates rough shapes."
+    "Description": "Controls the roughness of the warp effect. Lower values create smoother warping, while higher values add more jaggedness."
   },
   {
     "Name": "Attenuation",
-    "Description": ""
+    "Description": "Reduces the strength of the warp effect over distance, allowing for localized or fading distortion."
   },
   {
     "Name": "Iterations",
-    "Description": ""
+    "Description": "Specifies how many times the warp effect is applied, with higher values increasing the overall distortion."
   },
   {
     "Name": "Relative Anisotropy",
-    "Description": ""
+    "Description": "Controls the directional scaling of the warp effect, stretching or compressing the distortion along a specific axis."
   }
 ]

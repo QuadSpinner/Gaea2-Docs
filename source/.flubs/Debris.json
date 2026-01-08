@@ -1,74 +1,70 @@
 ﻿[
   {
     "Name": "Debris Amount",
-    "Description": ""
+    "Description": "Controls how many individual rocks or debris pieces are emitted across the terrain."
   },
   {
     "Name": "Amount Multiplier",
-    "Description": ""
+    "Description": "Scales the emitted debris amount globally without changing other parameters, allowing quick adjustment of overall density."
   },
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Controls the overall scale of debris elements, affecting their size relative to the terrain."
   },
   {
     "Name": "Friction",
-    "Description": ""
+    "Description": "Determines how easily debris slides; higher values make debris stop sooner and form steeper piles."
   },
   {
     "Name": "Restitution",
-    "Description": ""
+    "Description": "Controls energy loss on impact, affecting how far debris bounces or continues sliding after being emitted."
   },
   {
     "Name": "Size",
-    "Description": ""
+    "Description": "Sets the overall size of the emitted rocks or debris pieces."
   },
   {
     "Name": "Height",
-    "Description": ""
+    "Description": "Defines the vertical offset or emission height for debris release."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Randomization seed for generating varied debris distributions."
   },
   {
     "Name": "Shape",
-    "Description": "",
+    "Description": "Determines the geometric style of debris elements, affecting their appearance.",
     "Flubs": [
       {
         "Name": "Rounded",
-        "Description": "<desc>"
+        "Description": "Produces smoother, rounded rock fragments."
       },
       {
         "Name": "Sharp",
-        "Description": "<desc>"
+        "Description": "Produces jagged, angular rock fragments."
       }
     ]
   },
   {
     "Name": "Render Still Rocks",
-    "Description": ""
+    "Description": "Enables rendering of non-moving debris that has settled on the terrain."
   },
   {
     "Name": "Distribution",
-    "Description": "",
+    "Description": "Specifies how debris is distributed across the emission area.",
     "Flubs": [
       {
         "Name": "Uniform",
-        "Description": "<desc>"
+        "Description": "Evenly spreads debris across the emission area."
       },
       {
         "Name": "Natural",
-        "Description": "<desc>"
+        "Description": "Creates more organic, irregular clustering of debris."
       }
     ]
   },
   {
     "Name": "Export Point Cloud",
-    "Description": ""
-  },
-  {
-    "Name": "Information",
-    "Description": ""
+    "Description": "Enables the export of debris positions as a point cloud for further processing or use in external applications."
   }
 ]

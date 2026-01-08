@@ -1,78 +1,82 @@
 ﻿[
   {
     "Name": "Global",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing global parameters that affect the overall behavior and appearance of the WaveShine node."
   },
   {
     "Name": "Frame",
-    "Description": ""
+    "Description": "Specifies the current animation frame or time step for the wave simulation, allowing for frame-by-frame control or preview."
   },
   {
     "Name": "Octaves",
-    "Description": ""
+    "Description": "Sets the number of detail layers (octaves) used in the wave pattern, increasing complexity and realism with higher values."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Randomization seed for generating unique wave patterns. Changing the seed produces different wave arrangements."
   },
   {
     "Name": "Ripples",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters that control the appearance and animation of small-scale ripples on the water surface."
   },
   {
     "Name": "Animation Speed",
-    "Description": ""
+    "Description": "Controls the speed at which ripples animate across the surface, affecting how quickly the pattern evolves over time."
   },
   {
     "Name": "Size",
-    "Description": ""
+    "Description": "Sets the scale of individual ripples, with larger values producing broader, more widely spaced ripples."
   },
   {
     "Name": "Amplitude",
-    "Description": ""
+    "Description": "Adjusts the height or intensity of the ripples, making them more or less pronounced."
   },
   {
     "Name": "Direction",
-    "Description": ""
+    "Description": "Specifies the primary direction in which ripples travel, simulating wind or current-driven movement."
   },
   {
     "Name": "Speed",
-    "Description": ""
+    "Description": "Controls the movement speed of the ripples, determining how fast they propagate across the surface."
   },
   {
     "Name": "Wind Patch",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for simulating localized wind effects, creating patches of intensified or varied wave activity."
   },
   {
     "Name": "Intensity",
-    "Description": ""
+    "Description": "Sets the strength of the wind patch effect, increasing the impact of wind on the wave or ripple pattern."
   },
   {
     "Name": "Animation Speed",
-    "Description": ""
+    "Description": "Controls the animation speed of the wind patch, affecting how quickly wind-driven changes occur."
   },
   {
     "Name": "Size",
-    "Description": ""
+    "Description": "Determines the area covered by the wind patch, with larger values affecting a broader region of the surface."
   },
   {
     "Name": "Contrast",
-    "Description": ""
+    "Description": "Adjusts the contrast of the wind patch effect, making the difference between calm and windy areas more or less pronounced."
   },
   {
     "Name": "Lighting",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for simulating lighting effects on the wave surface, such as sun position and brightness."
   },
   {
     "Name": "Brightness",
-    "Description": ""
+    "Description": "Controls the overall brightness of the rendered wave surface, affecting how light or dark the result appears."
   },
   {
     "Name": "Sun Azimuth",
-    "Description": ""
+    "Description": "Sets the horizontal angle of the sun, determining the direction of sunlight and resulting highlights or reflections."
   },
   {
     "Name": "Sun Elevation",
-    "Description": ""
+    "Description": "Sets the vertical angle of the sun above the horizon, affecting the length and intensity of highlights and shadows on the waves."
   }
 ]

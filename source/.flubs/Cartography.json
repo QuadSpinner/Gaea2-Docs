@@ -1,174 +1,177 @@
 ﻿[
   {
     "Name": "Map Style",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for the overall style and appearance of the cartographic map, including color, contour, and gradient settings."
   },
   {
     "Name": "Accuracy",
-    "Description": ""
+    "Description": "Controls the precision of map features such as contours and gradients. Higher values produce more detailed and accurate representations of terrain."
   },
   {
     "Name": "Gradient Style",
-    "Description": "",
+    "Description": "Specifies the style of gradient used to represent elevation or terrain features on the map.",
     "Flubs": [
       {
         "Name": "Smooth",
-        "Description": "<desc>"
+        "Description": "Applies a continuous, smooth gradient for a natural transition between elevation bands."
       },
       {
         "Name": "LargeContours",
-        "Description": "<desc>"
+        "Description": "Emphasizes major elevation bands with broad, distinct contour regions."
       },
       {
         "Name": "AllContours",
-        "Description": "<desc>"
+        "Description": "Displays all contour lines, including minor and major bands, for maximum detail."
       }
     ]
   },
   {
     "Name": "Equalize Gradient",
-    "Description": ""
+    "Description": "Balances the gradient distribution to ensure even representation of elevation changes across the map."
   },
   {
     "Name": "Reverse",
-    "Description": ""
+    "Description": "Inverts the color or gradient mapping, swapping high and low elevation colors for a different visual effect."
   },
   {
     "Name": "Erode",
-    "Description": ""
+    "Description": "Applies an erosion effect to the map, softening features and simulating natural terrain wear."
   },
   {
     "Name": "Land",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for land-specific styling, including color palettes and contour settings."
   },
   {
     "Name": "Land Palette",
-    "Description": "",
+    "Description": "Selects the color palette used for land areas on the map.",
     "Flubs": [
       {
         "Name": "Classic",
-        "Description": "<desc>"
+        "Description": "Uses a traditional cartographic color scheme for land."
       },
       {
         "Name": "Minimal",
-        "Description": "<desc>"
+        "Description": "Applies a minimalistic color palette for a clean, modern look."
       },
       {
         "Name": "FertileRed",
-        "Description": "<desc>"
+        "Description": "Highlights fertile areas with red tones."
       },
       {
         "Name": "FertileGreen",
-        "Description": "<desc>"
+        "Description": "Highlights fertile areas with green tones."
       },
       {
         "Name": "RedBlueSpectrum",
-        "Description": "<desc>"
+        "Description": "Uses a spectrum from red to blue to represent elevation or land type."
       },
       {
         "Name": "MineralsYellow",
-        "Description": "<desc>"
+        "Description": "Emphasizes mineral-rich areas with yellow hues."
       },
       {
         "Name": "FertileCool",
-        "Description": "<desc>"
+        "Description": "Applies cool tones to fertile regions for a subdued effect."
       },
       {
         "Name": "FertileMurky",
-        "Description": "<desc>"
+        "Description": "Uses murky, earthy tones to represent fertile land."
       }
     ]
   },
   {
     "Name": "Land Contours",
-    "Description": ""
+    "Description": "Controls the visibility and density of contour lines on land areas, highlighting elevation changes."
   },
   {
     "Name": "Land Contour Intenstity",
-    "Description": ""
+    "Description": "Adjusts the brightness or opacity of land contour lines, making them more or less prominent."
   },
   {
     "Name": "Land Bias",
-    "Description": ""
+    "Description": "Applies a bias to the land color or contour mapping, shifting emphasis to certain elevation ranges or features."
   },
   {
     "Name": "Water Palette",
-    "Description": "",
+    "Description": "Selects the color palette used for water areas on the map.",
     "Flubs": [
       {
         "Name": "Classic",
-        "Description": "<desc>"
+        "Description": "Uses a traditional blue color scheme for water."
       },
       {
         "Name": "BlackSea",
-        "Description": "<desc>"
+        "Description": "Applies a dark, deep blue palette reminiscent of the Black Sea."
       },
       {
         "Name": "Caribbean",
-        "Description": "<desc>"
+        "Description": "Uses bright, turquoise tones inspired by Caribbean waters."
       }
     ]
   },
   {
     "Name": "Water Contours",
-    "Description": ""
+    "Description": "Controls the visibility and density of contour lines in water areas, indicating depth or underwater features."
   },
   {
     "Name": "Water Contour Intenstity",
-    "Description": ""
+    "Description": "Adjusts the brightness or opacity of water contour lines, making them more or less prominent."
   },
   {
     "Name": "Water Bias",
-    "Description": ""
+    "Description": "Applies a bias to the water color or contour mapping, shifting emphasis to certain depth ranges or features."
   },
   {
     "Name": "Trim",
-    "Description": ""
+    "Description": "Removes or crops map features outside a specified boundary, focusing the map on a particular region."
   },
   {
     "Name": "Line Art",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for line art overlays, such as grid lines, boundaries, and contour outlines."
   },
   {
     "Name": "Grid Count",
-    "Description": ""
+    "Description": "Sets the number of grid divisions overlaid on the map, controlling the density of the grid."
   },
   {
     "Name": "Grid Intenstity",
-    "Description": ""
+    "Description": "Adjusts the brightness or opacity of the grid lines, making them more or less visible."
   },
   {
     "Name": "Grid Style",
-    "Description": "",
+    "Description": "Specifies where grid lines are drawn on the map.",
     "Flubs": [
       {
         "Name": "None",
-        "Description": "<desc>"
+        "Description": "No grid lines are displayed."
       },
       {
         "Name": "OverWater",
-        "Description": "<desc>"
+        "Description": "Grid lines are drawn only over water areas."
       },
       {
         "Name": "OverLand",
-        "Description": "<desc>"
+        "Description": "Grid lines are drawn only over land areas."
       },
       {
         "Name": "Everywhere",
-        "Description": "<desc>"
+        "Description": "Grid lines are drawn over both land and water areas."
       }
     ]
   },
   {
     "Name": "Boundary Thickness",
-    "Description": ""
+    "Description": "Sets the thickness of boundary lines, such as map borders or region outlines."
   },
   {
     "Name": "Contour Thickness",
-    "Description": ""
+    "Description": "Specifies the thickness of contour lines, affecting their visual prominence."
   },
   {
     "Name": "Grid Thickness",
-    "Description": ""
+    "Description": "Controls the thickness of grid lines overlaid on the map."
   }
 ]

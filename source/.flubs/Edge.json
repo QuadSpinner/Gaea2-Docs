@@ -1,32 +1,32 @@
 ﻿[
   {
     "Name": "Style",
-    "Description": "",
+    "Description": "Specifies the shape and profile of the edge effect applied to the terrain or mask.",
     "Flubs": [
       {
         "Name": "Round",
-        "Description": "<desc>"
+        "Description": "Creates a smooth, rounded edge transition for a softer boundary."
       },
       {
         "Name": "Square",
-        "Description": "<desc>"
+        "Description": "Produces a straight, angular edge for a more defined and abrupt boundary."
       },
       {
         "Name": "Precise",
-        "Description": "<desc>"
+        "Description": "Applies an exact edge in pixels, preserving sharpness and detail at the boundary."
       }
     ]
   },
   {
     "Name": "Size",
-    "Description": ""
+    "Description": "Controls the width or thickness of the edge effect. Higher values create a broader edge region."
   },
   {
     "Name": "Pixels",
-    "Description": ""
+    "Description": "Sets the edge width in pixel units, allowing for precise control over the edge's extent."
   },
   {
     "Name": "Softness",
-    "Description": ""
+    "Description": "Adjusts the smoothness of the edge transition. Higher values result in a more gradual, blended edge."
   }
 ]

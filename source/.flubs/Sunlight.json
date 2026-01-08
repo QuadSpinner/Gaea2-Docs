@@ -1,14 +1,14 @@
 ﻿[
   {
     "Name": "North",
-    "Description": ""
+    "Description": "Specifies the direction considered as 'north' for sunlight calculations. Adjusting this affects the orientation of shadows and lighting in the terrain."
   },
   {
     "Name": "Year",
-    "Description": ""
+    "Description": "Sets the year for solar position calculations. This can influence the sun's path and seasonal lighting effects on the terrain."
   },
   {
     "Name": "Latitude",
-    "Description": ""
+    "Description": "Defines the latitude of the terrain location. Changing the latitude alters the angle and intensity of sunlight, simulating different geographic regions."
   }
 ]

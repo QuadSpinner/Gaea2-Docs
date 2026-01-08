@@ -1,142 +1,140 @@
 ﻿[
   {
     "Name": "Erosion",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for simulating terrain erosion, including hydraulic and fluvial processes."
   },
   {
     "Name": "Duration",
-    "Description": "Determines the duration of erosion simulation. This parameter can be set to higher value than 1.0, but note that even default 0.04 (4%) is enough for most cases, resulting in prominent erosion effect. Low duration values, such as 0.02 and lesser, can be useful for adding erosion details while keeping the main original landscape features unchanged."
+    "Description": "Determines the duration of the erosion simulation. Higher values increase the overall erosion effect, while lower values add subtle erosion details and preserve more of the original landscape."
   },
   {
     "Name": "Rock Softness",
-    "Description": "Controls the softness of rock material. The softer rock is, the faster is erosion process."
+    "Description": "Controls the softness of the rock material. Softer rocks erode more quickly, resulting in faster and more pronounced erosion."
   },
   {
     "Name": "Strength",
-    "Description": "Sets the strength of fluvial erosion. This parameter controls the sediment transport capacity, that is how much of dissolved minerals water can carry. This parameter can be set to value that is higher than 1.0, this can speed up the erosion process, but also can result in lesser erosion quality, especially if erosion softness value is high too."
+    "Description": "Sets the strength of fluvial erosion, controlling the sediment transport capacity. Higher values allow water to carry more dissolved minerals, increasing the rate and impact of erosion."
   },
   {
     "Name": "Downcutting",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters related to the vertical erosion process, where water cuts down into the terrain to form channels and valleys."
   },
   {
     "Name": "Downcutting",
-    "Description": ""
+    "Description": "Controls the intensity of vertical erosion, affecting how deeply channels and valleys are carved into the terrain."
   },
   {
     "Name": "Inhibition",
-    "Description": "This parameter controls special mechanics, adding additional restraints for downcutting. It determines how undissolved sediments are slowed down by already dropped sediments, causing downcutting to stop and drop its load. This allows to combine both variants of erosion, with and without downcutting, resulting at deep channels at some areas and alluvial fans in other areas."
+    "Description": "Adds restraints to the downcutting process by slowing it down when undissolved sediments accumulate. This results in a mix of deep channels and alluvial fans, depending on local conditions."
   },
   {
     "Name": "Base Level",
-    "Description": "Controls the base level for the vertical erosion process, this is the lowest elevation that downcutting process can erode until it stops and begins to drop sediment. This elevation is different across the whole terrain, and depends on the terrain slopes, relative altitudes, stream velocity and other factors. This parameter can be useful for filling the largest valleys with deposit material, forming valley floors."
+    "Description": "Sets the lowest elevation that downcutting can reach before sediment is deposited. This helps fill large valleys and form valley floors, influenced by terrain slope, altitude, and stream velocity."
   },
   {
     "Name": "Scale",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for controlling the scale and proportions of erosion features relative to the terrain."
   },
   {
     "Name": "Feature Scale",
-    "Description": "Determines the lateral size of the largest erosion features in meters: width of largest valleys and ridges between them."
+    "Description": "Determines the lateral size of the largest erosion features, such as the width of major valleys and ridges, measured in meters."
   },
   {
     "Name": "Real Scale",
-    "Description": "Automatically determine the scale from the Terrain Definition."
+    "Description": "Automatically determines the scale from the Terrain Definition, ensuring erosion features are sized appropriately for the terrain."
   },
   {
     "Name": "Terrain Scale",
-    "Description": "The simulated scale of the entire width of the terrain. (Available when Rivers is turned On)"
+    "Description": "Sets the simulated scale of the entire terrain width. Available when Rivers is enabled, this parameter helps match erosion to real-world dimensions."
   },
   {
     "Name": "Verticality",
-    "Description": "The simulated height of the entire terrain. (Available when Rivers is turned On)"
+    "Description": "Sets the simulated height of the entire terrain. Available when Rivers is enabled, this parameter controls the vertical exaggeration of erosion features."
   },
   {
     "Name": "Flow",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters related to water flow, debris movement, and sediment transport during erosion."
   },
   {
     "Name": "Debris",
-    "Description": ""
+    "Description": "Controls the amount and behavior of debris generated and transported during the erosion process."
   },
   {
     "Name": "Volume",
-    "Description": "This is another special parameter, which alters erosion physics, treating water flows as volumetric objects, affecting each other, causing higher water levels during simulation, which results in wider channels, filled with more deposits. This is another way to get valley floor, and it works without downcutting."
+    "Description": "Alters erosion physics to treat water flows as volumetric, resulting in higher water levels, wider channels, and more extensive sediment deposits. Useful for forming valley floors without downcutting."
   },
   {
     "Name": "Sediment Removal",
-    "Description": "Removes the sediment produced in the erosion process. This can be modulated using the Sedimental Removal mask input."
+    "Description": "Removes sediment produced during erosion. This can be modulated using the Sediment Removal mask input to control where sediment is retained or cleared."
   },
   {
     "Name": "Selective Processing",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for applying erosion selectively to specific areas, using masks or bias settings."
   },
   {
     "Name": "Area Effect",
-    "Description": "This is the effect applied when an Area input is specified, or if Bias is defined in the settings.",
+    "Description": "Specifies the effect applied when an Area input or Bias is defined. Determines which erosion property is selectively processed.",
     "Flubs": [
       {
         "Name": "ErosionStrength",
-        "Description": "<desc>"
+        "Description": "Applies selective processing to the erosion strength, allowing targeted control over erosion intensity."
       },
       {
         "Name": "RockSoftness",
-        "Description": "<desc>"
+        "Description": "Applies selective processing to rock softness, enabling localized variation in erosion rates."
       },
       {
         "Name": "PrecipitationAmount",
-        "Description": "<desc>"
+        "Description": "Applies selective processing to precipitation amount, affecting how much water is available for erosion in specific areas."
       },
       {
         "Name": "None",
-        "Description": "Do not apply selective processing."
+        "Description": "No selective processing is applied; erosion is uniform across the terrain."
       }
     ]
   },
   {
     "Name": "Bias Type",
-    "Description": "The type of automatic bias to apply when an Area input is not specified.",
+    "Description": "Specifies the type of automatic bias to apply when an Area input is not provided. Determines how erosion is distributed based on terrain features.",
     "Flubs": [
       {
         "Name": "Altitude",
-        "Description": "<desc>"
+        "Description": "Applies bias based on elevation, allowing erosion to be stronger or weaker at different heights."
       },
       {
         "Name": "Slope",
-        "Description": "<desc>"
+        "Description": "Applies bias based on terrain slope, enabling more erosion on steeper or flatter areas."
       }
     ]
   },
   {
     "Name": "Bias",
-    "Description": "The strength of the bias. For Slope, it is the steepness, for Altitude it the position from bottom."
+    "Description": "Sets the strength of the bias. For Slope, this controls the steepness threshold; for Altitude, it sets the position from the bottom of the terrain."
   },
   {
     "Name": "Reverse",
-    "Description": "Reverse the bias direction."
+    "Description": "Reverses the direction of the bias, inverting which areas receive more or less erosion."
   },
   {
     "Name": "Other Settings",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing additional settings for fine-tuning the erosion simulation."
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process."
+    "Description": "Randomization seed for the erosion process. Changing the seed produces different erosion patterns and channel arrangements."
   },
   {
     "Name": "Aggressive Mode",
-    "Description": "Process erosion faster at the risk of creating soft erosion artifacts in some minor areas."
+    "Description": "Enables faster erosion processing at the risk of introducing soft artifacts in minor areas. Useful for quick previews or when speed is prioritized over detail."
   },
   {
     "Name": "Deterministic",
-    "Description": ""
-  },
-  {
-    "Name": "Information",
-    "IsGroup": true, "Description": ""
-  },
-  {
-    "Name": "Information",
-    "Description": ""
+    "Description": "Ensures the erosion simulation produces the same result every time with the same input and seed, improving reproducibility."
   }
 ]

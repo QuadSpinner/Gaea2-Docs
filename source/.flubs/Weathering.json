@@ -1,50 +1,52 @@
 ﻿[
   {
     "Name": "Primary",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Controls the main weathering effect, which adds lighter coloration to the sharpest protrusions and exposed areas of the terrain, simulating the effect of sun-bleached or eroded surfaces."
   },
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Sets the scale at which weathering effects are applied. Lower values target fine details, while higher values affect larger terrain features."
   },
   {
     "Name": "Creep",
-    "Description": ""
+    "Description": "Simulates gradual movement and spreading of weathering effects across the terrain, softening transitions and blending weathered areas."
   },
   {
     "Name": "Amount",
-    "Description": ""
+    "Description": "Adjusts the overall intensity of the weathering effect. Higher values produce more pronounced weathering."
   },
   {
     "Name": "Washed Out",
-    "Description": ""
+    "Description": "Toggles if colors are faded or desaturated, mimicking the effect of prolonged exposure to the elements."
   },
   {
     "Name": "Inverse",
-    "Description": ""
+    "Description": "Inverts the weathering effect, applying it to areas that would normally be less affected, such as recesses instead of protrusions."
   },
   {
     "Name": "Dirt",
-    "Description": ""
+    "Description": "Adds darker coloration to crevices, nooks, and sheltered areas of the terrain, simulating the accumulation of soil, organic matter, or moisture."
   },
   {
     "Name": "Darker",
-    "Description": ""
+    "Description": "Intensifies the darkness of the dirt effect, making crevices and nooks appear deeper and more shadowed."
   },
   {
     "Name": "Post Processing",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Contains controls for final color adjustments after weathering has been applied."
   },
   {
     "Name": "Hue",
-    "Description": ""
+    "Description": "Adjusts the overall hue of the weathered terrain, allowing for color shifts to match desired environmental conditions."
   },
   {
     "Name": "Saturation",
-    "Description": ""
+    "Description": "Controls the intensity of colors in the weathered terrain, from muted to vibrant."
   },
   {
     "Name": "Lightness",
-    "Description": ""
+    "Description": "Sets the overall brightness of the weathered terrain, affecting how light or dark the final result appears."
   }
 ]

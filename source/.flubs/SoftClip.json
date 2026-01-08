@@ -1,28 +1,28 @@
 ﻿[
   {
     "Name": "Clip Mode",
-    "Description": "",
+    "Description": "Selects whether the soft clipping effect is applied above or below the specified threshold.",
     "Flubs": [
       {
         "Name": "AboveThreshold",
-        "Description": "<desc>"
+        "Description": "Applies soft clipping to values above the threshold, gently compressing high values toward the threshold."
       },
       {
         "Name": "BelowThreshold",
-        "Description": "<desc>"
+        "Description": "Applies soft clipping to values below the threshold, gently compressing low values toward the threshold."
       }
     ]
   },
   {
     "Name": "Threshold",
-    "Description": ""
+    "Description": "Sets the value at which soft clipping begins. Values above or below this threshold (depending on mode) will be affected."
   },
   {
     "Name": "Softness",
-    "Description": ""
+    "Description": "Controls the smoothness of the transition at the threshold. Higher values create a more gradual, less abrupt clipping effect."
   },
   {
     "Name": "Clipping",
-    "Description": ""
+    "Description": "Adjusts the overall strength of the clipping effect, determining how much values are compressed toward the threshold."
   }
 ]

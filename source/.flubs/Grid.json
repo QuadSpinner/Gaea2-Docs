@@ -1,18 +1,18 @@
 ﻿[
   {
     "Name": "Subdivision",
-    "Description": ""
+    "Description": "Sets the number of grid divisions along each axis. Higher values create a denser grid with more cells."
   },
   {
     "Name": "Line Intensity",
-    "Description": ""
+    "Description": "Controls the brightness or opacity of the main grid lines, making them more or less prominent in the texture."
   },
   {
     "Name": "Sub Intensity",
-    "Description": ""
+    "Description": "Adjusts the brightness or opacity of the subdivision lines, which are the finer lines between main grid lines."
   },
   {
     "Name": "Line Thickness",
-    "Description": ""
+    "Description": "Specifies the thickness of the grid lines. Higher values produce bolder, wider lines."
   }
 ]

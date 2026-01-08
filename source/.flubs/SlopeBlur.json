@@ -1,19 +1,19 @@
 ﻿[
   {
     "Name": "Intensity",
-    "Description": "Lorem ipsum"
+    "Description": "Controls the strength of the slope blur effect. Higher values result in more pronounced blurring along the slope direction."
   },
   {
     "Name": "Iterations",
-    "Description": "Lorem ipsum"
+    "Description": "Specifies how many times the slope blur operation is applied. More iterations increase the smoothness and diffusion of the blur."
   },
   {
     "Name": "Direction",
-    "Description": "Lorem ipsum"
+    "Description": "Sets the primary direction in which the blur is applied. Adjusting this value changes the orientation of the blur effect across the terrain."
   },
   {
     "Name": "Asymmetry",
-    "Description": "Lorem ipsum"
+    "Description": "Controls the asymmetry of the blur, allowing the effect to be stronger in one direction than the other for more natural or stylized results."
   },
   {
     "Name": "Normalized",
@@ -29,51 +29,52 @@
       },
       {
         "Name": "Box",
-        "Description": "<desc>"
+        "Description": "Uses a box-shaped window for uniform blurring, resulting in sharper transitions at the edges."
       }
     ]
   },
   {
     "Name": "Quality",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Settings related to the quality and precision of the slope blur operation. Higher quality may increase processing time but results in smoother, more accurate blurring."
   },
   {
     "Name": "Quality",
-    "Description": "",
+    "Description": "Selects the quality level for the slope blur effect, balancing performance and visual fidelity.",
     "Flubs": [
       {
         "Name": "Low",
-        "Description": "<desc>"
+        "Description": "Fastest processing with minimal detail. Suitable for previews or low-quality outputs."
       },
       {
         "Name": "Medium",
-        "Description": "<desc>"
+        "Description": "Balanced quality and performance. Provides moderate detail suitable for most workflows."
       },
       {
         "Name": "High",
-        "Description": "<desc>"
+        "Description": "Higher detail and smoother results, with increased processing time."
       },
       {
         "Name": "Ultra",
-        "Description": "<desc>"
+        "Description": "Maximum detail and smoothness. Best for final outputs, but may be slower to process."
       }
     ]
   },
   {
     "Name": "Antialiasing",
-    "Description": "Lorem ipsum",
+    "Description": "Applies antialiasing to the slope blur effect, reducing jagged edges and improving visual smoothness.",
     "Flubs": [
       {
         "Name": "Off",
-        "Description": "<desc>"
+        "Description": "No antialiasing is applied. May result in sharper but potentially jagged edges."
       },
       {
         "Name": "x4",
-        "Description": "<desc>"
+        "Description": "Applies 4x antialiasing for moderate smoothing of edges."
       },
       {
         "Name": "x16",
-        "Description": "<desc>"
+        "Description": "Applies 16x antialiasing for maximum edge smoothing and highest visual quality."
       }
     ]
   }

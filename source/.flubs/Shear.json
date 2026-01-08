@@ -1,7 +1,7 @@
 ﻿[
   {
     "Name": "Strength",
-    "Description": ""
+    "Description": "The amount of terrain warp/shear that will be applied."
   },
   {
     "Name": "Seed",

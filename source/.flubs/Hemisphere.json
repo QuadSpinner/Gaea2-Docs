@@ -1,22 +1,22 @@
 ﻿[
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Controls the overall size of the hemisphere. Larger values increase the radius and footprint of the shape on the terrain."
   },
   {
     "Name": "Height",
-    "Description": ""
+    "Description": "Sets the maximum elevation of the hemisphere, determining how tall the dome rises above the base level."
   },
   {
     "Name": "X",
-    "Description": ""
+    "Description": "Adjusts the horizontal position of the hemisphere along the X axis, allowing you to move it left or right within the terrain."
   },
   {
     "Name": "Y",
-    "Description": ""
+    "Description": "Adjusts the horizontal position of the hemisphere along the Y axis, allowing you to move it forward or backward within the terrain."
   },
   {
     "Name": "Flatten",
-    "Description": ""
+    "Description": "Flattens the top of the hemisphere, creating a dome with a plateau or truncated appearance instead of a perfect curve."
   }
 ]

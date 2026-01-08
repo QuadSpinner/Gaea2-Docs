@@ -103,13 +103,14 @@
       &:has(> ul) {
         >a.toc-group {
           position: relative;
-          padding-left: 16px;
-
+          padding-left: 12px;
+          margin-left: 4px;
+          
           &::before {
             content: "›";
             position: absolute;
-            left: 0;
-            top: 0;
+            left: -4px;
+            top: 4px;
             line-height: 1.2;
             transition: transform 140ms ease, opacity 140ms ease;
             opacity: 0.8;

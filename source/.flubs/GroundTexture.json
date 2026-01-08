@@ -1,32 +1,32 @@
 ﻿[
   {
     "Name": "Method",
-    "Description": "",
+    "Description": "Specifies the style of ground texture to generate, affecting the overall appearance and character of the surface.",
     "Flubs": [
       {
         "Name": "Harsh",
-        "Description": "<desc>"
+        "Description": "Creates a ground texture with strong, pronounced features and high contrast, simulating rugged or eroded terrain."
       },
       {
         "Name": "Rocky",
-        "Description": "<desc>"
+        "Description": "Generates a texture with rocky details, emphasizing stone-like patterns and roughness typical of stony ground."
       },
       {
         "Name": "Rough",
-        "Description": "<desc>"
+        "Description": "Produces a generally uneven and coarse texture, adding subtle irregularities for a natural, weathered look."
       }
     ]
   },
   {
     "Name": "Strength",
-    "Description": ""
+    "Description": "Controls the intensity of the ground texture effect. Higher values make the texture more prominent and detailed."
   },
   {
     "Name": "Coverage",
-    "Description": ""
+    "Description": "Adjusts how much of the terrain surface is affected by the ground texture, determining the extent of the effect."
   },
   {
     "Name": "Density",
-    "Description": ""
+    "Description": "Sets the concentration of texture features across the surface. Higher density results in more frequent and closely packed details."
   }
 ]

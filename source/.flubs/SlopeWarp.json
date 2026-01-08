@@ -1,61 +1,62 @@
 ﻿[
   {
     "Name": "Intensity",
-    "Description": ""
+    "Description": "Controls the strength of the slope warp effect. Higher values produce more pronounced warping and distortion of the terrain along the slope."
   },
   {
     "Name": "Iterations",
-    "Description": ""
+    "Description": "Specifies how many times the slope warp operation is applied. Increasing iterations can create more complex or exaggerated warping effects."
   },
   {
     "Name": "Direction",
-    "Description": ""
+    "Description": "Sets the primary direction in which the slope warp is applied. Adjust this to control the orientation of the warping across the terrain."
   },
   {
     "Name": "Normalized",
-    "Description": ""
+    "Description": "When enabled, normalizes the effect so that the intensity is consistent regardless of terrain scale or resolution."
   },
   {
     "Name": "Quality",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Settings related to the quality and precision of the slope warp operation. Higher quality may increase processing time but results in smoother, more accurate warping."
   },
   {
     "Name": "Quality",
-    "Description": "",
+    "Description": "Selects the quality level for the slope warp effect, balancing performance and visual fidelity.",
     "Flubs": [
       {
         "Name": "Low",
-        "Description": "<desc>"
+        "Description": "Fastest processing with minimal detail. Suitable for previews or low-quality outputs."
       },
       {
         "Name": "Medium",
-        "Description": "<desc>"
+        "Description": "Balanced quality and performance. Provides moderate detail suitable for most workflows."
       },
       {
         "Name": "High",
-        "Description": "<desc>"
+        "Description": "Higher detail and smoother results, with increased processing time."
       },
       {
         "Name": "Ultra",
-        "Description": "<desc>"
+        "Description": "Maximum detail and smoothness. Best for final outputs, but may be slower to process."
       }
     ]
   },
   {
     "Name": "Antialiasing",
-    "Description": "",
+    "Description": "Applies antialiasing to the slope warp effect, reducing jagged edges and improving visual smoothness.",
     "Flubs": [
       {
         "Name": "Off",
-        "Description": "<desc>"
+        "Description": "No antialiasing is applied. May result in sharper but potentially jagged edges."
       },
       {
         "Name": "x4",
-        "Description": "<desc>"
+        "Description": "Applies 4x antialiasing for moderate smoothing of edges."
       },
       {
         "Name": "x16",
-        "Description": "<desc>"
+        "Description": "Applies 16x antialiasing for maximum edge smoothing and highest visual quality."
       }
     ]
   }

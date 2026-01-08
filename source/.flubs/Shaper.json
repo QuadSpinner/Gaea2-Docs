@@ -5,11 +5,11 @@
   },
   {
     "Name": "Local Effect",
-    "Description": ""
+    "Description": "Limits the shaping effect to localized regions instead of applying it globally, allowing for targeted adjustments."
   },
   {
     "Name": "Local Area",
-    "Description": ""
+    "Description": "Specifies the size or extent of the local region affected when 'Local Effect' is enabled. Larger values increase the area of influence."
   },
   {
     "Name": "Maintain Fine Details",
@@ -17,6 +17,6 @@
   },
   {
     "Name": "Detail Size",
-    "Description": ""
+    "Description": "Controls the scale of details to be preserved or affected during shaping. Smaller values focus on finer details, while larger values affect broader features."
   }
 ]

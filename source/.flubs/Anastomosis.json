@@ -5,78 +5,78 @@
   },
   {
     "Name": "Width",
-    "Description": ""
+    "Description": "Controls the horizontal spread of the anastomosis effect. Larger values produce wider channels and features."
   },
   {
     "Name": "Depth",
-    "Description": ""
+    "Description": "Determines the vertical extent of the erosion. Higher values result in deeper cuts and more pronounced terrain features."
   },
   {
     "Name": "Downcutting",
-    "Description": "",
+    "Description": "Specifies the style and aggressiveness of vertical erosion. Select from various modes to control how the terrain is carved downward.",
     "Flubs": [
       {
         "Name": "Destructive",
-        "Description": "<desc>"
+        "Description": "Applies aggressive downcutting, rapidly eroding and deepening channels."
       },
       {
         "Name": "Pits",
-        "Description": "<desc>"
+        "Description": "Focuses erosion into localized depressions, creating pit-like features."
       },
       {
         "Name": "Flows",
-        "Description": "<desc>"
+        "Description": "Simulates water flow erosion, carving smooth, continuous channels."
       },
       {
         "Name": "Rivers",
-        "Description": "<desc>"
+        "Description": "Emphasizes river-like downcutting, forming distinct riverbeds."
       },
       {
         "Name": "Riversx2",
-        "Description": "<desc>"
+        "Description": "Doubles the intensity of river downcutting for deeper, more defined riverbeds."
       },
       {
         "Name": "Riversx4",
-        "Description": "<desc>"
+        "Description": "Quadruples the river downcutting effect, producing extremely deep and prominent river channels."
       },
       {
         "Name": "Flooding",
-        "Description": "<desc>"
+        "Description": "Simulates broad, shallow erosion typical of flooding events."
       },
       {
         "Name": "Floodingx2",
-        "Description": "<desc>"
+        "Description": "Doubles the flooding effect, increasing the area and depth of flood erosion."
       },
       {
         "Name": "Flooding_x4",
-        "Description": "<desc>"
+        "Description": "Quadruples the flooding effect, creating extensive and deep flood-eroded regions."
       }
     ]
   },
   {
     "Name": "Quality",
-    "Description": "",
+    "Description": "Sets the processing resolution for the node. Higher quality yields more detailed results at the cost of performance.",
     "Flubs": [
       {
         "Name": "Quarter",
-        "Description": "<desc>"
+        "Description": "Processes at 1/4 resolution for fastest performance and lowest detail."
       },
       {
         "Name": "Third",
-        "Description": "<desc>"
+        "Description": "Processes at 1/3 resolution, balancing speed and detail."
       },
       {
         "Name": "Half",
-        "Description": "<desc>"
+        "Description": "Processes at 1/2 resolution for moderate detail and performance."
       },
       {
         "Name": "Full",
-        "Description": "<desc>"
+        "Description": "Processes at full resolution for maximum detail and slower performance."
       }
     ]
   },
   {
     "Name": "Smooth Edges",
-    "Description": ""
+    "Description": "Softens the edges of eroded features, reducing sharp transitions and creating a more natural appearance."
   }
 ]

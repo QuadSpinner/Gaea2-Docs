@@ -1,78 +1,80 @@
 ﻿[
   {
     "Name": "Structure",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters that define the underlying structure and features of the generated black and white texture."
   },
   {
     "Name": "Slope",
-    "Description": ""
+    "Description": "Controls the influence of terrain slope on the texture, allowing highlights or patterns to follow steeper areas."
   },
   {
     "Name": "Flows",
-    "Description": ""
+    "Description": "Adds flow-based features to the texture, simulating the effect of water or material movement across the surface."
   },
   {
     "Name": "Soil",
-    "Description": ""
+    "Description": "Introduces soil-like patterns or noise, adding organic variation to the texture."
   },
   {
     "Name": "Patches",
-    "Description": ""
+    "Description": "Controls the presence and size of patchy areas within the texture, creating irregular or clustered features."
   },
   {
     "Name": "Chaos",
-    "Description": ""
+    "Description": "Adjusts the randomness and disorder in the texture, increasing natural variation and reducing uniformity."
   },
   {
     "Name": "Peaks",
-    "Description": ""
+    "Description": "Emphasizes or introduces features that follow terrain peaks, adding detail to high areas in the texture."
   },
   {
     "Name": "Processing",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing post-processing options that modify or enhance the generated texture before colorization."
   },
   {
     "Name": "Accentuate",
-    "Description": "",
+    "Description": "Enhances specific features or contrasts in the texture, making details more pronounced.",
     "Flubs": [
       {
         "Name": "Off",
-        "Description": "<desc>"
+        "Description": "No accentuation is applied; the texture remains unmodified."
       },
       {
         "Name": "Old",
-        "Description": "<desc>"
+        "Description": "Applies the legacy accentuation method, increasing contrast and detail using the previous algorithm."
       },
       {
         "Name": "New",
-        "Description": "<desc>"
+        "Description": "Uses the latest accentuation method for improved feature enhancement and clarity."
       }
     ]
   },
   {
     "Name": "Enhance",
-    "Description": "",
+    "Description": "Applies additional enhancement to the texture's tonal range or contrast.",
     "Flubs": [
       {
         "Name": "None",
-        "Description": "<desc>"
+        "Description": "No enhancement is applied."
       },
       {
         "Name": "Autolevel",
-        "Description": "<desc>"
+        "Description": "Automatically adjusts the levels to maximize the full tonal range, improving contrast."
       },
       {
         "Name": "Equalize",
-        "Description": "<desc>"
+        "Description": "Equalizes the histogram, distributing intensity values more evenly for a balanced look."
       }
     ]
   },
   {
     "Name": "Reverse",
-    "Description": ""
+    "Description": "Inverts the black and white values of the texture, swapping dark and light areas."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Randomization seed for generating the texture. Changing the seed produces different pattern variations."
   }
 ]

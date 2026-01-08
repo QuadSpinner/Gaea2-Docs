@@ -1,162 +1,150 @@
 ﻿[
   {
     "Name": "Format",
-    "Description": "",
+    "Description": "Specifies the file format for the exported mesh. Choose the format that best fits your workflow or target application.",
     "Flubs": [
       {
         "Name": "OBJ",
-        "Description": "<desc>"
+        "Description": "Exports the mesh in the standard OBJ format, widely supported for 3D models and compatible with most 3D software."
       },
       {
         "Name": "FBX",
-        "Description": "<desc>"
+        "Description": "Exports the mesh in the FBX format, suitable for advanced workflows and supporting animation, hierarchy, and metadata."
       },
       {
         "Name": "DAE",
-        "Description": "<desc>"
+        "Description": "Exports the mesh in the Collada (DAE) format, an open standard for exchanging 3D assets between applications."
       },
       {
         "Name": "GLTF",
-        "Description": "<desc>"
+        "Description": "Exports the mesh in the glTF format, optimized for real-time rendering and web-based 3D applications."
       },
       {
         "Name": "GLB",
-        "Description": "<desc>"
+        "Description": "Exports the mesh in the binary GLB format, a compact version of glTF for efficient storage and transmission."
       }
     ]
   },
   {
     "Name": "Scale",
-    "Description": "The scale for the model.",
+    "Description": "Sets the unit or normalization method for the exported mesh coordinates, determining how the model's size is interpreted.",
     "Flubs": [
       {
         "Name": "Normalized",
-        "Description": "<desc>"
+        "Description": "Exports the mesh with coordinates normalized to a 0–1 range, useful for workflows that require unitless or relative positions."
       },
       {
         "Name": "Meter",
-        "Description": "<desc>"
+        "Description": "Exports the mesh with coordinates in meters, matching real-world scale for compatibility with engineering and GIS applications."
       },
       {
         "Name": "Kilometer",
-        "Description": "<desc>"
+        "Description": "Exports the mesh with coordinates in kilometers, suitable for large-scale terrain or geospatial datasets."
       }
     ]
   },
   {
     "Name": "Topology",
-    "Description": "",
+    "Description": "Specifies the type of mesh topology used for the exported model, affecting how the surface is constructed and rendered.",
     "Flubs": [
       {
         "Name": "Tris",
-        "Description": "<desc>"
+        "Description": "Generates the mesh using triangles for all faces, ensuring compatibility with all 3D engines and applications."
       },
       {
         "Name": "Quads",
-        "Description": "<desc>"
+        "Description": "Generates the mesh using quadrilaterals where possible, preferred for modeling and sculpting workflows."
       },
       {
         "Name": "AdaptiveTris",
-        "Description": "<desc>"
+        "Description": "Uses adaptive triangulation to optimize mesh density, reducing polygon count in flat areas and increasing detail where needed."
       }
     ]
   },
   {
-    "Name": "Topology Warning",
-    "Description": ""
-  },
-  {
     "Name": "Vertices Per Side",
-    "Description": ""
+    "Description": "Sets the resolution of the mesh by specifying the number of vertices along each side. Higher values increase detail but also file size."
   },
   {
     "Name": "Artifact Reduction",
-    "Description": "",
+    "Description": "Applies post-processing to reduce visual artifacts in the mesh, such as smoothing or correcting problematic geometry.",
     "Flubs": [
       {
         "Name": "None",
-        "Description": "<desc>"
+        "Description": "No artifact reduction is applied; the mesh is exported as generated."
       },
       {
         "Name": "Low",
-        "Description": "<desc>"
+        "Description": "Applies minimal artifact reduction, preserving most original detail while correcting minor issues."
       },
       {
         "Name": "Med",
-        "Description": "<desc>"
+        "Description": "Applies moderate artifact reduction, balancing detail preservation with improved mesh quality."
       }
     ]
   },
   {
     "Name": "Create Normals",
-    "Description": ""
+    "Description": "If enabled, generates normal vectors for the mesh, improving shading and rendering quality in 3D applications."
   },
   {
     "Name": "Create UVs",
-    "Description": ""
+    "Description": "If enabled, generates UV coordinates for the mesh, allowing textures to be mapped accurately onto the surface."
   },
   {
     "Name": "UV Origin",
-    "Description": "",
+    "Description": "Specifies the origin point for the UV coordinate system, affecting how textures are mapped onto the mesh.",
     "Flubs": [
       {
         "Name": "TopLeft",
-        "Description": "<desc>"
+        "Description": "Sets the UV origin to the top-left corner, matching conventions used in some graphics applications."
       },
       {
         "Name": "BottomLeft",
-        "Description": "<desc>"
+        "Description": "Sets the UV origin to the bottom-left corner, standard in most 3D engines and texture workflows."
       }
     ]
   },
   {
     "Name": "Create Walls",
-    "Description": "Creates wall in the output mesh."
+    "Description": "Creates vertical walls along the edges of the mesh, useful for generating closed or extruded terrain models."
   },
   {
     "Name": "Center Pivot",
-    "Description": ""
+    "Description": "If enabled, centers the mesh's pivot point at the origin, making it easier to manipulate in 3D applications."
   },
   {
     "Name": "Level of Detail",
-    "Description": "",
+    "Description": "Specifies the level of detail (LOD) for the exported mesh, allowing for simplified versions to be generated for performance optimization.",
     "Flubs": [
       {
         "Name": "None",
-        "Description": "<desc>"
+        "Description": "Exports the mesh at full resolution with no LOD applied."
       },
       {
         "Name": "LOD1",
-        "Description": "<desc>"
+        "Description": "Exports a simplified mesh with reduced detail, suitable for distant rendering or performance-sensitive applications."
       },
       {
         "Name": "LOD2",
-        "Description": "<desc>"
+        "Description": "Exports a further simplified mesh with even fewer polygons."
       },
       {
         "Name": "LOD3",
-        "Description": "<desc>"
+        "Description": "Exports a mesh with progressively lower detail, useful for very distant or background objects."
       },
       {
         "Name": "LOD4",
-        "Description": "<desc>"
+        "Description": "Exports a highly simplified mesh, minimizing polygon count for maximum performance."
       },
       {
         "Name": "LOD5",
-        "Description": "<desc>"
+        "Description": "Exports an extremely low-detail mesh, suitable for extreme distance or preview purposes."
       },
       {
         "Name": "LOD6",
-        "Description": "<desc>"
+        "Description": "Exports the lowest possible detail mesh, retaining only the broadest features."
       }
     ]
-  },
-  {
-    "Name": "LOD Info",
-    "Description": ""
-  },
-  {
-    "Name": "Information",
-    "Description": ""
   }
 ]

@@ -5,6 +5,6 @@
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different noise patterns."
   }
 ]

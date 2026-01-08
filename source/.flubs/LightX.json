@@ -1,130 +1,132 @@
 ﻿[
   {
     "Name": "Direction Selection",
-    "Description": "",
+    "Description": "Specifies how the sun direction is determined for lighting calculations.",
     "Flubs": [
       {
         "Name": "Manual",
-        "Description": "<desc>"
+        "Description": "Allows manual input of sun direction parameters such as azimuth and elevation."
       },
       {
         "Name": "Geographic",
-        "Description": "<desc>"
+        "Description": "Calculates sun direction based on geographic coordinates, date, and time for physically accurate lighting."
       }
     ]
   },
   {
     "Name": "North",
-    "Description": ""
+    "Description": "Sets the orientation of the north direction in the scene, affecting geographic sun calculations."
   },
   {
     "Name": "Latitude",
-    "Description": ""
+    "Description": "Specifies the latitude for geographic sun calculations, influencing sun position and lighting angle."
   },
   {
     "Name": "Day of Year",
-    "Description": ""
+    "Description": "Sets the day of the year for geographic sun calculations, affecting seasonal sun position and lighting."
   },
   {
     "Name": "Solar Hour",
-    "Description": ""
+    "Description": "Specifies the time of day for geographic sun calculations, determining the sun's position in the sky."
   },
   {
     "Name": "Sun Azimuth",
-    "Description": ""
+    "Description": "Sets the horizontal angle of the sun, determining the direction from which sunlight is cast."
   },
   {
     "Name": "Sun Elevation",
-    "Description": ""
+    "Description": "Controls the vertical angle of the sun above the horizon, affecting the length and intensity of shadows."
   },
   {
     "Name": "Angular Diameter",
-    "Description": ""
+    "Description": "Specifies the apparent size of the sun in the sky, influencing the softness of shadows and highlights."
   },
   {
     "Name": "Direct Light",
-    "Description": ""
+    "Description": "Adjusts the intensity of direct sunlight in the scene, affecting brightness and shadow contrast."
   },
   {
     "Name": "Shadows",
-    "Description": ""
+    "Description": "Enables or adjusts the rendering of shadows cast by terrain features, enhancing depth and realism."
   },
   {
     "Name": "Ambient Light",
-    "Description": ""
+    "Description": "Controls the overall ambient light level, simulating indirect illumination from the sky and environment."
   },
   {
     "Name": "Ambient Occlusion",
-    "Description": ""
+    "Description": "Enables or adjusts ambient occlusion, which darkens crevices and areas shielded from ambient light for added realism."
   },
   {
     "Name": "Quality",
-    "Description": "",
+    "Description": "Sets the rendering quality for lighting and shadow calculations.",
     "Flubs": [
       {
         "Name": "Low",
-        "Description": "<desc>"
+        "Description": "Fastest rendering with basic lighting and shadow detail."
       },
       {
         "Name": "Medium",
-        "Description": "<desc>"
+        "Description": "Balanced quality and performance with moderate lighting and shadow detail."
       },
       {
         "Name": "High",
-        "Description": "<desc>"
+        "Description": "High-quality rendering with detailed lighting and shadows."
       },
       {
         "Name": "Ultra",
-        "Description": "<desc>"
+        "Description": "Maximum quality with the most accurate lighting and shadow effects."
       }
     ]
   },
   {
     "Name": "Light",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for controlling overall light properties in the scene."
   },
   {
     "Name": "Exposure",
-    "Description": ""
+    "Description": "Adjusts the exposure level, controlling the overall brightness and dynamic range of the rendered image."
   },
   {
     "Name": "Sun Intensity",
-    "Description": ""
+    "Description": "Sets the strength of the sun's light, affecting the brightness of direct illumination."
   },
   {
     "Name": "Ambient Intensity",
-    "Description": ""
+    "Description": "Controls the strength of ambient light, influencing the brightness of areas not directly lit by the sun."
   },
   {
     "Name": "Air Density",
-    "Description": ""
+    "Description": "Simulates atmospheric density, affecting the scattering of light and the appearance of haze."
   },
   {
     "Name": "Haze",
-    "Description": ""
+    "Description": "Adds atmospheric haze to the scene, softening distant terrain and simulating light diffusion."
   },
   {
     "Name": "Ozone",
-    "Description": ""
+    "Description": "Adjusts the ozone level in the atmosphere, influencing the color and intensity of sunlight."
   },
   {
     "Name": "Colors",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for controlling the color properties of sunlight, ambient light, and ground."
   },
   {
     "Name": "Automatic Colors",
-    "Description": ""
+    "Description": "Enables automatic adjustment of sun and ambient colors based on sun position and atmospheric conditions."
   },
   {
     "Name": "Sun Color",
-    "Description": ""
+    "Description": "Sets the color of direct sunlight, allowing for warm, cool, or custom lighting effects."
   },
   {
     "Name": "Ambient Color",
-    "Description": ""
+    "Description": "Specifies the color of ambient light, affecting the overall tone of shaded areas."
   },
   {
     "Name": "Ground Brightness",
-    "Description": ""
+    "Description": "Controls the brightness of the ground plane, influencing the overall illumination and visual balance of the scene."
   }
 ]

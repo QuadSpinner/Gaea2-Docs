@@ -1,10 +1,10 @@
 ﻿[
   {
     "Name": "Switch Route",
-    "Description": ""
+    "Description": "Selects which input route is active. Use this to dynamically switch between different input sources or branches in your graph."
   },
   {
     "Name": "Discard Alt in Final Build",
-    "Description": ""
+    "Description": "If enabled, alternate (inactive) input routes are discarded during the final build, reducing memory usage and export size."
   }
 ]

@@ -1,60 +1,56 @@
 ﻿[
   {
     "Name": "Type",
-    "Description": "",
+    "Description": "Specifies the method used to generate the normal map. Determines the level of detail and the intended use for the resulting normals.",
     "Flubs": [
       {
         "Name": "Standard",
-        "Description": "<desc>"
+        "Description": "Generates a standard normal map based on the main heightfield, suitable for general use in rendering and texturing."
       },
       {
         "Name": "Detail",
-        "Description": "<desc>"
+        "Description": "Generates a high-frequency detail normal map, emphasizing fine surface features for use as a detail overlay or in advanced shading."
       }
     ]
   },
   {
     "Name": "Width",
-    "Description": ""
+    "Description": "Sets the horizontal resolution of the generated normal map in pixels. Higher values produce more detailed maps but increase memory usage."
   },
   {
     "Name": "Height",
-    "Description": ""
+    "Description": "Sets the vertical resolution of the generated normal map in pixels. Higher values produce more detailed maps but increase memory usage."
   },
   {
     "Name": "Detail Size",
-    "Description": ""
+    "Description": "Controls the scale of fine details captured in the normal map. Smaller values emphasize finer features, while larger values smooth out detail."
   },
   {
     "Name": "Handedness",
-    "Description": "",
+    "Description": "Determines the coordinate system used for the normal map, affecting how normals are interpreted in different rendering engines.",
     "Flubs": [
       {
         "Name": "Left",
-        "Description": "<desc>"
+        "Description": "Generates the normal map using a left-handed coordinate system, commonly used in some 3D applications and engines."
       },
       {
         "Name": "Right",
-        "Description": "<desc>"
+        "Description": "Generates the normal map using a right-handed coordinate system, standard in many 3D applications and engines."
       }
     ]
   },
   {
     "Name": "Up Axis",
-    "Description": "",
+    "Description": "Specifies which axis is considered 'up' for the normal map, ensuring compatibility with different engine conventions.",
     "Flubs": [
       {
         "Name": "YUp",
-        "Description": "<desc>"
+        "Description": "Sets the Y axis as the vertical (up) direction, matching engines and workflows that use Y as up."
       },
       {
         "Name": "ZUp",
-        "Description": "<desc>"
+        "Description": "Sets the Z axis as the vertical (up) direction, matching engines and workflows that use Z as up."
       }
     ]
-  },
-  {
-    "Name": "Information 1",
-    "Description": ""
   }
 ]

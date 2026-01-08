@@ -1,132 +1,135 @@
 ﻿[
   {
     "Name": "Noise",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for generating Voronoi noise patterns, which create cell-like structures commonly used for terrain and texture synthesis."
   },
   {
     "Name": "Scale",
-    "Description": "The perceptual scale of the Voronoi shapes. Higher values create more shapes."
+    "Description": "The perceptual scale of the Voronoi shapes. Higher values create more, smaller shapes; lower values produce fewer, larger cells."
   },
   {
     "Name": "Jitter",
-    "Description": "Control the offset of the Voronoi points between symmetrical and chaotic."
+    "Description": "Controls the offset of the Voronoi points, ranging from perfectly symmetrical (low jitter) to highly chaotic (high jitter) cell placement."
   },
   {
     "Name": "Function",
-    "Description": "",
+    "Description": "Specifies the distance function used to calculate Voronoi cells, affecting the shape and boundaries of each cell.",
     "Flubs": [
       {
         "Name": "Euclidean",
-        "Description": "Euclidean function."
+        "Description": "Uses the standard Euclidean distance, resulting in natural, rounded cell shapes."
       },
       {
         "Name": "Manhattan",
-        "Description": "Manhattan function."
+        "Description": "Uses the Manhattan (grid-based) distance, producing square or diamond-shaped cells."
       }
     ]
   },
   {
     "Name": "Form",
-    "Description": "",
+    "Description": "Determines how the height or value of each Voronoi cell is calculated, affecting the resulting terrain or pattern.",
     "Flubs": [
       {
         "Name": "C",
-        "Description": "Voronoi cells with height decided by the cells themselves."
+        "Description": "Voronoi cells with height determined by the cell itself, creating classic cell-based patterns."
       },
       {
         "Name": "N",
-        "Description": "Voronoi cells with height decided by the nearest neighbor."
+        "Description": "Voronoi cells with height determined by the nearest neighbor, resulting in smoother transitions between cells."
       },
       {
         "Name": "R",
-        "Description": "<desc>"
+        "Description": "Voronoi cells with height influenced by the distance to the cell's edge, creating ring-like or ridge effects."
       },
       {
         "Name": "P",
-        "Description": "The default look for this geo-variant, suitable for creating mountains."
+        "Description": "The default look for this geo-variant, suitable for creating mountainous terrain with prominent peaks."
       },
       {
         "Name": "A",
-        "Description": "A mix between P and M."
+        "Description": "A mix between the P and M forms, blending characteristics of both for varied terrain features."
       },
       {
         "Name": "S",
-        "Description": "Individual mountains with fully separated boundaries."
+        "Description": "Generates individual mountains with fully separated boundaries, emphasizing isolated peaks."
       },
       {
         "Name": "M",
-        "Description": "Favors the strongest cell; good for creating a big mountain slope."
+        "Description": "Favors the strongest cell, ideal for creating a large mountain slope or dominant landform."
       },
       {
         "Name": "D",
-        "Description": "Favors ridges over cell centers."
+        "Description": "Emphasizes ridges over cell centers, producing terrain with pronounced ridge lines."
       }
     ]
   },
   {
     "Name": "Gain",
-    "Description": ""
+    "Description": "Adjusts the contrast or intensity of the Voronoi pattern, amplifying or reducing the difference between cell heights."
   },
   {
     "Name": "Clamp",
-    "Description": ""
+    "Description": "Limits the output values to a specified range, preventing extreme heights or depths in the generated pattern."
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process."
+    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different Voronoi arrangements."
   },
   {
     "Name": "Warp",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for warping or distorting the Voronoi pattern, adding complexity and variation."
   },
   {
     "Name": "Type",
-    "Description": "",
+    "Description": "Specifies the type of warp applied to the Voronoi pattern, controlling the complexity of the distortion.",
     "Flubs": [
       {
         "Name": "None",
-        "Description": "<desc>"
+        "Description": "No warping is applied; the Voronoi pattern remains unaltered."
       },
       {
         "Name": "Simple",
-        "Description": "<desc>"
+        "Description": "Applies basic warping to the pattern, introducing gentle distortions."
       },
       {
         "Name": "Complex",
-        "Description": "<desc>"
+        "Description": "Applies advanced, multi-layered warping for highly intricate and organic distortions."
       }
     ]
   },
   {
     "Name": "Frequency",
-    "Description": ""
+    "Description": "Controls the frequency of the warp, determining how often the pattern is distorted across the terrain."
   },
   {
     "Name": "Amplitude",
-    "Description": ""
+    "Description": "Sets the strength of the warp effect, controlling how far the Voronoi cells are displaced."
   },
   {
     "Name": "Octaves",
-    "Description": ""
+    "Description": "Specifies the number of detail layers used in the warp, increasing the complexity and richness of the distortion."
   },
   {
     "Name": "Transform",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for transforming the Voronoi pattern, such as scaling and translation."
   },
   {
     "Name": "Scale X",
-    "Description": "The non-uniform scale of the X axis."
+    "Description": "The non-uniform scale of the X axis, stretching or compressing the pattern horizontally."
   },
   {
     "Name": "Scale Y",
-    "Description": "The non-uniform scale of the Y axis."
+    "Description": "The non-uniform scale of the Y axis, stretching or compressing the pattern vertically."
   },
   {
     "Name": "X",
-    "Description": ""
+    "Description": "Offsets the Voronoi pattern along the X axis, shifting its position horizontally."
   },
   {
     "Name": "Y",
-    "Description": ""
+    "Description": "Offsets the Voronoi pattern along the Y axis, shifting its position vertically."
   }
 ]

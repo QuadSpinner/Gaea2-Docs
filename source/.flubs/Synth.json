@@ -1,72 +1,73 @@
 ﻿[
   {
     "Name": "Data",
-    "Description": ""
+    "Description": "Input data for the node, such as source terrain or mask information."
   },
   {
     "Name": "Sampling",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Settings related to how the gradient is sampled and how many color stops are generated."
   },
   {
     "Name": "Samples",
-    "Description": "",
+    "Description": "Specifies the number of color stops or samples in the synthesized gradient. Higher values produce smoother gradients.",
     "Flubs": [
       {
         "Name": "_8",
-        "Description": "<desc>"
+        "Description": "Generates a gradient with 8 color stops. Suitable for coarse transitions."
       },
       {
         "Name": "_16",
-        "Description": "<desc>"
+        "Description": "Generates a gradient with 16 color stops. Provides a moderately smooth transition."
       },
       {
         "Name": "_24",
-        "Description": "<desc>"
+        "Description": "Generates a gradient with 24 color stops. Offers finer color transitions."
       },
       {
         "Name": "_36",
-        "Description": "<desc>"
+        "Description": "Generates a gradient with 36 color stops. Useful for detailed gradients."
       },
       {
         "Name": "_64",
-        "Description": "<desc>"
+        "Description": "Generates a gradient with 64 color stops. Produces a very smooth color lookup."
       },
       {
         "Name": "_128",
-        "Description": "<desc>"
+        "Description": "Generates a gradient with 128 color stops. Ideal for high-fidelity color transitions."
       },
       {
         "Name": "_256",
-        "Description": "<desc>"
+        "Description": "Generates a gradient with 256 color stops. Recommended for ultra-smooth gradients."
       },
       {
         "Name": "_1024",
-        "Description": "<desc>"
+        "Description": "Generates a gradient with 1024 color stops. Used for extremely fine color detail."
       },
       {
         "Name": "_2048",
-        "Description": "<desc>"
+        "Description": "Generates a gradient with 2048 color stops. Maximum smoothness for professional-grade color lookup."
       }
     ]
   },
   {
     "Name": "Fuzzy",
-    "Description": "The amount of fuzziness on bitmap image."
+    "Description": "Controls the amount of fuzziness or blur applied to the gradient, affecting the softness of color transitions in the bitmap image."
   },
   {
     "Name": "Offset",
-    "Description": ""
+    "Description": "Shifts the position of the gradient along its axis, allowing adjustment of where color stops are mapped."
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process."
+    "Description": "Defines the randomization pattern or seed for the node's process, ensuring reproducible results when generating gradients."
   },
   {
     "Name": "Synthesize Colors",
-    "Description": ""
+    "Description": "Generates a color lookup gradient based on the specified number of samples and other parameters. The resulting gradient can be used for terrain coloring or other visual effects."
   },
   {
     "Name": "Export JSON",
-    "Description": ""
+    "Description": "Exports the synthesized gradient and node configuration as a JSON file for use in other applications or for documentation purposes."
   }
 ]

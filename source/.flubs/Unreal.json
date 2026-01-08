@@ -1,302 +1,106 @@
 ﻿[
   {
     "Name": "Automatic Size",
-    "Description": ""
+    "Description": "Automatically determines the optimal export resolution for Unreal Engine based on the input terrain and project settings."
   },
   {
     "Name": "Target Size",
-    "Description": "",
+    "Description": "Specifies the desired export resolution for Unreal Engine heightmaps and textures. Choose from standard Unreal-compatible sizes for best results.",
     "Flubs": [
       {
         "Name": "x8129",
-        "Description": "<desc>"
+        "Description": "Exports at 8129 x 8129 pixels, suitable for very large landscapes in Unreal Engine."
       },
       {
         "Name": "x4033",
-        "Description": "<desc>"
+        "Description": "Exports at 4033 x 4033 pixels, commonly used for large terrain tiles."
       },
       {
         "Name": "x2017",
-        "Description": "<desc>"
+        "Description": "Exports at 2017 x 2017 pixels, ideal for medium-sized terrain tiles."
       },
       {
         "Name": "x1009",
-        "Description": "<desc>"
+        "Description": "Exports at 1009 x 1009 pixels, suitable for smaller terrain tiles or test scenes."
       },
       {
         "Name": "x505",
-        "Description": "<desc>"
+        "Description": "Exports at 505 x 505 pixels, used for small terrain tiles or prototyping."
       }
     ]
   },
   {
     "Name": "Dont Resize Textures",
-    "Description": ""
+    "Description": "Prevents automatic resizing of textures during export, preserving the original resolution of input textures."
   },
   {
     "Name": "LOD Info",
-    "Description": ""
+    "Description": "Provides Level of Detail (LOD) information for exported terrain, enabling optimized rendering and streaming in Unreal Engine."
   },
   {
     "Name": "Format",
-    "Description": "",
+    "Description": "Selects the file format for exported terrain data. Choose the format that best matches your Unreal Engine workflow.",
     "Flubs": [
       {
         "Name": "PNG",
-        "Description": "<desc>"
+        "Description": "Exports terrain data as PNG images, suitable for color maps and masks."
       },
       {
         "Name": "R16",
-        "Description": "<desc>"
+        "Description": "Exports terrain data as 16-bit RAW files, recommended for heightmaps to preserve elevation detail."
       },
       {
         "Name": "RAW",
-        "Description": "<desc>"
+        "Description": "Exports terrain data as RAW files, compatible with Unreal Engine for heightmaps and other data."
       }
     ]
   },
   {
     "Name": "Naming",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group for naming conventions and options for exported files, ensuring compatibility and clarity in Unreal Engine projects."
   },
   {
     "Name": "Unreal Friendly Naming",
-    "Description": ""
+    "Description": "Applies Unreal Engine-compatible naming conventions to exported files for easier import and organization."
   },
   {
-    "Name": "Map 1",
-    "Description": "",
+    "Name": "Map 1-10",
+    "Description": "Defines an exported map layer, such as height, mask, color, or weight. Configure each layer for Unreal Engine import.",
     "Flubs": [
       {
         "Name": "Height",
-        "Description": "<desc>"
+        "Description": "Exports the heightmap layer, representing terrain elevation for Unreal Engine landscapes."
       },
       {
         "Name": "Mask",
-        "Description": "<desc>"
+        "Description": "Exports a mask layer, used for material blending or selective placement in Unreal Engine."
       },
       {
         "Name": "Color",
-        "Description": "<desc>"
+        "Description": "Exports a color map layer, providing surface color information for terrain texturing."
       },
       {
         "Name": "Weight",
-        "Description": "<desc>"
-      }
-    ]
-  },
-  {
-    "Name": "Map 2",
-    "Description": "",
-    "Flubs": [
-      {
-        "Name": "Height",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Mask",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Color",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Weight",
-        "Description": "<desc>"
-      }
-    ]
-  },
-  {
-    "Name": "Map 3",
-    "Description": "",
-    "Flubs": [
-      {
-        "Name": "Height",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Mask",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Color",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Weight",
-        "Description": "<desc>"
-      }
-    ]
-  },
-  {
-    "Name": "Map 4",
-    "Description": "",
-    "Flubs": [
-      {
-        "Name": "Height",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Mask",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Color",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Weight",
-        "Description": "<desc>"
-      }
-    ]
-  },
-  {
-    "Name": "Map 5",
-    "Description": "",
-    "Flubs": [
-      {
-        "Name": "Height",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Mask",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Color",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Weight",
-        "Description": "<desc>"
-      }
-    ]
-  },
-  {
-    "Name": "Map 6",
-    "Description": "",
-    "Flubs": [
-      {
-        "Name": "Height",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Mask",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Color",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Weight",
-        "Description": "<desc>"
-      }
-    ]
-  },
-  {
-    "Name": "Map 7",
-    "Description": "",
-    "Flubs": [
-      {
-        "Name": "Height",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Mask",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Color",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Weight",
-        "Description": "<desc>"
-      }
-    ]
-  },
-  {
-    "Name": "Map 8",
-    "Description": "",
-    "Flubs": [
-      {
-        "Name": "Height",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Mask",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Color",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Weight",
-        "Description": "<desc>"
-      }
-    ]
-  },
-  {
-    "Name": "Map 9",
-    "Description": "",
-    "Flubs": [
-      {
-        "Name": "Height",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Mask",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Color",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Weight",
-        "Description": "<desc>"
-      }
-    ]
-  },
-  {
-    "Name": "Map 10",
-    "Description": "",
-    "Flubs": [
-      {
-        "Name": "Height",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Mask",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Color",
-        "Description": "<desc>"
-      },
-      {
-        "Name": "Weight",
-        "Description": "<desc>"
+        "Description": "Exports a weight map layer, used for controlling material distribution or foliage placement."
       }
     ]
   },
   {
     "Name": "Add Input",
-    "Description": ""
+    "Description": "Adds an additional input map layer for export, allowing for more complex terrain data to be sent to Unreal Engine."
   },
   {
     "Name": "Information",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group for informational parameters and metadata about the export process."
   },
   {
     "Name": "Information 2",
-    "Description": ""
+    "Description": "Additional metadata or notes related to the Unreal Engine export process."
   },
   {
     "Name": "Information 1",
-    "Description": ""
+    "Description": "General information or notes about the Unreal Engine export settings."
   }
 ]

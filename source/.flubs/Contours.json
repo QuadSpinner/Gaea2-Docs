@@ -1,30 +1,31 @@
 ﻿[
   {
     "Name": "Count",
-    "Description": ""
+    "Description": "Sets the number of main contour lines to generate. Higher values create more elevation bands across the terrain."
   },
   {
     "Name": "Subdivision",
-    "Description": ""
+    "Description": "Controls the number of subdivisions between main contour lines, adding finer detail and intermediate lines."
   },
   {
     "Name": "Accuracy",
-    "Description": ""
+    "Description": "Adjusts the precision of contour line placement. Higher accuracy produces more exact lines that closely follow the terrain's elevation."
   },
   {
     "Name": "Lines",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for customizing the appearance and properties of contour lines."
   },
   {
     "Name": "Line Intensity",
-    "Description": ""
+    "Description": "Controls the brightness or opacity of the main contour lines, making them more or less prominent in the output."
   },
   {
     "Name": "Sub Intensity",
-    "Description": ""
+    "Description": "Adjusts the brightness or opacity of the subdivision lines, which are the finer lines between main contours."
   },
   {
     "Name": "Line Thickness",
-    "Description": ""
+    "Description": "Specifies the thickness of the contour lines. Higher values produce bolder, wider lines."
   }
 ]

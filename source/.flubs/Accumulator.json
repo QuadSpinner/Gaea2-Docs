@@ -51,10 +51,6 @@
   },
   {
     "Name": "Restrict to Group",
-    "Description": ""
-  },
-  {
-    "Name": "Warning",
-    "Description": ""
+    "Description": "Restricts accumulating from other nodes that are in the same Group as the Accumulator node."
   }
 ]

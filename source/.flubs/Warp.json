@@ -1,119 +1,121 @@
 ﻿[
   {
     "Name": "Warp",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for applying a warp (distortion) effect to the terrain or image using various noise sources and settings."
   },
   {
     "Name": "Size",
-    "Description": ""
+    "Description": "The size of the warp noise. Controls the scale of the distortion pattern applied to the input."
   },
   {
     "Name": "Strength",
-    "Description": ""
+    "Description": "The strength of the warp noise. Higher values produce more pronounced distortions."
   },
   {
     "Name": "Z Scale",
-    "Description": ""
+    "Description": "Vertical axis scale for the noise, affecting the intensity of the warp along the Z (height) axis."
   },
   {
     "Name": "Warp Source",
-    "Description": "",
+    "Description": "Selects the noise or pattern used as the source for the warp. Choose from built-in options or provide a custom source.",
     "Flubs": [
       {
         "Name": "PerlinFBM",
-        "Description": "<desc>"
+        "Description": "Uses Perlin fractal Brownian motion noise as the warp source, producing smooth, natural distortions."
       },
       {
         "Name": "VoronoiR",
-        "Description": "<desc>"
+        "Description": "Uses Voronoi (R) noise as the warp source, creating cell-like, ridged distortions."
       },
       {
         "Name": "VoronoiP",
-        "Description": "<desc>"
+        "Description": "Uses Voronoi (P) noise as the warp source, suitable for generating mountainous or peak-like distortions."
       },
       {
         "Name": "VoronoiA",
-        "Description": "<desc>"
+        "Description": "Uses Voronoi (A) noise as the warp source, blending characteristics of other Voronoi types for varied effects."
       },
       {
         "Name": "VoronoiS",
-        "Description": "<desc>"
+        "Description": "Uses Voronoi (S) noise as the warp source, emphasizing separated, individual cell boundaries."
       },
       {
         "Name": "VoronoiM",
-        "Description": "<desc>"
+        "Description": "Uses Voronoi (M) noise as the warp source, favoring dominant cells for strong, directional warping."
       },
       {
         "Name": "VoronoiD",
-        "Description": "<desc>"
+        "Description": "Uses Voronoi (D) noise as the warp source, emphasizing ridges and linear features in the distortion."
       }
     ]
   },
   {
     "Name": "Perturbation",
-    "Description": ""
+    "Description": "Applies additional random displacement to the warp, increasing the irregularity and complexity of the effect."
   },
   {
     "Name": "Complexity",
-    "Description": ""
+    "Description": "The complexity of the warp noise source. Higher values add more detail and layers to the distortion."
   },
   {
     "Name": "Roughness",
-    "Description": ""
+    "Description": "The roughness of the warp noise. Higher values (especially above 0.5) create harsher, more jagged distortions."
   },
   {
     "Name": "Normalized",
-    "Description": ""
+    "Description": "Specifies whether the noise is normalized. Normalization ensures the output remains within a standard range."
   },
   {
     "Name": "Edge Behaviour",
-    "Description": "",
+    "Description": "Determines how the warp handles the edges of the input, preventing visible seams or artifacts.",
     "Flubs": [
       {
         "Name": "Edge",
-        "Description": "<desc>"
+        "Description": "Applies standard edge handling, which may result in wrapping or stretching at the borders."
       },
       {
         "Name": "Mirror",
-        "Description": "Edge pixels are mirrored."
+        "Description": "Edge pixels are mirrored, creating seamless, reflected borders for the warp effect."
       }
     ]
   },
   {
     "Name": "Modulation",
-    "Description": ""
+    "Description": "The amount of modulation to use from the Modulation input (if connected), allowing external control over the warp intensity."
   },
   {
     "Name": "Modulation Direction",
-    "Description": ""
+    "Description": "Sets the direction of the modulation, controlling how the modulation input influences the warp."
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process."
+    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different warp results."
   },
   {
     "Name": "Iterative",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for applying the warp effect in multiple passes for increased complexity."
   },
   {
     "Name": "Iterations",
-    "Description": ""
+    "Description": "Number of warp iterations to apply. More iterations increase the complexity and layering of the distortion."
   },
   {
     "Name": "Mode",
-    "Description": "",
+    "Description": "Specifies the mode used for iterative warping, affecting how each pass is calculated and applied.",
     "Flubs": [
       {
         "Name": "Bitmap",
-        "Description": "<desc>"
+        "Description": "Applies the warp using standard bitmap-based processing for each iteration."
       },
       {
         "Name": "VectorField",
-        "Description": "<desc>"
+        "Description": "Uses a vector field to guide the warp, allowing for more directional and flow-based distortions."
       },
       {
         "Name": "VectorFieldIntegral",
-        "Description": "<desc>"
+        "Description": "Integrates the vector field over multiple passes, producing complex, cumulative warp effects."
       }
     ]
   }

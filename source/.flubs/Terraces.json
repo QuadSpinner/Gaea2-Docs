@@ -1,22 +1,22 @@
 ﻿[
   {
     "Name": "Terraces",
-    "Description": ""
+    "Description": "Controls the number and spacing of terrace steps applied to the terrain. Increasing this value creates more distinct, layered steps."
   },
   {
     "Name": "Uniformity",
-    "Description": ""
+    "Description": "Adjusts the consistency of terrace step heights. Higher uniformity produces evenly spaced terraces, while lower values introduce variation."
   },
   {
     "Name": "Steepness",
-    "Description": ""
+    "Description": "Sets the vertical sharpness of each terrace step. Higher steepness results in more abrupt transitions between steps."
   },
   {
     "Name": "Intensity",
-    "Description": ""
+    "Description": "Determines the overall strength of the terrace effect. Higher intensity makes the terraces more pronounced in the terrain."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Defines the randomization seed for procedural terrace generation. Changing the seed produces different terrace patterns."
   }
 ]

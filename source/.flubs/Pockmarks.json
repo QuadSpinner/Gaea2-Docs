@@ -1,34 +1,35 @@
 ﻿[
   {
     "Name": "Pockmarks",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for generating pockmarks—small, round depressions or pits—scattered across the terrain surface."
   },
   {
     "Name": "Size",
-    "Description": ""
+    "Description": "Controls the average diameter of each pockmark. Larger values produce bigger pits, while smaller values create finer surface detail."
   },
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Sets the overall scale of the pockmark pattern, affecting how widely pockmarks are distributed across the terrain."
   },
   {
     "Name": "Depth",
-    "Description": ""
+    "Description": "Specifies how deep each pockmark is carved into the surface. Higher values create more pronounced depressions."
   },
   {
     "Name": "Density",
-    "Description": ""
+    "Description": "Adjusts how many pockmarks are scattered across the terrain. Higher values increase the number of pits per area."
   },
   {
     "Name": "Multiplier",
-    "Description": ""
+    "Description": "Scales the intensity or strength of the pockmark effect, amplifying the impact of each depression."
   },
   {
     "Name": "Invert",
-    "Description": ""
+    "Description": "Inverts the effect, turning pockmarks into raised bumps instead of depressions."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Randomization seed for pockmark placement and variation. Changing the seed produces different pockmark patterns."
   }
 ]

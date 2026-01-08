@@ -1,48 +1,49 @@
 ﻿[
   {
     "Name": "Start",
-    "Description": ""
+    "Description": "Specifies the starting color of the gradient, mapped to the darkest (black) areas of the input map."
   },
   {
     "Name": "End",
-    "Description": ""
+    "Description": "Specifies the ending color of the gradient, mapped to the brightest (white) areas of the input map."
   },
   {
     "Name": "Hue",
-    "Description": ""
+    "Description": "Adjusts the hue of the gradient colors, allowing for global color shifts across the entire gradient."
   },
   {
     "Name": "Saturation",
-    "Description": ""
+    "Description": "Controls the intensity or vividness of the gradient colors. Higher values produce more vibrant colors, while lower values result in muted tones."
   },
   {
     "Name": "Lightness",
-    "Description": ""
+    "Description": "Sets the overall brightness of the gradient colors, making the output lighter or darker."
   },
   {
     "Name": "Processing",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing post-processing options for the gradient, such as enhancement and adjustment."
   },
   {
     "Name": "Enhance",
-    "Description": "",
+    "Description": "Applies additional enhancement to the gradient's tonal range or contrast before tinting.",
     "Flubs": [
       {
         "Name": "None",
-        "Description": "<desc>"
+        "Description": "No enhancement is applied; the gradient is mapped directly from the input."
       },
       {
         "Name": "Autolevel",
-        "Description": "<desc>"
+        "Description": "Automatically adjusts the levels to maximize the full tonal range, improving contrast in the gradient mapping."
       },
       {
         "Name": "Equalize",
-        "Description": "<desc>"
+        "Description": "Equalizes the histogram, distributing intensity values more evenly for a balanced gradient effect."
       }
     ]
   },
   {
     "Name": "Reverse",
-    "Description": ""
+    "Description": "Inverts the gradient mapping, swapping the start and end colors so that black maps to the end color and white maps to the start color."
   }
 ]

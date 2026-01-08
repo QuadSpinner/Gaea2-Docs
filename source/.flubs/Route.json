@@ -1,6 +1,6 @@
 ﻿[
   {
     "Name": "Choice",
-    "Description": ""
+    "Description": "The port through which the input should be routed."
   }
 ]

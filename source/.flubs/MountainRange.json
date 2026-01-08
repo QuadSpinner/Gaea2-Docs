@@ -1,54 +1,54 @@
 ﻿[
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Controls the overall size and extent of the mountain ranges. Higher values create broader, more expansive ranges."
   },
   {
     "Name": "Height",
-    "Description": ""
+    "Description": "Sets the maximum elevation of the mountain range, determining how tall the peaks and ridges will be."
   },
   {
     "Name": "Style",
-    "Description": "",
+    "Description": "Specifies the geological and visual style of the mountain range, affecting its shape, erosion, and surface features.",
     "Flubs": [
       {
         "Name": "Basic",
-        "Description": "<desc>"
+        "Description": "Generates a simple, unmodified mountain range with minimal erosion or geological detail."
       },
       {
         "Name": "Eroded",
-        "Description": "<desc>"
+        "Description": "Applies erosion effects to the mountain range, creating realistic weathering, gullies, and worn surfaces."
       },
       {
         "Name": "Stratified",
-        "Description": "<desc>"
+        "Description": "Adds visible geological strata or layers to the mountains, simulating sedimentary or volcanic banding."
       },
       {
         "Name": "Alpine",
-        "Description": "<desc>"
+        "Description": "Creates sharp, rugged alpine features with steep faces and dramatic relief, typical of young mountain ranges."
       }
     ]
   },
   {
     "Name": "Bulk",
-    "Description": "",
+    "Description": "Controls the mass and volume of the mountain range, affecting how thick or substantial the mountains appear.",
     "Flubs": [
       {
         "Name": "Low",
-        "Description": "<desc>"
+        "Description": "Produces slender, less massive mountains with more delicate features."
       },
       {
         "Name": "Medium",
-        "Description": "<desc>"
+        "Description": "Creates mountains with a balanced amount of mass, offering a natural appearance."
       },
       {
         "Name": "High",
-        "Description": "<desc>"
+        "Description": "Generates thick, heavy mountains with substantial volume and broad bases."
       }
     ]
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Randomization seed for generating unique variations of the mountain range. Changing the seed produces different shapes and arrangements."
   }
 ]

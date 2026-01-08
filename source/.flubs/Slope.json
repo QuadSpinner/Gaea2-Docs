@@ -1,28 +1,28 @@
 ﻿[
   {
     "Name": "Range",
-    "Description": ""
+    "Description": "Sets the minimum and maximum slope angles to include. Only terrain within this range is selected in the mask."
   },
   {
     "Name": "Falloff",
-    "Description": "The soft falloff at the maximum edge."
+    "Description": "Controls the soft transition at the range boundaries. Higher values create a smoother, more gradual blend from selected to unselected areas."
   },
   {
     "Name": "Type",
-    "Description": "",
+    "Description": "Defines the slope calculation method, affecting how the mask interprets and distributes slope values.",
     "Flubs": [
       {
         "Name": "Accurate",
-        "Description": "<desc>"
+        "Description": "Uses precise slope computation for more realistic, detail-preserving results."
       },
       {
         "Name": "Normalized",
-        "Description": "<desc>"
+        "Description": "Produces a consistent, even distribution across the slope range, useful for stylized or uniform masks."
       }
     ]
   },
   {
     "Name": "Micro Accent",
-    "Description": ""
+    "Description": "Enhances fine details and subtle variations in the slope mask, adding extra texture and definition to small-scale features."
   }
 ]

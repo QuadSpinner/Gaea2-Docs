@@ -1,63 +1,63 @@
 ﻿[
   {
     "Name": "Duration",
-    "Description": "Lorem ipsum"
+    "Description": "Controls how long the simulation runs. Longer durations produce stronger and more extensive crumbling effects."
   },
   {
     "Name": "Strength",
-    "Description": "Lorem ipsum"
+    "Description": "Defines how intensely the rock or terrain breaks apart from the main body. Higher values result in more aggressive fragmentation."
   },
   {
     "Name": "Coverage",
-    "Description": "Lorem ipsum"
+    "Description": "Sets how far the crumbling effect spreads inward from exposed edges, determining the affected area."
   },
   {
     "Name": "Horizontal",
-    "Description": "Lorem ipsum"
+    "Description": "Biases the crumble effect towards flow origins or towards deposits, influencing the lateral direction of collapse."
   },
   {
     "Name": "Vertical",
-    "Description": "Lorem ipsum"
+    "Description": "Biases the crumble effect towards higher or lower altitudes, controlling whether upper or lower terrain is more affected."
   },
   {
     "Name": "Rock Hardness",
-    "Description": "Lorem ipsum"
+    "Description": "Controls material resistance, reducing how much terrain collapses. Higher values simulate harder, more resilient rock."
   },
   {
     "Name": "Edge",
-    "Description": "Lorem ipsum"
+    "Description": "Expands or reduces the impact of crumbling specifically on sharp terrain edges, allowing for more pronounced or subdued edge effects."
   },
   {
     "Name": "Downcutting",
-    "Description": "Lorem ipsum"
+    "Description": "Controls how deeply the simulation carves downward into the terrain during crumbling, affecting the vertical extent of collapse."
   },
   {
     "Name": "Depth",
-    "Description": "Lorem ipsum"
+    "Description": "Adjusts the overall depth of the collapsed areas, determining how far the terrain sinks or breaks away."
   },
   {
     "Name": "Direction",
-    "Description": "",
+    "Description": "Specifies the primary direction in which the crumbling effect propagates across the terrain.",
     "Flubs": [
       {
         "Name": "X",
-        "Description": "<desc>"
+        "Description": "Directs the crumbling effect along the X (horizontal) axis."
       },
       {
         "Name": "N",
-        "Description": "<desc>"
+        "Description": "Directs the crumbling effect towards the north (upward in world space)."
       },
       {
         "Name": "E",
-        "Description": "<desc>"
+        "Description": "Directs the crumbling effect towards the east (right in world space)."
       },
       {
         "Name": "S",
-        "Description": "<desc>"
+        "Description": "Directs the crumbling effect towards the south (downward in world space)."
       },
       {
         "Name": "W",
-        "Description": "<desc>"
+        "Description": "Directs the crumbling effect towards the west (left in world space)."
       }
     ]
   }

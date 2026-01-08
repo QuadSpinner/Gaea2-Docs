@@ -1,10 +1,11 @@
 ﻿[
   {
     "Name": "Blur",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters for applying a blur effect with a variable radius, allowing for spatially adaptive smoothing based on input masks or values."
   },
   {
     "Name": "Radius",
-    "Description": ""
+    "Description": "Controls the blur radius for each pixel. The radius can vary across the image, enabling localized or mask-driven blur effects."
   }
 ]
