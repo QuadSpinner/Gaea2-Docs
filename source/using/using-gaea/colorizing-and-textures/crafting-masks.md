@@ -34,7 +34,7 @@ Now, if you use the same CLUT map but feed it a FlowMap instead of the terrain h
 
 ### Colorization with Texture Nodes
 
-Gaea provides nodes such as [TextureBase](Reference/nodes/derive/texturebase) and [Texturizer](Reference/nodes/derive/texturizer) provide complex colorization masks based on the terrain's inherent features.
+Gaea provides nodes such as [TextureBase](@texturebase) and [Texturizer](@texturizer) provide complex colorization masks based on the terrain's inherent features.
 
 ![](/.data/assets/Gaea_-_Untitled_04-44-21-AM.png)
 
