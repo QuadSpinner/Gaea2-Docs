@@ -14,7 +14,7 @@ The Mixer node provides an easy interface to add and manage multiple color layer
 
 By default, Mixer exposes three inputs. You can use the Add Input command in the Property Window toolbar, or drop a connection on the Mixer node and select "Add new port". You can add up to 15 layers.
 
-![](/.data/assets/image%20(56).png)
+![](/.data/assets/image-(56).png)
 
 You can change the order of layer-blending by simply dragging and changing the order of layers.
 

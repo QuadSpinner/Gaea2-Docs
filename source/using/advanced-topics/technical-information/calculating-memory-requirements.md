@@ -27,7 +27,7 @@ The table below describes the size of the cache of a single node at different re
 
 During the lifetime of a node's process, dozens - sometimes hundreds - of datasets may be created, altered, and discarded. This is one of the reasons why Gaea requires large amounts of memory when processing.
 
-![Allocated Memory readout in the Status Bar](/.data/assets/image%20(47).png)
+![Allocated Memory readout in the Status Bar](/.data/assets/image-(47).png)
 
 Gaea's Status Bar shows the currently allocated memory in the bottom right corner of the screen. This updates every 5 seconds. However, it only counts the allocated cache - the amount used in between for temporary usage - so should only be considered an estimate.
 
