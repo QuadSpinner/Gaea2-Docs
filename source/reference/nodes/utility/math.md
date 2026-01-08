@@ -8,13 +8,3 @@ order: 13
 
 
 # Properties
-
-- **Expression**  
-  
-- **Normalized Coordinates**  
-  
-- **Information**  
-  
-
-
-

@@ -8,8 +8,5 @@ order: 08
 
 # Properties
 
-- **Falloff**  
-  
-
 
 

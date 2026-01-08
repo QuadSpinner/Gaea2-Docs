@@ -20,14 +20,5 @@ You do not need to use HydroFix with Rivers as it has a special version of it bu
 :::
 
 
-
 # Properties
-
-
-## HydroFix
-
-- **Downcutting**  
-  
-
-
 

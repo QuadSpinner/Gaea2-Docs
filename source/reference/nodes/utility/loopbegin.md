@@ -10,9 +10,3 @@ order: 10
 
 
 # Properties
-
-- **Information 1**  
-  
-
-
-

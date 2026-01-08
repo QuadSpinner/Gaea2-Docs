@@ -7,11 +7,3 @@ order: 11
 
 
 # Properties
-
-- **Start**  
-  
-- **End**  
-  
-
-
-

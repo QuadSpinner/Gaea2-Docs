@@ -9,10 +9,4 @@ order: 15
 # Properties
 
 
-## Extend
-
-- **Value**  
-  
-
-
 

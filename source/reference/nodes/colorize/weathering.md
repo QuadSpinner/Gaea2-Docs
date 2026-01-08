@@ -7,9 +7,3 @@ order: 13
 
 
 # Properties
-
-
-## Primary
-
-
-

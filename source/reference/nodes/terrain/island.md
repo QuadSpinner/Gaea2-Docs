@@ -21,12 +21,3 @@ When refining the shape, keep your eye on the underlying generated shape instead
 
 # Properties
 
-- **Size**  
-  
-- **Chaos**  
-  
-- **Seed**  
-  The randomization pattern or seed for the node's process.
-
-
-

@@ -8,10 +8,5 @@ order: 02
 
 # Properties
 
-- **Scale**  
-  
-- **Jitter**  
-  
-
 
 

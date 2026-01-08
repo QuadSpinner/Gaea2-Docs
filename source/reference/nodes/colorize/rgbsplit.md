@@ -13,8 +13,7 @@ RGBSplit can take a color node and split the Red, Green, and Blue channels into 
 
 # Properties
 
-- **Autolevel Channels**  
-  
+
 
 
 

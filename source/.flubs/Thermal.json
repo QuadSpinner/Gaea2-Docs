@@ -1,58 +1,61 @@
 ﻿[
   {
     "Name": "Erosion",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters that control the thermal erosion process, affecting how terrain is smoothed and reshaped."
   },
   {
     "Name": "Duration",
-    "Description": "Duration of the thermal erosion process."
+    "Description": "Controls how long the thermal erosion process is applied. Higher values result in more extensive terrain changes over time."
   },
   {
     "Name": "Strength",
-    "Description": "Strength of the thermal erosion process."
+    "Description": "Sets the intensity of thermal erosion. Increasing this value produces more pronounced smoothing and displacement, especially on steep slopes."
   },
   {
     "Name": "Anisotropy",
-    "Description": "Thermal erosion's anisotropy that affects how rock is affected, and deposits formed. See the Anisotropy section for details."
+    "Description": "Adjusts the directional bias of erosion and deposit formation. Low values preserve the original terrain, while high values intensify directional erosion, shaping talus deposits and terrain features."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Randomizes the erosion pattern while keeping other settings unchanged, allowing for varied results without retuning parameters."
   },
   {
     "Name": "Talus",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters that control talus formation, which is the accumulation of loose material at the base of slopes."
   },
   {
     "Name": "Angle",
-    "Description": ""
+    "Description": "Sets the maximum slope angle before material begins to move downward, forming talus. Lower angles create gentler slopes, while higher angles allow steeper terrain before shifting occurs."
   },
   {
     "Name": "Settling",
-    "Description": ""
+    "Description": "Controls how quickly and thoroughly loose material settles after being eroded. Higher values result in faster, more complete settling, while lower values allow for gradual accumulation."
   },
   {
     "Name": "Sediment Removal",
-    "Description": "Amount of sediment to be removed."
+    "Description": "Determines the amount of sediment removed during talus formation. Higher values produce cleaner, sharper features, while lower values allow more sediment to accumulate, creating smoother transitions."
   },
   {
     "Name": "Scale",
-    "IsGroup": true, "Description": ""
+    "IsGroup": true,
+    "Description": "Group containing parameters that adjust the scale and physical properties of thermal erosion features."
   },
   {
     "Name": "Feature Scale",
-    "Description": "Scale of the largest feature in the terrain."
+    "Description": "Sets the scale of the largest thermal erosion features in the terrain. Larger values create broader, more pronounced features; smaller values result in finer details."
   },
   {
     "Name": "Real Scale",
-    "Description": "Use the scale defined in the terrain. Disable to access addtional options and modify erosion's physics."
+    "Description": "Uses the scale defined by the terrain's physical dimensions. Disable to access additional options and manually adjust erosion physics."
   },
   {
     "Name": "Terrain Scale",
-    "Description": "Scale of the terrain. Available when Real Scale is turned Off"
+    "Description": "Specifies the overall scale of the terrain when Real Scale is turned off, allowing for manual adjustment of terrain size."
   },
   {
     "Name": "Verticality",
-    "Description": "Height of the terrain.Available when Real Scale is turned Off"
+    "Description": "Controls the height of the terrain when Real Scale is turned off, enabling further customization of vertical exaggeration."
   }
 ]

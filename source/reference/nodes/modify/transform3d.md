@@ -7,27 +7,6 @@ order: 36
 
 # Transform3D
 
-## Transform3D
 
-## Properties
+# Properties
 
-### Position
-
-* **Drop to Floor**:
-* **Offset X**:
-* **Offset Y**:
-* **Offset Z**:
-
-### Scale
-
-* **Scale**:
-
-### Rotation
-
-* **Pitch**:
-* **Yaw**:
-* **Roll**:
-
-### Quality
-
-* **Antialiasing**:

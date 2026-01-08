@@ -8,10 +8,5 @@ order: 08
 
 # Properties
 
-- **Soften**  
-  
-- **OpenPainter**  
-  
-
 
 

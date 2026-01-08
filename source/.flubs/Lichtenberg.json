@@ -1,44 +1,44 @@
 ﻿[
   {
     "Name": "Style",
-    "Description": "",
+    "Description": "Selects the style for the cracks, determining the overall appearance and pattern of the Lichtenberg figures.",
     "Flubs": [
       {
         "Name": "A",
-        "Description": "<desc>"
+        "Description": "Style A: Produces a classic branching crack pattern, suitable for general terrain fracturing."
       },
       {
         "Name": "B",
-        "Description": "<desc>"
+        "Description": "Style B: Generates a denser, more intricate crack network for detailed surface effects."
       },
       {
         "Name": "C",
-        "Description": "<desc>"
+        "Description": "Style C: Creates a sparse, wide-spread crack pattern, ideal for subtle terrain disruption."
       }
     ]
   },
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "Controls the scale of the larger cracks, affecting how prominent and wide the main crack structures appear."
   },
   {
     "Name": "Complexity",
-    "Description": ""
+    "Description": "Adjusts the level of detail in the crack network. Higher values produce more branches and finer crack structures."
   },
   {
     "Name": "Depth",
-    "Description": ""
+    "Description": "Sets the depth of the cracks, determining how deeply the cracks cut into the terrain surface."
   },
   {
     "Name": "Expand",
-    "Description": ""
+    "Description": "Expands the cracks outward, increasing their coverage and making the crack network more pronounced."
   },
   {
     "Name": "Bias",
-    "Description": ""
+    "Description": "Provides artistic control over the shape and direction of the cracks, allowing for customized crack patterns."
   },
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "Random seed for generating the crack pattern. Changing the seed produces different crack arrangements while keeping other settings the same."
   }
 ]

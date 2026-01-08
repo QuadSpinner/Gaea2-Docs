@@ -21,3 +21,5 @@ For more convenient usage, try the Autolevel via Modifiers. See [Using Modifiers
 
 Or you can try the @adjust node which is an easier to use node and provides additional functionality.
 :::
+
+# Properties

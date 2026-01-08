@@ -12,7 +12,7 @@ Crumble runs a different kind of simulation that feeds off of existing crevices,
 
 Crumble works with just about any Primitive, Erosion, and Surface node. While the controls may seem somewhat simplistic, they can create a wide range of effects depending on the combination.
 
-### Controlling the Edge
+## Controlling the Edge
 
 Horizontal bias shifts the erosion either towards the beginning of flow structures or towards the deposits at the end. Vertical bias shifts the erosion towards the higher altitude or lower altitudes.
 
@@ -22,4 +22,4 @@ While both may look simple, combining them in unique ways can give you a variety
 
 While Crumble does "eat away" the edges, the control over the edges was limited. With the new Edge slider, you can reduce or expand the effect the erosion process has on sharp edges. You can combine this with the Rock Hardness slider for absolute control.
 
-## Properties
+# Properties
