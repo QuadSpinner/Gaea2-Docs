@@ -1,6 +1,8 @@
 ﻿[
   {
     "Name": "Information 1",
-    "Description": ""
+    "Description": "",
+    "Type": "Byte",
+    "IsGroup": false
   }
 ]

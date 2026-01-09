@@ -2,55 +2,85 @@
   {
     "Name": "Type",
     "Description": "Specifies the method used to generate the normal map. Determines the level of detail and the intended use for the resulting normals.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Standard",
-        "Description": "Generates a standard normal map based on the main heightfield, suitable for general use in rendering and texturing."
+        "Description": "Generates a standard normal map based on the main heightfield, suitable for general use in rendering and texturing.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Detail",
-        "Description": "Generates a high-frequency detail normal map, emphasizing fine surface features for use as a detail overlay or in advanced shading."
+        "Description": "Generates a high-frequency detail normal map, emphasizing fine surface features for use as a detail overlay or in advanced shading.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Width",
-    "Description": "Sets the horizontal resolution of the generated normal map in pixels. Higher values produce more detailed maps but increase memory usage."
+    "Description": "Sets the horizontal resolution of the generated normal map in pixels. Higher values produce more detailed maps but increase memory usage.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Height",
-    "Description": "Sets the vertical resolution of the generated normal map in pixels. Higher values produce more detailed maps but increase memory usage."
+    "Description": "Sets the vertical resolution of the generated normal map in pixels. Higher values produce more detailed maps but increase memory usage.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Detail Size",
-    "Description": "Controls the scale of fine details captured in the normal map. Smaller values emphasize finer features, while larger values smooth out detail."
+    "Description": "Controls the scale of fine details captured in the normal map. Smaller values emphasize finer features, while larger values smooth out detail.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Handedness",
     "Description": "Determines the coordinate system used for the normal map, affecting how normals are interpreted in different rendering engines.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Left",
-        "Description": "Generates the normal map using a left-handed coordinate system, commonly used in some 3D applications and engines."
+        "Description": "Generates the normal map using a left-handed coordinate system, commonly used in some 3D applications and engines.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Right",
-        "Description": "Generates the normal map using a right-handed coordinate system, standard in many 3D applications and engines."
+        "Description": "Generates the normal map using a right-handed coordinate system, standard in many 3D applications and engines.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Up Axis",
     "Description": "Specifies which axis is considered 'up' for the normal map, ensuring compatibility with different engine conventions.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "YUp",
-        "Description": "Sets the Y axis as the vertical (up) direction, matching engines and workflows that use Y as up."
+        "Description": "Sets the Y axis as the vertical (up) direction, matching engines and workflows that use Y as up.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "ZUp",
-        "Description": "Sets the Z axis as the vertical (up) direction, matching engines and workflows that use Z as up."
+        "Description": "Sets the Z axis as the vertical (up) direction, matching engines and workflows that use Z as up.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
+  },
+  {
+    "Name": "Information 1",
+    "Description": "",
+    "Type": "Byte",
+    "IsGroup": false
   }
 ]

@@ -1,26 +1,38 @@
 ﻿[
   {
     "Name": "R",
-    "Description": "Amount of R input channel."
+    "Description": "Amount of R input channel.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "G",
-    "Description": "Amount of G input channel."
+    "Description": "Amount of G input channel.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "B",
-    "Description": "Amount of B input channel."
+    "Description": "Amount of B input channel.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "A",
-    "Description": "Amount of alpha input channel."
+    "Description": "Amount of alpha input channel.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Autolevel",
-    "Description": "Automatically adjusts the levels of the combined channels to maximize the output range."
+    "Description": "Automatically adjusts the levels of the combined channels to maximize the output range.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Clamp Product",
-    "Description": "Clamps the product of the R, G, and B channels to the 0..1 range, ensuring the output does not exceed valid limits."
+    "Description": "Clamps the product of the R, G, and B channels to the 0..1 range, ensuring the output does not exceed valid limits.",
+    "Type": "Boolean",
+    "IsGroup": false
   }
 ]

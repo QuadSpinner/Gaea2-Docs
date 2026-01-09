@@ -2,49 +2,71 @@
   {
     "Name": "Format",
     "Description": "Specifies the file format used for exporting the point cloud. Choose the format that best fits your workflow or target application.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "PLY",
-        "Description": "Exports the point cloud in the standard ASCII PLY (Polygon File Format) format, widely supported for 3D data exchange."
+        "Description": "Exports the point cloud in the standard ASCII PLY (Polygon File Format) format, widely supported for 3D data exchange.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "PLY_BINARY",
-        "Description": "Exports the point cloud in binary PLY format, offering smaller file sizes and faster read/write performance compared to ASCII."
+        "Description": "Exports the point cloud in binary PLY format, offering smaller file sizes and faster read/write performance compared to ASCII.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "XYZ",
-        "Description": "Exports the point cloud as a simple XYZ text file, with each line representing a point's X, Y, and Z coordinates."
+        "Description": "Exports the point cloud as a simple XYZ text file, with each line representing a point's X, Y, and Z coordinates.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "CSV",
-        "Description": "Exports the point cloud as a CSV (Comma-Separated Values) file, suitable for use in spreadsheets or data analysis tools."
+        "Description": "Exports the point cloud as a CSV (Comma-Separated Values) file, suitable for use in spreadsheets or data analysis tools.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Scale",
     "Description": "Sets the unit or normalization method for the exported point cloud coordinates. Determines how the point positions are scaled in the output file.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Normalized",
-        "Description": "Exports coordinates normalized to a 0–1 range, useful for workflows that require unitless or relative positions."
+        "Description": "Exports coordinates normalized to a 0–1 range, useful for workflows that require unitless or relative positions.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Meter",
-        "Description": "Exports coordinates in meters, matching real-world scale for compatibility with GIS and engineering applications."
+        "Description": "Exports coordinates in meters, matching real-world scale for compatibility with GIS and engineering applications.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Kilometer",
-        "Description": "Exports coordinates in kilometers, suitable for large-scale terrain or geospatial datasets."
+        "Description": "Exports coordinates in kilometers, suitable for large-scale terrain or geospatial datasets.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Center Pivot",
-    "Description": "If enabled, centers the point cloud around the origin by offsetting all points so that the dataset's centroid is at (0,0,0). Useful for easier manipulation in 3D applications."
+    "Description": "If enabled, centers the point cloud around the origin by offsetting all points so that the dataset's centroid is at (0,0,0). Useful for easier manipulation in 3D applications.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Ignore Zero Values",
-    "Description": "When enabled, points with zero or null values are excluded from the export. This helps remove empty data such as the normal low floor of the terrain from the output file."
+    "Description": "When enabled, points with zero or null values are excluded from the export. This helps remove empty data such as the normal low floor of the terrain from the output file.",
+    "Type": "Boolean",
+    "IsGroup": false
   }
 ]

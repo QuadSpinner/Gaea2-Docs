@@ -1,27 +1,39 @@
 ﻿[
   {
     "Name": "Power",
-    "Description": "The strength of the inflate/deflate operation. Higher values cause drastic shifts in shape formation."
+    "Description": "The strength of the inflate/deflate operation. Higher values cause drastic shifts in shape formation.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Scale",
-    "Description": "The amount of details to preserve. Higher values cause more prominent shapes to form."
+    "Description": "The amount of details to preserve. Higher values cause more prominent shapes to form.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Iterations",
-    "Description": ""
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Style",
     "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Inward",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Outward",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   }

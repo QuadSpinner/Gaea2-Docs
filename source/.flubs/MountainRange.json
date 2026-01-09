@@ -1,54 +1,78 @@
 ﻿[
   {
     "Name": "Scale",
-    "Description": "Controls the overall size and extent of the mountain ranges. Higher values create broader, more expansive ranges."
+    "Description": "Controls the overall size and extent of the mountain ranges. Higher values create broader, more expansive ranges.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Height",
-    "Description": "Sets the maximum elevation of the mountain range, determining how tall the peaks and ridges will be."
+    "Description": "Sets the maximum elevation of the mountain range, determining how tall the peaks and ridges will be.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Style",
     "Description": "Specifies the geological and visual style of the mountain range, affecting its shape, erosion, and surface features.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Basic",
-        "Description": "Generates a simple, unmodified mountain range with minimal erosion or geological detail."
+        "Description": "Generates a simple, unmodified mountain range with minimal erosion or geological detail.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Eroded",
-        "Description": "Applies erosion effects to the mountain range, creating realistic weathering, gullies, and worn surfaces."
+        "Description": "Applies erosion effects to the mountain range, creating realistic weathering, gullies, and worn surfaces.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Stratified",
-        "Description": "Adds visible geological strata or layers to the mountains, simulating sedimentary or volcanic banding."
+        "Description": "Adds visible geological strata or layers to the mountains, simulating sedimentary or volcanic banding.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Alpine",
-        "Description": "Creates sharp, rugged alpine features with steep faces and dramatic relief, typical of young mountain ranges."
+        "Description": "Creates sharp, rugged alpine features with steep faces and dramatic relief, typical of young mountain ranges.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Bulk",
     "Description": "Controls the mass and volume of the mountain range, affecting how thick or substantial the mountains appear.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Low",
-        "Description": "Produces slender, less massive mountains with more delicate features."
+        "Description": "Produces slender, less massive mountains with more delicate features.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Medium",
-        "Description": "Creates mountains with a balanced amount of mass, offering a natural appearance."
+        "Description": "Creates mountains with a balanced amount of mass, offering a natural appearance.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "High",
-        "Description": "Generates thick, heavy mountains with substantial volume and broad bases."
+        "Description": "Generates thick, heavy mountains with substantial volume and broad bases.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Seed",
-    "Description": "Randomization seed for generating unique variations of the mountain range. Changing the seed produces different shapes and arrangements."
+    "Description": "Randomization seed for generating unique variations of the mountain range. Changing the seed produces different shapes and arrangements.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

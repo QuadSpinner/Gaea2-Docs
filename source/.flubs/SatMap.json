@@ -2,111 +2,162 @@
   {
     "Name": "Library",
     "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "New",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Rock",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Sand",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Green",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Blue",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Color",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Randomize",
-    "Description": ""
+    "Description": "",
+    "Type": "Command",
+    "IsGroup": false
   },
   {
     "Name": "Library Item",
-    "Description": ""
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Range",
-    "Description": ""
+    "Description": "",
+    "Type": "Float2",
+    "IsGroup": false
   },
   {
     "Name": "Bias",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Processing",
-    "IsGroup": true, "Description": ""
+    "Description": "",
+    "IsGroup": true
   },
   {
     "Name": "Enhance",
     "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "None",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Autolevel",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Equalize",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Reverse",
-    "Description": ""
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Rough",
     "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "None",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Low",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Med",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "High",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Ultra",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Hue",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Saturation",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Lightness",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

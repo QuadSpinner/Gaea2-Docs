@@ -1,19 +1,25 @@
 ﻿[
   {
     "Name": "Meshify",
-    "IsGroup": true,
-    "Description": "Group containing parameters for converting a heightfield into a faceted mesh, simulating real polygonal surfaces."
+    "Description": "Sets the number of vertices used to construct the mesh facets. Higher values produce finer, more detailed meshes; lower values create larger, more pronounced facets.",
+    "IsGroup": true
   },
   {
     "Name": "Vertices",
-    "Description": "Sets the number of vertices used to construct the mesh facets. Higher values produce finer, more detailed meshes; lower values create larger, more pronounced facets."
+    "Description": "Sets the number of vertices used to construct the mesh facets. Higher values produce finer, more detailed meshes; lower values create larger, more pronounced facets.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "Randomization seed for mesh facet arrangement. Changing the seed produces different polygonal patterns and facet layouts."
+    "Description": "Randomization seed for mesh facet arrangement. Changing the seed produces different polygonal patterns and facet layouts.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Detail Sensitivity",
-    "Description": "Controls how closely the mesh facets follow the underlying terrain detail. Higher sensitivity preserves more terrain features; lower sensitivity results in smoother, more abstract faceting."
+    "Description": "Controls how closely the mesh facets follow the underlying terrain detail. Higher sensitivity preserves more terrain features; lower sensitivity results in smoother, more abstract faceting.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

@@ -1,36 +1,48 @@
 ﻿[
   {
     "Name": "Craterfield",
-    "IsGroup": true,
-    "Description": "Controls for generating a field of craters: overall size, depth, and distribution density."
+    "Description": "Controls the overall size (radius) of craters in the field.",
+    "IsGroup": true
   },
   {
     "Name": "Scale",
-    "Description": "Controls the overall size (radius) of craters in the field."
+    "Description": "Controls the overall size (radius) of craters in the field.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Depth",
-    "Description": "Controls how deep the craters carve into the terrain."
+    "Description": "Controls how deep the craters carve into the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Density",
-    "Description": "Controls how many craters are generated across the terrain (higher values create more impacts)."
+    "Description": "Controls how many craters are generated across the terrain (higher values create more impacts).",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process."
+    "Description": "The randomization pattern or seed for the node's process.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Position",
-    "IsGroup": true,
-    "Description": "Offsets the craterfield’s center position on the terrain."
+    "Description": "Offsets the craterfield along the X axis.",
+    "IsGroup": true
   },
   {
     "Name": "X",
-    "Description": "Offsets the craterfield along the X axis."
+    "Description": "Offsets the craterfield along the X axis.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Y",
-    "Description": "Offsets the craterfield along the Y axis."
+    "Description": "Offsets the craterfield along the Y axis.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

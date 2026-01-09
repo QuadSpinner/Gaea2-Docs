@@ -1,28 +1,39 @@
 ﻿[
   {
     "Name": "Constant",
-    "IsGroup": true, "Description": ""
+    "Description": "The type of output to create.",
+    "IsGroup": true
   },
   {
     "Name": "Output",
     "Description": "The type of output to create.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Height",
-        "Description": "Create a flat terrain of the specified height."
+        "Description": "Create a flat terrain of the specified height.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Color",
-        "Description": "Create a flat color output of the specified color."
+        "Description": "Create a flat color output of the specified color.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Height",
-    "Description": "The height of the blank terrain."
+    "Description": "The height of the blank terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Color",
-    "Description": "The color to use for creating a flat, color output."
+    "Description": "The color to use for creating a flat, color output.",
+    "Type": "Color",
+    "IsGroup": false
   }
 ]

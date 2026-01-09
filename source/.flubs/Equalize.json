@@ -1,6 +1,8 @@
 ﻿[
   {
     "Name": "Factor",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

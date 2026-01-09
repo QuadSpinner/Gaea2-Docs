@@ -1,18 +1,26 @@
 ﻿[
   {
     "Name": "Shatters",
-    "Description": ""
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Size",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Coverage",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process."
+    "Description": "The randomization pattern or seed for the node's process.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

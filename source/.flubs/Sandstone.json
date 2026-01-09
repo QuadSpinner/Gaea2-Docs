@@ -1,46 +1,68 @@
 ﻿[
   {
     "Name": "Passes",
-    "Description": "Sets the number of erosion passes applied to simulate layered sandstone formation. More passes increase the detail and realism of the stratified effect."
+    "Description": "Sets the number of erosion passes applied to simulate layered sandstone formation. More passes increase the detail and realism of the stratified effect.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Iterations",
-    "Description": "Controls how many times the erosion process is repeated within each pass, refining the sandstone layering and surface features."
+    "Description": "Controls how many times the erosion process is repeated within each pass, refining the sandstone layering and surface features.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Spacing",
-    "Description": "Determines the distance between individual sandstone layers, affecting the frequency and thickness of visible strata."
+    "Description": "Determines the distance between individual sandstone layers, affecting the frequency and thickness of visible strata.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Intensity",
-    "Description": "Adjusts the overall strength of the sandstone effect, influencing how pronounced the layers and erosion features appear."
+    "Description": "Adjusts the overall strength of the sandstone effect, influencing how pronounced the layers and erosion features appear.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Convexity",
-    "Description": "Controls the curvature of the sandstone layers, making them appear more rounded (convex) or flat."
+    "Description": "Controls the curvature of the sandstone layers, making them appear more rounded (convex) or flat.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Tilt",
-    "Description": "Applies an angular tilt to the sandstone layers, simulating geological tilting or shifting of strata."
+    "Description": "Applies an angular tilt to the sandstone layers, simulating geological tilting or shifting of strata.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Direction",
-    "Description": "Sets the orientation of the sandstone layers, determining the primary direction in which the strata are aligned."
+    "Description": "Sets the orientation of the sandstone layers, determining the primary direction in which the strata are aligned.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Chaos",
-    "Description": "Introduces randomness and irregularity to the sandstone layers, creating a more natural and less uniform appearance."
+    "Description": "Introduces randomness and irregularity to the sandstone layers, creating a more natural and less uniform appearance.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "Defines the randomization seed for procedural generation, ensuring unique but repeatable sandstone patterns."
+    "Description": "Defines the randomization seed for procedural generation, ensuring unique but repeatable sandstone patterns.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Chipped",
-    "Description": "Enables or controls the presence of chipped or broken edges in the sandstone, simulating natural weathering and breakage."
+    "Description": "Enables or controls the presence of chipped or broken edges in the sandstone, simulating natural weathering and breakage.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Chipping",
-    "Description": "Adjusts the amount and detail of chipping applied to the sandstone layers, affecting the roughness and realism of eroded edges."
+    "Description": "Adjusts the amount and detail of chipping applied to the sandstone layers, affecting the roughness and realism of eroded edges.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

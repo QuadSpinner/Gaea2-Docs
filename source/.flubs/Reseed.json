@@ -1,6 +1,8 @@
 ﻿[
   {
     "Name": "Seed",
-    "Description": ""
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

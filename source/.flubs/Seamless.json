@@ -1,18 +1,26 @@
 ﻿[
   {
     "Name": "Edge",
-    "Description": "The amount of blending across the opposite edges."
+    "Description": "The amount of blending across the opposite edges.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Shift X",
-    "Description": "Shift blending on the X axis."
+    "Description": "Shift blending on the X axis.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Shift Y",
-    "Description": "Shift blending on the Y axis."
+    "Description": "Shift blending on the Y axis.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Preview Tiling",
-    "Description": ""
+    "Description": "",
+    "Type": "Command",
+    "IsGroup": false
   }
 ]

@@ -2,31 +2,45 @@
   {
     "Name": "Data",
     "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "ModifierMask",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Difference",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Boundary",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "MixerMask",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Layer",
-    "Description": ""
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Level",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

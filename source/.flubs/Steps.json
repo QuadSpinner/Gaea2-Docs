@@ -1,19 +1,25 @@
 ﻿[
   {
     "Name": "Steps",
-    "IsGroup": true,
-    "Description": "Settings related to the generation of stepped or terraced terrain features. Use these controls to create distinct elevation bands or terraces in the landscape."
+    "Description": "Controls the overall size and spacing of the steps. Higher values produce larger, more widely spaced terraces, while lower values create finer, closely packed steps.",
+    "IsGroup": true
   },
   {
     "Name": "Scale",
-    "Description": "Controls the overall size and spacing of the steps. Higher values produce larger, more widely spaced terraces, while lower values create finer, closely packed steps."
+    "Description": "Controls the overall size and spacing of the steps. Higher values produce larger, more widely spaced terraces, while lower values create finer, closely packed steps.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Density",
-    "Description": "Determines the number of steps or terraces within the terrain. Increasing density results in more steps, creating a more detailed and intricate terraced effect."
+    "Description": "Determines the number of steps or terraces within the terrain. Increasing density results in more steps, creating a more detailed and intricate terraced effect.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "Sets the random seed for the step pattern. Changing the seed generates a different arrangement of steps while keeping other settings the same."
+    "Description": "Sets the random seed for the step pattern. Changing the seed generates a different arrangement of steps while keeping other settings the same.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

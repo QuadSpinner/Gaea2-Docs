@@ -2,53 +2,77 @@
   {
     "Name": "Mode",
     "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Fast",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Advanced",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "GPU",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Strength",
     "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "X1",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "X2",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "X4",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "X8",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Horizontal",
-    "Description": ""
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Vertical",
-    "Description": ""
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Iterations",
-    "Description": ""
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

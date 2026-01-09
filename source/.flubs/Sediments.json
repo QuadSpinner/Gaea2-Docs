@@ -2,49 +2,71 @@
   {
     "Name": "Type",
     "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Fine",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Bulky",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Classic",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Passes",
-    "Description": ""
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Scale",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Angle",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Style",
     "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "A",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "B",
-        "Description": "<desc>"
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Grainy Deposits",
-    "Description": ""
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
   }
 ]

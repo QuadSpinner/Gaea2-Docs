@@ -1,177 +1,253 @@
 ﻿[
   {
     "Name": "Map Style",
-    "IsGroup": true,
-    "Description": "Group containing parameters for the overall style and appearance of the cartographic map, including color, contour, and gradient settings."
+    "Description": "Controls the precision of map features such as contours and gradients. Higher values produce more detailed and accurate representations of terrain.",
+    "IsGroup": true
   },
   {
     "Name": "Accuracy",
-    "Description": "Controls the precision of map features such as contours and gradients. Higher values produce more detailed and accurate representations of terrain."
+    "Description": "Controls the precision of map features such as contours and gradients. Higher values produce more detailed and accurate representations of terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Gradient Style",
     "Description": "Specifies the style of gradient used to represent elevation or terrain features on the map.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Smooth",
-        "Description": "Applies a continuous, smooth gradient for a natural transition between elevation bands."
+        "Description": "Applies a continuous, smooth gradient for a natural transition between elevation bands.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "LargeContours",
-        "Description": "Emphasizes major elevation bands with broad, distinct contour regions."
+        "Description": "Emphasizes major elevation bands with broad, distinct contour regions.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "AllContours",
-        "Description": "Displays all contour lines, including minor and major bands, for maximum detail."
+        "Description": "Displays all contour lines, including minor and major bands, for maximum detail.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Equalize Gradient",
-    "Description": "Balances the gradient distribution to ensure even representation of elevation changes across the map."
+    "Description": "Balances the gradient distribution to ensure even representation of elevation changes across the map.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Reverse",
-    "Description": "Inverts the color or gradient mapping, swapping high and low elevation colors for a different visual effect."
+    "Description": "Inverts the color or gradient mapping, swapping high and low elevation colors for a different visual effect.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Erode",
-    "Description": "Applies an erosion effect to the map, softening features and simulating natural terrain wear."
+    "Description": "Applies an erosion effect to the map, softening features and simulating natural terrain wear.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Land",
-    "IsGroup": true,
-    "Description": "Group containing parameters for land-specific styling, including color palettes and contour settings."
+    "Description": "Selects the color palette used for land areas on the map.",
+    "IsGroup": true
   },
   {
     "Name": "Land Palette",
     "Description": "Selects the color palette used for land areas on the map.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Classic",
-        "Description": "Uses a traditional cartographic color scheme for land."
+        "Description": "Uses a traditional cartographic color scheme for land.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Minimal",
-        "Description": "Applies a minimalistic color palette for a clean, modern look."
+        "Description": "Applies a minimalistic color palette for a clean, modern look.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "FertileRed",
-        "Description": "Highlights fertile areas with red tones."
+        "Description": "Highlights fertile areas with red tones.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "FertileGreen",
-        "Description": "Highlights fertile areas with green tones."
+        "Description": "Highlights fertile areas with green tones.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "RedBlueSpectrum",
-        "Description": "Uses a spectrum from red to blue to represent elevation or land type."
+        "Description": "Uses a spectrum from red to blue to represent elevation or land type.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "MineralsYellow",
-        "Description": "Emphasizes mineral-rich areas with yellow hues."
+        "Description": "Emphasizes mineral-rich areas with yellow hues.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "FertileCool",
-        "Description": "Applies cool tones to fertile regions for a subdued effect."
+        "Description": "Applies cool tones to fertile regions for a subdued effect.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "FertileMurky",
-        "Description": "Uses murky, earthy tones to represent fertile land."
+        "Description": "Uses murky, earthy tones to represent fertile land.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Land Contours",
-    "Description": "Controls the visibility and density of contour lines on land areas, highlighting elevation changes."
+    "Description": "Controls the visibility and density of contour lines on land areas, highlighting elevation changes.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Land Contour Intenstity",
-    "Description": "Adjusts the brightness or opacity of land contour lines, making them more or less prominent."
+    "Description": "Adjusts the brightness or opacity of land contour lines, making them more or less prominent.",
+    "Type": "Float2",
+    "IsGroup": false
   },
   {
     "Name": "Land Bias",
-    "Description": "Applies a bias to the land color or contour mapping, shifting emphasis to certain elevation ranges or features."
+    "Description": "Applies a bias to the land color or contour mapping, shifting emphasis to certain elevation ranges or features.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Water Palette",
     "Description": "Selects the color palette used for water areas on the map.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Classic",
-        "Description": "Uses a traditional blue color scheme for water."
+        "Description": "Uses a traditional blue color scheme for water.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "BlackSea",
-        "Description": "Applies a dark, deep blue palette reminiscent of the Black Sea."
+        "Description": "Applies a dark, deep blue palette reminiscent of the Black Sea.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Caribbean",
-        "Description": "Uses bright, turquoise tones inspired by Caribbean waters."
+        "Description": "Uses bright, turquoise tones inspired by Caribbean waters.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Water Contours",
-    "Description": "Controls the visibility and density of contour lines in water areas, indicating depth or underwater features."
+    "Description": "Controls the visibility and density of contour lines in water areas, indicating depth or underwater features.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Water Contour Intenstity",
-    "Description": "Adjusts the brightness or opacity of water contour lines, making them more or less prominent."
+    "Description": "Adjusts the brightness or opacity of water contour lines, making them more or less prominent.",
+    "Type": "Float2",
+    "IsGroup": false
   },
   {
     "Name": "Water Bias",
-    "Description": "Applies a bias to the water color or contour mapping, shifting emphasis to certain depth ranges or features."
+    "Description": "Applies a bias to the water color or contour mapping, shifting emphasis to certain depth ranges or features.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Trim",
-    "Description": "Removes or crops map features outside a specified boundary, focusing the map on a particular region."
+    "Description": "Removes or crops map features outside a specified boundary, focusing the map on a particular region.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Line Art",
-    "IsGroup": true,
-    "Description": "Group containing parameters for line art overlays, such as grid lines, boundaries, and contour outlines."
+    "Description": "Sets the number of grid divisions overlaid on the map, controlling the density of the grid.",
+    "IsGroup": true
   },
   {
     "Name": "Grid Count",
-    "Description": "Sets the number of grid divisions overlaid on the map, controlling the density of the grid."
+    "Description": "Sets the number of grid divisions overlaid on the map, controlling the density of the grid.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Grid Intenstity",
-    "Description": "Adjusts the brightness or opacity of the grid lines, making them more or less visible."
+    "Description": "Adjusts the brightness or opacity of the grid lines, making them more or less visible.",
+    "Type": "Float2",
+    "IsGroup": false
   },
   {
     "Name": "Grid Style",
     "Description": "Specifies where grid lines are drawn on the map.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "None",
-        "Description": "No grid lines are displayed."
+        "Description": "No grid lines are displayed.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "OverWater",
-        "Description": "Grid lines are drawn only over water areas."
+        "Description": "Grid lines are drawn only over water areas.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "OverLand",
-        "Description": "Grid lines are drawn only over land areas."
+        "Description": "Grid lines are drawn only over land areas.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Everywhere",
-        "Description": "Grid lines are drawn over both land and water areas."
+        "Description": "Grid lines are drawn over both land and water areas.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Boundary Thickness",
-    "Description": "Sets the thickness of boundary lines, such as map borders or region outlines."
+    "Description": "Sets the thickness of boundary lines, such as map borders or region outlines.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Contour Thickness",
-    "Description": "Specifies the thickness of contour lines, affecting their visual prominence."
+    "Description": "Specifies the thickness of contour lines, affecting their visual prominence.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Grid Thickness",
-    "Description": "Controls the thickness of grid lines overlaid on the map."
+    "Description": "Controls the thickness of grid lines overlaid on the map.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

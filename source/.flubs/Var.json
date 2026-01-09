@@ -2,27 +2,39 @@
   {
     "Name": "Edit Mode",
     "Description": "Specifies how the variable is used in the node. 'Consume' reads the value of an existing variable, while 'Modify' changes the value or applies an expression to the variable.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Consume",
-        "Description": "Reads and uses the value of the specified variable without altering it."
+        "Description": "Reads and uses the value of the specified variable without altering it.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Modify",
-        "Description": "Applies an expression or new value to the variable, updating its value for subsequent nodes."
+        "Description": "Applies an expression or new value to the variable, updating its value for subsequent nodes.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Variable Name",
-    "Description": "The name of the variable to consume or modify. This should match the variable defined elsewhere in the graph or macro."
+    "Description": "The name of the variable to consume or modify. This should match the variable defined elsewhere in the graph or macro.",
+    "Type": "String",
+    "IsGroup": false
   },
   {
     "Name": "Expression",
-    "Description": "An optional mathematical or logical expression to apply when modifying the variable. Used only in 'Modify' mode."
+    "Description": "An optional mathematical or logical expression to apply when modifying the variable. Used only in 'Modify' mode.",
+    "Type": "String",
+    "IsGroup": false
   },
   {
     "Name": "Default Value",
-    "Description": "The value to use if the specified variable is not set or available. Ensures the node has a fallback value."
+    "Description": "The value to use if the specified variable is not set or available. Ensures the node has a fallback value.",
+    "Type": "String",
+    "IsGroup": false
   }
 ]

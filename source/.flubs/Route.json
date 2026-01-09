@@ -1,6 +1,8 @@
 ﻿[
   {
     "Name": "Choice",
-    "Description": "The port through which the input should be routed."
+    "Description": "The port through which the input should be routed.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

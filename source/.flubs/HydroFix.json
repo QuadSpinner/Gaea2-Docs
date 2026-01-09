@@ -1,11 +1,13 @@
 ﻿[
   {
     "Name": "HydroFix",
-    "IsGroup": true,
-    "Description": ""
+    "Description": "The amount of downcutting to apply while modifying the terrain for hydrological flow.",
+    "IsGroup": true
   },
   {
     "Name": "Downcutting",
-    "Description": "The amount of downcutting to apply while modifying the terrain for hydrological flow."
+    "Description": "The amount of downcutting to apply while modifying the terrain for hydrological flow.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

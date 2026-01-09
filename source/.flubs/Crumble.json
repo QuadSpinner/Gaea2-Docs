@@ -1,63 +1,93 @@
 ﻿[
   {
     "Name": "Duration",
-    "Description": "Controls how long the simulation runs. Longer durations produce stronger and more extensive crumbling effects."
+    "Description": "Controls how long the simulation runs. Longer durations produce stronger and more extensive crumbling effects.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Strength",
-    "Description": "Defines how intensely the rock or terrain breaks apart from the main body. Higher values result in more aggressive fragmentation."
+    "Description": "Defines how intensely the rock or terrain breaks apart from the main body. Higher values result in more aggressive fragmentation.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Coverage",
-    "Description": "Sets how far the crumbling effect spreads inward from exposed edges, determining the affected area."
+    "Description": "Sets how far the crumbling effect spreads inward from exposed edges, determining the affected area.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Horizontal",
-    "Description": "Biases the crumble effect towards flow origins or towards deposits, influencing the lateral direction of collapse."
+    "Description": "Biases the crumble effect towards flow origins or towards deposits, influencing the lateral direction of collapse.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Vertical",
-    "Description": "Biases the crumble effect towards higher or lower altitudes, controlling whether upper or lower terrain is more affected."
+    "Description": "Biases the crumble effect towards higher or lower altitudes, controlling whether upper or lower terrain is more affected.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Rock Hardness",
-    "Description": "Controls material resistance, reducing how much terrain collapses. Higher values simulate harder, more resilient rock."
+    "Description": "Controls material resistance, reducing how much terrain collapses. Higher values simulate harder, more resilient rock.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Edge",
-    "Description": "Expands or reduces the impact of crumbling specifically on sharp terrain edges, allowing for more pronounced or subdued edge effects."
+    "Description": "Expands or reduces the impact of crumbling specifically on sharp terrain edges, allowing for more pronounced or subdued edge effects.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Downcutting",
-    "Description": "Controls how deeply the simulation carves downward into the terrain during crumbling, affecting the vertical extent of collapse."
+    "Description": "Controls how deeply the simulation carves downward into the terrain during crumbling, affecting the vertical extent of collapse.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Depth",
-    "Description": "Adjusts the overall depth of the collapsed areas, determining how far the terrain sinks or breaks away."
+    "Description": "Adjusts the overall depth of the collapsed areas, determining how far the terrain sinks or breaks away.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Direction",
     "Description": "Specifies the primary direction in which the crumbling effect propagates across the terrain.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "X",
-        "Description": "Directs the crumbling effect along the X (horizontal) axis."
+        "Description": "Directs the crumbling effect along the X (horizontal) axis.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "N",
-        "Description": "Directs the crumbling effect towards the north (upward in world space)."
+        "Description": "Directs the crumbling effect towards the north (upward in world space).",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "E",
-        "Description": "Directs the crumbling effect towards the east (right in world space)."
+        "Description": "Directs the crumbling effect towards the east (right in world space).",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "S",
-        "Description": "Directs the crumbling effect towards the south (downward in world space)."
+        "Description": "Directs the crumbling effect towards the south (downward in world space).",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "W",
-        "Description": "Directs the crumbling effect towards the west (left in world space)."
+        "Description": "Directs the crumbling effect towards the west (left in world space).",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   }

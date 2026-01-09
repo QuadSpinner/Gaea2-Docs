@@ -1,101 +1,141 @@
 ﻿[
   {
     "Name": "Noise",
-    "IsGroup": true,
-    "Description": "Group containing parameters for generating Perlin noise, a foundational procedural noise used for terrain and texture synthesis."
+    "Description": "Specifies the style of Perlin noise to generate, affecting the overall appearance and structure of the noise pattern.",
+    "IsGroup": true
   },
   {
     "Name": "Type",
     "Description": "Specifies the style of Perlin noise to generate, affecting the overall appearance and structure of the noise pattern.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "FBM",
-        "Description": "Fractal Brownian Motion. Produces classic Perlin noise with layered octaves for natural, smooth terrain."
+        "Description": "Fractal Brownian Motion. Produces classic Perlin noise with layered octaves for natural, smooth terrain.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Ridged",
-        "Description": "Generates ridged noise, emphasizing sharp crests and valleys for more dramatic, mountainous features."
+        "Description": "Generates ridged noise, emphasizing sharp crests and valleys for more dramatic, mountainous features.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Billowy",
-        "Description": "Creates billowy, cloud-like noise with soft, rounded shapes and less pronounced valleys."
+        "Description": "Creates billowy, cloud-like noise with soft, rounded shapes and less pronounced valleys.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Scale",
-    "Description": "The scale of the noise. Higher values create larger, less detailed shapes. Lower values create noisier, highly detailed shapes."
+    "Description": "The scale of the noise. Higher values create larger, less detailed shapes. Lower values create noisier, highly detailed shapes.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Octaves",
-    "Description": "The number of noise octaves. Higher values create more complexity by layering additional detail at smaller scales."
+    "Description": "The number of noise octaves. Higher values create more complexity by layering additional detail at smaller scales.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Gain",
-    "Description": "Controls the amplitude reduction between octaves, affecting the persistence and contrast of the noise."
+    "Description": "Controls the amplitude reduction between octaves, affecting the persistence and contrast of the noise.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Height",
-    "Description": "Sets the maximum elevation or intensity of the noise, scaling the output vertically."
+    "Description": "Sets the maximum elevation or intensity of the noise, scaling the output vertically.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different noise patterns."
+    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different noise patterns.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Warp",
-    "IsGroup": true,
-    "Description": "Group containing parameters for warping or distorting the Perlin noise, adding complexity and variation."
+    "Description": "Specifies the style of Perlin noise to generate, affecting the overall appearance and structure of the noise pattern.",
+    "IsGroup": true
   },
   {
     "Name": "Type",
-    "Description": "Specifies the type of warp applied to the noise, controlling the complexity and style of the distortion.",
+    "Description": "Specifies the style of Perlin noise to generate, affecting the overall appearance and structure of the noise pattern.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "None",
-        "Description": "No warping is applied; the Perlin noise remains unaltered."
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Simple",
-        "Description": "Applies basic warping to the noise, introducing gentle distortions for added variation."
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Complex",
-        "Description": "Applies advanced, multi-layered warping for highly intricate and organic distortions."
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Frequency",
-    "Description": "Controls the frequency of the warp, determining how often the pattern is distorted across the terrain."
+    "Description": "Controls the frequency of the warp, determining how often the pattern is distorted across the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Amplitude",
-    "Description": "Sets the strength of the warp effect, controlling how far the noise is displaced."
+    "Description": "Sets the strength of the warp effect, controlling how far the noise is displaced.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Octaves",
-    "Description": "The number of noise octaves. Higher values create more complexity by layering additional detail at smaller scales."
+    "Description": "The number of noise octaves. Higher values create more complexity by layering additional detail at smaller scales.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Transform",
-    "IsGroup": true,
-    "Description": "Group containing parameters for transforming the Perlin noise, such as scaling and translation."
+    "Description": "The non-uniform scale of the X axis, stretching or compressing the noise horizontally.",
+    "IsGroup": true
   },
   {
     "Name": "Scale X",
-    "Description": "The non-uniform scale of the X axis, stretching or compressing the noise horizontally."
+    "Description": "The non-uniform scale of the X axis, stretching or compressing the noise horizontally.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Scale Y",
-    "Description": "The non-uniform scale of the Y axis, stretching or compressing the noise vertically."
+    "Description": "The non-uniform scale of the Y axis, stretching or compressing the noise vertically.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "X",
-    "Description": "Offsets the Perlin noise along the X axis, shifting its position horizontally."
+    "Description": "Offsets the Perlin noise along the X axis, shifting its position horizontally.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Y",
-    "Description": "Offsets the Perlin noise along the Y axis, shifting its position vertically."
+    "Description": "Offsets the Perlin noise along the Y axis, shifting its position vertically.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

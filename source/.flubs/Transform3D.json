@@ -1,58 +1,76 @@
 ﻿[
   {
     "Name": "Position",
-    "IsGroup": true,
-    "Description": "Group containing parameters for adjusting the 3D position of the object or mesh within the scene."
+    "Description": "Automatically positions the object so its lowest point rests on the ground plane, preventing it from floating or being embedded below the surface.",
+    "IsGroup": true
   },
   {
     "Name": "Drop to Floor",
-    "Description": "Automatically positions the object so its lowest point rests on the ground plane, preventing it from floating or being embedded below the surface."
+    "Description": "Automatically positions the object so its lowest point rests on the ground plane, preventing it from floating or being embedded below the surface.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Offset X",
-    "Description": "Shifts the object horizontally along the X axis, allowing precise placement within the 3D space."
+    "Description": "Shifts the object horizontally along the X axis, allowing precise placement within the 3D space.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Offset Y",
-    "Description": "Shifts the object horizontally along the Y axis, moving it forward or backward in the 3D scene."
+    "Description": "Shifts the object horizontally along the Y axis, moving it forward or backward in the 3D scene.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Offset Z",
-    "Description": "Moves the object vertically along the Z axis, raising or lowering its elevation relative to the ground."
+    "Description": "Moves the object vertically along the Z axis, raising or lowering its elevation relative to the ground.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Scale",
-    "IsGroup": true,
-    "Description": "Group containing parameters for scaling the object or mesh, affecting its size and proportions in 3D space."
+    "Description": "Group containing parameters for scaling the object or mesh, affecting its size and proportions in 3D space.",
+    "IsGroup": true
   },
   {
     "Name": "Scale",
-    "Description": "Uniformly scales the object in all directions, making it larger or smaller while maintaining proportions."
+    "Description": "Group containing parameters for scaling the object or mesh, affecting its size and proportions in 3D space.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Rotation",
-    "IsGroup": true,
-    "Description": "Group containing parameters for rotating the object around its axes in 3D space."
+    "Description": "Rotates the object around the X axis, tilting it forward or backward.",
+    "IsGroup": true
   },
   {
     "Name": "Pitch",
-    "Description": "Rotates the object around the X axis, tilting it forward or backward."
+    "Description": "Rotates the object around the X axis, tilting it forward or backward.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Yaw",
-    "Description": "Rotates the object around the Y axis, turning it left or right."
+    "Description": "Rotates the object around the Y axis, turning it left or right.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Roll",
-    "Description": "Rotates the object around the Z axis, spinning it clockwise or counterclockwise."
+    "Description": "Rotates the object around the Z axis, spinning it clockwise or counterclockwise.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Quality",
-    "IsGroup": true,
-    "Description": "Group containing parameters that affect the rendering quality of the transformed object or mesh."
+    "Description": "Enables or adjusts antialiasing for the 3D transformation, reducing jagged edges and improving visual smoothness.",
+    "IsGroup": true
   },
   {
     "Name": "Antialiasing",
-    "Description": "Enables or adjusts antialiasing for the 3D transformation, reducing jagged edges and improving visual smoothness."
+    "Description": "Enables or adjusts antialiasing for the 3D transformation, reducing jagged edges and improving visual smoothness.",
+    "Type": "Boolean",
+    "IsGroup": false
   }
 ]

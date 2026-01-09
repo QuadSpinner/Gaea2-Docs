@@ -1,73 +1,105 @@
 ﻿[
   {
     "Name": "Data",
-    "Description": "Input data for the node, such as source terrain or mask information."
+    "Description": "Input data for the node, such as source terrain or mask information.",
+    "Type": "List`1",
+    "IsGroup": false
   },
   {
     "Name": "Sampling",
-    "IsGroup": true,
-    "Description": "Settings related to how the gradient is sampled and how many color stops are generated."
+    "Description": "Specifies the number of color stops or samples in the synthesized gradient. Higher values produce smoother gradients.",
+    "IsGroup": true
   },
   {
     "Name": "Samples",
     "Description": "Specifies the number of color stops or samples in the synthesized gradient. Higher values produce smoother gradients.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "_8",
-        "Description": "Generates a gradient with 8 color stops. Suitable for coarse transitions."
+        "Description": "Generates a gradient with 8 color stops. Suitable for coarse transitions.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "_16",
-        "Description": "Generates a gradient with 16 color stops. Provides a moderately smooth transition."
+        "Description": "Generates a gradient with 16 color stops. Provides a moderately smooth transition.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "_24",
-        "Description": "Generates a gradient with 24 color stops. Offers finer color transitions."
+        "Description": "Generates a gradient with 24 color stops. Offers finer color transitions.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "_36",
-        "Description": "Generates a gradient with 36 color stops. Useful for detailed gradients."
+        "Description": "Generates a gradient with 36 color stops. Useful for detailed gradients.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "_64",
-        "Description": "Generates a gradient with 64 color stops. Produces a very smooth color lookup."
+        "Description": "Generates a gradient with 64 color stops. Produces a very smooth color lookup.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "_128",
-        "Description": "Generates a gradient with 128 color stops. Ideal for high-fidelity color transitions."
+        "Description": "Generates a gradient with 128 color stops. Ideal for high-fidelity color transitions.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "_256",
-        "Description": "Generates a gradient with 256 color stops. Recommended for ultra-smooth gradients."
+        "Description": "Generates a gradient with 256 color stops. Recommended for ultra-smooth gradients.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "_1024",
-        "Description": "Generates a gradient with 1024 color stops. Used for extremely fine color detail."
+        "Description": "Generates a gradient with 1024 color stops. Used for extremely fine color detail.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "_2048",
-        "Description": "Generates a gradient with 2048 color stops. Maximum smoothness for professional-grade color lookup."
+        "Description": "Generates a gradient with 2048 color stops. Maximum smoothness for professional-grade color lookup.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Fuzzy",
-    "Description": "Controls the amount of fuzziness or blur applied to the gradient, affecting the softness of color transitions in the bitmap image."
+    "Description": "Controls the amount of fuzziness or blur applied to the gradient, affecting the softness of color transitions in the bitmap image.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Offset",
-    "Description": "Shifts the position of the gradient along its axis, allowing adjustment of where color stops are mapped."
+    "Description": "Shifts the position of the gradient along its axis, allowing adjustment of where color stops are mapped.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "Defines the randomization pattern or seed for the node's process, ensuring reproducible results when generating gradients."
+    "Description": "Defines the randomization pattern or seed for the node's process, ensuring reproducible results when generating gradients.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Synthesize Colors",
-    "Description": "Generates a color lookup gradient based on the specified number of samples and other parameters. The resulting gradient can be used for terrain coloring or other visual effects."
+    "Description": "Generates a color lookup gradient based on the specified number of samples and other parameters. The resulting gradient can be used for terrain coloring or other visual effects.",
+    "Type": "Command",
+    "IsGroup": false
   },
   {
     "Name": "Export JSON",
-    "Description": "Exports the synthesized gradient and node configuration as a JSON file for use in other applications or for documentation purposes."
+    "Description": "Exports the synthesized gradient and node configuration as a JSON file for use in other applications or for documentation purposes.",
+    "Type": "Command",
+    "IsGroup": false
   }
 ]

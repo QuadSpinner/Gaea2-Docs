@@ -1,6 +1,8 @@
 ﻿[
   {
     "Name": "Variables",
-    "Description": ""
+    "Description": "",
+    "Type": "Dictionary`2",
+    "IsGroup": false
   }
 ]

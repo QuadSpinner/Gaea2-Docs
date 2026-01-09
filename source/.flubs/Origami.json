@@ -1,10 +1,14 @@
 ﻿[
   {
     "Name": "Amount",
-    "Description": "The amount of re-folding to be applied to the terrain. Low values create large folds; high values create tiny folds."
+    "Description": "The amount of re-folding to be applied to the terrain. Low values create large folds; high values create tiny folds.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different noise patterns."
+    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different noise patterns.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

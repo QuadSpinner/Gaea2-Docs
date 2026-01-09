@@ -2,27 +2,39 @@
   {
     "Name": "Type",
     "Description": "Selects the denoising method used to smooth noise while preserving overall features.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "OnePass",
-        "Description": "Runs a single denoise pass for fast, moderate smoothing."
+        "Description": "Runs a single denoise pass for fast, moderate smoothing.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "TwoPass",
-        "Description": "Runs a stronger two-stage denoise for cleaner results with better feature retention."
+        "Description": "Runs a stronger two-stage denoise for cleaner results with better feature retention.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Pixels",
-        "Description": "Targets pixel-level speckle and stair-stepping artifacts, focusing on discrete noisy pixels."
+        "Description": "Targets pixel-level speckle and stair-stepping artifacts, focusing on discrete noisy pixels.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Amount",
-    "Description": "Strength of the denoising effect (higher values smooth more, but can soften detail)."
+    "Description": "Strength of the denoising effect (higher values smooth more, but can soften detail).",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Passes",
-    "Description": "Number of denoise iterations to apply for the selected method."
+    "Description": "Number of denoise iterations to apply for the selected method.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

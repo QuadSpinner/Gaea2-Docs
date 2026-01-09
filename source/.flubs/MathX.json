@@ -1,14 +1,20 @@
 ﻿[
   {
     "Name": "Expression",
-    "Description": ""
+    "Description": "",
+    "Type": "String",
+    "IsGroup": false
   },
   {
     "Name": "Open Editor",
-    "Description": ""
+    "Description": "",
+    "Type": "Command",
+    "IsGroup": false
   },
   {
     "Name": "Normalized Coordinates",
-    "Description": ""
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
   }
 ]

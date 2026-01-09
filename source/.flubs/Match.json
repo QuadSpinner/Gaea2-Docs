@@ -2,14 +2,20 @@
   {
     "Name": "Mode",
     "Description": "Specifies the method used to match the height of the current terrain to a reference terrain. Determines how the height adjustment is performed.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Height",
-        "Description": "Directly matches the height values of the current terrain to the reference terrain, aligning elevation point-for-point."
+        "Description": "Directly matches the height values of the current terrain to the reference terrain, aligning elevation point-for-point.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Histogram",
-        "Description": "Matches the height distribution (histogram) of the current terrain to that of the reference terrain, preserving relative features while adjusting overall elevation statistics."
+        "Description": "Matches the height distribution (histogram) of the current terrain to that of the reference terrain, preserving relative features while adjusting overall elevation statistics.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   }

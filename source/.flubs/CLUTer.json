@@ -1,30 +1,44 @@
 ﻿[
   {
     "Name": "Gradient Data",
-    "Description": ""
+    "Description": "",
+    "Type": "List`1",
+    "IsGroup": false
   },
   {
     "Name": "Autolevel Input",
-    "Description": ""
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Reverse",
-    "Description": "Reverses the mapping of the gradient."
+    "Description": "Reverses the mapping of the gradient.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Bias",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Hue",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Saturation",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Lightness",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

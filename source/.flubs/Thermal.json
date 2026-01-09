@@ -1,61 +1,83 @@
 ﻿[
   {
     "Name": "Erosion",
-    "IsGroup": true,
-    "Description": "Group containing parameters that control the thermal erosion process, affecting how terrain is smoothed and reshaped."
+    "Description": "Controls how long the thermal erosion process is applied. Higher values result in more extensive terrain changes over time.",
+    "IsGroup": true
   },
   {
     "Name": "Duration",
-    "Description": "Controls how long the thermal erosion process is applied. Higher values result in more extensive terrain changes over time."
+    "Description": "Controls how long the thermal erosion process is applied. Higher values result in more extensive terrain changes over time.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Strength",
-    "Description": "Sets the intensity of thermal erosion. Increasing this value produces more pronounced smoothing and displacement, especially on steep slopes."
+    "Description": "Sets the intensity of thermal erosion. Increasing this value produces more pronounced smoothing and displacement, especially on steep slopes.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Anisotropy",
-    "Description": "Adjusts the directional bias of erosion and deposit formation. Low values preserve the original terrain, while high values intensify directional erosion, shaping talus deposits and terrain features."
+    "Description": "Adjusts the directional bias of erosion and deposit formation. Low values preserve the original terrain, while high values intensify directional erosion, shaping talus deposits and terrain features.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "Randomizes the erosion pattern while keeping other settings unchanged, allowing for varied results without retuning parameters."
+    "Description": "Randomizes the erosion pattern while keeping other settings unchanged, allowing for varied results without retuning parameters.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Talus",
-    "IsGroup": true,
-    "Description": "Group containing parameters that control talus formation, which is the accumulation of loose material at the base of slopes."
+    "Description": "Sets the maximum slope angle before material begins to move downward, forming talus. Lower angles create gentler slopes, while higher angles allow steeper terrain before shifting occurs.",
+    "IsGroup": true
   },
   {
     "Name": "Angle",
-    "Description": "Sets the maximum slope angle before material begins to move downward, forming talus. Lower angles create gentler slopes, while higher angles allow steeper terrain before shifting occurs."
+    "Description": "Sets the maximum slope angle before material begins to move downward, forming talus. Lower angles create gentler slopes, while higher angles allow steeper terrain before shifting occurs.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Settling",
-    "Description": "Controls how quickly and thoroughly loose material settles after being eroded. Higher values result in faster, more complete settling, while lower values allow for gradual accumulation."
+    "Description": "Controls how quickly and thoroughly loose material settles after being eroded. Higher values result in faster, more complete settling, while lower values allow for gradual accumulation.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Sediment Removal",
-    "Description": "Determines the amount of sediment removed during talus formation. Higher values produce cleaner, sharper features, while lower values allow more sediment to accumulate, creating smoother transitions."
+    "Description": "Determines the amount of sediment removed during talus formation. Higher values produce cleaner, sharper features, while lower values allow more sediment to accumulate, creating smoother transitions.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Scale",
-    "IsGroup": true,
-    "Description": "Group containing parameters that adjust the scale and physical properties of thermal erosion features."
+    "Description": "Sets the scale of the largest thermal erosion features in the terrain. Larger values create broader, more pronounced features; smaller values result in finer details.",
+    "IsGroup": true
   },
   {
     "Name": "Feature Scale",
-    "Description": "Sets the scale of the largest thermal erosion features in the terrain. Larger values create broader, more pronounced features; smaller values result in finer details."
+    "Description": "Sets the scale of the largest thermal erosion features in the terrain. Larger values create broader, more pronounced features; smaller values result in finer details.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Real Scale",
-    "Description": "Uses the scale defined by the terrain's physical dimensions. Disable to access additional options and manually adjust erosion physics."
+    "Description": "Uses the scale defined by the terrain's physical dimensions. Disable to access additional options and manually adjust erosion physics.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Terrain Scale",
-    "Description": "Specifies the overall scale of the terrain when Real Scale is turned off, allowing for manual adjustment of terrain size."
+    "Description": "Specifies the overall scale of the terrain when Real Scale is turned off, allowing for manual adjustment of terrain size.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Verticality",
-    "Description": "Controls the height of the terrain when Real Scale is turned off, enabling further customization of vertical exaggeration."
+    "Description": "Controls the height of the terrain when Real Scale is turned off, enabling further customization of vertical exaggeration.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

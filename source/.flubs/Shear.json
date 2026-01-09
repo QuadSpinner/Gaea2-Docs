@@ -1,10 +1,14 @@
 ﻿[
   {
     "Name": "Strength",
-    "Description": "The amount of terrain warp/shear that will be applied."
+    "Description": "The amount of terrain warp/shear that will be applied.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process."
+    "Description": "The randomization pattern or seed for the node's process.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

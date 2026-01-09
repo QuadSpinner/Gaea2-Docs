@@ -2,27 +2,39 @@
   {
     "Name": "Clip Mode",
     "Description": "Selects whether the soft clipping effect is applied above or below the specified threshold.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "AboveThreshold",
-        "Description": "Applies soft clipping to values above the threshold, gently compressing high values toward the threshold."
+        "Description": "Applies soft clipping to values above the threshold, gently compressing high values toward the threshold.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "BelowThreshold",
-        "Description": "Applies soft clipping to values below the threshold, gently compressing low values toward the threshold."
+        "Description": "Applies soft clipping to values below the threshold, gently compressing low values toward the threshold.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Threshold",
-    "Description": "Sets the value at which soft clipping begins. Values above or below this threshold (depending on mode) will be affected."
+    "Description": "Sets the value at which soft clipping begins. Values above or below this threshold (depending on mode) will be affected.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Softness",
-    "Description": "Controls the smoothness of the transition at the threshold. Higher values create a more gradual, less abrupt clipping effect."
+    "Description": "Controls the smoothness of the transition at the threshold. Higher values create a more gradual, less abrupt clipping effect.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Clipping",
-    "Description": "Adjusts the overall strength of the clipping effect, determining how much values are compressed toward the threshold."
+    "Description": "Adjusts the overall strength of the clipping effect, determining how much values are compressed toward the threshold.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

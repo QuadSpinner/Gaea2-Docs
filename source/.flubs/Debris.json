@@ -1,70 +1,108 @@
 ﻿[
   {
     "Name": "Debris Amount",
-    "Description": "Controls how many individual rocks or debris pieces are emitted across the terrain."
+    "Description": "Controls how many individual rocks or debris pieces are emitted across the terrain.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Amount Multiplier",
-    "Description": "Scales the emitted debris amount globally without changing other parameters, allowing quick adjustment of overall density."
+    "Description": "Scales the emitted debris amount globally without changing other parameters, allowing quick adjustment of overall density.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Scale",
-    "Description": "Controls the overall scale of debris elements, affecting their size relative to the terrain."
+    "Description": "Controls the overall scale of debris elements, affecting their size relative to the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Friction",
-    "Description": "Determines how easily debris slides; higher values make debris stop sooner and form steeper piles."
+    "Description": "Determines how easily debris slides; higher values make debris stop sooner and form steeper piles.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Restitution",
-    "Description": "Controls energy loss on impact, affecting how far debris bounces or continues sliding after being emitted."
+    "Description": "Controls energy loss on impact, affecting how far debris bounces or continues sliding after being emitted.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Size",
-    "Description": "Sets the overall size of the emitted rocks or debris pieces."
+    "Description": "Sets the overall size of the emitted rocks or debris pieces.",
+    "Type": "Float2",
+    "IsGroup": false
   },
   {
     "Name": "Height",
-    "Description": "Defines the vertical offset or emission height for debris release."
+    "Description": "Defines the vertical offset or emission height for debris release.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "Randomization seed for generating varied debris distributions."
+    "Description": "Randomization seed for generating varied debris distributions.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Shape",
     "Description": "Determines the geometric style of debris elements, affecting their appearance.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Rounded",
-        "Description": "Produces smoother, rounded rock fragments."
+        "Description": "Produces smoother, rounded rock fragments.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Sharp",
-        "Description": "Produces jagged, angular rock fragments."
+        "Description": "Produces jagged, angular rock fragments.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Render Still Rocks",
-    "Description": "Enables rendering of non-moving debris that has settled on the terrain."
+    "Description": "Enables rendering of non-moving debris that has settled on the terrain.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Distribution",
     "Description": "Specifies how debris is distributed across the emission area.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Uniform",
-        "Description": "Evenly spreads debris across the emission area."
+        "Description": "Evenly spreads debris across the emission area.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Natural",
-        "Description": "Creates more organic, irregular clustering of debris."
+        "Description": "Creates more organic, irregular clustering of debris.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Export Point Cloud",
-    "Description": "Enables the export of debris positions as a point cloud for further processing or use in external applications."
+    "Description": "Enables the export of debris positions as a point cloud for further processing or use in external applications.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Information",
+    "Description": "",
+    "Type": "Byte",
+    "IsGroup": false
   }
 ]

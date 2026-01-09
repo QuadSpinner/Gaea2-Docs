@@ -1,42 +1,62 @@
 ﻿[
   {
     "Name": "Passes",
-    "Description": ""
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Chaos",
-    "Description": "Gives uneveness to the overlapping shelves."
+    "Description": "Gives uneveness to the overlapping shelves.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Scale Large",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Scale Small",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Turbulence Large",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Turbulence Small",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Wind Direction Large",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Wind Direction Small",
-    "Description": ""
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process."
+    "Description": "The randomization pattern or seed for the node's process.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Overlap Shapes",
-    "Description": ""
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
   }
 ]

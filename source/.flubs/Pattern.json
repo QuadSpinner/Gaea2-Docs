@@ -1,48 +1,70 @@
 ﻿[
   {
     "Name": "Size",
-    "Description": "Controls the overall scale of the pattern, affecting the size of the repeated elements across the terrain."
+    "Description": "Controls the overall scale of the pattern, affecting the size of the repeated elements across the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Dot Size",
-    "Description": "Sets the size of individual dots or elements within the pattern. Larger values produce bigger dots or features."
+    "Description": "Sets the size of individual dots or elements within the pattern. Larger values produce bigger dots or features.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Spacing",
-    "Description": "Determines the distance between pattern elements, such as lines, dots, or grid cells. Higher values increase the gap between elements."
+    "Description": "Determines the distance between pattern elements, such as lines, dots, or grid cells. Higher values increase the gap between elements.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Steps",
-    "Description": "Specifies the number of discrete steps or repetitions in the pattern, influencing the frequency and repetition of elements."
+    "Description": "Specifies the number of discrete steps or repetitions in the pattern, influencing the frequency and repetition of elements.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Direction",
-    "Description": "Sets the orientation or angle of the pattern, allowing you to rotate lines, engravings, or grids as needed."
+    "Description": "Sets the orientation or angle of the pattern, allowing you to rotate lines, engravings, or grids as needed.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Type",
     "Description": "Selects the style of pattern to generate. Each type produces a distinct arrangement of elements.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Lines",
-        "Description": "Generates a pattern of parallel lines, useful for striations or directional effects."
+        "Description": "Generates a pattern of parallel lines, useful for striations or directional effects.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Engraving",
-        "Description": "Creates a pattern resembling engraved or incised lines, adding fine detail and texture."
+        "Description": "Creates a pattern resembling engraved or incised lines, adding fine detail and texture.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Grid",
-        "Description": "Produces a grid pattern with intersecting horizontal and vertical lines, forming a tiled appearance."
+        "Description": "Produces a grid pattern with intersecting horizontal and vertical lines, forming a tiled appearance.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Dots",
-        "Description": "Generates a regular array of dots, ideal for stippling or point-based patterns."
+        "Description": "Generates a regular array of dots, ideal for stippling or point-based patterns.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Pixel Size",
-    "Description": "Adjusts the resolution or granularity of the pattern, controlling how fine or coarse the pattern details appear."
+    "Description": "Adjusts the resolution or granularity of the pattern, controlling how fine or coarse the pattern details appear.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

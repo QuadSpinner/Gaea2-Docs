@@ -1,121 +1,173 @@
 ﻿[
   {
     "Name": "Warp",
-    "IsGroup": true,
-    "Description": "Group containing parameters for applying a warp (distortion) effect to the terrain or image using various noise sources and settings."
+    "Description": "The size of the warp noise. Controls the scale of the distortion pattern applied to the input.",
+    "IsGroup": true
   },
   {
     "Name": "Size",
-    "Description": "The size of the warp noise. Controls the scale of the distortion pattern applied to the input."
+    "Description": "The size of the warp noise. Controls the scale of the distortion pattern applied to the input.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Strength",
-    "Description": "The strength of the warp noise. Higher values produce more pronounced distortions."
+    "Description": "The strength of the warp noise. Higher values produce more pronounced distortions.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Z Scale",
-    "Description": "Vertical axis scale for the noise, affecting the intensity of the warp along the Z (height) axis."
+    "Description": "Vertical axis scale for the noise, affecting the intensity of the warp along the Z (height) axis.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Warp Source",
     "Description": "Selects the noise or pattern used as the source for the warp. Choose from built-in options or provide a custom source.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "PerlinFBM",
-        "Description": "Uses Perlin fractal Brownian motion noise as the warp source, producing smooth, natural distortions."
+        "Description": "Uses Perlin fractal Brownian motion noise as the warp source, producing smooth, natural distortions.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "VoronoiR",
-        "Description": "Uses Voronoi (R) noise as the warp source, creating cell-like, ridged distortions."
+        "Description": "Uses Voronoi (R) noise as the warp source, creating cell-like, ridged distortions.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "VoronoiP",
-        "Description": "Uses Voronoi (P) noise as the warp source, suitable for generating mountainous or peak-like distortions."
+        "Description": "Uses Voronoi (P) noise as the warp source, suitable for generating mountainous or peak-like distortions.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "VoronoiA",
-        "Description": "Uses Voronoi (A) noise as the warp source, blending characteristics of other Voronoi types for varied effects."
+        "Description": "Uses Voronoi (A) noise as the warp source, blending characteristics of other Voronoi types for varied effects.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "VoronoiS",
-        "Description": "Uses Voronoi (S) noise as the warp source, emphasizing separated, individual cell boundaries."
+        "Description": "Uses Voronoi (S) noise as the warp source, emphasizing separated, individual cell boundaries.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "VoronoiM",
-        "Description": "Uses Voronoi (M) noise as the warp source, favoring dominant cells for strong, directional warping."
+        "Description": "Uses Voronoi (M) noise as the warp source, favoring dominant cells for strong, directional warping.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "VoronoiD",
-        "Description": "Uses Voronoi (D) noise as the warp source, emphasizing ridges and linear features in the distortion."
+        "Description": "Uses Voronoi (D) noise as the warp source, emphasizing ridges and linear features in the distortion.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Perturbation",
-    "Description": "Applies additional random displacement to the warp, increasing the irregularity and complexity of the effect."
+    "Description": "Applies additional random displacement to the warp, increasing the irregularity and complexity of the effect.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Complexity",
-    "Description": "The complexity of the warp noise source. Higher values add more detail and layers to the distortion."
+    "Description": "The complexity of the warp noise source. Higher values add more detail and layers to the distortion.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Roughness",
-    "Description": "The roughness of the warp noise. Higher values (especially above 0.5) create harsher, more jagged distortions."
+    "Description": "The roughness of the warp noise. Higher values (especially above 0.5) create harsher, more jagged distortions.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Normalized",
-    "Description": "Specifies whether the noise is normalized. Normalization ensures the output remains within a standard range."
+    "Description": "Specifies whether the noise is normalized. Normalization ensures the output remains within a standard range.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Edge Behaviour",
     "Description": "Determines how the warp handles the edges of the input, preventing visible seams or artifacts.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Edge",
-        "Description": "Applies standard edge handling, which may result in wrapping or stretching at the borders."
+        "Description": "Applies standard edge handling, which may result in wrapping or stretching at the borders.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Mirror",
-        "Description": "Edge pixels are mirrored, creating seamless, reflected borders for the warp effect."
+        "Description": "Edge pixels are mirrored, creating seamless, reflected borders for the warp effect.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Modulation",
-    "Description": "The amount of modulation to use from the Modulation input (if connected), allowing external control over the warp intensity."
+    "Description": "The amount of modulation to use from the Modulation input (if connected), allowing external control over the warp intensity.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Modulation Direction",
-    "Description": "Sets the direction of the modulation, controlling how the modulation input influences the warp."
+    "Description": "Sets the direction of the modulation, controlling how the modulation input influences the warp.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different warp results."
+    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different warp results.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Iterative",
-    "IsGroup": true,
-    "Description": "Group containing parameters for applying the warp effect in multiple passes for increased complexity."
+    "Description": "Number of warp iterations to apply. More iterations increase the complexity and layering of the distortion.",
+    "IsGroup": true
   },
   {
     "Name": "Iterations",
-    "Description": "Number of warp iterations to apply. More iterations increase the complexity and layering of the distortion."
+    "Description": "Number of warp iterations to apply. More iterations increase the complexity and layering of the distortion.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Mode",
     "Description": "Specifies the mode used for iterative warping, affecting how each pass is calculated and applied.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Bitmap",
-        "Description": "Applies the warp using standard bitmap-based processing for each iteration."
+        "Description": "Applies the warp using standard bitmap-based processing for each iteration.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "VectorField",
-        "Description": "Uses a vector field to guide the warp, allowing for more directional and flow-based distortions."
+        "Description": "Uses a vector field to guide the warp, allowing for more directional and flow-based distortions.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "VectorFieldIntegral",
-        "Description": "Integrates the vector field over multiple passes, producing complex, cumulative warp effects."
+        "Description": "Integrates the vector field over multiple passes, producing complex, cumulative warp effects.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   }

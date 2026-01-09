@@ -1,62 +1,88 @@
 ﻿[
   {
     "Name": "Intensity",
-    "Description": "Controls the strength of the slope warp effect. Higher values produce more pronounced warping and distortion of the terrain along the slope."
+    "Description": "Controls the strength of the slope warp effect. Higher values produce more pronounced warping and distortion of the terrain along the slope.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Iterations",
-    "Description": "Specifies how many times the slope warp operation is applied. Increasing iterations can create more complex or exaggerated warping effects."
+    "Description": "Specifies how many times the slope warp operation is applied. Increasing iterations can create more complex or exaggerated warping effects.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Direction",
-    "Description": "Sets the primary direction in which the slope warp is applied. Adjust this to control the orientation of the warping across the terrain."
+    "Description": "Sets the primary direction in which the slope warp is applied. Adjust this to control the orientation of the warping across the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Normalized",
-    "Description": "When enabled, normalizes the effect so that the intensity is consistent regardless of terrain scale or resolution."
+    "Description": "When enabled, normalizes the effect so that the intensity is consistent regardless of terrain scale or resolution.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Quality",
-    "IsGroup": true,
-    "Description": "Settings related to the quality and precision of the slope warp operation. Higher quality may increase processing time but results in smoother, more accurate warping."
+    "Description": "Settings related to the quality and precision of the slope warp operation. Higher quality may increase processing time but results in smoother, more accurate warping.",
+    "IsGroup": true
   },
   {
     "Name": "Quality",
-    "Description": "Selects the quality level for the slope warp effect, balancing performance and visual fidelity.",
+    "Description": "Settings related to the quality and precision of the slope warp operation. Higher quality may increase processing time but results in smoother, more accurate warping.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Low",
-        "Description": "Fastest processing with minimal detail. Suitable for previews or low-quality outputs."
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Medium",
-        "Description": "Balanced quality and performance. Provides moderate detail suitable for most workflows."
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "High",
-        "Description": "Higher detail and smoother results, with increased processing time."
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Ultra",
-        "Description": "Maximum detail and smoothness. Best for final outputs, but may be slower to process."
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Antialiasing",
     "Description": "Applies antialiasing to the slope warp effect, reducing jagged edges and improving visual smoothness.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Off",
-        "Description": "No antialiasing is applied. May result in sharper but potentially jagged edges."
+        "Description": "No antialiasing is applied. May result in sharper but potentially jagged edges.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "x4",
-        "Description": "Applies 4x antialiasing for moderate smoothing of edges."
+        "Description": "Applies 4x antialiasing for moderate smoothing of edges.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "x16",
-        "Description": "Applies 16x antialiasing for maximum edge smoothing and highest visual quality."
+        "Description": "Applies 16x antialiasing for maximum edge smoothing and highest visual quality.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   }

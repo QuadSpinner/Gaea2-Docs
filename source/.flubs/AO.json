@@ -2,27 +2,39 @@
   {
     "Name": "Quality",
     "Description": "Sets the processing resolution for the ambient occlusion calculation. Higher quality provides more accurate and detailed results, but may increase computation time.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Low",
-        "Description": "Fastest processing with minimal detail. Suitable for previews or low-fidelity outputs."
+        "Description": "Fastest processing with minimal detail. Suitable for previews or low-fidelity outputs.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Medium",
-        "Description": "Balanced processing speed and detail. Recommended for general use."
+        "Description": "Balanced processing speed and detail. Recommended for general use.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "High",
-        "Description": "High detail with slower processing. Use when fine ambient occlusion is required."
+        "Description": "High detail with slower processing. Use when fine ambient occlusion is required.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Ultra",
-        "Description": "Maximum detail and accuracy. Best for final renders, but slowest to compute."
+        "Description": "Maximum detail and accuracy. Best for final renders, but slowest to compute.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Enhance",
-    "Description": "Boosts the strength and clarity of the ambient occlusion effect, making shadows and depth more pronounced in the terrain."
+    "Description": "Boosts the strength and clarity of the ambient occlusion effect, making shadows and depth more pronounced in the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

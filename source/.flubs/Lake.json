@@ -1,40 +1,54 @@
 ﻿[
   {
     "Name": "Lake Formation",
-    "IsGroup": true,
-    "Description": "Group containing parameters for generating lakes on the terrain, including formation, placement, and water body characteristics."
+    "Description": "Controls the amount of water available for lake formation, influencing the size and number of lakes generated.",
+    "IsGroup": true
   },
   {
     "Name": "Precipitation",
-    "Description": "Controls the amount of water available for lake formation, influencing the size and number of lakes generated."
+    "Description": "Controls the amount of water available for lake formation, influencing the size and number of lakes generated.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Small Lakes",
-    "Description": "Enables or adjusts the creation of smaller lakes, increasing the frequency of minor water bodies across the terrain."
+    "Description": "Enables or adjusts the creation of smaller lakes, increasing the frequency of minor water bodies across the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Flood Control",
-    "Description": "Limits excessive flooding by managing water distribution, preventing lakes from overflowing or merging unnaturally."
+    "Description": "Limits excessive flooding by managing water distribution, preventing lakes from overflowing or merging unnaturally.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Water Floor",
-    "Description": "Sets the elevation of the lake bed, determining the minimum depth and base level of the water body."
+    "Description": "Sets the elevation of the lake bed, determining the minimum depth and base level of the water body.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Shore Formation",
-    "IsGroup": true,
-    "Description": "Group containing parameters for shaping and detailing the lake shorelines, including width and transition effects."
+    "Description": "Controls the width and extent of the shoreline around lakes, affecting how far the shore transitions into the surrounding terrain.",
+    "IsGroup": true
   },
   {
     "Name": "Shore Size",
-    "Description": "Controls the width and extent of the shoreline around lakes, affecting how far the shore transitions into the surrounding terrain."
+    "Description": "Controls the width and extent of the shoreline around lakes, affecting how far the shore transitions into the surrounding terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Altitude Bias",
-    "Description": "Biases lake placement towards certain altitudes, favoring higher or lower terrain for lake formation."
+    "Description": "Biases lake placement towards certain altitudes, favoring higher or lower terrain for lake formation.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Size Bias",
-    "Description": "Adjusts the likelihood of generating larger or smaller lakes, influencing the overall distribution of lake sizes."
+    "Description": "Adjusts the likelihood of generating larger or smaller lakes, influencing the overall distribution of lake sizes.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

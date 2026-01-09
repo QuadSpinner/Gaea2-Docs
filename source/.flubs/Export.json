@@ -2,115 +2,169 @@
   {
     "Name": "Format",
     "Description": "Specifies the file format for the exported output. Choose the format that best fits your workflow or target application.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "GaeaRaw",
-        "Description": "Exports the data in Gaea's native RAW format, preserving full precision and compatibility with Gaea."
+        "Description": "Exports the data in Gaea's native RAW format, preserving full precision and compatibility with Gaea.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "HalfRaw",
-        "Description": "Exports the data as 16-bit half-precision RAW, balancing file size and detail."
+        "Description": "Exports the data as 16-bit half-precision RAW, balancing file size and detail.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "HalfRaw16",
-        "Description": "Exports the data as 16-bit half-precision RAW with explicit 16-bit formatting."
+        "Description": "Exports the data as 16-bit half-precision RAW with explicit 16-bit formatting.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "UshortRaw",
-        "Description": "Exports the data as unsigned short (16-bit) RAW, suitable for many terrain and 3D applications."
+        "Description": "Exports the data as unsigned short (16-bit) RAW, suitable for many terrain and 3D applications.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "UshortRaw16",
-        "Description": "Exports the data as unsigned short (16-bit) RAW with explicit 16-bit formatting."
+        "Description": "Exports the data as unsigned short (16-bit) RAW with explicit 16-bit formatting.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "FloatRaw",
-        "Description": "Exports the data as 32-bit floating point RAW, providing maximum precision for advanced workflows."
+        "Description": "Exports the data as 32-bit floating point RAW, providing maximum precision for advanced workflows.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "FloatRaw32",
-        "Description": "Exports the data as 32-bit floating point RAW with explicit 32-bit formatting."
+        "Description": "Exports the data as 32-bit floating point RAW with explicit 32-bit formatting.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "JPEG",
-        "Description": "Exports the data as a JPEG image, using lossy compression for reduced file size and broad compatibility."
+        "Description": "Exports the data as a JPEG image, using lossy compression for reduced file size and broad compatibility.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "PNG8",
-        "Description": "Exports the data as an 8-bit PNG image, suitable for masks and lightweight outputs."
+        "Description": "Exports the data as an 8-bit PNG image, suitable for masks and lightweight outputs.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "PNG16",
-        "Description": "Exports the data as a 16-bit PNG image, preserving more detail for heightfields and masks."
+        "Description": "Exports the data as a 16-bit PNG image, preserving more detail for heightfields and masks.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "PNG64",
-        "Description": "Exports the data as a 64-bit PNG image, supporting high dynamic range and advanced workflows."
+        "Description": "Exports the data as a 64-bit PNG image, supporting high dynamic range and advanced workflows.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "TIFF8",
-        "Description": "Exports the data as an 8-bit TIFF image, commonly used for masks and simple outputs."
+        "Description": "Exports the data as an 8-bit TIFF image, commonly used for masks and simple outputs.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "TIFF16",
-        "Description": "Exports the data as a 16-bit TIFF image, suitable for high-quality heightfields and masks."
+        "Description": "Exports the data as a 16-bit TIFF image, suitable for high-quality heightfields and masks.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "TIFF32",
-        "Description": "Exports the data as a 32-bit TIFF image, supporting high dynamic range and scientific workflows."
+        "Description": "Exports the data as a 32-bit TIFF image, supporting high dynamic range and scientific workflows.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "EXR",
-        "Description": "Exports the data as an OpenEXR image, ideal for high dynamic range and professional VFX pipelines."
+        "Description": "Exports the data as an OpenEXR image, ideal for high dynamic range and professional VFX pipelines.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Location",
     "Description": "Specifies where the exported file will be saved.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "BuildFolder",
-        "Description": "Exports the file to the project's build/output folder."
+        "Description": "Exports the file to the project's build/output folder.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Custom",
-        "Description": "Allows you to specify a custom folder for the exported file."
+        "Description": "Allows you to specify a custom folder for the exported file.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Explicit",
-        "Description": "Exports the file to an explicitly defined path, overriding other location settings."
+        "Description": "Exports the file to an explicitly defined path, overriding other location settings.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Output Path",
-    "Description": "Defines the full file path or directory where the exported file will be saved."
+    "Description": "Defines the full file path or directory where the exported file will be saved.",
+    "Type": "String",
+    "IsGroup": false
   },
   {
     "Name": "If File Exists",
     "Description": "Determines what happens if a file with the same name already exists at the export location.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Overwrite",
-        "Description": "Replaces the existing file with the new export."
+        "Description": "Replaces the existing file with the new export.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Increment",
-        "Description": "Automatically increments the filename to avoid overwriting existing files."
+        "Description": "Automatically increments the filename to avoid overwriting existing files.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Information",
-    "Description": "Displays additional information or metadata about the export process or output file."
+    "Description": "Displays additional information or metadata about the export process or output file.",
+    "Type": "Byte",
+    "IsGroup": false
   },
   {
     "Name": "Prepare for Bridge",
-    "Description": "Prepares the exported file for use with the Bridge system, enabling compatibility with external tools or workflows."
+    "Description": "Prepares the exported file for use with the Bridge system, enabling compatibility with external tools or workflows.",
+    "Type": "Command",
+    "IsGroup": false
   },
   {
     "Name": "Information Houdini",
-    "Description": "Displays or stores metadata related to Houdini integration, such as file attributes or export status."
+    "Description": "Displays or stores metadata related to Houdini integration, such as file attributes or export status.",
+    "Type": "Byte",
+    "IsGroup": false
   }
 ]

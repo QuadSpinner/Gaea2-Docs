@@ -1,40 +1,58 @@
 ﻿[
   {
     "Name": "Size",
-    "Description": "Sets the size of the dilation effect. Larger values expand features more, increasing the reach of the dilation."
+    "Description": "Sets the size of the dilation effect. Larger values expand features more, increasing the reach of the dilation.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Shape",
-    "Description": "Specifies the geometric shape used for the dilation operation, affecting how features are expanded."
+    "Description": "Specifies the geometric shape used for the dilation operation, affecting how features are expanded.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Iterations",
-    "Description": "Controls how many times the dilation process is repeated. More iterations result in greater expansion of features."
+    "Description": "Controls how many times the dilation process is repeated. More iterations result in greater expansion of features.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Kernel",
     "Description": "Selects the kernel type used for dilation, determining the pattern and direction of expansion.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Cross",
-        "Description": "Uses a cross-shaped kernel, expanding features in horizontal and vertical directions."
+        "Description": "Uses a cross-shaped kernel, expanding features in horizontal and vertical directions.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Rectangle",
-        "Description": "Uses a rectangular kernel, expanding features uniformly in all directions."
+        "Description": "Uses a rectangular kernel, expanding features uniformly in all directions.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Line",
-        "Description": "Uses a line-shaped kernel, expanding features along a specified direction."
+        "Description": "Uses a line-shaped kernel, expanding features along a specified direction.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "LineVertical",
-        "Description": "Uses a vertical line kernel, expanding features only in the vertical direction."
+        "Description": "Uses a vertical line kernel, expanding features only in the vertical direction.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Invert",
-    "Description": "Inverts the input before applying dilation, causing the operation to expand background areas instead of foreground features."
+    "Description": "Inverts the input before applying dilation, causing the operation to expand background areas instead of foreground features.",
+    "Type": "Boolean",
+    "IsGroup": false
   }
 ]

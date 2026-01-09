@@ -1,154 +1,212 @@
 ﻿[
   {
     "Name": "Shrubs",
-    "IsGroup": true,
-    "Description": "Group containing parameters for simulating the distribution and growth of shrubs (low plants) across the terrain. Behaves similarly to the Trees node but is specialized for low-lying vegetation."
+    "Description": "Specifies the number of shrubs to generate, in thousands. Controls the overall density of shrubs across the terrain.",
+    "IsGroup": true
   },
   {
     "Name": "Count in Thousands",
-    "Description": "Specifies the number of shrubs to generate, in thousands. Controls the overall density of shrubs across the terrain."
+    "Description": "Specifies the number of shrubs to generate, in thousands. Controls the overall density of shrubs across the terrain.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Is Relative",
-    "Description": "If enabled, the shrub count is relative to the terrain size or other factors, rather than being an absolute number."
+    "Description": "If enabled, the shrub count is relative to the terrain size or other factors, rather than being an absolute number.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Shape",
     "Description": "Determines the shape or type of shrub clusters to be placed. Affects the visual appearance and distribution pattern of shrubs.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Point",
-        "Description": "Places individual shrubs as single points, resulting in a scattered, sparse distribution."
+        "Description": "Places individual shrubs as single points, resulting in a scattered, sparse distribution.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Big",
-        "Description": "Generates larger shrub clusters, simulating denser or more mature shrub growth."
+        "Description": "Generates larger shrub clusters, simulating denser or more mature shrub growth.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "BigOnly",
-        "Description": "Restricts placement to only large shrub clusters, omitting individual or small shrubs."
+        "Description": "Restricts placement to only large shrub clusters, omitting individual or small shrubs.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Seed",
-    "Description": "Sets the randomization seed for shrub placement, ensuring reproducible or varied results."
+    "Description": "Sets the randomization seed for shrub placement, ensuring reproducible or varied results.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Growth",
-    "IsGroup": true,
-    "Description": "Group containing parameters that control the growth behavior and environmental response of shrubs."
+    "Description": "Determines how shrubs respond to water sources, influencing their tendency to grow near or away from water.",
+    "IsGroup": true
   },
   {
     "Name": "Seek Water",
     "Description": "Determines how shrubs respond to water sources, influencing their tendency to grow near or away from water.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Seek",
-        "Description": "Shrubs preferentially grow closer to water sources, increasing density near moist areas."
+        "Description": "Shrubs preferentially grow closer to water sources, increasing density near moist areas.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Avoid",
-        "Description": "Shrubs avoid water sources, resulting in sparser growth near moist areas."
+        "Description": "Shrubs avoid water sources, resulting in sparser growth near moist areas.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Avoid Trees",
     "Description": "Controls how shrubs interact with tree placement, affecting their distribution relative to trees.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "None",
-        "Description": "Shrubs are placed without regard to tree locations."
+        "Description": "Shrubs are placed without regard to tree locations.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Previous",
-        "Description": "Shrubs avoid areas where trees were previously placed, reducing overlap."
+        "Description": "Shrubs avoid areas where trees were previously placed, reducing overlap.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "All",
-        "Description": "Shrubs avoid all tree-covered areas, ensuring no overlap between shrubs and trees."
+        "Description": "Shrubs avoid all tree-covered areas, ensuring no overlap between shrubs and trees.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Health",
-    "Description": "Represents the overall health or vigor of shrubs, affecting their size, density, and appearance."
+    "Description": "Represents the overall health or vigor of shrubs, affecting their size, density, and appearance.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Spread",
-    "Description": "Controls how far shrubs can spread from their initial placement, influencing patch size and coverage."
+    "Description": "Controls how far shrubs can spread from their initial placement, influencing patch size and coverage.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Random",
-    "Description": "Introduces randomness to shrub placement and growth, creating more natural and varied patterns."
+    "Description": "Introduces randomness to shrub placement and growth, creating more natural and varied patterns.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Simulation Bias",
-    "Description": "Adjusts the simulation to favor certain environmental conditions or behaviors, influencing shrub distribution."
+    "Description": "Adjusts the simulation to favor certain environmental conditions or behaviors, influencing shrub distribution.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Aspect Inhibition",
-    "IsGroup": true,
-    "Description": "Group containing parameters that inhibit shrub growth based on terrain aspect, such as slope and altitude."
+    "Description": "Limits shrub growth on steep slopes, simulating natural growth patterns where shrubs prefer gentler terrain.",
+    "IsGroup": true
   },
   {
     "Name": "Slope",
-    "Description": "Limits shrub growth on steep slopes, simulating natural growth patterns where shrubs prefer gentler terrain."
+    "Description": "Limits shrub growth on steep slopes, simulating natural growth patterns where shrubs prefer gentler terrain.",
+    "Type": "Float2",
+    "IsGroup": false
   },
   {
     "Name": "Slope Falloff",
-    "Description": "Controls how quickly shrub density decreases as slope increases."
+    "Description": "Controls how quickly shrub density decreases as slope increases.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Altitude",
-    "Description": "Restricts shrub growth above or below certain altitudes, simulating elevation-based vegetation zones."
+    "Description": "Restricts shrub growth above or below certain altitudes, simulating elevation-based vegetation zones.",
+    "Type": "Float2",
+    "IsGroup": false
   },
   {
     "Name": "Altitude Falloff",
-    "Description": "Controls the rate at which shrub density decreases with altitude."
+    "Description": "Controls the rate at which shrub density decreases with altitude.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Snow Inhibition",
-    "IsGroup": true,
-    "Description": "Group containing parameters that inhibit shrub growth in snowy or snow-prone areas."
+    "Description": "Prevents shrub growth in areas with stagnant or 'dead' water flow, simulating natural avoidance of such regions.",
+    "IsGroup": true
   },
   {
     "Name": "Dead Flow",
-    "Description": "Prevents shrub growth in areas with stagnant or 'dead' water flow, simulating natural avoidance of such regions."
+    "Description": "Prevents shrub growth in areas with stagnant or 'dead' water flow, simulating natural avoidance of such regions.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Consolidate Flows",
-    "Description": "Encourages shrubs to grow along consolidated water flow paths, such as stream banks or drainage lines."
+    "Description": "Encourages shrubs to grow along consolidated water flow paths, such as stream banks or drainage lines.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Bias",
-    "Description": "Applies a directional or environmental bias to shrub placement, favoring certain areas or conditions."
+    "Description": "Applies a directional or environmental bias to shrub placement, favoring certain areas or conditions.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Artistic Control",
-    "IsGroup": true,
-    "Description": "Group containing parameters for fine-tuning shrub distribution and appearance for artistic purposes."
+    "Description": "Increases the irregularity and unpredictability of shrub placement, creating a more natural look.",
+    "IsGroup": true
   },
   {
     "Name": "Chaos",
-    "Description": "Increases the irregularity and unpredictability of shrub placement, creating a more natural look."
+    "Description": "Increases the irregularity and unpredictability of shrub placement, creating a more natural look.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Blur Edges",
-    "Description": "Softens the boundaries of shrub patches, blending them more smoothly into the surrounding terrain."
+    "Description": "Softens the boundaries of shrub patches, blending them more smoothly into the surrounding terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Custom Inhibitors",
-    "IsGroup": true,
-    "Description": "Group for user-defined rules or masks that inhibit shrub growth in specific areas."
+    "Description": "Allows custom input maps or masks to influence shrub placement and density.",
+    "IsGroup": true
   },
   {
     "Name": "Custom Influence",
-    "Description": "Allows custom input maps or masks to influence shrub placement and density."
+    "Description": "Allows custom input maps or masks to influence shrub placement and density.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Trim",
-    "Description": "Removes or reduces shrubs in specified areas, providing manual control over final distribution."
+    "Description": "Removes or reduces shrubs in specified areas, providing manual control over final distribution.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

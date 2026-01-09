@@ -1,66 +1,88 @@
 ﻿[
   {
     "Name": "Mesh",
-    "Description": "Specifies the 3D mesh file to import. The mesh will be converted and rendered as a heightfield for use in terrain generation."
+    "Description": "Specifies the 3D mesh file to import. The mesh will be converted and rendered as a heightfield for use in terrain generation.",
+    "Type": "String",
+    "IsGroup": false
   },
   {
     "Name": "Relative Path",
-    "Description": "Defines the file path to the mesh relative to the project or asset directory. Ensures portability and correct asset referencing."
+    "Description": "Defines the file path to the mesh relative to the project or asset directory. Ensures portability and correct asset referencing.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Position",
-    "IsGroup": true,
-    "Description": "Group containing parameters for positioning the imported object within the terrain."
+    "Description": "Automatically positions the object so its lowest point rests on the terrain base, preventing it from floating or being embedded below the surface.",
+    "IsGroup": true
   },
   {
     "Name": "Drop to Floor",
-    "Description": "Automatically positions the object so its lowest point rests on the terrain base, preventing it from floating or being embedded below the surface."
+    "Description": "Automatically positions the object so its lowest point rests on the terrain base, preventing it from floating or being embedded below the surface.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Offset X",
-    "Description": "Shifts the object horizontally along the X axis, allowing precise placement within the terrain."
+    "Description": "Shifts the object horizontally along the X axis, allowing precise placement within the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Offset Y",
-    "Description": "Shifts the object horizontally along the Y axis, allowing precise placement within the terrain."
+    "Description": "Shifts the object horizontally along the Y axis, allowing precise placement within the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Offset Z",
-    "Description": "Moves the object vertically along the Z axis, raising or lowering it relative to the terrain surface."
+    "Description": "Moves the object vertically along the Z axis, raising or lowering it relative to the terrain surface.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Scale",
-    "IsGroup": true,
-    "Description": "Group containing parameters for scaling the imported object."
+    "Description": "Group containing parameters for scaling the imported object.",
+    "IsGroup": true
   },
   {
     "Name": "Scale",
-    "Description": "Uniformly scales the size of the imported object, making it larger or smaller in all dimensions."
+    "Description": "Group containing parameters for scaling the imported object.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Rotation",
-    "IsGroup": true,
-    "Description": "Group containing parameters for rotating the imported object around its axes."
+    "Description": "Rotates the object around the X axis, tilting it forward or backward.",
+    "IsGroup": true
   },
   {
     "Name": "Pitch",
-    "Description": "Rotates the object around the X axis, tilting it forward or backward."
+    "Description": "Rotates the object around the X axis, tilting it forward or backward.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Yaw",
-    "Description": "Rotates the object around the Y axis, turning it left or right."
+    "Description": "Rotates the object around the Y axis, turning it left or right.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Roll",
-    "Description": "Rotates the object around the Z axis, spinning it clockwise or counterclockwise."
+    "Description": "Rotates the object around the Z axis, spinning it clockwise or counterclockwise.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Quality",
-    "IsGroup": true,
-    "Description": "Group containing parameters that affect the rendering quality of the imported object as a heightfield."
+    "Description": "Enables or adjusts antialiasing for the heightfield rendering, reducing jagged edges and improving visual smoothness.",
+    "IsGroup": true
   },
   {
     "Name": "Antialiasing",
-    "Description": "Enables or adjusts antialiasing for the heightfield rendering, reducing jagged edges and improving visual smoothness."
+    "Description": "Enables or adjusts antialiasing for the heightfield rendering, reducing jagged edges and improving visual smoothness.",
+    "Type": "Boolean",
+    "IsGroup": false
   }
 ]

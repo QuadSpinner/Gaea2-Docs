@@ -1,80 +1,112 @@
 ﻿[
   {
     "Name": "Structure",
-    "IsGroup": true,
-    "Description": "Group containing parameters that define the underlying structure and features of the generated black and white texture."
+    "Description": "Controls the influence of terrain slope on the texture, allowing highlights or patterns to follow steeper areas.",
+    "IsGroup": true
   },
   {
     "Name": "Slope",
-    "Description": "Controls the influence of terrain slope on the texture, allowing highlights or patterns to follow steeper areas."
+    "Description": "Controls the influence of terrain slope on the texture, allowing highlights or patterns to follow steeper areas.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Flows",
-    "Description": "Adds flow-based features to the texture, simulating the effect of water or material movement across the surface."
+    "Description": "Adds flow-based features to the texture, simulating the effect of water or material movement across the surface.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Soil",
-    "Description": "Introduces soil-like patterns or noise, adding organic variation to the texture."
+    "Description": "Introduces soil-like patterns or noise, adding organic variation to the texture.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Patches",
-    "Description": "Controls the presence and size of patchy areas within the texture, creating irregular or clustered features."
+    "Description": "Controls the presence and size of patchy areas within the texture, creating irregular or clustered features.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Chaos",
-    "Description": "Adjusts the randomness and disorder in the texture, increasing natural variation and reducing uniformity."
+    "Description": "Adjusts the randomness and disorder in the texture, increasing natural variation and reducing uniformity.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Peaks",
-    "Description": "Emphasizes or introduces features that follow terrain peaks, adding detail to high areas in the texture."
+    "Description": "Emphasizes or introduces features that follow terrain peaks, adding detail to high areas in the texture.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Processing",
-    "IsGroup": true,
-    "Description": "Group containing post-processing options that modify or enhance the generated texture before colorization."
+    "Description": "Enhances specific features or contrasts in the texture, making details more pronounced.",
+    "IsGroup": true
   },
   {
     "Name": "Accentuate",
     "Description": "Enhances specific features or contrasts in the texture, making details more pronounced.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Off",
-        "Description": "No accentuation is applied; the texture remains unmodified."
+        "Description": "No accentuation is applied; the texture remains unmodified.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Old",
-        "Description": "Applies the legacy accentuation method, increasing contrast and detail using the previous algorithm."
+        "Description": "Applies the legacy accentuation method, increasing contrast and detail using the previous algorithm.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "New",
-        "Description": "Uses the latest accentuation method for improved feature enhancement and clarity."
+        "Description": "Uses the latest accentuation method for improved feature enhancement and clarity.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Enhance",
     "Description": "Applies additional enhancement to the texture's tonal range or contrast.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "None",
-        "Description": "No enhancement is applied."
+        "Description": "No enhancement is applied.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Autolevel",
-        "Description": "Automatically adjusts the levels to maximize the full tonal range, improving contrast."
+        "Description": "Automatically adjusts the levels to maximize the full tonal range, improving contrast.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Equalize",
-        "Description": "Equalizes the histogram, distributing intensity values more evenly for a balanced look."
+        "Description": "Equalizes the histogram, distributing intensity values more evenly for a balanced look.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Reverse",
-    "Description": "Inverts the black and white values of the texture, swapping dark and light areas."
+    "Description": "Inverts the black and white values of the texture, swapping dark and light areas.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "Randomization seed for generating the texture. Changing the seed produces different pattern variations."
+    "Description": "Randomization seed for generating the texture. Changing the seed produces different pattern variations.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

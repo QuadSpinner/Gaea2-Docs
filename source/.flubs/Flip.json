@@ -2,18 +2,26 @@
   {
     "Name": "Type",
     "Description": "Selects which axis the input is mirrored across.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "X",
-        "Description": "Flips the input horizontally (mirrors along the X axis)."
+        "Description": "Flips the input horizontally (mirrors along the X axis).",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Y",
-        "Description": "Flips the input vertically (mirrors along the Y axis)."
+        "Description": "Flips the input vertically (mirrors along the Y axis).",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "XY",
-        "Description": "Flips both axes (180° mirror of the input)."
+        "Description": "Flips both axes (180° mirror of the input).",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   }

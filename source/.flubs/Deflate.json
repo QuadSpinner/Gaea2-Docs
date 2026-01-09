@@ -1,6 +1,8 @@
 ﻿[
   {
     "Name": "Amount",
-    "Description": "Controls the degree to which the terrain is compressed or lowered. Higher values result in a more pronounced flattening or reduction of elevation, effectively 'deflating' the terrain features."
+    "Description": "Controls the degree to which the terrain is compressed or lowered. Higher values result in a more pronounced flattening or reduction of elevation, effectively 'deflating' the terrain features.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

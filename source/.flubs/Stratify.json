@@ -1,30 +1,44 @@
 ﻿[
   {
     "Name": "Spacing",
-    "Description": "Controls the distance between individual stratified layers, affecting the frequency and thickness of visible strata in the terrain."
+    "Description": "Controls the distance between individual stratified layers, affecting the frequency and thickness of visible strata in the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Octaves",
-    "Description": "Sets the number of noise octaves used to add variation to the stratified layers. Higher values introduce more complexity and detail."
+    "Description": "Sets the number of noise octaves used to add variation to the stratified layers. Higher values introduce more complexity and detail.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Intensity",
-    "Description": "Adjusts the overall strength of the stratification effect, making the layers more or less pronounced."
+    "Description": "Adjusts the overall strength of the stratification effect, making the layers more or less pronounced.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Shape",
-    "Description": "Modifies the profile or contour of the stratified layers, influencing how sharply or smoothly the layers transition."
+    "Description": "Modifies the profile or contour of the stratified layers, influencing how sharply or smoothly the layers transition.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "Defines the randomization seed for procedural generation, ensuring unique but repeatable stratification patterns."
+    "Description": "Defines the randomization seed for procedural generation, ensuring unique but repeatable stratification patterns.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Tilt Amount",
-    "Description": "Applies an angular tilt to the stratified layers, simulating geological tilting or shifting of strata."
+    "Description": "Applies an angular tilt to the stratified layers, simulating geological tilting or shifting of strata.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Direction",
-    "Description": "Sets the orientation of the stratified layers, determining the primary direction in which the strata are aligned."
+    "Description": "Sets the orientation of the stratified layers, determining the primary direction in which the strata are aligned.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

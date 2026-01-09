@@ -1,31 +1,43 @@
 ﻿[
   {
     "Name": "Count",
-    "Description": "Sets the number of main contour lines to generate. Higher values create more elevation bands across the terrain."
+    "Description": "Sets the number of main contour lines to generate. Higher values create more elevation bands across the terrain.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Subdivision",
-    "Description": "Controls the number of subdivisions between main contour lines, adding finer detail and intermediate lines."
+    "Description": "Controls the number of subdivisions between main contour lines, adding finer detail and intermediate lines.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Accuracy",
-    "Description": "Adjusts the precision of contour line placement. Higher accuracy produces more exact lines that closely follow the terrain's elevation."
+    "Description": "Adjusts the precision of contour line placement. Higher accuracy produces more exact lines that closely follow the terrain's elevation.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Lines",
-    "IsGroup": true,
-    "Description": "Group containing parameters for customizing the appearance and properties of contour lines."
+    "Description": "Controls the brightness or opacity of the main contour lines, making them more or less prominent in the output.",
+    "IsGroup": true
   },
   {
     "Name": "Line Intensity",
-    "Description": "Controls the brightness or opacity of the main contour lines, making them more or less prominent in the output."
+    "Description": "Controls the brightness or opacity of the main contour lines, making them more or less prominent in the output.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Sub Intensity",
-    "Description": "Adjusts the brightness or opacity of the subdivision lines, which are the finer lines between main contours."
+    "Description": "Adjusts the brightness or opacity of the subdivision lines, which are the finer lines between main contours.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Line Thickness",
-    "Description": "Specifies the thickness of the contour lines. Higher values produce bolder, wider lines."
+    "Description": "Specifies the thickness of the contour lines. Higher values produce bolder, wider lines.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

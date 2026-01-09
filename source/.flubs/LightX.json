@@ -2,131 +2,189 @@
   {
     "Name": "Direction Selection",
     "Description": "Specifies how the sun direction is determined for lighting calculations.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Manual",
-        "Description": "Allows manual input of sun direction parameters such as azimuth and elevation."
+        "Description": "Allows manual input of sun direction parameters such as azimuth and elevation.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Geographic",
-        "Description": "Calculates sun direction based on geographic coordinates, date, and time for physically accurate lighting."
+        "Description": "Calculates sun direction based on geographic coordinates, date, and time for physically accurate lighting.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "North",
-    "Description": "Sets the orientation of the north direction in the scene, affecting geographic sun calculations."
+    "Description": "Sets the orientation of the north direction in the scene, affecting geographic sun calculations.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Latitude",
-    "Description": "Specifies the latitude for geographic sun calculations, influencing sun position and lighting angle."
+    "Description": "Specifies the latitude for geographic sun calculations, influencing sun position and lighting angle.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Day of Year",
-    "Description": "Sets the day of the year for geographic sun calculations, affecting seasonal sun position and lighting."
+    "Description": "Sets the day of the year for geographic sun calculations, affecting seasonal sun position and lighting.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Solar Hour",
-    "Description": "Specifies the time of day for geographic sun calculations, determining the sun's position in the sky."
+    "Description": "Specifies the time of day for geographic sun calculations, determining the sun's position in the sky.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Sun Azimuth",
-    "Description": "Sets the horizontal angle of the sun, determining the direction from which sunlight is cast."
+    "Description": "Sets the horizontal angle of the sun, determining the direction from which sunlight is cast.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Sun Elevation",
-    "Description": "Controls the vertical angle of the sun above the horizon, affecting the length and intensity of shadows."
+    "Description": "Controls the vertical angle of the sun above the horizon, affecting the length and intensity of shadows.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Angular Diameter",
-    "Description": "Specifies the apparent size of the sun in the sky, influencing the softness of shadows and highlights."
+    "Description": "Specifies the apparent size of the sun in the sky, influencing the softness of shadows and highlights.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Direct Light",
-    "Description": "Adjusts the intensity of direct sunlight in the scene, affecting brightness and shadow contrast."
+    "Description": "Adjusts the intensity of direct sunlight in the scene, affecting brightness and shadow contrast.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Shadows",
-    "Description": "Enables or adjusts the rendering of shadows cast by terrain features, enhancing depth and realism."
+    "Description": "Enables or adjusts the rendering of shadows cast by terrain features, enhancing depth and realism.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Ambient Light",
-    "Description": "Controls the overall ambient light level, simulating indirect illumination from the sky and environment."
+    "Description": "Controls the overall ambient light level, simulating indirect illumination from the sky and environment.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Ambient Occlusion",
-    "Description": "Enables or adjusts ambient occlusion, which darkens crevices and areas shielded from ambient light for added realism."
+    "Description": "Enables or adjusts ambient occlusion, which darkens crevices and areas shielded from ambient light for added realism.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Quality",
     "Description": "Sets the rendering quality for lighting and shadow calculations.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Low",
-        "Description": "Fastest rendering with basic lighting and shadow detail."
+        "Description": "Fastest rendering with basic lighting and shadow detail.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Medium",
-        "Description": "Balanced quality and performance with moderate lighting and shadow detail."
+        "Description": "Balanced quality and performance with moderate lighting and shadow detail.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "High",
-        "Description": "High-quality rendering with detailed lighting and shadows."
+        "Description": "High-quality rendering with detailed lighting and shadows.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Ultra",
-        "Description": "Maximum quality with the most accurate lighting and shadow effects."
+        "Description": "Maximum quality with the most accurate lighting and shadow effects.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Light",
-    "IsGroup": true,
-    "Description": "Group containing parameters for controlling overall light properties in the scene."
+    "Description": "Adjusts the exposure level, controlling the overall brightness and dynamic range of the rendered image.",
+    "IsGroup": true
   },
   {
     "Name": "Exposure",
-    "Description": "Adjusts the exposure level, controlling the overall brightness and dynamic range of the rendered image."
+    "Description": "Adjusts the exposure level, controlling the overall brightness and dynamic range of the rendered image.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Sun Intensity",
-    "Description": "Sets the strength of the sun's light, affecting the brightness of direct illumination."
+    "Description": "Sets the strength of the sun's light, affecting the brightness of direct illumination.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Ambient Intensity",
-    "Description": "Controls the strength of ambient light, influencing the brightness of areas not directly lit by the sun."
+    "Description": "Controls the strength of ambient light, influencing the brightness of areas not directly lit by the sun.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Air Density",
-    "Description": "Simulates atmospheric density, affecting the scattering of light and the appearance of haze."
+    "Description": "Simulates atmospheric density, affecting the scattering of light and the appearance of haze.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Haze",
-    "Description": "Adds atmospheric haze to the scene, softening distant terrain and simulating light diffusion."
+    "Description": "Adds atmospheric haze to the scene, softening distant terrain and simulating light diffusion.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Ozone",
-    "Description": "Adjusts the ozone level in the atmosphere, influencing the color and intensity of sunlight."
+    "Description": "Adjusts the ozone level in the atmosphere, influencing the color and intensity of sunlight.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Colors",
-    "IsGroup": true,
-    "Description": "Group containing parameters for controlling the color properties of sunlight, ambient light, and ground."
+    "Description": "Enables automatic adjustment of sun and ambient colors based on sun position and atmospheric conditions.",
+    "IsGroup": true
   },
   {
     "Name": "Automatic Colors",
-    "Description": "Enables automatic adjustment of sun and ambient colors based on sun position and atmospheric conditions."
+    "Description": "Enables automatic adjustment of sun and ambient colors based on sun position and atmospheric conditions.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Sun Color",
-    "Description": "Sets the color of direct sunlight, allowing for warm, cool, or custom lighting effects."
+    "Description": "Sets the color of direct sunlight, allowing for warm, cool, or custom lighting effects.",
+    "Type": "Color",
+    "IsGroup": false
   },
   {
     "Name": "Ambient Color",
-    "Description": "Specifies the color of ambient light, affecting the overall tone of shaded areas."
+    "Description": "Specifies the color of ambient light, affecting the overall tone of shaded areas.",
+    "Type": "Color",
+    "IsGroup": false
   },
   {
     "Name": "Ground Brightness",
-    "Description": "Controls the brightness of the ground plane, influencing the overall illumination and visual balance of the scene."
+    "Description": "Controls the brightness of the ground plane, influencing the overall illumination and visual balance of the scene.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

@@ -1,14 +1,20 @@
 ﻿[
   {
     "Name": "Flow Length",
-    "Description": "Controls how far flow paths are traced across the surface (longer values produce longer streams/flow lines)."
+    "Description": "Controls how far flow paths are traced across the surface (longer values produce longer streams/flow lines).",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Flow Volume",
-    "Description": "Controls the amount/strength of flow accumulation used to form the flow map (higher values emphasize major channels)."
+    "Description": "Controls the amount/strength of flow accumulation used to form the flow map (higher values emphasize major channels).",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process."
+    "Description": "The randomization pattern or seed for the node's process.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

@@ -1,23 +1,31 @@
 ﻿[
   {
     "Name": "Stones",
-    "IsGroup": true,
-    "Description": "Group containing parameters for generating and distributing small stones across the terrain surface."
+    "Description": "Controls the overall size of the stones. Higher values produce larger stones, while lower values create finer gravel.",
+    "IsGroup": true
   },
   {
     "Name": "Scale",
-    "Description": "Controls the overall size of the stones. Higher values produce larger stones, while lower values create finer gravel."
+    "Description": "Controls the overall size of the stones. Higher values produce larger stones, while lower values create finer gravel.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Height",
-    "Description": "Sets the maximum elevation or prominence of the stones above the terrain surface."
+    "Description": "Sets the maximum elevation or prominence of the stones above the terrain surface.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Density",
-    "Description": "Adjusts how many stones are scattered across the surface. Higher values increase the number of stones per area."
+    "Description": "Adjusts how many stones are scattered across the surface. Higher values increase the number of stones per area.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "Randomization seed for stone placement and variation. Changing the seed produces different stone patterns."
+    "Description": "Randomization seed for stone placement and variation. Changing the seed produces different stone patterns.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

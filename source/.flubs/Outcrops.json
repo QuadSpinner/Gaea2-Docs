@@ -1,48 +1,66 @@
 ﻿[
   {
     "Name": "Outcrops",
-    "IsGroup": true,
-    "Description": "Group containing parameters for generating rock outcrops that are distributed and repeated across the terrain surface."
+    "Description": "Controls the number of unique outcrop shapes generated before repetition. Higher values create more visual diversity among outcrops.",
+    "IsGroup": true
   },
   {
     "Name": "Variations",
-    "Description": "Controls the number of unique outcrop shapes generated before repetition. Higher values create more visual diversity among outcrops."
+    "Description": "Controls the number of unique outcrop shapes generated before repetition. Higher values create more visual diversity among outcrops.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Strata",
-    "Description": "Adds visible geological layering or banding to the outcrops, simulating sedimentary or stratified rock formations. High values increase the distance between Strata layers."
+    "Description": "Adds visible geological layering or banding to the outcrops, simulating sedimentary or stratified rock formations. High values increase the distance between Strata layers.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Density",
-    "Description": "Adjusts how many outcrops are placed across the terrain. Higher values increase the number of outcrops per area."
+    "Description": "Adjusts how many outcrops are placed across the terrain. Higher values increase the number of outcrops per area.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Shape",
-    "Description": "Determines the overall form and silhouette of each outcrop, affecting their appearance and how they blend with the terrain."
+    "Description": "Determines the overall form and silhouette of each outcrop, affecting their appearance and how they blend with the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Chipped",
-    "Description": "Controls the amount of chipping or breakage on the outcrops, simulating natural weathering and erosion effects."
+    "Description": "Controls the amount of chipping or breakage on the outcrops, simulating natural weathering and erosion effects.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "Sets the randomization seed for outcrop generation, ensuring reproducible or varied results with each value."
+    "Description": "Sets the randomization seed for outcrop generation, ensuring reproducible or varied results with each value.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Variation Range",
-    "IsGroup": true,
-    "Description": "Group containing parameters that define the range of variation for outcrop properties such as size, height, and rotation."
+    "Description": "Specifies the base size of each outcrop, affecting their footprint and prominence on the terrain.",
+    "IsGroup": true
   },
   {
     "Name": "Size",
-    "Description": "Specifies the base size of each outcrop, affecting their footprint and prominence on the terrain."
+    "Description": "Specifies the base size of each outcrop, affecting their footprint and prominence on the terrain.",
+    "Type": "Float2",
+    "IsGroup": false
   },
   {
     "Name": "Height",
-    "Description": "Controls the vertical scale of the outcrops, determining how tall or flat they appear."
+    "Description": "Controls the vertical scale of the outcrops, determining how tall or flat they appear.",
+    "Type": "Float2",
+    "IsGroup": false
   },
   {
     "Name": "Rotation",
-    "Description": "Applies random or specified rotation to each outcrop, increasing natural variation and preventing repetitive patterns."
+    "Description": "Applies random or specified rotation to each outcrop, increasing natural variation and preventing repetitive patterns.",
+    "Type": "Float2",
+    "IsGroup": false
   }
 ]

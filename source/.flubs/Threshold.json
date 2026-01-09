@@ -1,6 +1,8 @@
 ﻿[
   {
     "Name": "Level",
-    "Description": "Specifies the threshold value used to separate terrain features. Values above this level are retained, while values below are discarded or set to a minimum. Adjusting the level controls the cutoff point for terrain masking or feature isolation."
+    "Description": "Specifies the threshold value used to separate terrain features. Values above this level are retained, while values below are discarded or set to a minimum. Adjusting the level controls the cutoff point for terrain masking or feature isolation.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

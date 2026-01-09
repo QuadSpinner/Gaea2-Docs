@@ -1,135 +1,191 @@
 ﻿[
   {
     "Name": "Noise",
-    "IsGroup": true,
-    "Description": "Group containing parameters for generating Voronoi noise patterns, which create cell-like structures commonly used for terrain and texture synthesis."
+    "Description": "The perceptual scale of the Voronoi shapes. Higher values create more, smaller shapes; lower values produce fewer, larger cells.",
+    "IsGroup": true
   },
   {
     "Name": "Scale",
-    "Description": "The perceptual scale of the Voronoi shapes. Higher values create more, smaller shapes; lower values produce fewer, larger cells."
+    "Description": "The perceptual scale of the Voronoi shapes. Higher values create more, smaller shapes; lower values produce fewer, larger cells.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Jitter",
-    "Description": "Controls the offset of the Voronoi points, ranging from perfectly symmetrical (low jitter) to highly chaotic (high jitter) cell placement."
+    "Description": "Controls the offset of the Voronoi points, ranging from perfectly symmetrical (low jitter) to highly chaotic (high jitter) cell placement.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Function",
     "Description": "Specifies the distance function used to calculate Voronoi cells, affecting the shape and boundaries of each cell.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Euclidean",
-        "Description": "Uses the standard Euclidean distance, resulting in natural, rounded cell shapes."
+        "Description": "Uses the standard Euclidean distance, resulting in natural, rounded cell shapes.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Manhattan",
-        "Description": "Uses the Manhattan (grid-based) distance, producing square or diamond-shaped cells."
+        "Description": "Uses the Manhattan (grid-based) distance, producing square or diamond-shaped cells.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Form",
     "Description": "Determines how the height or value of each Voronoi cell is calculated, affecting the resulting terrain or pattern.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "C",
-        "Description": "Voronoi cells with height determined by the cell itself, creating classic cell-based patterns."
+        "Description": "Voronoi cells with height determined by the cell itself, creating classic cell-based patterns.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "N",
-        "Description": "Voronoi cells with height determined by the nearest neighbor, resulting in smoother transitions between cells."
+        "Description": "Voronoi cells with height determined by the nearest neighbor, resulting in smoother transitions between cells.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "R",
-        "Description": "Voronoi cells with height influenced by the distance to the cell's edge, creating ring-like or ridge effects."
+        "Description": "Voronoi cells with height influenced by the distance to the cell's edge, creating ring-like or ridge effects.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "P",
-        "Description": "The default look for this geo-variant, suitable for creating mountainous terrain with prominent peaks."
+        "Description": "The default look for this geo-variant, suitable for creating mountainous terrain with prominent peaks.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "A",
-        "Description": "A mix between the P and M forms, blending characteristics of both for varied terrain features."
+        "Description": "A mix between the P and M forms, blending characteristics of both for varied terrain features.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "S",
-        "Description": "Generates individual mountains with fully separated boundaries, emphasizing isolated peaks."
+        "Description": "Generates individual mountains with fully separated boundaries, emphasizing isolated peaks.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "M",
-        "Description": "Favors the strongest cell, ideal for creating a large mountain slope or dominant landform."
+        "Description": "Favors the strongest cell, ideal for creating a large mountain slope or dominant landform.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "D",
-        "Description": "Emphasizes ridges over cell centers, producing terrain with pronounced ridge lines."
+        "Description": "Emphasizes ridges over cell centers, producing terrain with pronounced ridge lines.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Gain",
-    "Description": "Adjusts the contrast or intensity of the Voronoi pattern, amplifying or reducing the difference between cell heights."
+    "Description": "Adjusts the contrast or intensity of the Voronoi pattern, amplifying or reducing the difference between cell heights.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Clamp",
-    "Description": "Limits the output values to a specified range, preventing extreme heights or depths in the generated pattern."
+    "Description": "Limits the output values to a specified range, preventing extreme heights or depths in the generated pattern.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different Voronoi arrangements."
+    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different Voronoi arrangements.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Warp",
-    "IsGroup": true,
-    "Description": "Group containing parameters for warping or distorting the Voronoi pattern, adding complexity and variation."
+    "Description": "Specifies the type of warp applied to the Voronoi pattern, controlling the complexity of the distortion.",
+    "IsGroup": true
   },
   {
     "Name": "Type",
     "Description": "Specifies the type of warp applied to the Voronoi pattern, controlling the complexity of the distortion.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "None",
-        "Description": "No warping is applied; the Voronoi pattern remains unaltered."
+        "Description": "No warping is applied; the Voronoi pattern remains unaltered.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Simple",
-        "Description": "Applies basic warping to the pattern, introducing gentle distortions."
+        "Description": "Applies basic warping to the pattern, introducing gentle distortions.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Complex",
-        "Description": "Applies advanced, multi-layered warping for highly intricate and organic distortions."
+        "Description": "Applies advanced, multi-layered warping for highly intricate and organic distortions.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Frequency",
-    "Description": "Controls the frequency of the warp, determining how often the pattern is distorted across the terrain."
+    "Description": "Controls the frequency of the warp, determining how often the pattern is distorted across the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Amplitude",
-    "Description": "Sets the strength of the warp effect, controlling how far the Voronoi cells are displaced."
+    "Description": "Sets the strength of the warp effect, controlling how far the Voronoi cells are displaced.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Octaves",
-    "Description": "Specifies the number of detail layers used in the warp, increasing the complexity and richness of the distortion."
+    "Description": "Specifies the number of detail layers used in the warp, increasing the complexity and richness of the distortion.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Transform",
-    "IsGroup": true,
-    "Description": "Group containing parameters for transforming the Voronoi pattern, such as scaling and translation."
+    "Description": "The non-uniform scale of the X axis, stretching or compressing the pattern horizontally.",
+    "IsGroup": true
   },
   {
     "Name": "Scale X",
-    "Description": "The non-uniform scale of the X axis, stretching or compressing the pattern horizontally."
+    "Description": "The non-uniform scale of the X axis, stretching or compressing the pattern horizontally.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Scale Y",
-    "Description": "The non-uniform scale of the Y axis, stretching or compressing the pattern vertically."
+    "Description": "The non-uniform scale of the Y axis, stretching or compressing the pattern vertically.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "X",
-    "Description": "Offsets the Voronoi pattern along the X axis, shifting its position horizontally."
+    "Description": "Offsets the Voronoi pattern along the X axis, shifting its position horizontally.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Y",
-    "Description": "Offsets the Voronoi pattern along the Y axis, shifting its position vertically."
+    "Description": "Offsets the Voronoi pattern along the Y axis, shifting its position vertically.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

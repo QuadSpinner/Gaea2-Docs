@@ -1,49 +1,69 @@
 ﻿[
   {
     "Name": "Start",
-    "Description": "Specifies the starting color of the gradient, mapped to the darkest (black) areas of the input map."
+    "Description": "Specifies the starting color of the gradient, mapped to the darkest (black) areas of the input map.",
+    "Type": "Color",
+    "IsGroup": false
   },
   {
     "Name": "End",
-    "Description": "Specifies the ending color of the gradient, mapped to the brightest (white) areas of the input map."
+    "Description": "Specifies the ending color of the gradient, mapped to the brightest (white) areas of the input map.",
+    "Type": "Color",
+    "IsGroup": false
   },
   {
     "Name": "Hue",
-    "Description": "Adjusts the hue of the gradient colors, allowing for global color shifts across the entire gradient."
+    "Description": "Adjusts the hue of the gradient colors, allowing for global color shifts across the entire gradient.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Saturation",
-    "Description": "Controls the intensity or vividness of the gradient colors. Higher values produce more vibrant colors, while lower values result in muted tones."
+    "Description": "Controls the intensity or vividness of the gradient colors. Higher values produce more vibrant colors, while lower values result in muted tones.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Lightness",
-    "Description": "Sets the overall brightness of the gradient colors, making the output lighter or darker."
+    "Description": "Sets the overall brightness of the gradient colors, making the output lighter or darker.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Processing",
-    "IsGroup": true,
-    "Description": "Group containing post-processing options for the gradient, such as enhancement and adjustment."
+    "Description": "Applies additional enhancement to the gradient's tonal range or contrast before tinting.",
+    "IsGroup": true
   },
   {
     "Name": "Enhance",
     "Description": "Applies additional enhancement to the gradient's tonal range or contrast before tinting.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "None",
-        "Description": "No enhancement is applied; the gradient is mapped directly from the input."
+        "Description": "No enhancement is applied; the gradient is mapped directly from the input.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Autolevel",
-        "Description": "Automatically adjusts the levels to maximize the full tonal range, improving contrast in the gradient mapping."
+        "Description": "Automatically adjusts the levels to maximize the full tonal range, improving contrast in the gradient mapping.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Equalize",
-        "Description": "Equalizes the histogram, distributing intensity values more evenly for a balanced gradient effect."
+        "Description": "Equalizes the histogram, distributing intensity values more evenly for a balanced gradient effect.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Reverse",
-    "Description": "Inverts the gradient mapping, swapping the start and end colors so that black maps to the end color and white maps to the start color."
+    "Description": "Inverts the gradient mapping, swapping the start and end colors so that black maps to the end color and white maps to the start color.",
+    "Type": "Boolean",
+    "IsGroup": false
   }
 ]

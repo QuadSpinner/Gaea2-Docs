@@ -1,38 +1,56 @@
 ﻿[
   {
     "Name": "Multiply",
-    "Description": "Multiplies each value by a specified factor."
+    "Description": "Multiplies each value by a specified factor.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Shaper",
-    "Description": "Applies a shaping function to modify the curve of values."
+    "Description": "Applies a shaping function to modify the curve of values.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Clamp",
-    "Description": "Restricts values to a specified minimum and maximum range."
+    "Description": "Restricts values to a specified minimum and maximum range.",
+    "Type": "Float2",
+    "IsGroup": false
   },
   {
     "Name": "Clip",
-    "Description": "Limits values by cutting off those outside a given range."
+    "Description": "Limits values by cutting off those outside a given range.",
+    "Type": "Float2",
+    "IsGroup": false
   },
   {
     "Name": "Drop",
-    "Description": "Removes values below or above a certain threshold."
+    "Description": "Removes values below or above a certain threshold.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Autolevel",
-    "Description": "Automatically adjusts values to span the full output range."
+    "Description": "Automatically adjusts values to span the full output range.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Equalize",
-    "Description": "Redistributes values to achieve a more uniform distribution."
+    "Description": "Redistributes values to achieve a more uniform distribution.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Strong",
-    "Description": "Enhances the contrast or intensity of values."
+    "Description": "Enhances the contrast or intensity of values.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Invert",
-    "Description": "Flips values to their opposite within the range."
+    "Description": "Flips values to their opposite within the range.",
+    "Type": "Boolean",
+    "IsGroup": false
   }
 ]

@@ -1,0 +1,31 @@
+﻿[
+  {
+    "Name": "Folder",
+    "Description": "",
+    "Type": "String",
+    "IsGroup": false
+  },
+  {
+    "Name": "Frame",
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Is RGB",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Caching",
+    "Description": "",
+    "IsGroup": true
+  },
+  {
+    "Name": "Purge Cache",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

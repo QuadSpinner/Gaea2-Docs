@@ -2,51 +2,75 @@
   {
     "Name": "Render Style",
     "Description": "Specifies the shading technique used to render the terrain. Each style provides a different visual representation for analysis or artistic purposes.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "TableTop",
-        "Description": "Renders the terrain for a stylized overview."
+        "Description": "Renders the terrain for a stylized overview.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "HillShade",
-        "Description": "Applies traditional hillshading to simulate sunlight and shadow, enhancing the perception of terrain relief and surface features."
+        "Description": "Applies traditional hillshading to simulate sunlight and shadow, enhancing the perception of terrain relief and surface features.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Occlusion",
-        "Description": "Highlights areas of the terrain that are occluded or in shadow, useful for analyzing light accessibility and terrain exposure."
+        "Description": "Highlights areas of the terrain that are occluded or in shadow, useful for analyzing light accessibility and terrain exposure.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "SoftLight",
-        "Description": "Uses a soft, diffuse lighting model to gently illuminate the terrain, reducing harsh shadows and creating a more natural look."
+        "Description": "Uses a soft, diffuse lighting model to gently illuminate the terrain, reducing harsh shadows and creating a more natural look.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Sun Azimuth",
-    "Description": "Sets the horizontal angle of the sun in degrees, determining the direction from which sunlight is cast across the terrain."
+    "Description": "Sets the horizontal angle of the sun in degrees, determining the direction from which sunlight is cast across the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Sun Elevation",
-    "Description": "Controls the vertical angle of the sun above the horizon, affecting the length and intensity of shadows on the terrain."
+    "Description": "Controls the vertical angle of the sun above the horizon, affecting the length and intensity of shadows on the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Sunlight",
-    "Description": "Adjusts the overall intensity or brightness of direct sunlight in the shading calculation."
+    "Description": "Adjusts the overall intensity or brightness of direct sunlight in the shading calculation.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Shade Bias",
-    "Description": "Offsets the shading calculation to reduce or increase shadow strength, helping to fine-tune the balance between light and dark areas."
+    "Description": "Offsets the shading calculation to reduce or increase shadow strength, helping to fine-tune the balance between light and dark areas.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Soft Shadows",
-    "Description": "Enables or adjusts the softness of shadows, creating more gradual transitions between light and shadow for a realistic effect."
+    "Description": "Enables or adjusts the softness of shadows, creating more gradual transitions between light and shadow for a realistic effect.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Reflected Light",
-    "Description": "Simulates indirect illumination by adding light reflected from surrounding terrain, enhancing realism and reducing overly dark shadowed areas."
+    "Description": "Simulates indirect illumination by adding light reflected from surrounding terrain, enhancing realism and reducing overly dark shadowed areas.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "High Quality",
-    "Description": "Enables high-quality rendering for shading, using more advanced calculations for smoother gradients and more accurate lighting effects."
+    "Description": "Enables high-quality rendering for shading, using more advanced calculations for smoother gradients and more accurate lighting effects.",
+    "Type": "Boolean",
+    "IsGroup": false
   }
 ]

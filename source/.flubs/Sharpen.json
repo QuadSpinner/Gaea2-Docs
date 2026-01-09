@@ -2,19 +2,27 @@
   {
     "Name": "Method",
     "Description": "Selects the sharpening technique to apply to the terrain or texture. Each method targets different aspects of the data for sharpening.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Edge",
-        "Description": "Sharpens the terrain or texture by enhancing edges, making transitions between features more pronounced."
+        "Description": "Sharpens the terrain or texture by enhancing edges, making transitions between features more pronounced.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Frequency",
-        "Description": "Sharpens by boosting high-frequency details, increasing the clarity of fine structures and textures."
+        "Description": "Sharpens by boosting high-frequency details, increasing the clarity of fine structures and textures.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Amount",
-    "Description": "The amount of sharpening to be applied to the structures. Higher values produce a stronger sharpening effect."
+    "Description": "The amount of sharpening to be applied to the structures. Higher values produce a stronger sharpening effect.",
+    "Type": "Single",
+    "IsGroup": false
   }
 ]

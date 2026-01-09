@@ -1,140 +1,202 @@
 ﻿[
   {
     "Name": "Erosion",
-    "IsGroup": true,
-    "Description": "Group containing parameters for simulating terrain erosion, including hydraulic and fluvial processes."
+    "Description": "Determines the duration of the erosion simulation. Higher values increase the overall erosion effect, while lower values add subtle erosion details and preserve more of the original landscape.",
+    "IsGroup": true
   },
   {
     "Name": "Duration",
-    "Description": "Determines the duration of the erosion simulation. Higher values increase the overall erosion effect, while lower values add subtle erosion details and preserve more of the original landscape."
+    "Description": "Determines the duration of the erosion simulation. Higher values increase the overall erosion effect, while lower values add subtle erosion details and preserve more of the original landscape.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Rock Softness",
-    "Description": "Controls the softness of the rock material. Softer rocks erode more quickly, resulting in faster and more pronounced erosion."
+    "Description": "Controls the softness of the rock material. Softer rocks erode more quickly, resulting in faster and more pronounced erosion.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Strength",
-    "Description": "Sets the strength of fluvial erosion, controlling the sediment transport capacity. Higher values allow water to carry more dissolved minerals, increasing the rate and impact of erosion."
+    "Description": "Sets the strength of fluvial erosion, controlling the sediment transport capacity. Higher values allow water to carry more dissolved minerals, increasing the rate and impact of erosion.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Downcutting",
-    "IsGroup": true,
-    "Description": "Group containing parameters related to the vertical erosion process, where water cuts down into the terrain to form channels and valleys."
+    "Description": "Group containing parameters related to the vertical erosion process, where water cuts down into the terrain to form channels and valleys.",
+    "IsGroup": true
   },
   {
     "Name": "Downcutting",
-    "Description": "Controls the intensity of vertical erosion, affecting how deeply channels and valleys are carved into the terrain."
+    "Description": "Group containing parameters related to the vertical erosion process, where water cuts down into the terrain to form channels and valleys.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Inhibition",
-    "Description": "Adds restraints to the downcutting process by slowing it down when undissolved sediments accumulate. This results in a mix of deep channels and alluvial fans, depending on local conditions."
+    "Description": "Adds restraints to the downcutting process by slowing it down when undissolved sediments accumulate. This results in a mix of deep channels and alluvial fans, depending on local conditions.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Base Level",
-    "Description": "Sets the lowest elevation that downcutting can reach before sediment is deposited. This helps fill large valleys and form valley floors, influenced by terrain slope, altitude, and stream velocity."
+    "Description": "Sets the lowest elevation that downcutting can reach before sediment is deposited. This helps fill large valleys and form valley floors, influenced by terrain slope, altitude, and stream velocity.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Scale",
-    "IsGroup": true,
-    "Description": "Group containing parameters for controlling the scale and proportions of erosion features relative to the terrain."
+    "Description": "Determines the lateral size of the largest erosion features, such as the width of major valleys and ridges, measured in meters.",
+    "IsGroup": true
   },
   {
     "Name": "Feature Scale",
-    "Description": "Determines the lateral size of the largest erosion features, such as the width of major valleys and ridges, measured in meters."
+    "Description": "Determines the lateral size of the largest erosion features, such as the width of major valleys and ridges, measured in meters.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Real Scale",
-    "Description": "Automatically determines the scale from the Terrain Definition, ensuring erosion features are sized appropriately for the terrain."
+    "Description": "Automatically determines the scale from the Terrain Definition, ensuring erosion features are sized appropriately for the terrain.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Terrain Scale",
-    "Description": "Sets the simulated scale of the entire terrain width. Available when Rivers is enabled, this parameter helps match erosion to real-world dimensions."
+    "Description": "Sets the simulated scale of the entire terrain width. Available when Rivers is enabled, this parameter helps match erosion to real-world dimensions.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Verticality",
-    "Description": "Sets the simulated height of the entire terrain. Available when Rivers is enabled, this parameter controls the vertical exaggeration of erosion features."
+    "Description": "Sets the simulated height of the entire terrain. Available when Rivers is enabled, this parameter controls the vertical exaggeration of erosion features.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Flow",
-    "IsGroup": true,
-    "Description": "Group containing parameters related to water flow, debris movement, and sediment transport during erosion."
+    "Description": "Controls the amount and behavior of debris generated and transported during the erosion process.",
+    "IsGroup": true
   },
   {
     "Name": "Debris",
-    "Description": "Controls the amount and behavior of debris generated and transported during the erosion process."
+    "Description": "Controls the amount and behavior of debris generated and transported during the erosion process.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Volume",
-    "Description": "Alters erosion physics to treat water flows as volumetric, resulting in higher water levels, wider channels, and more extensive sediment deposits. Useful for forming valley floors without downcutting."
+    "Description": "Alters erosion physics to treat water flows as volumetric, resulting in higher water levels, wider channels, and more extensive sediment deposits. Useful for forming valley floors without downcutting.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Sediment Removal",
-    "Description": "Removes sediment produced during erosion. This can be modulated using the Sediment Removal mask input to control where sediment is retained or cleared."
+    "Description": "Removes sediment produced during erosion. This can be modulated using the Sediment Removal mask input to control where sediment is retained or cleared.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Selective Processing",
-    "IsGroup": true,
-    "Description": "Group containing parameters for applying erosion selectively to specific areas, using masks or bias settings."
+    "Description": "Specifies the effect applied when an Area input or Bias is defined. Determines which erosion property is selectively processed.",
+    "IsGroup": true
   },
   {
     "Name": "Area Effect",
     "Description": "Specifies the effect applied when an Area input or Bias is defined. Determines which erosion property is selectively processed.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "ErosionStrength",
-        "Description": "Applies selective processing to the erosion strength, allowing targeted control over erosion intensity."
+        "Description": "Applies selective processing to the erosion strength, allowing targeted control over erosion intensity.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "RockSoftness",
-        "Description": "Applies selective processing to rock softness, enabling localized variation in erosion rates."
+        "Description": "Applies selective processing to rock softness, enabling localized variation in erosion rates.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "PrecipitationAmount",
-        "Description": "Applies selective processing to precipitation amount, affecting how much water is available for erosion in specific areas."
+        "Description": "Applies selective processing to precipitation amount, affecting how much water is available for erosion in specific areas.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "None",
-        "Description": "No selective processing is applied; erosion is uniform across the terrain."
+        "Description": "No selective processing is applied; erosion is uniform across the terrain.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Bias Type",
     "Description": "Specifies the type of automatic bias to apply when an Area input is not provided. Determines how erosion is distributed based on terrain features.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "Altitude",
-        "Description": "Applies bias based on elevation, allowing erosion to be stronger or weaker at different heights."
+        "Description": "Applies bias based on elevation, allowing erosion to be stronger or weaker at different heights.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Slope",
-        "Description": "Applies bias based on terrain slope, enabling more erosion on steeper or flatter areas."
+        "Description": "Applies bias based on terrain slope, enabling more erosion on steeper or flatter areas.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Bias",
-    "Description": "Sets the strength of the bias. For Slope, this controls the steepness threshold; for Altitude, it sets the position from the bottom of the terrain."
+    "Description": "Sets the strength of the bias. For Slope, this controls the steepness threshold; for Altitude, it sets the position from the bottom of the terrain.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Reverse",
-    "Description": "Reverses the direction of the bias, inverting which areas receive more or less erosion."
+    "Description": "Reverses the direction of the bias, inverting which areas receive more or less erosion.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Other Settings",
-    "IsGroup": true,
-    "Description": "Group containing additional settings for fine-tuning the erosion simulation."
+    "Description": "Randomization seed for the erosion process. Changing the seed produces different erosion patterns and channel arrangements.",
+    "IsGroup": true
   },
   {
     "Name": "Seed",
-    "Description": "Randomization seed for the erosion process. Changing the seed produces different erosion patterns and channel arrangements."
+    "Description": "Randomization seed for the erosion process. Changing the seed produces different erosion patterns and channel arrangements.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Aggressive Mode",
-    "Description": "Enables faster erosion processing at the risk of introducing soft artifacts in minor areas. Useful for quick previews or when speed is prioritized over detail."
+    "Description": "Enables faster erosion processing at the risk of introducing soft artifacts in minor areas. Useful for quick previews or when speed is prioritized over detail.",
+    "Type": "Boolean",
+    "IsGroup": false
   },
   {
     "Name": "Deterministic",
-    "Description": "Ensures the erosion simulation produces the same result every time with the same input and seed, improving reproducibility."
+    "Description": "Ensures the erosion simulation produces the same result every time with the same input and seed, improving reproducibility.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Information",
+    "IsGroup": true
+  },
+  {
+    "Name": "Information",
+    "Description": "",
+    "Type": "Byte",
+    "IsGroup": false
   }
 ]

@@ -2,94 +2,140 @@
   {
     "Name": "Pattern",
     "Description": "Specifies the halftone pattern or dithering algorithm used to convert a black and white map into halftone shading. Each pattern produces a distinct visual effect, simulating various print or screen halftone styles.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "FloydSteinberg",
-        "Description": "Applies Floyd-Steinberg error diffusion dithering, producing a classic, high-quality halftone effect with smooth gradients."
+        "Description": "Applies Floyd-Steinberg error diffusion dithering, producing a classic, high-quality halftone effect with smooth gradients.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Riemersma",
-        "Description": "Uses Riemersma dithering, which distributes error along a space-filling curve for a unique, less directional halftone appearance."
+        "Description": "Uses Riemersma dithering, which distributes error along a space-filling curve for a unique, less directional halftone appearance.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Threshold",
-        "Description": "Applies a simple threshold to the input, converting pixels above a certain value to white and below to black, resulting in a stark, high-contrast halftone."
+        "Description": "Applies a simple threshold to the input, converting pixels above a certain value to white and below to black, resulting in a stark, high-contrast halftone.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "Checks",
-        "Description": "Creates a checkerboard halftone pattern, alternating black and white squares to simulate shading."
+        "Description": "Creates a checkerboard halftone pattern, alternating black and white squares to simulate shading.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "O2X2",
-        "Description": "Uses a 2x2 ordered dithering matrix to create a small, repeating halftone pattern."
+        "Description": "Uses a 2x2 ordered dithering matrix to create a small, repeating halftone pattern.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "O3X3",
-        "Description": "Uses a 3x3 ordered dithering matrix for a slightly larger, repeating halftone pattern."
+        "Description": "Uses a 3x3 ordered dithering matrix for a slightly larger, repeating halftone pattern.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "O4X4",
-        "Description": "Uses a 4x4 ordered dithering matrix, producing a more detailed and less repetitive halftone effect."
+        "Description": "Uses a 4x4 ordered dithering matrix, producing a more detailed and less repetitive halftone effect.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "O8X8",
-        "Description": "Applies an 8x8 ordered dithering matrix for fine, detailed halftone shading with minimal visible repetition."
+        "Description": "Applies an 8x8 ordered dithering matrix for fine, detailed halftone shading with minimal visible repetition.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "H3X4A",
-        "Description": "Applies a 3x4 halftone matrix (variant A), creating a specific dot arrangement for stylized halftone effects."
+        "Description": "Applies a 3x4 halftone matrix (variant A), creating a specific dot arrangement for stylized halftone effects.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "H6X6A",
-        "Description": "Uses a 6x6 halftone matrix (variant A) for a larger, more complex dot pattern."
+        "Description": "Uses a 6x6 halftone matrix (variant A) for a larger, more complex dot pattern.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "H8X8A",
-        "Description": "Applies an 8x8 halftone matrix (variant A), generating a dense and detailed halftone texture."
+        "Description": "Applies an 8x8 halftone matrix (variant A), generating a dense and detailed halftone texture.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "H3X4O",
-        "Description": "Uses a 3x4 halftone matrix (variant O), offering an alternative dot arrangement for different visual results."
+        "Description": "Uses a 3x4 halftone matrix (variant O), offering an alternative dot arrangement for different visual results.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "H6X6O",
-        "Description": "Applies a 6x6 halftone matrix (variant O), producing a unique halftone pattern with distinct dot placement."
+        "Description": "Applies a 6x6 halftone matrix (variant O), producing a unique halftone pattern with distinct dot placement.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "H8X8O",
-        "Description": "Uses an 8x8 halftone matrix (variant O), providing a dense and alternative halftone style."
+        "Description": "Uses an 8x8 halftone matrix (variant O), providing a dense and alternative halftone style.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "H36X16O",
-        "Description": "Applies a large 36x16 halftone matrix (variant O), creating a very fine and complex halftone pattern."
+        "Description": "Applies a large 36x16 halftone matrix (variant O), creating a very fine and complex halftone pattern.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "C5X5B",
-        "Description": "Uses a 5x5 circular halftone matrix with black dots, simulating traditional print halftone screens."
+        "Description": "Uses a 5x5 circular halftone matrix with black dots, simulating traditional print halftone screens.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "C5X5W",
-        "Description": "Uses a 5x5 circular halftone matrix with white dots, inverting the typical halftone dot style."
+        "Description": "Uses a 5x5 circular halftone matrix with white dots, inverting the typical halftone dot style.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "C6X6B",
-        "Description": "Applies a 6x6 circular halftone matrix with black dots for a slightly larger dot pattern."
+        "Description": "Applies a 6x6 circular halftone matrix with black dots for a slightly larger dot pattern.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "C6X6W",
-        "Description": "Uses a 6x6 circular halftone matrix with white dots, providing an inverted halftone effect."
+        "Description": "Uses a 6x6 circular halftone matrix with white dots, providing an inverted halftone effect.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "C7X7B",
-        "Description": "Applies a 7x7 circular halftone matrix with black dots, creating a larger, more pronounced dot pattern."
+        "Description": "Applies a 7x7 circular halftone matrix with black dots, creating a larger, more pronounced dot pattern.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "C7X7W",
-        "Description": "Uses a 7x7 circular halftone matrix with white dots, offering a bold, inverted halftone style."
+        "Description": "Uses a 7x7 circular halftone matrix with white dots, offering a bold, inverted halftone style.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "DIA",
-        "Description": "Creates a halftone pattern using diagonal lines, simulating shading with slanted, evenly spaced lines."
+        "Description": "Creates a halftone pattern using diagonal lines, simulating shading with slanted, evenly spaced lines.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   }

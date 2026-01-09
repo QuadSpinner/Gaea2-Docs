@@ -2,43 +2,63 @@
   {
     "Name": "Style",
     "Description": "Selects the style for the cracks, determining the overall appearance and pattern of the Lichtenberg figures.",
+    "Type": "Enum",
+    "IsGroup": false,
     "Flubs": [
       {
         "Name": "A",
-        "Description": "Style A: Produces a classic branching crack pattern, suitable for general terrain fracturing."
+        "Description": "Style A: Produces a classic branching crack pattern, suitable for general terrain fracturing.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "B",
-        "Description": "Style B: Generates a denser, more intricate crack network for detailed surface effects."
+        "Description": "Style B: Generates a denser, more intricate crack network for detailed surface effects.",
+        "Type": "EnumValue",
+        "IsGroup": false
       },
       {
         "Name": "C",
-        "Description": "Style C: Creates a sparse, wide-spread crack pattern, ideal for subtle terrain disruption."
+        "Description": "Style C: Creates a sparse, wide-spread crack pattern, ideal for subtle terrain disruption.",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },
   {
     "Name": "Scale",
-    "Description": "Controls the scale of the larger cracks, affecting how prominent and wide the main crack structures appear."
+    "Description": "Controls the scale of the larger cracks, affecting how prominent and wide the main crack structures appear.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Complexity",
-    "Description": "Adjusts the level of detail in the crack network. Higher values produce more branches and finer crack structures."
+    "Description": "Adjusts the level of detail in the crack network. Higher values produce more branches and finer crack structures.",
+    "Type": "Int32",
+    "IsGroup": false
   },
   {
     "Name": "Depth",
-    "Description": "Sets the depth of the cracks, determining how deeply the cracks cut into the terrain surface."
+    "Description": "Sets the depth of the cracks, determining how deeply the cracks cut into the terrain surface.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Expand",
-    "Description": "Expands the cracks outward, increasing their coverage and making the crack network more pronounced."
+    "Description": "Expands the cracks outward, increasing their coverage and making the crack network more pronounced.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Bias",
-    "Description": "Provides artistic control over the shape and direction of the cracks, allowing for customized crack patterns."
+    "Description": "Provides artistic control over the shape and direction of the cracks, allowing for customized crack patterns.",
+    "Type": "Single",
+    "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "Random seed for generating the crack pattern. Changing the seed produces different crack arrangements while keeping other settings the same."
+    "Description": "Random seed for generating the crack pattern. Changing the seed produces different crack arrangements while keeping other settings the same.",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]
