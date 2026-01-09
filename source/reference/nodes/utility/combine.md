@@ -13,7 +13,7 @@ In addition, the Combine node also gives you a separation mask for texturing pur
 ### Using Combine
 
 :::aside
-# Combine is deceptively simple, but may be the single most important node in Gaea.
+Combine is deceptively simple, but may be the single most important node in Gaea.
 :::
 
 **Color Mixing**
@@ -44,6 +44,5 @@ Alternatively, you can add an Fx node to the Combine output or other nodes like 
 
 ## Properties
 
-{% include "/.data/includes/add-ports.md" %}
 
 

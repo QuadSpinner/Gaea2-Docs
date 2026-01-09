@@ -99,8 +99,13 @@
         padding: 48px;
         width: 40%;
         border: 1.5px solid #1a1a1a;
-
         color: #d4d4d4;
+        font-feature-settings: normal;
+        font-size: 26px;
+        font-variation-settings: normal;
+        font-weight: 700;
+        letter-spacing: -0.9px;
+        line-height: 26px;
 
         @media only screen and (max-width: 980px) {
             width: 100%;
@@ -108,18 +113,7 @@
             display: block;
         }
 
-        blockquote,
-        h1,
-        &.big {
-            color: #d4d4d4;
-            font-feature-settings: normal;
-            font-size: 26px;
-            font-variation-settings: normal;
-            font-weight: 700;
-            letter-spacing: -0.9px;
-            line-height: 26px;
-            margin: 0;
-        }
+
     }
 }
 
@@ -258,7 +252,7 @@ figure {
 .properties-table {
     width: 100% !important;
     border-radius: 4px;
-    font-size: 13px;
+    font-size: 14px;
 
     .head {
 
@@ -281,7 +275,15 @@ figure {
         vertical-align: top;
         border: 1px solid #fff1;
         padding: 8px;
-        font-size: 12px;
+        font-size: 14px;
+
+        i{
+            display: block;
+            float: left;
+            font-size: 14px;
+            color: var(--family);
+            cursor: help;
+        }
 
         span {
             display: block;

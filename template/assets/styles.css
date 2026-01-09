@@ -17,6 +17,7 @@
   --toc-border-active: #000;
   --toc-chevron: rgba(0, 0, 0, 0.55);
   --page-header: rgba(0, 0, 0, 0.05);
+  --family: #ffcc00;
 }
 
 html[data-bs-theme=dark],
@@ -68,6 +69,50 @@ body[data-hive-shortname=Developers], a[data-hive-shortname=Developers] {
 
 body[data-hive-shortname=History], a[data-hive-shortname=History] {
   --prime: #a7b076;
+}
+
+body[data-node-category=Primitive] {
+  --family: #94ac5c;
+}
+
+body[data-node-category=Terrain] {
+  --family: #55a07a;
+}
+
+body[data-node-category=Modify] {
+  --family: #5892a5;
+}
+
+body[data-node-category=Surface] {
+  --family: #A2DCBE;
+}
+
+body[data-node-category=Simulate] {
+  --family: #d39467;
+}
+
+body[data-node-category=Derive] {
+  --family: #ad5590;
+}
+
+body[data-node-category=Colorize] {
+  --family: #60538f;
+}
+
+body[data-node-category=Output] {
+  --family: #c86275;
+}
+
+body[data-node-category=Utility] {
+  --family: #B390A6;
+}
+
+body[data-node-category=Plugins] {
+  --family: #8D9396;
+}
+
+body[data-node-category=Macro] {
+  --family: #55a07a;
 }
 
 #content-header {
@@ -148,6 +193,12 @@ body[data-hive-shortname=History], a[data-hive-shortname=History] {
   width: 40%;
   border: 1.5px solid #1a1a1a;
   color: #d4d4d4;
+  font-feature-settings: normal;
+  font-size: 26px;
+  font-variation-settings: normal;
+  font-weight: 700;
+  letter-spacing: -0.9px;
+  line-height: 26px;
 }
 @media only screen and (max-width: 980px) {
   #contents .aside {
@@ -155,17 +206,6 @@ body[data-hive-shortname=History], a[data-hive-shortname=History] {
     float: none;
     display: block;
   }
-}
-#contents .aside blockquote,
-#contents .aside h1, #contents .aside.big {
-  color: #d4d4d4;
-  font-feature-settings: normal;
-  font-size: 26px;
-  font-variation-settings: normal;
-  font-weight: 700;
-  letter-spacing: -0.9px;
-  line-height: 26px;
-  margin: 0;
 }
 
 code:not(pre > code) {
@@ -284,7 +324,7 @@ figure img {
 .properties-table {
   width: 100% !important;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 14px;
 }
 .properties-table .head {
   background: #101517;
@@ -303,7 +343,15 @@ figure img {
   vertical-align: top;
   border: 1px solid rgba(255, 255, 255, 0.0666666667);
   padding: 8px;
-  font-size: 12px;
+  font-size: 14px;
+}
+.properties-table th i,
+.properties-table td i {
+  display: block;
+  float: left;
+  font-size: 14px;
+  color: var(--family);
+  cursor: help;
 }
 .properties-table th span,
 .properties-table td span {

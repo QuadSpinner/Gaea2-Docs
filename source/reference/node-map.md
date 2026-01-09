@@ -101,7 +101,6 @@ order: 01
 | Warp      | @directionalwarp       | `dw`  |
 |           | @slopewarp             | `sw`  |
 |           | @warp                  | `w`   |
-|           | @triplanardisplacement | `3pd` |
 
 ### Surface
 
@@ -228,7 +227,6 @@ order: 01
 |           | @reseed        |       |
 |           | @route         | `ro`  |
 |           | @switch        | `swt` |
-|           | @construction  |       |
 |           | @compare       | `cm`  |
 | Structure | @edge          | `ed`  |
 |           | @repeat        | `rp`  |
