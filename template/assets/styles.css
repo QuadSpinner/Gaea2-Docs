@@ -301,7 +301,7 @@ figure img {
 }
 
 .reference-tables table {
-  width: 50% !important;
+  width: 100%;
 }
 .reference-tables table thead {
   background: #111;
@@ -310,6 +310,10 @@ figure img {
 .reference-tables table td {
   border: 1px solid rgba(255, 255, 255, 0.0666666667);
   padding: 8px;
+}
+.reference-tables table th em,
+.reference-tables table td em {
+  color: #777;
 }
 .reference-tables table td:nth-child(1) {
   width: 20%;
@@ -327,7 +331,7 @@ figure img {
   font-size: 14px;
 }
 .properties-table .head {
-  background: #101517;
+  background: #27272a;
   text-align: left !important;
 }
 .properties-table .title {
@@ -374,12 +378,12 @@ figure img {
   padding-left: 0.8em;
 }
 .properties-table td:nth-child(1) {
-  width: 20%;
+  width: 25%;
   font-weight: 600;
   text-align: right !important;
 }
 .properties-table td:nth-child(2) {
-  width: 80%;
+  width: 75%;
 }
 
 #site-nav,

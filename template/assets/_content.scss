@@ -222,7 +222,7 @@ figure {
 
 .reference-tables {
     table {
-        width: 50% !important;
+        width: 100%;
 
         thead {
             background: #111;
@@ -232,6 +232,10 @@ figure {
         td {
             border: 1px solid #fff1;
             padding: 8px;
+
+            em{
+                color: #777;
+            }
         }
 
         td:nth-child(1) {
@@ -256,7 +260,7 @@ figure {
 
     .head {
 
-        background: #101517;
+        background: #27272a;
         text-align: left !important;
     }
 
@@ -307,13 +311,13 @@ figure {
     }
 
     td:nth-child(1) {
-        width: 20%;
+        width: 25%;
         font-weight: 600;
         text-align: right !important;
     }
 
     td:nth-child(2) {
-        width: 80%;
+        width: 75%;
     }
 
 

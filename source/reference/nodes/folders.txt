@@ -1,9 +1,9 @@
-primitive|Primitive
-terrain|Terrain
-modify|Modify
-surface|Surface
-simulate|Simulate
-derive|Derive
-colorize|Colorize
-output|Output
-utility|Utility
+primitive|🟢 Primitive
+terrain|🟢 Terrain
+modify|🔵 Modify
+surface|🟡 Surface
+simulate|🟠 Simulate
+derive|⚪ Derive
+colorize|🟣 Colorize
+output|🔴 Output
+utility|⚫ Utility
