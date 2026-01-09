@@ -1,8 +1,9 @@
 ---
 title: Gaea2Houdini
 uid: gaea2houdini-nodes
+hidden: true
 ---
 
-# gaea2houdini
+# In this section
 
 <div id='show-sublinks'></div>

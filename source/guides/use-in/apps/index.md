@@ -1,8 +1,9 @@
 ---
 title: Apps
-uid: apps
+uid: software-specific-instructions
+hidden: true
 ---
 
-# apps
+# In this section
 
 <div id='show-sublinks'></div>

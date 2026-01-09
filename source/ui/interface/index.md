@@ -1,8 +1,9 @@
 ---
 title: Interface
 uid: interface
+hidden: true
 ---
 
-# interface
+# In this section
 
 <div id='show-sublinks'></div>

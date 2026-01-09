@@ -1,8 +1,9 @@
 ---
 title: Surface
 uid: surface
+hidden: true
 ---
 
-# surface
+# In this section
 
 <div id='show-sublinks'></div>

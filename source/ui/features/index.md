@@ -1,8 +1,9 @@
 ---
 title: Features
 uid: features
+hidden: true
 ---
 
-# features
+# In this section
 
 <div id='show-sublinks'></div>

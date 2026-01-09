@@ -1,8 +1,9 @@
 ---
 title: Troubleshooting
 uid: troubleshooting
+hidden: true
 ---
 
-# troubleshooting
+# In this section
 
 <div id='show-sublinks'></div>

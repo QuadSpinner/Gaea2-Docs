@@ -1,8 +1,9 @@
 ---
 title: Advanced Topics
 uid: advanced-topics
+hidden: true
 ---
 
-# advanced-topics
+# In this section
 
 <div id='show-sublinks'></div>

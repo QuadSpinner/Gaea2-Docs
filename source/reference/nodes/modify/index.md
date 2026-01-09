@@ -1,8 +1,9 @@
 ---
 title: Modify
 uid: modify
+hidden: true
 ---
 
-# modify
+# In this section
 
 <div id='show-sublinks'></div>

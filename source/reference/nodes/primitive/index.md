@@ -1,8 +1,9 @@
 ---
 title: Primitive
 uid: primitive
+hidden: true
 ---
 
-# primitive
+# In this section
 
 <div id='show-sublinks'></div>

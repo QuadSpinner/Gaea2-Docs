@@ -1,8 +1,9 @@
 ---
 title: Bridges
 uid: bridges
+hidden: true
 ---
 
-# bridges
+# In this section
 
 <div id='show-sublinks'></div>

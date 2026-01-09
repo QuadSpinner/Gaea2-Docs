@@ -1,8 +1,9 @@
 ---
 title: Nodes
 uid: nodes
+hidden: true
 ---
 
-# nodes
+# In this section
 
 <div id='show-sublinks'></div>

@@ -60,6 +60,7 @@ function initGlobalToc({
         div.classList.add("divider");
         ul.appendChild(div);
       }
+
       ul.appendChild(renderNode(child));
     }
   }
@@ -208,6 +209,9 @@ function initGlobalToc({
         a.href = leafA.getAttribute("href") || leafA.href;
         a.textContent = (leafA.textContent || "").trim();
         if (leafA.classList.contains("active")) a.classList.add("active");
+        if (li.classList.contains("d-none")) {
+          item.classList.add("d-none");
+        }
         item.appendChild(a);
         ul.appendChild(item);
         continue;
@@ -283,13 +287,14 @@ function initGlobalToc({
     const cls = String(icon).trim();
 
     // Your chosen convention: icon contains the suffix only (e.g. "dog"), render fa-dog
-      i.className = `fa-duotone fa-solid fa-${cls}`;
+    i.className = `fa-duotone fa-solid fa-${cls}`;
     i.classList.add("toc-icon");
     el.appendChild(i);
   }
 
   // ---------- node renderer ----------
   function renderNode(node) {
+
     const li = document.createElement("li");
     const kids = Array.isArray(node.children) && node.children.length > 0;
 
@@ -317,6 +322,10 @@ function initGlobalToc({
       addIcon(a, node.icon);
       a.appendChild(document.createTextNode(node.title ?? node.url ?? "Untitled"));
       li.appendChild(a);
+    }
+
+    if (node.hidden) {
+      li.classList.add("d-none");
     }
 
     return li;

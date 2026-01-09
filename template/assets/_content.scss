@@ -312,7 +312,7 @@ figure {
         padding: 8px;
         font-size: 14px;
 
-        i {
+        i:not(.choice i) {
             display: block;
             float: left;
             font-size: 14px;
@@ -327,6 +327,13 @@ figure {
         .choice {
             padding-bottom: 6px;
             font-weight: bold;
+            margin-top: 4px;
+            display: inline-block;
+
+            i{
+                position: relative;
+                top: 1px;
+            }
         }
 
         .choice-flat {
@@ -337,7 +344,7 @@ figure {
 
         .choice-description {
             padding-bottom: 0.3em;
-            padding-left: 0.8em;
+            padding-left: 2.5em;
         }
     }
 

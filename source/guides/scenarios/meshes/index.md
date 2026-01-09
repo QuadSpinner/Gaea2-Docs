@@ -1,8 +1,9 @@
 ---
 title: Meshes
 uid: meshes
+hidden: true
 ---
 
-# meshes
+# In this section
 
 <div id='show-sublinks'></div>

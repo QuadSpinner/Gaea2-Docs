@@ -1,8 +1,9 @@
 ---
 title: Output
 uid: output
+hidden: true
 ---
 
-# output
+# In this section
 
 <div id='show-sublinks'></div>

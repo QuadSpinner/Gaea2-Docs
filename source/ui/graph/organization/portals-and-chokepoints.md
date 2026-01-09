@@ -26,7 +26,7 @@ Right-click a connection to bring up the Connection menu and select `Convert to 
 Right-click an existing connection and select `Convert to Portal`.
 
 
-:::sidebyside
+:::image-row
 ![Press P to bring up the Portal menu.](/.data/assets/image-(48).png) ![Create or delete Portal connections in the Portal menu.](/.data/assets/image-(49).png)
 :::
 

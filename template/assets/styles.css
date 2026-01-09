@@ -383,8 +383,8 @@ figure img {
   padding: 8px;
   font-size: 14px;
 }
-.properties-table th i,
-.properties-table td i {
+.properties-table th i:not(.choice i),
+.properties-table td i:not(.choice i) {
   display: block;
   float: left;
   font-size: 14px;
@@ -399,6 +399,13 @@ figure img {
 .properties-table td .choice {
   padding-bottom: 6px;
   font-weight: bold;
+  margin-top: 4px;
+  display: inline-block;
+}
+.properties-table th .choice i,
+.properties-table td .choice i {
+  position: relative;
+  top: 1px;
 }
 .properties-table th .choice-flat,
 .properties-table td .choice-flat {
@@ -409,7 +416,7 @@ figure img {
 .properties-table th .choice-description,
 .properties-table td .choice-description {
   padding-bottom: 0.3em;
-  padding-left: 0.8em;
+  padding-left: 2.5em;
 }
 .properties-table td:nth-child(1) {
   width: 25%;

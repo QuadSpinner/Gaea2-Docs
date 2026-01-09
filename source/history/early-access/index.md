@@ -1,8 +1,9 @@
 ---
 title: Early Access
 uid: early-access
+hidden: true
 ---
 
-# early-access
+# In this section
 
 <div id='show-sublinks'></div>

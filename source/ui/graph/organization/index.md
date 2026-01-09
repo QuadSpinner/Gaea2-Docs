@@ -1,8 +1,9 @@
 ---
 title: Organization
 uid: organization
+hidden: true
 ---
 
-# organization
+# In this section
 
 <div id='show-sublinks'></div>

@@ -1,8 +1,9 @@
 ---
 title: Scenarios
 uid: scenarios
+hidden: true
 ---
 
-# scenarios
+# In this section
 
 <div id='show-sublinks'></div>

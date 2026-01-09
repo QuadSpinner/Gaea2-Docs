@@ -1,8 +1,9 @@
 ---
 title: Large Projects
 uid: large-projects
+hidden: true
 ---
 
-# large-projects
+# In this section
 
 <div id='show-sublinks'></div>

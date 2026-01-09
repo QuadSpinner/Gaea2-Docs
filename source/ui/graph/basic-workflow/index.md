@@ -1,8 +1,9 @@
 ---
 title: Basic Workflow
 uid: basic-workflow
+hidden: true
 ---
 
-# basic-workflow
+# In this section
 
 <div id='show-sublinks'></div>

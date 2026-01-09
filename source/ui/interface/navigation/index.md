@@ -1,8 +1,9 @@
 ---
 title: Navigation
 uid: navigation
+hidden: true
 ---
 
-# navigation
+# In this section
 
 <div id='show-sublinks'></div>

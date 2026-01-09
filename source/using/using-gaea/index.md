@@ -1,8 +1,9 @@
 ---
 title: Using Gaea
 uid: using-gaea
+hidden: true
 ---
 
-# using-gaea
+# In this section
 
 <div id='show-sublinks'></div>

@@ -1,8 +1,9 @@
 ---
 title: Terrain
 uid: terrain
+hidden: true
 ---
 
-# terrain
+# In this section
 
 <div id='show-sublinks'></div>

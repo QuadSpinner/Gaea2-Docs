@@ -1,8 +1,9 @@
 ---
 title: Graph
 uid: graph
+hidden: true
 ---
 
-# graph
+# In this section
 
 <div id='show-sublinks'></div>
