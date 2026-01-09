@@ -1,6 +1,6 @@
 ---
 icon: square-terminal
-title: automation
+title: Automation
 uid: automation
 order: 01
 ---
