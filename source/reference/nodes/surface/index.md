@@ -1,8 +1,8 @@
 ---
-title: surface
+title: Surface
 uid: surface
 ---
 
-# In this section
+# surface
 
 <div id='show-sublinks'></div>

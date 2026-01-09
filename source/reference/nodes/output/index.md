@@ -1,8 +1,8 @@
 ---
-title: output
+title: Output
 uid: output
 ---
 
-# In this section
+# output
 
 <div id='show-sublinks'></div>

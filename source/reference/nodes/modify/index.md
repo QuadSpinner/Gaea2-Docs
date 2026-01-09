@@ -1,8 +1,8 @@
 ---
-title: modify
+title: Modify
 uid: modify
 ---
 
-# In this section
+# modify
 
 <div id='show-sublinks'></div>

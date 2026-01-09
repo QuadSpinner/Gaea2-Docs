@@ -1,8 +1,8 @@
 ---
-title: graph
+title: Graph
 uid: graph
 ---
 
-# In this section
+# graph
 
 <div id='show-sublinks'></div>

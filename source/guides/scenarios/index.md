@@ -1,8 +1,8 @@
 ---
-title: apps
+title: Scenarios
 uid: scenarios
 ---
 
-# In this section
+# scenarios
 
 <div id='show-sublinks'></div>

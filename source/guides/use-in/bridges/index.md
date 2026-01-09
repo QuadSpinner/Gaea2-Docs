@@ -1,8 +1,8 @@
 ---
-title: bridges
+title: Bridges
 uid: bridges
 ---
 
-# In this section
+# bridges
 
 <div id='show-sublinks'></div>

@@ -200,6 +200,8 @@ $(document).ready(function () {
         if (nextBtn) box.appendChild(nextBtn);
 
         if (!prevBtn && !nextBtn) box.outerHTML = "";
+
+        document.getElementById("show-sublinks").firstChild.className = 'd-flex flex-wrap';
     });
 })();
 

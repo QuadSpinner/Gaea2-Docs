@@ -1,8 +1,8 @@
 ---
-title: interface
+title: Interface
 uid: interface
 ---
 
-# In this section
+# interface
 
 <div id='show-sublinks'></div>

@@ -1,8 +1,8 @@
 ---
-title: gaea-2.0
+title: Gaea 2.0
 uid: gaea-2.0
 ---
 
-# In this section
+# gaea-2.0
 
 <div id='show-sublinks'></div>

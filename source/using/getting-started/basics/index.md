@@ -1,8 +1,8 @@
 ---
-title: basics
+title: Basics
 uid: basics
 ---
 
-# In this section
+# basics
 
 <div id='show-sublinks'></div>

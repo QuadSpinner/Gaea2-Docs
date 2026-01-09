@@ -1,10 +1,8 @@
 ---
-title: apps
-uid: software-specific-instructions
+title: Apps
+uid: apps
 ---
 
-# In this section
+# apps
 
 <div id='show-sublinks'></div>
-
-For other applications see @universal-instructions

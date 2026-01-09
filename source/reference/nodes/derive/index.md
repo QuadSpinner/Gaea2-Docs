@@ -1,8 +1,8 @@
 ---
-title: derive
+title: Derive
 uid: derive
 ---
 
-# In this section
+# derive
 
 <div id='show-sublinks'></div>

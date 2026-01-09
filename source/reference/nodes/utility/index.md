@@ -1,8 +1,8 @@
 ---
-title: utility
+title: Utility
 uid: utility
 ---
 
-# In this section
+# utility
 
 <div id='show-sublinks'></div>

@@ -104,24 +104,21 @@
                     <nav id="site-nav"></nav>
                 </div>
                 <div class="col">
-                    <div class="d-none d-print-block">
+                    <div class="d-none px-4 d-print-block">
                         <h1>Gaea Documentation</h1>
                         <h3>%%HIVE%%</h3>
-                        <h2>%%TITLE%%</h2>
-                        <hr>
                     </div>
 
-                    <div class="px-4 d-print-none">
-                        <div id="breadcrumbs"></div>
-                        <div id="content-header">
-                            <h1>%%TITLE%%</h1>
-                            <div id="node-data">
-                                %%NODEDATA%%
-                            </div>
-                        </div>
-                    </div>
                     <div class="row align-top">
                         <div id="content-holder" class="col px-5">
+                            <div id="content-header">
+                                <div id="breadcrumbs"></div>
+                                <br>
+                                <h1>%%TITLE%%</h1>
+                                <div id="node-data">
+                                    %%NODEDATA%%
+                                </div>
+                            </div>
                             <main id="contents">%%CONTENT%%</main>
                             <div id="next-nav" class="d-flex justify-content-between">
                                 <a href="" id="btn-prev" class="btn btn-small"></a>

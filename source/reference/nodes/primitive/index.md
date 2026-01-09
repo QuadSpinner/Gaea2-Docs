@@ -1,8 +1,8 @@
 ---
-title: primitive
+title: Primitive
 uid: primitive
 ---
 
-# In this section
+# primitive
 
 <div id='show-sublinks'></div>

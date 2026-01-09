@@ -1,8 +1,8 @@
 ---
-title: navigation
+title: Navigation
 uid: navigation
 ---
 
-# In this section
+# navigation
 
 <div id='show-sublinks'></div>

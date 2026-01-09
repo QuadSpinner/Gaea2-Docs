@@ -1,8 +1,8 @@
 ---
-title: important
+title: Important
 uid: important
 ---
 
-# In this section
+# important
 
 <div id='show-sublinks'></div>

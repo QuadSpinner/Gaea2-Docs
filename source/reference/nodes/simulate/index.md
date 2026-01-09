@@ -1,8 +1,8 @@
 ---
-title: simulate
+title: Simulate
 uid: simulate
 ---
 
-# In this section
+# simulate
 
 <div id='show-sublinks'></div>

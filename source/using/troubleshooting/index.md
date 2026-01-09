@@ -1,8 +1,8 @@
 ---
-title: troubleshooting
+title: Troubleshooting
 uid: troubleshooting
 ---
 
-# In this section
+# troubleshooting
 
 <div id='show-sublinks'></div>

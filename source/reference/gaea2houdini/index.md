@@ -3,6 +3,6 @@ title: Gaea2Houdini
 uid: gaea2houdini-nodes
 ---
 
-# In this section
+# gaea2houdini
 
 <div id='show-sublinks'></div>

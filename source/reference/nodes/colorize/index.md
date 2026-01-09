@@ -1,8 +1,8 @@
 ---
-title: colorize
+title: Colorize
 uid: colorize
 ---
 
-# In this section
+# colorize
 
 <div id='show-sublinks'></div>

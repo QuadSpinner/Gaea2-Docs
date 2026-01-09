@@ -1,8 +1,8 @@
 ---
-title: organization
+title: Organization
 uid: organization
 ---
 
-# In this section
+# organization
 
 <div id='show-sublinks'></div>
