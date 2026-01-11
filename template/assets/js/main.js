@@ -242,3 +242,66 @@ $(document).ready(function () {
         }
     }, { capture: true });
 })();
+
+(() => {
+  const repo = "QuadSpinner/Gaea2-Docs";         // e.g. "quadspinner/gaea-docs"
+  const labels = "docs,bug";       // optional
+  const template = "docs-bug.yml"; // optional
+
+  let lastSelection = "";
+
+  function captureSelection() {
+    const s = (window.getSelection ? String(window.getSelection()) : "").trim();
+    if (s) lastSelection = s;
+  }
+
+  // Keep a cached selection because clicking the link often clears it.
+  document.addEventListener("selectionchange", captureSelection);
+  document.addEventListener("mouseup", captureSelection);
+  document.addEventListener("keyup", captureSelection);
+
+  function buildIssueUrl() {
+    const pageUrl = location.href;
+    const title = `Docs: ${document.title}`;
+
+    const selection = (String(window.getSelection?.() || "")).trim() || lastSelection;
+    const quotedSelection = selection
+      ? `\n\nSelected text:\n> ${selection.replace(/\r?\n/g, "\n> ")}`
+      : "";
+
+    const body =
+`Page: ${pageUrl}
+
+What’s wrong?
+
+Expected:
+
+Actual:${quotedSelection}`;
+
+    const url = new URL(`https://github.com/${repo}/issues/new`);
+    url.searchParams.set("title", title);
+    url.searchParams.set("body", body);
+    if (labels) url.searchParams.set("labels", labels);
+    if (template) url.searchParams.set("template", template);
+
+    // Avoid overly long URLs; drop selection first if needed.
+    const s = url.toString();
+    if (s.length > 7000 && quotedSelection) {
+      url.searchParams.set("body", body.replace(quotedSelection, ""));
+    }
+
+    return url.toString();
+  }
+
+  const a = document.getElementById("report-issue");
+
+  // Capture as early as possible, before the click collapses selection.
+  a.addEventListener("pointerdown", captureSelection, { passive: true });
+  a.addEventListener("mousedown", captureSelection, { passive: true });
+
+  a.addEventListener("click", (e) => {
+    e.preventDefault();
+    captureSelection();
+    window.open(buildIssueUrl(), "_blank", "noopener");
+  });
+})();

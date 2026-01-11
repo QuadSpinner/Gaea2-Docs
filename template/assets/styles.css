@@ -1212,3 +1212,6 @@ div[data-popper-placement],
     mask-image: linear-gradient(to right, transparent 0%, #000 10%, #000 90%, transparent 100%);
   }
 }
+.lastWrite {
+  color: #444;
+}
