@@ -33,7 +33,7 @@ Depending on the shape of your terrain, you can reduce polygon count by 20-40%. 
 
 Optimized meshes, however, cannot provide quad output and are limited to triangles because of the intrinsic nature of the algorithm.
 
-![](/.data/assets/sophia-3.jpg)
+![](/.data/assets/sophia-3.webp)
 
 You can see that the mesh retains high-fidelity when imported into DCC application such as Blender with proper lighting.
 
