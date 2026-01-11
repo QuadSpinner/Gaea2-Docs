@@ -1,0 +1,11 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "gaea2-docs": {
+      "appLocation": "staging",
+      "outputLocation": ".",
+      "appName": "docs-beta",
+      "resourceGroup": "Default-Web-WestUS"
+    }
+  }
+}

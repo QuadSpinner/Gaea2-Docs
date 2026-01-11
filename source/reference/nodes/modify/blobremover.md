@@ -8,7 +8,7 @@ order: 04
 
 A low-level node that helps isolate and remove small blobs or disconnected shapes.
 
-![](/.data/assets/Gaea_-_Untitled_10-43-03-PM.png)
+![](/.data/assets/Gaea_-_Untitled_10-43-03-PM.webp)
 
 
 # Properties

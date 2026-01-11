@@ -28,13 +28,13 @@ This allows you to modify the surface without altering the overall shape, volume
 
 Gaea takes terrain design towards new horizons by introducing key tools for sandstone, limestone, and generic rock layers that promote mechanical breakage as opposed to softer, sedimentary flow.
 
-![](/.data/assets/sandstonelayers.jpg)
+![](/.data/assets/sandstonelayers.webp)
 
 **Stratify** is a high-level node that provides large scale stratification, tilt, and uplift. It can be used for larger shaping.
 
 **Sandstone** is a versatile node that works on both small and medium scale to add multi-level detail through multiple passes while also chipping the rock and excising large chunks as mechanical erosion. Sandstone can also create staggered stairstep patterns quite common in nature. This pseudo-self-similar repetition is the hallmark of such rock formations.
 
-![](/.data/assets/vertwall.jpg)
+![](/.data/assets/vertwall.webp)
 
 **FractalTerraces** provides a more low-level approach to stratification and tilting, giving you more primary control. This is useful when you want to achieve direct control over the erosion through a complex graph and don't want _Stratify_ or _Sandstone_ to introduce too many features into your terrain directly.
 
@@ -50,15 +50,15 @@ The Rocky family of nodes provides powerful rock "growth" on your existing terra
 
 **Outcrops** can help you turn any surface into a powerful, rugged, large-scale rock formation.
 
-![](/.data/assets/outcrops.jpg)
+![](/.data/assets/outcrops.webp)
 
 **Craggy** can help you turn any surface into a fragmented field of rocks.
 
-![](/.data/assets/craggy.jpg)
+![](/.data/assets/craggy.webp)
 
 **Stones** helps add small, superficial stones to the surface. These are random, and not physically driven like @debris.
 
-![](/.data/assets/stones.jpg)
+![](/.data/assets/stones.webp)
 
 There are several other nodes in the Surface family that provide other functionality.
 

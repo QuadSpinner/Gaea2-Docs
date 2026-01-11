@@ -14,7 +14,7 @@ This tech was originally pioneered by QuadSpinner for GeoGlyph in 2014, Gaea's l
 
 
 
-![](/.data/assets/Gaea_-_Untitled_03-22-12-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-22-15-AM.png)
+![](/.data/assets/Gaea_-_Untitled_03-22-12-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-22-15-AM.webp)
 
 This TextureMap node is attached to a SatMap node. The SatMap is adapted to the mask as described in @crafting-masks.
 
@@ -26,7 +26,7 @@ There a few ways to quickly tweak the SatMaps to better fit your needs.
 
 By moving the Bias slider, you can have the SatMap apply more towards the left (negative values) or right (positive values) of the selected Color Map.
 
-| <div>![](/.data/assets/Gaea_-_Untitled_03-23-29-AM.png)</div> | <div>![](/.data/assets/Gaea_-_Untitled_03-23-39-AM.png)</div> | <div>![](/.data/assets/Gaea_-_Untitled_03-23-51-AM.png)</div> |
+| <div>![](/.data/assets/Gaea_-_Untitled_03-23-29-AM.webp)</div> | <div>![](/.data/assets/Gaea_-_Untitled_03-23-39-AM.webp)</div> | <div>![](/.data/assets/Gaea_-_Untitled_03-23-51-AM.webp)</div> |
 | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | <div>![](/.data/assets/satmap_bias_none.png)</div>            | <div>![](/.data/assets/satmap_bias_low.png)</div>             | <div>![](/.data/assets/satmap_bias_high.png)</div>            |
 
@@ -34,7 +34,7 @@ By moving the Bias slider, you can have the SatMap apply more towards the left (
 
 You can use the Clip slider to tell SatMaps to only use the selected segment of the entire color map.
 
-![](/.data/assets/Gaea_-_Untitled_03-23-01-AM.png)
+![](/.data/assets/Gaea_-_Untitled_03-23-01-AM.webp)
 
 ![](/.data/assets/satmap_clipping.png)
 
@@ -44,7 +44,7 @@ Here, we clip out most of the left half of the color map, and you can see how th
 
 The Roughness setting scatters the pixels of the color map to add the desired level of chaos and distortion.
 
-![](/.data/assets/Gaea_-_Untitled_03-35-36-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-35-39-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-35-41-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-35-44-AM.png) ![](/.data/assets/Gaea_-_Untitled_03-35-47-AM.png)
+![](/.data/assets/Gaea_-_Untitled_03-35-36-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-35-39-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-35-41-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-35-44-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-35-47-AM.webp)
 
 #### HSL
 

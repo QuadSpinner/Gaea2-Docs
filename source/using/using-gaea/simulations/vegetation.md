@@ -20,9 +20,9 @@ The Trees and Shrubs nodes operate on basically the same principle but different
 
 Here you can see 3 separate populations or "ecotopes" created with 3 different Trees nodes. Each avoiding the other, but intermingling and creating scatter points within their own zones.
 
-![](/.data/assets/veg2.jpg) ![](/.data/assets/veg1.jpg) ![](/.data/assets/veg3.jpg)
+![](/.data/assets/veg2.webp) ![](/.data/assets/veg1.webp) ![](/.data/assets/veg3.webp)
 
-![](/.data/assets/veg4.jpg)
+![](/.data/assets/veg4.webp)
 
 While you can often get great results from a single scatter/population, creating multiple populations with two or more Trees and/or Shrubs nodes gives you better control and a more realistic ecosystem.
 
@@ -34,17 +34,17 @@ Gaea's growth systems are powered by 3 major factors: growth or health, inhibito
 
 First, you decide whether your growth should seek water or avoid it.
 
-![](/.data/assets/Gaea_-_docs-trees.terrain_03-48-49-AM.png) ![](/.data/assets/Gaea_-_docs-trees.terrain_03-49-59-AM.png)
+![](/.data/assets/Gaea_-_docs-trees.terrain_03-48-49-AM.webp) ![](/.data/assets/Gaea_-_docs-trees.terrain_03-49-59-AM.webp)
 
 Health / Patches / Spread / Random help you control the patterns and extents of the population.
 
 ### Inhibitors
 
-![](/.data/assets/Gaea_-_docs-trees.terrain_03-51-56-AM.png) ![](/.data/assets/Gaea_-_docs-trees.terrain_03-52-17-AM.png)
+![](/.data/assets/Gaea_-_docs-trees.terrain_03-51-56-AM.webp) ![](/.data/assets/Gaea_-_docs-trees.terrain_03-52-17-AM.webp)
 
 Slope and Height are the most essential inhibitors. You can choose which range of slope and height allows these trees to grow.
 
-![](/.data/assets/Gaea_-_docs-trees.terrain_03-54-11-AM.png)
+![](/.data/assets/Gaea_-_docs-trees.terrain_03-54-11-AM.webp)
 
 Peaks lets you avoid ridges and peaks without having to worry about Height or Slope.
 
@@ -52,11 +52,11 @@ Peaks lets you avoid ridges and peaks without having to worry about Height or Sl
 
 When snow regularly falls and settles down slopes it creates an inhibition zone that prevents larger trees from growing.
 
-![](/.data/assets/Gaea_-_Trees_-_Slope_Inhibited_Growth_04-12-52-AM.png)
+![](/.data/assets/Gaea_-_Trees_-_Slope_Inhibited_Growth_04-12-52-AM.webp)
 
 Dead Zones are slightly more complicated and often require a delicate touch. Dead Zones are optional.
 
-![](/.data/assets/Gaea_-_site-004.terrain_08-07-36-PM.png)
+![](/.data/assets/Gaea_-_site-004.terrain_08-07-36-PM.webp)
 
 DeadZones are great opportunity to add talus, scree, other kinds of rocks and more.
 
@@ -68,7 +68,7 @@ The Visualize Data option let's you see the various factors affecting the ecosys
 
 Green are trees, blue are freshwater flows, and red are dead zones.
 
-![](/.data/assets/Gaea_-_Trees_-_Slope_Inhibited_Growth_04-13-41-AM.png)
+![](/.data/assets/Gaea_-_Trees_-_Slope_Inhibited_Growth_04-13-41-AM.webp)
 
 
 

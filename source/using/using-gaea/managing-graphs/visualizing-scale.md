@@ -10,7 +10,7 @@ order: 03
 
 Gaea 2.1 ships with multiple pre-defined overlays that you can use for showing relative scale on your terrain. These are rendered on top of your terrain, so you can visualize it easily without modifying anything on your graph. You can change the overlay and its opacity in the Sky Editor.
 
-![](/.data/assets/image-(15).png)
+![](/.data/assets/image-(15).webp)
 
 
 
@@ -30,7 +30,7 @@ Save your square image as a PNG to maintain crisp edges. Then load it as a custo
 
 Now you can visualize any specific area, shape, perimeter, etc. on your terrain.
 
-![](/.data/assets/image-(17).png)
+![](/.data/assets/image-(17).webp)
 
 ### Creating Overlays in Gaea
 
@@ -74,7 +74,7 @@ If you want to toggle this block and use it frequently in various places across 
 
 You can use the Route node's toggle to quickly show and hide the version with the Block.
 
-![Route toggled on.](/.data/assets/image-(13).png) ![Route toggled off.](/.data/assets/image-(14).png)
+![Route toggled on.](/.data/assets/image-(13).webp) ![Route toggled off.](/.data/assets/image-(14).webp)
 
 :::info
 Make the Transform's output into a @portals-and-chokepoints and reuse it wherever needed in the graph without cluttering the workspace.
@@ -84,5 +84,5 @@ Make the Transform's output into a @portals-and-chokepoints and reuse it whereve
 
 If you want to use a custom mesh instead of a block, you can use the Object node to import a mesh and scale it instead of using the Constant node.
 
-![](/.data/assets/image-(21).png)
+![](/.data/assets/image-(21).webp)
 

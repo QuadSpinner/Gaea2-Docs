@@ -17,14 +17,14 @@ A mask in Gaea is essentially a grayscale image where white areas represent sect
 
 ### **Creating a Mask**
 
-![](/.data/assets/image-(60).png)
+![](/.data/assets/image-(60).webp)
 
 * Masks can be generated using any node that outputs a grayscale image. Common sources for masks include specific terrain features such as slopes, altitudes, or noise patterns.
 * Use nodes like `Height`, `Slope`, or custom `Noise` patterns to generate masks based on terrain characteristics.
 
 ### **Direct Masking**
 
-![](/.data/assets/image-(61).png)
+![](/.data/assets/image-(61).webp)
 
 * To apply a mask, connect the mask output from one node into the mask input of another node. This setup allows the second node’s effects to be limited to the areas defined by the mask.
 * For example, if you want to apply erosion only to the upper regions of a mountain, use a height-based mask that isolates those areas.

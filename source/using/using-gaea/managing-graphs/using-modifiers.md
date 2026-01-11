@@ -40,15 +40,15 @@ The "Drop" modifier removes any "empty" space under the terrain, forcing it to d
 
 ![](/.data/assets/image-(68).png)
 
-<div>![Normal Perlin](/.data/assets/Gaea_-_Untitled_02-55-12-AM.jpg) ![Dropped Perlin](/.data/assets/Gaea_-_Untitled_02-55-15-AM.jpg)</div>
+<div>![Normal Perlin](/.data/assets/Gaea_-_Untitled_02-55-12-AM.webp) ![Dropped Perlin](/.data/assets/Gaea_-_Untitled_02-55-15-AM.webp)</div>
 
 ### Bulking Up or Bulking Down
 
 Using Shaper, you can bulk up or bulk down a terrain. It can apply to masks as well. For example, taking Flow Map output and making it stronger by adding Shaper.
 
-![Original terrain](/.data/assets/Gaea_-_Untitled_02-52-42-AM.jpg)
+![Original terrain](/.data/assets/Gaea_-_Untitled_02-52-42-AM.webp)
 
-![Shaper at +50](/.data/assets/Gaea_-_Untitled_02-52-58-AM.jpg) 
+![Shaper at +50](/.data/assets/Gaea_-_Untitled_02-52-58-AM.webp) 
 
 ![Shaper at -50](...)
 
@@ -56,7 +56,7 @@ Using Shaper, you can bulk up or bulk down a terrain. It can apply to masks as w
 
 You can easily restrict the effect of a node to a height or slope range by adding a "Mask by Height" or "Mask by Slope" modifier on the effect node.
 
-![](/.data/assets/image-(67).png)
+![](/.data/assets/image-(67).webp)
 
 ![](/.data/assets/image-(66).png){.w-50}
 
@@ -74,9 +74,9 @@ Sometimes you want a bit of crunchy detail to breakup the edges of your mask or 
 
 ![](/.data/assets/image-(69).png){.w-50}
 
-![](/.data/assets/threshold1.jpg) 
+![](/.data/assets/threshold1.webp) 
 
-![](/.data/assets/threshold2.jpg)
+![](/.data/assets/threshold2.webp)
 
 :::info
 Try mixing with Min or Max modifiers for broader options.
