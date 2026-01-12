@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Gabor",
+  "Description": "Gabor noise is one of the lesser used noises, but provides a wonderful pattern-friendly noise that can be used to simulate various aspects of nature.",
+  "Family": "Basic",
+  "FamilyIcon": "family-basic",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    "gabor"
+  ],
+  "ShortCode": "g",
+  "Usage": 10,
+  "SearchString": "Gabor Basic gabor g",
+  "SearchWords": [
+    "gabor",
+    "basic",
+    "gabor",
+    "g"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

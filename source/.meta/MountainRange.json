@@ -1,0 +1,32 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "MountainRange",
+  "Description": "Range primitive quickly sets up an entire mountain terrain with shapes highly optimized for eroding large-scale landscapes.",
+  "Family": "Landscape",
+  "FamilyIcon": "family-landscape",
+  "Toolbox": "Terrain",
+  "Classification": "Generator",
+  "Keywords": [
+    "mountain range"
+  ],
+  "ShortCode": "mr",
+  "Usage": 31,
+  "SearchString": "MountainRange Landscape mountain range mr",
+  "SearchWords": [
+    "mountainrange",
+    "landscape",
+    "mountain",
+    "range",
+    "mr"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

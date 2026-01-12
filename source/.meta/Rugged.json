@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Rugged",
+  "Description": "Rugged is a very powerful primitive node that creates a strong, rocky surface for any terrain while preserving overall shape.",
+  "Family": "Landscape",
+  "FamilyIcon": "family-landscape",
+  "Toolbox": "Terrain",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "gg",
+  "Usage": 36,
+  "SearchString": "Rugged Landscape  gg",
+  "SearchWords": [
+    "rugged",
+    "landscape",
+    "",
+    "gg"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

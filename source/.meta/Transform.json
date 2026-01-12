@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Transform",
+  "Description": "Transform moves, rotates, and scales any terrain. A post-process effect, it can be implemented at any point in the graph.",
+  "Family": "Transform",
+  "FamilyIcon": "x-transform",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "t",
+  "Usage": 117,
+  "SearchString": "Transform Transform  t",
+  "SearchWords": [
+    "transform",
+    "transform",
+    "",
+    "t"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

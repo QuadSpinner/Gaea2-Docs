@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Blur",
+  "Description": "Blur diffuses sharp shapes and softens the terrain.",
+  "Family": "Blur",
+  "FamilyIcon": "x-blur",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "blur"
+  ],
+  "ShortCode": "b",
+  "Usage": 74,
+  "SearchString": "Blur Blur blur b",
+  "SearchWords": [
+    "blur",
+    "blur",
+    "blur",
+    "b"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

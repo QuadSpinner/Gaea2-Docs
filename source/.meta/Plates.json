@@ -1,0 +1,32 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Plates",
+  "Description": "Plates primitive is based on a Perlin core with flat plate-like formations created in between larger Perlin-esque shapes.",
+  "Family": "Landscape",
+  "FamilyIcon": "family-landscape",
+  "Toolbox": "Terrain",
+  "Classification": "Generator",
+  "Keywords": [
+    "mountain range"
+  ],
+  "ShortCode": "pl",
+  "Usage": 20,
+  "SearchString": "Plates Landscape mountain range pl",
+  "SearchWords": [
+    "plates",
+    "landscape",
+    "mountain",
+    "range",
+    "pl"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

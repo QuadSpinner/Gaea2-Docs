@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Pixelate",
+  "Description": null,
+  "Family": "Effect",
+  "FamilyIcon": "x-pixelate",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "px",
+  "Usage": 6,
+  "SearchString": "Pixelate Effect  px",
+  "SearchWords": [
+    "pixelate",
+    "effect",
+    "",
+    "px"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

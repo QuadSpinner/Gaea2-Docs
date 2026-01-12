@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Lake",
+  "Description": "Lake simulates rainfall on the terrain and creates physically accurate lakes.",
+  "Family": "Water",
+  "FamilyIcon": "x-lake",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "",
+  "Usage": 68,
+  "SearchString": "Lake Water  ",
+  "SearchWords": [
+    "lake",
+    "water",
+    "",
+    ""
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": "Water, Shore",
+  "HasCustomColorization": true,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

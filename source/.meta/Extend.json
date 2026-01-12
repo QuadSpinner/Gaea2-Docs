@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Extend",
+  "Description": null,
+  "Family": "Adjust",
+  "FamilyIcon": "x-extend",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "extend"
+  ],
+  "ShortCode": "xt",
+  "Usage": 3,
+  "SearchString": "Extend Adjust extend xt",
+  "SearchWords": [
+    "extend",
+    "adjust",
+    "extend",
+    "xt"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "WaveShine",
+  "Description": null,
+  "Family": "Extended",
+  "FamilyIcon": "family-extended",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ws",
+  "Usage": 5,
+  "SearchString": "WaveShine Extended  ws",
+  "SearchWords": [
+    "waveshine",
+    "extended",
+    "",
+    "ws"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Lichtenberg",
+  "Description": null,
+  "Family": "Erosion",
+  "FamilyIcon": "family-erosion",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "lct",
+  "Usage": 22,
+  "SearchString": "Lichtenberg Erosion  lct",
+  "SearchWords": [
+    "lichtenberg",
+    "erosion",
+    "",
+    "lct"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

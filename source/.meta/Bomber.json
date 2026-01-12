@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 10,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Bomber",
+  "Description": "Bomber takes an input heightfield and \"stamps\" or bombs it across the entire terrain surface using the randomization properties you set.",
+  "Family": "Scatter",
+  "FamilyIcon": "x-bomber",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "bo",
+  "Usage": 33,
+  "SearchString": "Bomber Scatter  bo",
+  "SearchWords": [
+    "bomber",
+    "scatter",
+    "",
+    "bo"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": true,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

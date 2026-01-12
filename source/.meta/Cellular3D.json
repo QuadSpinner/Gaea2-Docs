@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Cellular3D",
+  "Description": null,
+  "Family": "Extended",
+  "FamilyIcon": "family-extended",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "c3",
+  "Usage": 129,
+  "SearchString": "Cellular3D Extended  c3",
+  "SearchWords": [
+    "cellular3d",
+    "extended",
+    "",
+    "c3"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

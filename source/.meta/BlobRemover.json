@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "BlobRemover",
+  "Description": null,
+  "Family": "Utilities",
+  "FamilyIcon": "family-utilities",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "blur"
+  ],
+  "ShortCode": "b",
+  "Usage": 10,
+  "SearchString": "BlobRemover Utilities blur b",
+  "SearchWords": [
+    "blobremover",
+    "utilities",
+    "blur",
+    "b"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

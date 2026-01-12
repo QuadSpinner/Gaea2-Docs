@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Shear",
+  "Description": "Shear creates rock shearing and exposes strata.",
+  "Family": "Structure",
+  "FamilyIcon": "family-structure",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "sh",
+  "Usage": 10,
+  "SearchString": "Shear Structure  sh",
+  "SearchWords": [
+    "shear",
+    "structure",
+    "",
+    "sh"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

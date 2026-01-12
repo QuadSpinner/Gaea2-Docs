@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Rockscape",
+  "Description": null,
+  "Family": "Rocky",
+  "FamilyIcon": "family-rocky",
+  "Toolbox": "Surface",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "rs",
+  "Usage": 29,
+  "SearchString": "Rockscape Rocky  rs",
+  "SearchWords": [
+    "rockscape",
+    "rocky",
+    "",
+    "rs"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Cellular",
+  "Description": null,
+  "Family": "Extended",
+  "FamilyIcon": "family-extended",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    "cellular"
+  ],
+  "ShortCode": "ll",
+  "Usage": 18,
+  "SearchString": "Cellular Extended cellular ll",
+  "SearchWords": [
+    "cellular",
+    "extended",
+    "cellular",
+    "ll"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

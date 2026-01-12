@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Curvature",
+  "Description": "Curvature creates a mask where convex areas (protrusions, sharp edges, etc.) are selected. Very useful layer in texture creation, often as highlights on top of an existing texture map.",
+  "Family": "Aspect",
+  "FamilyIcon": "x-curvature",
+  "Toolbox": "Derive",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "cv",
+  "Usage": 36,
+  "SearchString": "Curvature Aspect  cv",
+  "SearchWords": [
+    "curvature",
+    "aspect",
+    "",
+    "cv"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

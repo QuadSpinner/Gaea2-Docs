@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Weathering",
+  "Description": null,
+  "Family": "Surface",
+  "FamilyIcon": "family-surface",
+  "Toolbox": "Colorize",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "we",
+  "Usage": 190,
+  "SearchString": "Weathering Surface  we",
+  "SearchWords": [
+    "weathering",
+    "surface",
+    "",
+    "we"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

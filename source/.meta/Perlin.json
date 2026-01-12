@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Perlin",
+  "Description": "Perlin is the most basic and essential noise. In Gaea, we've made a \"geo-variant\" by modifying the base Perlin shape to fit the needs of terrain design from the beginning.",
+  "Family": "Basic",
+  "FamilyIcon": "family-basic",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    "perlin"
+  ],
+  "ShortCode": "p",
+  "Usage": 1794,
+  "SearchString": "Perlin Basic perlin p",
+  "SearchWords": [
+    "perlin",
+    "basic",
+    "perlin",
+    "p"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

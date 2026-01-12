@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Mask",
+  "Description": "Mask draws a mask. If the Input port is connected to another node, a 2D representation of that terrain is shown in the background as a guide. This is optional, as the Input port only provides a drawing guide and does not affect the actual mask.",
+  "Family": "Utilities",
+  "FamilyIcon": "x-mask",
+  "Toolbox": "Utility",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ma",
+  "Usage": 54,
+  "SearchString": "Mask Utilities  ma",
+  "SearchWords": [
+    "mask",
+    "utilities",
+    "",
+    "ma"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

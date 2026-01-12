@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "SatMap",
+  "Description": null,
+  "Family": "Color",
+  "FamilyIcon": "x-satmap",
+  "Toolbox": "Colorize",
+  "Classification": "Colorizer",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "sa",
+  "Usage": 770,
+  "SearchString": "SatMap Color  sa",
+  "SearchWords": [
+    "satmap",
+    "color",
+    "",
+    "sa"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

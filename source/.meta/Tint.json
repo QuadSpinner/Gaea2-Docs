@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Tint",
+  "Description": "QuickColor quickly maps a 2-color gradient to any mask. Useful for simple scenarios where CLUTer would be overkill. ",
+  "Family": "Color",
+  "FamilyIcon": "x-tint",
+  "Toolbox": "Colorize",
+  "Classification": "Colorizer",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ti",
+  "Usage": 131,
+  "SearchString": "Tint Color  ti",
+  "SearchWords": [
+    "tint",
+    "color",
+    "",
+    "ti"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

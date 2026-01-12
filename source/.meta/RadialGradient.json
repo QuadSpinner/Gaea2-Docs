@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "RadialGradient",
+  "Description": null,
+  "Family": "Gradient",
+  "FamilyIcon": "family-gradient",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    "radialgradient"
+  ],
+  "ShortCode": "rg",
+  "Usage": 383,
+  "SearchString": "RadialGradient Gradient radialgradient rg",
+  "SearchWords": [
+    "radialgradient",
+    "gradient",
+    "radialgradient",
+    "rg"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

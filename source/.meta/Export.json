@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Export",
+  "Description": null,
+  "Family": "Assets",
+  "FamilyIcon": "x-export",
+  "Toolbox": "Output",
+  "Classification": "Export",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ex",
+  "Usage": 75,
+  "SearchString": "Export Assets  ex",
+  "SearchWords": [
+    "export",
+    "assets",
+    "",
+    "ex"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

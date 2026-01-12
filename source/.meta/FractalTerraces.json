@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "FractalTerraces",
+  "Description": "FractalTerraces creates fractal terracing on the terrain. It is a powerful alternative to the Terrace node.",
+  "Family": "Terrace",
+  "FamilyIcon": "x-fractalterraces",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    "fractalterraces"
+  ],
+  "ShortCode": "ft",
+  "Usage": 58,
+  "SearchString": "FractalTerraces Terrace fractalterraces ft",
+  "SearchWords": [
+    "fractalterraces",
+    "terrace",
+    "fractalterraces",
+    "ft"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Snowfield",
+  "Description": null,
+  "Family": "Snow",
+  "FamilyIcon": "family-snow",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    "snow"
+  ],
+  "ShortCode": "sf",
+  "Usage": 44,
+  "SearchString": "Snowfield Snow snow sf",
+  "SearchWords": [
+    "snowfield",
+    "snow",
+    "snow",
+    "sf"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": "Snow",
+  "HasCustomColorization": true,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

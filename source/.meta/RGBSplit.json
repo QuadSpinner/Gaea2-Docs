@@ -1,0 +1,34 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "RGBSplit",
+  "Description": "RGBSplit takes a color node and splits the Red/Green/Blue channels into heightfields. The counterpart to RGBMix.",
+  "Family": "Utilities",
+  "FamilyIcon": "x-rgbsplit",
+  "Toolbox": "Colorize",
+  "Classification": "Colorizer",
+  "Keywords": [
+    "gray grayscale greyscale monochrome"
+  ],
+  "ShortCode": "rs",
+  "Usage": 23,
+  "SearchString": "RGBSplit Utilities gray grayscale greyscale monochrome rs",
+  "SearchWords": [
+    "rgbsplit",
+    "utilities",
+    "gray",
+    "grayscale",
+    "greyscale",
+    "monochrome",
+    "rs"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

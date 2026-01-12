@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "SlopeBlur",
+  "Description": "SlopeBlur is a versatile, low-level node that adds directional blurring based on the slopes of a Guide terrain or mask. It is one of our deceptively simple nodes that can create a wide array of shapes.",
+  "Family": "Blur",
+  "FamilyIcon": "x-slopeblur",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "sblur"
+  ],
+  "ShortCode": "sb",
+  "Usage": 43,
+  "SearchString": "SlopeBlur Blur sblur sb",
+  "SearchWords": [
+    "slopeblur",
+    "blur",
+    "sblur",
+    "sb"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

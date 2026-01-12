@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 10,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Combine",
+  "Description": "Combine is one of Gaea's most important nodes. You can combine two terrains (or any node output) using various mathematical operations, often known as 'Blend Modes'.",
+  "Family": "Routing",
+  "FamilyIcon": "x-combine",
+  "Toolbox": "Utility",
+  "Classification": "Processor",
+  "Keywords": [
+    "combine"
+  ],
+  "ShortCode": "c",
+  "Usage": 1222,
+  "SearchString": "Combine Routing combine c",
+  "SearchWords": [
+    "combine",
+    "routing",
+    "combine",
+    "c"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": true,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

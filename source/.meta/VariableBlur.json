@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "VariableBlur",
+  "Description": null,
+  "Family": "Blur",
+  "FamilyIcon": "x-variableblur",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "vb",
+  "Usage": 8,
+  "SearchString": "VariableBlur Blur  vb",
+  "SearchWords": [
+    "variableblur",
+    "blur",
+    "",
+    "vb"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

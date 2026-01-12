@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Gate",
+  "Description": null,
+  "Family": "Routing",
+  "FamilyIcon": "x-gate",
+  "Toolbox": "Utility",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "g8",
+  "Usage": 1,
+  "SearchString": "Gate Routing  g8",
+  "SearchWords": [
+    "gate",
+    "routing",
+    "",
+    "g8"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

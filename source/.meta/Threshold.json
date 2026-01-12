@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Threshold",
+  "Description": "Abs can modify the terrain or mask it by eliminating values higher or lower than the exact value specified.",
+  "Family": "Adjust",
+  "FamilyIcon": "x-threshold",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "threshold"
+  ],
+  "ShortCode": "th",
+  "Usage": 49,
+  "SearchString": "Threshold Adjust threshold th",
+  "SearchWords": [
+    "threshold",
+    "adjust",
+    "threshold",
+    "th"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

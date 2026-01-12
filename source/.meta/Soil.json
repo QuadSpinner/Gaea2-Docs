@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Soil",
+  "Description": "Soil Map creates a soil mask, with increased density in crevices or other areas where the slope allows soil to settle.",
+  "Family": "Texture",
+  "FamilyIcon": "family-texture",
+  "Toolbox": "Derive",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "so",
+  "Usage": 31,
+  "SearchString": "Soil Texture  so",
+  "SearchWords": [
+    "soil",
+    "texture",
+    "",
+    "so"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

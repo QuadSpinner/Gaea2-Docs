@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "DataExtractor",
+  "Description": null,
+  "Family": "Utilities",
+  "FamilyIcon": "x-dataextractor",
+  "Toolbox": "Utility",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "de",
+  "Usage": 41,
+  "SearchString": "DataExtractor Utilities  de",
+  "SearchWords": [
+    "dataextractor",
+    "utilities",
+    "",
+    "de"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

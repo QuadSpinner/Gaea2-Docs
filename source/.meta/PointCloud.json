@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "PointCloud",
+  "Description": null,
+  "Family": "Assets",
+  "FamilyIcon": "x-pointcloud",
+  "Toolbox": "Output",
+  "Classification": "Export",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "pc",
+  "Usage": 6,
+  "SearchString": "PointCloud Assets  pc",
+  "SearchWords": [
+    "pointcloud",
+    "assets",
+    "",
+    "pc"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

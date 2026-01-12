@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Sharpen",
+  "Description": "Sharpen enhances terrain edges and small structures by making them more prominent.",
+  "Family": "Adjust",
+  "FamilyIcon": "x-sharpen",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "sx",
+  "Usage": 6,
+  "SearchString": "Sharpen Adjust  sx",
+  "SearchWords": [
+    "sharpen",
+    "adjust",
+    "",
+    "sx"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,32 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Constant",
+  "Description": "Constant creates a blank terrain of the height specified, or a flat color output.",
+  "Family": "Basic",
+  "FamilyIcon": "x-constant",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    "constant color"
+  ],
+  "ShortCode": "k",
+  "Usage": 151,
+  "SearchString": "Constant Basic constant color k",
+  "SearchWords": [
+    "constant",
+    "basic",
+    "constant",
+    "color",
+    "k"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

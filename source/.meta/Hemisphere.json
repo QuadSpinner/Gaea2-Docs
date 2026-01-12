@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Hemisphere",
+  "Description": null,
+  "Family": "Gradient",
+  "FamilyIcon": "family-gradient",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    "dome"
+  ],
+  "ShortCode": "do",
+  "Usage": 43,
+  "SearchString": "Hemisphere Gradient dome do",
+  "SearchWords": [
+    "hemisphere",
+    "gradient",
+    "dome",
+    "do"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 20,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "TextureBaker",
+  "Description": null,
+  "Family": "Utilities",
+  "FamilyIcon": "family-utilities",
+  "Toolbox": "Output",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "nm",
+  "Usage": 3,
+  "SearchString": "TextureBaker Utilities  nm",
+  "SearchWords": [
+    "texturebaker",
+    "utilities",
+    "",
+    "nm"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": true,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

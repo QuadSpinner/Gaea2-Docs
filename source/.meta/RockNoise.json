@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "RockNoise",
+  "Description": "RockNoise is a useful tool for generating fields of rocks with size variations and controllable density.",
+  "Family": "Rocky",
+  "FamilyIcon": "family-rocky",
+  "Toolbox": "Surface",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "rn",
+  "Usage": 16,
+  "SearchString": "RockNoise Rocky  rn",
+  "SearchWords": [
+    "rocknoise",
+    "rocky",
+    "",
+    "rn"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

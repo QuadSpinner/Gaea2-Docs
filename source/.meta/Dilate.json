@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Dilate",
+  "Description": "Dilate the pixels of the heightfield or mask.",
+  "Family": "Transform",
+  "FamilyIcon": "x-dilate",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "di",
+  "Usage": 55,
+  "SearchString": "Dilate Transform  di",
+  "SearchWords": [
+    "dilate",
+    "transform",
+    "",
+    "di"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

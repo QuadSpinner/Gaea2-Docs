@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Cartography",
+  "Description": "Cartography creates a topographical overlay for a map.",
+  "Family": "Render",
+  "FamilyIcon": "x-cartography",
+  "Toolbox": "Output",
+  "Classification": "Colorizer",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "crt",
+  "Usage": 26,
+  "SearchString": "Cartography Render  crt",
+  "SearchWords": [
+    "cartography",
+    "render",
+    "",
+    "crt"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

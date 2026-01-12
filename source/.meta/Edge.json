@@ -1,0 +1,35 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Edge",
+  "Description": "Zero Borders softly transitions the edges of a terrain into nothing, similar to a vignette effect in paint applications. Useful when using Bomber or other effects where a tall edge would be problematic.",
+  "Family": "Structure",
+  "FamilyIcon": "x-edge",
+  "Toolbox": "Utility",
+  "Classification": "Processor",
+  "Keywords": [
+    "vignette edge wall zb zeroborders"
+  ],
+  "ShortCode": "ed",
+  "Usage": 17,
+  "SearchString": "Edge Structure vignette edge wall zb zeroborders ed",
+  "SearchWords": [
+    "edge",
+    "structure",
+    "vignette",
+    "edge",
+    "wall",
+    "zb",
+    "zeroborders",
+    "ed"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

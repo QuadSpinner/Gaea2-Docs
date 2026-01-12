@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Clamp",
+  "Description": "Clamp controls the height of the terrain. You can squash the terrain, clip it at certain heights, or make it taller using the Extend operation.",
+  "Family": "Adjust",
+  "FamilyIcon": "x-clamp",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "clamp"
+  ],
+  "ShortCode": "cl",
+  "Usage": 13,
+  "SearchString": "Clamp Adjust clamp cl",
+  "SearchWords": [
+    "clamp",
+    "adjust",
+    "clamp",
+    "cl"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

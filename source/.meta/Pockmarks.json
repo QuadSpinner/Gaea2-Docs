@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Pockmarks",
+  "Description": null,
+  "Family": "Scatter",
+  "FamilyIcon": "x-pockmarks",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "on",
+  "Usage": 35,
+  "SearchString": "Pockmarks Scatter  on",
+  "SearchWords": [
+    "pockmarks",
+    "scatter",
+    "",
+    "on"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

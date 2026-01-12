@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "File",
+  "Description": "File loads any supported image or data file as a terrain, and supports all major file formats. You can also transform the input.",
+  "Family": "Assets",
+  "FamilyIcon": "x-file",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    "file"
+  ],
+  "ShortCode": "f",
+  "Usage": 362,
+  "SearchString": "File Assets file f",
+  "SearchWords": [
+    "file",
+    "assets",
+    "file",
+    "f"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

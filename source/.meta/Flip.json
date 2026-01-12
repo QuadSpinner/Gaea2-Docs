@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Flip",
+  "Description": "Flip flips the terrain horizontally, vertically, or both.",
+  "Family": "Adjust",
+  "FamilyIcon": "x-flip",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "fp",
+  "Usage": 1,
+  "SearchString": "Flip Adjust  fp",
+  "SearchWords": [
+    "flip",
+    "adjust",
+    "",
+    "fp"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Curve",
+  "Description": "Curve adjusts the height curve of a terrain.",
+  "Family": "Profile",
+  "FamilyIcon": "x-curve",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "curve"
+  ],
+  "ShortCode": "cu",
+  "Usage": 40,
+  "SearchString": "Curve Profile curve cu",
+  "SearchWords": [
+    "curve",
+    "profile",
+    "curve",
+    "cu"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

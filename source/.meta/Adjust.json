@@ -1,0 +1,34 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Adjust",
+  "Description": "The Fx node makes that process easier by combining all the common adjustments inside a single node and allowing you to toggle them on and off.",
+  "Family": "Adjust",
+  "FamilyIcon": "x-adjust",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "adjust invert autolevel drop"
+  ],
+  "ShortCode": "fx",
+  "Usage": 500,
+  "SearchString": "Adjust Adjust adjust invert autolevel drop fx",
+  "SearchWords": [
+    "adjust",
+    "adjust",
+    "adjust",
+    "invert",
+    "autolevel",
+    "drop",
+    "fx"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Distress",
+  "Description": null,
+  "Family": "Superficial",
+  "FamilyIcon": "family-superficial",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "dst",
+  "Usage": 9,
+  "SearchString": "Distress Superficial  dst",
+  "SearchWords": [
+    "distress",
+    "superficial",
+    "",
+    "dst"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Erosion2",
+  "Description": null,
+  "Family": "Erosion",
+  "FamilyIcon": "x-erosion2",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "e2",
+  "Usage": 2606,
+  "SearchString": "Erosion2 Erosion  e2",
+  "SearchWords": [
+    "erosion2",
+    "erosion",
+    "",
+    "e2"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

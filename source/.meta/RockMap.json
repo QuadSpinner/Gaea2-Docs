@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "RockMap",
+  "Description": "RockMap creates a rock-like coverage mask that can be used to texture terrains on its own or combined with other Data Maps.",
+  "Family": "Generative",
+  "FamilyIcon": "family-generative",
+  "Toolbox": "Derive",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "km",
+  "Usage": 7,
+  "SearchString": "RockMap Generative  km",
+  "SearchWords": [
+    "rockmap",
+    "generative",
+    "",
+    "km"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Gamma",
+  "Description": "Gamma applies Gamma adjustment to the heightfield, working exactly like Gamma in an image processing program.",
+  "Family": "Adjust",
+  "FamilyIcon": "family-adjust",
+  "Toolbox": "Colorize",
+  "Classification": "Colorizer",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ga",
+  "Usage": 4,
+  "SearchString": "Gamma Adjust  ga",
+  "SearchWords": [
+    "gamma",
+    "adjust",
+    "",
+    "ga"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Thermal2",
+  "Description": "Thermal2 is an evolution of the previous node. It creates Thermal Erosion to create realistic talus and debris.",
+  "Family": "Erosion",
+  "FamilyIcon": "family-erosion",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "t2",
+  "Usage": 166,
+  "SearchString": "Thermal2 Erosion  t2",
+  "SearchWords": [
+    "thermal2",
+    "erosion",
+    "",
+    "t2"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

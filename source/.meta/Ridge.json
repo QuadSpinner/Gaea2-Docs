@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Ridge",
+  "Description": "Ridge creates a rugged ridgeline with multiple fractures and rock shearing.",
+  "Family": "Landscape",
+  "FamilyIcon": "family-landscape",
+  "Toolbox": "Terrain",
+  "Classification": "Generator",
+  "Keywords": [
+    "ridge"
+  ],
+  "ShortCode": "ri",
+  "Usage": 436,
+  "SearchString": "Ridge Landscape ridge ri",
+  "SearchWords": [
+    "ridge",
+    "landscape",
+    "ridge",
+    "ri"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

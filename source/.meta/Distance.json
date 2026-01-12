@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Distance",
+  "Description": null,
+  "Family": "Transform",
+  "FamilyIcon": "x-distance",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "rt",
+  "Usage": 66,
+  "SearchString": "Distance Transform  rt",
+  "SearchWords": [
+    "distance",
+    "transform",
+    "",
+    "rt"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

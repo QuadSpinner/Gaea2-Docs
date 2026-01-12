@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Texturizer",
+  "Description": null,
+  "Family": "Texture",
+  "FamilyIcon": "family-texture",
+  "Toolbox": "Derive",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "tz",
+  "Usage": 14,
+  "SearchString": "Texturizer Texture  tz",
+  "SearchWords": [
+    "texturizer",
+    "texture",
+    "",
+    "tz"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

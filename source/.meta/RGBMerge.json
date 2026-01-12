@@ -1,0 +1,34 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "RGBMerge",
+  "Description": null,
+  "Family": "Utilities",
+  "FamilyIcon": "x-rgbmerge",
+  "Toolbox": "Colorize",
+  "Classification": "Colorizer",
+  "Keywords": [
+    "rgb mix join combine"
+  ],
+  "ShortCode": "rm",
+  "Usage": 20,
+  "SearchString": "RGBMerge Utilities rgb mix join combine rm",
+  "SearchWords": [
+    "rgbmerge",
+    "utilities",
+    "rgb",
+    "mix",
+    "join",
+    "combine",
+    "rm"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Roughen",
+  "Description": null,
+  "Family": "Superficial",
+  "FamilyIcon": "family-superficial",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "rog",
+  "Usage": 4,
+  "SearchString": "Roughen Superficial  rog",
+  "SearchWords": [
+    "roughen",
+    "superficial",
+    "",
+    "rog"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

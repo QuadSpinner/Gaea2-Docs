@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Aperture",
+  "Description": "Aperture expands or compacts every feature on the terrain, similar to a camera's bokeh.",
+  "Family": "Transform",
+  "FamilyIcon": "x-aperture",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ap",
+  "Usage": 21,
+  "SearchString": "Aperture Transform  ap",
+  "SearchWords": [
+    "aperture",
+    "transform",
+    "",
+    "ap"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

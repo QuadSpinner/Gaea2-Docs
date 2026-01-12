@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Shatter",
+  "Description": "Shatter transforms simple shapes into complex, highly eroded, and fractured terrains.",
+  "Family": "Structure",
+  "FamilyIcon": "family-structure",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "tt",
+  "Usage": 24,
+  "SearchString": "Shatter Structure  tt",
+  "SearchWords": [
+    "shatter",
+    "structure",
+    "",
+    "tt"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

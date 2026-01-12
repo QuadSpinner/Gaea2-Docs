@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Island",
+  "Description": "Island draws basic shapes from which entire landmasses can be generated.",
+  "Family": "Primitive",
+  "FamilyIcon": "family-primitive",
+  "Toolbox": "Terrain",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "is",
+  "Usage": 3,
+  "SearchString": "Island Primitive  is",
+  "SearchWords": [
+    "island",
+    "primitive",
+    "",
+    "is"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

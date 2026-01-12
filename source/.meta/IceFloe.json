@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "IceFloe",
+  "Description": "Icefloe creates flat plates of ice inside a water body.",
+  "Family": "Snow",
+  "FamilyIcon": "x-icefloe",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "if",
+  "Usage": 4,
+  "SearchString": "IceFloe Snow  if",
+  "SearchWords": [
+    "icefloe",
+    "snow",
+    "",
+    "if"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

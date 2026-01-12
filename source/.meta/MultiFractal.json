@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "MultiFractal",
+  "Description": "MultiFractal creates a multi-noise that can have a large level of variations. Often useful for texturing.",
+  "Family": "Extended",
+  "FamilyIcon": "family-extended",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    "multifractal"
+  ],
+  "ShortCode": "mf",
+  "Usage": 28,
+  "SearchString": "MultiFractal Extended multifractal mf",
+  "SearchWords": [
+    "multifractal",
+    "extended",
+    "multifractal",
+    "mf"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

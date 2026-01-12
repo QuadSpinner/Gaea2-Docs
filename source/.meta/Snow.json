@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Snow",
+  "Description": "Snow simulates snow fall, melt, and settling like in nature, and controls how the snow adheres and flows along the terrain.",
+  "Family": "Snow",
+  "FamilyIcon": "family-snow",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    "snow"
+  ],
+  "ShortCode": "sn",
+  "Usage": 237,
+  "SearchString": "Snow Snow snow sn",
+  "SearchWords": [
+    "snow",
+    "snow",
+    "snow",
+    "sn"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": "Snow",
+  "HasCustomColorization": true,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

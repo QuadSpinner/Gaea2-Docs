@@ -1,0 +1,33 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "CLUTer",
+  "Description": "CLUTer creates color gradients which can be mapped to texture masks to make color maps.",
+  "Family": "Color",
+  "FamilyIcon": "x-cluter",
+  "Toolbox": "Colorize",
+  "Classification": "Colorizer",
+  "Keywords": [
+    "gradient ramp colorize"
+  ],
+  "ShortCode": "clt",
+  "Usage": 162,
+  "SearchString": "CLUTer Color gradient ramp colorize clt",
+  "SearchWords": [
+    "cluter",
+    "color",
+    "gradient",
+    "ramp",
+    "colorize",
+    "clt"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

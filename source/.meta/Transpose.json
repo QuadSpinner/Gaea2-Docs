@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Transpose",
+  "Description": null,
+  "Family": "Adjust",
+  "FamilyIcon": "x-transpose",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "tx",
+  "Usage": 75,
+  "SearchString": "Transpose Adjust  tx",
+  "SearchWords": [
+    "transpose",
+    "adjust",
+    "",
+    "tx"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

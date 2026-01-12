@@ -383,8 +383,8 @@ function initGlobalToc({
     ol.appendChild(makeCrumb(homeTitle, homeUrl, false));
     ol.appendChild(makeCrumb(document.body.dataset.hive, document.body.dataset.hiveLink, false));
 
-    for (let i = 0; i < chain.length; i++) {
-      const isLast = i === chain.length - 1;
+    for (let i = 0; i < chain.length - 1; i++) {
+      const isLast = i === chain.length - 2;
       const c = chain[i];
 
       // if still no url, fall back to "#"

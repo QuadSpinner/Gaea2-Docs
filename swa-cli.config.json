@@ -6,6 +6,10 @@
       "outputLocation": ".",
       "appName": "docs-beta",
       "resourceGroup": "Default-Web-WestUS"
+    },
+    "docs-beta": {
+      "appLocation": "staging",
+      "outputLocation": "."
     }
   }
 }

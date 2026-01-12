@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Route",
+  "Description": "Route chooses the flow of the graph based on the Input/Output ports chosen, and relies on integer input for automation.",
+  "Family": "Routing",
+  "FamilyIcon": "x-route",
+  "Toolbox": "Utility",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ro",
+  "Usage": 9,
+  "SearchString": "Route Routing  ro",
+  "SearchWords": [
+    "route",
+    "routing",
+    "",
+    "ro"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

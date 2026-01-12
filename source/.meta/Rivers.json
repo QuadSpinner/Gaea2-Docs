@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Rivers",
+  "Description": "Rivers creates a realistic network of rivers with controllable headwaters.",
+  "Family": "Water",
+  "FamilyIcon": "family-water",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "rv",
+  "Usage": 79,
+  "SearchString": "Rivers Water  rv",
+  "SearchWords": [
+    "rivers",
+    "water",
+    "",
+    "rv"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": "River",
+  "HasCustomColorization": true,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

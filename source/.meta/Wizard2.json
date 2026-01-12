@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Wizard2",
+  "Description": null,
+  "Family": "Erosion",
+  "FamilyIcon": "x-wizard2",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    "w2"
+  ],
+  "ShortCode": "z2",
+  "Usage": 2,
+  "SearchString": "Wizard2 Erosion w2 z2",
+  "SearchWords": [
+    "wizard2",
+    "erosion",
+    "w2",
+    "z2"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

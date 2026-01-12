@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Autolevel",
+  "Description": null,
+  "Family": "Adjust",
+  "FamilyIcon": "x-autolevel",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "lv",
+  "Usage": 5,
+  "SearchString": "Autolevel Adjust  lv",
+  "SearchWords": [
+    "autolevel",
+    "adjust",
+    "",
+    "lv"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

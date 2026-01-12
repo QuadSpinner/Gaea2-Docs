@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Seamless",
+  "Description": "Seamless can transform any input terrain or color map into a tileable/repeating pattern.",
+  "Family": "Structure",
+  "FamilyIcon": "x-seamless",
+  "Toolbox": "Utility",
+  "Classification": "Processor",
+  "Keywords": [
+    "seamless"
+  ],
+  "ShortCode": "sls",
+  "Usage": 16,
+  "SearchString": "Seamless Structure seamless sls",
+  "SearchWords": [
+    "seamless",
+    "structure",
+    "seamless",
+    "sls"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": true,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -5,7 +5,7 @@
   "TemplatesFolder": "template",
   "HtmlTemplate": "template\\template.html",
   "DataFolders": [
-    ".Data"
+    ".data"
   ],
   "Hives": [
     {

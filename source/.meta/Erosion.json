@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Erosion",
+  "Description": "Erosion is the cornerstone of all terrains. It simulates hydraulic erosion and turns any shape into a realistic-looking terrain.",
+  "Family": "Erosion",
+  "FamilyIcon": "x-erosion",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    "erosion"
+  ],
+  "ShortCode": "ce",
+  "Usage": 52,
+  "SearchString": "Erosion Erosion erosion ce",
+  "SearchWords": [
+    "erosion",
+    "erosion",
+    "erosion",
+    "ce"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

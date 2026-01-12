@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Sea",
+  "Description": "Sea is a multi-function water surface generator and coastal erosion tool. Its primary purpose is to create a water surface, while Coastal Erosion creates beaches and cliffs.",
+  "Family": "Water",
+  "FamilyIcon": "x-sea",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "sea",
+  "Usage": 30,
+  "SearchString": "Sea Water  sea",
+  "SearchWords": [
+    "sea",
+    "water",
+    "",
+    "sea"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": "Water, Shore",
+  "HasCustomColorization": true,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

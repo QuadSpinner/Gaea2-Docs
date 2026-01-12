@@ -1,0 +1,35 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Shape",
+  "Description": null,
+  "Family": "Basic",
+  "FamilyIcon": "x-shape",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    "shape geometry circle rectangle oval"
+  ],
+  "ShortCode": "s",
+  "Usage": 14,
+  "SearchString": "Shape Basic shape geometry circle rectangle oval s",
+  "SearchWords": [
+    "shape",
+    "basic",
+    "shape",
+    "geometry",
+    "circle",
+    "rectangle",
+    "oval",
+    "s"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}
