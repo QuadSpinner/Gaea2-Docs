@@ -2,8 +2,8 @@ X:\Docs\Gaea2-Docs\staging\ui\graph\basic-workflow\graph-conveniences.md|/.data/
 X:\Docs\Gaea2-Docs\staging\using\using-gaea\colorizing-and-textures\synthesizing-colors.md|/.data/assets/synth_process.png
 X:\Docs\Gaea2-Docs\staging\using\getting-started\index.md|/.data/assets/Gaea_-_Untitled_02-30-40-AM.png
 X:\Docs\Gaea2-Docs\staging\using\using-gaea\managing-graphs\using-modifiers.md|...
-X:\Docs\Gaea2-Docs\staging\reference\nodes\modify\transform.md|/.data/assets/transform.png
 X:\Docs\Gaea2-Docs\staging\reference\nodes\utility\compare.md|/.data/assets/compare.png
 X:\Docs\Gaea2-Docs\staging\reference\nodes\modify\blobremover.md|/.data/assets/Gaea_-_Untitled_10-43-03-PM.webp
+X:\Docs\Gaea2-Docs\staging\reference\nodes\modify\transform.md|/.data/assets/transform.png
 X:\Docs\Gaea2-Docs\staging\reference\nodes\colorize\cluter.md|/.images/CLUT-sample.png
 X:\Docs\Gaea2-Docs\staging\reference\nodes\colorize\cluter.md|/.images/CLUT-sample2.png

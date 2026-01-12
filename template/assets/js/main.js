@@ -13,9 +13,12 @@ window.addEventListener("DOMContentLoaded", () => {
     md = url.origin + url.pathname.replace(/\.html$/i, ".md");
   }
 
+  var mdEdit = md.replace(url.origin, "https://github.com/QuadSpinner/Gaea2-Docs/edit/working/source");
+
   if (url.search) md += url.search;
   if (url.hash) md += url.hash;
 
+  document.getElementById("edit-page").setAttribute("href", mdEdit);
   document.getElementById("cmd-view-md").setAttribute("href", md);
   document.getElementById("cmd-ask-gpt").setAttribute("href", `https://chat.openai.com/?q=Read%20${encoded}%20and%20answer%20questions%20about%20the%20content.`);
   document.getElementById("cmd-ask-claude").setAttribute("href", `https://claude.ai/new?q=Read%20${encoded}%20and%20answer%20questions%20about%20the%20content.`);
