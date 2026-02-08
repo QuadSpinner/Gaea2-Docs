@@ -1,6 +1,7 @@
 X:\Docs\Gaea2-Docs\staging\404.md
 X:\Docs\Gaea2-Docs\staging\developers\extensibility\scripting-and-expressions\math-node.md
 X:\Docs\Gaea2-Docs\staging\guides\scenarios\helpful-info\format-gotchas.md
+X:\Docs\Gaea2-Docs\staging\guides\use-in\bridges\gaea2unreal\importing-terrains.md
 X:\Docs\Gaea2-Docs\staging\guides\use-in\engines\unreal.md
 X:\Docs\Gaea2-Docs\staging\history\gaea-2.0\2.0.2.0.md
 X:\Docs\Gaea2-Docs\staging\history\gaea-2.0\2.0.4.2.md
