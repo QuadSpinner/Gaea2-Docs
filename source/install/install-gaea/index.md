@@ -2,6 +2,7 @@
 icon: box
 title: Install Gaea
 uid: install-gaea
+order: 00
 ---
 
 ![The Gaea 2.0 User Interface](/.data/assets/gaea-ui2x.webp)
@@ -12,7 +13,11 @@ Download Gaea from [https://quadspinner.com/download/](https://quadspinner.com/d
 
 You will also require [.NET 8.0](https://download.visualstudio.microsoft.com/download/pr/7f4d5cbc-4449-4ea5-9578-c467821f251f/b9b19f89d0642bf78f4b612c6a741637/dotnet-runtime-8.0.0-win-x64.exe) and [Visual C++ Runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe). 
 
-The Gaea installer will download and install those if needed. An internet connection will be required to do that. If you are going to install in an air-gaped/offline environment, then you may want to install those beforehand.
+The Gaea installer will download and install those if needed. An internet connection will be required to do that. 
+
+:::warning
+If you are going to install in an air-gapped/offline environment, then you may want to install the prerequisites beforehand.
+:::
 
 ## System Requirements
 

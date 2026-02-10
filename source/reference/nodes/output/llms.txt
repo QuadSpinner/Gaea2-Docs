@@ -1,0 +1,483 @@
+// from ao / ao.md
+---
+title: AO
+uid: ao
+order: 01
+---
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Quality|Sets the processing resolution for the ambient occlusion calculation. Higher quality provides more accurate and detailed results, but may increase computation time.|
+|Low|Fastest processing with minimal detail. Suitable for previews or low-fidelity outputs.|
+|Medium|Balanced processing speed and detail. Recommended for general use.|
+|High|High detail with slower processing. Use when fine ambient occlusion is required.|
+|Ultra|Maximum detail and accuracy. Best for final renders, but slowest to compute.|
+|Enhance|Boosts the strength and clarity of the ambient occlusion effect, making shadows and depth more pronounced in the terrain.|
+
+// from cartography / cartography.md
+---
+title: Cartography
+uid: cartography
+order: 02
+---
+
+
+
+
+
+
+# Properties
+
+
+
+
+| Property | Description |
+| --- | --- |
+|Map Style|Controls the precision of map features such as contours and gradients. Higher values produce more detailed and accurate representations of terrain.|
+|Accuracy|Controls the precision of map features such as contours and gradients. Higher values produce more detailed and accurate representations of terrain.|
+|Gradient Style|Specifies the style of gradient used to represent elevation or terrain features on the map.|
+|Smooth|Applies a continuous, smooth gradient for a natural transition between elevation bands.|
+|LargeContours|Emphasizes major elevation bands with broad, distinct contour regions.|
+|AllContours|Displays all contour lines, including minor and major bands, for maximum detail.|
+|Equalize Gradient|Balances the gradient distribution to ensure even representation of elevation changes across the map.|
+|Reverse|Inverts the color or gradient mapping, swapping high and low elevation colors for a different visual effect.|
+|Erode|Applies an erosion effect to the map, softening features and simulating natural terrain wear.|
+|Land|Selects the color palette used for land areas on the map.|
+|Land Palette|Selects the color palette used for land areas on the map.|
+|Classic|Uses a traditional cartographic color scheme for land.|
+|Minimal|Applies a minimalistic color palette for a clean, modern look.|
+|FertileRed|Highlights fertile areas with red tones.|
+|FertileGreen|Highlights fertile areas with green tones.|
+|RedBlueSpectrum|Uses a spectrum from red to blue to represent elevation or land type.|
+|MineralsYellow|Emphasizes mineral-rich areas with yellow hues.|
+|FertileCool|Applies cool tones to fertile regions for a subdued effect.|
+|FertileMurky|Uses murky, earthy tones to represent fertile land.|
+|Land Contours|Controls the visibility and density of contour lines on land areas, highlighting elevation changes.|
+|Land Contour Intenstity|Adjusts the brightness or opacity of land contour lines, making them more or less prominent.|
+|Land Bias|Applies a bias to the land color or contour mapping, shifting emphasis to certain elevation ranges or features.|
+|Water Palette|Selects the color palette used for water areas on the map.|
+|Classic|Uses a traditional blue color scheme for water.|
+|BlackSea|Applies a dark, deep blue palette reminiscent of the Black Sea.|
+|Caribbean|Uses bright, turquoise tones inspired by Caribbean waters.|
+|Water Contours|Controls the visibility and density of contour lines in water areas, indicating depth or underwater features.|
+|Water Contour Intenstity|Adjusts the brightness or opacity of water contour lines, making them more or less prominent.|
+|Water Bias|Applies a bias to the water color or contour mapping, shifting emphasis to certain depth ranges or features.|
+|Trim|Removes or crops map features outside a specified boundary, focusing the map on a particular region.|
+|Line Art|Sets the number of grid divisions overlaid on the map, controlling the density of the grid.|
+|Grid Count|Sets the number of grid divisions overlaid on the map, controlling the density of the grid.|
+|Grid Intenstity|Adjusts the brightness or opacity of the grid lines, making them more or less visible.|
+|Grid Style|Specifies where grid lines are drawn on the map.|
+|None|No grid lines are displayed.|
+|OverWater|Grid lines are drawn only over water areas.|
+|OverLand|Grid lines are drawn only over land areas.|
+|Everywhere|Grid lines are drawn over both land and water areas.|
+|Boundary Thickness|Sets the thickness of boundary lines, such as map borders or region outlines.|
+|Contour Thickness|Specifies the thickness of contour lines, affecting their visual prominence.|
+|Grid Thickness|Controls the thickness of grid lines overlaid on the map.|
+
+// from export / export.md
+---
+title: Export
+uid: export
+order: 03
+---
+
+
+
+# Properties
+
+
+
+
+
+| Property | Description |
+| --- | --- |
+|Format|Specifies the file format for the exported output. Choose the format that best fits your workflow or target application.|
+|GaeaRaw|Exports the data in Gaea's native RAW format, preserving full precision and compatibility with Gaea.|
+|HalfRaw|Exports the data as 16-bit half-precision RAW, balancing file size and detail.|
+|HalfRaw16|Exports the data as 16-bit half-precision RAW with explicit 16-bit formatting.|
+|UshortRaw|Exports the data as unsigned short (16-bit) RAW, suitable for many terrain and 3D applications.|
+|UshortRaw16|Exports the data as unsigned short (16-bit) RAW with explicit 16-bit formatting.|
+|FloatRaw|Exports the data as 32-bit floating point RAW, providing maximum precision for advanced workflows.|
+|FloatRaw32|Exports the data as 32-bit floating point RAW with explicit 32-bit formatting.|
+|JPEG|Exports the data as a JPEG image, using lossy compression for reduced file size and broad compatibility.|
+|PNG8|Exports the data as an 8-bit PNG image, suitable for masks and lightweight outputs.|
+|PNG16|Exports the data as a 16-bit PNG image, preserving more detail for heightfields and masks.|
+|PNG64|Exports the data as a 64-bit PNG image, supporting high dynamic range and advanced workflows.|
+|TIFF8|Exports the data as an 8-bit TIFF image, commonly used for masks and simple outputs.|
+|TIFF16|Exports the data as a 16-bit TIFF image, suitable for high-quality heightfields and masks.|
+|TIFF32|Exports the data as a 32-bit TIFF image, supporting high dynamic range and scientific workflows.|
+|EXR|Exports the data as an OpenEXR image, ideal for high dynamic range and professional VFX pipelines.|
+|Location|Specifies where the exported file will be saved.|
+|BuildFolder|Exports the file to the project's build/output folder.|
+|Custom|Allows you to specify a custom folder for the exported file.|
+|Explicit|Exports the file to an explicitly defined path, overriding other location settings.|
+|Output Path|Defines the full file path or directory where the exported file will be saved.|
+|If File Exists|Determines what happens if a file with the same name already exists at the export location.|
+|Overwrite|Replaces the existing file with the new export.|
+|Increment|Automatically increments the filename to avoid overwriting existing files.|
+|Information|Displays additional information or metadata about the export process or output file.|
+|Information Houdini|Displays or stores metadata related to Houdini integration, such as file attributes or export status.|
+| Command: Prepare for Bridge | Prepares the exported file for use with the Bridge system, enabling compatibility with external tools or workflows.
+
+// from halftone / halftone.md
+---
+title: Halftone
+uid: halftone
+order: 04
+---
+
+
+
+# Properties
+
+
+
+
+| Property | Description |
+| --- | --- |
+|Pattern|Specifies the halftone pattern or dithering algorithm used to convert a black and white map into halftone shading. Each pattern produces a distinct visual effect, simulating various print or screen halftone styles.|
+|FloydSteinberg|Applies Floyd-Steinberg error diffusion dithering, producing a classic, high-quality halftone effect with smooth gradients.|
+|Riemersma|Uses Riemersma dithering, which distributes error along a space-filling curve for a unique, less directional halftone appearance.|
+|Threshold|Applies a simple threshold to the input, converting pixels above a certain value to white and below to black, resulting in a stark, high-contrast halftone.|
+|Checks|Creates a checkerboard halftone pattern, alternating black and white squares to simulate shading.|
+|O2X2|Uses a 2x2 ordered dithering matrix to create a small, repeating halftone pattern.|
+|O3X3|Uses a 3x3 ordered dithering matrix for a slightly larger, repeating halftone pattern.|
+|O4X4|Uses a 4x4 ordered dithering matrix, producing a more detailed and less repetitive halftone effect.|
+|O8X8|Applies an 8x8 ordered dithering matrix for fine, detailed halftone shading with minimal visible repetition.|
+|H3X4A|Applies a 3x4 halftone matrix (variant A), creating a specific dot arrangement for stylized halftone effects.|
+|H6X6A|Uses a 6x6 halftone matrix (variant A) for a larger, more complex dot pattern.|
+|H8X8A|Applies an 8x8 halftone matrix (variant A), generating a dense and detailed halftone texture.|
+|H3X4O|Uses a 3x4 halftone matrix (variant O), offering an alternative dot arrangement for different visual results.|
+|H6X6O|Applies a 6x6 halftone matrix (variant O), producing a unique halftone pattern with distinct dot placement.|
+|H8X8O|Uses an 8x8 halftone matrix (variant O), providing a dense and alternative halftone style.|
+|H36X16O|Applies a large 36x16 halftone matrix (variant O), creating a very fine and complex halftone pattern.|
+|C5X5B|Uses a 5x5 circular halftone matrix with black dots, simulating traditional print halftone screens.|
+|C5X5W|Uses a 5x5 circular halftone matrix with white dots, inverting the typical halftone dot style.|
+|C6X6B|Applies a 6x6 circular halftone matrix with black dots for a slightly larger dot pattern.|
+|C6X6W|Uses a 6x6 circular halftone matrix with white dots, providing an inverted halftone effect.|
+|C7X7B|Applies a 7x7 circular halftone matrix with black dots, creating a larger, more pronounced dot pattern.|
+|C7X7W|Uses a 7x7 circular halftone matrix with white dots, offering a bold, inverted halftone style.|
+|DIA|Creates a halftone pattern using diagonal lines, simulating shading with slanted, evenly spaced lines.|
+
+// from output / index.md
+---
+title: Output
+uid: output
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from lightx / lightx.md
+---
+title: LightX
+uid: lightx
+order: 05
+---
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Direction Selection|Specifies how the sun direction is determined for lighting calculations.|
+|Manual|Allows manual input of sun direction parameters such as azimuth and elevation.|
+|Geographic|Calculates sun direction based on geographic coordinates, date, and time for physically accurate lighting.|
+|North|Sets the orientation of the north direction in the scene, affecting geographic sun calculations.|
+|Latitude|Specifies the latitude for geographic sun calculations, influencing sun position and lighting angle.|
+|Day of Year|Sets the day of the year for geographic sun calculations, affecting seasonal sun position and lighting.|
+|Solar Hour|Specifies the time of day for geographic sun calculations, determining the sun's position in the sky.|
+|Sun Azimuth|Sets the horizontal angle of the sun, determining the direction from which sunlight is cast.|
+|Sun Elevation|Controls the vertical angle of the sun above the horizon, affecting the length and intensity of shadows.|
+|Angular Diameter|Specifies the apparent size of the sun in the sky, influencing the softness of shadows and highlights.|
+|Direct Light|Adjusts the intensity of direct sunlight in the scene, affecting brightness and shadow contrast.|
+|Shadows|Enables or adjusts the rendering of shadows cast by terrain features, enhancing depth and realism.|
+|Ambient Light|Controls the overall ambient light level, simulating indirect illumination from the sky and environment.|
+|Ambient Occlusion|Enables or adjusts ambient occlusion, which darkens crevices and areas shielded from ambient light for added realism.|
+|Quality|Sets the rendering quality for lighting and shadow calculations.|
+|Low|Fastest rendering with basic lighting and shadow detail.|
+|Medium|Balanced quality and performance with moderate lighting and shadow detail.|
+|High|High-quality rendering with detailed lighting and shadows.|
+|Ultra|Maximum quality with the most accurate lighting and shadow effects.|
+|Light|Adjusts the exposure level, controlling the overall brightness and dynamic range of the rendered image.|
+|Exposure|Adjusts the exposure level, controlling the overall brightness and dynamic range of the rendered image.|
+|Sun Intensity|Sets the strength of the sun's light, affecting the brightness of direct illumination.|
+|Ambient Intensity|Controls the strength of ambient light, influencing the brightness of areas not directly lit by the sun.|
+|Air Density|Simulates atmospheric density, affecting the scattering of light and the appearance of haze.|
+|Haze|Adds atmospheric haze to the scene, softening distant terrain and simulating light diffusion.|
+|Ozone|Adjusts the ozone level in the atmosphere, influencing the color and intensity of sunlight.|
+|Colors|Enables automatic adjustment of sun and ambient colors based on sun position and atmospheric conditions.|
+|Automatic Colors|Enables automatic adjustment of sun and ambient colors based on sun position and atmospheric conditions.|
+|Sun Color|Sets the color of direct sunlight, allowing for warm, cool, or custom lighting effects.|
+|Ambient Color|Specifies the color of ambient light, affecting the overall tone of shaded areas.|
+|Ground Brightness|Controls the brightness of the ground plane, influencing the overall illumination and visual balance of the scene.|
+
+// from mesher / mesher.md
+---
+title: Mesher
+uid: mesher
+order: 06
+---
+
+
+Mesher allows you to save specific nodes as meshes instead of heightfields. It can also generate LODs.
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Format|Specifies the file format for the exported mesh. Choose the format that best fits your workflow or target application.|
+|OBJ|Exports the mesh in the standard OBJ format, widely supported for 3D models and compatible with most 3D software.|
+|FBX|Exports the mesh in the FBX format, suitable for advanced workflows and supporting animation, hierarchy, and metadata.|
+|DAE|Exports the mesh in the Collada (DAE) format, an open standard for exchanging 3D assets between applications.|
+|GLTF|Exports the mesh in the glTF format, optimized for real-time rendering and web-based 3D applications.|
+|GLB|Exports the mesh in the binary GLB format, a compact version of glTF for efficient storage and transmission.|
+|Scale|Sets the unit or normalization method for the exported mesh coordinates, determining how the model's size is interpreted.|
+|Normalized|Exports the mesh with coordinates normalized to a 0–1 range, useful for workflows that require unitless or relative positions.|
+|Meter|Exports the mesh with coordinates in meters, matching real-world scale for compatibility with engineering and GIS applications.|
+|Kilometer|Exports the mesh with coordinates in kilometers, suitable for large-scale terrain or geospatial datasets.|
+|Topology|Specifies the type of mesh topology used for the exported model, affecting how the surface is constructed and rendered.|
+|Tris|Generates the mesh using triangles for all faces, ensuring compatibility with all 3D engines and applications.|
+|Quads|Generates the mesh using quadrilaterals where possible, preferred for modeling and sculpting workflows.|
+|AdaptiveTris|Uses adaptive triangulation to optimize mesh density, reducing polygon count in flat areas and increasing detail where needed.|
+|Topology Warning||
+|Vertices Per Side|Sets the resolution of the mesh by specifying the number of vertices along each side. Higher values increase detail but also file size.|
+|Artifact Reduction|Applies post-processing to reduce visual artifacts in the mesh, such as smoothing or correcting problematic geometry.|
+|None|No artifact reduction is applied; the mesh is exported as generated.|
+|Low|Applies minimal artifact reduction, preserving most original detail while correcting minor issues.|
+|Med|Applies moderate artifact reduction, balancing detail preservation with improved mesh quality.|
+|Create Normals|If enabled, generates normal vectors for the mesh, improving shading and rendering quality in 3D applications.|
+|Create UVs|If enabled, generates UV coordinates for the mesh, allowing textures to be mapped accurately onto the surface.|
+|UV Origin|Specifies the origin point for the UV coordinate system, affecting how textures are mapped onto the mesh.|
+|TopLeft|Sets the UV origin to the top-left corner, matching conventions used in some graphics applications.|
+|BottomLeft|Sets the UV origin to the bottom-left corner, standard in most 3D engines and texture workflows.|
+|Create Walls|Creates vertical walls along the edges of the mesh, useful for generating closed or extruded terrain models.|
+|Center Pivot|If enabled, centers the mesh's pivot point at the origin, making it easier to manipulate in 3D applications.|
+|Level of Detail|Specifies the level of detail (LOD) for the exported mesh, allowing for simplified versions to be generated for performance optimization.|
+|None|Exports the mesh at full resolution with no LOD applied.|
+|LOD1|Exports a simplified mesh with reduced detail, suitable for distant rendering or performance-sensitive applications.|
+|LOD2|Exports a further simplified mesh with even fewer polygons.|
+|LOD3|Exports a mesh with progressively lower detail, useful for very distant or background objects.|
+|LOD4|Exports a highly simplified mesh, minimizing polygon count for maximum performance.|
+|LOD5|Exports an extremely low-detail mesh, suitable for extreme distance or preview purposes.|
+|LOD6|Exports the lowest possible detail mesh, retaining only the broadest features.|
+|LOD Info||
+|Information||
+
+// from pointcloud / pointcloud.md
+---
+title: PointCloud
+uid: pointcloud
+order: 07
+---
+
+
+
+# Properties
+
+
+
+| Property | Description |
+| --- | --- |
+|Format|Specifies the file format used for exporting the point cloud. Choose the format that best fits your workflow or target application.|
+|PLY|Exports the point cloud in the standard ASCII PLY (Polygon File Format) format, widely supported for 3D data exchange.|
+|PLY_BINARY|Exports the point cloud in binary PLY format, offering smaller file sizes and faster read/write performance compared to ASCII.|
+|XYZ|Exports the point cloud as a simple XYZ text file, with each line representing a point's X, Y, and Z coordinates.|
+|CSV|Exports the point cloud as a CSV (Comma-Separated Values) file, suitable for use in spreadsheets or data analysis tools.|
+|Scale|Sets the unit or normalization method for the exported point cloud coordinates. Determines how the point positions are scaled in the output file.|
+|Normalized|Exports coordinates normalized to a 0–1 range, useful for workflows that require unitless or relative positions.|
+|Meter|Exports coordinates in meters, matching real-world scale for compatibility with GIS and engineering applications.|
+|Kilometer|Exports coordinates in kilometers, suitable for large-scale terrain or geospatial datasets.|
+|Center Pivot|If enabled, centers the point cloud around the origin by offsetting all points so that the dataset's centroid is at (0,0,0). Useful for easier manipulation in 3D applications.|
+|Ignore Zero Values|When enabled, points with zero or null values are excluded from the export. This helps remove empty data such as the normal low floor of the terrain from the output file.|
+
+// from shade / shade.md
+---
+title: Shade
+uid: shade
+order: 08
+---
+
+
+
+# Properties
+
+
+
+
+
+| Property | Description |
+| --- | --- |
+|Render Style|Specifies the shading technique used to render the terrain. Each style provides a different visual representation for analysis or artistic purposes.|
+|TableTop|Renders the terrain for a stylized overview.|
+|HillShade|Applies traditional hillshading to simulate sunlight and shadow, enhancing the perception of terrain relief and surface features.|
+|Occlusion|Highlights areas of the terrain that are occluded or in shadow, useful for analyzing light accessibility and terrain exposure.|
+|SoftLight|Uses a soft, diffuse lighting model to gently illuminate the terrain, reducing harsh shadows and creating a more natural look.|
+|Sun Azimuth|Sets the horizontal angle of the sun in degrees, determining the direction from which sunlight is cast across the terrain.|
+|Sun Elevation|Controls the vertical angle of the sun above the horizon, affecting the length and intensity of shadows on the terrain.|
+|Sunlight|Adjusts the overall intensity or brightness of direct sunlight in the shading calculation.|
+|Shade Bias|Offsets the shading calculation to reduce or increase shadow strength, helping to fine-tune the balance between light and dark areas.|
+|Soft Shadows|Enables or adjusts the softness of shadows, creating more gradual transitions between light and shadow for a realistic effect.|
+|Reflected Light|Simulates indirect illumination by adding light reflected from surrounding terrain, enhancing realism and reducing overly dark shadowed areas.|
+|High Quality|Enables high-quality rendering for shading, using more advanced calculations for smoother gradients and more accurate lighting effects.|
+
+// from sunlight / sunlight.md
+---
+title: Sunlight
+uid: sunlight
+order: 09
+---
+
+
+
+
+Sunlight is a Data Map that gives you the sunlight integral (sun light/shadow map) of any given period (up to 365 days). It can be used to drive snow melt, vegetation growth, and more. This node produces realistic results for any latitude in the world, so you can make it specific to any region your project relies on.
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|North|Specifies the direction considered as 'north' for sunlight calculations. Adjusting this affects the orientation of shadows and lighting in the terrain.|
+|Year|Sets the year for solar position calculations. This can influence the sun's path and seasonal lighting effects on the terrain.|
+|Latitude|Defines the latitude of the terrain location. Changing the latitude alters the angle and intensity of sunlight, simulating different geographic regions.|
+
+// from texturebaker / texturebaker.md
+---
+title: TextureBaker
+uid: texturebaker
+order: 10
+---
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Generate Normals|Enables the generation of tangent-space normal maps for the mesh. When checked, MeshWarp will output normal maps that align with the mesh geometry at each LOD, suitable for advanced shading and detail.|
+|Information||
+|LOD Info|Shows Level of Detail (LOD) information for the mesh and all connected maps. Each input map will have an LOD generated to match the mesh's LODs as set in the Mesher node.|
+| Command: Add Input | Adds an additional input port to connect masks, color maps, or other data layers. Each input will be processed and fitted to the mesh at all LODs.
+
+// from unity / unity.md
+---
+title: Unity
+uid: unity
+order: 11
+---
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Target Size|Specifies the export resolution for Unity terrain heightmaps and textures. Select from standard Unity-compatible sizes to ensure proper import and terrain fidelity.|
+|x8193|Exports at 8193 x 8193 pixels, suitable for very large Unity terrains requiring maximum detail.|
+|x4097|Exports at 4097 x 4097 pixels, commonly used for large terrain tiles in Unity.|
+|x2049|Exports at 2049 x 2049 pixels, ideal for medium-sized Unity terrain tiles.|
+|x1025|Exports at 1025 x 1025 pixels, suitable for smaller terrain tiles or test scenes in Unity.|
+|x513|Exports at 513 x 513 pixels, used for small terrain tiles or prototyping in Unity.|
+| Command: Add Input | Adds an additional input map layer for export, allowing for more complex terrain data to be sent to Unity.
+
+// from unreal / unreal.md
+---
+title: Unreal
+uid: unreal
+order: 12
+---
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Automatic Size|Automatically determines the optimal export resolution for Unreal Engine based on the input terrain and project settings.|
+|Target Size|Specifies the desired export resolution for Unreal Engine heightmaps and textures. Choose from standard Unreal-compatible sizes for best results.|
+|x8129|Exports at 8129 x 8129 pixels, suitable for very large landscapes in Unreal Engine.|
+|x4033|Exports at 4033 x 4033 pixels, commonly used for large terrain tiles.|
+|x2017|Exports at 2017 x 2017 pixels, ideal for medium-sized terrain tiles.|
+|x1009|Exports at 1009 x 1009 pixels, suitable for smaller terrain tiles or test scenes.|
+|x505|Exports at 505 x 505 pixels, used for small terrain tiles or prototyping.|
+|Dont Resize Textures|Prevents automatic resizing of textures during export, preserving the original resolution of input textures.|
+|LOD Info|Provides Level of Detail (LOD) information for exported terrain, enabling optimized rendering and streaming in Unreal Engine.|
+|Format|Selects the file format for exported terrain data. Choose the format that best matches your Unreal Engine workflow.|
+|PNG|Exports terrain data as PNG images, suitable for color maps and masks.|
+|R16|Exports terrain data as 16-bit RAW files, recommended for heightmaps to preserve elevation detail.|
+|RAW|Exports terrain data as RAW files, compatible with Unreal Engine for heightmaps and other data.|
+|Naming|Applies Unreal Engine-compatible naming conventions to exported files for easier import and organization.|
+|Unreal Friendly Naming|Applies Unreal Engine-compatible naming conventions to exported files for easier import and organization.|
+|Map 1||
+|Height|<desc>|
+|Mask|<desc>|
+|Color|<desc>|
+|Weight|<desc>|
+|Map 2||
+|Height|<desc>|
+|Mask|<desc>|
+|Color|<desc>|
+|Weight|<desc>|
+|Map 3||
+|Height|<desc>|
+|Mask|<desc>|
+|Color|<desc>|
+|Weight|<desc>|
+|Map 4||
+|Height|<desc>|
+|Mask|<desc>|
+|Color|<desc>|
+|Weight|<desc>|
+|Map 5||
+|Height|<desc>|
+|Mask|<desc>|
+|Color|<desc>|
+|Weight|<desc>|
+|Map 6||
+|Height|<desc>|
+|Mask|<desc>|
+|Color|<desc>|
+|Weight|<desc>|
+|Map 7||
+|Height|<desc>|
+|Mask|<desc>|
+|Color|<desc>|
+|Weight|<desc>|
+|Map 8||
+|Height|<desc>|
+|Mask|<desc>|
+|Color|<desc>|
+|Weight|<desc>|
+|Map 9||
+|Height|<desc>|
+|Mask|<desc>|
+|Color|<desc>|
+|Weight|<desc>|
+|Map 10||
+|Height|<desc>|
+|Mask|<desc>|
+|Color|<desc>|
+|Weight|<desc>|
+|Information|Additional metadata or notes related to the Unreal Engine export process.|
+|Information 2|Additional metadata or notes related to the Unreal Engine export process.|
+|Information 1|General information or notes about the Unreal Engine export settings.|
+| Command: Add Input | Adds an additional input map layer for export, allowing for more complex terrain data to be sent to Unreal Engine.
+

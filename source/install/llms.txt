@@ -1,0 +1,1594 @@
+// from home-getting-started / index.md
+---
+icon: power-off
+title: Home
+uid: home-getting-started
+---
+
+## An introduction to Gaea
+
+Getting Started is your on-ramp to Gaea—covering everything you need to go from first launch to confident daily use. You’ll learn how to install and configure Gaea (including portable setups and deployment options), manage and transfer licenses, get comfortable with the interface and customization tools, and—if you’re coming from Gaea 1—quickly understand what’s changed in Gaea 2 and how it improves your workflow.
+
+### Getting Started
+
+Begin your journey with Gaea by learning how to install, configure, and navigate the software. This section covers:
+
+* [Install Gaea](/install/install-gaea/index.html){data-link-icon='box'}: Learn how to set up Gaea for your needs, whether through a regular or portable installation, mass deployment, or troubleshooting potential issues.
+* [License Management](/install/license-management/index.html){data-link-icon=''}: Manage your licenses and ensure smooth transition when moving computers.
+* [For Gaea 1 Users](/install/gaea-1/index.html){data-link-icon='arrows-turn-right'}: A migration guide for existing users of Gaea 1.0 to see how Gaea 2.0 changes and improves your workflow.
+// from fortress-assign / assigning.md
+---
+title: Assign Licenses
+uid: fortress-assign
+icon: toggle-on
+order: 03
+---
+
+# Assign Licenses
+
+Each workstation running Gaea in **offline floating** mode requires a `floating.lic` file to authenticate and communicate with the Fortress server.
+
+See [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''} for folder locations.
+
+## License File for Workstations
+
+Use **Create License File** in the Fortress Console to generate a workstation license file.
+
+A typical `floating.lic` looks like this:
+
+```txt
+FL-00000000-0000-0000-0000-000000000000
+192.168.100.11:9000
+```
+
+* Line 1: Floating license key
+* Line 2: Fortress server address and port
+
+## Create a License File
+
+1. Select **Create a License File**.
+
+   ![](/.data/ui/fortress-create1.png)
+
+2. Choose a **Tenant**.
+
+   ![](/.data/ui/fortress-create2.png)
+
+3. Choose the desired IP address (or enter one manually).
+
+   * If the server has multiple network adapters, all assigned IP addresses will be listed.
+
+   ![](/.data/ui/fortress-create3.png)
+
+4. Choose where to save the file (or press Enter to accept the default path shown).
+
+   ![](/.data/ui/fortress-create4.png)
+
+The file is typically saved as `000000.lic` (or using the Tenant’s ID). Copy this file to the [Gaea Data folder](/using/advanced-topics/technical-information/paths-and-storage.html) on the workstation and rename it to:
+
+* `floating.lic`
+
+Gaea will detect `floating.lic` automatically and load both the license key and server connection details from it.
+
+## Heartbeat Length
+
+* The server uses a 1-minute heartbeat with a 5-minute grace period to tolerate lost packets or temporary network issues.
+* If heartbeats are missed for 5 minutes, the license is released.
+* An administrator can also use the dashboard to kill an active license if it is stuck.
+
+During a run, a local token is stored so `Gaea.exe`, `Gaea.Build.exe`, and Gaea plugins can share the same token. This prevents over-allocation and other license issues.
+
+## View and Deallocate License Tokens
+
+By default, the Fortress Console shows only Tenants and does not auto-refresh to avoid unnecessary server load.
+
+![](/.data/ui/fortress-allocs.png)
+
+Select **View Allocations** to see a live list of allocated licenses.
+
+![](/.data/ui/fortress-allocs-kill.png)
+
+To deallocate a license, select the target machine. All sessions on that machine will be released.
+
+![](/.data/ui/fortress-allocs-killing.png)
+
+Two deallocation options are available:
+
+* **D (Graceful)**: Sends an “exit gracefully” command to the Gaea instance, then waits 10 seconds for it to be accepted and executed.
+* **K (Force Kill)**: Immediately deallocates the workstation.
+
+// from fortress-deallocate / deallocating.md
+---
+title: Deallocate Licenses
+uid: fortress-deallocate
+icon: toggle-off
+order: 04
+---
+## Viewing and Deallocating License Tokens
+
+By default, the Fortress Console shows only Tenants and does not auto-refresh to avoid unnecessary server load.
+
+![](/.data/ui/fortress-allocs.png)
+
+Select **View Allocations** to see a live list of allocated licenses.
+
+![](/.data/ui/fortress-allocs-kill.png)
+
+To deallocate a license, select the target machine. All sessions on that machine will be released.
+
+![](/.data/ui/fortress-allocs-killing.png)
+
+Two deallocation options are available:
+
+* **D (Graceful)**: Sends an “exit gracefully” command to the active Gaea instance and waits 10 seconds for it to be accepted and executed.
+* **K (Force Kill)**: Immediately deallocates the workstation on the server.
+
+## Local License Token
+
+If needed, you can force a local deallocation by deleting `token.lic` from the [Gaea Data Folder](/using/advanced-topics/technical-information/paths-and-storage.html).
+
+// from fortress-diagnostics / diagnostics.md
+---
+title: Network Diagnostics
+uid: fortress-diagnostics
+order: 06
+icon: notes-medical
+---
+
+# Diagnosing Network Issues
+
+Network Diagnostics helps admins verify that the license server is reachable on the expected IP/host and port, and quickly identify common network/config issues (wrong endpoint, wrong bind/interface, DNS problems, local firewall blocking).
+
+When run, it collects:
+
+![](/.data/ui/fortress-network.png)
+
+**Network snapshot**
+* Local IPv4 addresses detected on the server
+* (Optional) DNS resolution for the “advertised host/IP”
+**Connection tests (TCP connect)**
+* `localhost:<port>`
+* `127.0.0.1:<port>` (if loopback included)
+* `<each local IPv4>:<port>`
+* (Optional) `<advertised host/IP>:<port>`
+**Hints**
+* Simple conclusions derived from the test results (e.g. “bound to loopback only”, “possible firewall block”, “DNS failed”).
+
+## Inputs
+
+You’ll be asked:
+
+**Advertised host/IP (optional)**
+* Enter the exact address your clients are using (e.g. `licenseserver.company.lan` or `10.10.0.12`).
+* Leave blank if you only want local checks.
+
+The port is taken from the server’s current config/status.
+
+## Output
+
+You’ll see:
+
+**Network Snapshot**
+* Generated time (UTC)
+* Port
+* Local IPv4 list
+
+**Test Matrix**
+Each row shows:
+* **Target** (`host:port`)
+* **Outcome** (`Ok`, `Refused`, `Timeout`, `DnsFailed`, `Unreachable`, `Error`)
+* **Latency** (when available)
+* **Detail** (error/diagnostic text)
+  
+**Hints**
+* Short, actionable messages derived from the test results.
+
+### Interpreting outcomes
+
+- **Ok**: Server could open a TCP connection to that target/port. If `localhost` is OK but NIC IPs are not, you are likely bound to loopback only.
+- **Refused**: The OS responded immediately: nothing is listening at that target/port. Usually means server isn’t listening on that port/interface (wrong port, wrong bind address, server not running).
+- **Timeout**: No response within the timeout window. Common causes: firewall/AV, network ACLs, wrong routing, host not reachable, or port silently dropped.
+- **DnsFailed**: Hostname couldn’t be resolved to an IP. DNS misconfiguration, wrong hostname, missing record, or wrong DNS server.
+- **Unreachable**: The network stack reports no route / host unreachable. Routing issue, disconnected network, invalid IP, or target is on a different network without route.
+- **Error**: Misc failure (socket or system-level). Check the “Detail” column.
+
+
+## Common scenarios
+
+- localhost OK, 127.0.0.1 OK, but all NIC IPs fail/timeout/refused
+  - Likely bound to loopback.
+  - Fix: bind listener to `0.0.0.0:<port>` or the correct NIC IP.
+- Everything is Refused
+  - Server likely not listening on the configured port.
+  - Fix: confirm the server is running, confirm configured port, check port conflicts.
+- Everything is Timeout
+  - Strong signal of firewall/AV blocking inbound, or the wrong port is being used.
+  - Fix: open inbound firewall rule for the port; confirm port matches what clients use.
+- Advertised host shows DnsFailed
+  - Clients using a hostname will fail too.
+  - Fix: correct DNS record or change clients to use a valid IP/hostname.
+- Advertised host resolves, but connect fails while local NIC connect succeeds
+  - Often indicates clients are using the wrong route/segment (NAT/VPN split) or the hostname points to the wrong IP.
+  - Fix: correct DNS target IP; ensure advertised endpoint is reachable from the client network.
+
+## Recommended usage pattern
+
+When troubleshooting a client report:
+
+1. Run **Network diagnostics** with the **advertised host/IP** the client is using.
+2. Confirm at least one of:
+   * Advertised endpoint test is **Ok**
+   * A NIC IP test is **Ok** and that IP is what clients should use
+3. If not OK, follow the **Hints** section and rerun after changes.
+
+### Notes
+
+* The tool performs only safe, targeted connect tests (no scanning).
+* Results reflect server-side perspective. If the server can connect to itself but clients still fail, you likely have a network boundary issue (client-side firewall, routing, VLAN ACLs). In that case, use a minimal client probe tool (recommended separately) from the client machine.
+
+// from fortress / index.md
+---
+title: Fortress Server
+uid: fortress
+icon: server
+order: 01
+---
+
+# Fortress Server for Offline Deployment
+
+QuadSpinner’s **Fortress Server** is a locally deployable, self-hosted floating license solution designed for secure enterprise and offline environments. It enables centralized license allocation on a private network without relying on external activation services.
+
+## When to use Fortress
+
+Use Fortress when you need one or more of the following:
+
+* **Offline / air-gapped deployment** (no internet access permitted)
+* **Centralized floating licensing** across multiple workstations
+* **Enterprise-controlled security** (local-only access, internal auditing, restricted endpoints)
+* **Lab / classroom environments** where seats must be managed centrally
+
+If you only need a single-machine offline license (non-floating), use an **Offline Activation File** instead (see the License Types page).
+
+## Key concepts
+
+* **Fortress Server**: The service that manages license allocation and session tracking.
+* **Tenant**: An administrative grouping used to separate license pools (for example by team, project, or department).
+* **Workstation license file (`floating.lic`)**: A small file placed on each client machine that tells Gaea which server to contact and which floating key to use.
+* **Session / token**: A server-side record representing an active workstation allocation.
+* **Heartbeat + grace period**: Clients periodically confirm activity; a grace window prevents momentary network interruptions from immediately releasing a license.
+
+### How it works
+
+1. An admin deploys Fortress on a machine reachable by client workstations (LAN/VPN).
+2. The admin creates a workstation license file using the Fortress Console.
+3. The workstation receives that file as `floating.lic` in the **Gaea Data Folder** (see [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''}).
+4. When Gaea starts, it reads `floating.lic`, contacts Fortress, and requests a session.
+5. While Gaea is running, it sends periodic heartbeats to keep the session active.
+6. If heartbeats stop beyond the grace period, the session is released automatically.
+
+### What gets installed
+
+A typical deployment includes:
+
+* **Fortress Server** (service/daemon)
+* **Fortress Console** (admin UI/CLI used to create license files and manage allocations)
+* **Workstation configuration** (distribution of `floating.lic`)
+
+## Quick start
+
+1. **Install and start Fortress Server** on a LAN-accessible machine.
+2. **Confirm bind/interface**:
+   * Ensure the server is listening on the NIC/IP that clients will reach (not loopback-only).
+3. **Allow inbound network access** on the configured port:
+   * Create OS firewall rules as needed.
+4. In the **Fortress Console**, create a **Tenant** (if required by your setup).
+5. Use **Create License File** to generate a workstation file.
+6. Copy the generated file to each workstation’s **Gaea Data Folder** and rename it to `floating.lic`
+7. Launch Gaea on a workstation and verify an allocation appears in **View Allocations**.
+
+See [Assign Licenses](/install/fortress/assigning.html){data-link-icon='toggle-on'} for the step-by-step walkthrough and screenshots.
+
+### Networking and ports
+
+* Workstations must be able to reach the server at `host:port` specified in `floating.lic`.
+* DNS is optional; you can use a raw IP.
+* Multi-NIC servers are supported, but mis-binding is a common setup issue.
+
+Use **Network Diagnostics** to validate bind, DNS, and connectivity:
+
+* See the Network Diagnostics page (and the screenshot flow) for expected outcomes and common fixes.
+
+### Security notes
+
+* Fortress is intended for **trusted internal networks**.
+* Restrict access to the server port to known subnets where possible.
+* Treat `floating.lic` as a deployment credential:
+  * Distribute via standard IT tooling (MDM, GPO, software deployment, secure share).
+  * Avoid posting it in shared/public locations.
+
+## Related pages
+
+* [Assign Licenses](/install/fortress/assigning.html){data-link-icon='toggle-on'} (Assign Licenses / Create `floating.lic` / Manage allocations)
+* [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''} (File locations for `floating.lic`, `token.lic`, logs, etc.)
+* Network Diagnostics (Diagnosing reachability, DNS, bind/interface issues)
+
+// from fortress-lifecycle / lifecycle.md
+---
+title: License Lifecycle
+uid: fortress-lifecycle
+icon: arrows-spin
+order: 06
+---
+
+# Lifecycle of a License Token
+
+The life cycle of a License Token can help IT Administrators 
+
+## Lifecycle Overview
+
+The typical lifecycle of a license token is:
+- Allocation or Announcement
+- Heartbeat
+- Deallocation
+
+[![](https://mermaid.ink/img/pako:eNp1VNtyIjcQ_ZUuVW3KrvgCNrdMkk1hwDZrlthm4mzC7IM804DKg8RKwphQ_vdtaS5QU5unuaj79OlzWr1jsUqQBWyWqk284NpC2I8kwIcPMBIxSoMQqheU9DXD0942ThGOrpW2Go2BCepX1MeRdCndo2nEbjhykIiJAQ5phhCxr8dwevoRrijgEb-t0ViwHnWm1RIqcBTu4K58Sm8XsYwATzXyZEvPVMXcYhKxdxfXoziI2FhFzGf0qcjQmDXCePB3ViZHzCP_QZOHDgh8QoWFkgZ-Su2vsORvOeygGnxNuF0p1VrGCCbLyoEHFQpfpiUuJCiF4_o1E6nvA26nRVfdXjh8Gvz2rM8_huEIfocmLIVcW1fWY19nCVk2uXKLZNIzcgvngG8robfu4NZHfaJ-9ucaYxSvmHjwZ5wpTV5SDZ-F5o-80U_VRofTQxR8syjJTcr0QFbtKWb2SbUhrgXNErBU447wPgtjMIE6LApgDzaxZCQ1PfhyP3wcjm_8zxvNSeEVaqESMJbiCy3uPN7o_7vcCLsQEuYHCEWbo2qbtwd_S67jPdeLPVeTkfXTCf1BdzT6s9cNB5NsuvxhLxUobTHxhcal7WTcWOklT-lEOOsSzOfYTVFp4P3UcSnjAg8dp8pUJ-7ehz_s3EhuizNDaok0BbXKSdH4kR4GNkq_kJCuViHHww_leKjKUbLvaW4W8LOTW5EKB0P3SJyz0_OCCBDjzOAjqYpWIabHcc7_MZuMDH5y5PeCtxr8AuEzS0rHDrVcHmG5CbIuX3kqSnfDajt__eC2ekYa194fQShyXu6HvQZhRYOrUoNuQnMPrn0tEswVOKOQJ1fMHQbwJHAD3dJaWitzWit3vjTtOSLz4sgfmF-Otkdy70-F9uyEzakUC2Y8NXjClkij4b7ZzsVFzC5wSes1oNeE65eIRfKdklZc_qvUkgVWrylNq_V8UXysVwndub7gdEmWJbKmO466R3JZFjQ7bY_Bgh17Y8Flq33WaHSajfZl6_KiU79onrAtC07rtfpZu9Zutzu_XNZarUat9X7C_vN162e1i2a71qGjRqvRadTr798BoKP-kw?type=png)](https://mermaid.live/edit#pako:eNp1VNtyIjcQ_ZUuVW3KrvgCNrdMkk1hwDZrlthm4mzC7IM804DKg8RKwphQ_vdtaS5QU5unuaj79OlzWr1jsUqQBWyWqk284NpC2I8kwIcPMBIxSoMQqheU9DXD0942ThGOrpW2Go2BCepX1MeRdCndo2nEbjhykIiJAQ5phhCxr8dwevoRrijgEb-t0ViwHnWm1RIqcBTu4K58Sm8XsYwATzXyZEvPVMXcYhKxdxfXoziI2FhFzGf0qcjQmDXCePB3ViZHzCP_QZOHDgh8QoWFkgZ-Su2vsORvOeygGnxNuF0p1VrGCCbLyoEHFQpfpiUuJCiF4_o1E6nvA26nRVfdXjh8Gvz2rM8_huEIfocmLIVcW1fWY19nCVk2uXKLZNIzcgvngG8robfu4NZHfaJ-9ucaYxSvmHjwZ5wpTV5SDZ-F5o-80U_VRofTQxR8syjJTcr0QFbtKWb2SbUhrgXNErBU447wPgtjMIE6LApgDzaxZCQ1PfhyP3wcjm_8zxvNSeEVaqESMJbiCy3uPN7o_7vcCLsQEuYHCEWbo2qbtwd_S67jPdeLPVeTkfXTCf1BdzT6s9cNB5NsuvxhLxUobTHxhcal7WTcWOklT-lEOOsSzOfYTVFp4P3UcSnjAg8dp8pUJ-7ehz_s3EhuizNDaok0BbXKSdH4kR4GNkq_kJCuViHHww_leKjKUbLvaW4W8LOTW5EKB0P3SJyz0_OCCBDjzOAjqYpWIabHcc7_MZuMDH5y5PeCtxr8AuEzS0rHDrVcHmG5CbIuX3kqSnfDajt__eC2ekYa194fQShyXu6HvQZhRYOrUoNuQnMPrn0tEswVOKOQJ1fMHQbwJHAD3dJaWitzWit3vjTtOSLz4sgfmF-Otkdy70-F9uyEzakUC2Y8NXjClkij4b7ZzsVFzC5wSes1oNeE65eIRfKdklZc_qvUkgVWrylNq_V8UXysVwndub7gdEmWJbKmO466R3JZFjQ7bY_Bgh17Y8Flq33WaHSajfZl6_KiU79onrAtC07rtfpZu9Zutzu_XNZarUat9X7C_vN162e1i2a71qGjRqvRadTr798BoKP-kw)
+
+
+### Allocation or Announcement
+
+When Gaea asks the Fortress Server for a license, the Server checks if that IP was already assigned a license.
+
+- If there is no license allocated to this IP, a new license token is issued.
+- If a license token exists, a new session for that IP is announced to the server.
+
+
+:::note
+To prevent license-exhaustion, Gaea allows up to 4 simultaneous sessions on a single IP as long as it is under the same user. This allows the user to run multiple instances, or run background builds while designing a terrain, without using up additional license slots.
+:::
+
+:::warning
+If the maximum number of sessions, typically 8, is reached the new sessions will not be allowed.
+:::
+
+### Heartbeat
+
+Every license has a 5 minute lifespan. Gaea pings the server to let it know it is still alive and using the license token. Each heartbeat extends the toke n
+
+If a license token misses a heartbeat, the token's state is set to `Expiring` and the license is put into a grace period. This grace period is important because you don't want a momentary network outage or other temporary interruption to expire the license.
+
+If a license token misses two heartbeats, the token is deallocated on the server. Without a heartbeat, the license expires on the workstations as well.
+
+### Recovering from a Crash
+
+If Gaea crashes, and you start it again it will check if the license still has a heartbeat left. If so, it will announce itself to the Fortress Server and try to reuse the existing token.
+
+If the heartbeat has expired, Gaea will request a new license.
+
+### Deallocation
+
+When Gaea exits normally, the license token is released. If there are multiple sessions open on the same workstation, the appropriate session is closed. 
+
+The license token is not released until all sessions are closed.
+
+If any session is closed through a crash, it will take up to 2 heartbeats to release the license so it can be used elsewhere.
+
+:::tip
+The Server Admin can use `View Allocations` > `K` command to forcefully kill the allocation and release the license immediately.
+:::
+
+
+## Troubleshooting checklist
+
+* Client cannot obtain a license
+  * Verify `floating.lic` is present in the correct data folder.
+  * Confirm the host/IP and port are correct.
+  * Run **Network Diagnostics** on the server.
+* Server reachable by `localhost` but not by NIC IP
+  * Server is likely bound to loopback only.
+  * Bind to `0.0.0.0` or the correct NIC address.
+* Clients intermittently lose licenses
+  * Check for firewall/AV interference, unstable VPN, or routing issues.
+  * Confirm server clock stability and network reliability.
+
+
+
+// from fortress-logs / logs.md
+---
+title: Logs
+uid: fortress-logs
+icon: scroll
+order: 08
+---
+
+# Using Fortress Server Logs
+
+Fortress Server records operational activity (events, actions, warnings, errors, and internal diagnostics) to help administrators troubleshoot issues and to support post-incident review. When contacting QuadSpinner support, include a ZIP of the entire log folder. It significantly reduces turnaround time for diagnosing network, allocation, and configuration problems.
+
+## View the Current Log
+
+1. In the Fortress Console, select **Logs** from the main menu.
+
+   ![](/.data/ui/fortress-logs1.png)
+
+2. Choose one of the following:
+
+   * **Logs (Tail)**: Shows the most recent ~40 entries (quick check for recent errors).
+   * **Logs (Entire)**: Opens the full log for the current day.
+
+   ![](/.data/ui/fortress-logs2.png)
+
+## View Older Logs
+
+The console views only the current day’s log. Logs roll over at midnight (local server time).
+
+To access previous days:
+
+1. Select **Open Log Directory**.
+
+   ![](/.data/ui/fortress-logs-directory.png)
+
+2. Open the log file for the day you need.
+
+   * Each day is stored as:
+
+     * a **plain text** log file (human-readable)
+     * a **LiteDB** database (structured log store for querying/reporting)
+
+## Log Location
+
+Logs are typically stored at:
+
+```
+C:\Users\<user>\AppData\Roaming\QuadSpinner\Fortress\
+```
+
+(Exact location may vary depending on installation context and user profile.)
+
+## Data captured in logs
+
+Logs may include operational identifiers needed for troubleshooting, such as:
+* Machine names
+* Logged-in user name (as seen by the OS)
+* IP addresses and endpoints
+* Allocation/session events
+
+Logs are intended for diagnostics and do not include sensitive personal content beyond basic system and network identifiers required to operate the licensing service.
+
+// from fortress-setup / setup.md
+---
+title: Server Setup
+uid: fortress-setup
+icon: floppy-disk-circle-arrow-right
+order: 02
+---
+
+# Installing and Deploying the Fortress Server
+
+The Fortress Server is very easily to deploy.
+
+![](/.data/ui/fortress-tenants.png)
+
+## Requirements
+
+- Windows 10 or higher.
+- 256MB of RAM (exclusive of system resources); 512MB recommended.
+- TCP access across the LAN to all workstations that need licensing.
+- 100MB Hard Drive space.
+
+:::warning
+You can run this on a Virtual Machine, however the Ethernet/MAC address should not change.
+
+If the configuration is changed too much, a new hardware key + license regeneration may be required.
+:::
+
+:::note
+A Linux version is in-development. There is no specific ETA at the moment.
+:::
+
+## Setting up the Server
+
+The Server consists of only 3 files:
+
+```
+C:\LicenseServer
+├── Tenants\
+│   └── 00000000.lic
+├── Fortress.Console.exe
+└── server.json
+```
+
+### Tenants
+
+A Tenant is a master license file that control the number of workstations allowed under a single license. A single Server can host multiple Tenants as long as they are within the same LAN.
+
+You will be provided with a `00000000.lic` tenant file upon purchase. The Tenant file is node-locked to your server's [Hardware Thumbprint](/install/license-management/hardware-thumbprint.html){data-link-icon='fingerprint'}.
+
+### Server Configuration
+
+If the `server.json` is file is not present, `Fortress.Console.exe` will generate one on first run. By default, it has the following settings.
+
+```
+{
+  "Port": 9000,
+  "MaxConcurrentClients": 16,
+  "TokenIdleTimeoutSeconds": 600,
+  "RateLimitPerIPSeconds": 1
+}
+```
+
+In most cases, you only need to change the `Port` setting, if needed. Ensure this port is allowed through firewalls for TCP/IP communication.
+
+### Setup Workstations
+
+See [Assign Licenses](/install/fortress/assigning.html){data-link-icon='toggle-on'} for instructions on creating a license file which can be added to any Gaea installation on the network.
+
+
+## Launch at Startup
+
+The Fortress Server cannot be run as a Windows Service, however you can create a Scheduled Task to ensure that it runs on startup, and recovers in case of a forced reboot, system update, etc.
+
+Create the following PowerShell script. Rename the `$exe` (full path of the console exe) and `$work` (working directory) variables, and save the script as `startup.ps1` then execute it from PowerShell once. This will setup the task.
+
+```
+$exe  = "C:\LicenseServer\Fortress.Console.exe"
+$work = "C:\LicenseServer"
+
+$action  = New-ScheduledTaskAction -Execute $exe -WorkingDirectory $work
+$trigger = New-ScheduledTaskTrigger -AtStartup
+$settings = New-ScheduledTaskSettingsSet `
+  -RestartCount 999 `
+  -RestartInterval (New-TimeSpan -Minutes 1) `
+  -ExecutionTimeLimit (New-TimeSpan -Days 3650) `
+  -MultipleInstances IgnoreNew `
+  -StartWhenAvailable
+
+Register-ScheduledTask `
+  -TaskName "LicenseServer" `
+  -Action $action `
+  -Trigger $trigger `
+  -Settings $settings `
+  -User "SYSTEM" `
+  -RunLevel Highest `
+  -Force
+```
+
+
+:::warning
+It is recommended that you do not run the server as Admin unless absolutely required.
+:::
+
+
+## Troubleshooting checklist
+
+* Client cannot obtain a license
+  * Verify `floating.lic` is present in the correct data folder.
+  * Confirm the host/IP and port are correct.
+  * Run **Network Diagnostics** on the server.
+* Server reachable by `localhost` but not by NIC IP
+  * Server is likely bound to loopback only.
+  * Bind to `0.0.0.0` or the correct NIC address.
+* Clients intermittently lose licenses
+  * Check for firewall/AV interference, unstable VPN, or routing issues.
+  * Confirm server clock stability and network reliability.
+
+
+
+// from for-gaea-1-users / index.md
+---
+icon: arrows-turn-right
+title: For Gaea 1 Users
+uid: for-gaea-1-users
+---
+
+# For Gaea 1 Users
+
+
+// from migration-guide / migration-guide.md
+---
+title: Migration Guide
+uid: migration-guide
+order: 01
+icon: book-arrow-right
+---
+
+# Migration Guide
+
+Gaea 2.0 was rewritten from the ground up. Many nodes, settings, and paradigms have changed. This page covers some of the major changes and replacements.This page is under construction. Please check back later.
+
+## File Compatibility <a href="#file-compatibility" id="file-compatibility"></a>
+
+Gaea 1.0 `.tor` files are _not_ compatible with Gaea 2.0 `.terrain` files as the engines are completely different.
+
+You should use Gaea 1.0 for older projects. If you need to bring in terrain from Gaea 1.0 into 2.0, the most precise and direct way is to save the output as R32 from Gaea 1.0 and import it into 2.0.
+
+If you used fixed filenames, you can refresh the input in Gaea 2.0 whenever you rebuild the output in Gaea 1.0.
+
+## Nodes <a href="#nodes" id="nodes"></a>
+
+Many of the GeoPrimitives and all of the LookDev nodes have been retired. These have been replaced with the new Landscape and Surface nodes.​​​ Some nodes have been renamed for clarity.
+
+See [Node Changes](/install/gaea-1/node-changes.html){data-link-icon='swap'} for a detailed list of changes.
+
+### ​ <a href="#undefined" id="undefined"></a>
+
+// from node-changes / node-changes.md
+---
+title: Node Changes
+uid: node-changes
+order: 02
+icon: swap
+---
+
+# Node Changes
+
+This table lists all the node changes between Gaea 1.0 and 2.0.
+
+
+
+| Node            | Status   | Notes                          |
+|-----------------|----------|--------------------------------|
+| Accumulator     | ✨ New    |                                |
+| Adjust          | ✨ New    |                                |
+| Anastomosis     |          |                                |
+| Angle           |          |                                |
+| AO              | ✨ New    |                                |
+| Aperture        | Improved |                                |
+| Autolevel       | Improved |                                |
+| Blur            | Improved |                                |
+| Bomber          | Improved |                                |
+| Bulbous         | ✨ New    |                                |
+| Canyon          | Improved |                                |
+| Cellular        | ✨ New    |                                |
+| Cellular3D      | ✨ New    |                                |
+| Chokepoint      |          |                                |
+| Clamp           | Improved |                                |
+| Clip            | ✨ New    |                                |
+| CLUTer          | Improved |                                |
+| ColorErosion    | ✨ New    |                                |
+| Combine         | Improved |                                |
+| Cone            | ✨ New    |                                |
+| Constant        | Improved |                                |
+| Contours        | ✨ New    |                                |
+| Cracks          |          |                                |
+| Craggy          | ✨ New    |                                |
+| Crater          | Improved |                                |
+| CraterField     | ✨ New    |                                |
+| Crumble         |          |                                |
+| Curvature       | Improved |                                |
+| Curve           | Improved |                                |
+| DataExtractor   | ✨ New    |                                |
+| Debris          | ✨ New    |                                |
+| Deflate         | ✨ New    |                                |
+| Denoise         | Improved |                                |
+| Dilate          | ✨ New    |                                |
+| DirectionalWarp |          |                                |
+| Distance        | Improved |                                |
+| DotNoise        | ✨ New    |                                |
+| Draw            | ✨ New    |                                |
+| DriftNoise      | Improved |                                |
+| DuneSea         | ✨ New    |                                |
+| Dusting         | ✨ New    |                                |
+| EasyErosion     | ✨ New    |                                |
+| Edge            | Improved | Formerly called "Zero Borders" |
+| Equalize        | ✨ New    |                                |
+| Erosion         |          |                                |
+| Erosion2        | ✨ New    |                                |
+| Export          | Improved |                                |
+| Extend          | ✨ New    |                                |
+| File            | Improved |                                |
+| Filter          | ✨ New    |                                |
+| Flip            |          |                                |
+| FlowMap         | ✨ New    |                                |
+| FlowMapClassic  |          | Formerly called "Flow Map"     |
+| Fold            | Improved |                                |
+| FractalTerraces | Improved |                                |
+| Gabor           | Improved |                                |
+| Gamma           |          |                                |
+| GraphicEQ       | ✨ New    |                                |
+| GroundTexture   | ✨ New    |                                |
+| Halftone        | ✨ New    |                                |
+| Height          | Improved |                                |
+| Hemisphere      | ✨ New    |                                |
+| Hillify         | ✨ New    |                                |
+| HSL             | ✨ New    |                                |
+| HydroFix        |          |                                |
+| Island          | Improved |                                |
+| Lake            |          |                                |
+| Layers          | ✨ New    |                                |
+| LightX          | Improved |                                |
+| LinearGradient  | ✨ New    |                                |
+| LineNoise       | Improved |                                |
+| LoopBegin       |          |                                |
+| LoopEnd         |          |                                |
+| Mask            | Improved |                                |
+| Match           | ✨ New    |                                |
+| Median          | ✨ New    |                                |
+| Meshify         | ✨ New    |                                |
+| Mesher          | Improved |                                |
+| Mixer           | ✨ New    |                                |
+| Mountain        | Improved |                                |
+| MountainRange   | ✨ New    |                                |
+| MountainSide    | ✨ New    |                                |
+| MultiFractal    | Improved |                                |
+| Noise           | Improved |                                |
+| Normals         | Improved |                                |
+| Object          | ✨ New    |                                |
+| Occlusion       | Improved |                                |
+| Origami         |          |                                |
+| Outcrops        | Improved |                                |
+| Peaks           | ✨ New    |                                |
+| Perlin          | Improved |                                |
+| Pixelate        | ✨ New    |                                |
+| Plates          | Improved |                                |
+| Pockmarks       | ✨ New    |                                |
+| PointCloud      | ✨ New    |                                |
+| RadialGradient  | ✨ New    |                                |
+| Recurve         | Improved |                                |
+| Repeat          |          |                                |
+| Reseed          | ✨ New    |                                |
+| RGBMerge        | Improved |                                |
+| RGBSplit        | Improved |                                |
+| Ridge           |          |                                |
+| Rivers          | Improved |                                |
+| RockMap         | Improved |                                |
+| RockNoise       | Improved |                                |
+| Rockscape       | ✨ New    |                                |
+| Roughen         | ✨ New    |                                |
+| Route           |          |                                |
+| Rugged          | Improved |                                |
+| Sand            | Improved |                                |
+| Sandstone       | ✨ New    |                                |
+| SatMap          | Improved |                                |
+| Sea             |          |                                |
+| Seamless        |          |                                |
+| Sediments       | Improved |                                |
+| Shaper          |          |                                |
+| Sharpen         | Improved |                                |
+| Shatter         | Improved |                                |
+| Shear           | Improved |                                |
+| Slope           | Improved |                                |
+| SlopeBlur       |          |                                |
+| SlopeWarp       | ✨ New    |                                |
+| Slump           | Improved |                                |
+| Snow            | Improved |                                |
+| SoftClip        |          |                                |
+| Soil            | Improved |                                |
+| Splat           | Improved |                                |
+| Steps           | ✨ New    |                                |
+| Stones          | ✨ New    |                                |
+| Stratify        | Improved |                                |
+| Sunlight        |          |                                |
+| SuperColor      | ✨ New    |                                |
+| Swirl           | Improved |                                |
+| Switch          |          |                                |
+| Synth           | Improved |                                |
+| Terraces        | Improved |                                |
+| TextureBase     | ✨ New    |                                |
+| Texturizer      | Improved |                                |
+| Thermal         |          |                                |
+| Thermal2        | ✨ New    |                                |
+| ThermalShaper   |          |                                |
+| Threshold       | Improved |                                |
+| TileGate        | Improved |                                |
+| TileInput       |          |                                |
+| Tint            | ✨ New    |                                |
+| Transform       | Improved |                                |
+| Transpose       | ✨ New    |                                |
+| Trees           | ✨ New    |                                |
+| Unity           | ✨ New    |                                |
+| Unreal          | ✨ New    |                                |
+| VariableBlur    | ✨ New    |                                |
+| Volcano         | ✨ New    |                                |
+| Voronoi         | Improved |                                |
+| Warp            |          |                                |
+| WaveShine       |          |                                |
+| Weathering      | ✨ New    |                                |
+| Whorl           |          |                                |
+| Wizard2         | ✨ New    |                                |
+
+// from install-gaea / index.md
+---
+icon: box
+title: Install Gaea
+uid: install-gaea
+order: 00
+---
+
+![The Gaea 2.0 User Interface](/.data/assets/gaea-ui2x.webp)
+
+# Download Gaea
+
+Download Gaea from [https://quadspinner.com/download/](https://quadspinner.com/download/)
+
+You will also require [.NET 8.0](https://download.visualstudio.microsoft.com/download/pr/7f4d5cbc-4449-4ea5-9578-c467821f251f/b9b19f89d0642bf78f4b612c6a741637/dotnet-runtime-8.0.0-win-x64.exe) and [Visual C++ Runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe). 
+
+The Gaea installer will download and install those if needed. An internet connection will be required to do that. 
+
+:::warning
+If you are going to install in an air-gapped/offline environment, then you may want to install the prerequisites beforehand.
+:::
+
+## System Requirements
+
+Before running Gaea, make sure your computer meets the minimum system requirements and that you have the latest CPU and GPU drivers.
+
+| Minimum                                                    | Recommended                                                   |
+| ---------------------------------------------------------- | ------------------------------------------------------------- |
+| Windows 10 (April 2018 - Build 1803)                       | Windows 11 - 23H2                                             |
+| Intel Core i5-4200U / AMD FX-8370                          | Intel Core i7-4770K / AMD Ryzen-5 1500X                       |
+| 16GB RAM                                                   | 32GB RAM                                                      |
+| <p>NVIDIA GeForce GTX 1080</p><p>AMD Radeon RX Vega 64</p> | <p>NVIDIA GeForce RTX 3070 Ti</p><p>AMD Radeon RX 6800 XT</p> |
+| 10GB HDD space                                             | 50GB HDD space                                                |
+
+
+
+:::danger
+For CPU compute: The CPU must support AVX2 instruction set.
+
+For GPU compute: NVIDIA cards need CUDA 12.5; AMD cards need HIP 6.0.
+:::
+
+:::info
+RAM may depend on project requirements. See [Calculating Memory Requirements](/using/advanced-topics/technical-information/calculating-memory-requirements.html){data-link-icon=''}.
+:::
+
+***
+
+# The Gaea Installers
+
+Gaea is available in various forms to provide flexible methods of deployment, whether you are an individual or System Administrator.
+
+## Setup Executable
+
+<div align="left">![EXE](/.data/assets/image-(43).png)</div>
+
+The setup exe is our primary - and recommended - way of installing Gaea. It provides for both [Regular Installation](/install/install-gaea/regular-installation.html){data-link-icon='shield-halved'}and [Portable Installation](/install/install-gaea/portable-installation.html){data-link-icon='usb-drive'}while also setting up additional registry entries required for the [gaea2unreal](/plugins/gaea2unreal/) and [gaea2houdini](/plugins/gaea2houdini/) bridges.
+
+## 7-Zip Package
+
+<div align="left">![7zip file](/.data/assets/image-(44).png)</div>
+
+The 7-zip package contains the exact same files as the setup executable; however, it is purely portable and does not create registry entries. It is very useful for advanced users or for System Administrators to create custom deployments. See [Mass Deployment](/install/install-gaea/mass-deployment.html){data-link-icon='network-wired'} on how to enable Gaea2Unreal and Gaea2Houdini functionality in pure portable installs such as this.
+
+## winget CLI Install
+
+The [winget CLI tool](https://github.com/microsoft/winget-cli) is fantastic way to quickly install and manage tools on your computer. You can install Gaea through winget by using the command line:
+
+`winget install gaea`
+
+:::info
+Due to the slower time PR acceptance on the winget-pkgs repo, there may be newer versions available on the Gaea website. If you have Gaea installed, you will get an update notification in the application to help you stay up-to-date.
+:::
+
+
+
+# Security Concerns
+
+## Windows SmartScreen 
+
+When you run the Gaea installer, Microsoft SmartScreen may warn you about running the application. You can check the validity of the installer by clicking "More Info". If the Publisher information shows QuadSpinner, that means it is signed by a Certificate Authority verified certificate.
+
+Click "**Run Anyway**" to proceed with the installation.
+
+You can also check the SHA-256 hash of the file against the hash shown on the [download page](https://quadspinner.com/download/) for additional verification.
+:::small
+![](/.data/assets/JgfGg2VQGB.png) ![](/.data/assets/rqGW1Jb2K2.png)
+:::
+Our new installer makes it very easy to install Gaea, whether you are at home with full Administrator privileges or in a restricted environment at work.
+
+To begin the installation select Regular or Portable Installation. In most cases, Regular Installation is the safest and recommended option.
+
+
+
+## Antivirus False Positives
+
+Antivirus software, especially so called "AI-powered" antivirus software, may falsely flag the Gaea setup or one of Gaea's sibling processes as a virus or malware.
+
+This is a false positive because Gaea does not perform any malignant activity. Interacting with hardware drivers or performing other low-level tasks creates false positives in some antivirus software.
+
+We provide a VirusTotal report for our installer on the download page.
+
+## Signed Binaries
+
+All Gaea binaries¹ are signed with a code-signing certificate provided after rigorous verification of our organization by a Certificate Authority. These signed files prevent tampering. You can open the file properties to see the certificate signature and ensure that each file has not been tampered with.
+:::small
+![](/.data/assets/Certificate_03-08-17-AM.png)
+:::
+
+¹ Exe and DLL files legally within QuadSpinner's ownership.
+
+
+
+
+
+// from mass-deployment / mass-deployment.md
+---
+icon: network-wired
+title: Mass Deployment
+uid: mass-deployment
+order: 04
+---
+
+# Mass Deployment
+
+Gaea can be deployed to a large number of workstations in multiple ways.
+
+:::danger
+When installing to a network drive, it must be installed on a network share hosted as a drive and not a UNC path. Gaea may not work properly on UNC paths.
+:::
+
+## Unattended Installation
+
+There are two ways to perform multiple installations / mass deployment - through a command-line sequence using or using a zip file for xcopy style deployment.
+
+In either case, you should prepare an activation file or a copy of the offline license (see [License Types](/install/license-management/license-types.html){data-link-icon='key-skeleton-left-right'} for more information)
+
+### Create an Activation File
+
+1. Create a text file named `activate.lic` (Notepad is fine).
+2. Put **only** the license key in the file (no extra spaces, no additional lines).
+3. Copy `activate.lic` to the **Gaea Data Folder** (see [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''}).
+   * For mass deployment, place it in each user’s `AppData > Gaea Data` folder, or in the install folder as appropriate for your deployment setup.
+
+On launch, Gaea will check if a license is already validated. If not, it will attempt to read and activate using `activate.lic`.
+
+## Command Line Installation
+
+Run the install (typically `Gaea-2.x.x.x.exe`) either via UI or with command line
+
+Command Line example:
+
+```
+Gaea-2.2.7.0.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
+
+  ## additional flags
+  /ALLUSERS - install for all users (administrative install).
+  /CURRENTUSER - install for current user only (non-administrative install).
+  /LOG="filename" - to save a log to a specific file.
+  /DIR="X:\PATH" - override the installation folder.
+```
+
+Once the installation is finished, copy the license file to the Data Folder.
+
+| Install Type       | Flag           | Typical Path                                      | Data Folder Path                                        |
+| ------------------ | -------------- | ------------------------------------------------- | ------------------------------------------------------- |
+| Non-Admin | `/CURRENTUSER` | `C:\Users\<user>\AppData\Local\Programs\Gaea 2.0` | `C:\Users\<user>\AppData\Local\Programs\Gaea 2.0\Data`  |
+| Admin     | `/ALLUSERS`    | `C:\Program Files\QuadSpinner\Gaea 2.0`           | `C:\Users\<user>\AppData\Roaming\QuadSpinner\Gaea\2.0\` |
+
+:::note
+If Gaea has not run yet, it may not have created the folder.
+:::
+
+
+// from portable-installation / portable-installation.md
+---
+icon: usb-drive
+title: Portable Installation
+uid: portable-installation
+order: 02
+---
+
+# Portable Installation
+
+Please make sure you have read the [Install Gaea](/install/install-gaea/index.html){data-link-icon='box'} page.
+
+## Running the Setup
+
+Our new installer makes it very easy to install Gaea, even when you may not have Administrator privileges.
+
+![](/.data/assets/QuadSpinner_Gaea_2.0_Setup_09-55-53-PM.png)
+
+### Choosing the Installation Type
+
+To begin the installation select [Regular Installation](/install/install-gaea/regular-installation.html){data-link-icon='shield-halved'} or Portable Installation. If you don't have Administrator privileges, select Portable Installation.
+
+![](/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM-(1).png)
+
+### Choosing the Path
+
+Next, select where you would like to install Gaea. 
+
+By default, it will install to `C:\Users\YOU\AppData\Local\Programs\Gaea 2.0`
+
+You can save to a more accessible or memorable path if you prefer. You can install it on a USB drive.
+
+Gaea will now install. You will be given an option to launch Gaea once the installation is finished.
+
+
+
+## Welcome to Gaea
+
+![](/.data/assets/Welcome_to_Gaea_2.0_09-56-21-PM.png)
+
+Once Gaea launches, you will be presented with this Welcome dialog.
+
+You can set your Gaea Projects storage path here, and select the navigation style for the Viewport.
+
+![](/.data/assets/Welcome_to_Gaea_2.0_09-56-28-PM.png)
+
+### License Key
+
+If you have a License Key, you can also enter it here to activate all the features of your Gaea Edition. You can find the License Key in the email you received after purchasing Gaea 2. 
+
+:::info
+If you have forgotten your License Key, you can click "Forgot your key?" to log into the User Area on the QuadSpinner website.
+:::
+
+You can also enter your License Key from the Start Screen whenever you start Gaea, or from Help > About menu item. See Licensing for more details.
+
+### File Licenses
+
+For users who have been issued a file-based key, just drag and drop the file (usually a `XYZ123.lic` file) on the license dialog. Gaea will automatically consume the file to authorize your copy.
+
+***
+
+Gaea is now installed and you are ready to create [Terrain Basics](/using/getting-started/index.html){data-link-icon='play'}!
+
+
+
+
+
+
+
+Facing issues? See [Troubleshooting](/using/troubleshooting/index.html){data-link-icon=''}
+
+
+// from regular-installation / regular-installation.md
+---
+icon: shield-halved
+title: Regular Installation
+uid: regular-installation
+order: 01
+---
+
+# Regular Installation
+
+Please make sure you have read the [.](./)page.
+
+## Running the Setup
+
+Our new installer makes it very easy to install Gaea, whether you are at home with full Administrator privileges or in a restricted environment at work.
+
+![](/.data/assets/QuadSpinner_Gaea_2.0_Setup_09-55-53-PM.png)
+
+### Choosing the Installation Type
+
+To begin the installation select Regular or [Portable Installation](/install/install-gaea/portable-installation.html){data-link-icon='usb-drive'}. In most cases, Regular Installation is the safest and recommended option.
+
+:::warning
+:shield: You will require Administrator Privileges for a Regular Installation. If you don't have them, you can choose to go for a [Portable Installation](/install/install-gaea/portable-installation.html){data-link-icon='usb-drive'}.
+:::
+
+![](/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM-(1).png)
+
+### Choosing the Path
+
+Next, select the path where you would like to install Gaea. In most cases, saving to the Program Files folder is recommended for safety. Click Install to begin the process.
+
+:::danger
+When installing to a network drive, it must be installed on a network share hosted as a drive and not a UNC path. Gaea may not work properly on UNC paths.
+:::
+
+Gaea will now install. You will be given an option to launch Gaea once the installation is finished.
+
+
+
+## Welcome to Gaea
+
+![](/.data/assets/Welcome_to_Gaea_2.0_09-56-21-PM.png)
+
+Once Gaea launches, you will be presented with this Welcome dialog.
+
+You can set your Gaea Projects storage path here, and select the navigation style for the Viewport.
+
+![](/.data/assets/Welcome_to_Gaea_2.0_09-56-28-PM.png)
+
+### License Key
+
+If you have a License Key, you can also enter it here to activate all the features of your Gaea Edition. You can find the License Key in the email you received after purchasing Gaea 2. 
+
+:::info
+If you have forgotten your License Key, you can click "Forgot your key?" to log into the User Area on the QuadSpinner website.
+:::
+
+You can also enter your License Key from the Start Screen whenever you start Gaea, or from Help > About menu item. See Licensing for more details.
+
+### File Licenses
+
+For users who have been issued a file-based key, just drag and drop the file (usually a `XYZ123.lic` file) on the license dialog. Gaea will automatically consume the file to authorize your copy.
+
+***
+
+Gaea is now installed and you are ready to create [Terrain Basics](/using/getting-started/index.html){data-link-icon='play'}!
+
+
+
+
+
+
+
+Facing issues? See [Troubleshooting](/using/troubleshooting/index.html){data-link-icon=''}
+
+
+// from install-strategies / strategies.md
+---
+title: Installation Strategies
+uid: install-strategies
+order: 03
+icon: bullseye-arrow
+---
+
+# Installation strategies
+
+This page covers practical deployment patterns for individuals, studios, schools, and secured environments, with emphasis on repeatability, low-touch rollout, and offline constraints.
+
+## Key decisions
+
+Before you pick a packaging method, decide these upfront:
+
+* Online access during install (allowed, restricted, or none).
+* Admin privileges (per-machine install vs per-user install).
+* Whether you need registry-based integrations for bridges (Unreal/Houdini).
+* Where per-user data will live (local profile, roaming profile, redirected folders).
+* How updates will be approved and distributed (central IT vs self-updating users).
+
+## Installer options
+
+**Setup executable**
+Use this when you want a conventional Windows install, and when you need the installer to set up registry entries required for bridge integrations. 
+
+**7-Zip package**
+Use this when you need a purely portable payload for xcopy-style deployment or custom packaging. It does not create registry entries. 
+
+**winget**
+Use this when you already manage software via Windows package management and want a simple, scripted install. Expect that the winget package may lag behind the latest website release. 
+
+## Decision guide
+
+| Environment                             | Recommended approach                                      | Why                                                              |
+| --------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------- |
+| Individual workstation, normal internet | Setup executable                                          | Simplest and most compatible with integrations.                  |
+| Studio with managed endpoints           | Setup executable in silent mode                           | Predictable rollout, supports per-machine or per-user installs.  |
+| School labs, non-admin students         | Per-user install (silent) or portable                     | Avoids admin dependency; easier profile-based licensing.         |
+| Air-gapped / no internet                | Pre-stage prerequisites + portable payload                | Avoids installer dependency on downloading runtimes.             |
+| Strictly offline, many seats            | Offline floating with Fortress + workstation license file | Centralized license control without external activation.         |
+
+## Air-gapped and restricted networks
+
+If internet access is blocked, treat prerequisites as first-class deployment artifacts. The installer can download required runtimes when missing, which implies internet access; in offline environments, install those runtimes beforehand. 
+
+Recommended pattern:
+
+* Build a “golden” package set internally: Gaea payload + required runtimes.
+* Prefer the portable payload when your security team requires deterministic file inventories and minimal machine changes. 
+* If you must use the setup executable, run it only after prerequisites are staged so it doesn’t attempt external downloads. 
+
+## Mass deployment
+
+The supported unattended install path is the setup executable with silent flags. 
+
+Typical usage:
+
+* Use `/ALLUSERS` for a per-machine install when IT manages the endpoint.
+* Use `/CURRENTUSER` when endpoints are locked down and you deploy into user profiles. 
+
+Plan for where the data folder will be created and how you will place license material there. The documented paths differ by install mode. 
+
+## Portable and xcopy-style deployment
+
+Use the 7-Zip package when you want to copy a known folder layout to many machines and avoid installer-side system changes. 
+
+Use this approach when:
+
+* You want a clean file-based deployment that’s easy to mirror to render nodes or lab machines.
+* You need to run from removable media or a controlled internal share.
+
+If you rely on bridge integrations that depend on registry entries, prefer the setup executable; the portable package does not create those entries. 
+
+## Shared storage and network installs
+
+Installing to a network drive can work, but avoid UNC paths. If you deploy from a central share, map it to a drive letter and test thoroughly. 
+
+Practical guidance:
+
+* Treat “run binaries directly from a share” as a separate decision from “deploy from a share.” Even if the share is acceptable, local execution is usually more reliable for compute-heavy workflows.
+* If you do a shared install, validate GPU/driver access and file locking behavior under concurrent launches.
+
+## Licensing at scale
+
+Your deployment strategy should include a licensing strategy so machines are functional on first launch.
+
+**Online activation via file**
+Place an `activate.lic` file containing only the license key in the Gaea Data Folder; Gaea will attempt activation on launch if not already validated. 
+
+**Offline activation via file**
+Rename the provided offline license file to `gaea2.lic` and copy it into the Gaea Data Folder. 
+
+**Offline floating via Fortress**
+For organizations that cannot use online activation and need floating seats, distribute a workstation file renamed to `floating.lic` into the Gaea Data Folder; it contains the floating key and server endpoint details. 
+
+For schools and labs, prefer workflows that let IT place the license material centrally (profile/GPO/MDM) rather than relying on students to activate interactively.
+
+## Updates and version control
+
+* If you use winget, expect occasional lag between website releases and the package repository. 
+* For managed environments, treat updates like any other software: stage, validate against a representative machine pool (GPU drivers, plugins, policy restrictions), then roll out.
+
+## Validation checklist
+
+After deployment, validate these on at least one machine per “image” or policy group:
+
+* Gaea launches without prompting for missing runtimes (offline networks should not attempt downloads). 
+* License material is detected from the intended location and mode (`activate.lic`, `gaea2.lic`, or `floating.lic`). 
+* If you depend on bridge integrations, confirm they work in your chosen installer mode (setup executable vs portable). 
+
+// from troubleshooting-install / troubleshooting.md
+---
+icon: suitcase-medical
+title: Troubleshooting
+uid: troubleshooting-install
+order: 05
+---
+
+# Troubleshooting
+
+### Gaea Fails to Start
+
+* Make sure your computer meets the minimum system requirements.
+* Confirm that both the [.NET 8.0 Desktop Runtime](https://download.visualstudio.microsoft.com/download/pr/7f4d5cbc-4449-4ea5-9578-c467821f251f/b9b19f89d0642bf78f4b612c6a741637/dotnet-runtime-8.0.0-win-x64.exe) and [Visual C++ Runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe) are installed. 
+* Make sure you have the latest CPU and GPU drivers.
+* Try running in [CPU Only Mode](/using/troubleshooting/diagnostics-watson/cpu-only-mode.html){data-link-icon=''}.
+* Try creating a Diagnostics 
+
+// from uninstall-or-clean-install / uninstall-or-clean-install.md
+---
+icon: trash-xmark
+title: Uninstall or Clean Install
+uid: uninstall-or-clean-install
+order: 08
+---
+
+# Uninstall or Clean Install
+
+## Uninstall Gaea
+
+Before uninstalling Gaea, go to Help > About and select "**Release License**". This will release your license's activation slot. You can re-activate when you reinstall Gaea again or on another computer.
+
+![](/.data/assets/About_01-58-02-AM.png)
+
+Once the license has been released, close Gaea. Go to Installed Apps in Windows Settings (or Add/Remove Programs in older versions) and uninstall Gaea.
+
+## Clean Install
+
+If you are experiencing any unusual behavior, it is often a good idea to try a clean install.
+
+### Reset to Factory Defaults
+
+Before performing a clean install, you can try a "Reset". Open Options in Gaea and select Factory Reset or open Gaea Diagnostics from the Start Menu and select "Reset to factory defaults". It also gives you an option backup your settings.
+
+![](/.data/assets/Gaea_Diagnostics_04-47-41-AM.png)
+
+Once you have tried this reset, check if Gaea's errant behavior has been fixed.
+
+If it is still not fixed, you can perform a clean install by first uninstalling Gaea completely. Before you uninstall Gaea, we recommend that you go to Help > About and select "Release License". This will release your license's activation slot. You can re-activate when you reinstall Gaea.
+
+Releasing the license helps avoid re-authorization issues from a "double installation" on the same computer.
+
+![](/.data/assets/About_01-58-02-AM.png)
+
+Once the license has been released, close Gaea. Go to Installed Apps in Windows Settings (or Add/Remove Programs in older versions) and uninstall Gaea.
+
+Download a fresh installer from the [QuadSpinner Website](https://quadspinner.com/download/) and [.](./).
+
+
+
+### Manually Delete All Data
+
+To remove all traces of Gaea data, you can delete the following folders:
+
+* Run `Gaea.exe -deactivate` to release the license. 
+  * Or do it via the About box.
+* Install Folder (usually `C:\Program Files\QuadSpinner\Gaea 2`)
+* [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''} (`C:\Users\<you>\AppData\Roaming\QuadSpinner\Gaea\2.0` or inside Install Folder in case of portable installation)
+  * For just erasing settings: delete the `Settings` subfolder only.
+* Viewport Logs `C:\Users\<you>\AppData\LocalLow\QuadSpinner\`
+* Registry
+  * `HKEY_LOCAL_MACHINE\SOFTWARE\QuadSpinner\Gaea\2.0` 
+  * `HKEY_CLASSES_ROOT\.terrain`
+  * `HKEY_CLASSES_ROOT\Gaea Terrain Files`
+* Start Menu and Desktop shortcuts entries
+
+// from version-numbers / version-numbers.md
+---
+icon: code-branch
+title: Version Numbers
+uid: version-numbers
+order: 07
+---
+
+# Version Numbers
+
+Gaea uses 4 parts in its version number - such as 2.0.5.1 - where these parts are called Major (2), Minor (0), Build (5), and Revision (1).
+
+**Major:** This is the main version number representing the generation of the software. This part updates once every couple of years, denoting a major upgrade.
+
+**Minor:** This part is updated whenever a significant update is made to the software. For example, when a paradigm-shifting or large new feature is added.
+
+**Build:** This part is updated when any substantial change is made. This is often new functionality or overhauling existing tools.
+
+**Revision:** This part is updated when small updates or bugfixes are implemented but the overall impact on the user is limited.
+
+
+// from activation / activation.md
+---
+title: Activation
+uid: activation
+order: 01
+icon: key
+---
+
+# Activation
+
+## Types of Licenses
+
+### **License Key**
+
+A license key is an alphanumeric string in the format: `XXXX-XXXX-XXXX-XXXX` This is the preferred type of license and most users are given license keys.
+
+### **License File**
+
+A license file is usually provided as a `Gaea-XYZ123.lic` where `XYZ123` is your Transaction ID and should be kept private for your own security. 
+
+## Loading a License
+
+![](/.data/assets/Gaea_-_Build_and_Export_06-53-07-PM.png)
+
+To load your license, enter the **License Key** in the Activation Dialog and click Activate. Gaea will communicate with the license server and authorize your installation.
+
+If alternatively you have a **License File**, drag and drop the license file on the dialog and Gaea will activate using the license file.
+
+### Where can I access the Activation Dialog?
+
+When running Gaea for the first time, you will be presented with a "Welcome" dialog. You can click the "Have a license key?" button to bring up the activation dialog.
+
+![](/.data/assets/Welcome_to_Gaea_2.0_09-56-28-PM.png)
+
+You can also access this same dialog in other ways:
+
+* From the Startup Dialog when running the Community Edition.
+* In Help menu > Manage License.
+* In Help menu > About Dialog.
+
+![](/.data/assets/About_06-48-38-PM.png)
+
+### Activate by File
+
+Use this method when you want to distribute the key but allow the end user machine to activate without admin intervention.
+
+1. Create a text file named `activate.lic` (Notepad is fine).
+2. Put **only** the license key in the file (no extra spaces, no additional lines).
+3. Copy `activate.lic` to the **Gaea Data Folder** (see [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''}).
+
+   * For mass deployment, place it in each user’s `AppData > Gaea Data` folder, or in the install folder as appropriate for your deployment setup.
+
+On launch, Gaea will check if a license is already validated. If not, it will attempt to read and activate using `activate.lic`.
+// from deactivation / deactivation.md
+---
+title: Deactivation
+uid: deactivation
+order: 02
+icon: lock-keyhole
+---
+
+# Deactivation
+
+## Releasing a License
+
+You can release a license so it can be installed on a different computer. To do so, go to Help > About. Then click "Release License" at the bottom of the dialog. This will de-authorize the installation and revert it back to the Community Edition.
+
+![](/.data/assets/About_06-48-38-PM.png)
+
+This is not a permanent deactivation. You can re-activate the same installation again if needed.
+
+:::danger
+You are allowed a limited number of activations per year and our server will disable licenses that show excessive activation activity to protect your license. If such an event occurs, you can contact technical support to request re-activation of your license.
+:::
+
+### Command Line Option
+
+To deactivate from the command line, use the following syntax:
+
+```
+Gaea.exe -deactivate
+```
+
+
+// from errors-and-troubleshooting / errors-and-troubleshooting.md
+---
+title: Errors and Troubleshooting
+uid: errors-and-troubleshooting
+order: 05
+icon: circle-question
+---
+
+# Errors and Troubleshooting
+
+## Ensure only only one license exists.
+
+Ensure only one `.lic` file of any kind is present in the [DATA Folder](/using/advanced-topics/technical-information/paths-and-storage.html). Multiple license files can confuse Gaea depending on the order in which they're loaded.
+
+## Firewall Access
+
+Make sure `*.quadspinner.com`, `*.gaea.app` (all subdomains) are allowed TCP access via Firewall or other security apparatus. This should include both port `80` (normal) and port `443` (secure).
+
+## Deactivate / Revoke Activation, then reactivate
+
+If your license is stuck for some reason, you can go to your [User Account](https://quadspinner.com/account) and revoke the activation for a specific. You can then reload the license on the same machine to forcefully refresh the license.
+
+## Hardware changes
+
+If you have an offline node-locked license, large scale hardware changes such as motherboard, processor, etc. can cause a license to become invalid. If your license was issued manually by QuadSpinner, contact Tech Support with a new [Hardware Thumbprint](/install/license-management/hardware-thumbprint.html){data-link-icon='fingerprint'} to get a fresh license.
+
+## Other issues
+
+Please file a support ticket using [Diagnostics](/using/troubleshooting/diagnostics-watson/index.html){data-link-icon='stethoscope'}.
+// from floating-license / floating-license.md
+---
+title: Floating License
+uid: floating-license
+order: 04
+icon: arrow-down-up-lock
+---
+
+# Floating License
+
+::note
+This page talks about Online Floating Licenses. For using Offline Floating Licenses, see [Fortress Server](/install/fortress/index.html){data-link-icon='server'}
+:::
+
+### Installing a License
+
+Activating a Floating License on a workstation is the same as loading a user key for a standard [Activation](/install/license-management/activation.html){data-link-icon='key'}. The only difference is your key will have a `FL-` prefix. Just enter the key in the Activation dialog, or via `Help > Manage License`, or `Help > About > Load License`.
+
+:::info
+**File Based Licenses**
+You can install your floating license the same way as described in license file in [Activation](/install/license-management/activation.html){data-link-icon='key'}. The only difference is that your file will be saved as `floating.lic`
+:::
+
+
+### Acquiring a License
+
+When you start Gaea, it will contact the online license server to acquire a floating license. 
+
+If your maximum number of licenses/seats have been assigned at that moment, you will be notified. In that case, you have to wait until a license slot has been released.
+
+### Usage and Loss of Network or License
+
+Gaea will use \~5 minute heartbeats to keep the license alive, with an additional \~5 minute grace period to allow for network interruptions or other possibilities.
+
+In case of network loss, or any other disruption, Gaea will release the license slot both on the client and server. However, the running instance of Gaea will simply revert to the Community Edition instead of shutting down. This is an added perk of our software that prevents excessive disruption in your work and allows you time to save your files or even try to recover the license without closing the session.
+
+:::info
+In case you lose the network connection or the software crashes, then recover it, you may get a "Maximum Clients Assigned" message when trying to acquire a license. This is because your old license slot may not have been released. Just wait until the end of the current heartbeat (5 minutes or fewer) and then try again.
+:::
+
+### Refreshing or Re-acquiring the License
+
+The `Refresh` button in the Help > About dialog can be used to force a re-verification and re-acquisition of your license token. 
+
+The accompanying `Release` button can be used to release the currently acquired license token and revert the running instance of Gaea to the Community Edition. A new license will be re-acquiring on the next run.
+
+## Routing through a Proxy
+
+If your workstation doesn't allow a direct internet connection, you can specify a proxy address through the Options dialog.
+
+See the email you received during purchase to know which address and ports to allow through your firewall for the Floating Licenses to work with our online server, or contact Technical Support.
+
+## Gaea Build Swarm
+
+Gaea UI and Gaea Build Swarm are both applications that use the Gaea Engine to build terrains. Each requires a separate license to run. 
+
+If you only have a single license for a specific workstation, you can choose the "Close and Build" option when starting a build from the Build menu. This will close Gaea and release the license so the Swarm can use it.
+
+Moreover, this is the recommended way of building terrains in any case as the Gaea UI can often take up large portions of RAM, CPU, and GPU resources that the Build Swarm may need for an efficient run.
+
+## Gaea2Houdini
+
+When using Gaea2Houdini with a Floating License, ensure that "Shutdown Server" is not set to true in your node. Requesting a floating license too frequently can cause temporary security blocks for your IP.
+
+If you intend to use Gaea2Houdini heavily, we recommend using a node-locked license for efficiency.
+
+
+// from hardware-thumbprint / hardware-thumbprint.md
+---
+title: Hardware Thumbprint
+uid: hardware-thumbprint
+order: 03
+icon: fingerprint
+---
+
+# Hardware Thumbprint
+
+To generate an offline license, which will be node-locked, you will be asked to provide the hardware thumbprint for your computer. You can retrieve the thumbprint from Help > About menu.
+
+* Go to Help > About.
+* Click the Copy icon next to the purple Thumbprint readout in the bottom of the License text.
+* Your thumbprint will now be copied to the clipboard.
+
+![](/.data/assets/About_06-48-38-PM.png)
+
+// from license-management / index.md
+---
+title: License Management
+uid: license-management
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from license-types / license-types.md
+---
+title: License Types
+uid: license-types
+icon: key-skeleton-left-right
+order: 08
+---
+
+# License Types and Activation Methods
+
+Gaea supports multiple license formats and activation workflows, depending on whether you are activating online, offline, or using a floating license.
+
+## Online Activation Key
+
+An online license uses a serial/license key in the format:
+
+* Standard key: `xxxx-xxxx-xxxx-xxxx`
+* Online floating key: `FL-xxxx-xxxx-xxxx-xxxx`
+
+### Activate via Dialog
+
+1. Open the **Authorization** dialog in Gaea.
+2. Copy/paste the license key.
+3. Confirm to load and validate the license.
+
+### Activate by File
+
+Use this method when you want to distribute the key but allow the end user machine to activate without admin intervention.
+
+1. Create a text file named `activate.lic` (Notepad is fine).
+2. Put **only** the license key in the file (no extra spaces, no additional lines).
+3. Copy `activate.lic` to the **Gaea Data Folder** (see [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''}).
+
+   * For mass deployment, place it in each user’s `AppData > Gaea Data` folder, or in the install folder as appropriate for your deployment setup.
+
+On launch, Gaea will check if a license is already validated. If not, it will attempt to read and activate using `activate.lic`.
+
+## Offline Activation File
+
+Offline licenses are provided as a `.lic` file containing XML (for example: `ABCD1234.lic`).
+
+### Activate via Dialog
+
+1. Open the activation/authorization dialog.
+2. Either:
+
+   * Drag-and-drop the `.lic` file onto the dialog, **or**
+   * Click **Have a license file?** and browse to the file.
+
+### Activate by File
+
+1. Rename the provided file to `gaea2.lic`.
+2. Copy `gaea2.lic` into the **Gaea Data Folder** (see [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''}).
+
+## Offline Floating Server File
+
+Offline floating licenses are managed through a locally deployed [Fortress Server](/install/fortress/index.html){data-link-icon='server'}. The floating license file is typically provided by your admin or generated via the [Fortress Console](/install/fortress/assigning.html).
+
+1. Obtain the floating license file from your admin (or Fortress Console export).
+2. Copy it to the **Gaea Data Folder** on the workstation.
+3. Rename it to `floating.lic`.
+
+Gaea will detect `floating.lic` and load both the license key and server connection details from it.
+

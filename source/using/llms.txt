@@ -1,0 +1,3056 @@
+// from home-user-guide / index.md
+---
+icon: power-off
+title: Home
+uid: home-user-guide
+---
+
+## User Guide
+
+**Welcome to the official Gaea 2.0 documentation**, your gateway to unlocking the full potential of the most advanced terrain generation software on the market. Whether you’re just starting or a seasoned professional, this guide is designed to provide you with everything you need to create stunning, complex terrains with ease and precision.
+
+![](/.data/assets/gaea-ui2x.webp)
+
+### Using Gaea
+
+Explore Gaea’s terrain creation tools, techniques, and workflows. Key areas include:
+
+* [Terrain Basics](/using/getting-started/index.html){data-link-icon='play'}: Get started with the core concepts of how terrains work in Gaea.
+* [Crafting the Surface](/using/using-gaea/crafting-the-surface/index.html){data-link-icon='hand-horns'}: Shape and sculpt your terrains using a variety of nodes and tools.
+* [Understanding Erosion](/using/using-gaea/understanding-erosion/index.html){data-link-icon='cloud-showers'}: Master the erosion processes that bring realism to your terrains.
+* [Simulations](/using/using-gaea/simulations/index.html){data-link-icon='cloud-sun-rain'}: Explore variation natural process simulations such as snow, debris, and more.
+* [Colorizing and Textures](/using/using-gaea/colorizing-and-textures/index.html){data-link-icon='palette'}: Add detail and depth with advanced color and texture techniques.
+* [Managing Graphs](/using/using-gaea/managing-graphs/index.html){data-link-icon='person-to-portal'}: Kick off your project with the right foundation.
+* [Baking Nodes](/using/using-gaea/baking-nodes/index.html){data-link-icon='fire'}: Optimize your terrains by baking nodes for better performance.
+* [Build and Export](/using/using-gaea/build-and-export/index.html){data-link-icon='box-taped'}: Export your work for use in other applications or game engines.
+* [Importing Terrains](/guides/use-in/bridges/gaea2unreal/importing-terrains.html){data-link-icon=''}: Bring in external data to enhance your terrain projects.
+
+### Advanced Topics
+
+For those looking to push Gaea to its limits, delve into these advanced features:
+
+* [Build Swarm](/using/advanced-topics/build-swarm/index.html){data-link-icon='cubes-stacked'}: Learn about the Gaea Build CLI works.
+* [Technical Information](/using/advanced-topics/technical-information/index.html){data-link-icon='head-side-gear'}: Understand the under-the-hood details that power Gaea.
+* [Automation](/developers/automation/index.html){data-link-icon='square-terminal'}: Discover how to automate repetitive tasks to save time and maintain consistency.
+
+### Plugins
+
+Extend Gaea’s functionality with powerful plugins designed to integrate seamlessly into your workflow:
+
+* [Gaea2Houdini](/guides/use-in/bridges/gaea2houdini/index.html){data-link-icon='h'}: Bridge your Gaea terrains into Houdini for advanced VFX and simulations.
+* [Gaea2Unreal](/guides/use-in/bridges/gaea2unreal/index.html){data-link-icon='u'}: Integrate your terrains into Unreal Engine for breathtaking environments.
+
+### Troubleshooting
+
+Find solutions to common (and uncommon) issues:
+
+* [Terrains](/using/troubleshooting/terrains/index.html){data-link-icon='circle-xmark'}: Understand terrain problems, output artifacts, and explore various workarounds.
+* [Diagnostics](/using/troubleshooting/diagnostics-watson/index.html){data-link-icon='stethoscope'}: Use Gaea's Diagnostics tool to find and fix common problems.
+
+## Getting Help
+
+If you encounter any challenges or have questions along the way, this documentation is your first resource. For additional support, the [Gaea support channels](https://quadspinner.com/support/) are always available to assist you.
+
+***
+
+:tada: Thank you for choosing Gaea 2.0. We’re excited to see the incredible terrains you create.
+
+// from advanced-topics / index.md
+---
+title: Advanced Topics
+uid: advanced-topics
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from terrain-basics / index.md
+---
+icon: play
+title: Terrain Basics
+uid: terrain-basics
+---
+
+# Terrain Basics
+
+Gaea uses nodes to create a graph that generates a terrain.
+
+**Nodes** are building blocks for creating terrain features. Each node represents a specific function, like generating shapes, adding erosion, or applying textures.
+
+**Graph** is where you connect these nodes in sequence to build complex terrains. Think of it as a flowchart that outlines each step in creating your landscape.
+
+## Your First Terrain
+
+This terrain graph is made of 3 building blocks, or Nodes. Each represents an object or action.
+
+The first node creates a Mountain. It has a random shape, generated through mathematics.
+
+![Mountain Node](/.data/assets/Gaea_-_Untitled_02-30-40-AM.png)
+
+The second node is an Adjust node which, as the name suggests, adjusts the shape. In this case we use its Shaper property to bulk up the mountain and make it more expansive.
+
+![Adjust Node](/.data/assets/sbJD05BwRh.png)
+
+The third and final node is an [Erosion_2](../understanding-erosion/erosion_2/) node. Erosion is one of the key processes in nature that forms a terrain's shape and character through slow modifications over eons. Gaea does this for you in a flash. This third node takes the basic mountain shape and applies a lot of erosion to make it more realistic - creating strong gullies on some sides and softer, mineral-deposited slopes on others.
+
+![Erosion2 Node](/.data/assets/sQdSAyb7YN.png)
+
+This is how most terrains work: You start with one shape or several, adjust them, and then process them with simulations like Erosion.
+
+// from common-workarounds / common-issues-and-workarounds.md
+---
+icon: suitcase-medical
+title: Common Issues
+uid: common-workarounds
+order: 01
+---
+
+# Common Issues and Workarounds
+
+## Gaea fails to start. \[Missing Runtime]
+
+You may be missing the Microsoft .NET Runtime. Install it [from this link](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.17-windows-x86-installer), then try again. This may be particularly possible with Portable installations.
+
+If it still does not work, you may be missing a necessary C++ runtime. This may be particularly possible with Portable installations. Try installing the [latest Visual C++ runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe).
+
+***
+
+## Gaea fails or freezes on starting up. \[NVidia GPU / Nahimic]
+
+#### Nvidia Drivers
+
+Some users have reported issues with recent NVidia GPU drivers. We recommend trying an [older driver such as 566](https://www.nvidia.com/en-us/drivers/details/237726/)
+
+#### Nahimic / SteelSeries Conflict
+
+The "Nahimic" audio utility is installed with software bundles from manufacurers such as ASUS, MSI, etc. This audio tweaking application can aggressively interfere with non-game applications.
+
+With Gaea, it can prevent the 3D viewport from launching successfully and force Gaea into a 2D-only view.
+
+We highly recommend either excluding Gaea from this and other utilities that may inject code or interject themselves into Gaea's functionality, or disable/uninstall it completely.
+
+Please look at the following resources for further information and details on uninstalling.
+
+[Uninstalling Nahimic](https://dovidenko.com/2021/1233/nahimic-uninstalling-blocking-msi-bloatware.html)
+
+[Microsoft Community](https://answers.microsoft.com/en-us/windows/forum/all/nahimic-companion-keeps-reinstalling/31885fb6-7fbc-403f-827b-b1abfb6fddde)
+
+[Google](https://www.google.com/search?q=uninstall+Nahimic)
+
+***
+
+## Erosion does not work or viewport does not render properly, but the rest of the application works.
+
+You may be missing a necessary C++ runtime. This may be particularly possible with Portable installations.\
+\
+Try installing the [latest Visual C++ runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe).
+
+***
+
+## I get a GRPC or other error when trying to activate my license.
+
+Make sure your firewall is configured to allow TCP access to <kbd>https://\*.quadspinner.com</kbd> using ports <kbd>80 / HTTP</kbd> and <kbd>443 / HTTPS</kbd>.
+
+***
+
+## Other issues with activation.
+
+Sometimes if you have excessive activations, this may happen.\
+\
+Try to log into your [User Account](https://quadspinner.com/Account) and see if there are any older or obsolete activations for your license. Removing them, and then reloading your license key in Gaea should fix the issue.
+
+
+// from troubleshooting / index.md
+---
+title: Troubleshooting
+uid: troubleshooting
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from using-gaea / index.md
+---
+title: Using Gaea
+uid: using-gaea
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from build-reports / build-reports.md
+---
+title: Build Reports
+uid: build-reports
+order: 02
+---
+
+# Build Reports
+
+## Post-Action Screen
+
+Gaea shows a post-action screen when a build finishes. It saves a copy in the build folder as `report.txt` so you can refer to it later.
+
+```
+
+───────────────────────────────────────────────────────  GAEA BUILD SWARM  2.1.0.0 ──
+
+                                                                             
+          Filename:  │ C:/Users/Dax/Documents/Gaea/Projects/mesher2.terrain  
+    Build Location:  │ C:\Users\Dax\Documents\Gaea\Builds\mesher2\001        
+        Build Type:  │ Standard                                              
+  Build Resolution:  │ 2048 × 2048                                           
+     Build Profile:  │ None / Last Saved Settings                            
+             Nodes:  │ 03 to build                                           
+                     │ 01 to export
+
+───────────────────────────────────────────────────────────────────── Build Report ──
+
+              Build Results                              Statistics               
+                                                                                  
+          Result: │ Success                  Sandstone │ 0:00:02.721              
+      Resolution: │ 2048                               │                          
+      Node Count: │ 3                          Fastest │ Mesher @ 0:00:00.001     
+      Start Time: │ 02/05/2025 19:42:03        Slowest │ Sandstone @ 0:00:02.721  
+        End Time: │ 02/05/2025 19:42:26                                           
+        Duration: │ 00:00:23.3091200       * nodes that took <100ms are excluded. 
+  Non-Build Time: │ 00:00:20.5231200                                              
+                                                                                  
+```
+
+## Build Report
+
+A structured data version of the report is also saved as `report.json` that is both human and machine readable.
+
+```json
+{
+  "$id": "1",
+  "Resolution": 2048,
+  "NodeCount": 3,
+  "Result": "Success",
+  "StartTime": "2025-02-05T19:42:03.2694437+05:30",
+  "EndTime": "2025-02-05T19:42:26.5785637+05:30",
+  "Duration": "00:00:23.3091200",
+  "SecondsTaken": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "Item1": "Perlin",
+        "Item2": "00:00:00.0640000"
+      },
+      {
+        "$id": "4",
+        "Item1": "Mesher",
+        "Item2": "00:00:00.0010000"
+      },
+      {
+        "$id": "5",
+        "Item1": "Sandstone",
+        "Item2": "00:00:02.7210000"
+      }
+    ]
+  },
+  "FastestNode": {
+    "$ref": "4"
+  },
+  "SlowestNode": {
+    "$ref": "5"
+  }
+}
+```
+
+// from creating-mutations / creating-mutations.md
+---
+title: Creating Mutations
+uid: creating-mutations
+order: 01
+---
+
+# Creating Mutations
+
+Mutations are a great way to create multiple variations of the same terrain with minimal effort.
+
+In its most basic form, mutations update the seeds used by all nodes in the terrain unless a node is baked. When you use the `--Seed <int>` command line argument, it increments each seed in every node by that amount.
+
+This provides a clean and predictable way to generate multiple mutations.
+
+:::info
+To prevent specific nodes from being affected, you can try [Baking Nodes](/using/using-gaea/baking-nodes/index.html){data-link-icon='fire'}.
+:::
+
+
+
+### Using the Batch Build Manager
+
+The fastest way to set up mutations, is to go to Build menu > Batch Build Manager and use the `Add Mutation` button to queue up as many mutations as you want.
+
+![](/.data/assets/Batch_Build_Manager_08-19-54-PM.png)
+
+If you find yourself repeating these builds, save the batch build as a Windows Batch (.bat) file.
+
+:::info
+Use the `[Mutation]` token in the [#build](/using-gaea/build-and-export/build-options/#build) Destination to add the current mutation as part of a folder name or subfolder.
+
+For example:
+
+`<Builds>\[Filename]\[+++]\[Mutation]` 
+
+or 
+
+`<Builds>\[Filename]\[Region]_[Mutation]`
+:::
+
+
+// from build-swarm / index.md
+---
+icon: cubes-stacked
+title: Build Swarm
+uid: build-swarm
+---
+
+# Build Swarm
+
+The Build Swarm, represented by `Gaea.Swarm.exe` is the heart of Gaea. It is the Build Engine that takes the terrain recipe created in the Gaea UI and builds it with high performance.
+
+The Swarm is a separate command line executable so it runs faster without a UI burdening it. Gaea's UI uses it in the background when building high resolution terrains for maximum performance.
+
+## Options
+
+All options for the Build Swarm for a specific file can be set in the [Build Options](/ui/interface/build-options/index.html){data-link-icon=''}. 
+
+Some additional options can be set via [Command Line Automation](/developers/automation/cli/command-line-automation.html){data-link-icon=''}.
+
+## Automation
+
+See [Command Line Automation](/developers/automation/cli/command-line-automation.html){data-link-icon=''} and [Variables](/developers/extensibility/scripting-and-expressions/variables.html){data-link-icon='xmark'} for automation scenarios.
+
+## Post Action Report
+
+Gaea will save a post-action report as both human readable and machine readable files. You can use them in your automation workflow or use them to gather vital intelligence about your builds.
+
+
+// from profiles-and-batch-builds / profiles-and-batch-builds.md
+---
+title: Profiles and Batch Builds
+uid: profiles-and-batch-builds
+order: 03
+---
+
+# Profiles and Batch Builds
+
+Build Profiles let you save all Build Settings in a named preset. If you find yourself creating multiple versions of your terrain, or creating different output types, you can switch between the different build settings swiftly with Profiles.
+
+![The Profiles tab lets you preview and manage profiles.](/.data/assets/Build_Settings_and_Regions_08-00-36-PM.png)
+
+## Using Profiles
+
+To create a profile:
+
+* Open Build Settings.
+* Select the settings you want for a profile
+* Go to the Profiles tab and click Save Profile.
+
+The "Load" button imports the selected build profile into the current build settings.
+
+The "Save As..." button allows you to create a new build profile based on the current build settings.
+
+The "Delete" button removes the currently selected build profile.
+
+:::info
+Use ASCII-friendly names for the profile as you may wish to use them in command line or Batch executions.
+:::
+
+## Running Batch Builds
+
+You can execute multiple builds using saved profiles using the Batch Builds dialog. Go to Build menu > Batch Builds to open the dialog.
+
+![](/.data/assets/Batch_Build_Manager_07-33-43-PM.png)
+
+Queue the different profiles you want to build and execute the batch. You can also save the batch as a `.bat` file for later execution or modification.
+
+The `-profile <name>` or `-p <name>` argument can be used to specify a profile during a [Build Swarm](/using/advanced-topics/build-swarm/index.html){data-link-icon='cubes-stacked'} execution. It is recommended that the \<name> be wrapped in `""` quotation marks to prevent incorrect parsing.
+
+
+
+See also [Creating Mutations](/using/advanced-topics/build-swarm/creating-mutations.html){data-link-icon=''}
+
+
+// from calculating-memory-requirements / calculating-memory-requirements.md
+---
+title: Calculating Memory Requirements
+uid: calculating-memory-requirements
+order: 05
+---
+
+# Calculating Memory Requirements
+
+## Understanding Memory Consumption
+
+It is common to hear users say _"But I have an 8GB GPU"_ or _"But I have 64GB RAM"_ when a build fails. However, it is imperative to remember that, while terrains may seem like just simple objects, the procedural graph represents a LOT of data and this data takes up a lot of memory.
+
+![The Build Statistics window lets you keep an eye on how much time each node takes.](/.data/assets/gaea_2051_stats.png)
+
+When working in a specific resolution, each node generates single channel (heightfield) or multichannel (RGB) data. The amount of data is multiplied by the number of output ports.
+
+The table below describes the size of the cache of a single node at different resolutions.
+
+|   Resolution  | Size in Memory (Heightfield) | Size in Memory (RGB) |
+| :-----------: | ---------------------------: | -------------------: |
+|  1024 x 1024  |                          4MB |                 12MB |
+|  2048 x 2048  |                         16MB |                 48MB |
+|  4096 x 4096  |                         64MB |                192MB |
+|  8192 x 8192  |                        256MB |                768MB |
+| 16384 x 16384 |                       1024MB |               3072MB |
+
+
+During the lifetime of a node's process, dozens - sometimes hundreds - of datasets may be created, altered, and discarded. This is one of the reasons why Gaea requires large amounts of memory when processing.
+
+![Allocated Memory readout in the Status Bar](/.data/assets/image-(47).png)
+
+Gaea's Status Bar shows the currently allocated memory in the bottom right corner of the screen. This updates every 5 seconds. However, it only counts the allocated cache - the amount used in between for temporary usage - so should only be considered an estimate.
+
+## Working with Large Builds
+
+### Excessive Nodes
+
+![Memory consumption increases 4X when you double the resolution.](/.data/assets/memory_chart.png)
+
+The fewer nodes you use, the better. The higher number of nodes makes your graph more complex and slower to process. Also, each node takes up a certain amount of space. While Gaea tries to free up as much space as possible once a node is processed, it's not always possible to economize.
+
+:::warning
+In all these examples, we are assuming that the node has a **single output port**. If it has multiple outputs, then the size of the node is increased. 
+
+For example, at 4096 x 4096, **Ridge, Adjust,** or **Shaper** would be`64MB,`while **Erosion2** would be`256MB`because it has 4 output ports.
+:::
+
+For a typical 8K terrain graph, if you use 20 nodes, you would have a cache size of 5-8GB. There would be some additional overhead for management and other processes. 16GB RAM would be the bare minimum amount that could handle this in theory. However, we recommend using 32GB to reduce the chances of paging (hard disk being used as RAM when memory runs out).
+
+### Large Resolutions
+
+![Cache size requirements increase quadratically with resolution.](/.data/assets/memory_chart2.png)
+
+While 16K may not seem like much on the surface, the sheer processing power required for a relatively complex scene can overwhelm a computer. Using the table above, we can easily calculate that 20 nodes at 16K would require 20GB-30GB of memory for actual cache and up to 96GB of memory for the overall processing and management of the build.
+
+This is why we recommend a minimum of 64GB RAM for processing 16K builds, increasing to 128GB whenever possible.
+
+While Gaea would recycle memory in between, there would still be some large spikes. 
+
+### Exporting Optimized Meshes
+
+When exporting meshes, you can expect very large file sizes at higher resolutions. As terrain meshes use an equidistant grid system, it creates 1 vertex per pixel. So your 2048 x 2048 terrain will have 2048 (+1) x 2048 (+1) vertices. That's 4 million vertices!!
+
+![](/.data/assets/sophia-1.webp)
+
+You can choose to export `Optimized` meshes when using the Mesher node. Our proprietary algorithms can help you reduce the polygon count based on the complexity of the terrain. This will budget more polygons where there are complex details and fewer polygons for flatter areas. This can lead to up to 60% reduction in polygon count in typical scenarios.
+
+An additional way to reduce mesh size is to export a high resolution displacement map and a low resolution mesh. You can use the displacement map to add the additional details that would "cost" too much in polygons.
+
+## How to Conserve Memory
+
+* Break your project into multiple files - for example, terrain shape creation in one project and color production in another.
+* [Baking Nodes](/using/using-gaea/baking-nodes/index.html){data-link-icon='fire'} allows you to offload large portions of data from active memory to disk.
+* Try to use fewer nodes when possible. Use Modifiers instead of Nodes to reduce overhead.
+
+
+
+
+
+
+// from dimensions-and-scale / dimensions-and-scale.md
+---
+title: Dimensions and Scale
+uid: dimensions-and-scale
+order: 04
+---
+
+# Dimensions and Scale
+
+### What is a pixel worth?
+
+In Gaea, terrain is represented using a heightfield, which is essentially a grid of pixels where each pixel’s value (ranging from 0 to 1) corresponds to a specific elevation point on the terrain. This system allows Gaea to model the terrain’s slopes and elevations with high precision.
+
+### Scale Philosophy
+
+Gaea uses a vertical ratio to maintain scale. This is because we describe the world in meters (e.g., `5000m x 5000m x 2500m`) to retain a consistent scale, but we use pixels in specific sizes (e.g., `4096px x 4096px`) to store our data (as needed by CG applications) which is a finite and arbitrary unit which can't map to pixels. In addition, each pixel's value is stored as a high-precision decimal value (`0.005893f`) which is also an arbitrary, but ratio-based, unit.
+
+Therefore, we use a simple formula to create and retain the height of the terrain: 
+
+$$
+\text{Compression Ratio} = \frac{\text{Height}}{\text{Scale}} = \frac{2500}{5000} = 0.5
+$$
+
+
+
+![The default Gaea world is 5000m wide and 2500m tall, creating a perfect 0.5 ratio.](/.data/assets/scale--5000x2600.webp)
+
+### Terrain Size and Height
+
+**1. Size (Width and Sprawl)**
+
+* **Size Specification**: In Gaea, you can specify the physical dimensions of the terrain, often referred to as the width or sprawl, in meters. This dimension determines the horizontal extent of the terrain.
+* **Impact on Design**: Setting the size helps to define the scale of the landscape, affecting how terrain features like hills and valleys are spread across the terrain map.
+
+**2. Height**
+
+* **Height Values**: The heights within the heightfield are stored as values between 0 and 1. These values are scaled to represent the actual height range of your terrain in meters.
+* **Example**: A height value of 0.5 in a terrain with a maximum elevation of 100 meters represents an elevation of 50 meters.
+
+### Understanding Vertical Compression Ratio
+
+**Vertical Compression Ratio = Height / Scale**
+
+* **Height**: This is the maximum elevation difference in your terrain, from the lowest point (often represented as 0 in the heightfield) to the highest point (represented as 1).
+* **Scale**: This refers to the specified horizontal dimensions of the terrain.
+
+### **Purpose of the Compression Ratio**
+
+* The vertical Compression Ratio helps maintain a realistic representation of vertical and horizontal scales. It ensures that the terrain’s vertical scale (elevation) is proportionate to its horizontal scale (width/sprawl).
+* **Interpreting the Ratio**: A higher Compression Ratio indicates that the terrain features are more vertically exaggerated relative to their horizontal spread. Conversely, a lower ratio means the terrain is relatively flatter or more stretched out horizontally.
+
+## Practical Example
+
+Suppose you are creating a mountainous landscape:
+
+* **Horizontal Size (Width/Sprawl)**: 2000 meters
+* **Maximum Elevation (Height)**: 500 meters
+
+The vertical compression ratio would be calculated as:
+
+$$
+\text{Compression Ratio} = \frac{\text{Height}}{\text{Scale}} = \frac{500}{2000} = 0.25
+$$
+
+This ratio tells us that for every 4 meters you move horizontally, there is a potential elevation change of 1 meter. This relatively low ratio indicates a gentle slope across the terrain.
+
+### Importing a Mesh or Heightfield Object in your 3D App
+
+**Scenario:** You have a terrain mesh exported from Gaea where the maximum height is set to a specific value and the horizontal dimensions are defined. You want to ensure the mesh retains realistic proportions when imported into a 3D CG application.
+
+**Steps:**
+
+1. **Import the Terrain Mesh**
+   * Open your 3D CG application and import the mesh file (typically in formats like OBJ, FBX, or another application-specific format) that you exported from Gaea.
+2. **Calculate the Vertical Compression Ratio**
+   * Given **Height** (maximum vertical extent) and **Scale** (horizontal dimensions), compute the ratio. For example, if **Height** = 500 meters and **Scale** = 2000 meters, the ratio is (0.25).
+3. **Adjust the Scale in Your 3D Application**
+   * Select the imported mesh in your application.
+   * Access the scaling tool or transformation properties.
+   * Set the scale along the vertical axis (often Z-axis) to the calculated Compression Ratio (e.g., 0.25), making sure the terrain's vertical scale aligns with its real-world dimensions.
+   * Keep the horizontal scales (X and Y axes) at their default (usually 1.0) to maintain the original width and sprawl.
+4. **Apply the Scale**
+   * Apply or confirm the scaling transformation. This step may vary by software; it typically involves confirming the scale adjustment through a transformation apply, freeze, or reset scale function.
+5. **Verify and Adjust if Necessary**
+   * Use tools available in your 3D application to check the terrain dimensions. This might include measuring tools or viewing properties that confirm the object's scale relative to the scene.
+   * Adjust further if the visual scale does not seem realistic or consistent with the intended design.
+
+By adhering to these steps, the imported terrain mesh will reflect accurate proportions and the visualization will maintain the intended topographical features and realism, regardless of the 3D CG software used.
+
+### Tips for Users
+
+* **Adjusting the Ratio**: You can manipulate the look and feel of your terrain by adjusting either the height or the sprawl. Increasing the height while keeping the sprawl constant will make the terrain steeper.
+* **Visual Impact**: Use the Compression Ratio to guide the realism of your terrain. A ratio that closely matches real-world landscapes will yield more realistic results. A higher or lower ratio can be used to stylize the terrain according to specific artistic goals.
+
+## Conclusion
+
+Understanding and utilizing the vertical Compression Ratio in Gaea allows you to create terrains that are visually balanced and scaled appropriately for the intended application. By controlling the height and size parameters, you can effectively shape the overall character of your digital landscape.
+
+// from file-formats / file-formats.md
+---
+title: File Formats
+uid: file-formats
+order: 01
+---
+
+# File Formats
+
+Gaea supports all modern (and some legacy) file formats for both flat files and meshes.
+
+## For Import
+
+### **Bitmap Formats**
+
+<table><thead><tr><th width="280">Format</th><th data-type="checkbox">32-bit</th><th data-type="checkbox">16-bit</th><th data-type="checkbox">8-bit</th></tr></thead><tbody><tr><td>OpenEXR</td><td>true</td><td>false</td><td>false</td></tr><tr><td>TIFF</td><td>true</td><td>true</td><td>true</td></tr><tr><td>PNG (64 / 16 / 8)</td><td>true</td><td>true</td><td>true</td></tr><tr><td>RAW (Float / Half / UShort)</td><td>true</td><td>true</td><td>false</td></tr><tr><td>JPG</td><td>false</td><td>false</td><td>false</td></tr><tr><td>Gaea RAW</td><td>true</td><td>false</td><td>false</td></tr></tbody></table>
+
+:::info
+Raw can be saved as .raw, .r16, and .r32 as required as different applications use different combinations of format and extensions.
+:::
+
+### 3D Formats
+
+* Wavefront OBJ (.obj)
+* Autodesk Filmbox (.fbx)
+* Collada (.dae)
+* WebGL (.glTF/.glb)
+* Point Cloud (.xyz)
+
+## **For Import**
+
+Gaea supports the following formats for importing data:
+
+* .exr
+* .tif/.tiff
+* .webp/.jpeg
+* .webp
+* .svg
+* .psd
+* .hdr
+* .pfm
+* .r32
+* .raw
+* .bmp
+
+:::info
+Gaea can also import 3D objects with the Object node.
+:::
+
+
+
+## Gaea's Project Formats <a href="#gaea-27s-project-formats" id="gaea-27s-project-formats"></a>
+
+Gaea saves files in the formats mentioned below.
+
+### **.terrain**
+
+Gaea terrain projects are saved as a `.terrain` file. All Gaea editions can read this format.
+
+See @#advanced-automation for manipulating this file format.
+
+
+
+## Precision <a href="#precision" id="precision"></a>
+
+Gaea stores and processes its heightfields in 32-bit floating points, which is compatible with all professional CGI applications.
+
+### **32-bit**
+
+For practical purposes, exporting as either OpenEXR or TIFF will give you the best results and maximum compatibility with other applications. If you are using a custom pipeline, using R32 or PFM formats may be of more use. See the section below for those formats.
+
+:::info
+If you are saving output from Gaea to bring back to Gaea either in the same or different file, we recommend using the `.r32` or `.graw` formats for maximum fidelity and efficiency.
+:::
+
+### **16-bit**
+
+While displacement/heightfield information requires 32-bit precision for accuracy; color maps, masks, and other secondary data which may have fewer levels of complexity can make use of 16-bit formats, such as PNG. This can help save on disk space as larger worlds will require a lot of storage space. Storing in 16-bit also helps performance.
+
+In fact, if your terrain does not contain many smooth details, you can even export your main displacement as 16-bit.
+
+Game engines, such as Unity, can only import RAW 16-bit (ushort) format terrains.
+
+### **8-bit**
+
+In some cases, for example with black and white masks, you may not need a high level of precision at all. You can use 8-bit PNG or TIFF output which can increase performance and save disk space.
+
+**Custom Workflows Precision**
+
+If you are using Gaea in a custom workflow, such as automation, you may require the data to be as simple and efficiently readable as possible.
+
+### Technical Details
+
+32-bit float (.r32) and 16-bit ushort (.raw) are the simplest formats you can use. It is a simple binary array of `float` (IEEE 754) or `unsigned short`. The file has no header and can be read directly as a binary stream. The files will use Little Endian.
+
+The size of the heightfield should be square root of the byte length divided by the size of the type (4 bytes for `float`, 2 bytes for `ushort`).
+
+The `.r32` format will store values between `0.0f` and `1.0f`. While the `.raw` format will store values between `0` and `65535`.
+
+Both formats are recommended for heightfield (grayscale) data only.
+
+// from technical-information / index.md
+---
+icon: head-side-gear
+title: Technical Information
+uid: technical-information
+---
+
+# Technical Information
+
+
+// from learning-and-predictive-system / learning-and-predictive-system.md
+---
+title: Learning and Predictive System
+uid: learning-and-predictive-system
+order: 02
+---
+
+# Learning and Predictive System
+
+Gaea incorporates a sophisticated, fully-local Learning and Predictive System designed to streamline your workflow by intelligently suggesting nodes based on your historical usage patterns. This system is a key part of Gaea’s Convenience Features and the Toolbox, which aim to significantly reduce graph creation times.
+
+### How It Works
+
+#### **Node Usage Tracking**
+
+* **Pattern Learning**: As you work, Gaea monitors the nodes you create and the connections you establish between them. It analyzes these patterns to understand your workflow preferences and tendencies.
+
+#### **Predictive Suggestions**
+
+* **Node Recommendations**: Based on your usage patterns, Gaea predicts the nodes you are likely to use next and prioritizes these in the node suggestion list.
+* **Optional Use**: These predictive suggestions are presented separately from the main Create menu, to ensure they are unobtrusive and can be easily ignored if you prefer the standard node selection methods.
+
+### Predicting Connections
+
+* **Quick Create Menu**: When you initiate a node connection, the Quick Create menu appears, offering suggestions for next nodes based on your previous actions.
+* **Example Use Case**: If you frequently connect an Autolevel node to the Flow output of an Erosion node, then starting a connection from the Flow port and dragging it into an empty space on the Graph surface will trigger the Quick Create menu, with Autolevel prominently suggested.
+* **Visual Aids**: Suggestions are color-coded to facilitate quick identification of node types, enhancing usability and speed.
+
+### Toolbox
+
+* In the Toolbox, frequently used nodes are highlighted in a brighter color for faster recognition.
+
+### Tip for Enhanced Productivity
+
+Regular interaction with the Predictive System not only speeds up your current projects, but also continuously refines the system's accuracy. As Gaea learns more about your preferences and habits, the suggestions become increasingly tailored to your specific workflow, potentially cutting graph creation times in half.
+
+### Conclusion
+
+Gaea's Learning and Predictive System is a powerful tool for enhancing efficiency in terrain creation. By learning from your usage patterns and intelligently predicting your next steps, the system allows for a more streamlined and personalized design experience.
+
+***
+
+## Privacy and Security
+
+* **Local Processing**: All pattern recognition and data processing occur on your local machine. No personal data or usage information is sent to external servers or stored online.
+* **Control and Transparency**: Users have complete control over this feature. You can reset or disable the predictive suggestions at any time, to assure that your workflow preferences are respected. All data related to predictive learning and node suggestion tracking is kept in plain text JSON files in the Gaea Settings folder.
+
+// from paths-and-storage / paths-and-storage.md
+---
+title: Paths and Storage
+uid: paths-and-storage
+order: 03
+---
+
+# Paths and Storage
+
+## Data
+
+Gaea stores all application data, excluding Projects, in a centralized directory known as the Data folder.
+
+| Install Type       | Flag           | Typical Path                                      | Data Folder Path                                        |
+| ------------------ | -------------- | ------------------------------------------------- | ------------------------------------------------------- |
+| Non-Admin | `/CURRENTUSER` | `C:\Users\<user>\AppData\Local\Programs\Gaea 2.0` | `C:\Users\<user>\AppData\Local\Programs\Gaea 2.0\Data`  |
+| Admin     | `/ALLUSERS`    | `C:\Program Files\QuadSpinner\Gaea 2.0`           | `C:\Users\<user>\AppData\Roaming\QuadSpinner\Gaea\2.0\` |
+
+
+### **Standard Installation**
+
+If Gaea is installed in the Program Files directory, the Data folder is located at:
+
+`<UserFolder>\AppData\Roaming\QuadSpinner\Gaea\2.0`
+
+### **Portable Installation**
+
+The default location for a Portable Installation is:
+
+`C:\Users\<username>\AppData\Local\Programs\Gaea 2.0`
+
+If Gaea is installed in a portable location, the Data folder is located adjacent to the Gaea.exe file.
+
+For example, if your install location is: `D:\Programs\CG\Gaea\` then the Data folder will be stored at `D:\Programs\CG\Gaea\Data\` 
+
+:::note
+Whenever a new installation of Gaea is created, upon first run, Gaea will check if the install folder is writeable (ie, does it require Admin Privileges). If it is writeable it will create the `Data` folder there, otherwise it will create it in `AppData`.
+:::
+
+
+
+## Your Gaea Files
+
+These paths can be changed in the [Options](/ui/interface/options/index.html){data-link-icon=''} > [Paths](/ui/interface/options/paths.html){data-link-icon=''}.
+
+### Documents
+
+This is where all Presets, Screenshots, and other Gaea documents are stored.
+
+Default location: `C:\Users\<you>\Documents\Gaea\`
+
+### Projects
+
+The is where all Gaea project files are stored by default.
+
+Default location: `C:\Users\<you>\Documents\Gaea\Projects\`
+
+### Builds
+
+This is where output files from builds are stored. It is denoted by the token `<Builds>` in [#build](/using-gaea/build-and-export/build-options/#build) Build Destination.
+
+Default location: `C:\Users\<you>\Documents\Gaea\Builds\`
+
+
+// from advanced-methods / advanced-methods.md
+---
+icon: 4
+title: Advanced Methods
+uid: advanced-methods
+order: 04
+---
+
+# Advanced Methods
+
+## Moving Terrains with Transform
+
+![youtube.com](https://www.youtube.com/watch?v=DqGoNGHs0a8)
+
+## Layering Sediments
+
+![youtube.com](https://www.youtube.com/watch?v=N5zWk6qdU3U)
+
+// from elaborate-terrains / elaborate-terrains.md
+---
+icon: 3
+title: Elaborate Terrains
+uid: elaborate-terrains
+order: 03
+section: true
+---
+
+# Elaborate Terrains
+
+## Large River Valley
+
+![youtube.com](https://www.youtube.com/watch?v=Od8n_QCoHDg)
+
+
+
+## Alien Craterfield
+
+![youtube.com](https://www.youtube.com/watch?v=mavy7rFpY9s)
+
+// from exporting-elements / exporting-elements.md
+---
+icon: 5
+title: Exporting Elements
+uid: exporting-elements
+order: 05
+---
+
+# Exporting Elements
+
+![](/.data/assets/beyond-3.webp)
+
+Gaea is primarily an asset generator designed for creating and exporting terrains to be used in other applications. It supports all major heightfield and mesh formats, ensuring compatibility with various platforms and rendering tools.
+
+## Key Export Elements
+
+Below is a list of common elements you may wish to export, and the nodes you can use to get those elements.
+
+![](/.data/assets/beyond-2.webp)
+
+### The Terrain
+
+<div align="left">![](/.data/assets/r2.webp) ![](/.data/assets/sophia-2_-_ACDSee_Photo_Studio_Home_2024_06-03-23-PM.webp)</div>
+
+This can either be a 32-bit displacement map or a high precision mesh. It is the most essential part of your project. Game engines would use 16-bit displacement maps.
+
+### Color Map
+
+<div align="left">![](/.data/assets/r4.webp)</div>
+
+If you have constructed a color map that will be the Diffuse/Albedo map for your terrain, then this will be exported as either an 8-bit or 16-bit bitmap.
+
+### Masks
+
+<div align="left">![](/.data/assets/Data_Flow.webp) ![](/.data/assets/Data_RockMap.webp)</div>
+
+Various aspects of the terrains such as the slope (Slope Map) or flow of sediments (Flow Map) can be exported as bitmaps to control map blending, masking, and driving scatter instances. These are usually exported as 8-bit bitmaps.
+
+### Point Clouds
+
+![](/.data/assets/growth-simulation.webp)
+
+For data usage such as Tree or Rock scattering, or similar functions, you can also export masks as XYZ point clouds.
+
+### Normals and Splat
+
+<div align="left">![](/.data/assets/r6.webp)</div>
+
+Gaea has dedicated nodes for Normal Map and Splat Map creation which are exported as 8-bit bitmaps. The Normal Map node can extract Detail Normals as well.
+
+### Ambient Occlusion and Rock Occlusion
+
+<div>![](/.data/assets/Data_Occlusion.webp) ![](/.data/assets/r11.webp)</div>
+
+Gaea can export both Ambient Occlusion (AO node) and "rock occlusion" (Occlusion node). Rock Occlusion with specific masking or using the Shaper adjustment can often be used for Reflectance in PBR scenarios.
+
+### Rendered / Baked Lighting
+
+<div align="left">![](/.data/assets/r1.webp)</div>
+
+The Light node lets you use high-precision rendering to create a fully realized render that you can use for direct application on your object.
+
+In this example below, the mountain uses a baked lightmap on an unlit shader in Blender to dramatically reduce rendering time.
+
+![](/.data/assets/blender.webp)
+
+
+
+See [Build and Export](/using/using-gaea/build-and-export/index.html){data-link-icon='box-taped'} for more specifics.
+
+
+
+
+// from importing-meshes / importing-meshes.md
+---
+icon: 7
+title: Importing Meshes
+uid: importing-meshes
+order: 07
+---
+
+# Importing Meshes
+
+Gaea 2.1 introduces the Object node which can be used to import 3D models and rasterize them into heightfields. You can fully control the Scale, Rotation, and Movement of the imported mesh. The only limitation is that the 3D mesh is projected and rasterized into a 2.5D heightfield.
+
+![](/.data/assets/image-(58).webp)
+
+Once imported, the model will behave exactly like any other Gaea generated terrain, and you can do anything with it. 
+
+![](/.data/assets/image-(57).webp)
+
+The Object node requires the original mesh to be present during build. If you are not going to have access to the mesh later, you may wish to [Bake the Object node](/using/using-gaea/baking-nodes/index.html).
+
+:::info
+Please note that Gaea is a heightfield-first software. While we do our best to support as many kinds of meshes and objects, sometimes very large or very complex objects may not import that well. You may wish to use applications such as MeshLabs to simplify or recontainerize your mesh
+:::
+
+
+// from basics / index.md
+---
+title: Basics
+uid: basics
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from introduction / introduction.md
+---
+icon: 1
+title: Introduction
+uid: introduction
+order: 01
+---
+
+# Introduction
+
+![youtube.com](https://www.youtube.com/watch?v=vBJwHzb9L6I)
+
+Follow this brief tutorial to familiarize yourself with basic terrain design and texturing.
+
+// from large-mountains-effects / large-mountains-effects.md
+---
+icon: 2
+title: Large Mountains, Effects
+uid: large-mountains-effects
+order: 02
+---
+
+# Large Mountains, Effects
+
+## Making a High Mountain
+
+![youtube.com](https://www.youtube.com/watch?v=lal2cS8Fjvo)
+
+
+
+## Masking Effects
+
+![youtube.com](https://www.youtube.com/watch?v=hAmKE37swH0)
+
+// from masks / masks.md
+---
+icon: 6
+title: Masks
+uid: masks
+order: 06
+---
+
+# Masks
+
+Masks are powerful tools used to control and refine where and how various effects and modifications are applied to a terrain. By using masks, you can selectively influence areas of your terrain, enhancing the precision and complexity of your designs.
+
+## What is a Mask?
+
+A mask in Gaea is essentially a grayscale image where white areas represent sections of the terrain that are fully affected by an operation, black areas are unaffected, and gray areas receive partial effects based on the grayscale value.
+
+## Creating and Applying Masks
+
+### **Creating a Mask**
+
+![](/.data/assets/image-(60).webp)
+
+* Masks can be generated using any node that outputs a grayscale image. Common sources for masks include specific terrain features such as slopes, altitudes, or noise patterns.
+* Use nodes like `Height`, `Slope`, or custom `Noise` patterns to generate masks based on terrain characteristics.
+
+### **Direct Masking**
+
+![](/.data/assets/image-(61).webp)
+
+* To apply a mask, connect the mask output from one node into the mask input of another node. This setup allows the second node’s effects to be limited to the areas defined by the mask.
+* For example, if you want to apply erosion only to the upper regions of a mountain, use a height-based mask that isolates those areas.
+
+### **Post-Masking**
+
+![](/.data/assets/image-(62).png)
+
+* Gaea 2 introduces the new `Mask` node which allows you to mask the node/effect **after** it has been created. You can connect the Mask node after an effect has been applied. For example, in a `Mountain > Erosion > Mask` scenario, the Mask will automatically use the applied mask between Mountain and Erosion.
+* If you have multiple nodes that create the "effect" you wish to mask, just connect the second port of the Mask node to the desired "before" node. For example, in `Mountain > Erosion > Sandstone > Thermal2 > Mask`, you would connect the second input to Mountain.
+* This is very useful because when a node is masked directly, a change to the mask will force a rebuild of the entire node. A Mask node, however, adds masking as a post-process and is extremely fast.
+
+:::info
+There is no difference in results between the Mask port on a node and the Mask node. It is highly recommended that Mask **node** be used when possible as it will make your builds faster, and adapt your workflow to the modern specifications recommended by Gaea 2.0.
+:::
+
+## Practical Uses of Masks
+
+### **Selective Modification**
+
+Selectively apply specific effects like erosion, deposition, or texturing across the terrain. Masks will ensure that these effects enhance the detail and realism of the terrain without overwhelming the entire landscape.
+
+### **Layering Effects**
+
+By using multiple masks with different nodes, you can layer effects on a terrain. This layering can create complex interactions between different processes, such as having erosion only affect the areas not covered by vegetation.
+
+### **Controlling Intensity**
+
+Adjust the intensity of effects in different areas by modifying the grayscale values of the mask. Lighter areas can have more pronounced effects, whereas darker areas will have less or none.
+
+### Tips for Effective Masking
+
+* **Soft Edges**: When possible, use masks with soft edges to create natural transitions between affected and unaffected areas.
+* **Test and Refine**: Experiment with different mask configurations and monitor the results. Adjust the mask's properties to fine-tune how it influences the terrain.
+* **Combine Masks**: For complex terrains, consider combining multiple masks using blending nodes. This approach can give you more control over how different effects interact on the terrain.
+
+// from important / index.md
+---
+title: Important
+uid: important
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from memory-requirements / memory-requirements.md
+---
+title: Memory Requirements
+uid: memory-requirements
+order: 10
+---
+
+# Memory Requirements
+
+Knowing how much memory Gaea will need for your project helps avoid performance issues and crashes. Here’s a simplified approach to understanding memory requirements in Gaea.
+
+![Your memory fills up by at least 4X as you double your resolution. This chart only shows final storage in RAM. It does not include the additional RAM required during processing to calculate each node.](/.data/assets/memory_chart.png)
+
+**Understanding Memory Needs**
+
+* **Memory Demand**: The more complex and detailed your terrain, the more memory it requires.
+* **Factors Affecting Memory**: Resolution, node complexity, and layering all influence memory usage.
+
+### **Resolution**
+
+* **Impact of Resolution**: Higher resolutions consume more memory. A 2048x2048 resolution needs significantly less memory than an 8192x8192 resolution.
+* **General Rule**: Doubling the resolution quadruples memory usage. For example, going from 1024x1024 to 2048x2048 will increase memory requirements fourfold.
+
+### **Heightfields**
+
+* **Heightfield**: The 3D representation of your terrain in Gaea.
+* **Memory Calculation**:
+  * Memory required = Resolution (width x height) x Bit Depth
+  * Gaea uses 32-bit heightfields for high precision.
+* **Example**: For a 1024x1024 resolution with 32-bit depth:
+  * 1024 x 1024 x 4 bytes = \~4 MB
+
+### **Layering Nodes**
+
+* **Nodes**: Each node in Gaea represents an action or modification. More nodes mean more memory.
+* **Layering**: Stacking multiple layers adds depth but also increases memory requirements.
+
+### **System Memory and Performance**
+
+* **Plan for Headroom**: Keep at least 25-30% of your system’s RAM free to ensure smooth performance.
+* **Memory-Saving Tips**: Use lower resolutions and simpler nodes while experimenting. Gradually increase complexity as your project nears completion.
+
+### **Exporting**
+
+* **Export Size**: The larger the resolution at export, the more memory you’ll need during that process.
+* **Preview Exports**: Try lower resolutions for test exports to verify results before the final high-resolution export.
+
+***
+
+## **Quick Tips for Beginners**
+
+* **Start with Lower Resolutions**: Build your terrain in 1024x1024 and increase resolution as needed.
+* **Simplify Your Node Graph**: Fewer nodes use less memory. Start with basic nodes and add detail as you go.
+* **Keep Track of Available Memory**: Regularly check your system’s memory usage to prevent overloads.
+
+***
+
+With these tips, you’ll be better prepared to manage memory efficiently in Gaea and ensure smoother workflows and stable project builds.
+
+// from non-determinism / non-determinism.md
+---
+title: Non-Determinism
+uid: non-determinism
+order: 08
+---
+
+# Non-Determinism
+
+In procedural terrain generation like in Gaea, non-deterministic output at different resolutions occurs because the way the algorithms process the terrain changes depending on the resolution. Here’s how it works:
+
+1. **Grid Size**: Terrain is made up of a grid of points (pixels). At higher resolutions, the grid has more points, allowing for sharper details. At lower resolutions, there are fewer points, so details get simplified or smoothed out.
+2. **Random Effects**: Randomized elements, like noise or rock shapes, look more detailed at high resolutions because there’s more space to show complexity. At lower resolutions, these effects are less detailed because the grid is smaller.
+3. **Scaling**: When you increase or decrease the resolution, the terrain data is resized. This resizing process can slightly alter details, like slopes or edges, depending on how the data is adjusted.
+4. **Algorithm Sensitivity**: Certain tools, like erosion, rely on the grid size for their calculations. Higher resolutions allow for finer details, while lower resolutions result in broader, less detailed changes.
+
+Because of these factors, the terrain can look different at varying resolutions, even with the same settings.
+
+![Determinism across 512, 1024, 2048, and 4096 resolutions.](/.data/assets/rX.webp)
+
+Gaea's algorithms are optimized to reduce the difference across resolutions as much as possible, especially with Erosion_2, however depending on your terrain setup it may be unavoidable in some situations.
+
+Some nodes like the classic Erosion provide a separate option to force Determinism by sacrificing processing speed.
+
+### Forcing Determinism
+
+One of the best ways to ensure a specific shape, especially at an early stage in your graph, is by [Baking Nodes](/using/using-gaea/baking-nodes/index.html){data-link-icon='fire'} at a resolution you like. Gaea will then upscale them at whatever final resolution you use and further low-yield Erosion or other effects can help compensate for the upscaling artifacts.
+
+// from scale-and-resolution / scale-and-resolution.md
+---
+title: Scale and Resolution
+uid: scale-and-resolution
+order: 09
+---
+
+# Scale and Resolution
+
+## Gaea Dimensions and Scale: A Beginner's Guide
+
+Understanding dimensions and scale in Gaea is essential for building terrains that look realistic and match your project needs. Here’s a simplified overview of key concepts:
+
+:::info
+For detailed technical information, see [Dimensions and Scale](/using/advanced-topics/technical-information/dimensions-and-scale.html){data-link-icon=''} in [Broken link](broken-reference).
+:::
+
+### **World Space**
+
+* **What It Is**: World Space refers to the area where your terrain exists.
+* **Units of Measurement**: Gaea typically uses meters (m) to represent distances in World Space. One unit in Gaea equals one meter.
+* **Why It Matters**: Knowing the scale of your terrain helps in creating realistic landscapes, especially when integrating into game engines or 3D software.
+
+### **Resolution**
+
+* **What It Is**: Resolution is the level of detail in your terrain, measured in pixels.
+* **Impact of Resolution**: Higher resolutions provide more detail but require more memory and processing power.
+* **Common Resolutions**: Gaea commonly supports resolutions from 512x512 to 8192x8192 pixels. For beginners, start with 1024x1024 or 2048x2048 pixels.
+
+### **Scale and Extents**
+
+* **Scale**: Determines the overall size of the terrain in meters. For example, if your terrain is 1000x1000 units in Gaea, it represents a 1-kilometer square area.
+* **Extent**: The physical area covered by your terrain. A larger extent means a larger physical space, which affects how objects appear in relation to each other.
+
+### **Height Range**
+
+* **What It Is**: Defines the lowest and highest points of the terrain.
+* **Setting Heights**: When setting terrain height, think about the kind of landscape you’re creating. For example, 100 meters might work for hills, while 3000 meters suit mountain ranges.
+* **Height Precision**: Gaea allows precise control of height, which is critical for realistic landscapes.
+
+### **Real-World Scaling**
+
+* **Importance**: When integrating terrains into real-world projects, make sure the scaling matches. This is especially vital for game environments and simulations where a terrain needs to match character or object sizes accurately.
+
+### **Vertical Scale**
+
+* **Definition**: Adjusts the height of the terrain relative to its width and depth.
+* **Why Adjust**: To create exaggerated terrains, like dramatic mountain ranges, adjust the vertical scale for added effect.
+
+***
+
+## **Quick Tips for Beginners:**
+
+* **Start Small**: Begin with lower resolutions to understand the basics without taxing your computer.
+* **Check Compatibility**: Ensure your terrain scale matches the requirements of your target game engine or software.
+* **Experiment with Extents and Scale**: These two settings can drastically change how your terrain feels. Try different combinations to get comfortable.
+
+***
+
+This guide provides the fundamentals to begin working with dimensions and scale in Gaea. As you gain experience, exploring these settings further will enhance your terrain design skills.
+
+
+
+For detailed technical information see [Dimensions and Scale](/using/advanced-topics/technical-information/dimensions-and-scale.html){data-link-icon=''} in [Broken link](broken-reference).
+
+// from benchmark-devices / benchmark-devices.md
+---
+title: Benchmark Devices
+uid: benchmark-devices
+order: 03
+---
+
+# Benchmark Devices
+
+![](/.data/assets/Gaea_Diagnostics_11-07-49-AM.png)
+
+## Hardware Benchmark
+
+The Hardware Benchmark runs tests to determine the general speed of your CPU, integrated GPU, dedicated GPU, and any other compatible devices that Gaea can utilize for processing.
+
+You can choose between the normal, High Accuracy, or Very High Accuracy test. Higher accuracy tests require longer testing time.
+
+![](/.data/assets/Benchmark_Results_11-08-17-AM.png)
+
+The score signifies the performance factor of each device. A higher score indicates better performance.
+
+### Compute Options
+
+The benchmark data is also available via the [Compute Tab](/ui/interface/options/compute.html) tab. 
+
+![](/.data/assets/Options_11-09-14-AM.png)
+
+// from cpu-only-mode / cpu-only-mode.md
+---
+title: CPU Only Mode
+uid: cpu-only-mode
+order: 02
+---
+
+# CPU Only Mode
+
+In some cases, Gaea may have trouble using your GPU device. Often this is because it is an [unsupported older device](/install/install-gaea/index.html) or may have outdated drivers.
+
+To enable CPU only mode, start Gaea Diagnostics from the Start Menu. Select "Run Gaea with CPU only" and click "Start".
+
+![](/.data/assets/Gaea_Diagnostics_11-00-52-AM.png)
+
+This will start Gaea in CPU only mode. It will now remain in CPU only mode, including when running the Gaea Build CLI.
+
+To re-enable multiple device usage, you can go to the [Compute](/ui/interface/options/compute.html){data-link-icon=''} tab in [Options](/ui/interface/options/index.html){data-link-icon=''}.
+
+![](/.data/assets/Options_11-01-25-AM.png)
+// from diagnostics-package / diagnostics-package.md
+---
+title: Diagnostics Package
+uid: diagnostics-package
+order: 01
+---
+
+# Diagnostics Package
+
+Gaea Diagnostics (Watson) can create a Diagnostics Package that can help our tech support technicians and developers examine crashes or incorrect behavior in Gaea.
+
+![](/.data/assets/Watson_-_Gaea_Diagnostics_06-12-24-PM.png)
+
+It takes a few moments for the diagnosis to be completed. The resulting diagnostics package will be a `.zip` file that will be placed on your desktop for easy access. In most cases, you will want to email it to our [Tech Support team](https://quadspinner.com/support/).
+
+![](/.data/assets/Watson_-_Gaea_Diagnostics_06-12-51-PM.png)
+
+You can expand this dialog to examine the contents of the package. Almost all data is plain text and can be examined. 
+
+### Send Online
+
+To enable quick and hassle-free sharing, you can choose to send the Watson Log directly to our secure server. In return, you will be given a Log Receipt code such as `0A7-20241113`. If you are contacting our Tech Support team, you can give this code to them along with a description of your issue and we will retrieve it from our server and diagnose the issue.
+
+![](/.data/assets/Gaea_Watson_06-13-21-PM.png)
+
+:::info
+While it is risky to share a Diagnostics Log zip file publicly, like in Discord or Forums, it is completely safe to share the Log Receipt code. The code can only be used by authorized QuadSpinner team members to access your log.
+
+While we do our best to ensure only non-secure technical information is stored in the logs, a clever person with malicious intent may still be able to glean some information from your logs. The Log Receipt ensures private access to your data.
+:::
+
+### Send Manually
+
+If you prefer to send the data directly, you can simply attach the `.zip` file generated by Watson to an email or [Support form](https://quadspinner.com/support).
+
+## Package Contents
+
+The diagnostics package contains: 
+
+* Execution logs for Gaea, these are detailed chronological entries of events inside the program - especially technical readouts and error traces.
+* Copy of your settings so we can recreate the same environment during our tests.
+* Hardware information such as CPU type, model number, GPU type, driver version for various hardware, firmware version, and so on.
+* Integrity check of the installation to make sure all files are intact and if an update may have failed to update specific files.
+
+### Privacy
+
+We do not collect any personal information in these logs. Our intention for the logs is solely to determine where the software or hardware may be malfunctioning and provide a solution to you.
+
+In this age of extreme data collection and abuse of the user's trust, we try our best to treat your information with respect. If any personally identifiable or protected information is ever collected - for example, your username may be your name or a filename may describe an NDA protected project name - we disregard such information and do not use it any form.
+
+All diagnostics logs are collected directly by QuadSpinner support - these are not outsourced personnel but our own dedicated in-house team. These logs are then shared with our development team. Most of the time they are discarded immediately. Other times they may be kept for a longer period in [accordance with our privacy policy](https://quadspinner.com/legal/) so that we can refer to it in solving larger problems in the software.
+
+### Editable Logs
+
+Lastly, as we ask you trust us with your data, we trust you with ours. The zip file is editable. If you find any information you prefer not to share, you may remove it before submitting the package. 
+
+![](/.data/assets/Package_Viewer_06-13-06-PM.png)
+
+However, please note that removing any data critical to Gaea's operation may hinder our ability to provide effective technical support so please be sure you know what information your are removing.
+
+
+// from diagnostics / index.md
+---
+icon: stethoscope
+title: Diagnostics
+uid: diagnostics
+---
+
+# Diagnostics (Watson)
+
+The Gaea Diagnostics application, nicknamed WATSON, is crucial for diagnosing problems, helping tech support find solutions for you, and for benchmarking your hardware.
+
+![](/.data/assets/Watson_-_Gaea_Diagnostics_06-12-24-PM.png)
+
+Use Watson to generate a [Diagnostics Package](/using/troubleshooting/diagnostics-watson/diagnostics-package.html){data-link-icon=''}.
+
+// from common-errors / common-errors.md
+---
+title: Common Errors
+uid: common-errors
+order: 01
+---
+
+# Common Errors
+
+
+
+## Recovering a File
+
+### Repair File
+
+Use the `File > Repair` menu item to have Gaea attempt to re-containerize the terrain file and remove any extraneous information or bad data remnants that may prevent a file from being opened or used properly.
+
+## Baking
+
+### Baked Data does not load
+
+Usually, this happens when one or more baked cache files are corrupted or were not baked properly. Deleting the cache and re-baking the nodes should fix the issue.
+
+// from terrains / index.md
+---
+icon: circle-xmark
+title: Terrains
+uid: terrains
+---
+
+# Terrains
+
+
+// from terrain-quality / terrain-quality.md
+---
+title: Terrain Quality
+uid: terrain-quality
+order: 02
+---
+
+# Terrain Quality
+
+## Map
+
+### There are banding/stairstep patterns in my displacement
+
+Open the exported heightfield in a good quality image viewer and check whether it is 32-bit or not. If the file has been exported as 16-bit for any reason, then you may find some stairsteps or quantization banding.
+
+Export the file as 32-bit to remove the banding and avoid lossy formats such as PNG.
+
+## Mesh
+
+### Terrain looks faceted
+
+The Normals were not imported properly in your mesh. You can use a Smooth / Autosmooth modifier in your app to fix it, or re-import the mesh and ensure Normals are imported. 
+
+### Terrain is inside out
+
+Your Normals are inverted. This can happen during import in some importers with certain settings. You can fix this with a Normals or Flip Normals modifier in your app. Or re-import and make sure the right settings are set in the Importer.
+
+### Mesh size is tiny/huge
+
+If you have exported the mesh at `Normalized` scale in Gaea, then it will be exported as a `0..1` scale mesh. Use the `Multiplier` or scaling available in your OBJ importer if available to multiply it by the size you want. Alternatively, you can import it and them scale it up to the size defined in your Gaea world.
+
+You can also export the terrain in Meters or Kilometers and then import it at that scale.
+
+// from baking-nodes / index.md
+---
+icon: fire
+title: Baking Nodes
+uid: baking-nodes
+---
+
+# Baking Nodes
+
+The Baking feature in Gaea is a powerful tool designed to enhance workflow efficiency by locking nodes at a high resolution, enabling high-quality previews without compromising performance on the rest of the graph.
+
+![Baking Menu](/.data/assets/Gaea_STYygINX4O.png)
+
+## Baking Features
+
+**Bake Selected.** Use this option to bake the selected node(s) in the graph. Baking a node saves its current state at a chosen resolution, which allows for faster loading and prevents the node from being recalculated unless explicitly unbaked or modified.
+
+**Bake Required Nodes.** This option is used to bake nodes involved in tiling operations, ensuring seamless tiling across different segments of a terrain without needing to reprocess the entire terrain each time adjustments are made.
+
+**Force Load Baked Cache.** Forces the application to reload the baked cache, useful for when changes in the system or project environment may prevent the automatic loading of cached data.
+
+**Unbake Selected.** Reverses the baking process for selected nodes, making them editable again. This is necessary when adjustments are required on previously baked nodes.
+
+**Unbake All.** Removes the baked status from all nodes in the project, allowing for full graph reprocessing and editing.
+
+**Resolution Settings.** Choose the resolution at which the nodes will be baked. Available options are: **1024 x 1024, 2048 x 2048** (default), **4096 x 4096, 8192 x 8192**
+
+Selecting a higher resolution for baking is beneficial when working on detailed sections of the terrain, as it provides clearer and more accurate previews.
+
+### Cache Previews to Disk
+
+The Cache Previews to Disk feature, previously known as "Session Cache," allows Gaea to save processed node previews to your hard drive instead of keeping them in memory. 
+
+This feature is instrumental in optimizing the performance of Gaea by minimizing memory usage, which is especially beneficial in projects with extensive graphs or high-resolution data.
+
+* **When Closing File:** Saves all previews and in-memory build results to disk when a file is closed. Next time when the file is opened, 
+* **When Idle**: Automatically bakes the graph when the system is not actively being used, and a node has not been modified for a few minutes. It optimizes time by utilizing idle periods for processing. This also helps speed up caching when the file is closed (if that option is set).
+
+Either option can be set independently.
+
+:::info
+The option "When Closing File" is saved with the file and persisted, however, "When Idle" is a session-specific option and will be reset next time you start Gaea.
+:::
+
+**Delete Cache.** This command lets you delete any existing cache.
+
+### Cache Management
+
+## **Benefits**
+
+* **Reduced Memory Usage**: By storing preview images on the disk, Gaea frees up RAM, which can significantly enhance system responsiveness, especially in memory-constrained environments.
+* **Faster Reload Times**: When reopening a project, Gaea can quickly load the cached previews from the disk, speeding up the initialization process as the terrain does not need to be reprocessed from scratch.
+* **Linchpin Nodes:** Gaea utilizes [Linchpin Nodes](/using/using-gaea/baking-nodes/linchpin-nodes.html){data-link-icon=''} to reduce the amount of data that needs to be loaded into memory for any work session or build.
+
+This feature is designed to strike a balance between performance and resource utilization, making Gaea more efficient, especially when dealing with complex and resource-intensive projects.
+
+## Practical Usage
+
+* **Optimizing Performance**: Baking nodes that are complex or are considered finalized can drastically reduce the computational load during subsequent previews and builds.
+* **Managing Detailed Work**: For terrains that require high levels of detail, baking at higher resolutions can provide the necessary clarity to assess and refine work without slowing down the overall project workflow.
+
+
+// from linchpin-nodes / linchpin-nodes.md
+---
+title: Linchpin Nodes
+uid: linchpin-nodes
+order: 01
+---
+
+# Linchpin Nodes
+
+## Reducing Memory Consumption
+
+An added bonus of baking is that it can free up a lot of RAM. When loading a baked cache, Gaea will only load "linchpin nodes". A linchpin node is a baked node that is connected to unbaked nodes. Ancestors of linchpin nodes are not loaded, thereby saving processing power and memory.
+
+When dealing with complex graphs made of dozens, sometimes hundreds of nodes, linchpins can dramatically reduce memory consumption and increase the overall speed of the terrain by offloading data that is not going to be modified.
+
+## Example
+
+![](/.data/assets/linchpin_example.png)
+
+Consider this graph. It shows how Gaea unloads 4 of the 5 baked nodes by identifying only the last baked node as a "linchpin". The memory/cache consumption is reduced by \~66%.
+
+### Explanation
+
+The Perlin node is connected to 3 different nodes, which eventually come to a single Combine node. The Erosion node here relies only on the Combine, so keeping the data for the previous 4 nodes is unnecessary. 
+
+When you bake the Combine node, Gaea will detect that it is the linchpin and unload the previous nodes. Non-crucial nodes such as these are depicted with a dotted border to show that they are not loaded.
+
+:::info
+Baked nodes that are not loaded can be loaded through the property editor. However, if you wish to modify anything, it is recommended to unbake and bake portions of the graph.
+:::
+
+
+// from exporting-nodes / exporting-nodes.md
+---
+title: Exporting Nodes
+uid: exporting-nodes
+order: 01
+---
+
+# Exporting Nodes
+
+Gaea is primarily an asset generator designed for creating and exporting terrains to be used in other applications. It supports all major heightfield and mesh formats, ensuring compatibility with various platforms and rendering tools.
+
+![Output/Export Nodes in the Gaea Toolbox](/.data/assets/image-(42).png)
+
+## **Output Nodes**
+
+<div>![Mesher node properties](/.data/assets/image-(41).png) ![Export node for Bitmap export](/.data/assets/image-(3).png)</div>
+
+* **Node Types**: Utilize specific output nodes, such as Mesher for mesh generation, Point Cloud for simple XY point cloud export, or platform-specific nodes like [Unreal](/reference/nodes/output/unreal.html){data-link-icon=''}-node and [Unity](/reference/nodes/output/unity.html){data-link-icon=''}-node, to export your assets.
+* **Customization**: Depending on the output node type, you can adjust settings such as map sizes for Unreal, file naming conventions, or mesh topology and vertex count for Mesher.
+* **Naming Conventions**: The name of the exported file matches the name of the Output node, streamlining asset management and integration into other projects.
+
+### **Mark for Export**
+
+![Data View's BUILD Tab showing nodes marked for export.](/.data/assets/image-(39).png)
+
+* **Shortcut Key**: Right-click a node and select `Mark for Export` or press `F3` on any node to mark it for export. This flexibility allows you to export multiple node outputs simultaneously.
+* **Build Tab and Settings**: The Build tab and Build Settings window display all nodes marked for export. Here, you can change the output format, select which ports to export, and rename the export files.
+* **File Naming**: Exported files are named in the format `<Name or NodeName>_<PortName>.<extension>`, ensuring clarity and order in file management.
+
+:::info
+You can disable `_Out` suffix for the Primary Port in [Build Options](/ui/interface/build-options/index.html){data-link-icon=''}.
+:::
+
+### Export Settings and Options
+
+![](/.data/assets/image-(4).png)
+
+**File name.** The node name is used by default for the export filename, however, you change the name in the Export Items list in the Build Tab in [Data Editor](/ui/interface/data-editor/index.html){data-link-icon=''} or in the [Build Options](/ui/interface/build-options/index.html){data-link-icon=''}.
+
+**File Formats.** Gaea supports a wide range of file formats, allowing you to choose the best option based on the requirements of the receiving application or your workflow needs.
+
+**Port Selection.** From the export menu, you can select specific ports (such as Enabled, Out, Flow, Wear, or Deposits) to export, providing control over the data being exported and optimizing resource usage.
+
+**Additional Options**
+
+* **Primary Only.** Export only the primary or most important outputs of a node, reducing the number of files and focusing on key data.
+* **Mark All/None.** Quickly select or deselect all available export options for efficiency and convenience.
+
+:::info
+For automation scenarios where you wish to explicitly name the output file, see [Managing Input and Output](/developers/automation/building-bridges/managing-input-and-output.html){data-link-icon=''} in [Automation](/developers/automation/index.html){data-link-icon='square-terminal'}
+:::
+
+
+
+
+// from build-and-export / index.md
+---
+icon: box-taped
+title: Build and Export
+uid: build-and-export
+---
+
+# Build and Export
+
+For guidance specific to certain software such as [Blender](/guides/use-in/apps/blender.html){data-link-icon=''} or [Unreal](/guides/use-in/engines/unreal.html){data-link-icon=''} see [Apps](/guides/use-in/apps/index.html){data-link-icon=''}.
+// from mesh-exports / mesh-exports.md
+---
+title: Mesh Exports
+uid: mesh-exports
+---
+
+# Mesh Exports
+
+## Exporting Meshes
+
+Gaea uses the Mesher node to translate a heightfield/terrain into a structured mesh. It supports common major formats such as OBJ, FBX, DAE, and glTF.
+
+You can choose between Triangles (Tris), Quads, and Adaptive Tris using our proprietary _Sophia_ algorithm.
+
+![](/.data/assets/image-(2).png)
+
+## Displaced Grid Export
+
+The standard, tried-and-trusted method of terrain meshes is a simple fixed-density mesh that is displaced on the vertical axis. It provides a uniform topology, using either triangles or quads.
+
+The resulting mesh is the same as if you were to create a plane of a fixed number of segments and displace it vertically. It provides a strong, predictable topology that is very easy to manipulate.
+
+The only downside of this method is that it uses the same number of polygons for any part of the terrain regardless of the complexity required. For example, a flat, featureless area would use the same number of polygons as a highly detailed peak.
+
+![Grid vs Adaptive Tris](/.data/assets/sophia-1.webp)
+
+## Adaptive Tris (Sophia)
+
+This method creates optimized terrains using our "Sophia" algorithm. It creates clean triangles and subdivides them as needed based on the complexity of the underlying portion of the terrain. The main advantage of this method is that it can produce higher quality meshes while reducing the amount of polygons used. In most cases, Optimized meshes produce higher quality results than their Grid counterparts, and use fewer polygons.
+
+![](/.data/assets/sophia.webp)
+
+Depending on the shape of your terrain, you can reduce polygon count by 20-40%. In extreme cases with large flat areas, it can decrease by up to 80%!
+
+Optimized meshes, however, cannot provide quad output and are limited to triangles because of the intrinsic nature of the algorithm.
+
+![](/.data/assets/sophia-3.webp)
+
+You can see that the mesh retains high-fidelity when imported into DCC application such as Blender with proper lighting.
+
+![](/.data/assets/blender.png)
+
+### Comparison with Standard Tris Export
+
+| Feature                                     |       Grid       |          Optimized          |
+| ------------------------------------------- | :--------------: | :-------------------------: |
+| Precise polygon count                       |        Yes       |         Approximate         |
+| Tris support                                |        Yes       |             Yes             |
+| Quad support                                |        Yes       |              No             |
+| Quality-per-polygon                         |      Average     |             High            |
+| Increase quality where needed               |        No        |             Yes             |
+| Reduce polygons for flat or smooth surfaces |        No        |             Yes             |
+| Topological Structure                       | Equidistant Grid | Organized Irregular Network |
+| Automatic LOD generation                    |        Yes       |              No             |
+| Suited for sculpting                        |        Yes       |              No             |
+
+## Additional Settings
+
+### **Object Scale**
+
+Meshes can be exported in 2 scales: Normalized and Metric.
+
+* Normalized scale enforces a strict `0..1` range for values along all 3 axes.
+* Metric scale enforces `1 unit = 1 meter`, so a typical Gaea terrain of `5000` meters would be `0..5000` units.
+
+The main advantage of Normalized meshes is that many modern OBJ importers let you apply a scale multiplier, which you can use to scale the terrain very easily. You just need to use the width of the terrain in meters (see [Scale and Resolution](/using/getting-started/important/scale-and-resolution.html){data-link-icon=''}). For example, the default terrain is 5000 meters wide. You can use `5000` as a multiplier when importing, and your terrain should scale to 5000 meters.
+
+### **Texture Mapping**
+
+By default, all mesh exports include texture coordinates. In special circumstances, you can turn off texture coordinate generation.
+
+Regardless of the method used to export the mesh, it will use simple planar mapping. In most 3D applications, you can apply simple planar mapping of the exact size of the object to get full UV mapping.
+
+:::warning
+You can turn off texture coordinates and your file size can become up to 30% smaller. This can be quite helpful when you're working with very dense meshes. Once imported in your DCC application, you can apply planar UV mapping to the object.
+
+This is especially useful with OBJ since it is plain-text format, most parsers can take quite a while to import.  Without texture coordinates, this process can be 33% faster.
+:::
+
+### **Normal Mapping**
+
+Mesher will generate normals in your mesh. However, if you want to generate global-space normals, you can use the Normals node, or for tangent-space normals you can use the MeshWarp node as shown in [Tangent-Space Normals and Warped Maps](/guides/scenarios/meshes/tangent-space-normals-and-warped-maps.html){data-link-icon=''}.
+
+:::info
+Some DCC Apps will fail to import meshes if Normals are not available. You can alternatively use auto-smoothing/auto-normals at 30-degrees for a generic import.
+:::
+
+
+// from tiled-builds / tiled-builds.md
+---
+title: Tiled Builds
+uid: tiled-builds
+order: 01
+---
+
+# Tiled Builds
+
+
+// from simulation-colorerosion / colorerosion.md
+---
+title: ColorErosion
+uid: simulation-colorerosion
+order: 05
+---
+
+# ColorErosion
+
+## Sedimentary Flows with ColorErosion
+
+![](/.data/assets/gaea-ui2x.webp)
+
+ColorErosion takes the principles of sedimentary erosion and applies it to color maps.
+
+Gaea's Erosion algorithm creates powerful, realistic sedimentary flows and the ColorErosion nodes takes advantage of that to create realistic color flows that mimic minerals and other sediments as they shift and flow across a landscape.
+
+ColorErosion is extremely powerful, yet very simple to use. In most cases, the default settings are more than enough to get the precise effect. It requires only two inputs, the color map you wish to erode and your terrain heightfield.
+
+### Using Directly
+
+You can apply a SatMap directly a terrain, with or without a TextureBase or Texturizer node in between, and simply apply ColorErosion to get decent layered sedimentary flows.
+
+![](/.data/assets/erosion_2.webp)
+
+### Using with Mixer
+
+The Mixer node is very helpful in preparing the color map before applying ColorErosion as you can change different color strata before eroding, and choose exactly how and where they may flow.
+
+![](/.data/assets/mixer2.webp)
+
+### Sophisticated Use
+
+You can also create more subtle, sophisticated texturing with ColorErosion as shown in the `Complex Scene - Debris` example that is included with Gaea.
+
+![](/.data/assets/debris.jpg)
+
+### Understanding How Color Moves
+
+ColorErosion can be a very creative component whether you are creating something realistic or stylistic. The core understanding required is how color placed high up flows with existing sediment flows.
+
+![](/.data/assets/colorErosion2.webp)
+
+Experiment with various color layers, whether you use SatMap's Bias slider or various layers with Mixer, and see how the erosion reacts.
+
+![](/.data/assets/colorize2.webp)
+
+// from crafting-masks / crafting-masks.md
+---
+title: Crafting Masks
+uid: crafting-masks
+order: 01
+---
+
+# Crafting Masks
+
+## What is Color Lookup/CLUT?
+
+All color texture generation in Gaea relies on applying color ramps (gradients) through a black-and-white mask.
+
+A simple example: the darkest part of the gradient maps to the lowest terrain elevations, while the brightest part maps to the highest. Intermediate grayscale values distribute the gradient proportionally. This is known as a CLUT or Color Look Up Table.
+
+![](/.data/assets/CLUTer.png)
+
+In this example, the gradient from a CLUTer node is mapped directly to the heightfield.
+
+![](/.data/assets/mountain_autolevelled.png)
+
+Now, let's a try more detailed, colorful gradient.
+
+![](/.data/assets/Gaea_-_Untitled_04-39-07-AM.webp)
+
+You can see how it distributes across the terrain.
+
+![](/.data/assets/Gaea_-_Untitled_04-38-54-AM.webp)
+
+Now, if you use the same CLUT map but feed it a FlowMap instead of the terrain height, the texture will follow the flow lines defined by the FlowMap, producing a very different result.
+
+![](/.data/assets/Gaea_-_Untitled_04-39-18-AM.webp)
+
+
+
+### Colorization with Texture Nodes
+
+Gaea provides nodes such as [TextureBase](/reference/nodes/derive/texturebase.html) and [Texturizer](/reference/nodes/derive/texturizer.html) provide complex colorization masks based on the terrain's inherent features.
+
+![](/.data/assets/Gaea_-_Untitled_04-44-21-AM.webp)
+
+![](/.data/assets/Gaea_-_Untitled_04-47-53-AM.webp)
+
+Which can create more complex textures such as this:
+
+![](/.data/assets/Gaea_-_Untitled_04-50-15-AM.webp)
+
+
+
+## Data Maps
+
+Data Maps are specialized masks for selecting key terrain properties like slope, angle, and curvature, or for generating complex simulation-based data such as water flow and soil deposits. Additional maps like TextureBase produce pseudo-random texture masks for quick, easy color texturing.
+
+Unlike the classic approach that combines basic data (slope, angle) with noise (e.g., Perlin) or depends heavily on erosion flow outputs—often requiring careful seed tuning—Data Maps introduce controlled randomness derived from systematic terrain analysis. This produces more natural, believable color maps.
+
+### Aspect Maps
+
+Aspect Data Maps mask out aspects of the terrain such as Height, Slope, Curvature, Angle, Peaks, etc.
+
+![](/.data/assets/datamaps.webp)
+
+### Generative Maps
+
+Generate Data Maps run various algorithms on the terrain to generate information such as Flows, Soil, Rock Occlusion, etc.
+
+![](/.data/assets/datamaps2.webp)
+
+Data Maps can be combined together or with Texture nodes to create complex texture masks for colorization.
+
+
+// from colorizing-and-textures / index.md
+---
+icon: palette
+title: Colorizing and Textures
+uid: colorizing-and-textures
+---
+
+# Colorizing and Textures
+
+
+// from layering-textures / layering-textures.md
+---
+title: Layering Textures
+uid: layering-textures
+order: 04
+---
+
+# Layering Textures
+
+## Using Mixer
+
+The Mixer node provides an easy interface to add and manage multiple color layers and combine them with various masks. Mixer supports built-in Height and Slope masks, as well as custom masks provided by other nodes.
+
+![](/.data/assets/mixer2.webp)
+
+By default, Mixer exposes three inputs. You can use the Add Input command in the Property Window toolbar, or drop a connection on the Mixer node and select "Add new port". You can add up to 15 layers.
+
+![](/.data/assets/image-(56).png)
+
+You can change the order of layer-blending by simply dragging and changing the order of layers.
+
+Each layer is assigned an ID color which is used to drive the "Simplified View" which is useful for checking how layers blend.
+
+![](/.data/assets/mixer_real.webp) ![](/.data/assets/mixer_flat.webp)
+
+When "Preserve Masks" is enabled, when in-built masks are such as Height or Slope are used, those masks are also exported as Out ports so you can use them for further masking later in the graph.
+
+If you are coming from Gaea 1.0, or other older terrain software, the Mixer node is essentially an automation of Combine, Height/Slope, and Mask with additional convenience features.
+
+
+// from synthesizing-colors / synthesizing-colors.md
+---
+title: Synthesizing Colors
+uid: synthesizing-colors
+order: 03
+---
+
+# Synthesizing Colors
+
+Gaea's Synth node can take static color information and turn it into an editable gradient or color ramp just like the CLUTer node.
+
+The process is quite simple:
+
+![](/.data/assets/synth_process.png)
+
+1. Connect a static color map such as a SatMap or a File node with a color input to a Synth node.
+   1. You will also need to provide a Height or Texture input, so you can apply the colors.
+2. Select the number of Samples (gradient stops) and other settings, and click `Synthesize Colors`.
+3. This will give you an editable gradient that you can edit.
+4. Optionally, you can also export the data as a JSON or CSV for use in external applications.
+
+:::warning
+Re-synthesizing will overwrite any modifications you make manually to the Gradient Editor.
+:::
+
+
+// from working-with-satmaps / working-with-satmaps.md
+---
+title: Working with SatMaps
+uid: working-with-satmaps
+order: 02
+---
+
+# Working with SatMaps
+
+Our library of over 1400 color maps, derived from real satellite data, helps you colorize your terrains quickly without sacrificing realism.
+
+![](/.data/assets/SatMap.png)
+
+This tech was originally pioneered by QuadSpinner for GeoGlyph in 2014, Gaea's latest iteration provides an extensive library covering all natural locations, giving you a vast playground for colorizing your terrains.
+
+
+
+![](/.data/assets/Gaea_-_Untitled_03-22-12-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-22-15-AM.webp)
+
+This TextureMap node is attached to a SatMap node. The SatMap is adapted to the mask as described in [Crafting Masks](/using/using-gaea/colorizing-and-textures/crafting-masks.html){data-link-icon=''}.
+
+## Editing SatMaps
+
+There a few ways to quickly tweak the SatMaps to better fit your needs.
+
+### Map Bias
+
+By moving the Bias slider, you can have the SatMap apply more towards the left (negative values) or right (positive values) of the selected Color Map.
+
+| <div>![](/.data/assets/Gaea_-_Untitled_03-23-29-AM.webp)</div> | <div>![](/.data/assets/Gaea_-_Untitled_03-23-39-AM.webp)</div> | <div>![](/.data/assets/Gaea_-_Untitled_03-23-51-AM.webp)</div> |
+| ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| <div>![](/.data/assets/satmap_bias_none.png)</div>            | <div>![](/.data/assets/satmap_bias_low.png)</div>             | <div>![](/.data/assets/satmap_bias_high.png)</div>            |
+
+### Map Clipping
+
+You can use the Clip slider to tell SatMaps to only use the selected segment of the entire color map.
+
+![](/.data/assets/Gaea_-_Untitled_03-23-01-AM.webp)
+
+![](/.data/assets/satmap_clipping.png)
+
+Here, we clip out most of the left half of the color map, and you can see how that changes the influence of the color map on the terrain.
+
+#### Roughness
+
+The Roughness setting scatters the pixels of the color map to add the desired level of chaos and distortion.
+
+![](/.data/assets/Gaea_-_Untitled_03-35-36-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-35-39-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-35-41-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-35-44-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-35-47-AM.webp)
+
+#### HSL
+
+The final tweaks come from Hue/Saturation/Luminosity editing.
+
+***
+
+SatMaps are one of the crucial aspects of colorizing your terrains. You can elevate your SatMaps by combining them with a Mixer as explained in [Layering Textures](/using/using-gaea/colorizing-and-textures/layering-textures.html){data-link-icon=''}.
+
+And finally, add [ColorErosion](/reference/nodes/colorize/colorerosion.html){data-link-icon=''} to add a new level of realism to your texture maps.
+
+// from crafting-erosion / erosion.md
+---
+title: Erosion
+uid: crafting-erosion
+order: 02
+---
+
+# Erosion
+
+![](/.data/assets/snow.webp)
+
+Erosion is the key simulation that helps you transform your terrain from a fractal noise or basic geometric shape (or even a complex shape) into a believable, realistic terrain.
+
+Gaea's simulations of natural processes are the cornerstone of creating rich, believable digital terrains.
+
+Creating simple erosion can give you great terrains, especially when powered by Erosion_2. However, you can take it several levels further. Creating multiple erosion passes and infusing different processes in between, lets you create very complex visuals.
+
+See [Understanding Erosion](/using/using-gaea/understanding-erosion/index.html){data-link-icon='cloud-showers'} and [Erosion_2](../understanding-erosion/erosion_2/).
+
+
+
+## **Erosion vs. Wizard**
+
+Gaea gives you 2 ways to use our hydraulic erosion simulation process: the Erosion node, which provides absolute control over every aspect, or the Wizard node which offers easier access to the major aspects. Both use the same simulation underneath, but provide different interfaces. Both have pros and cons.
+
+Erosion provides access to all the simulation controls, but it can take some time to find the sweet spot for many different settings. Wizard, on the other hand, offers fewer, easier choices and various "recipes" for creating different types of results, but it does not allow you to fine tune your results.
+
+If you need the erosion effect, but don't want to art direct every tiny aspect, then Wizard is the perfect node. Even for experts, it is a quick and simple way to add erosion in your graph.
+
+If you need precise control over different aspects of erosion and want to fine tune downcutting or deposits, then Erosion is the perfect node for your situation.
+
+Selective Processing is only available in Erosion. However, common uses of Selective Erosion, such as eroding just the top to create channels or rivers, are provided as `Phase 2` options in Wizard.
+
+| Feature                             | Erosion  | Wizard   |
+| ----------------------------------- | -------- | -------- |
+| Gaea's signature erosion simulation | Yes      | Yes      |
+| Control over the erosion            | Complete | Limited  |
+| Ease of Use                         | Limited  | Complete |
+| Selective Processing                | Yes      | No       |
+| Data Map Output                     | Yes      | Yes      |
+| Built-in multi-pass erosion         | No       | Yes      |
+
+We recommend using both to understand how they will benefit your personal process.
+
+
+// from crafting-the-surface / index.md
+---
+icon: hand-horns
+title: Crafting the Surface
+uid: crafting-the-surface
+---
+
+# Crafting the Surface
+
+
+// from noises-primitives-and-landscapes / noises-primitives-and-landscapes.md
+---
+title: Noises, Primitives, and Landscapes
+uid: noises-primitives-and-landscapes
+order: 01
+---
+
+# Noises, Primitives, and Landscapes
+
+Gaea provides three types of building blocks:
+
+* Basic Primitives: Noises, Constants, File Inputs, Shapes.
+* Geological Primitives: Standalone Mountains, Hills, Craters, etc.
+* Landscapes: Mountain Ranges, Fields, Ridge Lines, Rolling Hills, etc.
+
+## Building with Geological Primitives
+
+The Geological Primitives and Landscapes are designed to provide fairly rudimentary yet clearly defined geological shapes to help you quickly establish a terrain. While you have the ability to wrangle Noises and Gradients/Shapes into various terrain-like shapes, these primitives provide a more efficient and friendly way of crafting terrains.
+
+![](/.data/assets/Gaea_2.0_09-49-50-PM.webp)
+
+Landscapes help create the "ground", while the Primitives help create standalone features that can be placed on the ground, or sometimes be used by themselves to create free-standing assets.
+
+![](/.data/assets/Gaea_2.0_09-49-36-PM.webp)
+
+Both Landscapes and Primitives will have some level of natural processing built-in, such as Erosion, and will mostly have the option to turn it off as well. However, these are meant only as a starting point. You will need to add proper [Erosion](/reference/nodes/simulate/erosion.html){data-link-icon=''} and possibly other [Surface Nodes](/using/using-gaea/crafting-the-surface/surface-nodes.html){data-link-icon=''} to turn it into a more realistic environment.
+
+## Basic Primitives
+
+Basic Primitives, while being deceptively simple, are foundational components of Gaea. They provide low-level access to shape generation that can be used to create both precise shapes - whether geometric or naturalistic - or create randomness that can mimic nature.
+
+![](/.data/assets/Gaea_-_explain_erosion.terrain_10-45-41-PM-(1).webp)
+
+Advanced users will be able to craft complex outputs from these primitives.
+
+// from surface-nodes / surface-nodes.md
+---
+title: Surface Nodes
+uid: surface-nodes
+order: 03
+---
+
+# Surface Nodes
+
+## Surface Modification Tools
+
+Terrain design has been plagued with a core issue for decades: when you erode a terrain or apply a strong effect filter, the overall terrain shape is diminished (sometimes even completely destroyed).
+
+Gaea 2.0 introduces Surface Nodes, and as the name implies, they work on the surface level. They add and subtract shapes at the surface and avoid affecting the deeper structure of your shape.
+
+Surface Nodes come in a large variety - from rock formations to simple superficial effects - and boast powerful realism coupled with volume preservation.
+
+![](/.data/assets/rockformations.webp)
+
+### Volume Preservation
+
+Gaea's Surface tools separate the process of designing the overall terrain shape (or volume) and designing the superficial shapes on the surface.
+
+![](/.data/assets/volume.webp)
+
+This allows you to modify the surface without altering the overall shape, volume, or silhouette of the terrain - which is crucial when you already have the asset in your scene yet need to modify it.
+
+## Sandstone, Limestone, and Generic Layering
+
+Gaea takes terrain design towards new horizons by introducing key tools for sandstone, limestone, and generic rock layers that promote mechanical breakage as opposed to softer, sedimentary flow.
+
+![](/.data/assets/sandstonelayers.webp)
+
+**Stratify** is a high-level node that provides large scale stratification, tilt, and uplift. It can be used for larger shaping.
+
+**Sandstone** is a versatile node that works on both small and medium scale to add multi-level detail through multiple passes while also chipping the rock and excising large chunks as mechanical erosion. Sandstone can also create staggered stairstep patterns quite common in nature. This pseudo-self-similar repetition is the hallmark of such rock formations.
+
+![](/.data/assets/vertwall.webp)
+
+**FractalTerraces** provides a more low-level approach to stratification and tilting, giving you more primary control. This is useful when you want to achieve direct control over the erosion through a complex graph and don't want _Stratify_ or _Sandstone_ to introduce too many features into your terrain directly.
+
+Creating a complex rock formation such as the one pictured above is quite easy. You simply create a sequence of `Stratify > Sandstone > Stratify > Sandstone`, or even simply `Stratify > Sandstone > Sandstone`. Experiment with multiple passes for Sandstone and varying heights for each node.
+
+:::info
+If you want to add more breakup to your shapes, introduce Erosion or one of the Rock nodes before you apply stratification.
+:::
+
+## Rocky Nodes
+
+The Rocky family of nodes provides powerful rock "growth" on your existing terrain shape.
+
+**Outcrops** can help you turn any surface into a powerful, rugged, large-scale rock formation.
+
+![](/.data/assets/outcrops.webp)
+
+**Craggy** can help you turn any surface into a fragmented field of rocks.
+
+![](/.data/assets/craggy.webp)
+
+**Stones** helps add small, superficial stones to the surface. These are random, and not physically driven like [Debris](/reference/nodes/simulate/debris.html){data-link-icon=''}.
+
+![](/.data/assets/stones.webp)
+
+There are several other nodes in the Surface family that provide other functionality.
+
+
+
+
+// from transpose-shapes / transpose-shapes.md
+---
+title: Transpose Shapes
+uid: transpose-shapes
+order: 04
+---
+
+# Transpose Shapes
+
+The Transpose node can take the surface shapes of one terrain and transpose them onto another, while preserving the volume of the target terrain.
+
+You can create an terrain surface that you like, regardless of the shape it is built upon. Then create or bring in a terrain shape you like - an Unreal Engine drawn terrain, a ZBrush sculpted landscape, or even a full 3D model1. Then simply Tranpose the surface.
+
+![](/.data/assets/transpose.webp)
+
+
+// from importing-terrains-introduction / index.md
+---
+icon: box-open
+title: Importing Terrains
+uid: importing-terrains-introduction
+---
+
+# Importing Terrains
+
+
+// from accumulators / accumulators.md
+---
+title: Accumulators
+uid: accumulators
+order: 04
+---
+
+# Accumulators
+
+## Reducing Clutter with Accumulators
+
+One of the common ways a graph gets clutters with overlapping connections is when multiple Snow, Lake, or Debris nodes are used and their respective masks need to be combined for further use.
+
+The new Accumulator node is a special type of standalone Generator node that can collect all such masks for you without creating several connections.
+
+It works for Snow Mask, Snow Depth, Water Mask, Water Depth, Shore Mask, Debris Mask, Debris Color Index.
+
+![](/.data/assets/Accumulators1.png)
+
+In this example, there are 3 Debris nodes that require 2 ports from each node to be connected to two different Combine nodes, creating a spread of several connections. The normal output from Debris also goes into two other nodes creating more visual clutter that needs to be deciphered before you can see which connection belongs where.
+
+![](/.data/assets/Accumulators2.png)
+
+These connections, as well as the two Combine nodes, can be replaced by two Accumulator nodes. One set to Debris Mask, the other to Debris Color.
+
+![](/.data/assets/image-(22).png)
+
+:::warning
+The Accumulator will only add nodes that have been built. To ensure all required nodes are built, connect the last node you will use for masking with the Accumulator output to the Accumulator Input. This will not affect the Accumulator but will ensure that all appropriate nodes are built.
+:::
+
+
+// from data-view / data-view.md
+---
+title: Data View
+uid: data-view
+order: 05
+---
+
+# Data View
+
+The Data View is a set of tabs in the right side of the Graph, providing fast access to key information in your project.
+
+![](/.data/assets/Gaea_-_Cartography_-_3D_Map.terrain_10-43-28-PM.png)
+
+## Terrain Tab
+
+The Terrain tab consists of a Node Tree showing a simple hierarchy of Tabs > Groups > Nodes. Otherwise, nodes within these containers (Tabs or Groups) are shown the order they are laid out on the graph (left to right).
+
+### Locked and Underlay Nodes
+
+The green and pink icons at the top represent the current Locked Preview and Underlay nodes. You can hover over them to see which node it is and click the icon to navigate to that particular node.
+
+### Filtering Nodes
+
+The filter dropdown lets you isolate nodes by different types or behaviors. When filtered, other nodes are hidden from the tree and visually muted in the graph.
+
+By Type: You can filter by type such as Generators, Simulations, Colorizors, etc. to see nodes of only that type in the tree.
+
+**Marked for Export:** Shows nodes that will export data.
+
+**Required Baking:** Shows all nodes that need to be baked before a Hybrid or Tiled build.
+
+**Nodes with Error:** Shows nodes that may be faulting or failing validation. This is useful in tracking down terrains that won't build or fail during build.
+
+**Heavy Nodes:** Shows nodes that take the most time to build in your graph, based on a median calculation.
+
+**Orphan Nodes:** Shows nodes that are not connected or do not contribute to any final output. Removing orphans lets you save resources and reduce clutter.
+
+## Build Tab
+
+The Build Tab shows you nodes that are marked for export. Here you can refine the export settings such as the filename, which ports to export, and what format to use.
+
+
+
+## Statistics Tab
+
+## Variables Tab
+
+// from managing-graphs / index.md
+---
+icon: person-to-portal
+title: Managing Graphs
+uid: managing-graphs
+---
+
+# Managing Graphs
+
+##
+
+// from navigating-complex-graphs / navigating-complex-graphs.md
+---
+title: Navigating Complex Graphs
+uid: navigating-complex-graphs
+order: 06
+---
+
+# Navigating Complex Graphs
+
+
+
+// from portals-introduction / portals-and-chokepoints.md
+---
+title: Portals and Chokepoints
+uid: portals-introduction
+order: 02
+---
+
+# Portals and Chokepoints
+
+
+
+For basic information, see [Portals and Chokepoints](/ui/graph/organization/portals-and-chokepoints.html){data-link-icon='person-to-portal'}
+
+// from using-modifiers / using-modifiers.md
+---
+title: Using Modifiers
+uid: using-modifiers
+order: 01
+---
+
+# Using Modifiers
+
+![](/.data/assets/image-(26).png)
+
+## Modifiers
+
+The Modifier Stack provides quick access to common adjustments, masks, and modifications that you may wish to apply to a node. Traditionally, node-based software would require you to create an additional node for each such adjustment - often resulting in complicated graphs that are difficult to manage.
+
+For basic information about Modifiers, see [Modifier Stack](/ui/interface/property-editor/modifier-stack.html){data-link-icon=''}
+
+### Fast and Less Overhead
+
+Modifiers work as a post-process so updating them does not require re-building the node. And unlike nodes, Modifiers don't create excess overhead. The memory cost of 6 modifiers is the same as 1 modifier, however the cost of 6 nodes of the same types would create 6 times the overhead.
+
+## Common Scenarios
+
+### Adjusting the Height
+
+If a terrain (or mask) is not the exact height values you need, you can use the Height Remap modifier to adjust both the lower and upper extent of your terrain. Bringing up the bottom "raises" the terrain from the bottom, while "lowering" the top makes the terrain shorter.
+
+![](/.data/assets/image-(65).png)
+
+Inversely, bringing the top beyond 1.0 makes your terrain taller than the original range.
+
+### Making Stronger Masks
+
+By simply applying Autolevel, Equalize, or Shaper (positive value) you can take a weak mask and make it stronger.
+
+![](/.data/assets/image-(63).png){.w-50} ![](/.data/assets/image-(64).png){.w-50}
+
+### Dropping the Terrain
+
+The "Drop" modifier removes any "empty" space under the terrain, forcing it to drop to the "floor".
+
+![](/.data/assets/image-(68).png)
+
+<div>![Normal Perlin](/.data/assets/Gaea_-_Untitled_02-55-12-AM.webp) ![Dropped Perlin](/.data/assets/Gaea_-_Untitled_02-55-15-AM.webp)</div>
+
+### Bulking Up or Bulking Down
+
+Using Shaper, you can bulk up or bulk down a terrain. It can apply to masks as well. For example, taking Flow Map output and making it stronger by adding Shaper.
+
+![Original terrain](/.data/assets/Gaea_-_Untitled_02-52-42-AM.webp)
+
+![Shaper at +50](/.data/assets/Gaea_-_Untitled_02-52-58-AM.webp) 
+
+![Shaper at -50](...)
+
+### Restrict Effect to Slope or Height
+
+You can easily restrict the effect of a node to a height or slope range by adding a "Mask by Height" or "Mask by Slope" modifier on the effect node.
+
+![](/.data/assets/image-(67).webp)
+
+![](/.data/assets/image-(66).png){.w-50}
+
+:::info
+You can attach a DataExtractor node to any node that uses a Mask by Height/Slope modifier, and get the exact mask generated as a separate output.
+:::
+
+### Using Min and Max
+
+The Min and Max modifiers are one of the most powerful tools in Gaea.
+
+### Breaking up a Mask
+
+Sometimes you want a bit of crunchy detail to breakup the edges of your mask or introduce some uneven variations. Add a Warp modifier with the appropriate Size and Strength to change the mask.
+
+![](/.data/assets/image-(69).png){.w-50}
+
+![](/.data/assets/threshold1.webp) 
+
+![](/.data/assets/threshold2.webp)
+
+:::info
+Try mixing with Min or Max modifiers for broader options.
+:::
+
+### Getting the Difference
+
+
+// from visualizing-scale / visualizing-scale.md
+---
+title: Visualizing Scale
+uid: visualizing-scale
+order: 03
+---
+
+# Visualizing Scale
+
+## Using Overlays
+
+Gaea 2.1 ships with multiple pre-defined overlays that you can use for showing relative scale on your terrain. These are rendered on top of your terrain, so you can visualize it easily without modifying anything on your graph. You can change the overlay and its opacity in the Sky Editor.
+
+![](/.data/assets/image-(15).webp)
+
+
+
+A great way to visualize specific scale is to create your own overlay with precise shapes and sizes.
+
+### Creating a custom Overlay
+
+You can load a custom Overlay in the Viewport Sky Editor.
+
+To craft precise shapes in an overlay, you can use the following simple formula.
+
+If your overlay is 2048 x 2048, then 2048 = 2500m (or whatever your [Terrain Width](/advanced-topics/technical-information/dimensions-and-scale.md#terrain-size-and-height) is set in Gaea). Then `1m = 2048 / 2500m` (ie, `0.8192`). For 25m, you use `0.8192 x 25 = 20.48` so create a square in your design application that is 20.48 x 20.48 px in size and place it where you wish. 50m would be 40.96, and so on.
+
+![](/.data/assets/image-(16).png)
+
+Save your square image as a PNG to maintain crisp edges. Then load it as a custom overlay in Gaea.
+
+Now you can visualize any specific area, shape, perimeter, etc. on your terrain.
+
+![](/.data/assets/image-(17).webp)
+
+### Creating Overlays in Gaea
+
+Use an app like [Lunacy](https://icons8.com/lunacy?ref=quadspinner), Figma, Illustrator, etc. to create a custom overlay. However, if you want to skip using external apps, you can easily create a simple overlay in Gaea.
+
+![](/.data/assets/image-(18).png)
+
+Create a Constant setup like explained above. Then add a Curvature node, and set it to Vertical mode with 100% Falloff. This will create an outline for your cube.
+
+![](/.data/assets/image-(19).png)
+
+You can optionally invert the output as Gaea's overlay is multiplied on top of your existing render. Once your visual is ready, right-click the 2D Viewport and select `Save to File` to save the file which you can use a custom overlay.
+
+You can create more elaborate overlays by using Grid, Halftone, Tint, and various other nodes.
+
+![](/.data/assets/image-(20).png)
+
+## Creating a 3D Scale Dummy
+
+This technique will show you how to create a simple cube/block of a specific scale that you can add to your terrain preview.
+
+First we create a `Constant` node and set its value to 1.0. Then connect it to a `Transform` node.
+
+![](/.data/assets/image-(6).png)
+
+In the Transform node, right-click Scale and enter a metric value such as `25m`. This will scale the Constant into a perfect 25 x 25m block. Additionally, you can add a `Height Remap` modifier and scale the block vertically to any specific size in the same way.
+
+<div>![](/.data/assets/image-(7).png) ![](/.data/assets/image-(9).png)</div>
+
+Now you have this scale block.
+
+![](/.data/assets/image-(8).png)
+
+If you want to view it on your terrain, create a Combine node to Add this block on top of your terrain.
+
+![](/.data/assets/image-(11).png)
+
+If you want to toggle this block and use it frequently in various places across your graph, you can use the Route utility node. Feed your main terrain into the `In` port and the Combined block output to the `Alternate` port.
+
+![Setup a Route node to conveniently hide the block when not needed.](/.data/assets/image-(12).png)
+
+You can use the Route node's toggle to quickly show and hide the version with the Block.
+
+![Route toggled on.](/.data/assets/image-(13).webp) ![Route toggled off.](/.data/assets/image-(14).webp)
+
+:::info
+Make the Transform's output into a [Portals and Chokepoints](/ui/graph/organization/portals-and-chokepoints.html){data-link-icon='person-to-portal'} and reuse it wherever needed in the graph without cluttering the workspace.
+:::
+
+### Creating a Custom Reference Object
+
+If you want to use a custom mesh instead of a block, you can use the Object node to import a mesh and scale it instead of using the Constant node.
+
+![](/.data/assets/image-(21).webp)
+
+
+// from simulation-debris / debris.md
+---
+title: Debris
+uid: simulation-debris
+order: 02
+---
+
+# Debris
+
+Simulate mechanical erosion with thousands (even millions) of individual, physical rocks and other geological debris using our physics-engine powered Debris simulation.
+
+![](/.data/assets/Gaea_-_TalusNode003.terrain_11-54-53-PM.webp)
+
+![](/.data/assets/Gaea_-_TalusNode003.terrain_11-57-19-PM.webp)
+
+You can keep them in the heightmap, or export a point-cloud for later use. You can even color each rock individually.
+
+![](/.data/assets/debrismask.webp)
+
+### Emission Source
+
+The Debris simulation lets you control the emission source so you can place the debris as needed. In this image, the flow map of the terrain is provided as the Emitter Source, so the debris form only within those lanes and the take advantage of the inherent physics of the flows to create scree rivers.
+
+[Erosion2](/reference/nodes/simulate/erosion2.html){data-link-icon=''} Wear data can often be a great source. @
+
+![](/.data/assets/Gaea_-_cx1.terrain_06-47-11-AM---Copy.webp)
+
+## Friction and Restitution
+
+The Friction and Restitution controls determine how debris behaves when it falls and slides across the terrain. While we often describe it as controlling how far debris can travel, in the underlying physics, it’s about **energy loss** during movement:
+
+* **Restitution**: Energy lost during impacts – how far debris bounces or slides after hitting a surface.
+* **Friction**: Energy lost while sliding – how easily debris moves across the terrain.
+
+So, adjusting friction changes how steep or shallow debris deposits will appear in your terrain simulations. Higher friction = steeper, shorter slides. Lower friction = longer, shallower debris spreads.
+
+:::info
+For natural rock surfaces, the friction coefficient averages around **0.62**. This value directly relates to the **slope of repose** – the stable angle at which debris piles up. A friction coefficient of 0.62 corresponds to a **32° slope**, which is the typical angle of a talus (debris pile) formed under gravity.
+:::
+
+### Size, Shape, and Layering
+
+You vary debris sizes and even layer multiple Debris simulations to mix and match settings and shapes. The Debris node provides Sharp and Round rock shapes.
+
+![](/.data/assets/Gaea_-_TalusNode002.terrain_09-02-33-PM---Copy-(1).webp)
+
+See the Debris examples that ship with Gaea to see how layering multiple simulations work.
+
+![](/.data/assets/image-(55).png)
+
+:::info
+When using multiple Debris nodes, you can use [Accumulators](/using/using-gaea/managing-graphs/accumulators.html){data-link-icon=''} to combine all the output masks for colorization and other purposes.
+:::
+
+
+// from simulations / index.md
+---
+icon: cloud-sun-rain
+title: Simulations
+uid: simulations
+---
+
+# Simulations
+
+Gaea's wide range of simulations help you mimic nature through simulating real-world processes from a both scientific and artistic point-of-view.
+
+![](/.data/covers/debris.webp)
+
+The most important simulation is [Erosion2](/reference/nodes/simulate/erosion2.html){data-link-icon=''} as well as the classic [Erosion](/reference/nodes/simulate/erosion.html){data-link-icon=''}. These are augmented by [Thermal2](/reference/nodes/simulate/thermal2.html){data-link-icon=''}, [Crumble](/reference/nodes/simulate/crumble.html){data-link-icon=''}, [Sediments](/reference/nodes/simulate/sediments.html){data-link-icon=''}, and others.
+
+![](/.data/covers/snow.webp)
+
+[Snow](/reference/nodes/simulate/snow.html){data-link-icon=''}, [Snowfield](/reference/nodes/simulate/snowfield.html){data-link-icon=''}, and [Dusting](/reference/nodes/simulate/dusting.html){data-link-icon=''} create snow simulations. While [IceFloe](/reference/nodes/simulate/icefloe.html){data-link-icon=''} can create floating chunks of ice.
+
+[Lake](/reference/nodes/simulate/lake.html){data-link-icon=''}, [Sea](/reference/nodes/simulate/sea.html){data-link-icon=''}, and [Rivers](/reference/nodes/simulate/rivers.html){data-link-icon=''} create various kinds of water simulations.
+
+![](/.data/covers/veg.webp)
+
+[Trees](/reference/nodes/simulate/trees.html){data-link-icon=''} and [Shrubs](/reference/nodes/simulate/shrubs.html){data-link-icon=''} powerful ways to create vegetation masks driven by real geological factors which can then be used later in DCC apps to create entire forests.
+
+[Debris](/reference/nodes/simulate/debris.html){data-link-icon=''} creates thousands (even millions) of physics-enabled debris onto your terrain.
+// from simulation-snowfall / snowfall.md
+---
+title: Snowfall
+uid: simulation-snowfall
+order: 01
+---
+
+# Snowfall
+
+![](/.data/assets/snow.webp)
+
+## Snow
+
+The Gaea Snow node is a powerful snowfall precipitation simulator. It uses advanced physics to simulate particles of snow with realistic clumping, adhesion, melt, thaw, and settling.
+
+The simulation realistically simulates sequences of snowfall, melting, and settling that occur in real life. 
+
+![](/.data/assets/snow2.webp)
+
+The Snow simulation's highlights are an intuitively controllable snowfall vs melt mechanism. Rather than simply reducing the amount of snowfall, you can mimic real life by keeping a higher level (or rather a longer duration, to be exact) of snowfall but also intersperse each snowfall cycle with a melt cycle. This creates more believable blankets of snow.
+
+## Snowfield
+
+Snowfield is a new snow node that creates heavy snowfall specifically for large environments and strong snowy peaks. It performs snow simulation in cascades, creating realistic interaction between new and old snow, as well as creating snow buildup that is not directly possible with a single Snow node.
+
+![](/.data/assets/sf1.webp)
+
+## Dusting
+
+Gaea 2.0 introduces a new lightweight snow node called Dusting which adds a thin layer of snow to your scene with a focus on creating light sprinklings of snow.
+
+This node can be used with or without Snow.
+
+![](/.data/assets/dusting.webp)
+
+## Glacier
+
+The Glacier node takes Snow or other custom input and converts it into thick sheets of ice. The surface can be converted into a variety of surfaces, including directional sloped grooves, fluvial breakage, complex substructure, and more.
+
+![](/.data/assets/Gaea_-_site_followRivers-015.terrain_04-35-25-AM---Copy.webp)
+
+
+// from simulation-vegetation / vegetation.md
+---
+title: Vegetation
+uid: simulation-vegetation
+order: 04
+---
+
+# Vegetation
+
+Geology influences vegetation growth. In Gaea, you can craft complex ecosystems for your terrains and drive them with relevant data such as conflicting zones, snow, water, and more.
+
+![](/.data/assets/biomes.webp)
+
+You can also set up biome-specific extras such as frozen lakes and drying rivers, and change growth patterns by directly linking them to biome drivers like snow melts and floodplains.
+
+![](/.data/assets/vegetation.webp)
+
+## Trees and Shrubs
+
+The Trees and Shrubs nodes operate on basically the same principle but different sized plants, along with relevant deviations in how they create shapes.
+
+Here you can see 3 separate populations or "ecotopes" created with 3 different Trees nodes. Each avoiding the other, but intermingling and creating scatter points within their own zones.
+
+![](/.data/assets/veg2.webp) ![](/.data/assets/veg1.webp) ![](/.data/assets/veg3.webp)
+
+![](/.data/assets/veg4.webp)
+
+While you can often get great results from a single scatter/population, creating multiple populations with two or more Trees and/or Shrubs nodes gives you better control and a more realistic ecosystem.
+
+## Procedural Ecosystems
+
+Gaea's growth systems are powered by 3 major factors: growth or health, inhibitors, and dead zones.
+
+### Growth / Health
+
+First, you decide whether your growth should seek water or avoid it.
+
+![](/.data/assets/Gaea_-_docs-trees.terrain_03-48-49-AM.webp) ![](/.data/assets/Gaea_-_docs-trees.terrain_03-49-59-AM.webp)
+
+Health / Patches / Spread / Random help you control the patterns and extents of the population.
+
+### Inhibitors
+
+![](/.data/assets/Gaea_-_docs-trees.terrain_03-51-56-AM.webp) ![](/.data/assets/Gaea_-_docs-trees.terrain_03-52-17-AM.webp)
+
+Slope and Height are the most essential inhibitors. You can choose which range of slope and height allows these trees to grow.
+
+![](/.data/assets/Gaea_-_docs-trees.terrain_03-54-11-AM.webp)
+
+Peaks lets you avoid ridges and peaks without having to worry about Height or Slope.
+
+### Dead Zones
+
+When snow regularly falls and settles down slopes it creates an inhibition zone that prevents larger trees from growing.
+
+![](/.data/assets/Gaea_-_Trees_-_Slope_Inhibited_Growth_04-12-52-AM.webp)
+
+Dead Zones are slightly more complicated and often require a delicate touch. Dead Zones are optional.
+
+![](/.data/assets/Gaea_-_site-004.terrain_08-07-36-PM.webp)
+
+DeadZones are great opportunity to add talus, scree, other kinds of rocks and more.
+
+
+
+## Visualizing Forces
+
+The Visualize Data option let's you see the various factors affecting the ecosystem. This is a great way to debug your population and see the invisible forces.
+
+Green are trees, blue are freshwater flows, and red are dead zones.
+
+![](/.data/assets/Gaea_-_Trees_-_Slope_Inhibited_Growth_04-13-41-AM.webp)
+
+
+
+
+// from simulation-water / water.md
+---
+title: Water
+uid: simulation-water
+order: 03
+---
+
+# Water
+
+Create lakes, rivers, and even seas that follow physical rules, which not only produce a body of water, but also correspondingly affect the surrounding environment.
+
+![](/.data/assets/water.webp)
+
+### Lakes
+
+![](/.data/assets/water-lakes.webp)
+
+### Rivers
+
+![](/.data/assets/water-rivers.webp)
+
+### Sea 
+
+![](/.data/assets/water-sea.webp)
+
+
+// from simulation-erosion-1 / erosion_1.md
+---
+title: Erosion_1
+uid: simulation-erosion-1
+order: 01
+---
+
+# Classic Erosion
+
+![](https://docs.quadspinner.com/images/ref/Erosion/Erosion--Default.webp)
+
+:::info
+This page refers to Erosion, aka Erosion\_1 or Classic Erosion. It was the mainstay of Gaea 1.0's erosion toolkit, and is also available in Gaea 2.0.
+
+[Erosion_2](erosion_2/)is the newer generation of Erosion and provides new options and dramatically higher performance. The general principles of Erosion\_1 still apply to Erosion_2.
+
+Both nodes can be used side-by-side for leveraging their unique abilities.
+:::
+
+## Selective Processing
+
+While the Erosion node can be masked using the standard masking process, the Area mask input gives you additional options.
+
+When an Area mask is connected, you can control the Rock Softness, Precipitation, or Erosion Strength. Unlike the standard mask, the Area mask allows the processing to be masked but not the shape. For example, you can mask out the top part of a volcano and choose Precipitation as the Area Effect. This forces the erosion-inducing precipitation to occur only within the masked area. But the resulting erosion can flow out and affect the rest of the terrain.
+
+For more information, see Selective Processing in Erosion node details.
+
+## Layering Erosion
+
+Erosion can give you even more complex results when used multiple times.
+
+A great way to create sophisticated erosion is to use multiple Erosion nodes. A single erosion pass is fine, but will restrict you because of the settings you can use.
+
+In this example, we have `Selective Processing` set to `Altitude` with high `Duration` of `30%` for creating the initial pass. The strong grooves/flow structure it creates will guide the erosion in subsequent passes.
+
+![](https://docs.quadspinner.com/images/ref/Erosion/Erosion-Pass1.webp)
+
+For the second pass, we have default settings except for `100%` `Downcutting` and `100%` `Base Level`. This creates strong flow structures everywhere.
+
+![](https://docs.quadspinner.com/images/ref/Erosion/Erosion-Pass2.webp)
+
+The third pass is fully default. It takes the general larger variations created in the previous passes and homogenizes the overall "texture" yet keeps the larger features. Optionally, higher Inhibition can be used to create more sediments at the bottom.
+
+![](https://docs.quadspinner.com/images/ref/Erosion/Erosion-Pass3.webp)
+
+## Data Output
+
+The Erosion and Wizard nodes create 3 key data outputs:
+
+| Data     | Description                                                                             |
+| -------- | --------------------------------------------------------------------------------------- |
+| Wear     | The portions where erosion removes sediments.                                           |
+| Deposits | The resting position of those sediments.                                                |
+| Flow     | The path of the sediments from their original location to their final resting position. |
+
+These maps can be used for texturing or for driving other nodes.
+
+::: tip
+Like other data maps, the output may not be readily visible to the human eye. You can use Adjust to autolevel or equalize the output. You can also use Threshold to create a solid mask.
+:::
+
+::: note
+In digital terrains, inexperienced artists will often try to use the Flow output too prominently for texturing. While this may work in some situations, it tends to create unrealistic textures and can make your terrain look fake and "CG". See the Misconceptions section below.
+:::
+
+// from understanding-erosion / index.md
+---
+icon: cloud-showers
+coverY: 0
+title: Understanding Erosion
+uid: understanding-erosion
+---
+
+# Understanding Erosion
+
+Erosion is a fundamental process in the natural world that plays a crucial role in shaping terrains. Gaea 2 takes inspiration from this natural phenomenon, meticulously mimicking the laws of nature to create realistic and dynamic landscapes. This powerful feature combines the rigor of scientific accuracy with the flexibility of artistic control, offering you an unparalleled tool for terrain creation.
+
+![](/.data/assets/e4c_-_ACDSee_Photo_Studio_Home_2024_03-05-29-AM.webp)
+
+By simply adding an erosion node and adjusting a control or two, you can achieve remarkable results with minimal effort. However, the true potential of Gaea 2’s erosion capabilities lies in the depth and nuance available within this versatile set of nodes. Whether you're looking for quick, beautiful results or seeking to fine-tune every aspect of your terrain's erosion, Gaea 2 provides the tools to make it happen.
+
+## Erosion in Gaea
+
+Erosion is the primary process through which we turn abstract and geometric shapes into believable terrains. It is one of the most crucial parts of any procedural terrain.
+
+![](/.data/assets/erosion_s85.webp)
+
+The Erosion node is the primary erosion node in Gaea. It provides sophisticated erosion with a very easy to use interface. The Erosion node provides control over the scale, where you can choose the size of the largest erosion feature and the overall scale of the terrain.
+
+### **Resolution Independence**
+
+The Erosion node's algorithm addresses one of the biggest problems in digital erosion: it preserves features across different resolutions. This means that a 512 x 512 preview build will maintain essential parity for all major erosion features with a high resolution 4K or 8K build. You no longer need to guess the output type.
+
+The algorithms also create exquisite flows with naturalistic curves and controllable sediment deposits, never before been seen in digital erosion.
+
+## The Power of Erosion
+
+Gaea's Erosion is so powerful and intelligent that you can use extremely basic shapes to define the terrain and use Erosion to procedurally simulate all the details of a hydraulically eroded terrain.
+
+Let's explore this with a simple example.
+
+We start with a RadialGradient with absolutely no features. We apply Warp to add noise warping to the smooth shape to bring out some random detail. Then we apply 2 passes of Erosion_2 and let it automatically carve out realistic details into the terrain.
+
+![A basic RadialGradient primitive.](/.data/assets/Gaea_-_explain_erosion.terrain_10-45-41-PM.webp)
+
+![Add Warp (either with a Warp node, or the Warp modifier) to the RadialGradient.](/.data/assets/Gaea_-_explain_erosion.terrain_10-45-43-PM.webp)
+
+![Erosion_2 pass 1 to create the larger gullies and fluvial structures.](/.data/assets/Gaea_-_explain_erosion.terrain_10-45-46-PM.webp)
+
+![Erosion_2 pass 2 to soften some of the ridges and compact the terrain further.](/.data/assets/Gaea_-_explain_erosion.terrain_10-45-48-PM.webp)
+
+You can replace the RadialGradient with any other shape - whether an imported heightmap, hand-drawn ridge shape, or another primitive - and Erosion will convert it into a realistic landscape.
+
+## Versatility
+
+Gaea's Erosion can be adapted to a large variety of shapes and processes. You can do this by fine-tuning settings in Erosion_2 or by using EasyErosion which provides preset processes through a simple interface.
+
+<div>![](/.data/assets/Gaea_2.0_04-58-50-PM.webp) ![](/.data/assets/Gaea_2.0_04-58-46-PM.webp) ![](/.data/assets/Gaea_2.0_04-58-36-PM.webp)</div>
+
+<div>![](/.data/assets/Gaea_2.0_04-58-32-PM.webp) ![](/.data/assets/Gaea_2.0_04-57-49-PM.webp) ![](/.data/assets/Gaea_2.0_04-58-14-PM.webp)</div>
+
+
+
+## **Determinstic Output**
+
+It is worth noting that, due to the nature of the algorithm and parallel processing, the erosion flow may differ slightly each time. To ensure 100% exact results every time, you can turn on the `Deterministic` option in the Erosion\_1 node. This will force Gaea to use a single processor core which will result in slower processing, but will ensure your results are completely predictable.
+
+This may not always be necessary. There are also workarounds. For example, if you wish to control certain major flow lines, you can create a mask for the starting points of those flows and feed it to Selective Processing. This is usually done best in a second Erosion node, while the first provides general erosion across the terrain.
+
+## Misconceptions <a href="#misconceptions" id="misconceptions"></a>
+
+There are a few misconceptions about erosion in procedural terrains that mainly stem from outdated ideas from previous generation software or inexperience with the medium.
+
+### **Erosion should be the last step**
+
+Previously, artists would use Erosion as the very last node in the construction of a terrain because Hydraulic erosion was the only process that could provide flow, deposit, and other data maps to be used for texture creation. This technique is based on technological limitations from over a decade ago. That former paradigm trained artists (incorrectly) and has led to limited creativity in digital terrains. Further, it is unsuitable to use the flow data from an Erosion node as the primary driving force in a texture. Real terrains rarely have clean flow lines - and those too are mostly in the form of rivers. Such textures make digital terrains extremely conspicuous.
+
+With a cutting-edge software like Gaea, there are many options for generating data maps at any point in the graph. This removes the need for Erosion data for texturing purposes. You can use Texture to create the base for any procedural color map. Flow, Soil, RockMap, Occlusion, and other Data Maps can generate texture-friendly data without actually processing the terrain.
+
+### **Erosion is mandatory**
+
+Another old belief is that Erosion is required after any processing to ensure the terrain looks believable. While this may be true in some cases, if you are using LookDev nodes or other erosion processes, applying Hydraulic erosion may detract from the non-hydraulic-eroded look you desire because it creates soft soil deposits and erosive flows.
+
+LookDev nodes such as Canyonizer, Stacks, Anastomosis, Shear, etc. can create effects that don't need to be reprocessed with Erosion to be believable.
+
+// from simulation-thermal-erosion / thermal-erosion.md
+---
+title: Thermal Erosion
+uid: simulation-thermal-erosion
+order: 03
+---
+
+# Thermal Erosion
+
+### Thermal Erosion <a href="#thermal-erosion" id="thermal-erosion"></a>
+
+Thermal erosion is the sister to Hydraulic erosion. While used less frequently, Thermal erosion is equally as important in most environments.
+
+**Understanding Anisotropy**
+
+Thermal Stress Anisotropy governs how erosion and the resulting rock deposits are shaped. It smooths the terrain while eroding. Low values largely keep the original terrain intact. High values create stronger talus while eroding the original terrain. For example, sharp peaks get eroded heavily with high stress values.
+
+The image below shows a simplified version of how Thermal Stress Anisotropy affects a terrain.
+
+![](https://docs.quadspinner.com/images/thermal_stress_anisotropy.webp)
+
+**Combining with Hydraulic Erosion**
+
+In the real world, hydraulic and thermal erosion occur together. You can mimic this behavior by chaining Thermal and Erosion (or Wizard) nodes, as shown in the Layering Erosion section above.
+
+![Chained sequence of Wizard/Erosion and Thermal nodes](https://docs.quadspinner.com/images/ref/chain-thermal-erosion.webp)
+
+Selective Processing can be a very powerful tool in such a chain of nodes.
+
+// from simulation-thermal-2 / thermal_2.md
+---
+title: Thermal_2
+uid: simulation-thermal-2
+order: 02
+---
+
+# Thermal_2
+
+![youtube.com](https://www.youtube.com/watch?v=C9KpUG8u2WM)
+
+
+
+**Erosion**
+
+* **Duration:** Controls the duration of the thermal erosion process. A higher value means the erosion will act over a longer period, leading to more significant changes in the terrain.
+* **Strength:** Determines the intensity of the thermal erosion. Higher values will result in more pronounced smoothing and displacement of materials, particularly on steeper slopes.
+* **Anisotropy:** Governs how erosion and the resulting rock deposits are shaped. This parameter influences the directional bias of the erosion, affecting both the smoothing of the terrain and the formation of talus slopes.
+  * **Low values** keep the original terrain largely intact, resulting in minimal smoothing and erosion.
+  * **High values** intensify the erosion, especially on sharp peaks, leading to the creation of stronger talus deposits and more heavily eroded terrain. This is useful for simulating environments where the erosion is more aggressive in specific directions, such as under strong wind or gravity influences.
+
+**Talus**
+
+* **Angle:** Sets the maximum angle of the slopes before materials start to move downward, forming a talus. Lower angles result in more gradual slopes, while higher angles allow for steeper terrains before material begins to shift.
+* **Sediment Removal:** Controls the amount of sediment that is removed from the terrain during the talus formation. Higher values will result in cleaner, sharper features as excess material is removed, whereas lower values allow more sediment to accumulate, creating smoother transitions.
+
+**Scale**
+
+* **Feature Scale:** Adjusts the scale of the thermal erosion features in meters. Larger values will produce broader, more pronounced features, while smaller values will result in finer details.
+
+These parameters in the Thermal_2 node give you control over how thermal erosion shapes your terrain, from broad, sweeping changes to fine, detailed adjustments, with the Anisotropy parameter providing nuanced control over the directionality and intensity of the erosion effects.
+
+// from using-regions / index.md
+---
+title: Using Regions
+uid: using-regions
+order: 02
+---
+
+# Using Regions
+
+
+
+## Regions
+
+Regions allows you to take a portion of your terrain and upscale it to a higher resolution. For example, you can take 1/6th of a 8192 x 8192 terrain and upscale the Region to 8192 x 8192 - making it almost 6X times larger in proportional pixel density.
+
+![](/.data/assets/Build-Options-Regions.png)
+
+Gaea gives you the ability to preview any individual region. You can have an unlimited number of regions.
+
+This workflow is very helpful in isolating specific areas that may be of higher significance. As both the overall landscape and the isolated Region are both developed through a procedural graph, changing one automatically changes the other keeping both versions in-sync.
+
+Whether you are making assets for games or visual effects, Regions can help you reduce your workflow and duplication of effort.
+
+## Basic Workflow
+
+Regions work similarly to Tiled Builds. The initial Generators need to be baked before building or previewing a Region.
+
+If any required nodes are not baked, Gaea will prompt you to bake them. You can always unbake and re-bake them as needed if you want to make any changes to your initial shape.
+
+### Using Gates
+
+The Gate node lets you quickly bake and unbake necessary nodes. Simply put a Gate node at the end of one or more chain of nodes you need to bake. Then use the `Bake Required Nodes` command in the Bake menu to bake all Gates. Use `Unbake All` to unbake the Gates.
+
+![](/.data/assets/Bake-Menu.png)
+
+### Negligible Loss of quality
+
+While it may feel like baking nodes may lead to lower quality, in reality you won't experience any reduction in quality. 
+
+The initial shape may be somewhat lower quality depending on the ratio of the Region, but when you apply Erosion or any other procedural simulation or effect, Gaea renders a full resolution result where almost all of the low-resolution detail is replaced by high quality modifications.
+
+### Use Minimal Shapes
+
+As mentioned above, most of the smaller detail is generated by Erosion or other simulations and effects. You should avoid adding too much detail in your initial shapes to avoid losing fidelity during the upscaling process.
+
+
+// from managing-regions / managing-regions.md
+---
+title: Managing Regions
+uid: managing-regions
+order: 03
+---
+
+# Managing Regions
+
+## **Customizing Regions**
+
+* Regions of various sizes can be customized to meet specific requirements. Each region can be assigned a unique color.
+* To assign a color, right-click on the region and select your desired color from the menu to apply it to that region.
+
+![](/.data/assets/Build-Options-Region-Color-Menu.png)
+
+## **Renaming a Region**
+
+To rename a region, right-click on it and enter the new name in the prompt that appears.
+
+![](/.data/assets/Build-Options-Region-Menu.png)
+
+## **Visualizing a Region**
+
+To enhance the visualization of a region, you can save the current node preview and use it as a reference image. Right-click on the region surface and select "Save current node preview" to do this.
+
+![](/.data/assets/Build-Options-Save-Preview.png)
+
+## **Using a Saved Node Preview**
+
+he saved node preview can serve as a reference image for visualizing regions. To view or hide the reference image, right-click on the region surface and select "Show reference image."
+
+![](/.data/assets/Build-Options-ShowHide-Preview.png)
+
+// from erosion-2-in-action / erosion_2-in-action.md
+---
+title: Erosion_2 in Action
+uid: erosion-2-in-action
+order: 01
+---
+
+# Erosion_2 in Action
+
+Erosion_2 was meant to be incredibly flexible from the beginning. While compared to Erosion\_1 it may look like it has fewer controls and therefore less complexity, you can get an amazingly vast range of results from those few settings.
+
+Downcutting, Erosion Scale, and the Shape controls play a large range and their combinations can produce very different results - especially when you increase the Duration.
+
+Below is a set of 24 different looks achieved from the same terrain by simply applying Erosion_2 in different ways.
+
+
+
+| Preview | Settings |
+| --- | --- |
+| ![](/.data/assets/Erosion2-01.webp) | Default Settings |
+| ![](/.data/assets/Erosion2-02.webp) | Duration: `117.4`<br>Downcutting: `0.059`<br>ErosionScale: `16.7`<br>SuspendedLoadDischargeAmount: `0`<br>BedLoadDischargeAmount: `0.2` |
+| ![](/.data/assets/Erosion2-03.webp) | Duration: `117.4`<br>Downcutting: `0.059`<br>ErosionScale: `87.2`<br>SuspendedLoadDischargeAmount: `0`<br>BedLoadDischargeAmount: `0.2`<br>CoarseSedimentsDischargeAmount: `1` |
+| ![](/.data/assets/Erosion2-04.webp) | Duration: `117.4`<br>Downcutting: `0.059`<br>ErosionScale: `517.3`<br>BedLoadDischargeAmount: `0.20`<br>CoarseSedimentsDischargeAmount: `1` |
+| ![](/.data/assets/Erosion2-05.webp) | Duration: `117.4`<br>Downcutting: `0.243`<br>ErosionScale: `517.3`<br>BedLoadDischargeAmount: `0.207`<br>CoarseSedimentsDischargeAmount: `1` |
+| ![](/.data/assets/Erosion2-06.webp) | Duration: `117.4`<br>Downcutting: `0`<br>ErosionScale: `20000`<br>BedLoadDischargeAmount: `0.207`<br>CoarseSedimentsDischargeAmount: `1` |
+| ![](/.data/assets/Erosion2-07.webp) | Duration: `117.4`<br>Downcutting: `0.353`<br>ErosionScale: `20000`<br>SuspendedLoadDischargeAngle: `36.3`<br>BedLoadDischargeAmount: `0.587`<br>BedLoadDischargeAngle: `34.0`<br>CoarseSedimentsDischargeAmount: `1`<br>CoarseSedimentsDischargeAngle: `31.4`<br>Shape: `0`<br>ShapeDetailScale: `1` |
+| ![](/.data/assets/Erosion2-08.webp) | Duration: `117.4`<br>Downcutting: `0.353`<br>ErosionScale: `20000`<br>SuspendedLoadDischargeAngle: `36.3`<br>BedLoadDischargeAmount: `0.587`<br>BedLoadDischargeAngle: `34.0`<br>CoarseSedimentsDischargeAmount: `1`<br>CoarseSedimentsDischargeAngle: `31.4`<br>Shape: `0.085`<br>ShapeSharpness: `0`<br>ShapeDetailScale: `0.053` |
+| ![](/.data/assets/Erosion2-09.webp) | Duration: `117.4`<br>Downcutting: `0.353`<br>ErosionScale: `20000`<br>SuspendedLoadDischargeAngle: `36.3`<br>BedLoadDischargeAmount: `0.199`<br>BedLoadDischargeAngle: `34.0`<br>CoarseSedimentsDischargeAmount: `0.067`<br>CoarseSedimentsDischargeAngle: `31.4`<br>Shape: `0.085`<br>ShapeSharpness: `0`<br>ShapeDetailScale: `0.053` |
+| ![](/.data/assets/Erosion2-10.webp) | Duration: `196.7`<br>Downcutting: `0.253`<br>ErosionScale: `20000`<br>SuspendedLoadDischargeAngle: `36.3`<br>BedLoadDischargeAmount: `0.441`<br>BedLoadDischargeAngle: `7.9`<br>CoarseSedimentsDischargeAmount: `0.391`<br>CoarseSedimentsDischargeAngle: `24.0`<br>Shape: `0.079`<br>ShapeSharpness: `0.199`<br>ShapeDetailScale: `1` |
+| ![](/.data/assets/Erosion2-11.webp) | Duration: `106.5` |
+| ![](/.data/assets/Erosion2-12.webp) | Duration: `106.5`<br>Downcutting: `0.183`<br>ErosionScale: `20000`<br>ShapeDetailScale: `0.019` |
+| ![](/.data/assets/Erosion2-13.webp) | Duration: `106.5`<br>Downcutting: `0.183`<br>ErosionScale: `20000`<br>BedLoadDischargeAmount: `0.095`<br>BedLoadDischargeAngle: `34.069`<br>Shape: `0.367`<br>ShapeSharpness: `0.261`<br>ShapeDetailScale: `1` |
+| ![](/.data/assets/Erosion2-14.webp) | Duration: `90.4`<br>Downcutting: `0.111`<br>ErosionScale: `653.6`<br>BedLoadDischargeAmount: `0.113`<br>CoarseSedimentsDischargeAmount: `1`<br>ShapeDetailScale: `0.039` |
+| ![](/.data/assets/Erosion2-15.webp) | Duration: `64.5`<br>Downcutting: `0.5253405`<br>ErosionScale: `124.0`<br>BedLoadDischargeAmount: `1`<br>CoarseSedimentsDischargeAmount: `1`<br>Shape: `0.633`<br>ShapeSharpness: `0.089`<br>ShapeDetailScale: `0.016` |
+| ![](/.data/assets/Erosion2-16.webp) | Shape: `1`<br>ShapeSharpness: `1` |
+| ![](/.data/assets/Erosion2-17.webp) | Downcutting: `0.711`<br>ErosionScale: `3713.4`<br>SuspendedLoadDischargeAmount: `0`<br>Shape: `1`<br>ShapeSharpness: `0.711`<br>ShapeDetailScale: `0` |
+| ![](/.data/assets/Erosion2-18.webp) | Downcutting: `0.683`<br>ErosionScale: `201.8`<br>BedLoadDischargeAmount: `1`<br>BedLoadDischargeAngle: `21.5`<br>CoarseSedimentsDischargeAmount: `0.139` |
+| ![](/.data/assets/Erosion2-19.webp) | Duration: `164.9` |
+| ![](/.data/assets/Erosion2-20.webp) | Duration: `57.8`<br>BedLoadDischargeAmount: `1`<br>ShapeDetailScale: `1` |
+| ![](/.data/assets/Erosion2-21.webp) | Duration: `90.4`<br>Downcutting: `0.045`<br>ErosionScale: `195.8` |
+| ![](/.data/assets/Erosion2-22.webp) | Duration: `67.2`<br>ErosionScale: `204.8`<br>SuspendedLoadDischargeAmount: `0.171`<br>BedLoadDischargeAmount: `1`<br>BedLoadDischargeAngle: `24.8`<br>CoarseSedimentsDischargeAmount: `1`<br>CoarseSedimentsDischargeAngle: `15.8` |
+| ![](/.data/assets/Erosion2-23.webp) | Downcutting: `0.073`<br>ErosionScale: `8350.7`<br>SuspendedLoadDischargeAmount: `0`<br>Shape: `0.635` |
+| ![](/.data/assets/Erosion2-24.webp) | Duration: `134.5`<br>SuspendedLoadDischargeAmount: `0`<br>BedLoadDischargeAmount: `0.039`<br>BedLoadDischargeAngle: `37.6`<br>Shape: `0` |
+
+
+// from simulation-erosion-2 / index.md
+---
+title: Erosion_2
+uid: simulation-erosion-2
+---
+
+# Erosion_2
+
+The **Erosion_2** node in Gaea 2 is a powerful new erosion algorithm designed to enhance terrain shaping capabilities beyond the traditional Classic Erosion. 
+
+![](/.data/assets/Gaea_-_TalusNode002.terrain_09-02-33-PM---Copy.webp)
+
+Despite its complexity, Erosion_2 remains user-friendly and delivers deterministic results with up to 10x faster performance, even on the CPU.
+
+![](/.data/assets/Gaea_-_mix1.terrain_10-18-16-PM.webp)
+
+## Using Erosion_2
+
+The **Erosion_2** node offers extensive control over the erosion process, allowing users to shape terrain with a range of new options and refinements. 
+
+![youtube.com](https://youtu.be/We4Pg_gdsVA" %}
+
+![](/.data/assets/Gaea_-_Erosion_-_Mineral_Deposits_and_ColorErosion_12-02-58-AM.webp)
+
+### Primary Control
+
+This group of controls are the primary driver of the Erosion simulation. Each setting here can have a strong effect on the erosion simulation and change things greatly.
+
+![](/.data/assets/Gaea_-_site-ColorErosion.terrain_12-46-54-AM.webp)
+
+#### Duration
+
+The longer the **Duration**, the more elaborate the resulting terrain will be. However, it is not always necessary to use long lengths. When want to preserve your terrain shape, it is better to use multiple shorter duration Erosion2 nodes than one very high duration one. If you are crafting the terrain shape through Erosion, then a high duration is useful.
+
+#### Downcutting
+
+Downcutting controls how deep flowing water cuts into the terrain, while the **Erosion Scale** determines the largest gullies' size across the entire terrain. Both settings can easily cause an impact on the other, so use a bit of experimentation to see how it affects your specific terrain.
+
+#### Erosion Scale
+
+Small values in **Erosion Scale** can create very fine, sharp gullies and crevices while large values create large ravines and huge flow structures. You can use multiple Erosion2 nodes with different scales to create complex erosion. It is recommended that nodes with higher Erosion Scale should precede nodes with smaller scales so the subsequent erosion does not destroy the finer details.
+
+### Sedimentary Control
+
+Sedimentation in Gaea simulates the transport and deposition of debris generated during erosion—such as soil, pebbles, and rocks. This process is governed by three distinct sedimentation types: **Suspended Load**, **Bed Load**, and **Coarse Sediments**. These types represent increasing sediment mass and decreasing mobility.
+
+![](/.data/assets/Gaea_-_site-004.terrain_08-15-21-PM.webp)
+
+Each type has its own **Discharge Angle**, which controls the slope angle at which sediment begins to settle. The lighter the sediment, the lower the angle it can travel on. Heavier sediments require steeper slopes to move or be deposited.
+
+:::warning
+All three types contribute to the overall sedimentation equally. Setting all sliders to 1.0 will not triple the effect—instead, each type contributes about a third of the total sedimentation. They are also interlinked, often blending visually and physically.
+:::
+
+#### **Suspended Load**
+
+These are the finest and lightest sediments—typically silt and sand-like materials. They are extremely mobile and tend to stay suspended in flowing water, depositing only when the flow slows down (decelerates). Because of this, they are the most active component in terrain reshaping, especially within gullies.
+
+While visually they may seem like rocks tumbling downslope, the simulation treats them as a dynamic agent tied closely to erosion. They flow across even gentle slopes (e.g., 0–24°) and often travel long distances before settling. Increasing Suspended Load results in subtle ripples and branching patterns within existing gullies, and with high **Duration** and **Downcutting**, can even generate entirely new gully systems.
+
+#### **Bed Load**
+
+These are heavier sediments—gravel and small rocks. They’re less mobile than suspended sediments but still quite active. Bed Load is less sensitive to acceleration/deceleration and more influenced by average water flow and terrain friction. It moves farther than coarse sediment, even across flat areas, but deposits more readily than suspended load.
+
+Bed Load generates deposits like talus and can visually fill in or enhance slope structures. Use it carefully: high values can dominate the erosion outcome and overwhelm finer detail.
+
+Bed Load Discharge is also useful in filling up gullies created by the erosion. It is a good compensation for having higher Downcutting.
+
+#### **Coarse Sediments**
+
+These represent the heaviest material—rocks, boulders, and debris. They are the least mobile and tend to settle rapidly, usually requiring steeper slopes to begin movement. A discharge angle of 24° for coarse sediments means they will be deposited only on or near such steep inclines; you will not see them on flat areas.
+
+Coarse sediments produce the most dramatic deposits—such as scree, debris piles, and alluvial fans—and are ideal for shaping realistic sedimentation structures.
+
+:::info
+Sedimentation and Downcutting are deeply linked as Sedimentation can be a direct product of Downcutting. Experiment with your terrain to see how downcutting can become a force multiplier for your sedimentation.
+:::
+
+Bed Load and Coarse Sediments also create wonderful shapes that is favorable for adding Scree, Debris simulations, or [ColorErosion](/reference/nodes/colorize/colorerosion.html){data-link-icon=''}.
+
+### Shape Control
+
+This group of controls are useful for artistic control over the simulation, from shaping the peaks to controlling the level of detail.
+
+![](/.data/assets/Erosion2-17.webp)
+
+#### Shape
+
+The Shape control allows you choose between retaining the original shape (low values) or allowing erosion to naturally reshape the peaks of the terrain (high values). 
+
+This processing is low-level Thermal erosion wrapped within Hydraulic erosion simulation.
+
+#### Shape Sharpness
+
+In conjunction with Shape, the Shape Sharpness control lets you shape the terrain to have more concave, sharp ridges. This is a great way to get the right kind of look for your terrain.
+
+The Shape Detail Scale control is very important when it comes to surface structure. This control lets you choose how much concentric smaller details are simulated - from the largest ravines to the finest gullies within them. This is a very useful tool for reducing unnecessary detail - especially for distant terrains or if you plan add further detail using [Surface Nodes](/using/using-gaea/crafting-the-surface/surface-nodes.html){data-link-icon=''}.
+
+![](/.data/assets/Gaea_-_Wasteland-001.terrain_01-32-19-AM---Copy.webp)
+
+### Orographic Influence
+
+Orographic influence allows you to limit where Erosion is inhibited.
+
+![](/.data/assets/Gaea_-_howManyErosions.terrain_03-55-12-AM.webp)
+
+#### Enable
+
+Toggle all Orographic influences.
+
+#### Directional Precipitation
+
+This enables rain shadows, forcing precipitation to occur more intensely on one side.
+
+#### Direction
+
+The direction from which rainfall occurs more strongly. This may not completely stop rainfall in other directions, but reduces its intensity.
+
+#### Rain Shadow
+
+Directional rain can be influenced by other nearby peaks and structures. Rain coming from a specific direction may be blocked by the rain shadow. This control allows you to choose the strength of the rain shadow.
+
+#### Altitude and Slope
+
+These controls allow you to choose the range for both Height and Slope within which rainfall occurs. This can be used to create both realistic and highly artistic results.
+
+#### Reverse
+
+Inverses the influence.
+
+
+
+## Faster Performance
+
+Gaea's Erosion_2 can utilize either GPU or CPU. It has an intelligent fallback if your GPU runs out of VRAM then it will run the erosion on the CPU where it may be slightly slower but less likely to run of of memory.
+
+In every scenario, Erosion_2 can outrun classic Erosion by several magnitudes.
+
+![](/.data/assets/gaea2stats1.png)
+
+![](/.data/assets/erosion_s85.webp)
+

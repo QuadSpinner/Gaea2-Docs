@@ -167,7 +167,7 @@ body[data-node-category=Macro] {
 #contents h4 {
   font-weight: 300;
   margin-top: 24px;
-  color: #fff;
+  color: var(--prime);
 }
 #contents h1 {
   font-size: 26px;
@@ -176,13 +176,20 @@ body[data-node-category=Macro] {
   font-size: 22px;
 }
 #contents h3 {
-  font-size: 20px;
+  font-size: 14px;
+  font-weight: 600;
 }
 #contents h4 {
-  font-size: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 #contents table {
   width: 100%;
+}
+#contents table td {
+  border: 1px solid #333;
+  padding: 4px;
 }
 #contents img {
   max-height: 40vh;
@@ -243,10 +250,9 @@ body[data-node-category=Macro] {
 }
 
 code:not(pre > code) {
-  background-color: #111;
-  border-radius: 3px;
-  border: 1px solid #333;
-  border-top-color: #aaa;
+  border: 0;
+  background-color: #1f1f1f;
+  color: #e4cfa9;
 }
 
 .card {

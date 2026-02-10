@@ -57,7 +57,7 @@ Each row shows:
 
 - **Ok**: Server could open a TCP connection to that target/port. If `localhost` is OK but NIC IPs are not, you are likely bound to loopback only.
 - **Refused**: The OS responded immediately: nothing is listening at that target/port. Usually means server isn’t listening on that port/interface (wrong port, wrong bind address, server not running).
-- **Timeout**: No response within the timeout window. Common causes: **firewall/AV**, network ACLs, wrong routing, host not reachable, or port silently dropped.
+- **Timeout**: No response within the timeout window. Common causes: firewall/AV, network ACLs, wrong routing, host not reachable, or port silently dropped.
 - **DnsFailed**: Hostname couldn’t be resolved to an IP. DNS misconfiguration, wrong hostname, missing record, or wrong DNS server.
 - **Unreachable**: The network stack reports no route / host unreachable. Routing issue, disconnected network, invalid IP, or target is on a different network without route.
 - **Error**: Misc failure (socket or system-level). Check the “Detail” column.

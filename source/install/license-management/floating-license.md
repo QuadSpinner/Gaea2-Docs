@@ -2,23 +2,23 @@
 title: Floating License
 uid: floating-license
 order: 04
-icon: key-skeleton-left-right
+icon: arrow-down-up-lock
 ---
 
 # Floating License
 
-## Using Floating Licenses
+::note
+This page talks about Online Floating Licenses. For using Offline Floating Licenses, see @fortress
+:::
 
 ### Installing a License
 
 Activating a Floating License on a workstation is the same as loading a user key for a standard @activation. The only difference is your key will have a `FL-` prefix. Just enter the key in the Activation dialog, or via `Help > Manage License`, or `Help > About > Load License`.
 
 :::info
-## File Based Licenses
-
+**File Based Licenses**
 You can install your floating license the same way as described in license file in @activation. The only difference is that your file will be saved as `floating.lic`
 :::
-
 
 
 ### Acquiring a License

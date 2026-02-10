@@ -1,0 +1,187 @@
+// from erosion-2-in-action / erosion_2-in-action.md
+---
+title: Erosion_2 in Action
+uid: erosion-2-in-action
+order: 01
+---
+
+# Erosion_2 in Action
+
+Erosion_2 was meant to be incredibly flexible from the beginning. While compared to Erosion\_1 it may look like it has fewer controls and therefore less complexity, you can get an amazingly vast range of results from those few settings.
+
+Downcutting, Erosion Scale, and the Shape controls play a large range and their combinations can produce very different results - especially when you increase the Duration.
+
+Below is a set of 24 different looks achieved from the same terrain by simply applying Erosion_2 in different ways.
+
+
+
+| Preview | Settings |
+| --- | --- |
+| ![](/.data/assets/Erosion2-01.webp) | Default Settings |
+| ![](/.data/assets/Erosion2-02.webp) | Duration: `117.4`<br>Downcutting: `0.059`<br>ErosionScale: `16.7`<br>SuspendedLoadDischargeAmount: `0`<br>BedLoadDischargeAmount: `0.2` |
+| ![](/.data/assets/Erosion2-03.webp) | Duration: `117.4`<br>Downcutting: `0.059`<br>ErosionScale: `87.2`<br>SuspendedLoadDischargeAmount: `0`<br>BedLoadDischargeAmount: `0.2`<br>CoarseSedimentsDischargeAmount: `1` |
+| ![](/.data/assets/Erosion2-04.webp) | Duration: `117.4`<br>Downcutting: `0.059`<br>ErosionScale: `517.3`<br>BedLoadDischargeAmount: `0.20`<br>CoarseSedimentsDischargeAmount: `1` |
+| ![](/.data/assets/Erosion2-05.webp) | Duration: `117.4`<br>Downcutting: `0.243`<br>ErosionScale: `517.3`<br>BedLoadDischargeAmount: `0.207`<br>CoarseSedimentsDischargeAmount: `1` |
+| ![](/.data/assets/Erosion2-06.webp) | Duration: `117.4`<br>Downcutting: `0`<br>ErosionScale: `20000`<br>BedLoadDischargeAmount: `0.207`<br>CoarseSedimentsDischargeAmount: `1` |
+| ![](/.data/assets/Erosion2-07.webp) | Duration: `117.4`<br>Downcutting: `0.353`<br>ErosionScale: `20000`<br>SuspendedLoadDischargeAngle: `36.3`<br>BedLoadDischargeAmount: `0.587`<br>BedLoadDischargeAngle: `34.0`<br>CoarseSedimentsDischargeAmount: `1`<br>CoarseSedimentsDischargeAngle: `31.4`<br>Shape: `0`<br>ShapeDetailScale: `1` |
+| ![](/.data/assets/Erosion2-08.webp) | Duration: `117.4`<br>Downcutting: `0.353`<br>ErosionScale: `20000`<br>SuspendedLoadDischargeAngle: `36.3`<br>BedLoadDischargeAmount: `0.587`<br>BedLoadDischargeAngle: `34.0`<br>CoarseSedimentsDischargeAmount: `1`<br>CoarseSedimentsDischargeAngle: `31.4`<br>Shape: `0.085`<br>ShapeSharpness: `0`<br>ShapeDetailScale: `0.053` |
+| ![](/.data/assets/Erosion2-09.webp) | Duration: `117.4`<br>Downcutting: `0.353`<br>ErosionScale: `20000`<br>SuspendedLoadDischargeAngle: `36.3`<br>BedLoadDischargeAmount: `0.199`<br>BedLoadDischargeAngle: `34.0`<br>CoarseSedimentsDischargeAmount: `0.067`<br>CoarseSedimentsDischargeAngle: `31.4`<br>Shape: `0.085`<br>ShapeSharpness: `0`<br>ShapeDetailScale: `0.053` |
+| ![](/.data/assets/Erosion2-10.webp) | Duration: `196.7`<br>Downcutting: `0.253`<br>ErosionScale: `20000`<br>SuspendedLoadDischargeAngle: `36.3`<br>BedLoadDischargeAmount: `0.441`<br>BedLoadDischargeAngle: `7.9`<br>CoarseSedimentsDischargeAmount: `0.391`<br>CoarseSedimentsDischargeAngle: `24.0`<br>Shape: `0.079`<br>ShapeSharpness: `0.199`<br>ShapeDetailScale: `1` |
+| ![](/.data/assets/Erosion2-11.webp) | Duration: `106.5` |
+| ![](/.data/assets/Erosion2-12.webp) | Duration: `106.5`<br>Downcutting: `0.183`<br>ErosionScale: `20000`<br>ShapeDetailScale: `0.019` |
+| ![](/.data/assets/Erosion2-13.webp) | Duration: `106.5`<br>Downcutting: `0.183`<br>ErosionScale: `20000`<br>BedLoadDischargeAmount: `0.095`<br>BedLoadDischargeAngle: `34.069`<br>Shape: `0.367`<br>ShapeSharpness: `0.261`<br>ShapeDetailScale: `1` |
+| ![](/.data/assets/Erosion2-14.webp) | Duration: `90.4`<br>Downcutting: `0.111`<br>ErosionScale: `653.6`<br>BedLoadDischargeAmount: `0.113`<br>CoarseSedimentsDischargeAmount: `1`<br>ShapeDetailScale: `0.039` |
+| ![](/.data/assets/Erosion2-15.webp) | Duration: `64.5`<br>Downcutting: `0.5253405`<br>ErosionScale: `124.0`<br>BedLoadDischargeAmount: `1`<br>CoarseSedimentsDischargeAmount: `1`<br>Shape: `0.633`<br>ShapeSharpness: `0.089`<br>ShapeDetailScale: `0.016` |
+| ![](/.data/assets/Erosion2-16.webp) | Shape: `1`<br>ShapeSharpness: `1` |
+| ![](/.data/assets/Erosion2-17.webp) | Downcutting: `0.711`<br>ErosionScale: `3713.4`<br>SuspendedLoadDischargeAmount: `0`<br>Shape: `1`<br>ShapeSharpness: `0.711`<br>ShapeDetailScale: `0` |
+| ![](/.data/assets/Erosion2-18.webp) | Downcutting: `0.683`<br>ErosionScale: `201.8`<br>BedLoadDischargeAmount: `1`<br>BedLoadDischargeAngle: `21.5`<br>CoarseSedimentsDischargeAmount: `0.139` |
+| ![](/.data/assets/Erosion2-19.webp) | Duration: `164.9` |
+| ![](/.data/assets/Erosion2-20.webp) | Duration: `57.8`<br>BedLoadDischargeAmount: `1`<br>ShapeDetailScale: `1` |
+| ![](/.data/assets/Erosion2-21.webp) | Duration: `90.4`<br>Downcutting: `0.045`<br>ErosionScale: `195.8` |
+| ![](/.data/assets/Erosion2-22.webp) | Duration: `67.2`<br>ErosionScale: `204.8`<br>SuspendedLoadDischargeAmount: `0.171`<br>BedLoadDischargeAmount: `1`<br>BedLoadDischargeAngle: `24.8`<br>CoarseSedimentsDischargeAmount: `1`<br>CoarseSedimentsDischargeAngle: `15.8` |
+| ![](/.data/assets/Erosion2-23.webp) | Downcutting: `0.073`<br>ErosionScale: `8350.7`<br>SuspendedLoadDischargeAmount: `0`<br>Shape: `0.635` |
+| ![](/.data/assets/Erosion2-24.webp) | Duration: `134.5`<br>SuspendedLoadDischargeAmount: `0`<br>BedLoadDischargeAmount: `0.039`<br>BedLoadDischargeAngle: `37.6`<br>Shape: `0` |
+
+
+// from simulation-erosion-2 / index.md
+---
+title: Erosion_2
+uid: simulation-erosion-2
+---
+
+# Erosion_2
+
+The **Erosion_2** node in Gaea 2 is a powerful new erosion algorithm designed to enhance terrain shaping capabilities beyond the traditional Classic Erosion. 
+
+![](/.data/assets/Gaea_-_TalusNode002.terrain_09-02-33-PM---Copy.webp)
+
+Despite its complexity, Erosion_2 remains user-friendly and delivers deterministic results with up to 10x faster performance, even on the CPU.
+
+![](/.data/assets/Gaea_-_mix1.terrain_10-18-16-PM.webp)
+
+## Using Erosion_2
+
+The **Erosion_2** node offers extensive control over the erosion process, allowing users to shape terrain with a range of new options and refinements. 
+
+![youtube.com](https://youtu.be/We4Pg_gdsVA" %}
+
+![](/.data/assets/Gaea_-_Erosion_-_Mineral_Deposits_and_ColorErosion_12-02-58-AM.webp)
+
+### Primary Control
+
+This group of controls are the primary driver of the Erosion simulation. Each setting here can have a strong effect on the erosion simulation and change things greatly.
+
+![](/.data/assets/Gaea_-_site-ColorErosion.terrain_12-46-54-AM.webp)
+
+#### Duration
+
+The longer the **Duration**, the more elaborate the resulting terrain will be. However, it is not always necessary to use long lengths. When want to preserve your terrain shape, it is better to use multiple shorter duration Erosion2 nodes than one very high duration one. If you are crafting the terrain shape through Erosion, then a high duration is useful.
+
+#### Downcutting
+
+Downcutting controls how deep flowing water cuts into the terrain, while the **Erosion Scale** determines the largest gullies' size across the entire terrain. Both settings can easily cause an impact on the other, so use a bit of experimentation to see how it affects your specific terrain.
+
+#### Erosion Scale
+
+Small values in **Erosion Scale** can create very fine, sharp gullies and crevices while large values create large ravines and huge flow structures. You can use multiple Erosion2 nodes with different scales to create complex erosion. It is recommended that nodes with higher Erosion Scale should precede nodes with smaller scales so the subsequent erosion does not destroy the finer details.
+
+### Sedimentary Control
+
+Sedimentation in Gaea simulates the transport and deposition of debris generated during erosion—such as soil, pebbles, and rocks. This process is governed by three distinct sedimentation types: **Suspended Load**, **Bed Load**, and **Coarse Sediments**. These types represent increasing sediment mass and decreasing mobility.
+
+![](/.data/assets/Gaea_-_site-004.terrain_08-15-21-PM.webp)
+
+Each type has its own **Discharge Angle**, which controls the slope angle at which sediment begins to settle. The lighter the sediment, the lower the angle it can travel on. Heavier sediments require steeper slopes to move or be deposited.
+
+:::warning
+All three types contribute to the overall sedimentation equally. Setting all sliders to 1.0 will not triple the effect—instead, each type contributes about a third of the total sedimentation. They are also interlinked, often blending visually and physically.
+:::
+
+#### **Suspended Load**
+
+These are the finest and lightest sediments—typically silt and sand-like materials. They are extremely mobile and tend to stay suspended in flowing water, depositing only when the flow slows down (decelerates). Because of this, they are the most active component in terrain reshaping, especially within gullies.
+
+While visually they may seem like rocks tumbling downslope, the simulation treats them as a dynamic agent tied closely to erosion. They flow across even gentle slopes (e.g., 0–24°) and often travel long distances before settling. Increasing Suspended Load results in subtle ripples and branching patterns within existing gullies, and with high **Duration** and **Downcutting**, can even generate entirely new gully systems.
+
+#### **Bed Load**
+
+These are heavier sediments—gravel and small rocks. They’re less mobile than suspended sediments but still quite active. Bed Load is less sensitive to acceleration/deceleration and more influenced by average water flow and terrain friction. It moves farther than coarse sediment, even across flat areas, but deposits more readily than suspended load.
+
+Bed Load generates deposits like talus and can visually fill in or enhance slope structures. Use it carefully: high values can dominate the erosion outcome and overwhelm finer detail.
+
+Bed Load Discharge is also useful in filling up gullies created by the erosion. It is a good compensation for having higher Downcutting.
+
+#### **Coarse Sediments**
+
+These represent the heaviest material—rocks, boulders, and debris. They are the least mobile and tend to settle rapidly, usually requiring steeper slopes to begin movement. A discharge angle of 24° for coarse sediments means they will be deposited only on or near such steep inclines; you will not see them on flat areas.
+
+Coarse sediments produce the most dramatic deposits—such as scree, debris piles, and alluvial fans—and are ideal for shaping realistic sedimentation structures.
+
+:::info
+Sedimentation and Downcutting are deeply linked as Sedimentation can be a direct product of Downcutting. Experiment with your terrain to see how downcutting can become a force multiplier for your sedimentation.
+:::
+
+Bed Load and Coarse Sediments also create wonderful shapes that is favorable for adding Scree, Debris simulations, or [ColorErosion](/reference/nodes/colorize/colorerosion.html){data-link-icon=''}.
+
+### Shape Control
+
+This group of controls are useful for artistic control over the simulation, from shaping the peaks to controlling the level of detail.
+
+![](/.data/assets/Erosion2-17.webp)
+
+#### Shape
+
+The Shape control allows you choose between retaining the original shape (low values) or allowing erosion to naturally reshape the peaks of the terrain (high values). 
+
+This processing is low-level Thermal erosion wrapped within Hydraulic erosion simulation.
+
+#### Shape Sharpness
+
+In conjunction with Shape, the Shape Sharpness control lets you shape the terrain to have more concave, sharp ridges. This is a great way to get the right kind of look for your terrain.
+
+The Shape Detail Scale control is very important when it comes to surface structure. This control lets you choose how much concentric smaller details are simulated - from the largest ravines to the finest gullies within them. This is a very useful tool for reducing unnecessary detail - especially for distant terrains or if you plan add further detail using [Surface Nodes](/using/using-gaea/crafting-the-surface/surface-nodes.html){data-link-icon=''}.
+
+![](/.data/assets/Gaea_-_Wasteland-001.terrain_01-32-19-AM---Copy.webp)
+
+### Orographic Influence
+
+Orographic influence allows you to limit where Erosion is inhibited.
+
+![](/.data/assets/Gaea_-_howManyErosions.terrain_03-55-12-AM.webp)
+
+#### Enable
+
+Toggle all Orographic influences.
+
+#### Directional Precipitation
+
+This enables rain shadows, forcing precipitation to occur more intensely on one side.
+
+#### Direction
+
+The direction from which rainfall occurs more strongly. This may not completely stop rainfall in other directions, but reduces its intensity.
+
+#### Rain Shadow
+
+Directional rain can be influenced by other nearby peaks and structures. Rain coming from a specific direction may be blocked by the rain shadow. This control allows you to choose the strength of the rain shadow.
+
+#### Altitude and Slope
+
+These controls allow you to choose the range for both Height and Slope within which rainfall occurs. This can be used to create both realistic and highly artistic results.
+
+#### Reverse
+
+Inverses the influence.
+
+
+
+## Faster Performance
+
+Gaea's Erosion_2 can utilize either GPU or CPU. It has an intelligent fallback if your GPU runs out of VRAM then it will run the erosion on the CPU where it may be slightly slower but less likely to run of of memory.
+
+In every scenario, Erosion_2 can outrun classic Erosion by several magnitudes.
+
+![](/.data/assets/gaea2stats1.png)
+
+![](/.data/assets/erosion_s85.webp)
+

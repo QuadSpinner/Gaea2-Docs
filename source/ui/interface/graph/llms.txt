@@ -1,0 +1,195 @@
+// from the-graph / index.md
+---
+icon: diagram-project
+title: The Graph
+uid: the-graph
+---
+
+# The Graph
+
+## The Infinity Graph <a href="#the-infinity-graph" id="the-infinity-graph"></a>
+
+Gaea's advanced graph-based workflow is the key to creating sophisticated terrains. This open-ended workflow gives you the flexibility to create almost any kind of results that you want.
+
+![](/.data/assets/gaea-ui2x.webp)
+
+
+
+### **What are nodes?**
+
+If you have not used node-based workflows before, they may look intimidating, but they aren't. Gaea provides an artist-friendly workflow where you are not required to create complex graphs to get good results.
+
+![](/.data/assets/image-(12).png)
+
+Each node is a heightfield processor that performs a single task. By connecting several nodes, you can create an elaborate program or "recipe" for creating a complex process. Some nodes provide more than one output and input. These additional "ports" can be used for more sophisticated processing of your terrain.
+
+:::info
+Node graphs go from left to right, never the opposite. They represent a one-way flow.
+:::
+
+To learn more about node graphs, see [Procedural Workflow](/ui/interface/graph/procedural-workflow.html){data-link-icon=''}.
+
+Also see [Lock Preview](/ui/graph/basic-workflow/lock-preview.html){data-link-icon='anchor-lock'}-and-underlays.
+
+### Conveniences
+
+Gaea supplies several quality-of-life features which make it easier to work with complex graphs. For instance, you can quickly create structures as merges (Combining two nodes), interject a node within an existing network, re-organize a complex graph area with Chokepoints, and more.
+
+See [Graph Conveniences](/ui/graph/basic-workflow/graph-conveniences.html){data-link-icon='handshake'}.
+
+## Separating and Organizing the Graph
+
+### Tabs
+
+The Infinity Graph allows you to split your terrain graph across multiple Tabs using [Portals and Chokepoints](/ui/graph/organization/portals-and-chokepoints.html){data-link-icon='person-to-portal'}. This allows you to separate concerns - such as creating the main shape, producing colors, exporting masks, and so on. By reducing the clutter, complex processes become easier to visualize and modify.
+
+You can move select nodes to different tabs. Portals will be created as required to ensure your connections stay intact.
+
+For more information see [Organizing with Tabs](/ui/graph/organization/organizing-with-tabs.html){data-link-icon='rectangle-history'}.
+
+### Groups
+
+You can group a set of nodes in a collapsible container called a Group. Groups can be assigned colors and icons, and can also be collapsed to hide the nodes within them. They are a great way to organize your graphs.
+
+For more information see [Groups](/ui/graph/organization/groups.html){data-link-icon='object-group'}
+
+
+
+
+// from procedural-workflow / procedural-workflow.md
+---
+title: Procedural Workflow
+uid: procedural-workflow
+order: 02
+---
+
+# Procedural Workflow
+
+## Understanding Node-Based Terrain Creation
+
+In Gaea, terrain creation and manipulation are handled through a node-based system. This system may be new if you're accustomed to different types of software interfaces. Understanding how nodes work and interact in Gaea will enable you to efficiently create complex and realistic terrains.
+
+:::info
+You can skip straight to creating your first terrain in [Introduction](/using/getting-started/basics/introduction.html){data-link-icon='1'}.
+:::
+
+
+
+### What is a Node?
+
+A node is a fundamental element in Gaea’s terrain design process. It represents a specific operation or function—such as generating a basic terrain shape, applying erosion, modifying texture, or altering elevation. Each node contains settings that you can adjust to change its effect on the terrain.
+
+### Node Graph
+
+The node graph is the workspace in Gaea where you visually connect different nodes to build and customize your terrain. It functions similarly to a flowchart, where the output of one node becomes the input to another, creating a chain of processes that define the final landscape.
+
+### Key Concepts
+
+#### **Node Chain**
+
+* **Sequential Connection**: Nodes are connected in a sequence to form a chain. Each node processes its input and passes the result to the next node in the sequence.
+* **Dependency**: The output of one node often depends on its predecessor, which underscores how crucial the order of the nodes is to the final outcome. 
+
+#### **Adjustable Parameters**
+
+* Each node features parameters that can be adjusted to refine its effect. These parameters are visually represented in the node’s properties panel.
+
+#### **Visual Feedback**
+
+* The node graph gives immediate visual feedback, showing how changes to a node’s parameters affect the terrain. This real-time update facilitates iterative and experimental design processes.
+
+### Getting Started with Nodes
+
+1. **Creating Nodes**: Right-click within the node graph area and select a node from the context menu, or type the name of the node if you know it.
+2. **Connecting Nodes**: Drag from the output port of one node and connect it to the input port of another node to establish a data flow.
+3. **Configuring Nodes**: Click on a node to view and adjust its parameters in the properties panel to achieve the desired terrain effect.
+4. **Previewing Changes**: Use the preview window to see how your adjustments affect the terrain. Experiment with different settings to understand the role of each node.
+
+### Tips for New Users
+
+* **Start Simple**: Begin with basic nodes and gradually add more complex nodes as you become comfortable with the workflow.
+* **Use Presets**: Many nodes come with presets that are good starting points for achieving specific terrain types.
+* **Experiment**: The node-based system encourages experimentation. Try different combinations of nodes and settings to discover new terrain possibilities.
+
+
+
+Node-based terrain creation in Gaea offers a powerful, flexible approach to landscape design. By understanding and utilizing the node graph effectively, you can create detailed, customized terrains that are limited only by your imagination.
+
+// from toolbox-and-search / toolbox-and-search.md
+---
+title: Toolbox and Search
+uid: toolbox-and-search
+order: 01
+---
+
+# Toolbox and Search
+
+## Toolbox
+
+The handy Toolbox sits inside the graph, giving you quick drag-drop access to all nodes.
+
+Nodes are organized by function into families and are color-coded for easy identification. Each node has an icon that shows its family, making it easy to recognize at a glance its purpose.
+
+You can click an item to create it in the center of the current graph view. Or you can drag and drop the node to a specific location from the toolbox to your Graph surface. 
+
+If you drop it on a node, it will automatically connect itself to that node's output.
+
+### Layouts
+
+You can drag the right edge of the Toolbox to switch between three layout styles depending on your preferences for verbosity or compactness.
+
+:::image-row-vertical
+![Expanded](/.data/assets/Gaea_-_Untitled_11-24-27-PM.png) 
+![Compact](/.data/assets/CKomeuEpQs.png) 
+![Toolbar](/.data/assets/Z9GjprHpvl.png)
+:::
+
+
+
+### Organization
+
+Nodes inside the Toolbox are organized by Family. You can choose how to visualize this organization.
+
+:::image-row
+![Nested (Default): Toolbox menus are nested by Family then family members to avoid clutter](/.data/assets/Gaea_-_Untitled_11-25-16-PM.png)
+![Flat: All Families and family members are shown in a flat menu](/.data/assets/Gaea_-_Untitled_11-25-46-PM.png)
+:::
+
+## Search
+
+Search in Gaea is more powerful than ever and is the recommended way to create nodes. You can bring up Search by right-clicking in an empty area of the Graph surface, or by pressing `Tab`.
+:::image-row-vertical
+![Search for both Nodes (Grey) and Presets (Teal).](/.data/assets/Gaea_-_Untitled_11-31-06-PM.png)
+:::
+
+### Nodes
+
+* The search menu allows users to find and create nodes on the graph. Simply type in the search bar to see the available nodes.
+
+### Presets
+
+* The search menu also displays presets alongside nodes. To specifically search for presets, begin your query with an underscore (_). This will prioritize presets in the search results, showing them at the top of the list.
+
+### Portals
+
+* To manage portals, right-click on a node and select "Manage portals." Alternatively, you can press the `P` key to open the node portal menu directly.
+* Click on the input port and select "Connect to portal." This will display all the portals created on the output port of other nodes.
+* Choose the desired portal from the menu to establish a portal connection.
+
+## Intelligent Search and Sorting
+
+Gaea's internal (and fully local) Predictive System learns your node creation and connection patterns as you work. This system is built into the Search and the Toolbox.
+
+Once you get used to the predictive suggestions, you can reduce your graph creation times by 50% in most instances.
+
+### **How does the Predictive System work?**
+
+Gaea keeps track of the nodes you use, and how different nodes are connected to each other. It then predicts the type of node you might want to create and puts that first in the list.
+
+The predictions are just a suggestion. They show up separately from the Search menu and are completely optional.
+
+### **Predicting Connections**
+
+When Search appears, it will attempt to detect if any patterns exist and try to suggest nodes that you are likely to use.
+
+For example, if you find yourself connecting Autolevel to the Flow output of the Erosion node, then dragging out a connection from the Flow port and dropping it into empty space on the Graph surface will bring up the Search menu, where Autolevel may be one of the suggested nodes.

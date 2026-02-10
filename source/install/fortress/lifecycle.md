@@ -60,3 +60,19 @@ If any session is closed through a crash, it will take up to 2 heartbeats to rel
 :::tip
 The Server Admin can use `View Allocations` > `K` command to forcefully kill the allocation and release the license immediately.
 :::
+
+
+## Troubleshooting checklist
+
+* Client cannot obtain a license
+  * Verify `floating.lic` is present in the correct data folder.
+  * Confirm the host/IP and port are correct.
+  * Run **Network Diagnostics** on the server.
+* Server reachable by `localhost` but not by NIC IP
+  * Server is likely bound to loopback only.
+  * Bind to `0.0.0.0` or the correct NIC address.
+* Clients intermittently lose licenses
+  * Check for firewall/AV interference, unstable VPN, or routing issues.
+  * Confirm server clock stability and network reliability.
+
+

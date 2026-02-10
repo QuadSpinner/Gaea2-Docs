@@ -21,8 +21,10 @@ X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.5.0.md
 X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.6.0.md
 X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.7.0.md
 X:\Docs\Gaea2-Docs\staging\history\index.md
+X:\Docs\Gaea2-Docs\staging\install\fortress\deallocating.md
 X:\Docs\Gaea2-Docs\staging\install\index.md
 X:\Docs\Gaea2-Docs\staging\install\install-gaea\troubleshooting.md
+X:\Docs\Gaea2-Docs\staging\install\license-management\floating-license.md
 X:\Docs\Gaea2-Docs\staging\reference\gaea2houdini\gaea-nodes.md
 X:\Docs\Gaea2-Docs\staging\reference\node-map.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\colorize\cluter.md

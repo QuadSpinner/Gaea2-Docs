@@ -7,28 +7,54 @@ order: 08
 
 # Using Fortress Server Logs
 
-All actions, events, errors, and internal observations in the Fortress Server are logged for review. We recommend sending a zip of the log folder when requesting technical support from QuadSpinner as it will help diagnose the issue faster.
+Fortress Server records operational activity (events, actions, warnings, errors, and internal diagnostics) to help administrators troubleshoot issues and to support post-incident review. When contacting QuadSpinner support, include a ZIP of the entire log folder. It significantly reduces turnaround time for diagnosing network, allocation, and configuration problems.
 
-## Viewing the Current Log
+## View the Current Log
 
-To view logs, select `Logs` in the main menu.
+1. In the Fortress Console, select **Logs** from the main menu.
 
-![](/.data/ui/fortress-logs1.png)
+   ![](/.data/ui/fortress-logs1.png)
 
-Select `Logs (Tail)` to view the most recent 40 entries.
+2. Choose one of the following:
 
-Select `Logs (entire)` to view the full log.
+   * **Logs (Tail)**: Shows the most recent ~40 entries (quick check for recent errors).
+   * **Logs (Entire)**: Opens the full log for the current day.
 
-![](/.data/ui/fortress-logs2.png)
+   ![](/.data/ui/fortress-logs2.png)
 
-## Viewing Older Logs
+## View Older Logs
 
-The console will only show the current day's log. The log file changes at midnight every day. To see older logs, select `Open Log Directory`.
+The console views only the current day’s log. Logs roll over at midnight (local server time).
 
-![](/.data/ui/fortress-logs-directory.png)
+To access previous days:
 
-Each day's log is stored as an individual plain text file and a LiteDB database for structured access.
+1. Select **Open Log Directory**.
 
-Logs are typically stored in: `C:\Users\<user>\AppData\Roaming\QuadSpinner\Fortress\`
+   ![](/.data/ui/fortress-logs-directory.png)
 
-Apart from machine names, logged in user names, and similar network connectivity information, the logs do not contain any personally identifiable information.
+2. Open the log file for the day you need.
+
+   * Each day is stored as:
+
+     * a **plain text** log file (human-readable)
+     * a **LiteDB** database (structured log store for querying/reporting)
+
+## Log Location
+
+Logs are typically stored at:
+
+```
+C:\Users\<user>\AppData\Roaming\QuadSpinner\Fortress\
+```
+
+(Exact location may vary depending on installation context and user profile.)
+
+## Data captured in logs
+
+Logs may include operational identifiers needed for troubleshooting, such as:
+* Machine names
+* Logged-in user name (as seen by the OS)
+* IP addresses and endpoints
+* Allocation/session events
+
+Logs are intended for diagnostics and do not include sensitive personal content beyond basic system and network identifiers required to operate the licensing service.

@@ -14,11 +14,15 @@ The Fortress Server is very easily to deploy.
 ## Requirements
 
 - Windows 10 or higher.
-- 4GB of RAM.
+- 256MB of RAM (exclusive of system resources); 512MB recommended.
 - TCP access across the LAN to all workstations that need licensing.
 - 100MB Hard Drive space.
 
-You can run this on a Virtual Machine, however the Ethernet 
+:::warning
+You can run this on a Virtual Machine, however the Ethernet/MAC address should not change.
+
+If the configuration is changed too much, a new hardware key + license regeneration may be required.
+:::
 
 :::note
 A Linux version is in-development. There is no specific ETA at the moment.
@@ -95,3 +99,19 @@ Register-ScheduledTask `
 :::warning
 It is recommended that you do not run the server as Admin unless absolutely required.
 :::
+
+
+## Troubleshooting checklist
+
+* Client cannot obtain a license
+  * Verify `floating.lic` is present in the correct data folder.
+  * Confirm the host/IP and port are correct.
+  * Run **Network Diagnostics** on the server.
+* Server reachable by `localhost` but not by NIC IP
+  * Server is likely bound to loopback only.
+  * Bind to `0.0.0.0` or the correct NIC address.
+* Clients intermittently lose licenses
+  * Check for firewall/AV interference, unstable VPN, or routing issues.
+  * Confirm server clock stability and network reliability.
+
+

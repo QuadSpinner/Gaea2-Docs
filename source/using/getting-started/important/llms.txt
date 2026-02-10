@@ -1,0 +1,163 @@
+// from important / index.md
+---
+title: Important
+uid: important
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from memory-requirements / memory-requirements.md
+---
+title: Memory Requirements
+uid: memory-requirements
+order: 10
+---
+
+# Memory Requirements
+
+Knowing how much memory Gaea will need for your project helps avoid performance issues and crashes. Here’s a simplified approach to understanding memory requirements in Gaea.
+
+![Your memory fills up by at least 4X as you double your resolution. This chart only shows final storage in RAM. It does not include the additional RAM required during processing to calculate each node.](/.data/assets/memory_chart.png)
+
+**Understanding Memory Needs**
+
+* **Memory Demand**: The more complex and detailed your terrain, the more memory it requires.
+* **Factors Affecting Memory**: Resolution, node complexity, and layering all influence memory usage.
+
+### **Resolution**
+
+* **Impact of Resolution**: Higher resolutions consume more memory. A 2048x2048 resolution needs significantly less memory than an 8192x8192 resolution.
+* **General Rule**: Doubling the resolution quadruples memory usage. For example, going from 1024x1024 to 2048x2048 will increase memory requirements fourfold.
+
+### **Heightfields**
+
+* **Heightfield**: The 3D representation of your terrain in Gaea.
+* **Memory Calculation**:
+  * Memory required = Resolution (width x height) x Bit Depth
+  * Gaea uses 32-bit heightfields for high precision.
+* **Example**: For a 1024x1024 resolution with 32-bit depth:
+  * 1024 x 1024 x 4 bytes = \~4 MB
+
+### **Layering Nodes**
+
+* **Nodes**: Each node in Gaea represents an action or modification. More nodes mean more memory.
+* **Layering**: Stacking multiple layers adds depth but also increases memory requirements.
+
+### **System Memory and Performance**
+
+* **Plan for Headroom**: Keep at least 25-30% of your system’s RAM free to ensure smooth performance.
+* **Memory-Saving Tips**: Use lower resolutions and simpler nodes while experimenting. Gradually increase complexity as your project nears completion.
+
+### **Exporting**
+
+* **Export Size**: The larger the resolution at export, the more memory you’ll need during that process.
+* **Preview Exports**: Try lower resolutions for test exports to verify results before the final high-resolution export.
+
+***
+
+## **Quick Tips for Beginners**
+
+* **Start with Lower Resolutions**: Build your terrain in 1024x1024 and increase resolution as needed.
+* **Simplify Your Node Graph**: Fewer nodes use less memory. Start with basic nodes and add detail as you go.
+* **Keep Track of Available Memory**: Regularly check your system’s memory usage to prevent overloads.
+
+***
+
+With these tips, you’ll be better prepared to manage memory efficiently in Gaea and ensure smoother workflows and stable project builds.
+
+// from non-determinism / non-determinism.md
+---
+title: Non-Determinism
+uid: non-determinism
+order: 08
+---
+
+# Non-Determinism
+
+In procedural terrain generation like in Gaea, non-deterministic output at different resolutions occurs because the way the algorithms process the terrain changes depending on the resolution. Here’s how it works:
+
+1. **Grid Size**: Terrain is made up of a grid of points (pixels). At higher resolutions, the grid has more points, allowing for sharper details. At lower resolutions, there are fewer points, so details get simplified or smoothed out.
+2. **Random Effects**: Randomized elements, like noise or rock shapes, look more detailed at high resolutions because there’s more space to show complexity. At lower resolutions, these effects are less detailed because the grid is smaller.
+3. **Scaling**: When you increase or decrease the resolution, the terrain data is resized. This resizing process can slightly alter details, like slopes or edges, depending on how the data is adjusted.
+4. **Algorithm Sensitivity**: Certain tools, like erosion, rely on the grid size for their calculations. Higher resolutions allow for finer details, while lower resolutions result in broader, less detailed changes.
+
+Because of these factors, the terrain can look different at varying resolutions, even with the same settings.
+
+![Determinism across 512, 1024, 2048, and 4096 resolutions.](/.data/assets/rX.webp)
+
+Gaea's algorithms are optimized to reduce the difference across resolutions as much as possible, especially with Erosion_2, however depending on your terrain setup it may be unavoidable in some situations.
+
+Some nodes like the classic Erosion provide a separate option to force Determinism by sacrificing processing speed.
+
+### Forcing Determinism
+
+One of the best ways to ensure a specific shape, especially at an early stage in your graph, is by [Baking Nodes](/using/using-gaea/baking-nodes/index.html){data-link-icon='fire'} at a resolution you like. Gaea will then upscale them at whatever final resolution you use and further low-yield Erosion or other effects can help compensate for the upscaling artifacts.
+
+// from scale-and-resolution / scale-and-resolution.md
+---
+title: Scale and Resolution
+uid: scale-and-resolution
+order: 09
+---
+
+# Scale and Resolution
+
+## Gaea Dimensions and Scale: A Beginner's Guide
+
+Understanding dimensions and scale in Gaea is essential for building terrains that look realistic and match your project needs. Here’s a simplified overview of key concepts:
+
+:::info
+For detailed technical information, see [Dimensions and Scale](/using/advanced-topics/technical-information/dimensions-and-scale.html){data-link-icon=''} in [Broken link](broken-reference).
+:::
+
+### **World Space**
+
+* **What It Is**: World Space refers to the area where your terrain exists.
+* **Units of Measurement**: Gaea typically uses meters (m) to represent distances in World Space. One unit in Gaea equals one meter.
+* **Why It Matters**: Knowing the scale of your terrain helps in creating realistic landscapes, especially when integrating into game engines or 3D software.
+
+### **Resolution**
+
+* **What It Is**: Resolution is the level of detail in your terrain, measured in pixels.
+* **Impact of Resolution**: Higher resolutions provide more detail but require more memory and processing power.
+* **Common Resolutions**: Gaea commonly supports resolutions from 512x512 to 8192x8192 pixels. For beginners, start with 1024x1024 or 2048x2048 pixels.
+
+### **Scale and Extents**
+
+* **Scale**: Determines the overall size of the terrain in meters. For example, if your terrain is 1000x1000 units in Gaea, it represents a 1-kilometer square area.
+* **Extent**: The physical area covered by your terrain. A larger extent means a larger physical space, which affects how objects appear in relation to each other.
+
+### **Height Range**
+
+* **What It Is**: Defines the lowest and highest points of the terrain.
+* **Setting Heights**: When setting terrain height, think about the kind of landscape you’re creating. For example, 100 meters might work for hills, while 3000 meters suit mountain ranges.
+* **Height Precision**: Gaea allows precise control of height, which is critical for realistic landscapes.
+
+### **Real-World Scaling**
+
+* **Importance**: When integrating terrains into real-world projects, make sure the scaling matches. This is especially vital for game environments and simulations where a terrain needs to match character or object sizes accurately.
+
+### **Vertical Scale**
+
+* **Definition**: Adjusts the height of the terrain relative to its width and depth.
+* **Why Adjust**: To create exaggerated terrains, like dramatic mountain ranges, adjust the vertical scale for added effect.
+
+***
+
+## **Quick Tips for Beginners:**
+
+* **Start Small**: Begin with lower resolutions to understand the basics without taxing your computer.
+* **Check Compatibility**: Ensure your terrain scale matches the requirements of your target game engine or software.
+* **Experiment with Extents and Scale**: These two settings can drastically change how your terrain feels. Try different combinations to get comfortable.
+
+***
+
+This guide provides the fundamentals to begin working with dimensions and scale in Gaea. As you gain experience, exploring these settings further will enhance your terrain design skills.
+
+
+
+For detailed technical information see [Dimensions and Scale](/using/advanced-topics/technical-information/dimensions-and-scale.html){data-link-icon=''} in [Broken link](broken-reference).
+

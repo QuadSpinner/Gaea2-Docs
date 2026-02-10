@@ -20,6 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("edit-page").setAttribute("href", mdEdit);
   document.getElementById("cmd-view-md").setAttribute("href", md);
+  document.getElementById("cmd-view-llms").setAttribute("href", new URL('llms.txt', window.location.href).toString());
   document.getElementById("cmd-ask-gpt").setAttribute("href", `https://chat.openai.com/?q=Read%20${encoded}%20and%20answer%20questions%20about%20the%20content.`);
   document.getElementById("cmd-ask-claude").setAttribute("href", `https://claude.ai/new?q=Read%20${encoded}%20and%20answer%20questions%20about%20the%20content.`);
   document.getElementById("cmd-save-pdf")?.addEventListener("click", (e) => {

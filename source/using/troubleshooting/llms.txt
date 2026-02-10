@@ -1,0 +1,263 @@
+// from common-workarounds / common-issues-and-workarounds.md
+---
+icon: suitcase-medical
+title: Common Issues
+uid: common-workarounds
+order: 01
+---
+
+# Common Issues and Workarounds
+
+## Gaea fails to start. \[Missing Runtime]
+
+You may be missing the Microsoft .NET Runtime. Install it [from this link](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.17-windows-x86-installer), then try again. This may be particularly possible with Portable installations.
+
+If it still does not work, you may be missing a necessary C++ runtime. This may be particularly possible with Portable installations. Try installing the [latest Visual C++ runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe).
+
+***
+
+## Gaea fails or freezes on starting up. \[NVidia GPU / Nahimic]
+
+#### Nvidia Drivers
+
+Some users have reported issues with recent NVidia GPU drivers. We recommend trying an [older driver such as 566](https://www.nvidia.com/en-us/drivers/details/237726/)
+
+#### Nahimic / SteelSeries Conflict
+
+The "Nahimic" audio utility is installed with software bundles from manufacurers such as ASUS, MSI, etc. This audio tweaking application can aggressively interfere with non-game applications.
+
+With Gaea, it can prevent the 3D viewport from launching successfully and force Gaea into a 2D-only view.
+
+We highly recommend either excluding Gaea from this and other utilities that may inject code or interject themselves into Gaea's functionality, or disable/uninstall it completely.
+
+Please look at the following resources for further information and details on uninstalling.
+
+[Uninstalling Nahimic](https://dovidenko.com/2021/1233/nahimic-uninstalling-blocking-msi-bloatware.html)
+
+[Microsoft Community](https://answers.microsoft.com/en-us/windows/forum/all/nahimic-companion-keeps-reinstalling/31885fb6-7fbc-403f-827b-b1abfb6fddde)
+
+[Google](https://www.google.com/search?q=uninstall+Nahimic)
+
+***
+
+## Erosion does not work or viewport does not render properly, but the rest of the application works.
+
+You may be missing a necessary C++ runtime. This may be particularly possible with Portable installations.\
+\
+Try installing the [latest Visual C++ runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe).
+
+***
+
+## I get a GRPC or other error when trying to activate my license.
+
+Make sure your firewall is configured to allow TCP access to <kbd>https://\*.quadspinner.com</kbd> using ports <kbd>80 / HTTP</kbd> and <kbd>443 / HTTPS</kbd>.
+
+***
+
+## Other issues with activation.
+
+Sometimes if you have excessive activations, this may happen.\
+\
+Try to log into your [User Account](https://quadspinner.com/Account) and see if there are any older or obsolete activations for your license. Removing them, and then reloading your license key in Gaea should fix the issue.
+
+
+// from troubleshooting / index.md
+---
+title: Troubleshooting
+uid: troubleshooting
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from benchmark-devices / benchmark-devices.md
+---
+title: Benchmark Devices
+uid: benchmark-devices
+order: 03
+---
+
+# Benchmark Devices
+
+![](/.data/assets/Gaea_Diagnostics_11-07-49-AM.png)
+
+## Hardware Benchmark
+
+The Hardware Benchmark runs tests to determine the general speed of your CPU, integrated GPU, dedicated GPU, and any other compatible devices that Gaea can utilize for processing.
+
+You can choose between the normal, High Accuracy, or Very High Accuracy test. Higher accuracy tests require longer testing time.
+
+![](/.data/assets/Benchmark_Results_11-08-17-AM.png)
+
+The score signifies the performance factor of each device. A higher score indicates better performance.
+
+### Compute Options
+
+The benchmark data is also available via the [Compute Tab](/ui/interface/options/compute.html) tab. 
+
+![](/.data/assets/Options_11-09-14-AM.png)
+
+// from cpu-only-mode / cpu-only-mode.md
+---
+title: CPU Only Mode
+uid: cpu-only-mode
+order: 02
+---
+
+# CPU Only Mode
+
+In some cases, Gaea may have trouble using your GPU device. Often this is because it is an [unsupported older device](/install/install-gaea/index.html) or may have outdated drivers.
+
+To enable CPU only mode, start Gaea Diagnostics from the Start Menu. Select "Run Gaea with CPU only" and click "Start".
+
+![](/.data/assets/Gaea_Diagnostics_11-00-52-AM.png)
+
+This will start Gaea in CPU only mode. It will now remain in CPU only mode, including when running the Gaea Build CLI.
+
+To re-enable multiple device usage, you can go to the [Compute](/ui/interface/options/compute.html){data-link-icon=''} tab in [Options](/ui/interface/options/index.html){data-link-icon=''}.
+
+![](/.data/assets/Options_11-01-25-AM.png)
+// from diagnostics-package / diagnostics-package.md
+---
+title: Diagnostics Package
+uid: diagnostics-package
+order: 01
+---
+
+# Diagnostics Package
+
+Gaea Diagnostics (Watson) can create a Diagnostics Package that can help our tech support technicians and developers examine crashes or incorrect behavior in Gaea.
+
+![](/.data/assets/Watson_-_Gaea_Diagnostics_06-12-24-PM.png)
+
+It takes a few moments for the diagnosis to be completed. The resulting diagnostics package will be a `.zip` file that will be placed on your desktop for easy access. In most cases, you will want to email it to our [Tech Support team](https://quadspinner.com/support/).
+
+![](/.data/assets/Watson_-_Gaea_Diagnostics_06-12-51-PM.png)
+
+You can expand this dialog to examine the contents of the package. Almost all data is plain text and can be examined. 
+
+### Send Online
+
+To enable quick and hassle-free sharing, you can choose to send the Watson Log directly to our secure server. In return, you will be given a Log Receipt code such as `0A7-20241113`. If you are contacting our Tech Support team, you can give this code to them along with a description of your issue and we will retrieve it from our server and diagnose the issue.
+
+![](/.data/assets/Gaea_Watson_06-13-21-PM.png)
+
+:::info
+While it is risky to share a Diagnostics Log zip file publicly, like in Discord or Forums, it is completely safe to share the Log Receipt code. The code can only be used by authorized QuadSpinner team members to access your log.
+
+While we do our best to ensure only non-secure technical information is stored in the logs, a clever person with malicious intent may still be able to glean some information from your logs. The Log Receipt ensures private access to your data.
+:::
+
+### Send Manually
+
+If you prefer to send the data directly, you can simply attach the `.zip` file generated by Watson to an email or [Support form](https://quadspinner.com/support).
+
+## Package Contents
+
+The diagnostics package contains: 
+
+* Execution logs for Gaea, these are detailed chronological entries of events inside the program - especially technical readouts and error traces.
+* Copy of your settings so we can recreate the same environment during our tests.
+* Hardware information such as CPU type, model number, GPU type, driver version for various hardware, firmware version, and so on.
+* Integrity check of the installation to make sure all files are intact and if an update may have failed to update specific files.
+
+### Privacy
+
+We do not collect any personal information in these logs. Our intention for the logs is solely to determine where the software or hardware may be malfunctioning and provide a solution to you.
+
+In this age of extreme data collection and abuse of the user's trust, we try our best to treat your information with respect. If any personally identifiable or protected information is ever collected - for example, your username may be your name or a filename may describe an NDA protected project name - we disregard such information and do not use it any form.
+
+All diagnostics logs are collected directly by QuadSpinner support - these are not outsourced personnel but our own dedicated in-house team. These logs are then shared with our development team. Most of the time they are discarded immediately. Other times they may be kept for a longer period in [accordance with our privacy policy](https://quadspinner.com/legal/) so that we can refer to it in solving larger problems in the software.
+
+### Editable Logs
+
+Lastly, as we ask you trust us with your data, we trust you with ours. The zip file is editable. If you find any information you prefer not to share, you may remove it before submitting the package. 
+
+![](/.data/assets/Package_Viewer_06-13-06-PM.png)
+
+However, please note that removing any data critical to Gaea's operation may hinder our ability to provide effective technical support so please be sure you know what information your are removing.
+
+
+// from diagnostics / index.md
+---
+icon: stethoscope
+title: Diagnostics
+uid: diagnostics
+---
+
+# Diagnostics (Watson)
+
+The Gaea Diagnostics application, nicknamed WATSON, is crucial for diagnosing problems, helping tech support find solutions for you, and for benchmarking your hardware.
+
+![](/.data/assets/Watson_-_Gaea_Diagnostics_06-12-24-PM.png)
+
+Use Watson to generate a [Diagnostics Package](/using/troubleshooting/diagnostics-watson/diagnostics-package.html){data-link-icon=''}.
+
+// from common-errors / common-errors.md
+---
+title: Common Errors
+uid: common-errors
+order: 01
+---
+
+# Common Errors
+
+
+
+## Recovering a File
+
+### Repair File
+
+Use the `File > Repair` menu item to have Gaea attempt to re-containerize the terrain file and remove any extraneous information or bad data remnants that may prevent a file from being opened or used properly.
+
+## Baking
+
+### Baked Data does not load
+
+Usually, this happens when one or more baked cache files are corrupted or were not baked properly. Deleting the cache and re-baking the nodes should fix the issue.
+
+// from terrains / index.md
+---
+icon: circle-xmark
+title: Terrains
+uid: terrains
+---
+
+# Terrains
+
+
+// from terrain-quality / terrain-quality.md
+---
+title: Terrain Quality
+uid: terrain-quality
+order: 02
+---
+
+# Terrain Quality
+
+## Map
+
+### There are banding/stairstep patterns in my displacement
+
+Open the exported heightfield in a good quality image viewer and check whether it is 32-bit or not. If the file has been exported as 16-bit for any reason, then you may find some stairsteps or quantization banding.
+
+Export the file as 32-bit to remove the banding and avoid lossy formats such as PNG.
+
+## Mesh
+
+### Terrain looks faceted
+
+The Normals were not imported properly in your mesh. You can use a Smooth / Autosmooth modifier in your app to fix it, or re-import the mesh and ensure Normals are imported. 
+
+### Terrain is inside out
+
+Your Normals are inverted. This can happen during import in some importers with certain settings. You can fix this with a Normals or Flip Normals modifier in your app. Or re-import and make sure the right settings are set in the Importer.
+
+### Mesh size is tiny/huge
+
+If you have exported the mesh at `Normalized` scale in Gaea, then it will be exported as a `0..1` scale mesh. Use the `Multiplier` or scaling available in your OBJ importer if available to multiply it by the size you want. Alternatively, you can import it and them scale it up to the size defined in your Gaea world.
+
+You can also export the terrain in Meters or Kilometers and then import it at that scale.
+

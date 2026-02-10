@@ -10,6 +10,9 @@ order: 03
 
 Gaea stores all application data, excluding Projects, in a centralized directory known as the Data folder.
 
+{% include "storage-paths.md" %}
+
+
 ### **Standard Installation**
 
 If Gaea is installed in the Program Files directory, the Data folder is located at:
@@ -25,6 +28,10 @@ The default location for a Portable Installation is:
 If Gaea is installed in a portable location, the Data folder is located adjacent to the Gaea.exe file.
 
 For example, if your install location is: `D:\Programs\CG\Gaea\` then the Data folder will be stored at `D:\Programs\CG\Gaea\Data\` 
+
+:::note
+Whenever a new installation of Gaea is created, upon first run, Gaea will check if the install folder is writeable (ie, does it require Admin Privileges). If it is writeable it will create the `Data` folder there, otherwise it will create it in `AppData`.
+:::
 
 
 

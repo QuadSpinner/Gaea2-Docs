@@ -1,0 +1,554 @@
+// from bomber / bomber.md
+---
+title: Bomber
+uid: bomber
+order: 01
+---
+
+
+# Bomber
+
+
+The Bomber node takes an input heightfield and "stamps" or bombs it across the entire surface of the terrain using the randomization properties you set.
+
+If your terrain has a hard edge, you can turn on Fade Edges. Or for more precise control, try using the [Edge](/reference/nodes/utility/edge.html){data-link-icon=''} or [Clip](/reference/nodes/modify/clip.html){data-link-icon=''} before applying the Bomber node.
+
+# Properties
+
+| Property | Description |
+| --- | --- |
+|Iterations|Number of instances the bombing operation will create. Higher values increase the number of scattered elements.|
+|Multiplier|Quickly multiply the number of bombed instances by increasing or decreasing this value, scaling the overall density.|
+|Size|The minimum and maximum relative size of bombed instances, allowing for variation in the scale of each element.|
+|Size Distribution|Controls the uniformity of the size of bombed instances. Higher values produce more consistent sizes, while lower values allow greater variation.|
+|Rotation|The minimum and maximum range of rotations for the bombed instances, introducing random orientation for each element.|
+|Proportional|Determines whether instances should maintain height-to-size proportion. When enabled, scaling an instance will also scale its height proportionally.|
+|Variable Height|Allows variations in the height of bombed instances, introducing additional randomness to their elevation.|
+|Height|The minimum and maximum range of height variations for the bombed instances, controlling how tall or flat each element can be.|
+|Distribution|The method used to distribute bombed instances across the surface.|
+|Random|A randomized distribution that results in pure chaotic patterns, scattering instances unpredictably.|
+|Grid|A normalized grid distribution function that results in a systematic, evenly spaced pattern.|
+|Jitter|The random offset applied to each instance while distributing, adding natural variation to their placement.|
+|Seed|The randomization pattern or seed for the node's process. Changing the seed produces different distribution patterns.|
+|Fade Edges|Softens the edges of bombed instances, blending them more smoothly into the base terrain.|
+|Blend Mode|Specifies how the base terrain and bombed instances are merged together.|
+|None|Each instance overwrites the underlying terrain at its location.|
+|Blend|Blends instances with the base terrain using standard blending.|
+|Add|Adds the height values of instances on top of the base terrain.|
+|Subtract|Subtracts each instance from the base and previous instances, creating depressions.|
+|Difference|Creates a difference between the base and each bombed instance, emphasizing changes.|
+|Multiply|Multiplies the base terrain with each bombed instance, modulating the result.|
+|Screen|Adds the two inputs without overexposing the output, resulting in a lighter blend.|
+|Max|Retains the maximum height values of each bombed instance and the base terrain.|
+|Min|Retains the minimum height values of each bombed instance and the base terrain.|
+|Quality|The level of quality to be used for the bombing operation. Draft is recommended for high-resolution previews, while Medium and High provide better final results.|
+|Draft|Fastest processing with lower quality, suitable for previews.|
+|Medium|Balanced quality and performance for general use.|
+|High|Highest quality with the most detail, recommended for final output.|
+| Command: Add Input | Allows an additional input to be included in the bombing operation, enabling more complex or layered effects.
+
+// from bulbous / bulbous.md
+---
+title: Bulbous
+uid: bulbous
+order: 02
+---
+
+
+
+# Properties
+
+
+
+
+| Property | Description |
+| --- | --- |
+|Scale||
+|Jitter||
+
+// from contours / contours.md
+---
+title: Contours
+uid: contours
+order: 03
+---
+
+
+
+# Properties
+
+
+
+
+| Property | Description |
+| --- | --- |
+|Count|Sets the number of main contour lines to generate. Higher values create more elevation bands across the terrain.|
+|Subdivision|Controls the number of subdivisions between main contour lines, adding finer detail and intermediate lines.|
+|Accuracy|Adjusts the precision of contour line placement. Higher accuracy produces more exact lines that closely follow the terrain's elevation.|
+|Lines|Controls the brightness or opacity of the main contour lines, making them more or less prominent in the output.|
+|Line Intensity|Controls the brightness or opacity of the main contour lines, making them more or less prominent in the output.|
+|Sub Intensity|Adjusts the brightness or opacity of the subdivision lines, which are the finer lines between main contours.|
+|Line Thickness|Specifies the thickness of the contour lines. Higher values produce bolder, wider lines.|
+
+// from craggy / craggy.md
+---
+title: Craggy
+uid: craggy
+order: 04
+---
+
+
+
+# Properties
+
+
+
+
+| Property | Description |
+| --- | --- |
+|Size|Controls the overall scale of the craggy features. Higher values produce larger cracked rock formations on the surface.|
+|Depth|Sets the depth or prominence of the cracks and rock features, determining how pronounced the craggy shapes appear.|
+|Shape|Defines the overall form and pattern of the cracked rock shapes, affecting their outline and distribution.|
+|Seed|Randomization seed for generating unique variations of the craggy rock patterns. Changing the seed produces different results.|
+
+// from distress / distress.md
+---
+title: Distress
+uid: distress
+order: 05
+---
+
+
+
+# Properties
+
+
+
+
+
+| Property | Description |
+| --- | --- |
+|Octaves||
+|Scale||
+|Depth||
+|Influence||
+|Formation||
+|Scale X||
+|Scale Y||
+|Seed||
+
+// from fractalterraces / fractalterraces.md
+---
+title: FractalTerraces
+uid: fractalterraces
+order: 06
+---
+
+FractalTerraces creates terraces or stratification of the terrain. The node is fractal in nature, and terracing is performed in multiple octaves giving you a very high level of detail.
+
+You get detailed control over the edge shape, uniformity, rock hardness, and overall character of the terracing.
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Spacing|Sets the space between two terraces. Controls the horizontal distance or interval between each terrace step.|
+|Octaves|Specifies the number of terraces to generate, including subtle sub-terraces. Higher values create more layers and finer detail.|
+|Intensity|Controls the strength of the terracing process. Higher intensities flatten the terraces, making the steps more pronounced.|
+|Shape|Defines the general shape of the terraces. Lower values create steeper terraces that follow the terrain's bulk, while higher values produce smoother terraces that protrude outward.|
+|Seed|Randomization seed for the node's process. Changing the seed produces different terrace arrangements.|
+|Advanced|Controls how distinctly individual terrace shapes are separated from each other, affecting the clarity of terrace boundaries.|
+|Shapes separation|Controls how distinctly individual terrace shapes are separated from each other, affecting the clarity of terrace boundaries.|
+|Macro octaves|Sets the number of large-scale terrace layers, influencing the overall structure and major steps in the terrain.|
+|Micro shape|Adjusts the fine detail and small-scale shaping of terraces, adding subtle variations to each step.|
+|Character|Modifies the overall character or style of the terraces, such as their ruggedness or smoothness.|
+|Thickness uniformity|Controls how consistent the thickness of each terrace step is across the terrain. Higher values produce more uniform terraces.|
+|Hardness uniformity|Adjusts the consistency of terrace edge hardness, affecting whether terrace boundaries are sharp or soft throughout.|
+|Strata details|Adds additional detail to the strata or layers within the terraces, enhancing geological realism.|
+|Protect Range|Defines a range within which the original terrain is protected from terracing, preserving natural features in specified areas.|
+|Tilt|Enables or disables the tilt effect, allowing terraces to be slanted in a specified direction.|
+|Apply Tilt|Enables or disables the tilt effect, allowing terraces to be slanted in a specified direction.|
+|Tilt Amount|Sets the degree of tilt applied to the terraces, controlling how steeply they are angled.|
+|Direction|Specifies the direction in which the tilt is applied, determining the orientation of the slant.|
+|Tilt Seed|Randomization seed for the tilt effect, producing varied tilt patterns when changed.|
+|Warp Amount|Controls the strength of the warp effect applied to the terraces, introducing distortion and organic variation.|
+|Warp Size|Sets the scale of the warp effect, determining how broad or fine the distortion is.|
+|Warp Style|Specifies the style of warping applied to the terraces, affecting the nature of the distortion.|
+|A|<desc>|
+|B|<desc>|
+|C|<desc>|
+|D|<desc>|
+
+// from grid / grid.md
+---
+title: Grid
+uid: grid
+order: 07
+---
+
+
+
+# Properties
+
+
+
+| Property | Description |
+| --- | --- |
+|Subdivision|Sets the number of grid divisions along each axis. Higher values create a denser grid with more cells.|
+|Line Intensity|Controls the brightness or opacity of the main grid lines, making them more or less prominent in the texture.|
+|Sub Intensity|Adjusts the brightness or opacity of the subdivision lines, which are the finer lines between main grid lines.|
+|Line Thickness|Specifies the thickness of the grid lines. Higher values produce bolder, wider lines.|
+
+// from groundtexture / groundtexture.md
+---
+title: GroundTexture
+uid: groundtexture
+order: 08
+---
+
+
+
+# Properties
+
+
+
+| Property | Description |
+| --- | --- |
+|Method|Specifies the style of ground texture to generate, affecting the overall appearance and character of the surface.|
+|Harsh|Creates a ground texture with strong, pronounced features and high contrast, simulating rugged or eroded terrain.|
+|Rocky|Generates a texture with rocky details, emphasizing stone-like patterns and roughness typical of stony ground.|
+|Rough|Produces a generally uneven and coarse texture, adding subtle irregularities for a natural, weathered look.|
+|Strength|Controls the intensity of the ground texture effect. Higher values make the texture more prominent and detailed.|
+|Coverage|Adjusts how much of the terrain surface is affected by the ground texture, determining the extent of the effect.|
+|Density|Sets the concentration of texture features across the surface. Higher density results in more frequent and closely packed details.|
+
+// from surface / index.md
+---
+title: Surface
+uid: surface
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from outcrops / outcrops.md
+---
+title: Outcrops
+uid: outcrops
+order: 09
+---
+
+
+
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Outcrops|Controls the number of unique outcrop shapes generated before repetition. Higher values create more visual diversity among outcrops.|
+|Variations|Controls the number of unique outcrop shapes generated before repetition. Higher values create more visual diversity among outcrops.|
+|Strata|Adds visible geological layering or banding to the outcrops, simulating sedimentary or stratified rock formations. High values increase the distance between Strata layers.|
+|Density|Adjusts how many outcrops are placed across the terrain. Higher values increase the number of outcrops per area.|
+|Shape|Determines the overall form and silhouette of each outcrop, affecting their appearance and how they blend with the terrain.|
+|Chipped|Controls the amount of chipping or breakage on the outcrops, simulating natural weathering and erosion effects.|
+|Seed|Sets the randomization seed for outcrop generation, ensuring reproducible or varied results with each value.|
+|Variation Range|Specifies the base size of each outcrop, affecting their footprint and prominence on the terrain.|
+|Size|Specifies the base size of each outcrop, affecting their footprint and prominence on the terrain.|
+|Height|Controls the vertical scale of the outcrops, determining how tall or flat they appear.|
+|Rotation|Applies random or specified rotation to each outcrop, increasing natural variation and preventing repetitive patterns.|
+
+// from pockmarks / pockmarks.md
+---
+title: Pockmarks
+uid: pockmarks
+order: 10
+---
+
+
+
+# Properties
+
+| Property | Description |
+| --- | --- |
+|Pockmarks|Controls the average diameter of each pockmark. Larger values produce bigger pits, while smaller values create finer surface detail.|
+|Size|Controls the average diameter of each pockmark. Larger values produce bigger pits, while smaller values create finer surface detail.|
+|Scale|Sets the overall scale of the pockmark pattern, affecting how widely pockmarks are distributed across the terrain.|
+|Depth|Specifies how deep each pockmark is carved into the surface. Higher values create more pronounced depressions.|
+|Density|Adjusts how many pockmarks are scattered across the terrain. Higher values increase the number of pits per area.|
+|Multiplier|Scales the intensity or strength of the pockmark effect, amplifying the impact of each depression.|
+|Invert|Inverts the effect, turning pockmarks into raised bumps instead of depressions.|
+|Seed|Randomization seed for pockmark placement and variation. Changing the seed produces different pockmark patterns.|
+
+// from rocknoise / rocknoise.md
+---
+title: RockNoise
+uid: rocknoise
+order: 11
+---
+
+RockNoise is a useful tool for generating fields of rocks with size variations and controllable density. Its "flat" generation makes it easy to apply the rocks to any surface using the Embed and Insert modes in the Combine node. RockNoise can be mixed with other nodes, like Rocky and Outcrops, to create even more diverse rock formations. In the example above, RockNoise is embedded into the output of an Erosion node using the Wear output as a mask.
+
+RockNoise has a minimal interface that lets you control the density and number of octaves of the generated rocks. The Size parameter determines the overall size of the largest rocks, while the Octaves work like in Perlin noise, where it add smaller rocks in between the larger ones from previous octaves. This allows you to create realistic-looking fields of rocks with a high level of detail.
+
+
+
+# Properties
+
+
+
+| Property | Description |
+| --- | --- |
+|Size|The relative size of the rocks generated by the noise.|
+|Variety||
+|Octaves|Each octave adds smaller/subdivided rocks in between the larger ones from the previous octave. |
+|Seed|The randomization pattern or seed for the node's process.|
+|Style||
+|A|<desc>|
+|B|<desc>|
+|C|<desc>|
+
+// from rockscape / rockscape.md
+---
+title: Rockscape
+uid: rockscape
+order: 12
+---
+
+
+
+# Properties
+
+| Property | Description |
+| --- | --- |
+|Size|Controls the overall scale of the rock formations. Higher values produce larger, more expansive rock features.|
+|Erosion|Adjusts the amount of erosion applied to the rockscape, simulating natural weathering and smoothing of rock surfaces.|
+|Breakage|Determines the degree of fracturing and splitting in the rocks, creating more jagged and broken surfaces as the value increases.|
+|Roughness|Sets the surface roughness of the rocks, adding fine detail and texture to the formations.|
+|Jitter|Introduces randomness to the placement and shape of rock features, making the rockscape appear more natural and less uniform.|
+|Clusters|Controls the clustering behavior of rock formations, affecting how rocks group together or remain isolated.|
+|Off|Disables clustering, resulting in evenly distributed rock features.|
+|Large|Creates large clusters of rocks, forming prominent groupings and massifs.|
+|Small|Generates small, tight clusters of rocks, producing scattered groupings across the surface.|
+|Shattered|Simulates shattered rock formations, with highly fragmented and irregular clusters.|
+|Relief|Specifies the style of surface relief, affecting the sharpness and layering of the rockscape.|
+|Off|No additional relief is applied; the surface remains as generated by the base parameters.|
+|Sharp|Applies sharp, pronounced relief, emphasizing angular features and steep transitions.|
+|Soft|Applies soft, gentle relief, smoothing out transitions and creating a more weathered appearance.|
+|Stratified|Adds visible stratification or layering to the rockscape, simulating sedimentary or banded rock formations.|
+|Seed|Randomization seed for generating unique variations of the rockscape. Changing the seed produces different rock patterns.|
+
+// from roughen / roughen.md
+---
+title: Roughen
+uid: roughen
+order: 13
+---
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Width||
+|Depth||
+|Oriented||
+|Quality||
+|Quarter|<desc>|
+|Third|<desc>|
+|Half|<desc>|
+|Full|<desc>|
+
+// from sand / sand.md
+---
+title: Sand
+uid: sand
+order: 14
+---
+
+
+
+
+Sand creates medium and small level sand patterns. It can also be used to simulate dunes.
+
+
+
+# Properties
+
+| Property | Description |
+| --- | --- |
+|Scale|The scale of the sand pattern.|
+|Direction||
+|Chaos||
+|Softness|Softness of the sand pattern.|
+|Height|The height of the sand pattern.|
+|Warp by Terrain||
+|Seed|The randomization pattern or seed for the node's process.|
+
+// from sandstone / sandstone.md
+---
+title: Sandstone
+uid: sandstone
+order: 15
+---
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Passes|Sets the number of erosion passes applied to simulate layered sandstone formation. More passes increase the detail and realism of the stratified effect.|
+|Iterations|Controls how many times the erosion process is repeated within each pass, refining the sandstone layering and surface features.|
+|Spacing|Determines the distance between individual sandstone layers, affecting the frequency and thickness of visible strata.|
+|Intensity|Adjusts the overall strength of the sandstone effect, influencing how pronounced the layers and erosion features appear.|
+|Convexity|Controls the curvature of the sandstone layers, making them appear more rounded (convex) or flat.|
+|Tilt|Applies an angular tilt to the sandstone layers, simulating geological tilting or shifting of strata.|
+|Direction|Sets the orientation of the sandstone layers, determining the primary direction in which the strata are aligned.|
+|Chaos|Introduces randomness and irregularity to the sandstone layers, creating a more natural and less uniform appearance.|
+|Seed|Defines the randomization seed for procedural generation, ensuring unique but repeatable sandstone patterns.|
+|Chipped|Enables or controls the presence of chipped or broken edges in the sandstone, simulating natural weathering and breakage.|
+|Chipping|Adjusts the amount and detail of chipping applied to the sandstone layers, affecting the roughness and realism of eroded edges.|
+
+// from shatter / shatter.md
+---
+title: Shatter
+uid: shatter
+order: 16
+---
+
+
+
+
+
+
+
+
+# Properties
+
+
+
+| Property | Description |
+| --- | --- |
+|Shatters||
+|Size||
+|Coverage||
+|Seed|The randomization pattern or seed for the node's process.|
+
+// from shear / shear.md
+---
+title: Shear
+uid: shear
+order: 17
+---
+
+
+
+
+
+
+Shear creates rock shearing and exposes strata.
+
+
+
+# Properties
+
+
+
+| Property | Description |
+| --- | --- |
+|Strength|The amount of terrain warp/shear that will be applied.|
+|Seed|The randomization pattern or seed for the node's process.|
+
+// from steps / steps.md
+---
+title: Steps
+uid: steps
+order: 18
+---
+
+
+
+# Properties
+
+| Property | Description |
+| --- | --- |
+|Steps|Controls the overall size and spacing of the steps. Higher values produce larger, more widely spaced terraces, while lower values create finer, closely packed steps.|
+|Scale|Controls the overall size and spacing of the steps. Higher values produce larger, more widely spaced terraces, while lower values create finer, closely packed steps.|
+|Density|Determines the number of steps or terraces within the terrain. Increasing density results in more steps, creating a more detailed and intricate terraced effect.|
+|Seed|Sets the random seed for the step pattern. Changing the seed generates a different arrangement of steps while keeping other settings the same.|
+
+// from stones / stones.md
+---
+title: Stones
+uid: stones
+order: 19
+---
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Stones|Controls the overall size of the stones. Higher values produce larger stones, while lower values create finer gravel.|
+|Scale|Controls the overall size of the stones. Higher values produce larger stones, while lower values create finer gravel.|
+|Height|Sets the maximum elevation or prominence of the stones above the terrain surface.|
+|Density|Adjusts how many stones are scattered across the surface. Higher values increase the number of stones per area.|
+|Seed|Randomization seed for stone placement and variation. Changing the seed produces different stone patterns.|
+
+// from stratify / stratify.md
+---
+title: Stratify
+uid: stratify
+order: 20
+---
+
+
+Stratify allows you to create broken strata or rock layers on the terrain in a non-linear fashion. Unlike terracing, stratification involves substrata/subterraces created in confined local zones, such as between two broken plates. Each stratified layer exists independent from the rest of the layer, creating a robust, realistic formation.
+
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Spacing|Controls the distance between individual stratified layers, affecting the frequency and thickness of visible strata in the terrain.|
+|Octaves|Sets the number of noise octaves used to add variation to the stratified layers. Higher values introduce more complexity and detail.|
+|Intensity|Adjusts the overall strength of the stratification effect, making the layers more or less pronounced.|
+|Shape|Modifies the profile or contour of the stratified layers, influencing how sharply or smoothly the layers transition.|
+|Seed|Defines the randomization seed for procedural generation, ensuring unique but repeatable stratification patterns.|
+|Tilt Amount|Applies an angular tilt to the stratified layers, simulating geological tilting or shifting of strata.|
+|Direction|Sets the orientation of the stratified layers, determining the primary direction in which the strata are aligned.|
+
+// from terraces / terraces.md
+---
+title: Terraces
+uid: terraces
+order: 21
+---
+
+
+
+# Properties
+
+| Property | Description |
+| --- | --- |
+|Terraces|Controls the number and spacing of terrace steps applied to the terrain. Increasing this value creates more distinct, layered steps.|
+|Uniformity|Adjusts the consistency of terrace step heights. Higher uniformity produces evenly spaced terraces, while lower values introduce variation.|
+|Steepness|Sets the vertical sharpness of each terrace step. Higher steepness results in more abrupt transitions between steps.|
+|Intensity|Determines the overall strength of the terrace effect. Higher intensity makes the terraces more pronounced in the terrain.|
+|Seed|Defines the randomization seed for procedural terrace generation. Changing the seed produces different terrace patterns.|
+

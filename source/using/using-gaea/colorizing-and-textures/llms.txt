@@ -1,0 +1,242 @@
+// from simulation-colorerosion / colorerosion.md
+---
+title: ColorErosion
+uid: simulation-colorerosion
+order: 05
+---
+
+# ColorErosion
+
+## Sedimentary Flows with ColorErosion
+
+![](/.data/assets/gaea-ui2x.webp)
+
+ColorErosion takes the principles of sedimentary erosion and applies it to color maps.
+
+Gaea's Erosion algorithm creates powerful, realistic sedimentary flows and the ColorErosion nodes takes advantage of that to create realistic color flows that mimic minerals and other sediments as they shift and flow across a landscape.
+
+ColorErosion is extremely powerful, yet very simple to use. In most cases, the default settings are more than enough to get the precise effect. It requires only two inputs, the color map you wish to erode and your terrain heightfield.
+
+### Using Directly
+
+You can apply a SatMap directly a terrain, with or without a TextureBase or Texturizer node in between, and simply apply ColorErosion to get decent layered sedimentary flows.
+
+![](/.data/assets/erosion_2.webp)
+
+### Using with Mixer
+
+The Mixer node is very helpful in preparing the color map before applying ColorErosion as you can change different color strata before eroding, and choose exactly how and where they may flow.
+
+![](/.data/assets/mixer2.webp)
+
+### Sophisticated Use
+
+You can also create more subtle, sophisticated texturing with ColorErosion as shown in the `Complex Scene - Debris` example that is included with Gaea.
+
+![](/.data/assets/debris.jpg)
+
+### Understanding How Color Moves
+
+ColorErosion can be a very creative component whether you are creating something realistic or stylistic. The core understanding required is how color placed high up flows with existing sediment flows.
+
+![](/.data/assets/colorErosion2.webp)
+
+Experiment with various color layers, whether you use SatMap's Bias slider or various layers with Mixer, and see how the erosion reacts.
+
+![](/.data/assets/colorize2.webp)
+
+// from crafting-masks / crafting-masks.md
+---
+title: Crafting Masks
+uid: crafting-masks
+order: 01
+---
+
+# Crafting Masks
+
+## What is Color Lookup/CLUT?
+
+All color texture generation in Gaea relies on applying color ramps (gradients) through a black-and-white mask.
+
+A simple example: the darkest part of the gradient maps to the lowest terrain elevations, while the brightest part maps to the highest. Intermediate grayscale values distribute the gradient proportionally. This is known as a CLUT or Color Look Up Table.
+
+![](/.data/assets/CLUTer.png)
+
+In this example, the gradient from a CLUTer node is mapped directly to the heightfield.
+
+![](/.data/assets/mountain_autolevelled.png)
+
+Now, let's a try more detailed, colorful gradient.
+
+![](/.data/assets/Gaea_-_Untitled_04-39-07-AM.webp)
+
+You can see how it distributes across the terrain.
+
+![](/.data/assets/Gaea_-_Untitled_04-38-54-AM.webp)
+
+Now, if you use the same CLUT map but feed it a FlowMap instead of the terrain height, the texture will follow the flow lines defined by the FlowMap, producing a very different result.
+
+![](/.data/assets/Gaea_-_Untitled_04-39-18-AM.webp)
+
+
+
+### Colorization with Texture Nodes
+
+Gaea provides nodes such as [TextureBase](/reference/nodes/derive/texturebase.html) and [Texturizer](/reference/nodes/derive/texturizer.html) provide complex colorization masks based on the terrain's inherent features.
+
+![](/.data/assets/Gaea_-_Untitled_04-44-21-AM.webp)
+
+![](/.data/assets/Gaea_-_Untitled_04-47-53-AM.webp)
+
+Which can create more complex textures such as this:
+
+![](/.data/assets/Gaea_-_Untitled_04-50-15-AM.webp)
+
+
+
+## Data Maps
+
+Data Maps are specialized masks for selecting key terrain properties like slope, angle, and curvature, or for generating complex simulation-based data such as water flow and soil deposits. Additional maps like TextureBase produce pseudo-random texture masks for quick, easy color texturing.
+
+Unlike the classic approach that combines basic data (slope, angle) with noise (e.g., Perlin) or depends heavily on erosion flow outputs—often requiring careful seed tuning—Data Maps introduce controlled randomness derived from systematic terrain analysis. This produces more natural, believable color maps.
+
+### Aspect Maps
+
+Aspect Data Maps mask out aspects of the terrain such as Height, Slope, Curvature, Angle, Peaks, etc.
+
+![](/.data/assets/datamaps.webp)
+
+### Generative Maps
+
+Generate Data Maps run various algorithms on the terrain to generate information such as Flows, Soil, Rock Occlusion, etc.
+
+![](/.data/assets/datamaps2.webp)
+
+Data Maps can be combined together or with Texture nodes to create complex texture masks for colorization.
+
+
+// from colorizing-and-textures / index.md
+---
+icon: palette
+title: Colorizing and Textures
+uid: colorizing-and-textures
+---
+
+# Colorizing and Textures
+
+
+// from layering-textures / layering-textures.md
+---
+title: Layering Textures
+uid: layering-textures
+order: 04
+---
+
+# Layering Textures
+
+## Using Mixer
+
+The Mixer node provides an easy interface to add and manage multiple color layers and combine them with various masks. Mixer supports built-in Height and Slope masks, as well as custom masks provided by other nodes.
+
+![](/.data/assets/mixer2.webp)
+
+By default, Mixer exposes three inputs. You can use the Add Input command in the Property Window toolbar, or drop a connection on the Mixer node and select "Add new port". You can add up to 15 layers.
+
+![](/.data/assets/image-(56).png)
+
+You can change the order of layer-blending by simply dragging and changing the order of layers.
+
+Each layer is assigned an ID color which is used to drive the "Simplified View" which is useful for checking how layers blend.
+
+![](/.data/assets/mixer_real.webp) ![](/.data/assets/mixer_flat.webp)
+
+When "Preserve Masks" is enabled, when in-built masks are such as Height or Slope are used, those masks are also exported as Out ports so you can use them for further masking later in the graph.
+
+If you are coming from Gaea 1.0, or other older terrain software, the Mixer node is essentially an automation of Combine, Height/Slope, and Mask with additional convenience features.
+
+
+// from synthesizing-colors / synthesizing-colors.md
+---
+title: Synthesizing Colors
+uid: synthesizing-colors
+order: 03
+---
+
+# Synthesizing Colors
+
+Gaea's Synth node can take static color information and turn it into an editable gradient or color ramp just like the CLUTer node.
+
+The process is quite simple:
+
+![](/.data/assets/synth_process.png)
+
+1. Connect a static color map such as a SatMap or a File node with a color input to a Synth node.
+   1. You will also need to provide a Height or Texture input, so you can apply the colors.
+2. Select the number of Samples (gradient stops) and other settings, and click `Synthesize Colors`.
+3. This will give you an editable gradient that you can edit.
+4. Optionally, you can also export the data as a JSON or CSV for use in external applications.
+
+:::warning
+Re-synthesizing will overwrite any modifications you make manually to the Gradient Editor.
+:::
+
+
+// from working-with-satmaps / working-with-satmaps.md
+---
+title: Working with SatMaps
+uid: working-with-satmaps
+order: 02
+---
+
+# Working with SatMaps
+
+Our library of over 1400 color maps, derived from real satellite data, helps you colorize your terrains quickly without sacrificing realism.
+
+![](/.data/assets/SatMap.png)
+
+This tech was originally pioneered by QuadSpinner for GeoGlyph in 2014, Gaea's latest iteration provides an extensive library covering all natural locations, giving you a vast playground for colorizing your terrains.
+
+
+
+![](/.data/assets/Gaea_-_Untitled_03-22-12-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-22-15-AM.webp)
+
+This TextureMap node is attached to a SatMap node. The SatMap is adapted to the mask as described in [Crafting Masks](/using/using-gaea/colorizing-and-textures/crafting-masks.html){data-link-icon=''}.
+
+## Editing SatMaps
+
+There a few ways to quickly tweak the SatMaps to better fit your needs.
+
+### Map Bias
+
+By moving the Bias slider, you can have the SatMap apply more towards the left (negative values) or right (positive values) of the selected Color Map.
+
+| <div>![](/.data/assets/Gaea_-_Untitled_03-23-29-AM.webp)</div> | <div>![](/.data/assets/Gaea_-_Untitled_03-23-39-AM.webp)</div> | <div>![](/.data/assets/Gaea_-_Untitled_03-23-51-AM.webp)</div> |
+| ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| <div>![](/.data/assets/satmap_bias_none.png)</div>            | <div>![](/.data/assets/satmap_bias_low.png)</div>             | <div>![](/.data/assets/satmap_bias_high.png)</div>            |
+
+### Map Clipping
+
+You can use the Clip slider to tell SatMaps to only use the selected segment of the entire color map.
+
+![](/.data/assets/Gaea_-_Untitled_03-23-01-AM.webp)
+
+![](/.data/assets/satmap_clipping.png)
+
+Here, we clip out most of the left half of the color map, and you can see how that changes the influence of the color map on the terrain.
+
+#### Roughness
+
+The Roughness setting scatters the pixels of the color map to add the desired level of chaos and distortion.
+
+![](/.data/assets/Gaea_-_Untitled_03-35-36-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-35-39-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-35-41-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-35-44-AM.webp) ![](/.data/assets/Gaea_-_Untitled_03-35-47-AM.webp)
+
+#### HSL
+
+The final tweaks come from Hue/Saturation/Luminosity editing.
+
+***
+
+SatMaps are one of the crucial aspects of colorizing your terrains. You can elevate your SatMaps by combining them with a Mixer as explained in [Layering Textures](/using/using-gaea/colorizing-and-textures/layering-textures.html){data-link-icon=''}.
+
+And finally, add [ColorErosion](/reference/nodes/colorize/colorerosion.html){data-link-icon=''} to add a new level of realism to your texture maps.
+

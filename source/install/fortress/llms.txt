@@ -1,0 +1,557 @@
+// from fortress-assign / assigning.md
+---
+title: Assign Licenses
+uid: fortress-assign
+icon: toggle-on
+order: 03
+---
+
+# Assign Licenses
+
+Each workstation running Gaea in **offline floating** mode requires a `floating.lic` file to authenticate and communicate with the Fortress server.
+
+See [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''} for folder locations.
+
+## License File for Workstations
+
+Use **Create License File** in the Fortress Console to generate a workstation license file.
+
+A typical `floating.lic` looks like this:
+
+```txt
+FL-00000000-0000-0000-0000-000000000000
+192.168.100.11:9000
+```
+
+* Line 1: Floating license key
+* Line 2: Fortress server address and port
+
+## Create a License File
+
+1. Select **Create a License File**.
+
+   ![](/.data/ui/fortress-create1.png)
+
+2. Choose a **Tenant**.
+
+   ![](/.data/ui/fortress-create2.png)
+
+3. Choose the desired IP address (or enter one manually).
+
+   * If the server has multiple network adapters, all assigned IP addresses will be listed.
+
+   ![](/.data/ui/fortress-create3.png)
+
+4. Choose where to save the file (or press Enter to accept the default path shown).
+
+   ![](/.data/ui/fortress-create4.png)
+
+The file is typically saved as `000000.lic` (or using the Tenant’s ID). Copy this file to the [Gaea Data folder](/using/advanced-topics/technical-information/paths-and-storage.html) on the workstation and rename it to:
+
+* `floating.lic`
+
+Gaea will detect `floating.lic` automatically and load both the license key and server connection details from it.
+
+## Heartbeat Length
+
+* The server uses a 1-minute heartbeat with a 5-minute grace period to tolerate lost packets or temporary network issues.
+* If heartbeats are missed for 5 minutes, the license is released.
+* An administrator can also use the dashboard to kill an active license if it is stuck.
+
+During a run, a local token is stored so `Gaea.exe`, `Gaea.Build.exe`, and Gaea plugins can share the same token. This prevents over-allocation and other license issues.
+
+## View and Deallocate License Tokens
+
+By default, the Fortress Console shows only Tenants and does not auto-refresh to avoid unnecessary server load.
+
+![](/.data/ui/fortress-allocs.png)
+
+Select **View Allocations** to see a live list of allocated licenses.
+
+![](/.data/ui/fortress-allocs-kill.png)
+
+To deallocate a license, select the target machine. All sessions on that machine will be released.
+
+![](/.data/ui/fortress-allocs-killing.png)
+
+Two deallocation options are available:
+
+* **D (Graceful)**: Sends an “exit gracefully” command to the Gaea instance, then waits 10 seconds for it to be accepted and executed.
+* **K (Force Kill)**: Immediately deallocates the workstation.
+
+// from fortress-deallocate / deallocating.md
+---
+title: Deallocate Licenses
+uid: fortress-deallocate
+icon: toggle-off
+order: 04
+---
+## Viewing and Deallocating License Tokens
+
+By default, the Fortress Console shows only Tenants and does not auto-refresh to avoid unnecessary server load.
+
+![](/.data/ui/fortress-allocs.png)
+
+Select **View Allocations** to see a live list of allocated licenses.
+
+![](/.data/ui/fortress-allocs-kill.png)
+
+To deallocate a license, select the target machine. All sessions on that machine will be released.
+
+![](/.data/ui/fortress-allocs-killing.png)
+
+Two deallocation options are available:
+
+* **D (Graceful)**: Sends an “exit gracefully” command to the active Gaea instance and waits 10 seconds for it to be accepted and executed.
+* **K (Force Kill)**: Immediately deallocates the workstation on the server.
+
+## Local License Token
+
+If needed, you can force a local deallocation by deleting `token.lic` from the [Gaea Data Folder](/using/advanced-topics/technical-information/paths-and-storage.html).
+
+// from fortress-diagnostics / diagnostics.md
+---
+title: Network Diagnostics
+uid: fortress-diagnostics
+order: 06
+icon: notes-medical
+---
+
+# Diagnosing Network Issues
+
+Network Diagnostics helps admins verify that the license server is reachable on the expected IP/host and port, and quickly identify common network/config issues (wrong endpoint, wrong bind/interface, DNS problems, local firewall blocking).
+
+When run, it collects:
+
+![](/.data/ui/fortress-network.png)
+
+**Network snapshot**
+* Local IPv4 addresses detected on the server
+* (Optional) DNS resolution for the “advertised host/IP”
+**Connection tests (TCP connect)**
+* `localhost:<port>`
+* `127.0.0.1:<port>` (if loopback included)
+* `<each local IPv4>:<port>`
+* (Optional) `<advertised host/IP>:<port>`
+**Hints**
+* Simple conclusions derived from the test results (e.g. “bound to loopback only”, “possible firewall block”, “DNS failed”).
+
+## Inputs
+
+You’ll be asked:
+
+**Advertised host/IP (optional)**
+* Enter the exact address your clients are using (e.g. `licenseserver.company.lan` or `10.10.0.12`).
+* Leave blank if you only want local checks.
+
+The port is taken from the server’s current config/status.
+
+## Output
+
+You’ll see:
+
+**Network Snapshot**
+* Generated time (UTC)
+* Port
+* Local IPv4 list
+
+**Test Matrix**
+Each row shows:
+* **Target** (`host:port`)
+* **Outcome** (`Ok`, `Refused`, `Timeout`, `DnsFailed`, `Unreachable`, `Error`)
+* **Latency** (when available)
+* **Detail** (error/diagnostic text)
+  
+**Hints**
+* Short, actionable messages derived from the test results.
+
+### Interpreting outcomes
+
+- **Ok**: Server could open a TCP connection to that target/port. If `localhost` is OK but NIC IPs are not, you are likely bound to loopback only.
+- **Refused**: The OS responded immediately: nothing is listening at that target/port. Usually means server isn’t listening on that port/interface (wrong port, wrong bind address, server not running).
+- **Timeout**: No response within the timeout window. Common causes: firewall/AV, network ACLs, wrong routing, host not reachable, or port silently dropped.
+- **DnsFailed**: Hostname couldn’t be resolved to an IP. DNS misconfiguration, wrong hostname, missing record, or wrong DNS server.
+- **Unreachable**: The network stack reports no route / host unreachable. Routing issue, disconnected network, invalid IP, or target is on a different network without route.
+- **Error**: Misc failure (socket or system-level). Check the “Detail” column.
+
+
+## Common scenarios
+
+- localhost OK, 127.0.0.1 OK, but all NIC IPs fail/timeout/refused
+  - Likely bound to loopback.
+  - Fix: bind listener to `0.0.0.0:<port>` or the correct NIC IP.
+- Everything is Refused
+  - Server likely not listening on the configured port.
+  - Fix: confirm the server is running, confirm configured port, check port conflicts.
+- Everything is Timeout
+  - Strong signal of firewall/AV blocking inbound, or the wrong port is being used.
+  - Fix: open inbound firewall rule for the port; confirm port matches what clients use.
+- Advertised host shows DnsFailed
+  - Clients using a hostname will fail too.
+  - Fix: correct DNS record or change clients to use a valid IP/hostname.
+- Advertised host resolves, but connect fails while local NIC connect succeeds
+  - Often indicates clients are using the wrong route/segment (NAT/VPN split) or the hostname points to the wrong IP.
+  - Fix: correct DNS target IP; ensure advertised endpoint is reachable from the client network.
+
+## Recommended usage pattern
+
+When troubleshooting a client report:
+
+1. Run **Network diagnostics** with the **advertised host/IP** the client is using.
+2. Confirm at least one of:
+   * Advertised endpoint test is **Ok**
+   * A NIC IP test is **Ok** and that IP is what clients should use
+3. If not OK, follow the **Hints** section and rerun after changes.
+
+### Notes
+
+* The tool performs only safe, targeted connect tests (no scanning).
+* Results reflect server-side perspective. If the server can connect to itself but clients still fail, you likely have a network boundary issue (client-side firewall, routing, VLAN ACLs). In that case, use a minimal client probe tool (recommended separately) from the client machine.
+
+// from fortress / index.md
+---
+title: Fortress Server
+uid: fortress
+icon: server
+order: 01
+---
+
+# Fortress Server for Offline Deployment
+
+QuadSpinner’s **Fortress Server** is a locally deployable, self-hosted floating license solution designed for secure enterprise and offline environments. It enables centralized license allocation on a private network without relying on external activation services.
+
+## When to use Fortress
+
+Use Fortress when you need one or more of the following:
+
+* **Offline / air-gapped deployment** (no internet access permitted)
+* **Centralized floating licensing** across multiple workstations
+* **Enterprise-controlled security** (local-only access, internal auditing, restricted endpoints)
+* **Lab / classroom environments** where seats must be managed centrally
+
+If you only need a single-machine offline license (non-floating), use an **Offline Activation File** instead (see the License Types page).
+
+## Key concepts
+
+* **Fortress Server**: The service that manages license allocation and session tracking.
+* **Tenant**: An administrative grouping used to separate license pools (for example by team, project, or department).
+* **Workstation license file (`floating.lic`)**: A small file placed on each client machine that tells Gaea which server to contact and which floating key to use.
+* **Session / token**: A server-side record representing an active workstation allocation.
+* **Heartbeat + grace period**: Clients periodically confirm activity; a grace window prevents momentary network interruptions from immediately releasing a license.
+
+### How it works
+
+1. An admin deploys Fortress on a machine reachable by client workstations (LAN/VPN).
+2. The admin creates a workstation license file using the Fortress Console.
+3. The workstation receives that file as `floating.lic` in the **Gaea Data Folder** (see [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''}).
+4. When Gaea starts, it reads `floating.lic`, contacts Fortress, and requests a session.
+5. While Gaea is running, it sends periodic heartbeats to keep the session active.
+6. If heartbeats stop beyond the grace period, the session is released automatically.
+
+### What gets installed
+
+A typical deployment includes:
+
+* **Fortress Server** (service/daemon)
+* **Fortress Console** (admin UI/CLI used to create license files and manage allocations)
+* **Workstation configuration** (distribution of `floating.lic`)
+
+## Quick start
+
+1. **Install and start Fortress Server** on a LAN-accessible machine.
+2. **Confirm bind/interface**:
+   * Ensure the server is listening on the NIC/IP that clients will reach (not loopback-only).
+3. **Allow inbound network access** on the configured port:
+   * Create OS firewall rules as needed.
+4. In the **Fortress Console**, create a **Tenant** (if required by your setup).
+5. Use **Create License File** to generate a workstation file.
+6. Copy the generated file to each workstation’s **Gaea Data Folder** and rename it to `floating.lic`
+7. Launch Gaea on a workstation and verify an allocation appears in **View Allocations**.
+
+See [Assign Licenses](/install/fortress/assigning.html){data-link-icon='toggle-on'} for the step-by-step walkthrough and screenshots.
+
+### Networking and ports
+
+* Workstations must be able to reach the server at `host:port` specified in `floating.lic`.
+* DNS is optional; you can use a raw IP.
+* Multi-NIC servers are supported, but mis-binding is a common setup issue.
+
+Use **Network Diagnostics** to validate bind, DNS, and connectivity:
+
+* See the Network Diagnostics page (and the screenshot flow) for expected outcomes and common fixes.
+
+### Security notes
+
+* Fortress is intended for **trusted internal networks**.
+* Restrict access to the server port to known subnets where possible.
+* Treat `floating.lic` as a deployment credential:
+  * Distribute via standard IT tooling (MDM, GPO, software deployment, secure share).
+  * Avoid posting it in shared/public locations.
+
+## Related pages
+
+* [Assign Licenses](/install/fortress/assigning.html){data-link-icon='toggle-on'} (Assign Licenses / Create `floating.lic` / Manage allocations)
+* [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''} (File locations for `floating.lic`, `token.lic`, logs, etc.)
+* Network Diagnostics (Diagnosing reachability, DNS, bind/interface issues)
+
+// from fortress-lifecycle / lifecycle.md
+---
+title: License Lifecycle
+uid: fortress-lifecycle
+icon: arrows-spin
+order: 06
+---
+
+# Lifecycle of a License Token
+
+The life cycle of a License Token can help IT Administrators 
+
+## Lifecycle Overview
+
+The typical lifecycle of a license token is:
+- Allocation or Announcement
+- Heartbeat
+- Deallocation
+
+[![](https://mermaid.ink/img/pako:eNp1VNtyIjcQ_ZUuVW3KrvgCNrdMkk1hwDZrlthm4mzC7IM804DKg8RKwphQ_vdtaS5QU5unuaj79OlzWr1jsUqQBWyWqk284NpC2I8kwIcPMBIxSoMQqheU9DXD0942ThGOrpW2Go2BCepX1MeRdCndo2nEbjhykIiJAQ5phhCxr8dwevoRrijgEb-t0ViwHnWm1RIqcBTu4K58Sm8XsYwATzXyZEvPVMXcYhKxdxfXoziI2FhFzGf0qcjQmDXCePB3ViZHzCP_QZOHDgh8QoWFkgZ-Su2vsORvOeygGnxNuF0p1VrGCCbLyoEHFQpfpiUuJCiF4_o1E6nvA26nRVfdXjh8Gvz2rM8_huEIfocmLIVcW1fWY19nCVk2uXKLZNIzcgvngG8robfu4NZHfaJ-9ucaYxSvmHjwZ5wpTV5SDZ-F5o-80U_VRofTQxR8syjJTcr0QFbtKWb2SbUhrgXNErBU447wPgtjMIE6LApgDzaxZCQ1PfhyP3wcjm_8zxvNSeEVaqESMJbiCy3uPN7o_7vcCLsQEuYHCEWbo2qbtwd_S67jPdeLPVeTkfXTCf1BdzT6s9cNB5NsuvxhLxUobTHxhcal7WTcWOklT-lEOOsSzOfYTVFp4P3UcSnjAg8dp8pUJ-7ehz_s3EhuizNDaok0BbXKSdH4kR4GNkq_kJCuViHHww_leKjKUbLvaW4W8LOTW5EKB0P3SJyz0_OCCBDjzOAjqYpWIabHcc7_MZuMDH5y5PeCtxr8AuEzS0rHDrVcHmG5CbIuX3kqSnfDajt__eC2ekYa194fQShyXu6HvQZhRYOrUoNuQnMPrn0tEswVOKOQJ1fMHQbwJHAD3dJaWitzWit3vjTtOSLz4sgfmF-Otkdy70-F9uyEzakUC2Y8NXjClkij4b7ZzsVFzC5wSes1oNeE65eIRfKdklZc_qvUkgVWrylNq_V8UXysVwndub7gdEmWJbKmO466R3JZFjQ7bY_Bgh17Y8Flq33WaHSajfZl6_KiU79onrAtC07rtfpZu9Zutzu_XNZarUat9X7C_vN162e1i2a71qGjRqvRadTr798BoKP-kw?type=png)](https://mermaid.live/edit#pako:eNp1VNtyIjcQ_ZUuVW3KrvgCNrdMkk1hwDZrlthm4mzC7IM804DKg8RKwphQ_vdtaS5QU5unuaj79OlzWr1jsUqQBWyWqk284NpC2I8kwIcPMBIxSoMQqheU9DXD0942ThGOrpW2Go2BCepX1MeRdCndo2nEbjhykIiJAQ5phhCxr8dwevoRrijgEb-t0ViwHnWm1RIqcBTu4K58Sm8XsYwATzXyZEvPVMXcYhKxdxfXoziI2FhFzGf0qcjQmDXCePB3ViZHzCP_QZOHDgh8QoWFkgZ-Su2vsORvOeygGnxNuF0p1VrGCCbLyoEHFQpfpiUuJCiF4_o1E6nvA26nRVfdXjh8Gvz2rM8_huEIfocmLIVcW1fWY19nCVk2uXKLZNIzcgvngG8robfu4NZHfaJ-9ucaYxSvmHjwZ5wpTV5SDZ-F5o-80U_VRofTQxR8syjJTcr0QFbtKWb2SbUhrgXNErBU447wPgtjMIE6LApgDzaxZCQ1PfhyP3wcjm_8zxvNSeEVaqESMJbiCy3uPN7o_7vcCLsQEuYHCEWbo2qbtwd_S67jPdeLPVeTkfXTCf1BdzT6s9cNB5NsuvxhLxUobTHxhcal7WTcWOklT-lEOOsSzOfYTVFp4P3UcSnjAg8dp8pUJ-7ehz_s3EhuizNDaok0BbXKSdH4kR4GNkq_kJCuViHHww_leKjKUbLvaW4W8LOTW5EKB0P3SJyz0_OCCBDjzOAjqYpWIabHcc7_MZuMDH5y5PeCtxr8AuEzS0rHDrVcHmG5CbIuX3kqSnfDajt__eC2ekYa194fQShyXu6HvQZhRYOrUoNuQnMPrn0tEswVOKOQJ1fMHQbwJHAD3dJaWitzWit3vjTtOSLz4sgfmF-Otkdy70-F9uyEzakUC2Y8NXjClkij4b7ZzsVFzC5wSes1oNeE65eIRfKdklZc_qvUkgVWrylNq_V8UXysVwndub7gdEmWJbKmO466R3JZFjQ7bY_Bgh17Y8Flq33WaHSajfZl6_KiU79onrAtC07rtfpZu9Zutzu_XNZarUat9X7C_vN162e1i2a71qGjRqvRadTr798BoKP-kw)
+
+
+### Allocation or Announcement
+
+When Gaea asks the Fortress Server for a license, the Server checks if that IP was already assigned a license.
+
+- If there is no license allocated to this IP, a new license token is issued.
+- If a license token exists, a new session for that IP is announced to the server.
+
+
+:::note
+To prevent license-exhaustion, Gaea allows up to 4 simultaneous sessions on a single IP as long as it is under the same user. This allows the user to run multiple instances, or run background builds while designing a terrain, without using up additional license slots.
+:::
+
+:::warning
+If the maximum number of sessions, typically 8, is reached the new sessions will not be allowed.
+:::
+
+### Heartbeat
+
+Every license has a 5 minute lifespan. Gaea pings the server to let it know it is still alive and using the license token. Each heartbeat extends the toke n
+
+If a license token misses a heartbeat, the token's state is set to `Expiring` and the license is put into a grace period. This grace period is important because you don't want a momentary network outage or other temporary interruption to expire the license.
+
+If a license token misses two heartbeats, the token is deallocated on the server. Without a heartbeat, the license expires on the workstations as well.
+
+### Recovering from a Crash
+
+If Gaea crashes, and you start it again it will check if the license still has a heartbeat left. If so, it will announce itself to the Fortress Server and try to reuse the existing token.
+
+If the heartbeat has expired, Gaea will request a new license.
+
+### Deallocation
+
+When Gaea exits normally, the license token is released. If there are multiple sessions open on the same workstation, the appropriate session is closed. 
+
+The license token is not released until all sessions are closed.
+
+If any session is closed through a crash, it will take up to 2 heartbeats to release the license so it can be used elsewhere.
+
+:::tip
+The Server Admin can use `View Allocations` > `K` command to forcefully kill the allocation and release the license immediately.
+:::
+
+
+## Troubleshooting checklist
+
+* Client cannot obtain a license
+  * Verify `floating.lic` is present in the correct data folder.
+  * Confirm the host/IP and port are correct.
+  * Run **Network Diagnostics** on the server.
+* Server reachable by `localhost` but not by NIC IP
+  * Server is likely bound to loopback only.
+  * Bind to `0.0.0.0` or the correct NIC address.
+* Clients intermittently lose licenses
+  * Check for firewall/AV interference, unstable VPN, or routing issues.
+  * Confirm server clock stability and network reliability.
+
+
+
+// from fortress-logs / logs.md
+---
+title: Logs
+uid: fortress-logs
+icon: scroll
+order: 08
+---
+
+# Using Fortress Server Logs
+
+Fortress Server records operational activity (events, actions, warnings, errors, and internal diagnostics) to help administrators troubleshoot issues and to support post-incident review. When contacting QuadSpinner support, include a ZIP of the entire log folder. It significantly reduces turnaround time for diagnosing network, allocation, and configuration problems.
+
+## View the Current Log
+
+1. In the Fortress Console, select **Logs** from the main menu.
+
+   ![](/.data/ui/fortress-logs1.png)
+
+2. Choose one of the following:
+
+   * **Logs (Tail)**: Shows the most recent ~40 entries (quick check for recent errors).
+   * **Logs (Entire)**: Opens the full log for the current day.
+
+   ![](/.data/ui/fortress-logs2.png)
+
+## View Older Logs
+
+The console views only the current day’s log. Logs roll over at midnight (local server time).
+
+To access previous days:
+
+1. Select **Open Log Directory**.
+
+   ![](/.data/ui/fortress-logs-directory.png)
+
+2. Open the log file for the day you need.
+
+   * Each day is stored as:
+
+     * a **plain text** log file (human-readable)
+     * a **LiteDB** database (structured log store for querying/reporting)
+
+## Log Location
+
+Logs are typically stored at:
+
+```
+C:\Users\<user>\AppData\Roaming\QuadSpinner\Fortress\
+```
+
+(Exact location may vary depending on installation context and user profile.)
+
+## Data captured in logs
+
+Logs may include operational identifiers needed for troubleshooting, such as:
+* Machine names
+* Logged-in user name (as seen by the OS)
+* IP addresses and endpoints
+* Allocation/session events
+
+Logs are intended for diagnostics and do not include sensitive personal content beyond basic system and network identifiers required to operate the licensing service.
+
+// from fortress-setup / setup.md
+---
+title: Server Setup
+uid: fortress-setup
+icon: floppy-disk-circle-arrow-right
+order: 02
+---
+
+# Installing and Deploying the Fortress Server
+
+The Fortress Server is very easily to deploy.
+
+![](/.data/ui/fortress-tenants.png)
+
+## Requirements
+
+- Windows 10 or higher.
+- 256MB of RAM (exclusive of system resources); 512MB recommended.
+- TCP access across the LAN to all workstations that need licensing.
+- 100MB Hard Drive space.
+
+:::warning
+You can run this on a Virtual Machine, however the Ethernet/MAC address should not change.
+
+If the configuration is changed too much, a new hardware key + license regeneration may be required.
+:::
+
+:::note
+A Linux version is in-development. There is no specific ETA at the moment.
+:::
+
+## Setting up the Server
+
+The Server consists of only 3 files:
+
+```
+C:\LicenseServer
+├── Tenants\
+│   └── 00000000.lic
+├── Fortress.Console.exe
+└── server.json
+```
+
+### Tenants
+
+A Tenant is a master license file that control the number of workstations allowed under a single license. A single Server can host multiple Tenants as long as they are within the same LAN.
+
+You will be provided with a `00000000.lic` tenant file upon purchase. The Tenant file is node-locked to your server's [Hardware Thumbprint](/install/license-management/hardware-thumbprint.html){data-link-icon='fingerprint'}.
+
+### Server Configuration
+
+If the `server.json` is file is not present, `Fortress.Console.exe` will generate one on first run. By default, it has the following settings.
+
+```
+{
+  "Port": 9000,
+  "MaxConcurrentClients": 16,
+  "TokenIdleTimeoutSeconds": 600,
+  "RateLimitPerIPSeconds": 1
+}
+```
+
+In most cases, you only need to change the `Port` setting, if needed. Ensure this port is allowed through firewalls for TCP/IP communication.
+
+### Setup Workstations
+
+See [Assign Licenses](/install/fortress/assigning.html){data-link-icon='toggle-on'} for instructions on creating a license file which can be added to any Gaea installation on the network.
+
+
+## Launch at Startup
+
+The Fortress Server cannot be run as a Windows Service, however you can create a Scheduled Task to ensure that it runs on startup, and recovers in case of a forced reboot, system update, etc.
+
+Create the following PowerShell script. Rename the `$exe` (full path of the console exe) and `$work` (working directory) variables, and save the script as `startup.ps1` then execute it from PowerShell once. This will setup the task.
+
+```
+$exe  = "C:\LicenseServer\Fortress.Console.exe"
+$work = "C:\LicenseServer"
+
+$action  = New-ScheduledTaskAction -Execute $exe -WorkingDirectory $work
+$trigger = New-ScheduledTaskTrigger -AtStartup
+$settings = New-ScheduledTaskSettingsSet `
+  -RestartCount 999 `
+  -RestartInterval (New-TimeSpan -Minutes 1) `
+  -ExecutionTimeLimit (New-TimeSpan -Days 3650) `
+  -MultipleInstances IgnoreNew `
+  -StartWhenAvailable
+
+Register-ScheduledTask `
+  -TaskName "LicenseServer" `
+  -Action $action `
+  -Trigger $trigger `
+  -Settings $settings `
+  -User "SYSTEM" `
+  -RunLevel Highest `
+  -Force
+```
+
+
+:::warning
+It is recommended that you do not run the server as Admin unless absolutely required.
+:::
+
+
+## Troubleshooting checklist
+
+* Client cannot obtain a license
+  * Verify `floating.lic` is present in the correct data folder.
+  * Confirm the host/IP and port are correct.
+  * Run **Network Diagnostics** on the server.
+* Server reachable by `localhost` but not by NIC IP
+  * Server is likely bound to loopback only.
+  * Bind to `0.0.0.0` or the correct NIC address.
+* Clients intermittently lose licenses
+  * Check for firewall/AV interference, unstable VPN, or routing issues.
+  * Confirm server clock stability and network reliability.
+
+
+
