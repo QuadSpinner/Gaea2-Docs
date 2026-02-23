@@ -6,7 +6,7 @@ uid: bake-required
 
 # Use Gates to Bake Only What Matters
 
-Baking is one of the simplest ways to keep large projects fast and memory-friendly—especially when you’re working with Regions, tiled builds, or heavy simulations.
+Baking is one of the simplest ways to keep large projects fast and memory-friendly - especially when you’re working with Regions, tiled builds, or heavy simulations.
 
 But baking manually, node by node, gets old fast.
 
@@ -31,7 +31,7 @@ The **Terrain tab filter → Required Baking** is a quick way to see what must b
 
 ## Why This Saves Memory (A Lot)
 
-When baked caches are loaded, Gaea keeps only the “linchpin” baked nodes required by any unbaked downstream work—older ancestors can be unloaded. This reduces live memory consumption dramatically.
+When baked caches are loaded, Gaea keeps only the “linchpin” baked nodes required by any unbaked downstream work - older ancestors can be unloaded. This reduces live memory consumption dramatically.
 
 In practice, that means:
 

@@ -51,6 +51,7 @@ X:\Docs\Gaea2-Docs\staging\using\getting-started\important\memory-requirements.m
 X:\Docs\Gaea2-Docs\staging\using\getting-started\important\non-determinism.md
 X:\Docs\Gaea2-Docs\staging\using\index.md
 X:\Docs\Gaea2-Docs\staging\using\troubleshooting\common-issues-and-workarounds.md
+X:\Docs\Gaea2-Docs\staging\using\troubleshooting\diagnostics-watson\data-folder.md
 X:\Docs\Gaea2-Docs\staging\using\troubleshooting\diagnostics-watson\diagnostics-package.md
 X:\Docs\Gaea2-Docs\staging\using\using-gaea\simulations\debris.md
 X:\Docs\Gaea2-Docs\staging\using\using-gaea\simulations\water.md

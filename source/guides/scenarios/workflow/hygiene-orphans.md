@@ -7,7 +7,7 @@ uid: hygiene-orphans
 
 Large graphs tend to accumulate “just-in-case” experiments: half-finished branches, abandoned masks, and one-off tests that never make it into the final output.
 
-Those loose ends are called **orphan nodes**—nodes that aren’t connected (or don’t contribute to any final output). Keeping them around adds clutter, increases mental load, and can waste resources.
+Those loose ends are called **orphan nodes** - nodes that aren’t connected (or don’t contribute to any final output). Keeping them around adds clutter, increases mental load, and can waste resources.
 
 ## Find Orphans Fast
 
