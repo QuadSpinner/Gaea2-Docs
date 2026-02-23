@@ -1,0 +1,114 @@
+﻿[
+  {
+    "Name": "Style",
+    "Description": "Specifies the shape of the random elements placed on the surface.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Dot",
+        "Description": "Generates round blobs or spheres, creating soft, circular noise patterns.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Square",
+        "Description": "Generates square-shaped blobs, resulting in blocky, grid-like noise patterns.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Iterations",
+    "Description": "Sets the number of times dots or blobs are placed on the surface. Higher values increase the density and coverage of the noise.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Multiplier",
+    "Description": "Scales the intensity or strength of the dot noise effect, amplifying the contribution of each blob.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Size",
+    "Description": "Controls the average size of each dot, blob, or sphere. Larger values produce bigger features.",
+    "Type": "Float2",
+    "IsGroup": false
+  },
+  {
+    "Name": "Height",
+    "Description": "Sets the maximum elevation or intensity of the dots or blobs above the base surface.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Blend Mode",
+    "Description": "Determines how the dot noise is combined with the underlying surface or input.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "No blending is applied; the dot noise is used as-is.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Blend",
+        "Description": "Blends the dot noise with the input using standard alpha or linear blending.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Add",
+        "Description": "Adds the dot noise values to the input, increasing elevation or intensity where dots are present.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Subtract",
+        "Description": "Subtracts the dot noise from the input, creating depressions or pits where dots are placed.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Difference",
+        "Description": "Applies a difference operation, emphasizing areas where the dot noise and input differ.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Multiply",
+        "Description": "Multiplies the dot noise with the input, modulating the surface based on dot presence.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Screen",
+        "Description": "Uses a screen blend, lightening the surface where dots are present.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Max",
+        "Description": "Takes the maximum value between the dot noise and the input at each point.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Min",
+        "Description": "Takes the minimum value between the dot noise and the input at each point.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Seed",
+    "Description": "Randomization seed for dot placement and variation. Changing the seed produces different dot patterns.",
+    "Type": "Int32",
+    "IsGroup": false
+  }
+]

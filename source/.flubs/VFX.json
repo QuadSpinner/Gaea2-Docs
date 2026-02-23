@@ -1,0 +1,62 @@
+﻿[
+  {
+    "Name": "Albedo",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Light Diffusion",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Ambient Occlusion",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Rock Occlusion",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Normals",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Detail Normals",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Bump",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Displacement",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Mesh",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "LOD",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

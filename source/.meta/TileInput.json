@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "TileInput",
+  "Description": "Reads a set of tiles for 1:1 input into a tiled build, or combines it into a single input.",
+  "Family": "Assets",
+  "FamilyIcon": "x-file",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    "tile"
+  ],
+  "ShortCode": "til",
+  "Usage": 16,
+  "SearchString": "TileInput Assets tile til",
+  "SearchWords": [
+    "tileinput",
+    "assets",
+    "tile",
+    "til"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,6 +1,7 @@
 ---
-title: important
+title: Important
 uid: important
+hidden: true
 ---
 
 # In this section

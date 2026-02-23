@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Name": "Size",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Autosize",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Antialias",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

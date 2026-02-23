@@ -1,0 +1,134 @@
+﻿[
+  {
+    "Name": "Scale",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Dune Type",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "A",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "B",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "C",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "D",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Chaos",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Low",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Medium",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Undulation",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Low",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Medium",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Direction",
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Height",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Softness",
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Sharpness",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
+  }
+]

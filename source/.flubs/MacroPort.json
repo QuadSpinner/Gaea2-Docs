@@ -1,0 +1,54 @@
+﻿[
+  {
+    "Name": "Direction",
+    "Description": "Specifies whether the macro port is used for input or output connections. Determines the flow of data into or out of the macro node.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Input",
+        "Description": "Designates the port as an input, allowing data to be received by the macro node.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Output",
+        "Description": "Designates the port as an output, allowing data to be sent from the macro node.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Display",
+    "Description": "Defines the type of data visualized or represented by the macro port. This helps users identify the nature of the connection in the node graph.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Heightfield",
+        "Description": "Represents terrain elevation data, typically used for heightmaps.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Mask",
+        "Description": "Represents mask data, used for isolating or selecting specific regions in the terrain.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Color",
+        "Description": "Represents color data, used for visual effects or texture information.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Is Optional",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

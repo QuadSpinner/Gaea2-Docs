@@ -1,0 +1,40 @@
+﻿[
+  {
+    "Name": "Range",
+    "Description": "Sets the minimum and maximum slope angles to include. Only terrain within this range is selected in the mask.",
+    "Type": "Float2",
+    "IsGroup": false
+  },
+  {
+    "Name": "Falloff",
+    "Description": "Controls the soft transition at the range boundaries. Higher values create a smoother, more gradual blend from selected to unselected areas.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Type",
+    "Description": "Defines the slope calculation method, affecting how the mask interprets and distributes slope values.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Accurate",
+        "Description": "Uses precise slope computation for more realistic, detail-preserving results.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Normalized",
+        "Description": "Produces a consistent, even distribution across the slope range, useful for stylized or uniform masks.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Micro Accent",
+    "Description": "Enhances fine details and subtle variations in the slope mask, adding extra texture and definition to small-scale features.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

@@ -1,0 +1,44 @@
+﻿[
+  {
+    "Name": "Passes",
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Height",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Octaves",
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Direction",
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Jitter",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
+  }
+]

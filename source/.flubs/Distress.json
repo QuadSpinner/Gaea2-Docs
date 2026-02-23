@@ -1,0 +1,50 @@
+﻿[
+  {
+    "Name": "Octaves",
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Depth",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Influence",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Formation",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale X",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale Y",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
+  }
+]

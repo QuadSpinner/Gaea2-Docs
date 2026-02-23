@@ -1,0 +1,104 @@
+﻿[
+  {
+    "Name": "Structure",
+    "Description": "Selects the canyon shaping model used to generate the canyon form and surface character.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Style",
+    "Description": "Selects the canyon shaping model used to generate the canyon form and surface character.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Classic",
+        "Description": "Clean, procedural canyon cuts with a simple, carved profile.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Eroded",
+        "Description": "Adds erosion-like breakup and natural irregularities to the canyon walls and floor.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Eroded2",
+        "Description": "A more advanced eroded style with richer wall detail and more natural variation.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Strata",
+        "Description": "Introduces stratified, layered wall features resembling sedimentary rock bands.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Both",
+        "Description": "Combines erosion breakup with stratified layering for a layered-and-worn look.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Scale",
+    "Description": "The scale of the canyon.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Slot",
+    "Description": "Controls the narrow, slot-canyon component—tightness and emphasis of the deepest cut.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Valley",
+    "Description": "Controls the broader valley form—overall widening and openness of the canyon.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Surrounding",
+    "Description": "Blends the canyon into the surrounding terrain, controlling how much the outer landform influences the final shape.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Depth",
+    "Description": "The depth of the canyon.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Structual Warp",
+    "Description": "Applies large-scale warping to the canyon structure to introduce bends, meanders, and macro variation.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Formation",
+    "Description": "Applies finer warping to add small-scale distortion and surface complexity without changing the overall canyon layout.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Detail Warp",
+    "Description": "Applies finer warping to add small-scale distortion and surface complexity without changing the overall canyon layout.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Alternate Style",
+    "Description": "Introduces a secondary variation of the selected style to break uniformity and add visual diversity.",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

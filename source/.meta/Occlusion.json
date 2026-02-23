@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Occlusion",
+  "Description": "Occlusion behaves similarly to Ambient Occlusion, but favors sedimentary processes vs. lighting.",
+  "Family": "Generative",
+  "FamilyIcon": "family-generative",
+  "Toolbox": "Derive",
+  "Classification": "Processor",
+  "Keywords": [
+    "occlusion"
+  ],
+  "ShortCode": "cc",
+  "Usage": 22,
+  "SearchString": "Occlusion Generative occlusion cc",
+  "SearchWords": [
+    "occlusion",
+    "generative",
+    "occlusion",
+    "cc"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

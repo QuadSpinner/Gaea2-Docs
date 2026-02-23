@@ -1,0 +1,396 @@
+// from low-detail-start / design-low-first.md
+---
+title: Start with low detail shapes
+uid: low-detail-start
+---
+
+# Let Shape Stay Simple
+
+It’s tempting to pour detail into the very first landform—lots of noise, breakup, micro ridges. But front-loading detail usually makes the rest of the graph fight you.
+
+A cleaner approach is to build a **strong, low-detail macro shape** first, then let **Erosion** and **Surface** nodes generate the believable detail later.
+
+## Why early detail is a trap
+
+When your base terrain is already “busy”:
+
+* **Procedural shaping has less room to work**: transforms, carving, and large-scale edits get masked by pre-baked noise.
+* **Erosion can’t speak clearly**: fine detail interferes with flow and creates messy, over-textured results.
+* **Iteration gets fragile**: small upstream changes ripple into unpredictable downstream chaos.
+
+:::tip
+Macro first, micro later. Let erosion create the story, and let surface add the finish.
+:::
+
+## The scalable workflow for huge or tiled builds
+
+This approach is especially powerful for **tiled builds** and very large resolutions.
+
+1. Build your **base shapes** at a manageable resolution like **4K or 8K** (broad forms only).
+2. **Bake** those shape nodes so they become stable and cheap.
+3. Use **TileGate** to treat those baked shapes as **static inputs** that will be upscaled efficiently for large tiled builds.
+4. Apply your heavy detail *afterwards*: **Erosion**, **Surface**, and any downstream detailing/mask work.
+
+Now you get the best of both worlds:
+
+* The macro terrain remains **clean and controllable**
+* Tiled builds stay **memory-friendly**
+* Your final detail is generated at the stage where it matters, so the terrain **holds up** without losing fidelity
+
+:::warning
+If you bake noisy “micro” detail into the initial shape, you can lock yourself out of realistic erosion and make high-resolution/tiled builds slower and less predictable.
+:::
+
+// from format-gotchas / format-gotchas.md
+---
+title: File Format Gotchas
+uid: format-gotchas
+---
+
+Here are practical do’s and don’ts for the formats people most often feed into Gaea, tuned for the workflow:
+
+See [Match or Correct Heights](/guides/scenarios/helpful-info/match-height.html){data-link-icon=''} for a useful workflow using Constant (meters) → File (unclamped) → Autolevel → MATCH (Constant as Reference)
+
+---
+
+## GeoTIFF DEM
+
+### Do
+
+* Prefer 32-bit float GeoTIFF when available (best fidelity, handles negatives cleanly).
+* Keep File = Unclamped, especially if the DEM includes below sea level or “no-data” borders.
+* Pre-handle NoData if your exporter encodes it as a huge negative (e.g., -32768) or huge positive—mask/crop it before Gaea if possible, or you’ll Autolevel against garbage.
+* Use your Constant in meters as the “intended peak altitude” and MATCH to it.
+
+### Don’t
+
+* Don’t export with “visualization scaling” (some GIS apps rescale for display); export raw elevation values.
+* Don’t clamp on import; it can silently flatten valid extremes.
+
+---
+
+## 16-bit PNG
+
+### Do
+
+* Use 16-bit grayscale PNG (not 8-bit).
+* Ensure the PNG is linear data:
+  * If your tool has a color management option, pick linear / data / non-color.
+* Treat 16-bit PNG as *precision-limited*: Autolevel is strongly recommended before any further math.
+* Keep the File unclamped, then Autolevel, then MATCH to Constant.
+
+### Don’t
+
+* Don’t use 8-bit PNG for real terrain unless it’s purely stylized; banding will be obvious.
+* Don’t let apps apply sRGB gamma to the heightmap (this bends elevations and ruins slopes).
+* Don’t roundtrip through image editors that “helpfully” color manage or dither unless you’re sure it’s data-safe.
+
+---
+
+## 16-bit TIFF
+
+### Do
+
+* Prefer 16-bit integer TIFF if the source is already quantized (like a generator exporting 16-bit).
+* Confirm it’s single-channel grayscale (or at least that the height is in one channel consistently).
+* Use linear / non-color handling in any app that touches it.
+* Autolevel is still valuable: if the terrain only uses part of the range, you’re wasting bits.
+
+### Don’t
+
+* Don’t assume “TIFF” means “high fidelity.” Many TIFFs are 8-bit, RGB, or color-managed.
+* Don’t apply compression workflows that alter values (some pipelines do processing on save).
+
+---
+
+## 32-bit EXR
+
+### Do
+
+* Prefer 32-bit float EXR for maximum fidelity and safe negatives.
+* Use EXR when you’ll do lots of downstream processing (erosion, remaps, reprojection, tiling).
+* Still consider Autolevel if your data occupies a small numeric range or you’re going to bake down later.
+
+### Don’t
+
+* Don’t treat EXR like an image: avoid color transforms, tone mapping, or display LUT baking.
+* Don’t export “beauty” EXRs; export data EXRs (single channel if possible).
+
+---
+
+## RAW / R16 / .raw
+
+### Do
+
+* Use RAW when you control the pipeline end-to-end (e.g., Unreal landscape import).
+* Match bit-depth and endianness exactly (common: 16-bit, little-endian).
+* Keep a record of:
+  * resolution
+  * bit depth
+  * endian
+  * expected min/max elevation mapping
+* Use Autolevel + MATCH in Gaea so the RAW uses the full 0–65535 span before export.
+
+### Don’t
+
+* Don’t use RAW if you aren’t 100% sure of its format metadata—RAW has no header, so it’s easy to misread.
+* Don’t change resolution midstream without a deliberate resample strategy.
+
+---
+
+## 8-bit formats (PNG/JPG)
+
+### Do
+
+* Use 8-bit for masks, splatmaps, selectors, and weight maps.
+* Dither or blur thoughtfully if banding in masks becomes visible.
+
+### Don’t
+
+* Don’t use JPG for heights (lossy compression creates block artifacts and slope noise).
+* Don’t use 8-bit PNG for final displacement unless it’s intentionally low-fi.
+
+---
+
+## Common gotchas (format-agnostic)
+
+### Do
+
+* Keep NoData out of your normalization range (crop/mask before Autolevel if needed).
+* Work in linear data space end-to-end.
+* For tiled terrains: normalize/match consistently (global intent), not per-tile randomness.
+
+### Don’t
+
+* Don’t per-tile Autolevel with different min/max unless you *want* seams.
+* Don’t let any stage “optimize” or “enhance” your heightmap like it’s a photo.
+
+
+// from common-issues / index.md
+---
+title: Common Issues
+uid: common-issues
+order: 01
+---
+
+# Common Issues
+
+If you have problems such as terrain looks faceted or terrain is inside out or any other issue, see the page [Terrain Quality](/using/troubleshooting/terrains/terrain-quality.html){data-link-icon=''}.
+
+// from match-height / match-height.md
+---
+title: Match or Correct Heights
+uid: match-height
+---
+
+# Match or Correct Heights for Incoming Data
+
+When you bring real-world DEMs or heightmaps into Gaea, the numbers often **don’t match Gaea’s expected height conventions**. Some datasets are already in meters (with negatives), some are biased, some are scaled oddly, and many don’t line up with how you *intend* to use vertical range in your graph.
+
+A clean way to “re-home” that data into a predictable altitude ceiling—without guessing multipliers—is to use a **Constant + MATCH** workflow. It lets you say: “This imported terrain should top out at **X meters**,” and then forces everything to conform.
+
+## The goal: define a correct “highest altitude”
+
+Instead of trying to eyeball scale, you explicitly define the maximum elevation you want your imported terrain to represent (e.g., 2400 m, 8849 m, 500 m—whatever your project needs). Then you match the imported data to that reference.
+
+That means:
+
+* You keep your import **unclamped** (so you don’t crush data).
+* You normalize the incoming range (so it behaves nicely).
+* You **match** it to a known reference height (so the final amplitude makes sense in Gaea terms).
+
+## Step-by-step workflow
+
+### 1. Create a Constant as your “altitude ruler”
+
+1. Add a **Constant** node.
+2. Set its **Height** to the *highest altitude you want to use*, **in meters**.
+3. Gaea will convert that meter value into its internal percent-based height representation automatically.
+
+Think of this Constant as your “this is what 100% height means for this project” reference.
+
+### 2. Import your dataset with File (keep it unclamped)
+
+1. Add a **File** node and load your DEM/heightmap.
+2. Make sure it stays **Unclamped**.
+
+Why: clamping can silently flatten anything below/above the expected range, and imported DEMs often include values outside a neat 0–1 span.
+
+### 3. Autolevel right after the import
+
+Place an **Autolevel** node immediately after **File**.
+
+This does two helpful things:
+
+* It remaps the incoming terrain to a clean min→max range (no wasted headroom).
+* It makes the next step (matching) stable and predictable.
+
+### 4. Use MATCH to conform to your Constant reference
+
+1. Add a **MATCH** node after **Autolevel**.
+2. Plug the **Autolevel output** into MATCH’s main input.
+3. Plug the **Constant** into MATCH’s **Reference Input**.
+
+Now MATCH uses the Constant as the “target height context,” scaling your normalized imported terrain so its overall height aligns with the altitude you defined.
+
+## Why this works so well
+
+* **You declare intent** (“max altitude is 2400 m”) instead of guessing scale factors.
+* **Autolevel** ensures you’re matching a well-behaved, full-range signal.
+* **MATCH** then handles the conversion cleanly, so your terrain sits correctly within Gaea’s vertical expectations.
+
+## Quick practical notes
+
+* If your dataset includes bathymetry / negative elevations, keeping **File unclamped** is important. You can decide later how you want to treat below-sea regions (offset, mask, clamp, etc.).
+* If you’re working with tiles, try to apply the same reference Constant across the whole set to keep consistent vertical scale.
+* This workflow is about **getting the imported terrain into a correct, predictable altitude framework inside Gaea**; you can still do final vertical scaling in your DCC/engine if you’re targeting a specific displacement range.
+
+---
+
+# Alternate Technique
+
+If you expect your data to have no negative values, use the File node to import the data, then apply the Autolevel modifier in the [Modifier Stack](/ui/interface/property-editor/modifier-stack.html){data-link-icon=''}. Then apply the Height Remap modifier and clamp the values to whatever height you want.
+
+This is a much simpler technique and may be useful in most cases. However, for exact precision, it is better to use the sophisticated technique shown above.
+
+// from normalized-output / normalized-output.md
+---
+title: Using Normalized Output
+uid: normalized-output
+---
+
+# Using Normalized Output for Maximum Data Depth
+
+When you export a heightfield, you’re not really exporting “mountains” — you’re exporting numbers. And the *single biggest* quality win you can get (especially for 16-bit) is making sure those numbers use as much of the available range as possible before you save. That’s exactly what normalizing / autoleveling does: it remaps your current minimum height to 0 and maximum height to 1 (or to the full integer span), so you’re not wasting precision on empty headroom. 
+
+## Why “use the whole range” matters
+
+A stored heightfield has discrete steps:
+
+* 16-bit integer heightmaps have 65,536 possible values (0–65535).
+* 32-bit outputs are often 32-bit float (EXR) or sometimes 32-bit integer; either way, they can represent far more detail — *but* many pipelines still quantize, filter, or bake down later, so good range usage still helps.
+
+The key idea: the vertical “step size” equals (height range) / (number of code values).
+
+So if your terrain’s meaningful heights only occupy, say, 10% of the saved range (because you left lots of unused headroom above peaks or below sea level), you effectively throw away most of your bits. In 16-bit, using only 10% of the range gives you ~6,553 usable levels instead of 65,536 — that’s roughly 12.7 bits of effective precision, not 16. Result: more visible terracing/banding, noisier erosion micro-detail, and worse downstream filtering.
+
+Normalizing/autoleveling fixes that by stretching your actual min→max to the full span, minimizing quantization error everywhere.
+
+## Why it’s especially important for 16-bit
+
+16-bit is the common “game-friendly” choice, and it’s the most fragile:
+
+* Banding/terracing shows up first in gentle slopes and flats (dunes, plains, snowfields).
+* Erosion detail and small sediment variations can collapse into the same height code when the range is underused.
+* Any later processing (blur, resample, mip generation, engine import) amplifies those errors.
+
+In practice, if you’re exporting 16-bit, normalization is one of those “free quality” steps that costs nothing and pays back everywhere.
+
+## “But I need real-world meters!” — normalize now, scale later
+
+Normalization does *change absolute elevation* (it’s a remap), so the right workflow is:
+
+1. Normalize/autolevel before saving to maximize precision.
+2. In your final DCC / engine (Houdini, Unreal, Unity, etc.), apply a vertical scale (height multiplier / displacement scale) to restore the intended meter range.
+
+Conceptually:
+
+* Exported value:
+  `v = (h − hmin) / (hmax − hmin)`
+* Reconstructed height in DCC:
+  `h = v · (hmax − hmin) + hmin`
+
+That means you can keep your terrain *numerically optimal* on disk, while still ending up with the correct real-world heights in the final scene.
+
+### Practical tip: save the metadata
+
+If you want perfect reconstruction, keep track of (or export alongside) your terrain’s original min/max elevation (or your desired total relief in meters). Then your “Height Scale” in the DCC becomes deterministic instead of eyeballed.
+
+## A note on tiles: avoid per-tile normalization seams
+
+One caveat: if you normalize each tile independently, each tile gets its *own* min/max, which can cause seams where values don’t match across borders.
+
+Best practice:
+
+* Normalize before tiling (one global min/max), or
+* Force a consistent min/max across all tiles.
+
+## The bottom line
+
+Normalizing (autolevel) before saving is great because it:
+
+* Uses the entire bit depth you’re paying for (critical in 16-bit).
+* Preserves subtle slopes and micro-relief by minimizing quantization error.
+* Keeps exports robust through resampling, filtering, and engine import.
+* Lets you do the “artistically meaningful” part — real-world vertical scaling — later, non-destructively, in the final DCC app.
+// from roundtrips / roundtrip.md
+---
+title: Avoid Roundtrips
+uid: roundtrips
+order: 02
+---
+
+
+# Avoid Roundtrips
+
+A "roundtrip" is when you rebuild in Gaea and then have to re-import (or relink) the terrain, masks, bitmaps, and other outputs in your DCC because the file paths changed.
+
+## The problem
+
+If your Build Destination uses an incremental pattern like `[+++]`, Gaea creates a new output folder for every build. That preserves history, but it also changes the asset paths every time—so your materials and file references in your CG application break and must be updated.
+
+If you use a fixed (static) output path instead, your links stay valid—but each build overwrites the last one, so you lose per-build history.
+
+## The solution
+
+Gaea 2 includes an option in [Build Options](/ui/interface/build-options/index.html){data-link-icon=''} (Build tab) called `Maintain a static folder with the latest copy`.
+
+![Enable "Maintain a static folder" to maintain a constant folder with the latest build](/.data/assets/build-settings-prime-folder.png)
+
+Enable it *while still using* an incremental destination pattern like `[+++]`:
+
+* Gaea continues to write each build into its own numbered folder (so you keep every build).
+* Gaea also copies the newest build into a sibling folder named `Latest`.
+
+Point your DCC file links to the `Latest` folder. Your references stay stable across rebuilds, while you still retain archived outputs per build.
+
+Optional: enable `Copy the .terrain file to the build folder` to store an exact snapshot of the terrain file used for each build. This is useful for tracking changes across iterations and rolling back to a specific version.
+
+
+```
+
+This is what a typical folder structure would look like in this scenario.
+
+c:\Gaea\Builds\Sample\
+├── 001\
+│   ├── Erosion2.exr
+│   ├── Erosion2_Deposits.exr
+│   ├── Erosion2_Flow.exr
+│   ├── Erosion2_Wear.exr
+│   ├── report.json
+│   ├── report.txt
+│   └── Sample.terrain
+├── 002\
+│   ├── Erosion2.exr
+│   ├── Erosion2_Deposits.exr
+│   ├── Erosion2_Flow.exr
+│   ├── Erosion2_Wear.exr
+│   ├── report.json
+│   ├── report.txt
+│   └── Sample.terrain
+├── 003\
+│   ├── Erosion2.exr
+│   ├── Erosion2_Deposits.exr
+│   ├── Erosion2_Flow.exr
+│   ├── Erosion2_Wear.exr
+│   ├── report.json
+│   ├── report.txt
+│   └── Sample.terrain
+└── Latest\
+    ├── Erosion2.exr
+    ├── Erosion2_Deposits.exr
+    ├── Erosion2_Flow.exr
+    ├── Erosion2_Wear.exr
+    └── Sample.terrain
+    
+```

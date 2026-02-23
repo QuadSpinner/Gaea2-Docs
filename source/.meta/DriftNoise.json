@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "DriftNoise",
+  "Description": "DriftNoise is a unique primitive that can create overlapping \"shelves\". It is a versatile primitive noise that can be used in various scenarios from cliffs to crack production.",
+  "Family": "Extended",
+  "FamilyIcon": "family-extended",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "dr",
+  "Usage": 36,
+  "SearchString": "DriftNoise Extended  dr",
+  "SearchWords": [
+    "driftnoise",
+    "extended",
+    "",
+    "dr"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

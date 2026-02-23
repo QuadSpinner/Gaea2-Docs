@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Recurve",
+  "Description": "Recurve is a curvature-based expander that inflates and/or deflates the terrain to create stronger slopes and larger, softer formations from a given noise or terrain.",
+  "Family": "Profile",
+  "FamilyIcon": "x-recurve",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "rc",
+  "Usage": 35,
+  "SearchString": "Recurve Profile  rc",
+  "SearchWords": [
+    "recurve",
+    "profile",
+    "",
+    "rc"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

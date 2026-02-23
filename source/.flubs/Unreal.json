@@ -1,0 +1,438 @@
+﻿[
+  {
+    "Name": "Automatic Size",
+    "Description": "Automatically determines the optimal export resolution for Unreal Engine based on the input terrain and project settings.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Target Size",
+    "Description": "Specifies the desired export resolution for Unreal Engine heightmaps and textures. Choose from standard Unreal-compatible sizes for best results.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "x8129",
+        "Description": "Exports at 8129 x 8129 pixels, suitable for very large landscapes in Unreal Engine.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "x4033",
+        "Description": "Exports at 4033 x 4033 pixels, commonly used for large terrain tiles.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "x2017",
+        "Description": "Exports at 2017 x 2017 pixels, ideal for medium-sized terrain tiles.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "x1009",
+        "Description": "Exports at 1009 x 1009 pixels, suitable for smaller terrain tiles or test scenes.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "x505",
+        "Description": "Exports at 505 x 505 pixels, used for small terrain tiles or prototyping.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Dont Resize Textures",
+    "Description": "Prevents automatic resizing of textures during export, preserving the original resolution of input textures.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "LOD Info",
+    "Description": "Provides Level of Detail (LOD) information for exported terrain, enabling optimized rendering and streaming in Unreal Engine.",
+    "Type": "String",
+    "IsGroup": false
+  },
+  {
+    "Name": "Format",
+    "Description": "Selects the file format for exported terrain data. Choose the format that best matches your Unreal Engine workflow.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "PNG",
+        "Description": "Exports terrain data as PNG images, suitable for color maps and masks.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "R16",
+        "Description": "Exports terrain data as 16-bit RAW files, recommended for heightmaps to preserve elevation detail.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "RAW",
+        "Description": "Exports terrain data as RAW files, compatible with Unreal Engine for heightmaps and other data.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Naming",
+    "Description": "Applies Unreal Engine-compatible naming conventions to exported files for easier import and organization.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Unreal Friendly Naming",
+    "Description": "Applies Unreal Engine-compatible naming conventions to exported files for easier import and organization.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Map 1",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Height",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Mask",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Color",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Weight",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Map 2",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Height",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Mask",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Color",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Weight",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Map 3",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Height",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Mask",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Color",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Weight",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Map 4",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Height",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Mask",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Color",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Weight",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Map 5",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Height",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Mask",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Color",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Weight",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Map 6",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Height",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Mask",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Color",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Weight",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Map 7",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Height",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Mask",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Color",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Weight",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Map 8",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Height",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Mask",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Color",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Weight",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Map 9",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Height",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Mask",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Color",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Weight",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Map 10",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Height",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Mask",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Color",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Weight",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Add Input",
+    "Description": "Adds an additional input map layer for export, allowing for more complex terrain data to be sent to Unreal Engine.",
+    "Type": "Command",
+    "IsGroup": false
+  },
+  {
+    "Name": "Information",
+    "Description": "Additional metadata or notes related to the Unreal Engine export process.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Information 2",
+    "Description": "Additional metadata or notes related to the Unreal Engine export process.",
+    "Type": "Byte",
+    "IsGroup": false
+  },
+  {
+    "Name": "Information 1",
+    "Description": "General information or notes about the Unreal Engine export settings.",
+    "Type": "Byte",
+    "IsGroup": false
+  }
+]

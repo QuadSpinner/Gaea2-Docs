@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Name": "Scale",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Jitter",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 15,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Layers",
+  "Description": null,
+  "Family": "Routing",
+  "FamilyIcon": "x-layers",
+  "Toolbox": "Utility",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "",
+  "Usage": 73,
+  "SearchString": "Layers Routing  ",
+  "SearchWords": [
+    "layers",
+    "routing",
+    "",
+    ""
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": true,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

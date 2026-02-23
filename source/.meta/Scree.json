@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Scree",
+  "Description": null,
+  "Family": "Scatter",
+  "FamilyIcon": "family-scatter",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "",
+  "Usage": 18,
+  "SearchString": "Scree Scatter  ",
+  "SearchWords": [
+    "scree",
+    "scatter",
+    "",
+    ""
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,6 +1,7 @@
 ---
-title: surface
+title: Surface
 uid: surface
+hidden: true
 ---
 
 # In this section

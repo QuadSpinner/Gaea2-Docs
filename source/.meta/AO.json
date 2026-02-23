@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "AO",
+  "Description": null,
+  "Family": "Render",
+  "FamilyIcon": "x-ao",
+  "Toolbox": "Output",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ao",
+  "Usage": 64,
+  "SearchString": "AO Render  ao",
+  "SearchWords": [
+    "ao",
+    "render",
+    "",
+    "ao"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

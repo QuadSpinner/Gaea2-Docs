@@ -1,6 +1,7 @@
 ---
-title: features
+title: Features
 uid: features
+hidden: true
 ---
 
 # In this section

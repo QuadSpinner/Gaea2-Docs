@@ -1,0 +1,76 @@
+﻿[
+  {
+    "Name": "Rainfall",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Primary",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Secondary",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Tertiary",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Quaternary",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Simulate 2 X",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Enhance",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Quality",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Quarter",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Third",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Half",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Full",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  }
+]

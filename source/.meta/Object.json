@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Object",
+  "Description": null,
+  "Family": "Assets",
+  "FamilyIcon": "x-object",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    "Object"
+  ],
+  "ShortCode": "o",
+  "Usage": 16,
+  "SearchString": "Object Assets Object o",
+  "SearchWords": [
+    "object",
+    "assets",
+    "object",
+    "o"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

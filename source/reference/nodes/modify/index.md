@@ -1,6 +1,7 @@
 ---
-title: modify
+title: Modify
 uid: modify
+hidden: true
 ---
 
 # In this section

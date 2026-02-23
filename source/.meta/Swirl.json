@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Swirl",
+  "Description": "Swirl creates a vortex warp on the terrain. Very useful for adding a fluid look.",
+  "Family": "Effect",
+  "FamilyIcon": "x-swirl",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "swi",
+  "Usage": 50,
+  "SearchString": "Swirl Effect  swi",
+  "SearchWords": [
+    "swirl",
+    "effect",
+    "",
+    "swi"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

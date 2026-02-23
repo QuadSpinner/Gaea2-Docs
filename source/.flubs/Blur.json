@@ -1,0 +1,13 @@
+﻿[
+  {
+    "Name": "Blur",
+    "Description": "",
+    "IsGroup": true
+  },
+  {
+    "Name": "Radius",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

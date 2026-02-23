@@ -1,0 +1,96 @@
+﻿[
+  {
+    "Name": "Information",
+    "Description": "Displays additional information or metadata about the aperture operation and its current settings.",
+    "Type": "Byte",
+    "IsGroup": false
+  },
+  {
+    "Name": "Mode",
+    "Description": "Specifies the morphological operation to apply to the input, affecting how features are expanded or contracted.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Dilation",
+        "Description": "Expands or grows features in the input by the specified shape and size, filling small holes and connecting nearby elements.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Erosion",
+        "Description": "Contracts or shrinks features in the input by the specified shape and size, removing small details and separating connected elements.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Size",
+    "Description": "Sets the size of the structuring element (aperture) used for the operation. Larger values increase the effect's reach.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Shape",
+    "Description": "Determines the geometric shape of the structuring element used for dilation or erosion, affecting the style of the transformation.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Disk",
+        "Description": "Uses a circular (disk-shaped) structuring element for smooth, rounded transformations.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Polygon",
+        "Description": "Uses a regular polygon as the structuring element, allowing for custom-sided shapes.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Asterisk",
+        "Description": "Uses a star or asterisk-shaped structuring element, emphasizing cross-like or radiating effects.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Line",
+        "Description": "Uses a straight line as the structuring element, applying the effect directionally.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Corner",
+        "Description": "Uses a corner-shaped structuring element, targeting angular or edge features.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Vertices Count",
+    "Description": "For polygon shapes, sets the number of vertices (sides) used, controlling the regularity and appearance of the structuring element.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Corner Angle",
+    "Description": "Specifies the angle of the corner for the 'Corner' shape, adjusting the sharpness or openness of the structuring element.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Direction",
+    "Description": "Sets the orientation or direction for directional shapes (such as Line or Asterisk), controlling the angle of the effect.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Antialiased",
+    "Description": "If enabled, applies antialiasing to the aperture operation, smoothing the edges of the transformed features for a cleaner result.",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

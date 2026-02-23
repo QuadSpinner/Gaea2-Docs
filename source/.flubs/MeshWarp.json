@@ -1,0 +1,27 @@
+﻿[
+  {
+    "Name": "Generate Normals",
+    "Description": "",
+    "Type": "Standard"
+  },
+  {
+    "Name": "Information",
+    "Description": "",
+    "Type": "Standard"
+  },
+  {
+    "Name": "Add Input",
+    "Description": "",
+    "Type": "Command"
+  },
+  {
+    "Name": "Information 1",
+    "Description": "",
+    "Type": "Standard"
+  },
+  {
+    "Name": "LOD Info",
+    "Description": "",
+    "Type": "Computed string"
+  }
+]

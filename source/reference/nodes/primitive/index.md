@@ -1,6 +1,7 @@
 ---
-title: primitive
+title: Primitive
 uid: primitive
+hidden: true
 ---
 
 # In this section

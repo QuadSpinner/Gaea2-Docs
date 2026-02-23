@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Name": "North",
+    "Description": "Specifies the direction considered as 'north' for sunlight calculations. Adjusting this affects the orientation of shadows and lighting in the terrain.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Year",
+    "Description": "Sets the year for solar position calculations. This can influence the sun's path and seasonal lighting effects on the terrain.",
+    "Type": "Float2",
+    "IsGroup": false
+  },
+  {
+    "Name": "Latitude",
+    "Description": "Defines the latitude of the terrain location. Changing the latitude alters the angle and intensity of sunlight, simulating different geographic regions.",
+    "Type": "Int32",
+    "IsGroup": false
+  }
+]

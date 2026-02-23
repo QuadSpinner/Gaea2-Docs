@@ -1,6 +1,7 @@
 ---
-title: bridges
+title: Bridges
 uid: bridges
+hidden: true
 ---
 
 # In this section

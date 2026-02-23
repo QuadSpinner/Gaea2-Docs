@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Clip",
+  "Description": null,
+  "Family": "Adjust",
+  "FamilyIcon": "x-clip",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "clip"
+  ],
+  "ShortCode": "ci",
+  "Usage": 30,
+  "SearchString": "Clip Adjust clip ci",
+  "SearchWords": [
+    "clip",
+    "adjust",
+    "clip",
+    "ci"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -39,21 +39,14 @@ You can also access this same dialog in other ways:
 
 ![](/.data/assets/About_06-48-38-PM.png)
 
-### Command Line Option
+### Activate by File
 
-To authorize Gaea from the command line, you can use the following syntax:
+Use this method when you want to distribute the key but allow the end user machine to activate without admin intervention.
 
-```sh
-## License Key
-Gaea.exe -activate XXXX-XXXX-XXXX-XXXX
+1. Create a text file named `activate.lic` (Notepad is fine).
+2. Put **only** the license key in the file (no extra spaces, no additional lines).
+3. Copy `activate.lic` to the **Gaea Data Folder** (see @paths-and-storage).
 
-## License File
-Gaea.exe -activate "C:\Downloads\Gaea-XYZ123.lic"
-```
+   * For mass deployment, place it in each user’s `AppData > Gaea Data` folder, or in the install folder as appropriate for your deployment setup.
 
-:::info
-Please note, Gaea may not be able to use a UNC network path such as `\\path\share\file.lic` due to limitations in .NET. You should instead mount the share as a drive if possible.
-
-Alternatively, see @mass-deployment for additional solutions for network deployments.
-:::
-
+On launch, Gaea will check if a license is already validated. If not, it will attempt to read and activate using `activate.lic`.

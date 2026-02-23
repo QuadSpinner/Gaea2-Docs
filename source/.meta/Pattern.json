@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Pattern",
+  "Description": null,
+  "Family": "Basic",
+  "FamilyIcon": "family-basic",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "",
+  "Usage": 11,
+  "SearchString": "Pattern Basic  ",
+  "SearchWords": [
+    "pattern",
+    "basic",
+    "",
+    ""
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

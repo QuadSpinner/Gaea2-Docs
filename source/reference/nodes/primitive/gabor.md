@@ -14,22 +14,3 @@ Gabor shapes are dramatically different when compared to the common Perlin and V
 
 
 # Properties
-
-
-## Gabor
-
-- **Size**  
-  
-- **Entropy**  
-  
-- **Anisotropy**  
-  
-- **Azimuth**  
-  
-- **Gain**  
-  
-- **Seed**  
-  The randomization pattern or seed for the node's process.
-
-
-

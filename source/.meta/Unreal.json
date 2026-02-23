@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 20,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Unreal",
+  "Description": null,
+  "Family": "Assets",
+  "FamilyIcon": "x-unreal",
+  "Toolbox": "Output",
+  "Classification": "Export",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ue",
+  "Usage": 25,
+  "SearchString": "Unreal Assets  ue",
+  "SearchWords": [
+    "unreal",
+    "assets",
+    "",
+    "ue"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": true,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

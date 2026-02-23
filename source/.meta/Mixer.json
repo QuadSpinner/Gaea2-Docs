@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 33,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Mixer",
+  "Description": "Mixer allows layer-based manipulation of color textures and contains in-built masking.",
+  "Family": "Routing",
+  "FamilyIcon": "x-mixer",
+  "Toolbox": "Utility",
+  "Classification": "Colorizer",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "mx",
+  "Usage": 128,
+  "SearchString": "Mixer Routing  mx",
+  "SearchWords": [
+    "mixer",
+    "routing",
+    "",
+    "mx"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": true,
+  "CanCreatePorts": true,
+  "OrderedPorts": true,
+  "PreventPurge": false
+}

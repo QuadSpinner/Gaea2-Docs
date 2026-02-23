@@ -1,0 +1,43 @@
+﻿[
+  {
+    "Name": "Gabor",
+    "Description": "Controls the scale of the Gabor noise features. Larger values produce broader, more widely spaced patterns, while smaller values create finer details.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Size",
+    "Description": "Controls the scale of the Gabor noise features. Larger values produce broader, more widely spaced patterns, while smaller values create finer details.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Entropy",
+    "Description": "Adjusts the randomness or complexity of the Gabor noise. Higher entropy values result in more chaotic and less predictable patterns.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Anisotropy",
+    "Description": "Determines the degree of directionality in the noise. Higher values stretch the pattern along a specific axis, creating elongated or striated features.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Azimuth",
+    "Description": "Sets the orientation angle (in degrees) for the anisotropic direction of the Gabor noise, controlling the alignment of elongated features.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Gain",
+    "Description": "Controls the amplitude or intensity of the Gabor noise, affecting the contrast and prominence of the generated features.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process. Changing the seed produces different variations of the Gabor noise.",
+    "Type": "Int32",
+    "IsGroup": false
+  }
+]

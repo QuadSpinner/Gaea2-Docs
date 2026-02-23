@@ -1,6 +1,7 @@
 ---
-title: terrain
+title: Terrain
 uid: terrain
+hidden: true
 ---
 
 # In this section

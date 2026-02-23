@@ -1,0 +1,33 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "GraphicEQ",
+  "Description": null,
+  "Family": "Profile",
+  "FamilyIcon": "x-graphiceq",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "geq gq graphiceq"
+  ],
+  "ShortCode": "gq",
+  "Usage": 28,
+  "SearchString": "GraphicEQ Profile geq gq graphiceq gq",
+  "SearchWords": [
+    "graphiceq",
+    "profile",
+    "geq",
+    "gq",
+    "graphiceq",
+    "gq"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

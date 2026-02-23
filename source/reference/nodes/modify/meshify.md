@@ -7,16 +7,3 @@ order: 23
 
 
 # Properties
-
-
-## Meshify
-
-- **Vertices**  
-  
-- **Seed**  
-  
-- **Detail Sensitivity**  
-  
-
-
-

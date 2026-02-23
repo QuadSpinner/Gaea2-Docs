@@ -14,13 +14,13 @@ The Mixer node provides an easy interface to add and manage multiple color layer
 
 By default, Mixer exposes three inputs. You can use the Add Input command in the Property Window toolbar, or drop a connection on the Mixer node and select "Add new port". You can add up to 15 layers.
 
-![](/.data/assets/image%20(56).png)
+![](/.data/assets/image-(56).png)
 
 You can change the order of layer-blending by simply dragging and changing the order of layers.
 
 Each layer is assigned an ID color which is used to drive the "Simplified View" which is useful for checking how layers blend.
 
-<div>![](/.data/assets/mixer_real.jpg) ![](/.data/assets/mixer_flat.jpg)</div>
+![](/.data/assets/mixer_real.webp) ![](/.data/assets/mixer_flat.webp)
 
 When "Preserve Masks" is enabled, when in-built masks are such as Height or Slope are used, those masks are also exported as Out ports so you can use them for further masking later in the graph.
 

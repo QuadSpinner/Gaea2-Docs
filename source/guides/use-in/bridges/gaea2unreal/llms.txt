@@ -1,0 +1,169 @@
+// from importing-terrains / importing-terrains.md
+---
+title: Importing Terrains
+uid: importing-terrains
+order: 02
+---
+
+# Import-Export Process
+
+Use **Gaea2Unreal**, specifically the **Gaea Landscape Importer**, to easily import a Gaea terrain in Unreal Engine 5 with a single click.
+
+Importing terrains into Unreal Engine can be a complicated process, especially when dealing with various scales. Gaea2Unreal aims to make this an easy, seamless experience for you.
+
+### Exporting your Terrain
+
+See the [Unreal](/reference/nodes/output/unreal.html){data-link-icon=''}-node section on how to prepare your terrain for export.
+
+### Importing into Unreal Engine 5
+
+Once you have installed the Gaea2Unreal plugin in your UE installation, you will see the Gaea Landscape Importer in the main toolbar in Unreal Engine.
+
+![](/.data/assets/image-(54).png)
+
+Clicking it will bring up the Gaea Landscape Importer window. Click `Import Heightmap` and select the PNG file that was exported from Gaea. The Importer will read the heightmap file along with the metadata saved by Gaea for UE-scale conversion, and populate the specifics in the window.
+
+![](/.data/assets/image-(51).png)
+
+Click `Create Landscape` and you're done!
+
+![](/.data/assets/image.webp)
+
+See the [Importing Weight Maps](/guides/use-in/bridges/gaea2unreal/importing-weight-maps.html){data-link-icon=''} section to see how to expand on this import process by importing additional assets as weight maps.
+
+// from importing-weight-maps / importing-weight-maps.md
+---
+title: Importing Weight Maps
+uid: importing-weight-maps
+order: 03
+---
+
+# Importing Weight Maps
+
+![youtube.com](https://youtu.be/X0GrFlcWwpg)
+
+## Importing Weightmaps
+
+**Step 1: Exporting Heightmaps and Weightmaps in Gaea**
+
+* Within Gaea, use the Unreal Export node to output your heightmaps and weightmaps with appropriate prefixes.
+* Add inputs and wire them accordingly. Select "Height" for heightmaps and "Weight" for weightmaps.
+* Assign unique names for nodes going into the Unreal Export node by right-clicking and renaming them. For example, if using two Gamma nodes on the Flow and Deposit outputs from the Erosion 2 node, rename these Gamma nodes to avoid naming conflicts during export.
+
+![](/.data/assets/UE_WeightMap_01.png)
+
+**Step 2: Configuring the Gaea Landscape Importer**
+
+* The Gaea Landscape Importer panel now includes three new properties: Weightmap Filenames, Landscape Layer Names, and Layer Info Folder.
+* Start by setting up the Landscape Layer Names, which auto-populate when a landscape master material is provided.
+
+![](/.data/assets/UE_WeightMap_02.png)
+
+**Step 3: Setting Up the Landscape Master Material**
+
+* Make sure your Landscape Layer Blend nodes have the same number of layers as your landscape material, with unique layer names (e.g., avoid using "Layer 1" for multiple layers).
+* Position these nodes at the top of the graph; avoid nesting them in material functions because the importer does not recursively search through the material.
+* Make sure your layer nodes have at least two layers; otherwise, the importer will skip importing weightmaps when creating the landscape.
+
+![](/.data/assets/UE_WeightMap_03.png)
+
+**Step 4: Linking the Landscape Material in the Importer**
+
+* Once your landscape material is correctly configured, select it in the Landscape Material slot within the Gaea Landscape Importer.
+* The Landscape Layer Names field will automatically populate with the layers found in your material.
+
+![](/.data/assets/UE_WeightMap_04.png)
+
+**Step 5: Specifying the Layer Info Folder**
+
+* Provide a content path for the Layer Info Folder property by clicking the three dots beside the empty text field. A content browser path picker widget will appear, allowing you to select a folder where your layer info objects will be created during landscape actor creation.
+
+![](/.data/assets/UE_WeightMap_05.png)
+
+**Step 6: Importing the Heightmap and Weightmaps**
+
+* With the rendering properties configured, select the heightmap you exported from Gaea (prefixed with "H\_"). Click "Open" and the importer will automatically detect and load all additional files with the "W\_" prefix.
+* The Weightmap Filenames property will populate with the weightmap files exported from Gaea.
+
+![](/.data/assets/UE_WeightMap_06.png)
+
+**Step 7: Finalizing Weightmap and Landscape Layer Settings**
+
+* Before clicking "Create Landscape," make sure that Weightmap Filenames and Landscape Layer Names are correctly configured.
+* Note that the first layer in the material will not receive a weightmap. Therefore, check that your number of weightmaps is always one less than the number of landscape layer names. If there are discrepancies, such as exporting more weightmaps than layers in the material, delete the extra entries in the Weightmap Filenames property.
+
+![](/.data/assets/UE_WeightMap_07.png)
+
+**Final Notes:**
+
+* If the importer does not order the Weightmap Filenames according to your Landscape Layer Names, you can manually adjust the order by dragging the entries up or down.
+* If weightmaps fail to import when clicking "Create Landscape," check that Weightmap Filenames, Landscape Material, Landscape Layer Names, and Layer Info Folder are all properly set. All these properties must be correctly configured for successful weightmap import.
+* The Weightmap Filenames array should always have 1 less entry than the Landscape Layer Names array - this is due to the first entry of the landscape layer system not needing a mask applied to it. If your arrays have an equal number of entries, the Create Landscape button will be disabled.
+
+![](/.data/assets/UE_WeightMap_08.png)
+
+// from gaea2unreal / index.md
+---
+icon: u
+title: Gaea2Unreal
+uid: gaea2unreal
+---
+
+# Gaea2Unreal
+
+
+// from installing-gaea2unreal / installing-gaea2unreal.md
+---
+title: Installing Gaea2Unreal
+uid: installing-gaea2unreal
+order: 01
+---
+
+# Installing Gaea2Unreal
+
+Download the Gaea Unreal Tools installer from the the Gaea `Tools Menu > Plugins`.
+
+:::success
+## Source Code Repository
+
+Source code for the Gaea2Unreal plugin can be found on the [official GitHub Repository](https://github.com/QuadSpinner/Gaea2Unreal).
+:::
+
+## Install to Engine Plugins
+
+Open the Zip file for the version of Unreal Engine you are running, and extract the zip files to your Unreal Engine's install folder in this subpath: `\Engine\Plugins\` 
+
+NOTE: The `GaeaUnrealTools` folder is already contained in the zip file, so you will be installing the plugin files to the path `\Engine\Plugins\GaeaUnrealTools` 
+
+## Install to a Project
+
+Instead of `Engine\Plugins` you can install to the `<Project>\Plugins` folder instead to keep the plugin contained within your project.
+
+## Running the Plugin
+
+Once installed, launch Unreal Engine. Open the Plugins window and check `Gaea2Unreal`
+
+![](/.data/assets/Plugins_02-35-06-PM.png)
+
+![](/.data/assets/image-(53).png)
+
+Once the plugin is loaded (a restart may be required) - you will find the Gaea Landscape Importer in the main toolbar. 
+
+:::warning
+If you do not install to `GaeaUnrealTools`  folder then Unreal may have trouble recognizing the icon in the toolbar. 
+:::
+
+
+// from source-code-unreal / source-code.md
+---
+title: Source Code
+uid: source-code-unreal
+order: 04
+---
+
+# Source Code
+
+The source code for the plugin can be found at:
+
+![youtube.com](https://github.com/QuadSpinner/Gaea2Unreal)
+

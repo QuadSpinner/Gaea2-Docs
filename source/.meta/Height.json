@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Height",
+  "Description": "Height creates a selection mask within the height range specified.",
+  "Family": "Aspect",
+  "FamilyIcon": "x-height",
+  "Toolbox": "Derive",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "h",
+  "Usage": 86,
+  "SearchString": "Height Aspect  h",
+  "SearchWords": [
+    "height",
+    "aspect",
+    "",
+    "h"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

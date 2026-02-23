@@ -1,0 +1,76 @@
+﻿[
+  {
+    "Name": "Mode",
+    "Description": "Selects the filter response curve used to shape terrain detail by frequency (scale).",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "LowPass",
+        "Description": "Keeps large-scale forms and smooths out high-frequency detail.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "HighPass",
+        "Description": "Keeps fine detail and removes broad, low-frequency forms.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "LowShelf",
+        "Description": "Boosts or cuts low frequencies while leaving higher frequencies mostly unchanged.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "HighShelf",
+        "Description": "Boosts or cuts high frequencies while leaving lower frequencies mostly unchanged.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "BandPass",
+        "Description": "Keeps a band of mid frequencies and attenuates both low and high frequencies outside the band.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Notch",
+        "Description": "Removes a narrow band of frequencies while leaving the rest mostly unchanged.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Bell",
+        "Description": "Boosts or cuts a centered frequency band with a controllable bandwidth.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Frequency",
+    "Description": "The center/cutoff frequency of the filter (controls which detail scale is affected).",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Gain",
+    "Description": "Amount of boost or cut applied (used by shelf and bell modes).",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Q",
+    "Description": "Filter sharpness/bandwidth (higher Q = narrower, more selective band; lower Q = broader influence).",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Keep DC",
+    "Description": "Preserves the overall baseline/average height (DC offset) so the filter affects detail without shifting the mean elevation.",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

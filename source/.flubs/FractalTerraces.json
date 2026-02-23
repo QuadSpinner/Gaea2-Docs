@@ -1,0 +1,158 @@
+﻿[
+  {
+    "Name": "Spacing",
+    "Description": "Sets the space between two terraces. Controls the horizontal distance or interval between each terrace step.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Octaves",
+    "Description": "Specifies the number of terraces to generate, including subtle sub-terraces. Higher values create more layers and finer detail.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Intensity",
+    "Description": "Controls the strength of the terracing process. Higher intensities flatten the terraces, making the steps more pronounced.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Shape",
+    "Description": "Defines the general shape of the terraces. Lower values create steeper terraces that follow the terrain's bulk, while higher values produce smoother terraces that protrude outward.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "Randomization seed for the node's process. Changing the seed produces different terrace arrangements.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Advanced",
+    "Description": "Controls how distinctly individual terrace shapes are separated from each other, affecting the clarity of terrace boundaries.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Shapes separation",
+    "Description": "Controls how distinctly individual terrace shapes are separated from each other, affecting the clarity of terrace boundaries.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Macro octaves",
+    "Description": "Sets the number of large-scale terrace layers, influencing the overall structure and major steps in the terrain.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Micro shape",
+    "Description": "Adjusts the fine detail and small-scale shaping of terraces, adding subtle variations to each step.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Character",
+    "Description": "Modifies the overall character or style of the terraces, such as their ruggedness or smoothness.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Thickness uniformity",
+    "Description": "Controls how consistent the thickness of each terrace step is across the terrain. Higher values produce more uniform terraces.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Hardness uniformity",
+    "Description": "Adjusts the consistency of terrace edge hardness, affecting whether terrace boundaries are sharp or soft throughout.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Strata details",
+    "Description": "Adds additional detail to the strata or layers within the terraces, enhancing geological realism.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Protect Range",
+    "Description": "Defines a range within which the original terrain is protected from terracing, preserving natural features in specified areas.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Tilt",
+    "Description": "Enables or disables the tilt effect, allowing terraces to be slanted in a specified direction.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Apply Tilt",
+    "Description": "Enables or disables the tilt effect, allowing terraces to be slanted in a specified direction.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Tilt Amount",
+    "Description": "Sets the degree of tilt applied to the terraces, controlling how steeply they are angled.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Direction",
+    "Description": "Specifies the direction in which the tilt is applied, determining the orientation of the slant.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Tilt Seed",
+    "Description": "Randomization seed for the tilt effect, producing varied tilt patterns when changed.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Warp Amount",
+    "Description": "Controls the strength of the warp effect applied to the terraces, introducing distortion and organic variation.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Warp Size",
+    "Description": "Sets the scale of the warp effect, determining how broad or fine the distortion is.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Warp Style",
+    "Description": "Specifies the style of warping applied to the terraces, affecting the nature of the distortion.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "A",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "B",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "C",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "D",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  }
+]

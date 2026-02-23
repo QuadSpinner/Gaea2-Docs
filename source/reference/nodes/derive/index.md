@@ -1,6 +1,7 @@
 ---
-title: derive
+title: Derive
 uid: derive
+hidden: true
 ---
 
 # In this section

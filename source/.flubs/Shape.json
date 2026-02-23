@@ -1,0 +1,76 @@
+﻿[
+  {
+    "Name": "Geometry",
+    "Description": "Specifies the base geometric shape used for the node. Determines the fundamental outline or profile of the generated object.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Circle",
+        "Description": "Generates a circular shape as the base geometry, resulting in round or elliptical forms.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Rectangle",
+        "Description": "Generates a rectangular shape as the base geometry, resulting in box-like or elongated forms.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Sides",
+    "Description": "Defines the number of sides for polygonal shapes. Higher values create shapes closer to a circle, while lower values produce more angular forms.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Uniform",
+    "Description": "When enabled, ensures that scaling and transformations are applied equally in all directions, maintaining the original proportions of the shape.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale",
+    "Description": "Controls the overall size of the shape, scaling it uniformly along both the X and Y axes.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale X",
+    "Description": "Adjusts the width of the shape by scaling it along the X axis independently.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale Y",
+    "Description": "Adjusts the height of the shape by scaling it along the Y axis independently.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Thickness",
+    "Description": "Specifies the thickness of the shape's outline or border, or the width of a ring for hollow shapes.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Height",
+    "Description": "Sets the vertical extent or elevation of the shape, often used to define extrusion or relief in terrain generation.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "X",
+    "Description": "Sets the horizontal position or offset of the shape along the X axis.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Y",
+    "Description": "Sets the vertical position or offset of the shape along the Y axis.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

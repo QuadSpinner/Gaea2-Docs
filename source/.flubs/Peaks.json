@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Name": "Falloff",
+    "Description": "Controls how quickly the mask transitions from the peaks and ridges to lower altitudes. Higher values create a sharper, more focused mask around the highest points.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Precise",
+    "Description": "Enables a more accurate detection of peaks and ridges, resulting in a mask that closely follows the true tips of the terrain.",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

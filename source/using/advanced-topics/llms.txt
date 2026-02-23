@@ -1,0 +1,610 @@
+// from advanced-topics / index.md
+---
+title: Advanced Topics
+uid: advanced-topics
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from build-reports / build-reports.md
+---
+title: Build Reports
+uid: build-reports
+order: 02
+---
+
+# Build Reports
+
+## Post-Action Screen
+
+Gaea shows a post-action screen when a build finishes. It saves a copy in the build folder as `report.txt` so you can refer to it later.
+
+```
+
+───────────────────────────────────────────────────────  GAEA BUILD SWARM  2.1.0.0 ──
+
+                                                                             
+          Filename:  │ C:/Users/Dax/Documents/Gaea/Projects/mesher2.terrain  
+    Build Location:  │ C:\Users\Dax\Documents\Gaea\Builds\mesher2\001        
+        Build Type:  │ Standard                                              
+  Build Resolution:  │ 2048 × 2048                                           
+     Build Profile:  │ None / Last Saved Settings                            
+             Nodes:  │ 03 to build                                           
+                     │ 01 to export
+
+───────────────────────────────────────────────────────────────────── Build Report ──
+
+              Build Results                              Statistics               
+                                                                                  
+          Result: │ Success                  Sandstone │ 0:00:02.721              
+      Resolution: │ 2048                               │                          
+      Node Count: │ 3                          Fastest │ Mesher @ 0:00:00.001     
+      Start Time: │ 02/05/2025 19:42:03        Slowest │ Sandstone @ 0:00:02.721  
+        End Time: │ 02/05/2025 19:42:26                                           
+        Duration: │ 00:00:23.3091200       * nodes that took <100ms are excluded. 
+  Non-Build Time: │ 00:00:20.5231200                                              
+                                                                                  
+```
+
+## Build Report
+
+A structured data version of the report is also saved as `report.json` that is both human and machine readable.
+
+```json
+{
+  "$id": "1",
+  "Resolution": 2048,
+  "NodeCount": 3,
+  "Result": "Success",
+  "StartTime": "2025-02-05T19:42:03.2694437+05:30",
+  "EndTime": "2025-02-05T19:42:26.5785637+05:30",
+  "Duration": "00:00:23.3091200",
+  "SecondsTaken": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "Item1": "Perlin",
+        "Item2": "00:00:00.0640000"
+      },
+      {
+        "$id": "4",
+        "Item1": "Mesher",
+        "Item2": "00:00:00.0010000"
+      },
+      {
+        "$id": "5",
+        "Item1": "Sandstone",
+        "Item2": "00:00:02.7210000"
+      }
+    ]
+  },
+  "FastestNode": {
+    "$ref": "4"
+  },
+  "SlowestNode": {
+    "$ref": "5"
+  }
+}
+```
+
+// from creating-mutations / creating-mutations.md
+---
+title: Creating Mutations
+uid: creating-mutations
+order: 01
+---
+
+# Creating Mutations
+
+Mutations are a great way to create multiple variations of the same terrain with minimal effort.
+
+In its most basic form, mutations update the seeds used by all nodes in the terrain unless a node is baked. When you use the `--Seed <int>` command line argument, it increments each seed in every node by that amount.
+
+This provides a clean and predictable way to generate multiple mutations.
+
+:::info
+To prevent specific nodes from being affected, you can try [Baking Nodes](/using/using-gaea/baking-nodes/index.html){data-link-icon='fire'}.
+:::
+
+
+
+### Using the Batch Build Manager
+
+The fastest way to set up mutations, is to go to Build menu > Batch Build Manager and use the `Add Mutation` button to queue up as many mutations as you want.
+
+![](/.data/assets/Batch_Build_Manager_08-19-54-PM.png)
+
+If you find yourself repeating these builds, save the batch build as a Windows Batch (.bat) file.
+
+:::info
+Use the `[Mutation]` token in the [#build](/using-gaea/build-and-export/build-options/#build) Destination to add the current mutation as part of a folder name or subfolder.
+
+For example:
+
+`<Builds>\[Filename]\[+++]\[Mutation]` 
+
+or 
+
+`<Builds>\[Filename]\[Region]_[Mutation]`
+:::
+
+
+// from build-swarm / index.md
+---
+icon: cubes-stacked
+title: Build Swarm
+uid: build-swarm
+---
+
+# Build Swarm
+
+The Build Swarm, represented by `Gaea.Swarm.exe` is the heart of Gaea. It is the Build Engine that takes the terrain recipe created in the Gaea UI and builds it with high performance.
+
+The Swarm is a separate command line executable so it runs faster without a UI burdening it. Gaea's UI uses it in the background when building high resolution terrains for maximum performance.
+
+## Options
+
+All options for the Build Swarm for a specific file can be set in the [Build Options](/ui/interface/build-options/index.html){data-link-icon=''}. 
+
+Some additional options can be set via [Command Line Automation](/developers/automation/cli/command-line-automation.html){data-link-icon=''}.
+
+## Automation
+
+See [Command Line Automation](/developers/automation/cli/command-line-automation.html){data-link-icon=''} and [Variables](/developers/extensibility/scripting-and-expressions/variables.html){data-link-icon='xmark'} for automation scenarios.
+
+## Post Action Report
+
+Gaea will save a post-action report as both human readable and machine readable files. You can use them in your automation workflow or use them to gather vital intelligence about your builds.
+
+
+// from profiles-and-batch-builds / profiles-and-batch-builds.md
+---
+title: Profiles and Batch Builds
+uid: profiles-and-batch-builds
+order: 03
+---
+
+# Profiles and Batch Builds
+
+Build Profiles let you save all Build Settings in a named preset. If you find yourself creating multiple versions of your terrain, or creating different output types, you can switch between the different build settings swiftly with Profiles.
+
+![The Profiles tab lets you preview and manage profiles.](/.data/assets/Build_Settings_and_Regions_08-00-36-PM.png)
+
+## Using Profiles
+
+To create a profile:
+
+* Open Build Settings.
+* Select the settings you want for a profile
+* Go to the Profiles tab and click Save Profile.
+
+The "Load" button imports the selected build profile into the current build settings.
+
+The "Save As..." button allows you to create a new build profile based on the current build settings.
+
+The "Delete" button removes the currently selected build profile.
+
+:::info
+Use ASCII-friendly names for the profile as you may wish to use them in command line or Batch executions.
+:::
+
+## Running Batch Builds
+
+You can execute multiple builds using saved profiles using the Batch Builds dialog. Go to Build menu > Batch Builds to open the dialog.
+
+![](/.data/assets/Batch_Build_Manager_07-33-43-PM.png)
+
+Queue the different profiles you want to build and execute the batch. You can also save the batch as a `.bat` file for later execution or modification.
+
+The `-profile <name>` or `-p <name>` argument can be used to specify a profile during a [Build Swarm](/using/advanced-topics/build-swarm/index.html){data-link-icon='cubes-stacked'} execution. It is recommended that the \<name> be wrapped in `""` quotation marks to prevent incorrect parsing.
+
+
+
+See also [Creating Mutations](/using/advanced-topics/build-swarm/creating-mutations.html){data-link-icon=''}
+
+
+// from calculating-memory-requirements / calculating-memory-requirements.md
+---
+title: Calculating Memory Requirements
+uid: calculating-memory-requirements
+order: 05
+---
+
+# Calculating Memory Requirements
+
+## Understanding Memory Consumption
+
+It is common to hear users say _"But I have an 8GB GPU"_ or _"But I have 64GB RAM"_ when a build fails. However, it is imperative to remember that, while terrains may seem like just simple objects, the procedural graph represents a LOT of data and this data takes up a lot of memory.
+
+![The Build Statistics window lets you keep an eye on how much time each node takes.](/.data/assets/gaea_2051_stats.png)
+
+When working in a specific resolution, each node generates single channel (heightfield) or multichannel (RGB) data. The amount of data is multiplied by the number of output ports.
+
+The table below describes the size of the cache of a single node at different resolutions.
+
+|   Resolution  | Size in Memory (Heightfield) | Size in Memory (RGB) |
+| :-----------: | ---------------------------: | -------------------: |
+|  1024 x 1024  |                          4MB |                 12MB |
+|  2048 x 2048  |                         16MB |                 48MB |
+|  4096 x 4096  |                         64MB |                192MB |
+|  8192 x 8192  |                        256MB |                768MB |
+| 16384 x 16384 |                       1024MB |               3072MB |
+
+
+During the lifetime of a node's process, dozens - sometimes hundreds - of datasets may be created, altered, and discarded. This is one of the reasons why Gaea requires large amounts of memory when processing.
+
+![Allocated Memory readout in the Status Bar](/.data/assets/image-(47).png)
+
+Gaea's Status Bar shows the currently allocated memory in the bottom right corner of the screen. This updates every 5 seconds. However, it only counts the allocated cache - the amount used in between for temporary usage - so should only be considered an estimate.
+
+## Working with Large Builds
+
+### Excessive Nodes
+
+![Memory consumption increases 4X when you double the resolution.](/.data/assets/memory_chart.png)
+
+The fewer nodes you use, the better. The higher number of nodes makes your graph more complex and slower to process. Also, each node takes up a certain amount of space. While Gaea tries to free up as much space as possible once a node is processed, it's not always possible to economize.
+
+:::warning
+In all these examples, we are assuming that the node has a **single output port**. If it has multiple outputs, then the size of the node is increased. 
+
+For example, at 4096 x 4096, **Ridge, Adjust,** or **Shaper** would be`64MB,`while **Erosion2** would be`256MB`because it has 4 output ports.
+:::
+
+For a typical 8K terrain graph, if you use 20 nodes, you would have a cache size of 5-8GB. There would be some additional overhead for management and other processes. 16GB RAM would be the bare minimum amount that could handle this in theory. However, we recommend using 32GB to reduce the chances of paging (hard disk being used as RAM when memory runs out).
+
+### Large Resolutions
+
+![Cache size requirements increase quadratically with resolution.](/.data/assets/memory_chart2.png)
+
+While 16K may not seem like much on the surface, the sheer processing power required for a relatively complex scene can overwhelm a computer. Using the table above, we can easily calculate that 20 nodes at 16K would require 20GB-30GB of memory for actual cache and up to 96GB of memory for the overall processing and management of the build.
+
+This is why we recommend a minimum of 64GB RAM for processing 16K builds, increasing to 128GB whenever possible.
+
+While Gaea would recycle memory in between, there would still be some large spikes. 
+
+### Exporting Optimized Meshes
+
+When exporting meshes, you can expect very large file sizes at higher resolutions. As terrain meshes use an equidistant grid system, it creates 1 vertex per pixel. So your 2048 x 2048 terrain will have 2048 (+1) x 2048 (+1) vertices. That's 4 million vertices!!
+
+![](/.data/assets/sophia-1.webp)
+
+You can choose to export `Optimized` meshes when using the Mesher node. Our proprietary algorithms can help you reduce the polygon count based on the complexity of the terrain. This will budget more polygons where there are complex details and fewer polygons for flatter areas. This can lead to up to 60% reduction in polygon count in typical scenarios.
+
+An additional way to reduce mesh size is to export a high resolution displacement map and a low resolution mesh. You can use the displacement map to add the additional details that would "cost" too much in polygons.
+
+## How to Conserve Memory
+
+* Break your project into multiple files - for example, terrain shape creation in one project and color production in another.
+* [Baking Nodes](/using/using-gaea/baking-nodes/index.html){data-link-icon='fire'} allows you to offload large portions of data from active memory to disk.
+* Try to use fewer nodes when possible. Use Modifiers instead of Nodes to reduce overhead.
+
+
+
+
+
+
+// from dimensions-and-scale / dimensions-and-scale.md
+---
+title: Dimensions and Scale
+uid: dimensions-and-scale
+order: 04
+---
+
+# Dimensions and Scale
+
+### What is a pixel worth?
+
+In Gaea, terrain is represented using a heightfield, which is essentially a grid of pixels where each pixel’s value (ranging from 0 to 1) corresponds to a specific elevation point on the terrain. This system allows Gaea to model the terrain’s slopes and elevations with high precision.
+
+### Scale Philosophy
+
+Gaea uses a vertical ratio to maintain scale. This is because we describe the world in meters (e.g., `5000m x 5000m x 2500m`) to retain a consistent scale, but we use pixels in specific sizes (e.g., `4096px x 4096px`) to store our data (as needed by CG applications) which is a finite and arbitrary unit which can't map to pixels. In addition, each pixel's value is stored as a high-precision decimal value (`0.005893f`) which is also an arbitrary, but ratio-based, unit.
+
+Therefore, we use a simple formula to create and retain the height of the terrain: 
+
+$$
+\text{Compression Ratio} = \frac{\text{Height}}{\text{Scale}} = \frac{2500}{5000} = 0.5
+$$
+
+
+
+![The default Gaea world is 5000m wide and 2500m tall, creating a perfect 0.5 ratio.](/.data/assets/scale--5000x2600.webp)
+
+### Terrain Size and Height
+
+**1. Size (Width and Sprawl)**
+
+* **Size Specification**: In Gaea, you can specify the physical dimensions of the terrain, often referred to as the width or sprawl, in meters. This dimension determines the horizontal extent of the terrain.
+* **Impact on Design**: Setting the size helps to define the scale of the landscape, affecting how terrain features like hills and valleys are spread across the terrain map.
+
+**2. Height**
+
+* **Height Values**: The heights within the heightfield are stored as values between 0 and 1. These values are scaled to represent the actual height range of your terrain in meters.
+* **Example**: A height value of 0.5 in a terrain with a maximum elevation of 100 meters represents an elevation of 50 meters.
+
+### Understanding Vertical Compression Ratio
+
+**Vertical Compression Ratio = Height / Scale**
+
+* **Height**: This is the maximum elevation difference in your terrain, from the lowest point (often represented as 0 in the heightfield) to the highest point (represented as 1).
+* **Scale**: This refers to the specified horizontal dimensions of the terrain.
+
+### **Purpose of the Compression Ratio**
+
+* The vertical Compression Ratio helps maintain a realistic representation of vertical and horizontal scales. It ensures that the terrain’s vertical scale (elevation) is proportionate to its horizontal scale (width/sprawl).
+* **Interpreting the Ratio**: A higher Compression Ratio indicates that the terrain features are more vertically exaggerated relative to their horizontal spread. Conversely, a lower ratio means the terrain is relatively flatter or more stretched out horizontally.
+
+## Practical Example
+
+Suppose you are creating a mountainous landscape:
+
+* **Horizontal Size (Width/Sprawl)**: 2000 meters
+* **Maximum Elevation (Height)**: 500 meters
+
+The vertical compression ratio would be calculated as:
+
+$$
+\text{Compression Ratio} = \frac{\text{Height}}{\text{Scale}} = \frac{500}{2000} = 0.25
+$$
+
+This ratio tells us that for every 4 meters you move horizontally, there is a potential elevation change of 1 meter. This relatively low ratio indicates a gentle slope across the terrain.
+
+### Importing a Mesh or Heightfield Object in your 3D App
+
+**Scenario:** You have a terrain mesh exported from Gaea where the maximum height is set to a specific value and the horizontal dimensions are defined. You want to ensure the mesh retains realistic proportions when imported into a 3D CG application.
+
+**Steps:**
+
+1. **Import the Terrain Mesh**
+   * Open your 3D CG application and import the mesh file (typically in formats like OBJ, FBX, or another application-specific format) that you exported from Gaea.
+2. **Calculate the Vertical Compression Ratio**
+   * Given **Height** (maximum vertical extent) and **Scale** (horizontal dimensions), compute the ratio. For example, if **Height** = 500 meters and **Scale** = 2000 meters, the ratio is (0.25).
+3. **Adjust the Scale in Your 3D Application**
+   * Select the imported mesh in your application.
+   * Access the scaling tool or transformation properties.
+   * Set the scale along the vertical axis (often Z-axis) to the calculated Compression Ratio (e.g., 0.25), making sure the terrain's vertical scale aligns with its real-world dimensions.
+   * Keep the horizontal scales (X and Y axes) at their default (usually 1.0) to maintain the original width and sprawl.
+4. **Apply the Scale**
+   * Apply or confirm the scaling transformation. This step may vary by software; it typically involves confirming the scale adjustment through a transformation apply, freeze, or reset scale function.
+5. **Verify and Adjust if Necessary**
+   * Use tools available in your 3D application to check the terrain dimensions. This might include measuring tools or viewing properties that confirm the object's scale relative to the scene.
+   * Adjust further if the visual scale does not seem realistic or consistent with the intended design.
+
+By adhering to these steps, the imported terrain mesh will reflect accurate proportions and the visualization will maintain the intended topographical features and realism, regardless of the 3D CG software used.
+
+### Tips for Users
+
+* **Adjusting the Ratio**: You can manipulate the look and feel of your terrain by adjusting either the height or the sprawl. Increasing the height while keeping the sprawl constant will make the terrain steeper.
+* **Visual Impact**: Use the Compression Ratio to guide the realism of your terrain. A ratio that closely matches real-world landscapes will yield more realistic results. A higher or lower ratio can be used to stylize the terrain according to specific artistic goals.
+
+## Conclusion
+
+Understanding and utilizing the vertical Compression Ratio in Gaea allows you to create terrains that are visually balanced and scaled appropriately for the intended application. By controlling the height and size parameters, you can effectively shape the overall character of your digital landscape.
+
+// from file-formats / file-formats.md
+---
+title: File Formats
+uid: file-formats
+order: 01
+---
+
+# File Formats
+
+Gaea supports all modern (and some legacy) file formats for both flat files and meshes.
+
+## For Import
+
+### **Bitmap Formats**
+
+<table><thead><tr><th width="280">Format</th><th data-type="checkbox">32-bit</th><th data-type="checkbox">16-bit</th><th data-type="checkbox">8-bit</th></tr></thead><tbody><tr><td>OpenEXR</td><td>true</td><td>false</td><td>false</td></tr><tr><td>TIFF</td><td>true</td><td>true</td><td>true</td></tr><tr><td>PNG (64 / 16 / 8)</td><td>true</td><td>true</td><td>true</td></tr><tr><td>RAW (Float / Half / UShort)</td><td>true</td><td>true</td><td>false</td></tr><tr><td>JPG</td><td>false</td><td>false</td><td>false</td></tr><tr><td>Gaea RAW</td><td>true</td><td>false</td><td>false</td></tr></tbody></table>
+
+:::info
+Raw can be saved as .raw, .r16, and .r32 as required as different applications use different combinations of format and extensions.
+:::
+
+### 3D Formats
+
+* Wavefront OBJ (.obj)
+* Autodesk Filmbox (.fbx)
+* Collada (.dae)
+* WebGL (.glTF/.glb)
+* Point Cloud (.xyz)
+
+## **For Import**
+
+Gaea supports the following formats for importing data:
+
+* .exr
+* .tif/.tiff
+* .webp/.jpeg
+* .webp
+* .svg
+* .psd
+* .hdr
+* .pfm
+* .r32
+* .raw
+* .bmp
+
+:::info
+Gaea can also import 3D objects with the Object node.
+:::
+
+
+
+## Gaea's Project Formats <a href="#gaea-27s-project-formats" id="gaea-27s-project-formats"></a>
+
+Gaea saves files in the formats mentioned below.
+
+### **.terrain**
+
+Gaea terrain projects are saved as a `.terrain` file. All Gaea editions can read this format.
+
+See @#advanced-automation for manipulating this file format.
+
+
+
+## Precision <a href="#precision" id="precision"></a>
+
+Gaea stores and processes its heightfields in 32-bit floating points, which is compatible with all professional CGI applications.
+
+### **32-bit**
+
+For practical purposes, exporting as either OpenEXR or TIFF will give you the best results and maximum compatibility with other applications. If you are using a custom pipeline, using R32 or PFM formats may be of more use. See the section below for those formats.
+
+:::info
+If you are saving output from Gaea to bring back to Gaea either in the same or different file, we recommend using the `.r32` or `.graw` formats for maximum fidelity and efficiency.
+:::
+
+### **16-bit**
+
+While displacement/heightfield information requires 32-bit precision for accuracy; color maps, masks, and other secondary data which may have fewer levels of complexity can make use of 16-bit formats, such as PNG. This can help save on disk space as larger worlds will require a lot of storage space. Storing in 16-bit also helps performance.
+
+In fact, if your terrain does not contain many smooth details, you can even export your main displacement as 16-bit.
+
+Game engines, such as Unity, can only import RAW 16-bit (ushort) format terrains.
+
+### **8-bit**
+
+In some cases, for example with black and white masks, you may not need a high level of precision at all. You can use 8-bit PNG or TIFF output which can increase performance and save disk space.
+
+**Custom Workflows Precision**
+
+If you are using Gaea in a custom workflow, such as automation, you may require the data to be as simple and efficiently readable as possible.
+
+### Technical Details
+
+32-bit float (.r32) and 16-bit ushort (.raw) are the simplest formats you can use. It is a simple binary array of `float` (IEEE 754) or `unsigned short`. The file has no header and can be read directly as a binary stream. The files will use Little Endian.
+
+The size of the heightfield should be square root of the byte length divided by the size of the type (4 bytes for `float`, 2 bytes for `ushort`).
+
+The `.r32` format will store values between `0.0f` and `1.0f`. While the `.raw` format will store values between `0` and `65535`.
+
+Both formats are recommended for heightfield (grayscale) data only.
+
+// from technical-information / index.md
+---
+icon: head-side-gear
+title: Technical Information
+uid: technical-information
+---
+
+# Technical Information
+
+
+// from learning-and-predictive-system / learning-and-predictive-system.md
+---
+title: Learning and Predictive System
+uid: learning-and-predictive-system
+order: 02
+---
+
+# Learning and Predictive System
+
+Gaea incorporates a sophisticated, fully-local Learning and Predictive System designed to streamline your workflow by intelligently suggesting nodes based on your historical usage patterns. This system is a key part of Gaea’s Convenience Features and the Toolbox, which aim to significantly reduce graph creation times.
+
+### How It Works
+
+#### **Node Usage Tracking**
+
+* **Pattern Learning**: As you work, Gaea monitors the nodes you create and the connections you establish between them. It analyzes these patterns to understand your workflow preferences and tendencies.
+
+#### **Predictive Suggestions**
+
+* **Node Recommendations**: Based on your usage patterns, Gaea predicts the nodes you are likely to use next and prioritizes these in the node suggestion list.
+* **Optional Use**: These predictive suggestions are presented separately from the main Create menu, to ensure they are unobtrusive and can be easily ignored if you prefer the standard node selection methods.
+
+### Predicting Connections
+
+* **Quick Create Menu**: When you initiate a node connection, the Quick Create menu appears, offering suggestions for next nodes based on your previous actions.
+* **Example Use Case**: If you frequently connect an Autolevel node to the Flow output of an Erosion node, then starting a connection from the Flow port and dragging it into an empty space on the Graph surface will trigger the Quick Create menu, with Autolevel prominently suggested.
+* **Visual Aids**: Suggestions are color-coded to facilitate quick identification of node types, enhancing usability and speed.
+
+### Toolbox
+
+* In the Toolbox, frequently used nodes are highlighted in a brighter color for faster recognition.
+
+### Tip for Enhanced Productivity
+
+Regular interaction with the Predictive System not only speeds up your current projects, but also continuously refines the system's accuracy. As Gaea learns more about your preferences and habits, the suggestions become increasingly tailored to your specific workflow, potentially cutting graph creation times in half.
+
+### Conclusion
+
+Gaea's Learning and Predictive System is a powerful tool for enhancing efficiency in terrain creation. By learning from your usage patterns and intelligently predicting your next steps, the system allows for a more streamlined and personalized design experience.
+
+***
+
+## Privacy and Security
+
+* **Local Processing**: All pattern recognition and data processing occur on your local machine. No personal data or usage information is sent to external servers or stored online.
+* **Control and Transparency**: Users have complete control over this feature. You can reset or disable the predictive suggestions at any time, to assure that your workflow preferences are respected. All data related to predictive learning and node suggestion tracking is kept in plain text JSON files in the Gaea Settings folder.
+
+// from paths-and-storage / paths-and-storage.md
+---
+title: Paths and Storage
+uid: paths-and-storage
+order: 03
+---
+
+# Paths and Storage
+
+## Data
+
+Gaea stores all application data, excluding Projects, in a centralized directory known as the Data folder.
+
+| Install Type       | Flag           | Typical Path                                      | Data Folder Path                                        |
+| ------------------ | -------------- | ------------------------------------------------- | ------------------------------------------------------- |
+| Non-Admin | `/CURRENTUSER` | `C:\Users\<user>\AppData\Local\Programs\Gaea 2.0` | `C:\Users\<user>\AppData\Local\Programs\Gaea 2.0\Data`  |
+| Admin     | `/ALLUSERS`    | `C:\Program Files\QuadSpinner\Gaea 2.0`           | `C:\Users\<user>\AppData\Roaming\QuadSpinner\Gaea\2.0\` |
+
+
+### **Standard Installation**
+
+If Gaea is installed in the Program Files directory, the Data folder is located at:
+
+`<UserFolder>\AppData\Roaming\QuadSpinner\Gaea\2.0`
+
+### **Portable Installation**
+
+The default location for a Portable Installation is:
+
+`C:\Users\<username>\AppData\Local\Programs\Gaea 2.0`
+
+If Gaea is installed in a portable location, the Data folder is located adjacent to the Gaea.exe file.
+
+For example, if your install location is: `D:\Programs\CG\Gaea\` then the Data folder will be stored at `D:\Programs\CG\Gaea\Data\` 
+
+:::note
+Whenever a new installation of Gaea is created, upon first run, Gaea will check if the install folder is writeable (ie, does it require Admin Privileges). If it is writeable it will create the `Data` folder there, otherwise it will create it in `AppData`.
+:::
+
+
+
+## Your Gaea Files
+
+These paths can be changed in the [Options](/ui/interface/options/index.html){data-link-icon=''} > [Paths](/ui/interface/options/paths.html){data-link-icon=''}.
+
+### Documents
+
+This is where all Presets, Screenshots, and other Gaea documents are stored.
+
+Default location: `C:\Users\<you>\Documents\Gaea\`
+
+### Projects
+
+The is where all Gaea project files are stored by default.
+
+Default location: `C:\Users\<you>\Documents\Gaea\Projects\`
+
+### Builds
+
+This is where output files from builds are stored. It is denoted by the token `<Builds>` in [#build](/using-gaea/build-and-export/build-options/#build) Build Destination.
+
+Default location: `C:\Users\<you>\Documents\Gaea\Builds\`
+
+

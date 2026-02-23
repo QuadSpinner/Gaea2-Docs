@@ -1,0 +1,28 @@
+{
+    "folder-color.pathColors": [
+        {
+            "folderPath": "Gaea2-Docs\\source\\using\\",
+            "color": "foldercolorizer.color_ffcc99"
+        },
+        {
+            "folderPath": "Gaea2-Docs\\source\\ui\\",
+            "color": "foldercolorizer.color_cc9900"
+        },
+        {
+            "folderPath": "Gaea2-Docs\\source\\reference\\",
+            "color": "foldercolorizer.color_66ffcc"
+        },
+        {
+            "folderPath": "Gaea2-Docs\\source\\install\\",
+            "color": "foldercolorizer.color_00cc99"
+        },
+        {
+            "folderPath": "Gaea2-Docs\\source\\guides\\",
+            "color": "foldercolorizer.color_ff9966"
+        },
+        {
+            "folderPath": "Gaea2-Docs\\source\\developers\\",
+            "color": "foldercolorizer.color_6666ff"
+        }
+    ]
+}

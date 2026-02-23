@@ -1,0 +1,40 @@
+﻿[
+  {
+    "Name": "Transforms",
+    "Description": "",
+    "Type": "List`1",
+    "IsGroup": false
+  },
+  {
+    "Name": "Quality",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Draft",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Medium",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Add Input",
+    "Description": "",
+    "Type": "Command",
+    "IsGroup": false
+  }
+]

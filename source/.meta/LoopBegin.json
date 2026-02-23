@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "LoopBegin",
+  "Description": "Begins a Loop circuit.",
+  "Family": "Routing",
+  "FamilyIcon": "x-loopbegin",
+  "Toolbox": "Utility",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "lb",
+  "Usage": 13,
+  "SearchString": "LoopBegin Routing  lb",
+  "SearchWords": [
+    "loopbegin",
+    "routing",
+    "",
+    "lb"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "GroundTexture",
+  "Description": "GroundTexture adds superficial detail to the terrain to increase realism.",
+  "Family": "Superficial",
+  "FamilyIcon": "family-superficial",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    "surfacer"
+  ],
+  "ShortCode": "gt",
+  "Usage": 81,
+  "SearchString": "GroundTexture Superficial surfacer gt",
+  "SearchWords": [
+    "groundtexture",
+    "superficial",
+    "surfacer",
+    "gt"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Meshify",
+  "Description": null,
+  "Family": "Shape",
+  "FamilyIcon": "x-meshify",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "meshify"
+  ],
+  "ShortCode": "ms",
+  "Usage": 15,
+  "SearchString": "Meshify Shape meshify ms",
+  "SearchWords": [
+    "meshify",
+    "shape",
+    "meshify",
+    "ms"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,6 +1,7 @@
 ---
-title: simulate
+title: Simulate
 uid: simulate
+hidden: true
 ---
 
 # In this section

@@ -1,0 +1,274 @@
+﻿[
+  {
+    "Name": "Trees",
+    "Description": "Determines the output type for tree placement. 'Instances' provides individual tree positions for rendering and export. 'AreaMask' is an experimental feature that outputs a mask of tree coverage, useful for blending or exclusion but may be less reliable.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Output",
+    "Description": "Determines the output type for tree placement. 'Instances' provides individual tree positions for rendering and export. 'AreaMask' is an experimental feature that outputs a mask of tree coverage, useful for blending or exclusion but may be less reliable.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Instances",
+        "Description": "Outputs individual tree instance data for use in rendering, simulation, or export. Recommended for stable and reliable results.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "AreaMask",
+        "Description": "Outputs a mask indicating areas where trees are placed. Useful for visualization and blending, but currently experimental and may produce less predictable results.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Count in Thousands",
+    "Description": "Sets the number of trees to be placed, specified in thousands. Higher values increase density and mask quality but may impact performance and memory usage.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Is Relative",
+    "Description": "If enabled, tree count scales with terrain resolution for consistent density. Recommended for predictable results at higher resolutions, but may increase resource usage.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "LOD Info",
+    "Description": "Provides Level of Detail (LOD) information for tree instances, enabling optimized rendering and export at different distances or resolutions.",
+    "Type": "String",
+    "IsGroup": false
+  },
+  {
+    "Name": "Tree Size",
+    "Description": "Controls the height of each tree instance. Affects the appearance of exported trees but not the mask. Useful for adjusting the final look of tree outputs.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Trim Under",
+    "Description": "Removes tree instances below a certain size threshold, clamping down on smaller or weaker trees to refine the mask and output.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Shape",
+    "Description": "Specifies the distribution pattern or type of tree shapes. 'Point' is a single pixel, 'Big' is a larger square, and 'BigOnly' restricts placement to large clusters. 'Big' is preferred for mask export, while 'Point' is better for visualization.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Point",
+        "Description": "Places trees as single small pixels, resulting in sparse and detailed distribution. Best for internal visualization.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Big",
+        "Description": "Places larger tree shapes, creating denser and more legible masks. Preferred for exporting tree masks.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "BigOnly",
+        "Description": "Restricts placement to only large tree clusters, excluding smaller or individual trees for a bold mask.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Seed",
+    "Description": "Sets the randomization seed for procedural tree placement. Changing the seed produces different tree layouts and simulation results.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Growth",
+    "Description": "Controls whether trees grow near water flows ('Seek') or away from them ('Avoid'). Useful for simulating species preferences and biomes.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Seek Water",
+    "Description": "Controls whether trees grow near water flows ('Seek') or away from them ('Avoid'). Useful for simulating species preferences and biomes.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Seek",
+        "Description": "Trees preferentially grow near water sources and flow areas, simulating water-loving species.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Avoid",
+        "Description": "Trees avoid water sources and flow areas, simulating species that prefer drier conditions.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Avoid Trees",
+    "Description": "Masks out areas occupied by other tree nodes, useful for stacking multiple tree species or biomes without overlap.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "No avoidance; trees can be placed close together or overlap with other tree nodes.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Previous",
+        "Description": "New trees avoid areas occupied by the previously placed tree node, reducing overlap in stacked nodes.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "All",
+        "Description": "New trees avoid all other tree nodes in the stack, maximizing spacing and separation.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Health",
+    "Description": "Controls the duration and vigor of the tree simulation. Higher health increases density and allows trees to grow into smaller valleys and more challenging terrain. Lower health restricts growth to main flow areas.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Patches",
+    "Description": "Clumps trees together into larger groups, creating stylized patches instead of individual trees. Useful for natural-looking forests.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Spread",
+    "Description": "Blurs and expands the area where trees can grow, merging small flows into larger masses and creating more natural, contiguous forest areas.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Random",
+    "Description": "Adds random noise to tree placement, scattering trees across the terrain without regard to inhibition or aspect controls. Rarely used for realistic masks.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Aspect Inhibition",
+    "Description": "Restricts tree growth on steep terrain. Not recommended when using a custom inhibition mask, as the mask provides more accurate control.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Slope",
+    "Description": "Restricts tree growth on steep terrain. Not recommended when using a custom inhibition mask, as the mask provides more accurate control.",
+    "Type": "Float2",
+    "IsGroup": false
+  },
+  {
+    "Name": "Slope Falloff",
+    "Description": "Controls how quickly tree density decreases as slope increases. Use with slope inhibition for gradual or sharp transitions.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Altitude",
+    "Description": "Sets altitude limits for tree placement, simulating elevation-based growth restrictions. Works well with both aspect inhibition and custom masks.",
+    "Type": "Float2",
+    "IsGroup": false
+  },
+  {
+    "Name": "Altitude Falloff",
+    "Description": "Controls the rate at which tree density decreases with altitude, enabling smooth or sharp transitions in elevation-based inhibition.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Peaks",
+    "Description": "Removes tree growth from exposed mountain peaks, preventing trees from growing in the most exposed areas.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Strict",
+    "Description": "Enforces strict adherence to inhibition rules, resulting in sharper falloff and less natural tree distribution. Use for precise, non-organic masks.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Snow Inhibition",
+    "Description": "Represents areas where tree growth is suppressed due to snow mass or adverse conditions. Controls the amount of snow mass moving down the terrain.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Dead Flow",
+    "Description": "Represents areas where tree growth is suppressed due to snow mass or adverse conditions. Controls the amount of snow mass moving down the terrain.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Consolidate Flows",
+    "Description": "Groups snow flows into larger masses, affecting how far snow moves down the terrain and influencing tree inhibition.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Bias",
+    "Description": "Directs snow flows to move less or more, affecting the inhibition of tree growth in snowy areas.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Snowline",
+    "Description": "Defines the altitude at which snow flows start, restricting tree growth above this line.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Artistic Control",
+    "Description": "Warps tree positions for a more natural, randomized look, breaking up straight flows and adding organic variation.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Chaos",
+    "Description": "Warps tree positions for a more natural, randomized look, breaking up straight flows and adding organic variation.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Blur Edges",
+    "Description": "Softens and tapers the edges of tree patches, blending them into the terrain for a more natural transition.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Visualize Data",
+    "Description": "Enables visualization of tree placement, flows, and snow inhibition, assisting with mask tuning and debugging.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Custom Inhibitors",
+    "Description": "Applies custom influence maps or masks to control tree placement according to user specifications, enabling highly tailored results.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Custom Influence",
+    "Description": "Applies custom influence maps or masks to control tree placement according to user specifications, enabling highly tailored results.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Trim",
+    "Description": "Removes trees from specified areas, allowing for manual or procedural clearing of tree patches for refined mask output.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "DirectionalWarp",
+  "Description": "DWarp or Directional Warp uses a secondary input to warp the first input in a uniform direction.",
+  "Family": "Warp",
+  "FamilyIcon": "x-directionalwarp",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "directional warp"
+  ],
+  "ShortCode": "dw",
+  "Usage": 28,
+  "SearchString": "DirectionalWarp Warp directional warp dw",
+  "SearchWords": [
+    "directionalwarp",
+    "warp",
+    "directional",
+    "warp",
+    "dw"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Outcrops",
+  "Description": "The Outcrops LookDev node creates rocky outcrops on any surface. You can control coverage, breakage, and surface details. Several Outcrops nodes can be layered for complex results.",
+  "Family": "Rocky",
+  "FamilyIcon": "family-rocky",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "oc",
+  "Usage": 207,
+  "SearchString": "Outcrops Rocky  oc",
+  "SearchWords": [
+    "outcrops",
+    "rocky",
+    "",
+    "oc"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

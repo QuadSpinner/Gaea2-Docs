@@ -1,6 +1,7 @@
 ---
-title: graph
+title: Graph
 uid: graph
+hidden: true
 ---
 
 # In this section

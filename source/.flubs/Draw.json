@@ -1,0 +1,26 @@
+﻿[
+  {
+    "Name": "Soften",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Height",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Open Painter",
+    "Description": "",
+    "Type": "Command",
+    "IsGroup": false
+  },
+  {
+    "Name": "Stroke Data",
+    "Description": "",
+    "Type": "String",
+    "IsGroup": false
+  }
+]

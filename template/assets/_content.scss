@@ -1,3 +1,26 @@
+#content-header {
+    margin-top: 16px !important;
+
+    kbd {
+        display: inline-block;
+        margin-left: 6px;
+    }
+
+    .description {
+        color: #777;
+    }
+
+    .node-data {
+
+
+        hr,
+        .hr {
+            margin: 1rem 0 !important;
+        }
+    }
+}
+
+
 #contents {
 
     color: var(--tblr-body-color);
@@ -27,7 +50,7 @@
     h4 {
         font-weight: 300;
         margin-top: 24px;
-        color: #fff;
+        color: var(--prime); // #fff;
     }
 
     h1 {
@@ -39,15 +62,26 @@
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 14px;
+        font-weight: 600;
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
     }
 
     table {
         width: 100%;
+
+        td {
+
+            border: 1px solid #333;
+            padding: 4px;
+
+
+        }
     }
 
     img {
@@ -60,18 +94,81 @@
         height: auto;
         aspect-ratio: 16 / 9;
     }
-    
+
     #show-sublinks {
 
         padding: 32px 12px;
     }
+
+
+    .aside {
+
+        float: right;
+        margin: 16px;
+        background-color: #0a0a0a;
+        border-radius: 8px;
+        padding: 48px;
+        width: 40%;
+        border: 1.5px solid #1a1a1a;
+        color: #d4d4d4;
+        font-feature-settings: normal;
+        font-size: 26px;
+        font-variation-settings: normal;
+        font-weight: 700;
+        letter-spacing: -0.9px;
+        line-height: 26px;
+
+        @media only screen and (max-width: 980px) {
+            width: 100%;
+            float: none;
+            display: block;
+        }
+
+
+    }
+
+
+    #show-sublinks {
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: flex;
+                width: 30%;
+                list-style: none;
+                padding: 16px 8px;
+                border: 1px solid #222;
+                background: #111;
+                margin: 2px;
+                border-radius: 4px;
+
+                a {
+                    margin-left: 8px;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover {
+                    background-color: #1f1f1f;
+                }
+            }
+        }
+
+    }
 }
 
 code:not(pre > code) {
-    background-color: #111;
-    border-radius: 3px;
-    border: 1px solid #333;
-    border-top-color: #aaa;
+    // background-color: #111;
+    // border-radius: 3px;
+    // border: 1px solid #333;
+    // border-top-color: #aaa;
+
+    border: 0;
+    background-color: #1f1f1f;
+    color: #e4cfa9;
+
 }
 
 .card {
@@ -172,7 +269,7 @@ figure {
 
 .reference-tables {
     table {
-        width: 50% !important;
+        width: 100%;
 
         thead {
             background: #111;
@@ -182,6 +279,10 @@ figure {
         td {
             border: 1px solid #fff1;
             padding: 8px;
+
+            em {
+                color: #777;
+            }
         }
 
         td:nth-child(1) {
@@ -202,11 +303,11 @@ figure {
 .properties-table {
     width: 100% !important;
     border-radius: 4px;
-    font-size: 13px;
+    font-size: 14px;
 
     .head {
 
-        background: #101517;
+        background: #27272a;
         text-align: left !important;
     }
 
@@ -225,7 +326,15 @@ figure {
         vertical-align: top;
         border: 1px solid #fff1;
         padding: 8px;
-        font-size: 12px;
+        font-size: 14px;
+
+        i:not(.choice i) {
+            display: block;
+            float: left;
+            font-size: 14px;
+            color: var(--family);
+            cursor: help;
+        }
 
         span {
             display: block;
@@ -234,6 +343,13 @@ figure {
         .choice {
             padding-bottom: 6px;
             font-weight: bold;
+            margin-top: 4px;
+            display: inline-block;
+
+            i {
+                position: relative;
+                top: 1px;
+            }
         }
 
         .choice-flat {
@@ -244,18 +360,18 @@ figure {
 
         .choice-description {
             padding-bottom: 0.3em;
-            padding-left: 0.8em;
+            padding-left: 2.5em;
         }
     }
 
     td:nth-child(1) {
-        width: 30%;
+        width: 25%;
         font-weight: 600;
         text-align: right !important;
     }
 
     td:nth-child(2) {
-        width: 70%;
+        width: 75%;
     }
 
 

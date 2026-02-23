@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Sandstone",
+  "Description": null,
+  "Family": "Terrace",
+  "FamilyIcon": "family-terrace",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ss",
+  "Usage": 416,
+  "SearchString": "Sandstone Terrace  ss",
+  "SearchWords": [
+    "sandstone",
+    "terrace",
+    "",
+    "ss"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

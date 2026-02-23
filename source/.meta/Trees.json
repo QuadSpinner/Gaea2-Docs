@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Trees",
+  "Description": "The Arboreal Node gives you the power of creating superficial forests and vegetation. These forests are part of the heightfield while being \"detached\" enough for various export scenarios.",
+  "Family": "Vegetation",
+  "FamilyIcon": "x-trees",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    "arboreal"
+  ],
+  "ShortCode": "tr",
+  "Usage": 136,
+  "SearchString": "Trees Vegetation arboreal tr",
+  "SearchWords": [
+    "trees",
+    "vegetation",
+    "arboreal",
+    "tr"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": true,
+  "AccumulationType": "Trees",
+  "HasCustomColorization": true,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Switch",
+  "Description": "Switch chooses between two different heightfield inputs and relies on a boolean (true/false) input.",
+  "Family": "Routing",
+  "FamilyIcon": "x-switch",
+  "Toolbox": "Utility",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "swt",
+  "Usage": 15,
+  "SearchString": "Switch Routing  swt",
+  "SearchWords": [
+    "switch",
+    "routing",
+    "",
+    "swt"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

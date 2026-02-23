@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Name": "Size",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "X",
+    "Description": "Horizontal placement of swirl.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Y",
+    "Description": "Vertical placement of swirl.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

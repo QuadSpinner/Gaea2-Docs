@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark" data-bs-theme-base="zinc" data-bs-theme-primary="azure">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -48,9 +49,10 @@
     <link rel="stylesheet" href="/assets/glow.css?v=%%V%%" />
     <link rel="stylesheet" href="/assets/print.css?v=%%V%%" />
     <script preload src="https://kit.fontawesome.com/9d9320df3f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 </head>
 
-<body data-hive="%%HIVE%%" data-hive-shortname="%%SHORTNAME%%" data-hive-link="%%HIVEPATH%%" data-slug="%%SLUG%%">
+<body data-hive="%%HIVE%%" data-hive-shortname="%%SHORTNAME%%" data-node-family="%%NODEFAMILY%%" data-node-category="%%NODECATEGORY%%" data-hive-link="%%HIVEPATH%%" data-slug="%%SLUG%%">
 
     <header class="top-bar d-flex d-lg-none d-print-none">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#mobileNav" role="button" aria-controls="mobileNav">
@@ -102,18 +104,21 @@
                     <nav id="site-nav"></nav>
                 </div>
                 <div class="col">
-                    <div class="d-none d-print-block">
+                    <div class="d-none px-4 d-print-block">
                         <h1>Gaea Documentation</h1>
                         <h3>%%HIVE%%</h3>
-                        <h2>%%TITLE%%</h2>
-                        <hr>
                     </div>
 
-                    <div class="px-4 d-print-none">
-                        <div id="breadcrumbs"></div>
-                    </div>
                     <div class="row align-top">
                         <div id="content-holder" class="col px-5">
+                            <div id="content-header">
+                                <div id="breadcrumbs"></div>
+                                <br>
+                                <h1>%%TITLE%%</h1>
+                                <div id="node-data">
+                                    %%NODEDATA%%
+                                </div>
+                            </div>
                             <main id="contents">%%CONTENT%%</main>
                             <div id="next-nav" class="d-flex justify-content-between">
                                 <a href="" id="btn-prev" class="btn btn-small"></a>
@@ -124,16 +129,16 @@
                             <div class="d-lg-flex d-none d-print-none align-items-center">
                                 <div class="dropdown d-flex doc-dropdown">
                                     <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
-                                        <img src="/assets/svg/commands.svg" alt="">
+                                        <i class="fa-duotone fa-light fa-paper-plane"></i>
                                     </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" id="cmd-copy-md" href="#"> <img src="/assets/svg/copy-md.svg" alt=""> Copy as Markdown </a>
-                                        <a class="dropdown-item" id="cmd-view-md" href="#"> <img src="/assets/svg/view-md.svg" alt=""> View as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-md" href="#" target="_blank"> <i class="ti ti-markdown"></i> View as Markdown </a>
+                                        <a class="dropdown-item" id="cmd-view-llms" href="#" target="_blank"> <i class="ti ti-markdown"></i> View LLMS.txt </a>
                                         <hr class="dropdown-divider">
-                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask ChatGPT about this</a>
-                                        <a class="dropdown-item" id="cmd-ask-claude" href="#"> <img src="/assets/svg/ask-gpt.svg" alt=""> Ask Claude about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-gpt" href="#" target="_blank"> <i class="ti ti-brand-openai"></i> Ask ChatGPT about this</a>
+                                        <a class="dropdown-item" id="cmd-ask-claude" href="#" target="_blank"> <i class="ti ti-asterisk"></i> Ask Claude about this</a>
                                         <hr class="dropdown-divider">
-                                        <a class="dropdown-item" id="cmd-save-pdf" href="#"> <img src="/assets/svg/save-pdf.svg" alt=""> Save as PDF </a>
+                                        <a class="dropdown-item" id="cmd-save-pdf" href="#" target="_blank"> <i class="ti ti-file-type-pdf"></i> Save as PDF </a>
                                     </div>
                                 </div>
                             </div>
@@ -141,11 +146,20 @@
                             <div class="d-block sticky-xxl-top">
                                 <br>
                                 <br>
-                                <img src="/assets/svg/page-toc.svg" alt="">
+                                <i class="fa-duotone fa-light fa-layer-group"></i>
                                 <strong>On this page</strong>
                                 <br>
                                 <div id="page-nav">
                                 </div>
+                                <br>
+                                <br>
+                                <small class="lastWrite">Updated on %%LASTUPDATED%%</small>
+                                <br>
+                                <br>
+                                <small><a id="report-issue" href="https://github.com/QuadSpinner/Gaea2-Docs/issues/new" target="_blank" rel="noopener">Report an issue</a></small>
+                                <br>
+                                <small><a id="edit-page" href="#" target="_blank" rel="noopener">Edit this page</a></small>
+
                             </div>
                         </div>
                     </div>
@@ -154,6 +168,16 @@
 
         </div>
     </div>
+
+    <div class="d-print-block d-none px-5">
+        <hr>
+        Created by QuadSpinner <img src="/assets/svg/qs-logo.svg" alt="QuadSpinner" width="24" height="24" /> using AngryMonkey <img src="/assets/img/AngryMonkey.png" alt="" width="24" height="24" />
+        <br>
+        Copyright © 2016-2026 QuadSpinner. All rights reserved.
+        <br>
+        Documentation is provided under the MIT License.
+    </div>
+
     <footer class="footer footer-transparent d-print-none">
         <div class="container-xl">
             <br>
@@ -195,9 +219,9 @@
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/lunr.min.js"></script>
     <script src="/assets/js/site.js"></script>
-    <script src="/assets/js/main.js?v=%%V%%"></script>
     <script src="/assets/js/TOC_%%SHORTNAME%%.js?v=%%V%%"></script>
     <script src="/assets/js/TOC.js?v=%%V%%"></script>
+    <script src="/assets/js/main.js?v=%%V%%"></script>
     <script src="/assets/js/search.min.js?v=%%V%%"></script>
 </body>
 

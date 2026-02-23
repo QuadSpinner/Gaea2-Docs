@@ -1,1 +1,0 @@
-wget --spider -r -nd -nv -l inf -o linkcheck.log http://localhost:38445

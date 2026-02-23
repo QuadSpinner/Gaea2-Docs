@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "TextureBase",
+  "Description": "Texture uses multiple factors (such as chaos, slopes, flow zones, and other geological features) to create a texture mask for any color node to create a texture map. Can be used by itself, or combined with other data maps and selectors.",
+  "Family": "Texture",
+  "FamilyIcon": "family-texture",
+  "Toolbox": "Derive",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "tb",
+  "Usage": 189,
+  "SearchString": "TextureBase Texture  tb",
+  "SearchWords": [
+    "texturebase",
+    "texture",
+    "",
+    "tb"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

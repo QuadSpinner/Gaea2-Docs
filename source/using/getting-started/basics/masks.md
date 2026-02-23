@@ -17,21 +17,21 @@ A mask in Gaea is essentially a grayscale image where white areas represent sect
 
 ### **Creating a Mask**
 
-![](/.data/assets/image%20(60).png)
+![](/.data/assets/image-(60).webp)
 
 * Masks can be generated using any node that outputs a grayscale image. Common sources for masks include specific terrain features such as slopes, altitudes, or noise patterns.
 * Use nodes like `Height`, `Slope`, or custom `Noise` patterns to generate masks based on terrain characteristics.
 
 ### **Direct Masking**
 
-![](/.data/assets/image%20(61).png)
+![](/.data/assets/image-(61).webp)
 
 * To apply a mask, connect the mask output from one node into the mask input of another node. This setup allows the second node’s effects to be limited to the areas defined by the mask.
 * For example, if you want to apply erosion only to the upper regions of a mountain, use a height-based mask that isolates those areas.
 
 ### **Post-Masking**
 
-![](/.data/assets/image%20(62).png)
+![](/.data/assets/image-(62).png)
 
 * Gaea 2 introduces the new `Mask` node which allows you to mask the node/effect **after** it has been created. You can connect the Mask node after an effect has been applied. For example, in a `Mountain > Erosion > Mask` scenario, the Mask will automatically use the applied mask between Mountain and Erosion.
 * If you have multiple nodes that create the "effect" you wish to mask, just connect the second port of the Mask node to the desired "before" node. For example, in `Mountain > Erosion > Sandstone > Thermal2 > Mask`, you would connect the second input to Mountain.

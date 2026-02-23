@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "LightX",
+  "Description": null,
+  "Family": "Render",
+  "FamilyIcon": "x-lightx",
+  "Toolbox": "Output",
+  "Classification": "Colorizer",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "lx",
+  "Usage": 31,
+  "SearchString": "LightX Render  lx",
+  "SearchWords": [
+    "lightx",
+    "render",
+    "",
+    "lx"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

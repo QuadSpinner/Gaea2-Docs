@@ -1,0 +1,58 @@
+﻿[
+  {
+    "Name": "Mode",
+    "Description": "Specifies the method used to transpose or rearrange the input data. Each mode determines how the transformation is applied.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Transpose",
+        "Description": "Swaps the X and Y axes of the input, effectively rotating the terrain or image by 90 degrees.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Embed",
+        "Description": "Inserts the transposed data into a larger canvas or area, preserving the original orientation within a new context.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Insert",
+        "Description": "Places the transposed data into a specific position within the output, allowing for targeted rearrangement.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Amount",
+    "Description": "Controls the degree or strength of the transposition effect, allowing for partial or full transformation.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Extend",
+    "Description": "Determines whether the output is extended to accommodate the transposed data, preventing cropping or loss of information.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Flatten",
+    "Description": "Flattens the result after transposition, removing any elevation or depth variations if enabled.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Threshold",
+    "Description": "Sets a cutoff value for the transposition effect, limiting the transformation to areas above or below the specified threshold.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Boundary",
+    "Description": "Defines how the edges or boundaries are handled during transposition, such as wrapping, clamping, or mirroring.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

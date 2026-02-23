@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Mesher",
+  "Description": "Mesher can save specific nodes as meshes instead of heightfields, and can also generate LODs.",
+  "Family": "Assets",
+  "FamilyIcon": "x-mesher",
+  "Toolbox": "Output",
+  "Classification": "Export",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "me",
+  "Usage": 53,
+  "SearchString": "Mesher Assets  me",
+  "SearchWords": [
+    "mesher",
+    "assets",
+    "",
+    "me"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

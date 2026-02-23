@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Var",
+  "Description": null,
+  "Family": "Utilities",
+  "FamilyIcon": "family-utilities",
+  "Toolbox": "Utility",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "var",
+  "Usage": 3,
+  "SearchString": "Var Utilities  var",
+  "SearchWords": [
+    "var",
+    "utilities",
+    "",
+    "var"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

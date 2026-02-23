@@ -1,0 +1,46 @@
+﻿[
+  {
+    "Name": "Target Size",
+    "Description": "Specifies the export resolution for Unity terrain heightmaps and textures. Select from standard Unity-compatible sizes to ensure proper import and terrain fidelity.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "x8193",
+        "Description": "Exports at 8193 x 8193 pixels, suitable for very large Unity terrains requiring maximum detail.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "x4097",
+        "Description": "Exports at 4097 x 4097 pixels, commonly used for large terrain tiles in Unity.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "x2049",
+        "Description": "Exports at 2049 x 2049 pixels, ideal for medium-sized Unity terrain tiles.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "x1025",
+        "Description": "Exports at 1025 x 1025 pixels, suitable for smaller terrain tiles or test scenes in Unity.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "x513",
+        "Description": "Exports at 513 x 513 pixels, used for small terrain tiles or prototyping in Unity.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Add Input",
+    "Description": "Adds an additional input map layer for export, allowing for more complex terrain data to be sent to Unity.",
+    "Type": "Command",
+    "IsGroup": false
+  }
+]

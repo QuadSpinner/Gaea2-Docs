@@ -1,0 +1,266 @@
+// from 3dsmax / 3dsmax.md
+---
+title: 3dsmax
+uid: 3dsmax
+---
+
+# Import a Gaea terrain into 3ds Max
+
+Assumptions:
+
+* Terrain footprint = **5000 m × 5000 m**
+* Heightmap is **0..1** where **black = 0 m** and **white = 2500 m**
+* You want real-world scale in meters
+
+:::tip
+These are Gaea defaults. Please adjust the steps if your terrain size is different.
+:::
+
+---
+
+# A. Import as a displacement map (heightfield)
+
+## 1. Set Max units to meters
+
+1. **Customize → Units Setup…**
+   * Display Unit Scale: **Meters**
+2. Click **System Unit Setup…**
+   * System Unit Scale: **1 Unit = 1.0 Meters**
+
+(Do this before importing/creating geometry.)
+
+## 2. Create a 5000 m plane
+
+1. **Create → Geometry → Standard Primitives → Plane**
+2. In the Plane parameters:
+   * **Length = 5000**
+   * **Width = 5000**
+   * Segments: set reasonably high (or use TurboSmooth later)
+
+## 3. Apply displacement
+
+1. Select the plane.
+2. Add **Modifier: Displace**
+3. In Displace:
+   * **Map**: assign a **Bitmap** and load the heightmap
+   * Ensure the bitmap is treated as linear/non-color if you’re in a color-managed pipeline (i.e., don’t apply sRGB/gamma to the height data)
+
+## 4. Set height to 2500 m
+
+In **Displace**:
+
+* **Strength = 2500**
+* **Decay = 0**
+
+If the displacement is inverted, flip it by either:
+
+* Checking **Flip** in the Displace modifier (if available), or
+* Inverting the bitmap via **Output** (RGB Level/Invert) or a simple inversion map.
+
+## 5. Add geometry detail
+
+* Increase plane segments until you get acceptable fidelity, or:
+* Add **TurboSmooth** *before* Displace (common for clean results), or
+* Use a subdivision workflow suitable to your renderer.
+
+Result: white areas displace up to ~2500 m above black.
+
+---
+
+# Import as a mesh (OBJ/FBX)
+
+## 1. Import the mesh
+
+* **File → Import → Import…** (OBJ/FBX)
+
+## 2. Scale the mesh to meters
+
+1. Select the mesh.
+2. Open the **Transform Type-In** (right-click Move/Rotate/Scale or use the toolbar).
+3. Scale it to:
+   * **X = 5000**
+   * **Y = 5000**
+   * **Z = 2500**
+
+## 3. Reset transforms (important)
+
+After scaling:
+
+* **Utilities → Reset XForm → Reset Selected**
+* Collapse the stack (right-click → **Convert to Editable Poly** or collapse modifier stack)
+
+This prevents downstream modifier/render issues caused by non-uniform scaling.
+
+---
+
+# Common gotchas
+
+* **Gamma/Color management:** heightmaps must be treated as data (linear), not as a color texture.
+* **Insufficient subdivisions:** displacement needs dense geometry; otherwise it will look faceted or “steppy.”
+* **Clipping/viewport:** very large scenes may require viewport clip adjustments; use meters consistently.
+// from blender / blender.md
+---
+title: Blender
+uid: blender
+---
+
+# Import a Gaea terrain into Blender
+
+Assumptions:
+
+* Terrain footprint = **5000 m × 5000 m**
+* Heightmap is **0..1**, where **black = 0 m** and **white = 2500 m**
+* Blender units = meters
+
+:::tip
+These are Gaea defaults. Please adjust the steps if your terrain size is different.
+:::
+
+---
+
+# Import as a displacement map (heightfield)
+
+## 1. Export from Gaea
+
+* Export a **Height** map (prefer **32-bit EXR**, otherwise **16-bit PNG**).
+
+## 2. Set Blender units to meters
+
+* **Scene Properties → Units**
+
+  * Unit System: **Metric**
+  * Length: **Meters**
+
+## 3. Create a 5000 m plane
+
+1. **Shift+A → Mesh → Plane**
+2. Press **N → Item → Dimensions**
+   * Set **X = 5000**
+   * Set **Y = 5000**
+3. `Ctrl+A → Scale`
+
+## 4. Add geometry
+
+* Add **Subdivision Surface** (or Adaptive Subdivision in Cycles) until you have enough detail.
+
+## 5. Displace using the heightmap (material-based)
+
+1. Create a material → Shader Editor:
+   * **Image Texture** → load heightmap → set **Color Space = Non-Color**
+   * Connect: **Image Texture → Displacement (Height) → Material Output (Displacement)**
+2. Material Properties → Settings:
+   * Displacement: **Displacement and Bump** (Cycles)
+
+## 6. Set height exactly to 2500 m
+
+* On the **Displacement** node:
+  * **Midlevel = 0.0**
+  * **Scale = 2500**
+
+Result: black stays at 0 m, white becomes 2500 m.
+
+---
+
+# Import as a mesh (OBJ/FBX)
+
+## 1. Import
+
+* **File → Import → OBJ/FBX**
+
+## 2. Scale to 5000 m footprint
+
+1. Select the imported terrain.
+2. Press **N → Item → Dimensions**
+3. If X/Y are ~1.0 (the typical 0..1 mesh):
+   * Set **Scale X = 5000**
+   * Set **Scale Y = 5000**
+
+## 3. Scale height to 2500 m
+
+* If the mesh Z is also ~1.0:
+  * Set **Scale Z = 2500**
+
+## 4. Apply
+
+* `Ctrl+A → Scale`
+
+That’s it: footprint becomes 5000 m, and elevation range becomes 0..2500 m.
+
+// from cinema4d / cinema4d.md
+---
+title: Cinema4D
+uid: cinema4d
+---
+// from houdini / houdini.md
+---
+title: Houdini
+uid: houdini
+---
+
+# Import Gaea terrain as a mesh (OBJ/FBX)
+
+:::note
+You may wish to try [Gaea2Houdini](/guides/use-in/bridges/gaea2houdini/index.html){data-link-icon='h'} to use Gaea directly inside Houdini.
+:::
+
+1. **Create a Geometry container**
+   * `/obj` → **Tab → Geometry** → dive inside.
+2. **Import the mesh**
+   * **OBJ**: add a **File SOP** and pick the `.obj`.
+   * **FBX**: use **File → Import → Filmbox FBX…** (creates a network), then dive to the SOP level.
+3. **Scale the normalized 0..1 mesh to meters**
+   * Append **Match Size SOP**.
+   * Turn **Scale to Fit** **ON** (this is the node’s scaling feature). ([?][1])
+   * Turn **Uniform Scale** **OFF** (so you can fit a non-cube: 5000×2500×5000). ([?][1])
+   * Set the target **Size** to:
+     * **X = 5000**
+     * **Y = 2500**
+     * **Z = 5000**
+4. **Fix orientation if needed**
+   * Houdini terrains typically live on the ground plane; HeightField tools default to **ZX** as the “ground” alignment. ([?][2])
+   * If your imported mesh is “standing up” or using a different up-axis, add a **Transform SOP** and rotate until it sits flat.
+
+---
+
+# Import as a Heightfield
+
+1. **Create a Geometry container**
+   * `/obj` → **Tab → Geometry** → dive inside.
+2. **Load the heightmap as a Heightfield**
+   * Add **Heightfield File SOP**.
+   * Set **File** to your heightmap (prefer EXR/32-bit+).
+3. **Set terrain footprint to 5000 m**
+   * In **Size**:
+     * **Size Method = Size of Largest Axis**
+     * **Size = 5000** (meters). ([?][2])
+4. **Set max altitude to 2500 m**
+   * In **Height**:
+     * **Height Scale = 2500** (this scales the height values from the image). ([?][2])
+       With your convention (black=0, white=ceiling), this makes white map to ~2500 m.
+5. **(Optional) Confirm alignment**
+   * HeightField File’s default **Orientation** is **ZX** (ground plane). ([?][2])
+
+[1]: https://www.sidefx.com/docs/houdini/nodes/sop/matchsize.html?utm_source=chatgpt.com "Match Size geometry node"
+[2]: https://www.sidefx.com/docs/houdini/nodes/sop/heightfield_file.html "HeightField File"
+
+// from software-specific-instructions / index.md
+---
+title: Apps
+uid: software-specific-instructions
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from maya / maya.md
+---
+title: Maya
+uid: maya
+---
+// from zbrush / zbrush.md
+---
+title: ZBrush
+uid: zbrush
+---

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Voronoi",
+  "Description": "Voronoi is a staple of procedural design and creates sharp, geometric patterns. In Gaea, we've made a \"geo-variant\" by modifying the base Voronoi shape to fit the needs of terrain design from the beginning.",
+  "Family": "Basic",
+  "FamilyIcon": "family-basic",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "v",
+  "Usage": 77,
+  "SearchString": "Voronoi Basic  v",
+  "SearchWords": [
+    "voronoi",
+    "basic",
+    "",
+    "v"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

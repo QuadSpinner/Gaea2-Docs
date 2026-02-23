@@ -1,6 +1,7 @@
 ---
-title: output
+title: Output
 uid: output
+hidden: true
 ---
 
 # In this section

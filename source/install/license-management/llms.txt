@@ -1,0 +1,273 @@
+// from activation / activation.md
+---
+title: Activation
+uid: activation
+order: 01
+icon: key
+---
+
+# Activation
+
+## Types of Licenses
+
+### **License Key**
+
+A license key is an alphanumeric string in the format: `XXXX-XXXX-XXXX-XXXX` This is the preferred type of license and most users are given license keys.
+
+### **License File**
+
+A license file is usually provided as a `Gaea-XYZ123.lic` where `XYZ123` is your Transaction ID and should be kept private for your own security. 
+
+## Loading a License
+
+![](/.data/assets/Gaea_-_Build_and_Export_06-53-07-PM.png)
+
+To load your license, enter the **License Key** in the Activation Dialog and click Activate. Gaea will communicate with the license server and authorize your installation.
+
+If alternatively you have a **License File**, drag and drop the license file on the dialog and Gaea will activate using the license file.
+
+### Where can I access the Activation Dialog?
+
+When running Gaea for the first time, you will be presented with a "Welcome" dialog. You can click the "Have a license key?" button to bring up the activation dialog.
+
+![](/.data/assets/Welcome_to_Gaea_2.0_09-56-28-PM.png)
+
+You can also access this same dialog in other ways:
+
+* From the Startup Dialog when running the Community Edition.
+* In Help menu > Manage License.
+* In Help menu > About Dialog.
+
+![](/.data/assets/About_06-48-38-PM.png)
+
+### Activate by File
+
+Use this method when you want to distribute the key but allow the end user machine to activate without admin intervention.
+
+1. Create a text file named `activate.lic` (Notepad is fine).
+2. Put **only** the license key in the file (no extra spaces, no additional lines).
+3. Copy `activate.lic` to the **Gaea Data Folder** (see [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''}).
+
+   * For mass deployment, place it in each user’s `AppData > Gaea Data` folder, or in the install folder as appropriate for your deployment setup.
+
+On launch, Gaea will check if a license is already validated. If not, it will attempt to read and activate using `activate.lic`.
+// from deactivation / deactivation.md
+---
+title: Deactivation
+uid: deactivation
+order: 02
+icon: lock-keyhole
+---
+
+# Deactivation
+
+## Releasing a License
+
+You can release a license so it can be installed on a different computer. To do so, go to Help > About. Then click "Release License" at the bottom of the dialog. This will de-authorize the installation and revert it back to the Community Edition.
+
+![](/.data/assets/About_06-48-38-PM.png)
+
+This is not a permanent deactivation. You can re-activate the same installation again if needed.
+
+:::danger
+You are allowed a limited number of activations per year and our server will disable licenses that show excessive activation activity to protect your license. If such an event occurs, you can contact technical support to request re-activation of your license.
+:::
+
+### Command Line Option
+
+To deactivate from the command line, use the following syntax:
+
+```
+Gaea.exe -deactivate
+```
+
+
+// from errors-and-troubleshooting / errors-and-troubleshooting.md
+---
+title: Errors and Troubleshooting
+uid: errors-and-troubleshooting
+order: 05
+icon: circle-question
+---
+
+# Errors and Troubleshooting
+
+## Ensure only only one license exists.
+
+Ensure only one `.lic` file of any kind is present in the [DATA Folder](/using/advanced-topics/technical-information/paths-and-storage.html). Multiple license files can confuse Gaea depending on the order in which they're loaded.
+
+## Firewall Access
+
+Make sure `*.quadspinner.com`, `*.gaea.app` (all subdomains) are allowed TCP access via Firewall or other security apparatus. This should include both port `80` (normal) and port `443` (secure).
+
+## Deactivate / Revoke Activation, then reactivate
+
+If your license is stuck for some reason, you can go to your [User Account](https://quadspinner.com/account) and revoke the activation for a specific. You can then reload the license on the same machine to forcefully refresh the license.
+
+## Hardware changes
+
+If you have an offline node-locked license, large scale hardware changes such as motherboard, processor, etc. can cause a license to become invalid. If your license was issued manually by QuadSpinner, contact Tech Support with a new [Hardware Thumbprint](/install/license-management/hardware-thumbprint.html){data-link-icon='fingerprint'} to get a fresh license.
+
+## Other issues
+
+Please file a support ticket using [Diagnostics](/using/troubleshooting/diagnostics-watson/index.html){data-link-icon='stethoscope'}.
+// from floating-license / floating-license.md
+---
+title: Floating License
+uid: floating-license
+order: 04
+icon: arrow-down-up-lock
+---
+
+# Floating License
+
+::note
+This page talks about Online Floating Licenses. For using Offline Floating Licenses, see [Fortress Server](/install/fortress/index.html){data-link-icon='server'}
+:::
+
+### Installing a License
+
+Activating a Floating License on a workstation is the same as loading a user key for a standard [Activation](/install/license-management/activation.html){data-link-icon='key'}. The only difference is your key will have a `FL-` prefix. Just enter the key in the Activation dialog, or via `Help > Manage License`, or `Help > About > Load License`.
+
+:::info
+**File Based Licenses**
+You can install your floating license the same way as described in license file in [Activation](/install/license-management/activation.html){data-link-icon='key'}. The only difference is that your file will be saved as `floating.lic`
+:::
+
+
+### Acquiring a License
+
+When you start Gaea, it will contact the online license server to acquire a floating license. 
+
+If your maximum number of licenses/seats have been assigned at that moment, you will be notified. In that case, you have to wait until a license slot has been released.
+
+### Usage and Loss of Network or License
+
+Gaea will use \~5 minute heartbeats to keep the license alive, with an additional \~5 minute grace period to allow for network interruptions or other possibilities.
+
+In case of network loss, or any other disruption, Gaea will release the license slot both on the client and server. However, the running instance of Gaea will simply revert to the Community Edition instead of shutting down. This is an added perk of our software that prevents excessive disruption in your work and allows you time to save your files or even try to recover the license without closing the session.
+
+:::info
+In case you lose the network connection or the software crashes, then recover it, you may get a "Maximum Clients Assigned" message when trying to acquire a license. This is because your old license slot may not have been released. Just wait until the end of the current heartbeat (5 minutes or fewer) and then try again.
+:::
+
+### Refreshing or Re-acquiring the License
+
+The `Refresh` button in the Help > About dialog can be used to force a re-verification and re-acquisition of your license token. 
+
+The accompanying `Release` button can be used to release the currently acquired license token and revert the running instance of Gaea to the Community Edition. A new license will be re-acquiring on the next run.
+
+## Routing through a Proxy
+
+If your workstation doesn't allow a direct internet connection, you can specify a proxy address through the Options dialog.
+
+See the email you received during purchase to know which address and ports to allow through your firewall for the Floating Licenses to work with our online server, or contact Technical Support.
+
+## Gaea Build Swarm
+
+Gaea UI and Gaea Build Swarm are both applications that use the Gaea Engine to build terrains. Each requires a separate license to run. 
+
+If you only have a single license for a specific workstation, you can choose the "Close and Build" option when starting a build from the Build menu. This will close Gaea and release the license so the Swarm can use it.
+
+Moreover, this is the recommended way of building terrains in any case as the Gaea UI can often take up large portions of RAM, CPU, and GPU resources that the Build Swarm may need for an efficient run.
+
+## Gaea2Houdini
+
+When using Gaea2Houdini with a Floating License, ensure that "Shutdown Server" is not set to true in your node. Requesting a floating license too frequently can cause temporary security blocks for your IP.
+
+If you intend to use Gaea2Houdini heavily, we recommend using a node-locked license for efficiency.
+
+
+// from hardware-thumbprint / hardware-thumbprint.md
+---
+title: Hardware Thumbprint
+uid: hardware-thumbprint
+order: 03
+icon: fingerprint
+---
+
+# Hardware Thumbprint
+
+To generate an offline license, which will be node-locked, you will be asked to provide the hardware thumbprint for your computer. You can retrieve the thumbprint from Help > About menu.
+
+* Go to Help > About.
+* Click the Copy icon next to the purple Thumbprint readout in the bottom of the License text.
+* Your thumbprint will now be copied to the clipboard.
+
+![](/.data/assets/About_06-48-38-PM.png)
+
+// from license-management / index.md
+---
+title: License Management
+uid: license-management
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from license-types / license-types.md
+---
+title: License Types
+uid: license-types
+icon: key-skeleton-left-right
+order: 08
+---
+
+# License Types and Activation Methods
+
+Gaea supports multiple license formats and activation workflows, depending on whether you are activating online, offline, or using a floating license.
+
+## Online Activation Key
+
+An online license uses a serial/license key in the format:
+
+* Standard key: `xxxx-xxxx-xxxx-xxxx`
+* Online floating key: `FL-xxxx-xxxx-xxxx-xxxx`
+
+### Activate via Dialog
+
+1. Open the **Authorization** dialog in Gaea.
+2. Copy/paste the license key.
+3. Confirm to load and validate the license.
+
+### Activate by File
+
+Use this method when you want to distribute the key but allow the end user machine to activate without admin intervention.
+
+1. Create a text file named `activate.lic` (Notepad is fine).
+2. Put **only** the license key in the file (no extra spaces, no additional lines).
+3. Copy `activate.lic` to the **Gaea Data Folder** (see [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''}).
+
+   * For mass deployment, place it in each user’s `AppData > Gaea Data` folder, or in the install folder as appropriate for your deployment setup.
+
+On launch, Gaea will check if a license is already validated. If not, it will attempt to read and activate using `activate.lic`.
+
+## Offline Activation File
+
+Offline licenses are provided as a `.lic` file containing XML (for example: `ABCD1234.lic`).
+
+### Activate via Dialog
+
+1. Open the activation/authorization dialog.
+2. Either:
+
+   * Drag-and-drop the `.lic` file onto the dialog, **or**
+   * Click **Have a license file?** and browse to the file.
+
+### Activate by File
+
+1. Rename the provided file to `gaea2.lic`.
+2. Copy `gaea2.lic` into the **Gaea Data Folder** (see [Paths and Storage](/using/advanced-topics/technical-information/paths-and-storage.html){data-link-icon=''}).
+
+## Offline Floating Server File
+
+Offline floating licenses are managed through a locally deployed [Fortress Server](/install/fortress/index.html){data-link-icon='server'}. The floating license file is typically provided by your admin or generated via the [Fortress Console](/install/fortress/assigning.html).
+
+1. Obtain the floating license file from your admin (or Fortress Console export).
+2. Copy it to the **Gaea Data Folder** on the workstation.
+3. Rename it to `floating.lic`.
+
+Gaea will detect `floating.lic` and load both the license key and server connection details from it.
+

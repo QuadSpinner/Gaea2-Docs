@@ -1,0 +1,32 @@
+﻿[
+  {
+    "Name": "Shape",
+    "Description": "Negative values will bulk down the shape, while positive values will bulk up the shape.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Local Effect",
+    "Description": "Limits the shaping effect to localized regions instead of applying it globally, allowing for targeted adjustments.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Local Area",
+    "Description": "Specifies the size or extent of the local region affected when 'Local Effect' is enabled. Larger values increase the area of influence.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Maintain Fine Details",
+    "Description": "When enabled, finer detail is preserved regardless of shape changes.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Detail Size",
+    "Description": "Controls the scale of details to be preserved or affected during shaping. Smaller values focus on finer details, while larger values affect broader features.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

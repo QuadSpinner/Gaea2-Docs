@@ -11,14 +11,3 @@ order: 38
 
 ## Properties
 
-### Displacement
-
-* **Strength**:
-* **Offset**:
-* **Horizontal**:
-
-### Quality
-
-* Quality
-  * **Draft**:
-  * **High**:

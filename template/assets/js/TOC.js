@@ -60,6 +60,7 @@ function initGlobalToc({
         div.classList.add("divider");
         ul.appendChild(div);
       }
+
       ul.appendChild(renderNode(child));
     }
   }
@@ -208,6 +209,9 @@ function initGlobalToc({
         a.href = leafA.getAttribute("href") || leafA.href;
         a.textContent = (leafA.textContent || "").trim();
         if (leafA.classList.contains("active")) a.classList.add("active");
+        if (li.classList.contains("d-none")) {
+          item.classList.add("d-none");
+        }
         item.appendChild(a);
         ul.appendChild(item);
         continue;
@@ -290,6 +294,7 @@ function initGlobalToc({
 
   // ---------- node renderer ----------
   function renderNode(node) {
+
     const li = document.createElement("li");
     const kids = Array.isArray(node.children) && node.children.length > 0;
 
@@ -317,6 +322,10 @@ function initGlobalToc({
       addIcon(a, node.icon);
       a.appendChild(document.createTextNode(node.title ?? node.url ?? "Untitled"));
       li.appendChild(a);
+    }
+
+    if (node.hidden) {
+      li.classList.add("d-none");
     }
 
     return li;
@@ -374,8 +383,8 @@ function initGlobalToc({
     ol.appendChild(makeCrumb(homeTitle, homeUrl, false));
     ol.appendChild(makeCrumb(document.body.dataset.hive, document.body.dataset.hiveLink, false));
 
-    for (let i = 0; i < chain.length; i++) {
-      const isLast = i === chain.length - 1;
+    for (let i = 0; i < chain.length - 1; i++) {
+      const isLast = i === chain.length - 2;
       const c = chain[i];
 
       // if still no url, fall back to "#"

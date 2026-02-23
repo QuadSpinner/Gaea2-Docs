@@ -45,6 +45,7 @@
   /* Optional: links show URL */
   a,
   a:visited {
+    color: #000 !important;
     text-decoration: underline !important;
   }
 

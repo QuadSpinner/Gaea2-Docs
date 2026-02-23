@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "LoopEnd",
+  "Description": "Ends a Loop circuit. ",
+  "Family": "Routing",
+  "FamilyIcon": "x-loopend",
+  "Toolbox": "Utility",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "le",
+  "Usage": 13,
+  "SearchString": "LoopEnd Routing  le",
+  "SearchWords": [
+    "loopend",
+    "routing",
+    "",
+    "le"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

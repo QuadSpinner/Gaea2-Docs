@@ -7,7 +7,7 @@ order: 02
 
 # Portable Installation
 
-Please make sure you have read the [.](./)page.
+Please make sure you have read the @install-gaea page.
 
 ## Running the Setup
 

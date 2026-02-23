@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Grid",
+  "Description": null,
+  "Family": "Cartography",
+  "FamilyIcon": "x-grid",
+  "Toolbox": "Surface",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "gr",
+  "Usage": 30,
+  "SearchString": "Grid Cartography  gr",
+  "SearchWords": [
+    "grid",
+    "cartography",
+    "",
+    "gr"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

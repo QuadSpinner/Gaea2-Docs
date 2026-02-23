@@ -1,0 +1,62 @@
+﻿[
+  {
+    "Name": "Size",
+    "Description": "Controls the overall scale of the 3D cellular pattern. Higher values produce larger, more widely spaced cells.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Gap",
+    "Description": "Sets the distance or separation between individual cells, affecting the openness and density of the pattern.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Jitter X",
+    "Description": "Applies random offset to cell positions along the X axis, introducing irregularity and breaking uniformity.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Jitter Y",
+    "Description": "Applies random offset to cell positions along the Y axis, adding variation and natural randomness.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Jitter Z",
+    "Description": "Applies random offset to cell positions along the Z axis, further enhancing the organic appearance of the 3D pattern.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale X",
+    "Description": "Adjusts the scale of the cellular pattern along the X axis, stretching or compressing cells horizontally.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale Y",
+    "Description": "Adjusts the scale of the cellular pattern along the Y axis, stretching or compressing cells vertically.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale Z",
+    "Description": "Adjusts the scale of the cellular pattern along the Z axis, stretching or compressing cells in depth.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "Randomization seed for generating unique variations of the 3D cellular pattern. Changing the seed produces different cell arrangements.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Normalize Input",
+    "Description": "If enabled, normalizes the input values to a standard range before applying the cellular pattern, ensuring consistent results regardless of input scale.",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

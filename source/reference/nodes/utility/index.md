@@ -1,6 +1,7 @@
 ---
-title: utility
+title: Utility
 uid: utility
+hidden: true
 ---
 
 # In this section

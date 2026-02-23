@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "WaterColor",
+  "Description": null,
+  "Family": "Color",
+  "FamilyIcon": "family-color",
+  "Toolbox": "Colorize",
+  "Classification": "Colorizer",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "wc",
+  "Usage": 37,
+  "SearchString": "WaterColor Color  wc",
+  "SearchWords": [
+    "watercolor",
+    "color",
+    "",
+    "wc"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": true,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

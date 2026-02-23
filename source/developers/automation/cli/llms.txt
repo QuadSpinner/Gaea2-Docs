@@ -1,0 +1,164 @@
+// from command-line-automation / command-line-automation.md
+---
+title: Command Line Automation
+uid: command-line-automation
+order: 01
+---
+
+# Command Line Automation
+
+Gaea's Build Swarm (`Gaea.Swarm.exe`) can be automated via the command line interface.
+
+See [Command-line Interface](/developers/automation/cli/index.html){data-link-icon='rectangle-terminal'} for details on the full CLI available in both Gaea.exe and Gaea.Swarm.exe 
+
+## Arguments
+
+The Build Swarm can accept the following arguments:
+
+<table><thead><tr><th width="265" valign="top">Argument</th><th>Description</th></tr></thead><tbody><tr><td valign="top"><code>-filename &#x3C;filename></code></td><td>The fully qualified path to the .terrain file that should be built. It should be wrapped <code>""</code> quotes for safety.</td></tr><tr><td valign="top"><code>-interactive</code></td><td>Show interactive prompts when launched from the CLI.</td></tr><tr><td valign="top"><code>-ignorecache</code></td><td>Ignore baked cache when set to <code>true</code>.</td></tr><tr><td valign="top"><code>-verbose</code></td><td>Enable Verbose logging for diagnostics purposes.</td></tr><tr><td valign="top"><code>-safemode</code></td><td>Enforce Sade Mode for debugging or diagnostics purposes. Not recommended for production builds.</td></tr><tr><td valign="top"><code>-seed &#x3C;int></code></td><td>Mutation seed to use for the build.</td></tr><tr><td valign="top"><code>-v</code> or <code>--v</code></td><td><p>Variables. This argument marks the beginning of key-value pairs of variables.<br><br><span data-gb-custom-inline data-tag="emoji" data-code="26a0">⚠️</span> <em>This must ALWAYS be the last argument. All other switches and arguments should precede</em> <code>-v</code></p><p></p><p><span data-gb-custom-inline data-tag="emoji" data-code="26a0">⚠️</span> The <code>-v</code> argument must be repeated for each variable (key-value pair).<br><br>For example:</p><p><code>-v foo=bar -v value=0.35 -v erosion=1</code></p></td></tr><tr><td valign="top"><code>--va &#x3C;string></code></td><td><p>Comma separated variable values alphanumerically-sorted by variable names. Must include all values. This is to help reduce character count by not having to i</p><p></p><p>Variables passed this argument must be equal in count to the number of variables declared in the terrain file.</p></td></tr><tr><td valign="top"><code>-vars &#x3C;filename></code></td><td>Instead of <code>-v</code> the <code>-vars</code> argument can be used to pass a specifically formatted plain text or JSON file to provide Variable values.</td></tr></tbody></table>
+
+![](/.data/assets/command_line_example.png)
+
+The [Build Options](/ui/interface/build-options/index.html){data-link-icon=''} window has a helpful button to Show Command Line that will show the current file's Build Command Line including all variables. It is useful to copy this and then modify it as needed.
+
+
+
+### Using Files for Variables
+
+You can store variables in delimited files or JSON and pass them in the `-v` argument. This is useful for more complex automation where an external tool may save variables instead of passing them directly to a command line.
+
+#### Text file
+
+The text file is an INI style dictionary of key-value pairs.
+
+```ini
+variable=value
+filename=C:\Path\File.ext
+erosion=0.35
+switchErosionProcess=1
+```
+
+#### JSON File
+
+```json
+{
+  "variable": value,
+  "filename": "C:\Path\File.ext",
+  "erosion": 0.35,
+  "switchErosionProcess": 1
+}
+```
+
+:::danger
+Variable names cannot be repeated.
+:::
+
+To see how variables can be bound to node properties, see [Variables](/developers/extensibility/scripting-and-expressions/variables.html){data-link-icon='xmark'}
+
+
+// from command-line-interface / index.md
+---
+icon: rectangle-terminal
+title: Command-line Interface
+uid: command-line-interface
+order: 03
+---
+
+# Command-line Interface
+
+Gaea provides two command line interfaces. One for the UI and for the Build Swarm.
+
+## Gaea.exe
+
+You can use the CLI for [Activation](/install/license-management/activation.html){data-link-icon='key'} and [Deactivation](/install/license-management/deactivation.html){data-link-icon='lock-keyhole'} as well as setting the Proxy, or enforcing [CPU Only Mode](/using/troubleshooting/diagnostics-watson/cpu-only-mode.html){data-link-icon=''} or enabling Verbose logging for detailed diagnostics.
+
+```sh
+USAGE: 
+Gaea [[-Path] <String>] [-Activate <String>] [-CPUOnly] [-Deactivate] [-Help] 
+     [-NoStart] [-Proxy <String>] [-SafeMode] [-UseProxy] [-Verbose] [-Version]
+
+    -Path <String>
+        The path of the file to read.
+
+    -Activate <String>
+        Activate license. Default value: <empty>.
+
+    -CPUOnly [<Boolean>]
+        Disable GPU/XPU acceleration, defaulting to CPU-only mode.
+        Default value: False.
+
+    -Deactivate [<Boolean>]
+        Deactivate license. Default value: False.
+
+    -Help [<Boolean>] (-?, -h)
+        Displays this help message.
+
+    -NoStart [<Boolean>]
+        Disable Start Screen Default value: False.
+
+    -Proxy <String>
+        Set Proxy for all network communications. Default value: <empty>.
+
+    -SafeMode [<Boolean>]
+        Enforce Safe Mode. Default value: False.
+
+    -UseProxy [<Boolean>]
+        Use Proxy for all network communications.
+
+    -Verbose [<Boolean>]
+        Enable Verbose logging for diagnostics and technical usage purposes.
+        Default value: False.
+
+    -Version [<Boolean>]
+        Displays version information.
+
+```
+
+## Gaea.Swarm.exe
+
+For the Build Swarm, see [Command Line Automation](/developers/automation/cli/command-line-automation.html){data-link-icon=''}.
+
+```sh
+USAGE:
+Gaea.Swarm [[--Filename] <String>] [--ignorecache] [--interactive] [-p <String>] 
+           [-r <String>] [--safemode] [--seed <Int32>] 
+           [-v <String=String>...] [--va <String>...] [--vars <String>] [--verbose]
+
+OPTIONS:
+  --Filename <string>
+      REQUIRED. Relative or absolute path to the terrain file to build.
+
+  --ignorecache               
+      Force Build Swarm to ignore Baked Cache.
+  
+  --interactive               
+      Show interactive prompts when launched from the CLI.
+  
+  -p|--profile <string>       
+      Build Profile to use when executing the Build.
+  
+  -r|--region <string>        
+      Set the Region that should be built.
+  
+  --safemode                  
+      Enforce Safe Mode.
+  
+  --seed <int32>              
+      Mutation seed to use for the build.
+  
+  -v|--v <string=string>      
+      Repeat in key-value pairs to assign variables. Ex: -v foo:0.63.
+                              
+  --va <string>               
+      Comma separated variable values alphanumerically-sorted by variable names. 
+      Must include all values.
+                              
+  --vars <string>             
+      Fully qualified path to a .json or .txt file that
+      contains variable name-value pairs for automation.
+                              
+  --verbose                   
+      Enable Verbose logging for diagnostics and technical usage purposes.
+
+```
+

@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Name": "A/B",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Colorized",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Perpendicular",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Heal",
+  "Description": "Heal reconstructs damaged, low res, or 8-bit data with 16-bit, high resolution fidelity. It cleans up quantized images with extreme banding of any shape, and yields naturalistic terrain output.",
+  "Family": "Utilities",
+  "FamilyIcon": "x-heal",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "reconstruct"
+  ],
+  "ShortCode": "hl",
+  "Usage": 12,
+  "SearchString": "Heal Utilities reconstruct hl",
+  "SearchWords": [
+    "heal",
+    "utilities",
+    "reconstruct",
+    "hl"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

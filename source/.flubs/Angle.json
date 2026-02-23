@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Name": "Azimuth",
+    "Description": "The direction from which to start the selection.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Range",
+    "Description": "",
+    "Type": "Float2",
+    "IsGroup": false
+  },
+  {
+    "Name": "Falloff",
+    "Description": "The soft falloff at the maximum angle.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

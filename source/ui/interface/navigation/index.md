@@ -1,6 +1,7 @@
 ---
-title: navigation
+title: Navigation
 uid: navigation
+hidden: true
 ---
 
 # In this section

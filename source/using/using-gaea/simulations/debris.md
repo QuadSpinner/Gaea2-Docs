@@ -8,9 +8,9 @@ order: 02
 
 Simulate mechanical erosion with thousands (even millions) of individual, physical rocks and other geological debris using our physics-engine powered Debris simulation.
 
-![](/.data/assets/Gaea_-_TalusNode003.terrain_11-54-53-PM.png)
+![](/.data/assets/Gaea_-_TalusNode003.terrain_11-54-53-PM.webp)
 
-![](/.data/assets/Gaea_-_TalusNode003.terrain_11-57-19-PM.png)
+![](/.data/assets/Gaea_-_TalusNode003.terrain_11-57-19-PM.webp)
 
 You can keep them in the heightmap, or export a point-cloud for later use. You can even color each rock individually.
 
@@ -20,7 +20,9 @@ You can keep them in the heightmap, or export a point-cloud for later use. You c
 
 The Debris simulation lets you control the emission source so you can place the debris as needed. In this image, the flow map of the terrain is provided as the Emitter Source, so the debris form only within those lanes and the take advantage of the inherent physics of the flows to create scree rivers.
 
-![](/.data/assets/Gaea_-_cx1.terrain_06-47-11-AM---Copy.jpg)
+@erosion2 Wear data can often be a great source. @
+
+![](/.data/assets/Gaea_-_cx1.terrain_06-47-11-AM---Copy.webp)
 
 ## Friction and Restitution
 
@@ -39,11 +41,11 @@ For natural rock surfaces, the friction coefficient averages around **0.62**. Th
 
 You vary debris sizes and even layer multiple Debris simulations to mix and match settings and shapes. The Debris node provides Sharp and Round rock shapes.
 
-![](/.data/assets/Gaea_-_TalusNode002.terrain_09-02-33-PM%20-%20Copy%20(1).jpg)
+![](/.data/assets/Gaea_-_TalusNode002.terrain_09-02-33-PM---Copy-(1).webp)
 
 See the Debris examples that ship with Gaea to see how layering multiple simulations work.
 
-![](/.data/assets/image%20(55).png)
+![](/.data/assets/image-(55).png)
 
 :::info
 When using multiple Debris nodes, you can use @accumulators to combine all the output masks for colorization and other purposes.

@@ -1,6 +1,7 @@
 ---
-title: basic-workflow
+title: Basic Workflow
 uid: basic-workflow
+hidden: true
 ---
 
 # In this section

@@ -1,0 +1,13 @@
+﻿[
+  {
+    "Name": "Extend",
+    "Description": "",
+    "IsGroup": true
+  },
+  {
+    "Name": "Value",
+    "Description": "",
+    "Type": "Float2",
+    "IsGroup": false
+  }
+]

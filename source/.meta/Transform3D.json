@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Transform3D",
+  "Description": null,
+  "Family": "Transform",
+  "FamilyIcon": "family-transform",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "t3",
+  "Usage": 22,
+  "SearchString": "Transform3D Transform  t3",
+  "SearchWords": [
+    "transform3d",
+    "transform",
+    "",
+    "t3"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

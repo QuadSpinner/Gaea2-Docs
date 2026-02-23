@@ -1,3 +1,6 @@
+.container-xxl {
+  max-width: 1680px;
+}
 
 :root {
   --tblr-font-sans-serif: "Segoe UI";
@@ -18,6 +21,7 @@
   --toc-border-active: #000;
   --toc-chevron: rgba(0, 0, 0, 0.55);
   --page-header: rgba(0, 0, 0, 0.05);
+  --family: #ffcc00;
 }
 
 html[data-bs-theme="dark"],
@@ -38,14 +42,89 @@ body {
   background-size: 200vh;
   background-position: 0% 0%;
   background-attachment: fixed;
-} 
+}
 
 
-body[data-hive-shortname="Home"], a[data-hive-shortname="Home"]{ --prime: #ffcc00; }
-body[data-hive-shortname="Install"], a[data-hive-shortname="Install"]{ --prime: #4e99a6; }
-body[data-hive-shortname="UI"], a[data-hive-shortname="UI"]{ --prime: #a34563; }
-body[data-hive-shortname="Using"], a[data-hive-shortname="Using"]{ --prime: #4fba88; }
-body[data-hive-shortname="Reference"], a[data-hive-shortname="Reference"]{ --prime: #4c799a; }
-body[data-hive-shortname="Guides"], a[data-hive-shortname="Guides"]{ --prime: #8a61a4; }
-body[data-hive-shortname="Developers"], a[data-hive-shortname="Developers"]{ --prime: #c9708c; }
-body[data-hive-shortname="History"], a[data-hive-shortname="History"]{ --prime: #a7b076; }
+body[data-hive-shortname="Home"],
+a[data-hive-shortname="Home"] {
+  --prime: #ffcc00;
+}
+
+body[data-hive-shortname="Install"],
+a[data-hive-shortname="Install"] {
+  --prime: #4e99a6;
+}
+
+body[data-hive-shortname="UI"],
+a[data-hive-shortname="UI"] {
+  --prime: #a34563;
+}
+
+body[data-hive-shortname="Using"],
+a[data-hive-shortname="Using"] {
+  --prime: #4fba88;
+}
+
+body[data-hive-shortname="Reference"],
+a[data-hive-shortname="Reference"] {
+  --prime: #4c799a;
+}
+
+body[data-hive-shortname="Guides"],
+a[data-hive-shortname="Guides"] {
+  --prime: #8a61a4;
+}
+
+body[data-hive-shortname="Developers"],
+a[data-hive-shortname="Developers"] {
+  --prime: #c9708c;
+}
+
+body[data-hive-shortname="History"],
+a[data-hive-shortname="History"] {
+  --prime: #a7b076;
+}
+
+body[data-node-category="Primitive"] {
+  --family: #94ac5c;
+}
+
+body[data-node-category="Terrain"] {
+  --family: #55a07a;
+}
+
+body[data-node-category="Modify"] {
+  --family: #5892a5;
+}
+
+body[data-node-category="Surface"] {
+  --family: #A2DCBE;
+}
+
+body[data-node-category="Simulate"] {
+  --family: #d39467;
+}
+
+body[data-node-category="Derive"] {
+  --family: #ad5590;
+}
+
+body[data-node-category="Colorize"] {
+  --family: #60538f;
+}
+
+body[data-node-category="Output"] {
+  --family: #c86275;
+}
+
+body[data-node-category="Utility"] {
+  --family: #B390A6;
+}
+
+body[data-node-category="Plugins"] {
+  --family: #8D9396;
+}
+
+body[data-node-category="Macro"] {
+  --family: #55a07a;
+}

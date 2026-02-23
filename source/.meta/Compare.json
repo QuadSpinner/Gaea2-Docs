@@ -1,0 +1,33 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Compare",
+  "Description": null,
+  "Family": "Routing",
+  "FamilyIcon": "family-routing",
+  "Toolbox": "Utility",
+  "Classification": "Processor",
+  "Keywords": [
+    "ab compare comparison"
+  ],
+  "ShortCode": "cm",
+  "Usage": 10,
+  "SearchString": "Compare Routing ab compare comparison cm",
+  "SearchWords": [
+    "compare",
+    "routing",
+    "ab",
+    "compare",
+    "comparison",
+    "cm"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": true,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,6 +1,7 @@
 ---
-title: early-access
+title: Early Access
 uid: early-access
+hidden: true
 ---
 
 # In this section

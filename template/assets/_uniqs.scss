@@ -8,6 +8,8 @@
     padding: 8px 16px;
     margin-top: 16px;
     margin-bottom: 16px;
+    width: 100%;
+    display: block;
 
     p {
         margin: 0;
@@ -20,33 +22,51 @@
         color: #000;
     }
 
+    
+
+
+    // i {
+    //     display: block;
+    //     margin: 8px;
+    //     margin-right: 32px;
+    //     float: left;
+    //     font-size: 18px;
+    // }
 }
 
-.note {
-    @include callout(#78ccf2);
+@mixin xnote($c, $a: 0.18) {
+    --prime: $c;
+
+    border: 1.5px solid $c;
+    color: $c;
+    background-color: color-mix(in srgb, $c 20%, #000 60%);
+    border-radius: 24px;
+    padding: 4px 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 600;
+
+    p{
+        margin: 0;
+        padding: 0;
+    }
 }
 
-// blue
-.tip {
-    @include callout(#7dcb82);
-}
+.note { @include callout(#78ccf2);}
+.tip {    @include callout(#7dcb82);}
+.success {    @include callout(#669368);}
+.warning {    @include callout(#d8b368);}
+.danger {    @include callout(#e87a74);}
+.info {    @include callout(#5fbe9d);}
 
-// green
-.success {
-    @include callout(#669368);
-}
-
-// lighter green
-.warning {
-    @include callout(#d8b368);
-}
-
-// amber
-.danger {
-    @include callout(#e87a74);
-}
-
-// red
-.info {
-    @include callout(#5fbe9d);
-}
+.x-note { @include xnote(#78ccf2);}
+.x-tip {    @include xnote(#7dcb82);}
+.x-success {    @include xnote(#669368);}
+.x-warning {    @include xnote(#d8b368);}
+.x-danger {    @include xnote(#e87a74);}
+.x-info {    @include xnote(#5fbe9d);}

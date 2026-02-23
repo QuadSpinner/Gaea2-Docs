@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Angle",
+  "Description": "Angle creates a selection mask covering all areas of the heightfield facing the specified range.",
+  "Family": "Aspect",
+  "FamilyIcon": "x-angle",
+  "Toolbox": "Derive",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ang",
+  "Usage": 10,
+  "SearchString": "Angle Aspect  ang",
+  "SearchWords": [
+    "angle",
+    "aspect",
+    "",
+    "ang"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

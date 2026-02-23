@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Deflate",
+  "Description": null,
+  "Family": "Profile",
+  "FamilyIcon": "x-deflate",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "df",
+  "Usage": 44,
+  "SearchString": "Deflate Profile  df",
+  "SearchWords": [
+    "deflate",
+    "profile",
+    "",
+    "df"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

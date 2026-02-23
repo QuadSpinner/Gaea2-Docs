@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Name": "Reconstruction",
+    "Description": "Controls how aggressively missing or damaged areas are rebuilt from surrounding data (higher values preserve continuity but can soften detail).",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Passes",
+    "Description": "Number of healing iterations to run; more passes produce a cleaner, more continuous surface but may blur fine detail.",
+    "Type": "Int32",
+    "IsGroup": false
+  }
+]

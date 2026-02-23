@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "MacroPort",
+  "Description": null,
+  "Family": "Routing",
+  "FamilyIcon": "family-routing",
+  "Toolbox": "Utility",
+  "Classification": "Complex",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "",
+  "Usage": 2,
+  "SearchString": "MacroPort Routing  ",
+  "SearchWords": [
+    "macroport",
+    "routing",
+    "",
+    ""
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

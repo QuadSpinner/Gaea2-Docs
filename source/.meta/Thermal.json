@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Thermal",
+  "Description": "Thermal simulates Thermal Erosion to create talus and debris.",
+  "Family": "Erosion",
+  "FamilyIcon": "x-thermal",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "te",
+  "Usage": 9,
+  "SearchString": "Thermal Erosion  te",
+  "SearchWords": [
+    "thermal",
+    "erosion",
+    "",
+    "te"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

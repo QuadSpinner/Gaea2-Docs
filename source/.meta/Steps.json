@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Steps",
+  "Description": null,
+  "Family": "Terrace",
+  "FamilyIcon": "family-terrace",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ste",
+  "Usage": 48,
+  "SearchString": "Steps Terrace  ste",
+  "SearchWords": [
+    "steps",
+    "terrace",
+    "",
+    "ste"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

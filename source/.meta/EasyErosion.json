@@ -1,0 +1,32 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "EasyErosion",
+  "Description": null,
+  "Family": "Erosion",
+  "FamilyIcon": "x-easyerosion",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    "wizard erosion"
+  ],
+  "ShortCode": "ee",
+  "Usage": 18,
+  "SearchString": "EasyErosion Erosion wizard erosion ee",
+  "SearchWords": [
+    "easyerosion",
+    "erosion",
+    "wizard",
+    "erosion",
+    "ee"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

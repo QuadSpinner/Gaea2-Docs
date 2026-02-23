@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Name": "Coverage",
+    "Description": "The amount of rock-like formations on the terrain.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Density",
+    "Description": "The density of the rock-like formations.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

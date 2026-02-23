@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Chokepoint",
+  "Description": "Chokepoint node is a special node whose sole purpose is to help avoid re-connecting many nodes, while adding no memory overhead.",
+  "Family": "Routing",
+  "FamilyIcon": "x-chokepoint",
+  "Toolbox": "Utility",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "cp",
+  "Usage": 27,
+  "SearchString": "Chokepoint Routing  cp",
+  "SearchWords": [
+    "chokepoint",
+    "routing",
+    "",
+    "cp"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

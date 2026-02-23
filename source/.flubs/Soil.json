@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Name": "Amount",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Bias",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

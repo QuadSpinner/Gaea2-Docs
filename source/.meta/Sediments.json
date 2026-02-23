@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Sediments",
+  "Description": "Sediments creates a thick layer of generic sedimentation on top of the terrain, which can be used for sand or snow.",
+  "Family": "Erosion",
+  "FamilyIcon": "x-sediments",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "sed",
+  "Usage": 102,
+  "SearchString": "Sediments Erosion  sed",
+  "SearchWords": [
+    "sediments",
+    "erosion",
+    "",
+    "sed"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

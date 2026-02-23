@@ -1,0 +1,25 @@
+﻿[
+  {
+    "Name": "Clip",
+    "Description": "",
+    "IsGroup": true
+  },
+  {
+    "Name": "Min",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Max",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Auto Clip",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

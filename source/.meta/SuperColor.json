@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "SuperColor",
+  "Description": null,
+  "Family": "Color",
+  "FamilyIcon": "x-supercolor",
+  "Toolbox": "Colorize",
+  "Classification": "Colorizer",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "sc",
+  "Usage": 55,
+  "SearchString": "SuperColor Color  sc",
+  "SearchWords": [
+    "supercolor",
+    "color",
+    "",
+    "sc"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

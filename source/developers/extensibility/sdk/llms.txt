@@ -1,0 +1,118 @@
+// from anatomy-of-node / anatomy-of-node.md
+---
+hidden: true
+icon: x-ray
+title: Anatomy of Node
+uid: anatomy-of-node
+order: 03
+---
+
+# Anatomy of Node
+
+A Gaea node provides complex functionality packaged in a pre-built `Node` class that can be used to create your own nodes quickly and painlessly.
+
+:::info
+This is a preview of an unreleased feature, and subject to change.
+:::
+
+
+
+Let's take a look at the basic structure of a Gaea Node:
+
+```
+import QuadSpinner.TOR.Framework;
+import QuadSpinner.Gaea.Engine;
+import QuadSpinner.Gaea.Engine.Framework;
+
+namespace Daredevil.Nodes;
+
+public class CustomNode : Node
+{
+    public CustomNode()
+    {
+        Name = "Custom Node";
+        
+        // Add second port. In/Out are always defined.
+        Ports.Add(new Port("CustomInput", PortType.In | PortType.Required));
+    }
+    
+    // Declare a Property and give it a Parameter attribute
+    // to have it become visible in the UI
+    [Parameter(0.5f, 0f, 1f)]
+    public float Strength { get; set; } = 0.5f; // Give it a default value.
+    
+    [Parameter(Parameters.Seed)]
+    public int Seed { get; set; } = Global.RandomSeed();
+    
+    // The main code where the input is processed and saved.
+    public override void Build()
+    {
+        // Get a Map from the In port.
+        Map map = In.GetData();
+        
+        if(map == null) throw ExHelper.RequiredNotConnected();
+        
+        // Classic loop
+        for(int y = 0; y < map.Resolution.Height; y++)        
+        {
+            for(int x = 0; x < map.Resolution.Width; x++)
+            {
+                // add your processing code here
+                map[x,y] = 1f - map[x,y];
+            }
+        }
+        
+        // Efficient lambda
+        map.Process(x => Vector<float>.One - x);
+        
+        // Intrinsic functions with fluent syntax
+        map = map.Invert()
+                 .Autolevel()
+                 .Shaper(-0.5f)
+                 .Warp(0.5f, 0.2f, Seed)
+                 .Clamp(0.3f, 0.7f);
+                 
+        map *= (Noises.Perlin(0.5, Seed + 5) * 0.3);
+        
+        // Cache the processed data.
+        Commit(map);
+    }
+
+}
+```
+
+You can use many powerful and efficient low-level functions such as Autolevel, Clamp, Blur, etc. These methods are part of the Engine and built with extremely fast processing code.
+
+If you wish to use C++ for processing, you can P/Invoke your C++ code from the `Build()` method.
+
+// from tor-platform-sdk / index.md
+---
+icon: square-terminal
+title: TOR Platform SDK
+uid: tor-platform-sdk
+order: 01
+---
+
+# TOR Platform SDK
+
+Gaea is built on QuadSpinner's proprietary TOR Platform, a powerful terrain processing engine.
+
+The TOR Platform leverages cutting-edge technologies such as advanced vector computations, hybrid CPU/GPU processing, SIMD/SPMD processing, and a full framework dedicated to creating and managing complex terrain graphs.
+
+The TOR Platform is built on Microsoft .NET 8.0 and is programmed using C#.
+
+:::success
+## Unreleased Feature Information
+
+This part of the documentation discusses features that will be released in the future.
+
+The current [Overview](/developers/extensibility/scripting-and-expressions/index.html){data-link-icon='gear-code'} features are a basic built-in exposure of the SDK features.
+:::
+
+###  Extensibility
+
+The TOR Platform SDK lets developers write their own custom nodes and plugins for Gaea using C# and C++.
+
+The TOR framework has a robust infrastructure that focuses on ease-of-use and reusability, so you can write complex nodes with minimal code.
+
+

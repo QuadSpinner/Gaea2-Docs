@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Name": "Gamma",
+    "Description": "The Gamma range is 0.0 to 2.5, with 1.0 being neutral or the original incoming gamma.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Automatic",
+    "Description": "Tries to automatically set the correct gamma based on existing value.",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

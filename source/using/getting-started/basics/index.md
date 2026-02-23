@@ -1,6 +1,7 @@
 ---
-title: basics
+title: Basics
 uid: basics
+hidden: true
 ---
 
 # In this section

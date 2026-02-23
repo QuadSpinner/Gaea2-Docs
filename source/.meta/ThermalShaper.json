@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "ThermalShaper",
+  "Description": "ThermalShaper is a fast, basic simulation of the concavity and convexity that can be achieved from thermal erosion. The effect can be exaggerated for artistic effect.",
+  "Family": "Profile",
+  "FamilyIcon": "x-thermalshaper",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ts",
+  "Usage": 51,
+  "SearchString": "ThermalShaper Profile  ts",
+  "SearchWords": [
+    "thermalshaper",
+    "profile",
+    "",
+    "ts"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

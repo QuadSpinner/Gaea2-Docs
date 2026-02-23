@@ -1,0 +1,123 @@
+﻿[
+  {
+    "Name": "Style",
+    "Description": "Select from A, B, C, D, E, F, G, H, I, J, K, or L. Each option represents a distinct pre-defined texture style, allowing you to experiment and choose the look that best fits your terrain.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "A",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "B",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "C",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "D",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "E",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "F",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "G",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "H",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "I",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "J",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "K",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "L",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Factor",
+    "Description": "Primary driver controlling the overall strength or intensity of the selected style. Higher values increase the prominence of the texture effect.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Secondary",
+    "Description": "Adjusts the strength of secondary effects such as soil accumulation, flow streaks, and breakup patterns. Use to fine-tune the complexity and realism of the texture.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "Randomizes the pattern while keeping other settings the same, allowing for variation without the need to re-tune parameters.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Components",
+    "Description": "Simulates natural erosion channels and directional streaks, adding realism by mimicking the effects of water or wind movement across the terrain.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Flows",
+    "Description": "Simulates natural erosion channels and directional streaks, adding realism by mimicking the effects of water or wind movement across the terrain.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Slope",
+    "Description": "Adds slope-based weighting to the texture, favoring either steeper or flatter areas to enhance natural variation.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Soil",
+    "Description": "Controls soil-like accumulation in flatter regions, adding natural buildup and enhancing the realism of the terrain surface.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

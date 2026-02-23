@@ -1,0 +1,26 @@
+﻿[
+  {
+    "Name": "Blend Layers",
+    "Description": "",
+    "Type": "String",
+    "IsGroup": false
+  },
+  {
+    "Name": "Add Input",
+    "Description": "",
+    "Type": "Command",
+    "IsGroup": false
+  },
+  {
+    "Name": "Show Simplified",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Preserve Masks",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

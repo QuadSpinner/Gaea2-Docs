@@ -15,15 +15,4 @@ Clamp allows you to control the height of the terrain. You can use it to squash 
 
 # Properties
 
-- Mode
-  - **Standard**  
-  <desc>
-  - **Normalized**  
-  <desc>
-- **Value**  
-  
-- **Drop**  
-  
-
-
 

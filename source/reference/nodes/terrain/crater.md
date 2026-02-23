@@ -29,19 +29,3 @@ Craters can be either *volcanic*, which start at the base and go up in a conical
 
 # Properties
 
-- **Scale**  
-  The scale of the volcano.
-- **Formation**  
-  
-- **Height**  
-  
-- Rim
-  - **Soft**  
-  <desc>
-  - **Sharp**  
-  <desc>
-- **Shape**  
-  
-
-
-

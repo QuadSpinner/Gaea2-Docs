@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Hillify",
+  "Description": null,
+  "Family": "Erosion",
+  "FamilyIcon": "family-erosion",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "hi",
+  "Usage": 11,
+  "SearchString": "Hillify Erosion  hi",
+  "SearchWords": [
+    "hillify",
+    "erosion",
+    "",
+    "hi"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

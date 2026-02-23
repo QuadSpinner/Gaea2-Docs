@@ -1,13 +1,32 @@
 window.addEventListener("DOMContentLoaded", () => {
-    const hive = document.body?.dataset?.hive;
-    if (!hive) return;
+  const hive = document.body?.dataset?.hive;
+  if (!hive) return;
 
-    document.querySelectorAll('.nav-item[data-hive]').forEach(a => a.classList.toggle("active", a.dataset.hive === hive));
-    const encoded = encodeURIComponent(window.location.href);
-    const md = window.location.href.replace(".html", ".md");
-    document.getElementById("cmd-view-md").setAttribute("href", md);
-    document.getElementById("cmd-ask-gpt").setAttribute("href", `https://chat.openai.com/?q=Read%20${encoded}%20and%20answer%20questions%20about%20the%20content.`);
-    document.getElementById("cmd-ask-claude").setAttribute("href", `https://claude.ai/new?q=Read%20${encoded}%20and%20answer%20questions%20about%20the%20content.`);
+  document.querySelectorAll('.nav-item[data-hive]').forEach(a => a.classList.toggle("active", a.dataset.hive === hive));
+  const encoded = encodeURIComponent(window.location.href);
+  var url = new URL(window.location.href);
+
+  var md;
+  if (url.pathname.endsWith("/")) {
+    md = url.origin + url.pathname + "index.md";
+  } else {
+    md = url.origin + url.pathname.replace(/\.html$/i, ".md");
+  }
+
+  var mdEdit = md.replace(url.origin, "https://github.com/QuadSpinner/Gaea2-Docs/edit/working/source");
+
+  if (url.search) md += url.search;
+  if (url.hash) md += url.hash;
+
+  document.getElementById("edit-page").setAttribute("href", mdEdit);
+  document.getElementById("cmd-view-md").setAttribute("href", md);
+  document.getElementById("cmd-view-llms").setAttribute("href", new URL('llms.txt', window.location.href).toString());
+  document.getElementById("cmd-ask-gpt").setAttribute("href", `https://chat.openai.com/?q=Read%20${encoded}%20and%20answer%20questions%20about%20the%20content.`);
+  document.getElementById("cmd-ask-claude").setAttribute("href", `https://claude.ai/new?q=Read%20${encoded}%20and%20answer%20questions%20about%20the%20content.`);
+  document.getElementById("cmd-save-pdf")?.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.print();
+  });
 });
 
 // Ensure the active item in .hive-nav is visible inside its horizontal scrolling container
@@ -33,19 +52,19 @@ window.addEventListener("DOMContentLoaded", () => {
 
 $(document).ready(function () {
 
-    $(".image-row > p").each(function () {
-        $(this).replaceWith($(this).contents());
-    });
-    $(".image-row-vertical > p").each(function () {
-        $(this).replaceWith($(this).contents());
-    });
-    // unwrap <figure> if it's directly wrapped by a <p>
-    $("#contents img").each(function () {
-        if ($(this).attr("alt") != null && !$(this).hasClass("card-img-top")) {
-            $(this).wrap("<figure></figure>");
-            $(this).after("<figcaption>" + $(this).attr("alt") + "</figcaption>");
-        }
-    });
+  $(".image-row > p").each(function () {
+    $(this).replaceWith($(this).contents());
+  });
+  $(".image-row-vertical > p").each(function () {
+    $(this).replaceWith($(this).contents());
+  });
+  // unwrap <figure> if it's directly wrapped by a <p>
+  $("#contents img").each(function () {
+    if ($(this).attr("alt") != null && !$(this).hasClass("card-img-top")) {
+      $(this).wrap("<figure></figure>");
+      $(this).after("<figcaption>" + $(this).attr("alt") + "</figcaption>");
+    }
+  });
 });
 
 (function () {
@@ -101,142 +120,207 @@ $(document).ready(function () {
 })();
 
 (() => {
-    window.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("DOMContentLoaded", () => {
 
-        function normalizeUrl(u) {
-            const url = new URL(u, location.origin);
-            url.hash = "";
-            url.search = "";
-            let p = url.pathname;
-            if (p.length > 1 && p.endsWith("/")) p = p.slice(0, -1);
-            url.pathname = p;
-            return url.toString();
+    function normalizeUrl(u) {
+      const url = new URL(u, location.origin);
+      url.hash = "";
+      url.search = "";
+      let p = url.pathname;
+      if (p.length > 1 && p.endsWith("/")) p = p.slice(0, -1);
+      url.pathname = p;
+      return url.toString();
+    }
+
+    // B) Prev/next among “siblings” under the same parent <ul>
+    // - skips li.divider
+    // - if sibling is a group, picks closest leaf inside it:
+    //   prev => last leaf in that sibling subtree
+    //   next => first leaf in that sibling subtree
+    function getPrevNextSiblings(host) {
+      const current = normalizeUrl(location.href);
+
+      const hit = Array.from(host.querySelectorAll("a[href]:not(.toc-group)"))
+        .find((a) => normalizeUrl(a.href) === current);
+
+      if (!hit) return { prev: null, next: null };
+
+      const li = hit.closest("li");
+      if (!li) return { prev: null, next: null };
+
+      return {
+        prev: findSiblingLeaf(li, -1),
+        next: findSiblingLeaf(li, +1),
+      };
+
+      function findSiblingLeaf(li, dir) {
+        let sib = dir < 0 ? li.previousElementSibling : li.nextElementSibling;
+
+        while (sib) {
+          if (sib.classList?.contains("divider")) {
+            sib = dir < 0 ? sib.previousElementSibling : sib.nextElementSibling;
+            continue;
+          }
+
+          const leaf = dir < 0 ? lastLeafIn(sib) : firstLeafIn(sib);
+          if (leaf) return leaf;
+
+          sib = dir < 0 ? sib.previousElementSibling : sib.nextElementSibling;
         }
 
-        // B) Prev/next among “siblings” under the same parent <ul>
-        // - skips li.divider
-        // - if sibling is a group, picks closest leaf inside it:
-        //   prev => last leaf in that sibling subtree
-        //   next => first leaf in that sibling subtree
-        function getPrevNextSiblings(host) {
-            const current = normalizeUrl(location.href);
+        return null;
+      }
 
-            const hit = Array.from(host.querySelectorAll("a[href]:not(.toc-group)"))
-                .find((a) => normalizeUrl(a.href) === current);
+      function firstLeafIn(li) {
+        const direct = li.querySelector(':scope > a[href]:not(.toc-group)');
+        if (direct) return direct;
+        return li.querySelector('a[href]:not(.toc-group)');
+      }
 
-            if (!hit) return { prev: null, next: null };
-
-            const li = hit.closest("li");
-            if (!li) return { prev: null, next: null };
-
-            return {
-                prev: findSiblingLeaf(li, -1),
-                next: findSiblingLeaf(li, +1),
-            };
-
-            function findSiblingLeaf(li, dir) {
-                let sib = dir < 0 ? li.previousElementSibling : li.nextElementSibling;
-
-                while (sib) {
-                    if (sib.classList?.contains("divider")) {
-                        sib = dir < 0 ? sib.previousElementSibling : sib.nextElementSibling;
-                        continue;
-                    }
-
-                    const leaf = dir < 0 ? lastLeafIn(sib) : firstLeafIn(sib);
-                    if (leaf) return leaf;
-
-                    sib = dir < 0 ? sib.previousElementSibling : sib.nextElementSibling;
-                }
-
-                return null;
-            }
-
-            function firstLeafIn(li) {
-                const direct = li.querySelector(':scope > a[href]:not(.toc-group)');
-                if (direct) return direct;
-                return li.querySelector('a[href]:not(.toc-group)');
-            }
-
-            function lastLeafIn(li) {
-                const leaves = li.querySelectorAll('a[href]:not(.toc-group)');
-                return leaves.length ? leaves[leaves.length - 1] : null;
-            }
-        }
+      function lastLeafIn(li) {
+        const leaves = li.querySelectorAll('a[href]:not(.toc-group)');
+        return leaves.length ? leaves[leaves.length - 1] : null;
+      }
+    }
 
 
 
-        const host = document.querySelector("#site-nav");
-        const box = document.querySelector("#next-nav");
-        if (!host || !box) return;
+    const host = document.querySelector("#site-nav");
+    const box = document.querySelector("#next-nav");
+    if (!host || !box) return;
 
-        const { prev, next } = getPrevNextSiblings(host);
+    const { prev, next } = getPrevNextSiblings(host);
 
-        box.innerHTML = "";
+    box.innerHTML = "";
 
-        const makeBtn = (type, linkEl, fallbackText) => {
-            if (!linkEl) return null;
+    const makeBtn = (type, linkEl, fallbackText) => {
+      if (!linkEl) return null;
 
-            const href = linkEl.getAttribute("href") || linkEl.href;
-            const text = (linkEl.textContent || "").trim() || fallbackText;
+      const href = linkEl.getAttribute("href") || linkEl.href;
+      const text = (linkEl.textContent || "").trim() || fallbackText;
 
-            const a = document.createElement("a");
-            a.className = `nav-btn nav-${type} btn btn-sm`;
-            a.href = href;
+      const a = document.createElement("a");
+      a.className = `nav-btn nav-${type} btn btn-sm`;
+      a.href = href;
 
-            // text wrapped so CSS can position icon
-            const span = document.createElement("span");
-            span.className = "nav-btn-text";
-            span.textContent = text;
+      // text wrapped so CSS can position icon
+      const span = document.createElement("span");
+      span.className = "nav-btn-text";
+      span.textContent = text;
 
-            a.appendChild(span);
-            return a;
-        };
+      a.appendChild(span);
+      return a;
+    };
 
-        const prevBtn = makeBtn("prev", prev, "Previous");
-        const nextBtn = makeBtn("next", next, "Next");
+    const prevBtn = makeBtn("prev", prev, "Previous");
+    const nextBtn = makeBtn("next", next, "Next");
 
-        if (prevBtn) box.appendChild(prevBtn);
-        if (nextBtn) box.appendChild(nextBtn);
+    if (prevBtn) box.appendChild(prevBtn);
+    if (nextBtn) box.appendChild(nextBtn);
 
-        if (!prevBtn && !nextBtn) box.outerHTML = "";
-    });
+    if (!prevBtn && !nextBtn) box.outerHTML = "";
+
+    document.getElementById("show-sublinks").firstChild.className = 'd-flex flex-wrap';
+  });
 })();
 
 (() => {
-    function isTypingTarget(el) {
-        if (!el) return false;
-        const tag = (el.tagName || "").toUpperCase();
-        return tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || el.isContentEditable;
+  function isTypingTarget(el) {
+    if (!el) return false;
+    const tag = (el.tagName || "").toUpperCase();
+    return tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || el.isContentEditable;
+  }
+
+  async function copySlug() {
+    const slug = document.body?.dataset?.slug;
+    if (!slug) return;
+
+    const text = "@" + slug;
+
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      ta.remove();
+    }
+  }
+
+
+  window.addEventListener("keydown", (e) => {
+    if (isTypingTarget(e.target)) return;
+    if (e.ctrlKey && (e.key === "F2" || e.code === "F2")) {
+      e.preventDefault();
+      copySlug();
+    }
+  }, { capture: true });
+})();
+
+(() => {
+  const repo = "QuadSpinner/Gaea2-Docs";         // e.g. "quadspinner/gaea-docs"
+  const labels = "docs,bug";       // optional
+  const template = "docs-bug.yml"; // optional
+
+  let lastSelection = "";
+
+  function captureSelection() {
+    const s = (window.getSelection ? String(window.getSelection()) : "").trim();
+    if (s) lastSelection = s;
+  }
+
+  // Keep a cached selection because clicking the link often clears it.
+  document.addEventListener("selectionchange", captureSelection);
+  document.addEventListener("mouseup", captureSelection);
+  document.addEventListener("keyup", captureSelection);
+
+  function buildIssueUrl() {
+    const pageUrl = location.href;
+    const title = `Docs: ${document.title}`;
+
+    const selection = (String(window.getSelection?.() || "")).trim() || lastSelection;
+    const quotedSelection = selection
+      ? `\n\nSelected text:\n> ${selection.replace(/\r?\n/g, "\n> ")}`
+      : "";
+
+    const body =
+      `Page: ${pageUrl}
+
+What’s wrong?
+
+Expected:
+
+Actual:${quotedSelection}`;
+
+    const url = new URL(`https://github.com/${repo}/issues/new`);
+    url.searchParams.set("title", title);
+    url.searchParams.set("body", body);
+    if (labels) url.searchParams.set("labels", labels);
+    if (template) url.searchParams.set("template", template);
+
+    // Avoid overly long URLs; drop selection first if needed.
+    const s = url.toString();
+    if (s.length > 7000 && quotedSelection) {
+      url.searchParams.set("body", body.replace(quotedSelection, ""));
     }
 
-    async function copySlug() {
-        const slug = document.body?.dataset?.slug;
-        if (!slug) return;
+    return url.toString();
+  }
 
-        const text = "@" + slug;
+  const a = document.getElementById("report-issue");
 
-        try {
-            await navigator.clipboard.writeText(text);
-        } catch {
-            const ta = document.createElement("textarea");
-            ta.value = text;
-            ta.setAttribute("readonly", "");
-            ta.style.position = "fixed";
-            ta.style.left = "-9999px";
-            document.body.appendChild(ta);
-            ta.select();
-            document.execCommand("copy");
-            ta.remove();
-        }
-    }
+  // Capture as early as possible, before the click collapses selection.
+  a.addEventListener("pointerdown", captureSelection, { passive: true });
+  a.addEventListener("mousedown", captureSelection, { passive: true });
 
-
-    window.addEventListener("keydown", (e) => {
-        if (isTypingTarget(e.target)) return;
-        if (e.ctrlKey && (e.key === "F2" || e.code === "F2")) {
-            e.preventDefault();
-            copySlug();
-        }
-    }, { capture: true });
+  a.addEventListener("click", (e) => {
+    e.preventDefault();
+    captureSelection();
+    window.open(buildIssueUrl(), "_blank", "noopener");
+  });
 })();

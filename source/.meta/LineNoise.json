@@ -1,0 +1,34 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "LineNoise",
+  "Description": "LineNoise is a geometry generator that creates sets of lines which can be distorted and used with other noises and fractals to produce layered ridges.",
+  "Family": "Basic",
+  "FamilyIcon": "family-basic",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    "noise linenoise lines stripe"
+  ],
+  "ShortCode": "ln",
+  "Usage": 15,
+  "SearchString": "LineNoise Basic noise linenoise lines stripe ln",
+  "SearchWords": [
+    "linenoise",
+    "basic",
+    "noise",
+    "linenoise",
+    "lines",
+    "stripe",
+    "ln"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

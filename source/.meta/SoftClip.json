@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "SoftClip",
+  "Description": "SoftClip a low-level utility that lets you softly reduce the intensity of shapes above a specified threshold. It can be comparable to masking a shape with a Height node and then clamping that portion.",
+  "Family": "Profile",
+  "FamilyIcon": "x-softclip",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "softclip"
+  ],
+  "ShortCode": "sc",
+  "Usage": 3,
+  "SearchString": "SoftClip Profile softclip sc",
+  "SearchWords": [
+    "softclip",
+    "profile",
+    "softclip",
+    "sc"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

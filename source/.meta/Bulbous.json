@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Bulbous",
+  "Description": null,
+  "Family": "Structure",
+  "FamilyIcon": "family-structure",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "bu",
+  "Usage": 6,
+  "SearchString": "Bulbous Structure  bu",
+  "SearchWords": [
+    "bulbous",
+    "structure",
+    "",
+    "bu"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

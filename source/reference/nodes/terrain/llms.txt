@@ -1,0 +1,448 @@
+// from canyon / canyon.md
+---
+title: Canyon
+uid: canyon
+order: 01
+---
+
+
+
+
+Canyon is a simple, fast, and detailed canyon primitive. It creates a drainage based river canyon.
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Structure|Selects the canyon shaping model used to generate the canyon form and surface character.|
+|Style|Selects the canyon shaping model used to generate the canyon form and surface character.|
+|Classic|Clean, procedural canyon cuts with a simple, carved profile.|
+|Eroded|Adds erosion-like breakup and natural irregularities to the canyon walls and floor.|
+|Eroded2|A more advanced eroded style with richer wall detail and more natural variation.|
+|Strata|Introduces stratified, layered wall features resembling sedimentary rock bands.|
+|Both|Combines erosion breakup with stratified layering for a layered-and-worn look.|
+|Scale|The scale of the canyon.|
+|Slot|Controls the narrow, slot-canyon component—tightness and emphasis of the deepest cut.|
+|Valley|Controls the broader valley form—overall widening and openness of the canyon.|
+|Surrounding|Blends the canyon into the surrounding terrain, controlling how much the outer landform influences the final shape.|
+|Depth|The depth of the canyon.|
+|Structual Warp|Applies large-scale warping to the canyon structure to introduce bends, meanders, and macro variation.|
+|Seed|The randomization pattern or seed for the node's process.|
+|Formation|Applies finer warping to add small-scale distortion and surface complexity without changing the overall canyon layout.|
+|Detail Warp|Applies finer warping to add small-scale distortion and surface complexity without changing the overall canyon layout.|
+|Alternate Style|Introduces a secondary variation of the selected style to break uniformity and add visual diversity.|
+
+// from crater / crater.md
+---
+title: Crater
+uid: crater
+order: 02
+---
+
+
+
+
+The Crater primitive creates different types of crater shapes. Like all primitives, it is not meant to be the finished product, but rather a starting point from which to develop your own detailed shape.
+
+Craters can be either *volcanic*, which start at the base and go up in a conical shape; or they can be *impact*, where the inside of the crater can be deeper than the base or the ground around the crater.
+
+<figure>
+
+![](/.data/ref/Crater/Crater--Impact.webp)
+
+<figcaption>Impact Crater: The base is higher than the "ground" as the impact crater goes below the surface.</figcaption>
+</figure>
+
+<figure>
+
+![](/.data/ref/Crater/Crater--Volcanic.webp)
+
+<figcaption>Volcanic Crater: The base is a flat area and easier to combine with existing terrains.</figcaption>
+</figure>
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Style|Selects the overall appearance and shaping method for the crater.|
+|New|Uses the modern crater generation algorithm, producing more realistic and detailed crater shapes.|
+|Classic|Applies the legacy crater style, creating traditional, stylized crater forms.|
+|Scale|Controls the overall size of the crater. Higher values produce larger craters.|
+|Formation|Determines the formation characteristics of the crater, such as depth, width, and rim prominence.|
+|Height|Sets the maximum elevation or prominence of the crater above the base terrain.|
+|Rim|Specifies the sharpness and profile of the crater's rim.|
+|Soft|Creates a gently sloping, eroded rim for a more weathered appearance.|
+|Sharp|Produces a steep, well-defined rim for a freshly formed or less eroded crater.|
+|Shape|Defines the overall outline and contour of the crater, such as roundness or irregularity.|
+|X|Horizontal placement of the crater or crater field within the terrain.|
+|Y|Vertical placement of the crater or crater field within the terrain.|
+|Seed|The randomization pattern or seed for the node's process. Changing the seed produces different crater variations.|
+
+// from craterfield / craterfield.md
+---
+title: CraterField
+uid: craterfield
+order: 03
+---
+
+
+
+# Properties
+
+
+
+
+| Property | Description |
+| --- | --- |
+|Craterfield|Controls the overall size (radius) of craters in the field.|
+|Scale|Controls the overall size (radius) of craters in the field.|
+|Depth|Controls how deep the craters carve into the terrain.|
+|Density|Controls how many craters are generated across the terrain (higher values create more impacts).|
+|Seed|The randomization pattern or seed for the node's process.|
+|Position|Offsets the craterfield along the X axis.|
+|X|Offsets the craterfield along the X axis.|
+|Y|Offsets the craterfield along the Y axis.|
+
+// from dunesea / dunesea.md
+---
+title: DuneSea
+uid: dunesea
+order: 04
+---
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Scale||
+|Dune Type||
+|A|<desc>|
+|B|<desc>|
+|C|<desc>|
+|D|<desc>|
+|Chaos||
+|None|<desc>|
+|Low|<desc>|
+|Medium|<desc>|
+|High|<desc>|
+|Undulation||
+|None|<desc>|
+|Low|<desc>|
+|Medium|<desc>|
+|High|<desc>|
+|Direction||
+|Height||
+|Softness||
+|Sharpness||
+|Seed||
+
+// from terrain / index.md
+---
+title: Terrain
+uid: terrain
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from island / island.md
+---
+title: Island
+uid: island
+order: 05
+---
+
+
+
+
+The Island node lets you draw basic shapes from which entire landmasses can be generated.
+
+To draw an Island, open the Editor from the Properties panel and draw your basic island shape. It is best to create coarse, less-defined shapes and let the algorithm generate the details for you.
+
+Once the general shape is ready, you can then use smaller brush sizes in both add and subtract modes to refine the coastlines.
+
+:::info
+When refining the shape, keep your eye on the underlying generated shape instead of on your drawing. This will help you follow what changes.
+:::
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Size||
+|Chaos||
+|Seed|The randomization pattern or seed for the node's process.|
+
+// from mountain / mountain.md
+---
+title: Mountain
+uid: mountain
+order: 06
+---
+
+
+
+
+Mountain is one of the most versatile primitives in Gaea. It uses a modulated Voronoi pattern and distortions to create realistic mountain shapes, ready for further modification and erosion.
+
+![](/.data/ref/Mountain/Mountain.webp)
+
+:::info
+For simple results, such as distant mountains that don't require much detail, you can create a Mountain primitive with a scale of your choice and add the Erosion node. This is the easiest way to create a lot of simple assets.
+:::
+
+
+
+# Properties
+
+| Property | Description |
+| --- | --- |
+|Scale|Controls the overall size and extent of the mountain. Higher values create broader, more expansive mountain shapes.|
+|Height|Sets the maximum elevation of the mountain, determining how tall the peak rises above the terrain.|
+|Style|Specifies the geological and visual style of the mountain, affecting its shape, erosion, and surface features.|
+|Basic|Generates a simple, unmodified mountain with minimal erosion or geological detail.|
+|Eroded|Applies erosion effects to the mountain, creating realistic weathering, gullies, and worn surfaces.|
+|Old|Simulates an ancient mountain with softened features, rounded slopes, and significant erosion.|
+|Alpine|Creates sharp, rugged alpine features with steep faces and dramatic relief, typical of young mountain ranges.|
+|Strata|Adds visible geological strata or layers to the mountain, emphasizing sedimentary or volcanic banding.|
+|Bulk|Controls the mass and volume of the mountain, affecting how thick or substantial the formation appears.|
+|Low|Produces slender, less massive mountains with more delicate features.|
+|Medium|Creates mountains with a balanced amount of mass, offering a natural appearance.|
+|High|Generates thick, heavy mountains with substantial volume and broad bases.|
+|Reduce Details|Reduces the amount of fine surface detail on the mountain, resulting in a smoother, more simplified shape.|
+|Seed|Randomization seed for generating unique variations of the mountain. Changing the seed produces different shapes and arrangements.|
+|X|Offsets the mountain horizontally along the X axis, shifting its position within the terrain.|
+|Y|Offsets the mountain horizontally along the Y axis, shifting its position within the terrain.|
+
+// from mountainrange / mountainrange.md
+---
+title: MountainRange
+uid: mountainrange
+order: 07
+---
+
+
+
+# Properties
+
+| Property | Description |
+| --- | --- |
+|Scale|Controls the overall size and extent of the mountain ranges. Higher values create broader, more expansive ranges.|
+|Height|Sets the maximum elevation of the mountain range, determining how tall the peaks and ridges will be.|
+|Style|Specifies the geological and visual style of the mountain range, affecting its shape, erosion, and surface features.|
+|Basic|Generates a simple, unmodified mountain range with minimal erosion or geological detail.|
+|Eroded|Applies erosion effects to the mountain range, creating realistic weathering, gullies, and worn surfaces.|
+|Stratified|Adds visible geological strata or layers to the mountains, simulating sedimentary or volcanic banding.|
+|Alpine|Creates sharp, rugged alpine features with steep faces and dramatic relief, typical of young mountain ranges.|
+|Bulk|Controls the mass and volume of the mountain range, affecting how thick or substantial the mountains appear.|
+|Low|Produces slender, less massive mountains with more delicate features.|
+|Medium|Creates mountains with a balanced amount of mass, offering a natural appearance.|
+|High|Generates thick, heavy mountains with substantial volume and broad bases.|
+|Seed|Randomization seed for generating unique variations of the mountain range. Changing the seed produces different shapes and arrangements.|
+
+// from mountainside / mountainside.md
+---
+title: MountainSide
+uid: mountainside
+order: 08
+---
+
+
+
+# Properties
+
+  
+
+
+
+
+| Property | Description |
+| --- | --- |
+|Scale|Controls the overall size and extent of the mountain slope. Larger values create broader, more expansive slopes.|
+|Detail|Adjusts the amount of fine surface detail on the mountain. Higher values add more texture and small-scale features to the slope.|
+|Type|Determines the primary form of the mountain feature to generate.|
+|Slope|Creates a continuous, sloping mountainside, ideal for simulating the flanks of large mountain ranges.|
+|Peak|Generates a prominent mountain peak, focusing elevation and detail toward a summit.|
+|Style|Specifies the visual and geological style of the mountain slope, affecting erosion, layering, and surface character.|
+|Basic|Produces a simple, unmodified slope or peak with minimal erosion or geological features.|
+|Eroded|Applies erosion effects to the mountain, creating realistic weathering, gullies, and worn surfaces.|
+|Old|Simulates an ancient mountain with softened features, rounded slopes, and significant erosion.|
+|Alpine|Creates sharp, rugged alpine features with steep faces and dramatic relief, typical of young mountain ranges.|
+|Strata|Adds visible geological strata or layers to the mountain, emphasizing sedimentary or volcanic banding.|
+|Direction|Sets the orientation of the slope or peak, determining which direction the mountain face or ridge is aligned.|
+|Seed|Defines the randomization seed for the node, ensuring reproducible or varied mountain shapes with each value.|
+
+// from plates / plates.md
+---
+title: Plates
+uid: plates
+order: 09
+---
+
+
+
+
+Plates is a new primitive, based on a Perlin core with flat plate-like formations created in between larger *Perlin-esque* shapes. The flat, slanting areas can make great slopes — especially when combined with Displace nodes.
+
+![](/.data/ref/Plates/Plates.webp)
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Scale|The scale of the overall field of shapes. Controls the size of the tectonic plates or regions generated by the node.|
+|Range|Adjusts the variation in elevation or intensity between different plates, affecting the contrast and diversity of the generated regions.|
+|Falloff|Controls the smoothness of the transitions between plates. Higher values create softer, more gradual boundaries; lower values produce sharper edges.|
+|Warp|Applies distortion to the plate boundaries, introducing irregularity and natural variation to the shapes.|
+|Angle|Sets the orientation or rotation of the plate pattern, allowing you to control the directional flow of the generated regions.|
+|Seed|The randomization pattern or seed for the node's process. Changing the seed produces different plate arrangements while keeping other settings the same.|
+
+// from ridge / ridge.md
+---
+title: Ridge
+uid: ridge
+order: 10
+---
+
+
+
+
+Ridge creates a rugged ridgeline with multiple fractures and rock shearing.
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Scale|Scale of the ridgeline.|
+|Height|Sets the height of the ridge.|
+|Definition|Adds details on the ridgelines.|
+|Seed|The randomization pattern or seed for the node's process.|
+|Advanced|The non-uniform scale of the X axis.|
+|Scale X|The non-uniform scale of the X axis.|
+|Scale Y|The non-uniform scale of the Y axis.|
+
+// from rugged / rugged.md
+---
+title: Rugged
+uid: rugged
+order: 11
+---
+
+
+Rugged is a very powerful Landscape node that creates a strong, rocky surface for any terrain while preserving overall shape. This enables you to add tremendous amounts of details to any surface.
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Style||
+|A|<desc>|
+|B|<desc>|
+|C|<desc>|
+|D|<desc>|
+|E|<desc>|
+|Scale|The size of the geological features.|
+|Seed|The randomization pattern or seed for the node's process.|
+
+// from slump / slump.md
+---
+title: Slump
+uid: slump
+order: 12
+---
+
+
+
+
+Slump is a simple primitive that creates relative smooth hills with slumped (collapsed) areas. It is very useful for creating large landscapes.
+
+
+
+# Properties
+
+
+
+
+| Property | Description |
+| --- | --- |
+|Scale|The scale of the slump.|
+|Style||
+|A|<desc>|
+|B|<desc>|
+|C|<desc>|
+|D|<desc>|
+|Seed|The randomization pattern or seed for the node's process.|
+
+// from uplift / uplift.md
+---
+title: Uplift
+uid: uplift
+order: 13
+---
+
+
+
+# Properties
+
+
+| Property | Description |
+| --- | --- |
+|Passes||
+|Scale||
+|Height||
+|Octaves||
+|Direction||
+|Jitter||
+|Seed||
+
+// from volcano / volcano.md
+---
+title: Volcano
+uid: volcano
+order: 14
+---
+
+
+
+# Properties
+
+
+
+
+
+
+
+| Property | Description |
+| --- | --- |
+|Scale|Controls the overall size of the volcano feature in the terrain. Increasing the scale makes the volcano larger relative to the surrounding landscape.|
+|Height|Sets the maximum elevation of the volcano. Higher values produce taller volcanic structures.|
+|Mouth|Defines the diameter of the volcano's crater opening. Adjusting this parameter changes how wide or narrow the mouth appears.|
+|Bulk|Determines the mass and thickness of the volcano's body. Higher bulk values result in a more massive and robust volcano shape.|
+|Surface|Specifies the surface characteristics of the volcano, allowing selection between different terrain styles for the outer slopes.|
+|Smooth|Applies a smooth surface to the volcano, minimizing roughness and erosion effects for a clean, uniform appearance.|
+|Eroded|Applies erosion effects to the volcano's surface, simulating weathered and worn terrain with more natural detail.|
+|X|Sets the horizontal position of the volcano on the terrain grid. Adjust to move the volcano left or right.|
+|Y|Sets the vertical position of the volcano on the terrain grid. Adjust to move the volcano up or down.|
+|Seed|Defines the randomization seed for procedural generation. Changing the seed produces different volcano shapes and features.|
+

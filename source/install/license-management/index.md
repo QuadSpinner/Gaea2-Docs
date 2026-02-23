@@ -1,7 +1,7 @@
 ---
-icon: key
 title: License Management
 uid: license-management
+hidden: true
 ---
 
 # In this section

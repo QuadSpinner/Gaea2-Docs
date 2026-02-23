@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Shaper",
+  "Description": "Shaper bulks up or bulks down a terrain, while optionally retaining the finer details.",
+  "Family": "Profile",
+  "FamilyIcon": "x-shaper",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "shaper"
+  ],
+  "ShortCode": "sp",
+  "Usage": 27,
+  "SearchString": "Shaper Profile shaper sp",
+  "SearchWords": [
+    "shaper",
+    "profile",
+    "shaper",
+    "sp"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,115 @@
+﻿[
+  {
+    "Name": "Intensity",
+    "Description": "Controls the strength of the slope blur effect. Higher values result in more pronounced blurring along the slope direction.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Iterations",
+    "Description": "Specifies how many times the slope blur operation is applied. More iterations increase the smoothness and diffusion of the blur.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Direction",
+    "Description": "Sets the primary direction in which the blur is applied. Adjusting this value changes the orientation of the blur effect across the terrain.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Asymmetry",
+    "Description": "Controls the asymmetry of the blur, allowing the effect to be stronger in one direction than the other for more natural or stylized results.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Normalized",
+    "Description": "Lorem ipsum",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Window",
+    "Description": "Lorem ipsum",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Bell",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Box",
+        "Description": "Uses a box-shaped window for uniform blurring, resulting in sharper transitions at the edges.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Quality",
+    "Description": "Settings related to the quality and precision of the slope blur operation. Higher quality may increase processing time but results in smoother, more accurate blurring.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Quality",
+    "Description": "Settings related to the quality and precision of the slope blur operation. Higher quality may increase processing time but results in smoother, more accurate blurring.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Low",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Medium",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Ultra",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Antialiasing",
+    "Description": "Applies antialiasing to the slope blur effect, reducing jagged edges and improving visual smoothness.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Off",
+        "Description": "No antialiasing is applied. May result in sharper but potentially jagged edges.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "x4",
+        "Description": "Applies 4x antialiasing for moderate smoothing of edges.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "x16",
+        "Description": "Applies 16x antialiasing for maximum edge smoothing and highest visual quality.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  }
+]

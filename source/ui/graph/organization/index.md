@@ -1,6 +1,7 @@
 ---
-title: organization
+title: Organization
 uid: organization
+hidden: true
 ---
 
 # In this section

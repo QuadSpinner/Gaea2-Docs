@@ -1,6 +1,7 @@
 ---
-title: interface
+title: Interface
 uid: interface
+hidden: true
 ---
 
 # In this section

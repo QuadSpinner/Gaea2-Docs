@@ -1,6 +1,7 @@
 ---
-title: colorize
+title: Colorize
 uid: colorize
+hidden: true
 ---
 
 # In this section

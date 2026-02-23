@@ -1,0 +1,48 @@
+﻿[
+  {
+    "Name": "Primed",
+    "Description": "",
+    "IsGroup": true
+  },
+  {
+    "Name": "Design Time",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Build Time",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Information",
+    "Description": "",
+    "Type": "Byte",
+    "IsGroup": false
+  },
+  {
+    "Name": "Loop",
+    "Description": "Number of loops to perform",
+    "IsGroup": true
+  },
+  {
+    "Name": "Loops",
+    "Description": "Number of loops to perform",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Mutate Seeds",
+    "Description": "When enabled, the seeds of all nodes within the loop are mutated.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "The seed for mutation if enabled above.",
+    "Type": "Int32",
+    "IsGroup": false
+  }
+]

@@ -1,0 +1,43 @@
+﻿[
+  {
+    "Name": "Scale",
+    "Description": "Scale of the ridgeline.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Height",
+    "Description": "Sets the height of the ridge.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Definition",
+    "Description": "Adds details on the ridgelines.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Advanced",
+    "Description": "The non-uniform scale of the X axis.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Scale X",
+    "Description": "The non-uniform scale of the X axis.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale Y",
+    "Description": "The non-uniform scale of the Y axis.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

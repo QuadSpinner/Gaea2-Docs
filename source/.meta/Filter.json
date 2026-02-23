@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Filter",
+  "Description": null,
+  "Family": "Profile",
+  "FamilyIcon": "family-profile",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "fl",
+  "Usage": 17,
+  "SearchString": "Filter Profile  fl",
+  "SearchWords": [
+    "filter",
+    "profile",
+    "",
+    "fl"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 20,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Unity",
+  "Description": null,
+  "Family": "Assets",
+  "FamilyIcon": "x-unity",
+  "Toolbox": "Output",
+  "Classification": "Export",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "un",
+  "Usage": 5,
+  "SearchString": "Unity Assets  un",
+  "SearchWords": [
+    "unity",
+    "assets",
+    "",
+    "un"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": true,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

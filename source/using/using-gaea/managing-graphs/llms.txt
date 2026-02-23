@@ -1,0 +1,292 @@
+// from accumulators / accumulators.md
+---
+title: Accumulators
+uid: accumulators
+order: 04
+---
+
+# Accumulators
+
+## Reducing Clutter with Accumulators
+
+One of the common ways a graph gets clutters with overlapping connections is when multiple Snow, Lake, or Debris nodes are used and their respective masks need to be combined for further use.
+
+The new Accumulator node is a special type of standalone Generator node that can collect all such masks for you without creating several connections.
+
+It works for Snow Mask, Snow Depth, Water Mask, Water Depth, Shore Mask, Debris Mask, Debris Color Index.
+
+![](/.data/assets/Accumulators1.png)
+
+In this example, there are 3 Debris nodes that require 2 ports from each node to be connected to two different Combine nodes, creating a spread of several connections. The normal output from Debris also goes into two other nodes creating more visual clutter that needs to be deciphered before you can see which connection belongs where.
+
+![](/.data/assets/Accumulators2.png)
+
+These connections, as well as the two Combine nodes, can be replaced by two Accumulator nodes. One set to Debris Mask, the other to Debris Color.
+
+![](/.data/assets/image-(22).png)
+
+:::warning
+The Accumulator will only add nodes that have been built. To ensure all required nodes are built, connect the last node you will use for masking with the Accumulator output to the Accumulator Input. This will not affect the Accumulator but will ensure that all appropriate nodes are built.
+:::
+
+
+// from data-view / data-view.md
+---
+title: Data View
+uid: data-view
+order: 05
+---
+
+# Data View
+
+The Data View is a set of tabs in the right side of the Graph, providing fast access to key information in your project.
+
+![](/.data/assets/Gaea_-_Cartography_-_3D_Map.terrain_10-43-28-PM.png)
+
+## Terrain Tab
+
+The Terrain tab consists of a Node Tree showing a simple hierarchy of Tabs > Groups > Nodes. Otherwise, nodes within these containers (Tabs or Groups) are shown the order they are laid out on the graph (left to right).
+
+### Locked and Underlay Nodes
+
+The green and pink icons at the top represent the current Locked Preview and Underlay nodes. You can hover over them to see which node it is and click the icon to navigate to that particular node.
+
+### Filtering Nodes
+
+The filter dropdown lets you isolate nodes by different types or behaviors. When filtered, other nodes are hidden from the tree and visually muted in the graph.
+
+By Type: You can filter by type such as Generators, Simulations, Colorizors, etc. to see nodes of only that type in the tree.
+
+**Marked for Export:** Shows nodes that will export data.
+
+**Required Baking:** Shows all nodes that need to be baked before a Hybrid or Tiled build.
+
+**Nodes with Error:** Shows nodes that may be faulting or failing validation. This is useful in tracking down terrains that won't build or fail during build.
+
+**Heavy Nodes:** Shows nodes that take the most time to build in your graph, based on a median calculation.
+
+**Orphan Nodes:** Shows nodes that are not connected or do not contribute to any final output. Removing orphans lets you save resources and reduce clutter.
+
+## Build Tab
+
+The Build Tab shows you nodes that are marked for export. Here you can refine the export settings such as the filename, which ports to export, and what format to use.
+
+
+
+## Statistics Tab
+
+## Variables Tab
+
+// from managing-graphs / index.md
+---
+icon: person-to-portal
+title: Managing Graphs
+uid: managing-graphs
+---
+
+# Managing Graphs
+
+##
+
+// from navigating-complex-graphs / navigating-complex-graphs.md
+---
+title: Navigating Complex Graphs
+uid: navigating-complex-graphs
+order: 06
+---
+
+# Navigating Complex Graphs
+
+
+
+// from portals-introduction / portals-and-chokepoints.md
+---
+title: Portals and Chokepoints
+uid: portals-introduction
+order: 02
+---
+
+# Portals and Chokepoints
+
+
+
+For basic information, see [Portals and Chokepoints](/ui/graph/organization/portals-and-chokepoints.html){data-link-icon='person-to-portal'}
+
+// from using-modifiers / using-modifiers.md
+---
+title: Using Modifiers
+uid: using-modifiers
+order: 01
+---
+
+# Using Modifiers
+
+![](/.data/assets/image-(26).png)
+
+## Modifiers
+
+The Modifier Stack provides quick access to common adjustments, masks, and modifications that you may wish to apply to a node. Traditionally, node-based software would require you to create an additional node for each such adjustment - often resulting in complicated graphs that are difficult to manage.
+
+For basic information about Modifiers, see [Modifier Stack](/ui/interface/property-editor/modifier-stack.html){data-link-icon=''}
+
+### Fast and Less Overhead
+
+Modifiers work as a post-process so updating them does not require re-building the node. And unlike nodes, Modifiers don't create excess overhead. The memory cost of 6 modifiers is the same as 1 modifier, however the cost of 6 nodes of the same types would create 6 times the overhead.
+
+## Common Scenarios
+
+### Adjusting the Height
+
+If a terrain (or mask) is not the exact height values you need, you can use the Height Remap modifier to adjust both the lower and upper extent of your terrain. Bringing up the bottom "raises" the terrain from the bottom, while "lowering" the top makes the terrain shorter.
+
+![](/.data/assets/image-(65).png)
+
+Inversely, bringing the top beyond 1.0 makes your terrain taller than the original range.
+
+### Making Stronger Masks
+
+By simply applying Autolevel, Equalize, or Shaper (positive value) you can take a weak mask and make it stronger.
+
+![](/.data/assets/image-(63).png){.w-50} ![](/.data/assets/image-(64).png){.w-50}
+
+### Dropping the Terrain
+
+The "Drop" modifier removes any "empty" space under the terrain, forcing it to drop to the "floor".
+
+![](/.data/assets/image-(68).png)
+
+<div>![Normal Perlin](/.data/assets/Gaea_-_Untitled_02-55-12-AM.webp) ![Dropped Perlin](/.data/assets/Gaea_-_Untitled_02-55-15-AM.webp)</div>
+
+### Bulking Up or Bulking Down
+
+Using Shaper, you can bulk up or bulk down a terrain. It can apply to masks as well. For example, taking Flow Map output and making it stronger by adding Shaper.
+
+![Original terrain](/.data/assets/Gaea_-_Untitled_02-52-42-AM.webp)
+
+![Shaper at +50](/.data/assets/Gaea_-_Untitled_02-52-58-AM.webp) 
+
+![Shaper at -50](...)
+
+### Restrict Effect to Slope or Height
+
+You can easily restrict the effect of a node to a height or slope range by adding a "Mask by Height" or "Mask by Slope" modifier on the effect node.
+
+![](/.data/assets/image-(67).webp)
+
+![](/.data/assets/image-(66).png){.w-50}
+
+:::info
+You can attach a DataExtractor node to any node that uses a Mask by Height/Slope modifier, and get the exact mask generated as a separate output.
+:::
+
+### Using Min and Max
+
+The Min and Max modifiers are one of the most powerful tools in Gaea.
+
+### Breaking up a Mask
+
+Sometimes you want a bit of crunchy detail to breakup the edges of your mask or introduce some uneven variations. Add a Warp modifier with the appropriate Size and Strength to change the mask.
+
+![](/.data/assets/image-(69).png){.w-50}
+
+![](/.data/assets/threshold1.webp) 
+
+![](/.data/assets/threshold2.webp)
+
+:::info
+Try mixing with Min or Max modifiers for broader options.
+:::
+
+### Getting the Difference
+
+
+// from visualizing-scale / visualizing-scale.md
+---
+title: Visualizing Scale
+uid: visualizing-scale
+order: 03
+---
+
+# Visualizing Scale
+
+## Using Overlays
+
+Gaea 2.1 ships with multiple pre-defined overlays that you can use for showing relative scale on your terrain. These are rendered on top of your terrain, so you can visualize it easily without modifying anything on your graph. You can change the overlay and its opacity in the Sky Editor.
+
+![](/.data/assets/image-(15).webp)
+
+
+
+A great way to visualize specific scale is to create your own overlay with precise shapes and sizes.
+
+### Creating a custom Overlay
+
+You can load a custom Overlay in the Viewport Sky Editor.
+
+To craft precise shapes in an overlay, you can use the following simple formula.
+
+If your overlay is 2048 x 2048, then 2048 = 2500m (or whatever your [Terrain Width](/advanced-topics/technical-information/dimensions-and-scale.md#terrain-size-and-height) is set in Gaea). Then `1m = 2048 / 2500m` (ie, `0.8192`). For 25m, you use `0.8192 x 25 = 20.48` so create a square in your design application that is 20.48 x 20.48 px in size and place it where you wish. 50m would be 40.96, and so on.
+
+![](/.data/assets/image-(16).png)
+
+Save your square image as a PNG to maintain crisp edges. Then load it as a custom overlay in Gaea.
+
+Now you can visualize any specific area, shape, perimeter, etc. on your terrain.
+
+![](/.data/assets/image-(17).webp)
+
+### Creating Overlays in Gaea
+
+Use an app like [Lunacy](https://icons8.com/lunacy?ref=quadspinner), Figma, Illustrator, etc. to create a custom overlay. However, if you want to skip using external apps, you can easily create a simple overlay in Gaea.
+
+![](/.data/assets/image-(18).png)
+
+Create a Constant setup like explained above. Then add a Curvature node, and set it to Vertical mode with 100% Falloff. This will create an outline for your cube.
+
+![](/.data/assets/image-(19).png)
+
+You can optionally invert the output as Gaea's overlay is multiplied on top of your existing render. Once your visual is ready, right-click the 2D Viewport and select `Save to File` to save the file which you can use a custom overlay.
+
+You can create more elaborate overlays by using Grid, Halftone, Tint, and various other nodes.
+
+![](/.data/assets/image-(20).png)
+
+## Creating a 3D Scale Dummy
+
+This technique will show you how to create a simple cube/block of a specific scale that you can add to your terrain preview.
+
+First we create a `Constant` node and set its value to 1.0. Then connect it to a `Transform` node.
+
+![](/.data/assets/image-(6).png)
+
+In the Transform node, right-click Scale and enter a metric value such as `25m`. This will scale the Constant into a perfect 25 x 25m block. Additionally, you can add a `Height Remap` modifier and scale the block vertically to any specific size in the same way.
+
+<div>![](/.data/assets/image-(7).png) ![](/.data/assets/image-(9).png)</div>
+
+Now you have this scale block.
+
+![](/.data/assets/image-(8).png)
+
+If you want to view it on your terrain, create a Combine node to Add this block on top of your terrain.
+
+![](/.data/assets/image-(11).png)
+
+If you want to toggle this block and use it frequently in various places across your graph, you can use the Route utility node. Feed your main terrain into the `In` port and the Combined block output to the `Alternate` port.
+
+![Setup a Route node to conveniently hide the block when not needed.](/.data/assets/image-(12).png)
+
+You can use the Route node's toggle to quickly show and hide the version with the Block.
+
+![Route toggled on.](/.data/assets/image-(13).webp) ![Route toggled off.](/.data/assets/image-(14).webp)
+
+:::info
+Make the Transform's output into a [Portals and Chokepoints](/ui/graph/organization/portals-and-chokepoints.html){data-link-icon='person-to-portal'} and reuse it wherever needed in the graph without cluttering the workspace.
+:::
+
+### Creating a Custom Reference Object
+
+If you want to use a custom mesh instead of a block, you can use the Object node to import a mesh and scale it instead of using the Constant node.
+
+![](/.data/assets/image-(21).webp)
+
+

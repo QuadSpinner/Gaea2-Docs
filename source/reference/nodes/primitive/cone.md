@@ -8,14 +8,3 @@ order: 03
 
 # Properties
 
-- **Scale**  
-  
-- **Height**  
-  
-- **X**  
-  
-- **Y**  
-  
-
-
-

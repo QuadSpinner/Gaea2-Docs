@@ -1,0 +1,112 @@
+﻿[
+  {
+    "Name": "Global",
+    "Description": "Specifies the current animation frame or time step for the wave simulation, allowing for frame-by-frame control or preview.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Frame",
+    "Description": "Specifies the current animation frame or time step for the wave simulation, allowing for frame-by-frame control or preview.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Octaves",
+    "Description": "Sets the number of detail layers (octaves) used in the wave pattern, increasing complexity and realism with higher values.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "Randomization seed for generating unique wave patterns. Changing the seed produces different wave arrangements.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Ripples",
+    "Description": "Controls the speed at which ripples animate across the surface, affecting how quickly the pattern evolves over time.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Animation Speed",
+    "Description": "Controls the speed at which ripples animate across the surface, affecting how quickly the pattern evolves over time.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Size",
+    "Description": "Sets the scale of individual ripples, with larger values producing broader, more widely spaced ripples.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Amplitude",
+    "Description": "Adjusts the height or intensity of the ripples, making them more or less pronounced.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Direction",
+    "Description": "Specifies the primary direction in which ripples travel, simulating wind or current-driven movement.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Speed",
+    "Description": "Controls the movement speed of the ripples, determining how fast they propagate across the surface.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Wind Patch",
+    "Description": "Sets the strength of the wind patch effect, increasing the impact of wind on the wave or ripple pattern.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Intensity",
+    "Description": "Sets the strength of the wind patch effect, increasing the impact of wind on the wave or ripple pattern.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Animation Speed",
+    "Description": "Controls the speed at which ripples animate across the surface, affecting how quickly the pattern evolves over time.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Size",
+    "Description": "Sets the scale of individual ripples, with larger values producing broader, more widely spaced ripples.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Contrast",
+    "Description": "Adjusts the contrast of the wind patch effect, making the difference between calm and windy areas more or less pronounced.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Lighting",
+    "Description": "Controls the overall brightness of the rendered wave surface, affecting how light or dark the result appears.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Brightness",
+    "Description": "Controls the overall brightness of the rendered wave surface, affecting how light or dark the result appears.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Sun Azimuth",
+    "Description": "Sets the horizontal angle of the sun, determining the direction of sunlight and resulting highlights or reflections.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Sun Elevation",
+    "Description": "Sets the vertical angle of the sun above the horizon, affecting the length and intensity of highlights and shadows on the waves.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

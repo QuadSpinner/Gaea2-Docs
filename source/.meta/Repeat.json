@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Repeat",
+  "Description": "Repeat takes a shape and repeats it in a tiled pattern. It is often combined with the Seamless node.",
+  "Family": "Structure",
+  "FamilyIcon": "x-repeat",
+  "Toolbox": "Utility",
+  "Classification": "Processor",
+  "Keywords": [
+    "repeat"
+  ],
+  "ShortCode": "rp",
+  "Usage": 16,
+  "SearchString": "Repeat Structure repeat rp",
+  "SearchWords": [
+    "repeat",
+    "structure",
+    "repeat",
+    "rp"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": true,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

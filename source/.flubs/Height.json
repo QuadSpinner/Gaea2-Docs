@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Name": "Range",
+    "Description": "Sets the minimum and maximum elevation values to include in the mask. Only terrain within this height range is selected.",
+    "Type": "Float2",
+    "IsGroup": false
+  },
+  {
+    "Name": "Falloff",
+    "Description": "Controls the softness of the mask transition at the range boundaries. Higher values create a smoother, more gradual blend from selected to unselected areas.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

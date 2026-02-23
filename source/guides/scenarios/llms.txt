@@ -1,0 +1,1196 @@
+// from scenarios / index.md
+---
+title: Scenarios
+uid: scenarios
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from low-detail-start / design-low-first.md
+---
+title: Start with low detail shapes
+uid: low-detail-start
+---
+
+# Let Shape Stay Simple
+
+It’s tempting to pour detail into the very first landform—lots of noise, breakup, micro ridges. But front-loading detail usually makes the rest of the graph fight you.
+
+A cleaner approach is to build a **strong, low-detail macro shape** first, then let **Erosion** and **Surface** nodes generate the believable detail later.
+
+## Why early detail is a trap
+
+When your base terrain is already “busy”:
+
+* **Procedural shaping has less room to work**: transforms, carving, and large-scale edits get masked by pre-baked noise.
+* **Erosion can’t speak clearly**: fine detail interferes with flow and creates messy, over-textured results.
+* **Iteration gets fragile**: small upstream changes ripple into unpredictable downstream chaos.
+
+:::tip
+Macro first, micro later. Let erosion create the story, and let surface add the finish.
+:::
+
+## The scalable workflow for huge or tiled builds
+
+This approach is especially powerful for **tiled builds** and very large resolutions.
+
+1. Build your **base shapes** at a manageable resolution like **4K or 8K** (broad forms only).
+2. **Bake** those shape nodes so they become stable and cheap.
+3. Use **TileGate** to treat those baked shapes as **static inputs** that will be upscaled efficiently for large tiled builds.
+4. Apply your heavy detail *afterwards*: **Erosion**, **Surface**, and any downstream detailing/mask work.
+
+Now you get the best of both worlds:
+
+* The macro terrain remains **clean and controllable**
+* Tiled builds stay **memory-friendly**
+* Your final detail is generated at the stage where it matters, so the terrain **holds up** without losing fidelity
+
+:::warning
+If you bake noisy “micro” detail into the initial shape, you can lock yourself out of realistic erosion and make high-resolution/tiled builds slower and less predictable.
+:::
+
+// from format-gotchas / format-gotchas.md
+---
+title: File Format Gotchas
+uid: format-gotchas
+---
+
+Here are practical do’s and don’ts for the formats people most often feed into Gaea, tuned for the workflow:
+
+See [Match or Correct Heights](/guides/scenarios/helpful-info/match-height.html){data-link-icon=''} for a useful workflow using Constant (meters) → File (unclamped) → Autolevel → MATCH (Constant as Reference)
+
+---
+
+## GeoTIFF DEM
+
+### Do
+
+* Prefer 32-bit float GeoTIFF when available (best fidelity, handles negatives cleanly).
+* Keep File = Unclamped, especially if the DEM includes below sea level or “no-data” borders.
+* Pre-handle NoData if your exporter encodes it as a huge negative (e.g., -32768) or huge positive—mask/crop it before Gaea if possible, or you’ll Autolevel against garbage.
+* Use your Constant in meters as the “intended peak altitude” and MATCH to it.
+
+### Don’t
+
+* Don’t export with “visualization scaling” (some GIS apps rescale for display); export raw elevation values.
+* Don’t clamp on import; it can silently flatten valid extremes.
+
+---
+
+## 16-bit PNG
+
+### Do
+
+* Use 16-bit grayscale PNG (not 8-bit).
+* Ensure the PNG is linear data:
+  * If your tool has a color management option, pick linear / data / non-color.
+* Treat 16-bit PNG as *precision-limited*: Autolevel is strongly recommended before any further math.
+* Keep the File unclamped, then Autolevel, then MATCH to Constant.
+
+### Don’t
+
+* Don’t use 8-bit PNG for real terrain unless it’s purely stylized; banding will be obvious.
+* Don’t let apps apply sRGB gamma to the heightmap (this bends elevations and ruins slopes).
+* Don’t roundtrip through image editors that “helpfully” color manage or dither unless you’re sure it’s data-safe.
+
+---
+
+## 16-bit TIFF
+
+### Do
+
+* Prefer 16-bit integer TIFF if the source is already quantized (like a generator exporting 16-bit).
+* Confirm it’s single-channel grayscale (or at least that the height is in one channel consistently).
+* Use linear / non-color handling in any app that touches it.
+* Autolevel is still valuable: if the terrain only uses part of the range, you’re wasting bits.
+
+### Don’t
+
+* Don’t assume “TIFF” means “high fidelity.” Many TIFFs are 8-bit, RGB, or color-managed.
+* Don’t apply compression workflows that alter values (some pipelines do processing on save).
+
+---
+
+## 32-bit EXR
+
+### Do
+
+* Prefer 32-bit float EXR for maximum fidelity and safe negatives.
+* Use EXR when you’ll do lots of downstream processing (erosion, remaps, reprojection, tiling).
+* Still consider Autolevel if your data occupies a small numeric range or you’re going to bake down later.
+
+### Don’t
+
+* Don’t treat EXR like an image: avoid color transforms, tone mapping, or display LUT baking.
+* Don’t export “beauty” EXRs; export data EXRs (single channel if possible).
+
+---
+
+## RAW / R16 / .raw
+
+### Do
+
+* Use RAW when you control the pipeline end-to-end (e.g., Unreal landscape import).
+* Match bit-depth and endianness exactly (common: 16-bit, little-endian).
+* Keep a record of:
+  * resolution
+  * bit depth
+  * endian
+  * expected min/max elevation mapping
+* Use Autolevel + MATCH in Gaea so the RAW uses the full 0–65535 span before export.
+
+### Don’t
+
+* Don’t use RAW if you aren’t 100% sure of its format metadata—RAW has no header, so it’s easy to misread.
+* Don’t change resolution midstream without a deliberate resample strategy.
+
+---
+
+## 8-bit formats (PNG/JPG)
+
+### Do
+
+* Use 8-bit for masks, splatmaps, selectors, and weight maps.
+* Dither or blur thoughtfully if banding in masks becomes visible.
+
+### Don’t
+
+* Don’t use JPG for heights (lossy compression creates block artifacts and slope noise).
+* Don’t use 8-bit PNG for final displacement unless it’s intentionally low-fi.
+
+---
+
+## Common gotchas (format-agnostic)
+
+### Do
+
+* Keep NoData out of your normalization range (crop/mask before Autolevel if needed).
+* Work in linear data space end-to-end.
+* For tiled terrains: normalize/match consistently (global intent), not per-tile randomness.
+
+### Don’t
+
+* Don’t per-tile Autolevel with different min/max unless you *want* seams.
+* Don’t let any stage “optimize” or “enhance” your heightmap like it’s a photo.
+
+
+// from common-issues / index.md
+---
+title: Common Issues
+uid: common-issues
+order: 01
+---
+
+# Common Issues
+
+If you have problems such as terrain looks faceted or terrain is inside out or any other issue, see the page [Terrain Quality](/using/troubleshooting/terrains/terrain-quality.html){data-link-icon=''}.
+
+// from match-height / match-height.md
+---
+title: Match or Correct Heights
+uid: match-height
+---
+
+# Match or Correct Heights for Incoming Data
+
+When you bring real-world DEMs or heightmaps into Gaea, the numbers often **don’t match Gaea’s expected height conventions**. Some datasets are already in meters (with negatives), some are biased, some are scaled oddly, and many don’t line up with how you *intend* to use vertical range in your graph.
+
+A clean way to “re-home” that data into a predictable altitude ceiling—without guessing multipliers—is to use a **Constant + MATCH** workflow. It lets you say: “This imported terrain should top out at **X meters**,” and then forces everything to conform.
+
+## The goal: define a correct “highest altitude”
+
+Instead of trying to eyeball scale, you explicitly define the maximum elevation you want your imported terrain to represent (e.g., 2400 m, 8849 m, 500 m—whatever your project needs). Then you match the imported data to that reference.
+
+That means:
+
+* You keep your import **unclamped** (so you don’t crush data).
+* You normalize the incoming range (so it behaves nicely).
+* You **match** it to a known reference height (so the final amplitude makes sense in Gaea terms).
+
+## Step-by-step workflow
+
+### 1. Create a Constant as your “altitude ruler”
+
+1. Add a **Constant** node.
+2. Set its **Height** to the *highest altitude you want to use*, **in meters**.
+3. Gaea will convert that meter value into its internal percent-based height representation automatically.
+
+Think of this Constant as your “this is what 100% height means for this project” reference.
+
+### 2. Import your dataset with File (keep it unclamped)
+
+1. Add a **File** node and load your DEM/heightmap.
+2. Make sure it stays **Unclamped**.
+
+Why: clamping can silently flatten anything below/above the expected range, and imported DEMs often include values outside a neat 0–1 span.
+
+### 3. Autolevel right after the import
+
+Place an **Autolevel** node immediately after **File**.
+
+This does two helpful things:
+
+* It remaps the incoming terrain to a clean min→max range (no wasted headroom).
+* It makes the next step (matching) stable and predictable.
+
+### 4. Use MATCH to conform to your Constant reference
+
+1. Add a **MATCH** node after **Autolevel**.
+2. Plug the **Autolevel output** into MATCH’s main input.
+3. Plug the **Constant** into MATCH’s **Reference Input**.
+
+Now MATCH uses the Constant as the “target height context,” scaling your normalized imported terrain so its overall height aligns with the altitude you defined.
+
+## Why this works so well
+
+* **You declare intent** (“max altitude is 2400 m”) instead of guessing scale factors.
+* **Autolevel** ensures you’re matching a well-behaved, full-range signal.
+* **MATCH** then handles the conversion cleanly, so your terrain sits correctly within Gaea’s vertical expectations.
+
+## Quick practical notes
+
+* If your dataset includes bathymetry / negative elevations, keeping **File unclamped** is important. You can decide later how you want to treat below-sea regions (offset, mask, clamp, etc.).
+* If you’re working with tiles, try to apply the same reference Constant across the whole set to keep consistent vertical scale.
+* This workflow is about **getting the imported terrain into a correct, predictable altitude framework inside Gaea**; you can still do final vertical scaling in your DCC/engine if you’re targeting a specific displacement range.
+
+---
+
+# Alternate Technique
+
+If you expect your data to have no negative values, use the File node to import the data, then apply the Autolevel modifier in the [Modifier Stack](/ui/interface/property-editor/modifier-stack.html){data-link-icon=''}. Then apply the Height Remap modifier and clamp the values to whatever height you want.
+
+This is a much simpler technique and may be useful in most cases. However, for exact precision, it is better to use the sophisticated technique shown above.
+
+// from normalized-output / normalized-output.md
+---
+title: Using Normalized Output
+uid: normalized-output
+---
+
+# Using Normalized Output for Maximum Data Depth
+
+When you export a heightfield, you’re not really exporting “mountains” — you’re exporting numbers. And the *single biggest* quality win you can get (especially for 16-bit) is making sure those numbers use as much of the available range as possible before you save. That’s exactly what normalizing / autoleveling does: it remaps your current minimum height to 0 and maximum height to 1 (or to the full integer span), so you’re not wasting precision on empty headroom. 
+
+## Why “use the whole range” matters
+
+A stored heightfield has discrete steps:
+
+* 16-bit integer heightmaps have 65,536 possible values (0–65535).
+* 32-bit outputs are often 32-bit float (EXR) or sometimes 32-bit integer; either way, they can represent far more detail — *but* many pipelines still quantize, filter, or bake down later, so good range usage still helps.
+
+The key idea: the vertical “step size” equals (height range) / (number of code values).
+
+So if your terrain’s meaningful heights only occupy, say, 10% of the saved range (because you left lots of unused headroom above peaks or below sea level), you effectively throw away most of your bits. In 16-bit, using only 10% of the range gives you ~6,553 usable levels instead of 65,536 — that’s roughly 12.7 bits of effective precision, not 16. Result: more visible terracing/banding, noisier erosion micro-detail, and worse downstream filtering.
+
+Normalizing/autoleveling fixes that by stretching your actual min→max to the full span, minimizing quantization error everywhere.
+
+## Why it’s especially important for 16-bit
+
+16-bit is the common “game-friendly” choice, and it’s the most fragile:
+
+* Banding/terracing shows up first in gentle slopes and flats (dunes, plains, snowfields).
+* Erosion detail and small sediment variations can collapse into the same height code when the range is underused.
+* Any later processing (blur, resample, mip generation, engine import) amplifies those errors.
+
+In practice, if you’re exporting 16-bit, normalization is one of those “free quality” steps that costs nothing and pays back everywhere.
+
+## “But I need real-world meters!” — normalize now, scale later
+
+Normalization does *change absolute elevation* (it’s a remap), so the right workflow is:
+
+1. Normalize/autolevel before saving to maximize precision.
+2. In your final DCC / engine (Houdini, Unreal, Unity, etc.), apply a vertical scale (height multiplier / displacement scale) to restore the intended meter range.
+
+Conceptually:
+
+* Exported value:
+  `v = (h − hmin) / (hmax − hmin)`
+* Reconstructed height in DCC:
+  `h = v · (hmax − hmin) + hmin`
+
+That means you can keep your terrain *numerically optimal* on disk, while still ending up with the correct real-world heights in the final scene.
+
+### Practical tip: save the metadata
+
+If you want perfect reconstruction, keep track of (or export alongside) your terrain’s original min/max elevation (or your desired total relief in meters). Then your “Height Scale” in the DCC becomes deterministic instead of eyeballed.
+
+## A note on tiles: avoid per-tile normalization seams
+
+One caveat: if you normalize each tile independently, each tile gets its *own* min/max, which can cause seams where values don’t match across borders.
+
+Best practice:
+
+* Normalize before tiling (one global min/max), or
+* Force a consistent min/max across all tiles.
+
+## The bottom line
+
+Normalizing (autolevel) before saving is great because it:
+
+* Uses the entire bit depth you’re paying for (critical in 16-bit).
+* Preserves subtle slopes and micro-relief by minimizing quantization error.
+* Keeps exports robust through resampling, filtering, and engine import.
+* Lets you do the “artistically meaningful” part — real-world vertical scaling — later, non-destructively, in the final DCC app.
+// from roundtrips / roundtrip.md
+---
+title: Avoid Roundtrips
+uid: roundtrips
+order: 02
+---
+
+
+# Avoid Roundtrips
+
+A "roundtrip" is when you rebuild in Gaea and then have to re-import (or relink) the terrain, masks, bitmaps, and other outputs in your DCC because the file paths changed.
+
+## The problem
+
+If your Build Destination uses an incremental pattern like `[+++]`, Gaea creates a new output folder for every build. That preserves history, but it also changes the asset paths every time—so your materials and file references in your CG application break and must be updated.
+
+If you use a fixed (static) output path instead, your links stay valid—but each build overwrites the last one, so you lose per-build history.
+
+## The solution
+
+Gaea 2 includes an option in [Build Options](/ui/interface/build-options/index.html){data-link-icon=''} (Build tab) called `Maintain a static folder with the latest copy`.
+
+![Enable "Maintain a static folder" to maintain a constant folder with the latest build](/.data/assets/build-settings-prime-folder.png)
+
+Enable it *while still using* an incremental destination pattern like `[+++]`:
+
+* Gaea continues to write each build into its own numbered folder (so you keep every build).
+* Gaea also copies the newest build into a sibling folder named `Latest`.
+
+Point your DCC file links to the `Latest` folder. Your references stay stable across rebuilds, while you still retain archived outputs per build.
+
+Optional: enable `Copy the .terrain file to the build folder` to store an exact snapshot of the terrain file used for each build. This is useful for tracking changes across iterations and rolling back to a specific version.
+
+
+```
+
+This is what a typical folder structure would look like in this scenario.
+
+c:\Gaea\Builds\Sample\
+├── 001\
+│   ├── Erosion2.exr
+│   ├── Erosion2_Deposits.exr
+│   ├── Erosion2_Flow.exr
+│   ├── Erosion2_Wear.exr
+│   ├── report.json
+│   ├── report.txt
+│   └── Sample.terrain
+├── 002\
+│   ├── Erosion2.exr
+│   ├── Erosion2_Deposits.exr
+│   ├── Erosion2_Flow.exr
+│   ├── Erosion2_Wear.exr
+│   ├── report.json
+│   ├── report.txt
+│   └── Sample.terrain
+├── 003\
+│   ├── Erosion2.exr
+│   ├── Erosion2_Deposits.exr
+│   ├── Erosion2_Flow.exr
+│   ├── Erosion2_Wear.exr
+│   ├── report.json
+│   ├── report.txt
+│   └── Sample.terrain
+└── Latest\
+    ├── Erosion2.exr
+    ├── Erosion2_Deposits.exr
+    ├── Erosion2_Flow.exr
+    ├── Erosion2_Wear.exr
+    └── Sample.terrain
+    
+```
+// from break-project / break-project.md
+---
+title: Separate a Project 
+uid: break-project
+---
+
+# Keep Projects Light by Splitting Them Into Multiple Files
+
+Big terrains get heavy fast. Even if your graph is well-optimized, a single “everything in one file” project can balloon memory use, slow previews, and make experimentation risky.
+
+A simple way to stay fast (and sane) is to **break your project into multiple parts**—then pass data forward by exporting stable results as **Gaea RAW** and ingesting them in the next file with a **File** node.
+
+:::tip
+Think of each file as a “chapter”: Shape → Detail → Output. Keep each chapter focused and your iteration speed stays high.
+:::
+
+## Why this helps
+
+Splitting a project into separate files gives you several practical wins:
+
+* **Lower memory consumption**: You only load the graphs you need for the task you’re doing right now.
+* **Faster iteration**: Smaller graphs preview and rebuild faster than monolithic ones.
+* **Safer experimentation**: Try new techniques in a new file without breaking a working baseline.
+* **Collaboration-friendly**: Different people can work on different portions (macro shape, erosion pass, texturing, masks) without stepping on each other.
+* **Source control friendly**: Smaller, purpose-built files reduce churn and make changes easier to track.
+
+## A simple split that works well: Shape vs. Detailing
+
+Most terrains naturally divide into two phases:
+
+### 1. Base Shape File (macro)
+
+Use this file for:
+
+* Landmass, primary forms, broad elevation design
+* Large-scale masks and region planning
+* Any “foundation” work you don’t want to constantly re-run later
+
+When the macro shape is in a good place, **export the key outputs as Gaea RAW** (heightfield, and any critical masks you’ll need downstream).
+
+### 2. Detail File (micro)
+
+In a new file:
+
+* Add a **File** node and ingest the RAW outputs
+* Perform higher-cost detailing: erosion variants, sediment passes, fine noise, breakup, surface detail, specialized masks
+* Iterate aggressively—because your upstream foundation is now stable and lightweight
+
+:::tip
+If you’re unsure what will matter later, export one extra “utility” mask (e.g., broad slope/height zones). It’s cheap insurance for downstream flexibility.
+:::
+
+## Work in modules (even inside the same terrain)
+
+You can apply the same approach beyond “shape vs detail”:
+
+* **Erosion Lab**: A dedicated file just for erosion exploration—export the best result back into the pipeline.
+* **Mask Factory**: One file that produces clean masks (flow, wear zones, deposition regions) for use elsewhere.
+* **Biome/Color Pass**: Separate file for albedo/biome logic so you can iterate visuals without touching terrain structure.
+
+## Variations without fear
+
+Instead of branching inside one giant graph, do it with files:
+
+* Duplicate the detail file and try a new erosion method or experimental node chain.
+* Keep your “gold master” foundation untouched.
+* Swap between variations by pointing a File node at a different RAW export.
+
+This makes “what if we try…” almost free—because you’re not destabilizing the entire project.
+
+## Team workflow benefits
+
+Splitting files makes it much easier to divide labor:
+
+* Artist A: base landmass and macro design
+* Artist B: erosion and surface detail
+* Artist C: masks, biomes, and export packaging
+
+As long as everyone agrees on the **shared interface** (the RAW outputs and naming), the pipeline stays clean.
+
+## Source control tips
+
+Terrain files and RAW outputs are often large/binary, so a modular approach helps:
+
+* Commit smaller `.terrain` files more frequently (less change risk).
+* Store large RAW exports in a predictable folder (and consider Git LFS if needed).
+* Use consistent names like:
+
+  * `Terrain_BaseShape_v03.raw`
+  * `Terrain_Masks_Slope_v03.raw`
+  * `Terrain_Detail_ErosionA_v02.terrain`
+
+:::tip
+When chaining files, keep your terrain definition consistent (scale, dimensions, and intended resolution). If you change the base terrain’s scale later, you’ll likely need to re-export RAW and refresh any downstream files that ingest it.
+:::
+
+---
+
+# Organize Modular Projects Without Breaking Links
+
+When you split a terrain into multiple `.terrain` files (Shape → Detail → Lookdev), you gain speed and stability—but you also introduce more *outputs* (RAWs, masks, builds) that need to stay predictable.
+
+A clean folder layout + stable “latest” build paths lets you iterate hard and [Avoid Roundtrips](/guides/scenarios/helpful-info/roundtrip.html){data-link-icon=''} in your DCC.
+
+:::tip
+Design your folder structure so source files never move, RAW handoff files have stable names, and DCC links always point at a static “Latest” folder.
+:::
+
+## Recommended folder layout
+
+Here’s a practical structure that works for solo and teams:
+
+```text
+Project_Terrain/
+├── _docs/
+│   ├── notes.md
+│   └── refs/
+├── _dcc/
+│   ├── blender/
+│   ├── houdini/
+│   ├── maya/
+│   └── unreal/
+├── _gaea/
+│   ├── 00_shape/
+│   │   ├── Terrain_Shape.terrain
+│   │   └── exports/
+│   │       ├── Terrain_Shape_height.raw
+│   │       ├── Terrain_Shape_masks_height.raw
+│   │       └── Terrain_Shape_masks_slope.raw
+│   ├── 10_detail/
+│   │   ├── Terrain_Detail.terrain
+│   │   └── exports/
+│   │       ├── Terrain_Detail_deposition.raw
+│   │       ├── Terrain_Detail_flow.raw
+│   │       └── Terrain_Detail_height.raw
+│   └── 20_lookdev/
+│       ├── Terrain_Lookdev.terrain
+│       └── exports/
+│           ├── Terrain_Lookdev_color.exr
+│           └── Terrain_Lookdev_material_masks.exr
+├── _builds/
+│   ├── shape/
+│   │   ├── 2026-01-01_[+++]/
+│   │   └── Latest/
+│   ├── detail/
+│   │   ├── 2026-01-01_[+++]/
+│   │   └── Latest/
+│   └── final/
+│       ├── 2026-01-01_[+++]/
+│       └── Latest/
+└── _publish/
+    └── Latest/
+        ├── height.raw
+        ├── masks/
+        └── textures/
+```
+
+### What goes where
+
+* **`_gaea/`**: your editable `.terrain` files, split by stage
+* **`exports/`** inside each stage: *handoff* outputs (usually Gaea RAW + key masks) that the next stage ingests via **File**
+* **`_builds/`**: heavy build outputs (8K/16K, multi-texture sets, etc.)
+* **`_publish/Latest/`**: optional “clean” packaging layer for the rest of the pipeline (especially helpful if you want DCC to reference one simple folder)
+
+## Naming conventions that scale
+
+Keep names *semantic* and stable. Avoid embedding versions in filenames unless you truly need multiple variants live.
+
+### Terrain files
+
+* `Terrain_Shape.terrain`
+* `Terrain_Detail.terrain`
+* `Terrain_Lookdev.terrain`
+
+### RAW handoff exports (stable interface)
+
+* `Terrain_Shape_height.raw`
+* `Terrain_Shape_masks_slope.raw`
+* `Terrain_Detail_height.raw`
+* `Terrain_Detail_flow.raw`
+
+
+:::
+Treat RAW exports like an API between files: stable names, stable meaning. If you change what a file outputs, change the name (or add a new output), not the path.
+:::
+
+## Avoid roundtrips with “Latest” folders
+
+This is the big workflow unlock.
+
+In your Build Destination, you can keep an incremental history **and** a stable folder for DCC links by enabling:
+
+* `Maintain a static folder with the latest copy` (in [Build Options](/ui/interface/build-options/index.html){data-link-icon=''}, Build tab)
+
+Then use an incremental destination pattern (like `[+++]`) for history, while your DCC always points to:
+
+* `_builds/final/Latest/`
+
+Result:
+
+* You keep per-build archives (numbered folders)
+* Your DCC references never change (always `Latest`)
+
+:::tip
+If your DCC points at numbered build folders, you’re guaranteeing roundtrips. Point it at Latest and keep numbered folders strictly as history.
+:::
+
+You can read more about [Avoid Roundtrips](/guides/scenarios/helpful-info/roundtrip.html){data-link-icon=''}.
+
+### Optional: snapshot the exact `.terrain`
+
+If you want perfect reproducibility for archived builds, enable:
+
+* `Copy the .terrain file to the build folder`
+
+That gives you a time-stamped “this exact graph made this output” record.
+
+## A “handoff-first” workflow that stays stable
+
+**In Shape file**
+
+* Export: `Terrain_Shape_height.raw` (and a few masks)
+* Next file ingests via File node (path stays constant)
+
+**In Detail file**
+
+* Ingest shape RAW
+* Export: `Terrain_Detail_height.raw` (+ detail masks)
+* Lookdev ingests detail RAW (again: stable path)
+
+**In Final/Lookdev builds**
+
+* Build to `_builds/final/[+++]/`
+* Let Gaea maintain `_builds/final/Latest/`
+* DCC references `_builds/final/Latest/…`
+
+## Team + source control notes
+
+* Put editable `.terrain` files under `_gaea/` and treat that as “source.”
+* Put `_builds/` in ignore rules (it’s usually huge and regenerable).
+* Decide whether RAW handoff exports live in version control:
+
+  * **Small team / fast iteration**: keep RAWs out of VC, regenerate as needed
+  * **Distributed team / reproducibility**: store critical RAW handoffs (or manage them via an asset system / LFS)
+
+:::warning
+If multiple people work in parallel, agree on the “contract” files:
+Terrain_Shape_height.raw, …_slope.raw, etc. Don’t rename them casually.
+:::
+
+## One more trick: a clean “Publish Latest”
+
+If your DCC wants a simplified structure, make `_publish/Latest/` the only folder external tools see.
+
+* Copy (or script-copy) from `_builds/final/Latest/` into `_publish/Latest/`
+* Keep names consistent (`height.raw`, `masks/`, `textures/`)
+* DCC points to `_publish/Latest/` forever
+
+This is especially nice when different Gaea stages output different internal naming, but your downstream pipeline expects a consistent package.
+
+// from cli-for-teams / cli-for-teams.md
+---
+title: Command Line for Teams
+uid: cli-for-teams
+---
+
+# Command Line Basics for Teams
+
+The command line is how you turn a “personal” terrain file into a *repeatable team asset*.
+
+It enables:
+
+- consistent builds across machines,
+- quick automation (nightly builds, CI, farm rendering),
+- reproducible variations (variables + seed).
+
+Gaea provides two command line entry points:
+
+- `Gaea.exe` (UI-side CLI tasks)
+- `Gaea.Swarm.exe` (Build Swarm automation)
+
+## Use “Copy Command Line” First
+
+In the UI, use **Build → Copy Command Line** to get the exact command for the current file, with fully qualified paths and variable defaults.
+
+That gives your team a known-good baseline command to version and reuse.
+
+## `Gaea.exe` Basics
+
+`Gaea.exe` is mainly for tasks like activation/deactivation and diagnostics.
+
+Common flags include:
+
+- `-Path <file.terrain>`
+- `-Activate <key or license file>`
+- `-Deactivate`
+- `-CPUOnly`
+- `-SafeMode`
+- `-Verbose`
+
+:::tip
+Verbose logging is great for debugging, but don’t leave it on permanently unless you need it.
+:::
+
+## `Gaea.Swarm.exe` Basics (Build Automation)
+
+`Gaea.Swarm.exe` is what you use to build terrains headlessly.
+
+Minimum viable build:
+
+```sh
+Gaea.Swarm --Filename "D:\Project\Terrain_Final.terrain"
+````
+
+### Build a specific profile
+
+```sh
+Gaea.Swarm --Filename "D:\Project\Terrain_Final.terrain" --profile "Final_8K"
+```
+
+### Build a specific region
+
+```sh
+Gaea.Swarm --Filename "D:\Project\Terrain_Final.terrain" --profile "Final_8K" --region "Volcano_Closeup"
+```
+
+### Ignore baked cache (clean build)
+
+```sh
+Gaea.Swarm --Filename "D:\Project\Terrain_Final.terrain" --ignorecache
+```
+
+### Set a seed (repeatable variation)
+
+```sh
+Gaea.Swarm --Filename "D:\Project\Terrain_Final.terrain" --seed 1337
+```
+
+
+## Working with Variables and Expressions
+
+See [Variables](/developers/extensibility/scripting-and-expressions/variables.html){data-link-icon='xmark'} and [Expressions](/developers/extensibility/scripting-and-expressions/expressions.html){data-link-icon='function'} on how to enable variable driven properties that can be manipulated through the command line.
+
+### Set variables (great for team presets)
+
+Single variable:
+
+```sh
+Gaea.Swarm --Filename "D:\Project\Terrain_Final.terrain" -v ErosionStrength:0.63
+```
+
+Multiple variables:
+
+```sh
+Gaea.Swarm --Filename "D:\Project\Terrain_Final.terrain" -v ErosionStrength:0.63 -v Snowline:0.42
+```
+
+Variables from file:
+
+```sh
+Gaea.Swarm --Filename "D:\Project\Terrain_Final.terrain" --vars "D:\Project\vars_final.json"
+```
+
+## Team Tips That Actually Matter
+
+1. Use **Build Profiles** to standardize output sets (Shape, Detail, Final).
+2. Store variable presets in version control (`vars_final.json`, `vars_game.json`).
+3. Use `--seed` to make “random” variation repeatable.
+4. Prefer Build Swarm for heavy builds—UI resources can compete with Swarm.
+
+---
+
+For full details on accepted command line arguments and CLI methodology see [Command Line Automation](/developers/automation/cli/command-line-automation.html){data-link-icon=''}
+// from large-projects / index.md
+---
+title: Large Projects
+uid: large-projects
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from separate-regions / separate-regions.md
+---
+uid: separate-regions
+title: Develop Regions Separately
+---
+
+# Design Closeups First Instead of Zooming In
+
+A lot of people coming from older World Machine workflows are used to the idea of “zooming in” after they’ve established a terrain: build a big landscape, pick an interesting region, then crank the resolution and refine the closeup.
+
+That can work with **pure fractal detail**, because fractals can add detail at any scale. But once you introduce **physically-inspired processes** (especially erosion) this “zoom later” approach starts to break down.
+
+## Why zooming in breaks realism
+
+Fractals don’t care about world scale. Erosion does.
+
+When you zoom into a region of a finished terrain and rebuild it at higher resolution, you often get:
+
+* **Erosion fidelity mismatch**: gullies, channels, and sediment patterns were computed at the original scale. Zooming changes your “meters per pixel,” so the same erosion settings no longer represent the same physical size.
+* **Feature scale drift**: what used to be a valley becomes a canyon, or what used to be believable rills become oversized grooves because the terrain’s context changed.
+* **Loss of context**: erosion depends on upstream drainage, slope continuity, and catchment area. Cropping/zooming can change flow behavior and produce different results.
+* **Detail that looks pasted-on**: you compensate with noise/fractals, but it can clash with the erosion language of the larger terrain.
+
+:::tip
+If your closeup needs to hold up in a hero shot, treat it like its own asset with its own scale, erosion, and build budget.
+:::
+
+## The modern Gaea approach
+
+With Gaea, it’s usually better to build the “zoomed-in” element **first**, at the resolution and fidelity you need, and then place it into a larger landscape.
+
+Instead of “zooming into a world,” you “compose a world around a hero asset.”
+
+The key advantage: **both the hero element and the surrounding landscape can live in the same graph**, but they can be built independently at high resolution as needed.
+
+## Example workflow: a volcano and its surroundings
+
+Imagine you need:
+
+* A hero 8K asset of the volcano crater and upper slopes for close shots
+* A broader 8K (or lower) landscape that includes the volcano in context for wide shots
+
+### Build the hero volcano first
+
+1. Create the volcano at the intended real-world scale (crater size, slope angles, caldera shape).
+2. Run your erosion and detailing where it matters: rim breakup, ash flows, gullies, deposits.
+3. Keep this branch clean and focused so it can be built at 8K efficiently.
+4. Bake or export the volcano heightfield (and any masks you care about) so it becomes a stable “module.”
+
+### Compose it into a larger landscape
+
+1. Build the surrounding terrain as its own branch (mountain ranges, plains, foothills).
+2. Use **Transform** to position and scale the volcano module correctly.
+3. Use **Embed**/**Combine**/**Transpose** as needed to seat the volcano into the landscape (clean integration beats brute-force blending).
+
+Now you have one graph that contains both:
+
+* A high-fidelity volcano asset branch
+* A larger world branch that provides context
+
+And you can build what you need, when you need it.
+
+:::tip
+Think “modules” instead of “zoom levels.” Your volcano is a module with its own resolution target and erosion language, and the world is another module that supports it.
+:::
+
+## Why this is better long-term than the old zoom workflow
+
+* **Safer iteration**: you can change the surrounding world without risking the hero volcano (and vice versa).
+* **Resolution where it matters**: build the volcano at 8K for hero shots, while keeping the broader landscape cheaper until you truly need more.
+* **Consistent scale**: erosion, deposits, and micro-forms remain physically coherent because they were authored at the correct scale from the start.
+* **Multiple deliverables**: the same graph can output a hero asset for closeups and a wide environment for shots—without forcing one to compromise for the other.
+
+:::tip
+If you try to “fix” a zoomed-in closeup by piling on fractal detail, it may look sharper, but it often won’t match the erosion scale language of the larger terrain. Viewers feel that mismatch immediately.
+:::
+
+## The only real cost is planning
+
+Yes, this approach asks you to plan a little earlier:
+
+* Decide what is a hero element
+* Decide what needs 8K fidelity
+* Decide how it will integrate into the wider world
+
+But once you adopt it, you’ll find it’s **easier, more predictable, and far less fragile** than the old “zoom in after the fact” workflow—especially when erosion and realism matter.
+
+// from meshes / index.md
+---
+title: Meshes
+uid: meshes
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from tangent-space-normals-and-warped-maps / tangent-space-normals-and-warped-maps.md
+---
+title: Tangent-Space Normals and Warped Maps
+uid: tangent-space-normals-and-warped-maps
+order: 01
+---
+
+# Tangent-Space Normals and Warped Maps
+
+## Tangent-space Normals
+
+The MeshWarp node can create tangent-space normals maps that provide very high quality normals that can be used with lower-resolution Meshes/LODs.
+
+Connect any Mesher node to a MeshWarp node, and enable 'Generate Normals' and set any flip/channel settings you need to. Make sure the MeshWarp node is set to Export.
+
+This will produce a Normals map bitmap output that you can use on your meshes. In addition, you can Mesher's `Artifact Reduction` option to remove high-frequency detail to make the mesh even cleaner. The Normals will provide all the high-frequency, small detail to enrich your terrain.
+
+:::danger
+MeshWarp will only work with Mesher nodes set to `Tris` export.
+:::
+
+## Warping Texture Maps and Masks
+
+The MeshWarp node, along with generating tangent-space normals, will also apply nuanced warping to mask and color maps to make them fit the exported Mesh and LODs with a higher level of fidelity.
+
+![](/.data/assets/image-(1).png)
+
+Drag and drop a connection on the MeshWarp node and select "Add new port" to add additional ports. 
+
+### LOD Export
+
+If your Mesher node has LODS set, then MeshWarp will generate appropriately warped versions of your connected maps for each LOD.
+
+![](/.data/assets/image-(59).png)
+
+:::info
+MeshWarp will use the incoming node's Name as the prefix for the file. So if you have a node `PerlinMaskRocks` then the output will be `PerlinMaskRocks_LOD1` while the high-resolution version has no suffix.
+
+It is also recommended that the previous node (PerlinMaskRocks, in this example) not be marked for Export as there may be file conflicts between the two as they save to the same name for the high-res version.
+:::
+
+
+// from bake-and-offload / bake-and-offload.md
+---
+title: Bake and Offload Data
+uid: bake-and-offload
+---
+
+# Conserve Memory by Baking Nodes
+
+At high resolutions, node previews can consume **a lot** of memory—and they’ll often take longer to process than the same graph at 1K–4K. If parts of your graph are stable (even temporarily), the simplest way to keep Gaea responsive is to **bake those nodes** so they no longer need to be recalculated during regular work.
+
+If you have portions of the graph that are not changing, even for the moment, the easiest thing is to [bake the nodes](/using/using-gaea/baking-nodes/index.html).
+
+:::tip
+Bake your nodes at the final build resolution whenever possible—or at least as high as you can comfortably manage.
+:::
+
+## Why Baking Saves Memory
+
+Baking captures a node’s current output at a chosen resolution and lets Gaea reuse that data instead of rebuilding the upstream chain every time you preview or build. This reduces:
+
+* **Live RAM usage** (less upstream data needs to remain in memory)
+* **Rebuild time** (fewer nodes are recomputed)
+* **Graph “thrash”** when tweaking downstream nodes
+
+If you need to make changes later, simply **unbake** the node, adjust it, and bake again.
+
+## Bake in Batches
+
+If you have a lot of nodes and you try to bake everything at 8K or 16K in one go, you may run out of memory. Instead, bake **one (or a few) nodes at a time**:
+
+1. Pick a stable “checkpoint” node near the end of a branch.
+2. Bake it.
+3. Move to the next branch or checkpoint.
+
+As you bake, Gaea can keep only the baked nodes that still matter for your current work session—specifically the **linchpin nodes**—and unload baked ancestors that are no longer required. This can dramatically reduce live memory consumption.
+
+:::tip
+For best results, bake “downstream checkpoints” first (nodes closer to where you’re currently working). That increases the chance earlier baked ancestors can be unloaded.
+:::
+
+## Persist baked previews to disk
+
+If you’re memory-constrained, consider enabling **Cache Previews to Disk**. This stores baked/processed previews on disk instead of keeping them in RAM, which can help large graphs stay workable across sessions.
+
+## Baked Data in Builds
+
+Once nodes are baked, your normal builds can reuse that baked data—so builds become noticeably faster and less memory-hungry, especially in complex graphs.
+
+:::warning
+For 16K builds, we highly recommend a minimum of 128GB RAM. 256GB is preferred. Also remember that 16K nodes may not fit in your GPU memory, depending on your hardware and build settings.
+:::
+// from bake-required / bake-required.md
+---
+title: Bake Only What Matters
+uid: bake-required
+---
+
+
+# Use Gates to Bake Only What Matters
+
+Baking is one of the simplest ways to keep large projects fast and memory-friendly—especially when you’re working with Regions, tiled builds, or heavy simulations.
+
+But baking manually, node by node, gets old fast.
+
+That’s where **Gates** come in.
+
+## What Gates Are For
+
+A **Gate** is a simple “checkpoint” node you place at the end of a chain you want to treat as *static*.
+
+Then, instead of baking dozens of nodes individually, you can bake *only the gated checkpoints* using one command.
+
+## The Gate Workflow
+
+1. Identify the parts of your graph that are stable (base shapes, imports, foundational masks).
+2. Place a **Gate** node at the end of each of those chains.
+3. Use **Bake → Bake Required Nodes** to bake all Gates in one go.
+4. If you need to revise the base work later, use **Bake → Unbake All**, make changes, then bake again.
+
+:::tip
+The **Terrain tab filter → Required Baking** is a quick way to see what must be baked before a Region/Hybrid/Tiled workflow.
+:::
+
+## Why This Saves Memory (A Lot)
+
+When baked caches are loaded, Gaea keeps only the “linchpin” baked nodes required by any unbaked downstream work—older ancestors can be unloaded. This reduces live memory consumption dramatically.
+
+In practice, that means:
+
+- fewer rebuilds,
+- smaller working set in RAM,
+- faster iteration on the parts you’re actively changing.
+
+## Where Gates Shine
+
+### Regions
+Regions often require initial generators to be baked before preview/build. Gates make that painless.
+
+### Tiled and Huge Builds
+Bake stable foundations once, then iterate on erosion, surface, and lookdev downstream without reprocessing everything upstream.
+
+### Team Graphs
+Gates also make handoffs cleaner: “Everything before this Gate is locked.”
+
+:::warning
+Bake your gated checkpoints at the highest practical resolution for your workflow. If you bake too low, you may reduce preview clarity for downstream decisions.
+:::
+
+// from hygiene-orphans / hygiene-orphans.md
+---
+title: Graph Hygiene - Orphan Nodes
+uid: hygiene-orphans
+---
+
+# Graph Hygiene: Find and Remove Orphan Nodes
+
+Large graphs tend to accumulate “just-in-case” experiments: half-finished branches, abandoned masks, and one-off tests that never make it into the final output.
+
+Those loose ends are called **orphan nodes**—nodes that aren’t connected (or don’t contribute to any final output). Keeping them around adds clutter, increases mental load, and can waste resources.
+
+## Find Orphans Fast
+
+The easiest way to locate orphans is via the Data View.
+
+1. Open **Data View → Terrain tab**.
+2. Use the **Filter** dropdown.
+3. Choose **Orphan Nodes**.
+
+Gaea will isolate the nodes that aren’t participating in the graph’s outcome, so you can deal with them intentionally.
+
+:::tip
+While you’re here, also check:
+- **Nodes with Error** (to catch broken links and invalid setups)
+- **Heavy Nodes** (to find performance bottlenecks)
+:::
+
+## Decide What to Do with Them
+
+Once you have the orphan list, pick one of these outcomes:
+
+### Delete
+If you’re confident the branch is dead, delete it. This keeps the graph readable and reduces “false complexity”.
+
+### Park It
+If you want to keep an experiment for reference:
+
+1. Create a dedicated **Scratch** tab or group.
+2. Move orphans into it.
+3. Rename the group clearly: `SCRATCH - do not ship`.
+
+This keeps your production graph clean while preserving R&D work.
+
+:::warning
+Don’t let “maybe later” nodes live in the main graph area. If it’s worth keeping, it’s worth parking.
+:::
+
+## Keep the Graph Future-Proof
+
+A clean graph scales better when:
+
+- someone else opens it months later,
+- you need to split work across multiple files,
+- you build at extreme resolutions (8K/16K or tiled).
+
+Treat orphan cleanup like sweeping the workshop floor: small habit, huge payoff.
+
+// from workflow / index.md
+---
+title: Workflow
+uid: workflow
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from name-outputs / naming-output.md
+---
+title: Name Outputs
+uid: name-outputs
+---
+
+
+# Build Output Naming That Won’t Fight Your DCC
+
+Most “pipeline pain” isn’t about file formats—it’s about *file paths*.
+
+If your DCC links keep breaking, your builds feel chaotic, or your team can’t tell which output belongs to what, this is usually a naming and destination strategy problem.
+
+## Know How Gaea Names Files
+
+By default, exported files follow this pattern:
+
+`<Name or NodeName>_<PortName>.<extension>`
+
+That’s good news: it’s predictable and scales well if you keep names disciplined.
+
+:::tip
+If you don’t want the primary port to add `_Out`, you can disable that suffix in Build Options.
+:::
+
+## A Practical Naming Strategy
+
+### Node naming
+Use short, meaningful node names that read well in a folder:
+
+- `Mountain_Base`
+- `Volcano_Crater`
+- `Erosion_Primary`
+- `Masks_Slope`
+
+Avoid:
+
+- `final_final2`
+- `test123`
+- `lol`
+
+### Port selection
+Only export what you will actually use downstream.
+
+- Use **Primary Only** when you don’t need every diagnostic port.
+- Export wear/flow/deposits only when your material setup depends on them.
+
+### Tiles (if applicable)
+If you’re doing tiled builds, set tile naming so it plays nicely with your tools:
+
+- **Tile Suffix Pattern** like `_y%Y%_x%X%`
+- **Add Leading Zeroes** for consistent sorting
+- **Start Numbering from 1** if your pipeline expects 1-based indexing
+- **Organization**: consider “folders for each node” to prevent collisions
+
+## Avoid Roundtrips
+
+A “roundtrip” is when you rebuild and your DCC links break because the output folder changed.
+
+If you use an incremental destination pattern like `[+++]`, you keep build history—but you also change the folder every build.
+
+The best practice is:
+
+1. Keep the incremental build folders (history).
+2. Enable **Maintain a static folder with the latest copy**.
+3. Point your DCC to the `Latest` folder.
+
+Now you get:
+
+- stable links in Maya/Houdini/Unreal/etc,
+- full build archives for rollback.
+
+:::tip
+If you also enable “Copy the .terrain file to the build folder”, each build becomes a fully traceable snapshot.
+:::
+
+## Recommended Output Layout
+
+- `_builds/Final/001/ ...`
+- `_builds/Final/002/ ...`
+- `_builds/Final/Latest/ ...`
+
+And your DCC always references:
+
+`_builds/Final/Latest`
+
+That’s it. No relinking, no guessing, no lost history.
+

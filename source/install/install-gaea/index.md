@@ -2,6 +2,7 @@
 icon: box
 title: Install Gaea
 uid: install-gaea
+order: 00
 ---
 
 ![The Gaea 2.0 User Interface](/.data/assets/gaea-ui2x.webp)
@@ -12,7 +13,11 @@ Download Gaea from [https://quadspinner.com/download/](https://quadspinner.com/d
 
 You will also require [.NET 8.0](https://download.visualstudio.microsoft.com/download/pr/7f4d5cbc-4449-4ea5-9578-c467821f251f/b9b19f89d0642bf78f4b612c6a741637/dotnet-runtime-8.0.0-win-x64.exe) and [Visual C++ Runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe). 
 
-The Gaea installer will download and install those if needed. An internet connection will be required to do that. If you are going to install in an air-gaped/offline environment, then you may want to install those beforehand.
+The Gaea installer will download and install those if needed. An internet connection will be required to do that. 
+
+:::warning
+If you are going to install in an air-gapped/offline environment, then you may want to install the prerequisites beforehand.
+:::
 
 ## System Requirements
 
@@ -46,13 +51,13 @@ Gaea is available in various forms to provide flexible methods of deployment, wh
 
 ## Setup Executable
 
-<div align="left">![EXE](/.data/assets/image%20(43).png)</div>
+<div align="left">![EXE](/.data/assets/image-(43).png)</div>
 
 The setup exe is our primary - and recommended - way of installing Gaea. It provides for both @regular-installationand @portable-installationwhile also setting up additional registry entries required for the [gaea2unreal](/plugins/gaea2unreal/) and [gaea2houdini](/plugins/gaea2houdini/) bridges.
 
 ## 7-Zip Package
 
-<div align="left">![7zip file](/.data/assets/image%20(44).png)</div>
+<div align="left">![7zip file](/.data/assets/image-(44).png)</div>
 
 The 7-zip package contains the exact same files as the setup executable; however, it is purely portable and does not create registry entries. It is very useful for advanced users or for System Administrators to create custom deployments. See @mass-deployment on how to enable Gaea2Unreal and Gaea2Houdini functionality in pure portable installs such as this.
 

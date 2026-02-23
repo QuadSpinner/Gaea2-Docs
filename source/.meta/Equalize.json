@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Equalize",
+  "Description": null,
+  "Family": "Adjust",
+  "FamilyIcon": "x-equalize",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "eq",
+  "Usage": 10,
+  "SearchString": "Equalize Adjust  eq",
+  "SearchWords": [
+    "equalize",
+    "adjust",
+    "",
+    "eq"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

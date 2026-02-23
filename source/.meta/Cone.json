@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Cone",
+  "Description": null,
+  "Family": "Gradient",
+  "FamilyIcon": "family-gradient",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "con",
+  "Usage": 11,
+  "SearchString": "Cone Gradient  con",
+  "SearchWords": [
+    "cone",
+    "gradient",
+    "",
+    "con"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

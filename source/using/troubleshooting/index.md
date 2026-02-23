@@ -1,6 +1,7 @@
 ---
-title: troubleshooting
+title: Troubleshooting
 uid: troubleshooting
+hidden: true
 ---
 
 # In this section

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Uplift",
+  "Description": null,
+  "Family": "Landscape",
+  "FamilyIcon": "family-landscape",
+  "Toolbox": "Terrain",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "",
+  "Usage": 34,
+  "SearchString": "Uplift Landscape  ",
+  "SearchWords": [
+    "uplift",
+    "landscape",
+    "",
+    ""
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

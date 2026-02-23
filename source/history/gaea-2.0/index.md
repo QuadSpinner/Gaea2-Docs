@@ -1,6 +1,7 @@
 ---
-title: gaea-2.0
+title: Gaea 2.0
 uid: gaea-2.0
+hidden: true
 ---
 
 # In this section

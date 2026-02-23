@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Halftone",
+  "Description": null,
+  "Family": "Render",
+  "FamilyIcon": "x-halftone",
+  "Toolbox": "Output",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "",
+  "Usage": 12,
+  "SearchString": "Halftone Render  ",
+  "SearchWords": [
+    "halftone",
+    "render",
+    "",
+    ""
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

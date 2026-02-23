@@ -1,0 +1,160 @@
+﻿[
+  {
+    "Name": "General",
+    "Description": "Controls how long erosion runs. Longer durations produce more elaborate terrain reshaping, while shorter durations help preserve original forms.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Duration",
+    "Description": "Controls how long erosion runs. Longer durations produce more elaborate terrain reshaping, while shorter durations help preserve original forms.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Downcutting",
+    "Description": "Governs how deeply water cuts into the terrain, carving valleys and channels.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Erosion Scale",
+    "Description": "Sets the overall size of erosion features, from fine gullies to massive ravines.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "Randomizes the erosion pattern while keeping other settings the same.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "NoErosion",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Sediment Discharge",
+    "Description": "Fine, light sediments that travel far and fill gullies with subtle detail.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Suspended Load",
+    "Description": "Fine, light sediments that travel far and fill gullies with subtle detail.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Discharge Angle",
+    "Description": "Sets the slope at which suspended load settles.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Bed Load",
+    "Description": "Heavier sediments like gravel that fill and shape gullies and slopes.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Discharge Angle",
+    "Description": "Sets the slope at which suspended load settles.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Coarse Sediments",
+    "Description": "The heaviest materials (boulders, scree) that deposit on steep slopes.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Discharge Angle",
+    "Description": "Sets the slope at which suspended load settles.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "DepositionBoost",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "ExtraDepositionBoost",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Shape",
+    "Description": "Enables artistic control over how erosion reshapes terrain.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Shape",
+    "Description": "Enables artistic control over how erosion reshapes terrain.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Shape Sharpness",
+    "Description": "Defines how sharp or concave ridges become after erosion.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Shape Detail Scale",
+    "Description": "Sets the scale of simulated details, from broad ravines to fine gullies.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Orographic Influence",
+    "Description": "Toggles orographic influence on or off.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Enable",
+    "Description": "Toggles orographic influence on or off.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Directional Precipitation",
+    "Description": "Simulates rain falling more intensely from one direction to create rain shadows.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Direction",
+    "Description": "Sets the direction from which rainfall comes most strongly.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Rain Shadow",
+    "Description": "Controls how strongly terrain blocks rainfall from certain directions.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Slope",
+    "Description": "Limits rainfall effects to specific elevation ranges.",
+    "Type": "Float2",
+    "IsGroup": false
+  },
+  {
+    "Name": "Altitude",
+    "Description": "Limits rainfall effects to specific slope ranges.",
+    "Type": "Float2",
+    "IsGroup": false
+  },
+  {
+    "Name": "Reverse",
+    "Description": "Inverts the influence mask for creative control.",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

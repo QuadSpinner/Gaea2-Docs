@@ -1,0 +1,493 @@
+// from extensibility / index.md
+---
+icon: square-terminal
+title: extensibility
+uid: extensibility
+order: 01
+---
+
+# Extensibility
+// from macros-best-practices / best-practices.md
+---
+icon: medal
+title: Best Practices
+uid: macros-best-practices
+order: 03
+---
+
+# Macros
+
+**Macros** let you create your own custom nodes by combining existing Gaea nodes into a reusable package. They are ideal for encapsulating complex workflows or techniques into a single, manageable node. This saves time, avoids duplication, and makes it easy to share your methods with others.
+
+**Macros** look and behave like any other node in Gaea, but under the hood, they contain a predefined graph. You can expose specific parameters from that internal graph as properties on the macro, allowing for a clean, streamlined interface while retaining full control over the underlying logic.
+
+:::success
+Macros are scheduled for Gaea 2.3
+:::
+
+// from building-macros / building-macros.md
+---
+icon: puzzle
+title: Building Macros
+uid: building-macros
+order: 02
+---
+
+# Macros
+
+**Macros** let you create your own custom nodes by combining existing Gaea nodes into a reusable package. They are ideal for encapsulating complex workflows or techniques into a single, manageable node. This saves time, avoids duplication, and makes it easy to share your methods with others.
+
+**Macros** look and behave like any other node in Gaea, but under the hood, they contain a predefined graph. You can expose specific parameters from that internal graph as properties on the macro, allowing for a clean, streamlined interface while retaining full control over the underlying logic.
+
+:::success
+Macros are scheduled for Gaea 2.3
+:::
+
+// from macros / index.md
+---
+icon: puzzle-piece
+title: Macros
+uid: macros
+order: 01
+---
+
+# Macros
+
+**Macros** let you create your own custom nodes by combining existing Gaea nodes into a reusable package. They are ideal for encapsulating complex workflows or techniques into a single, manageable node. This saves time, avoids duplication, and makes it easy to share your methods with others.
+
+**Macros** look and behave like any other node in Gaea, but under the hood, they contain a predefined graph. You can expose specific parameters from that internal graph as properties on the macro, allowing for a clean, streamlined interface while retaining full control over the underlying logic.
+
+:::success
+Macros are scheduled for Gaea 2.3
+:::
+
+// from expressions / expressions.md
+---
+title: Expressions
+uid: expressions
+order: 02
+icon: function
+---
+
+# Expressions
+
+Expressions are modifiers applied to either a property, such as a slider, or to the variable bound to the property. It allows you to make modifications to the incoming value.
+
+Unlike [Variables](/developers/extensibility/scripting-and-expressions/variables.html){data-link-icon='xmark'}, Expressions are not centralized and reused. They exist on a single property.
+
+:::info
+At the moment, only Float (decimal) and Int (whole number) properties support Expressions.
+:::
+
+## Create an Expression
+
+Click the Property Binding menu next to a property and select Expression. 
+
+![](/.data/assets/expr_create.png)
+
+This will bring up the Edit Expression dialog. In the expression, the slider's value is represented by `x` so any modifications you make to `x` will be applied to the property.
+
+For example, let's say you want much finer control over your slider, then you can apply a multiplier of `0.01` to the value thereby reducing the value to 1% of its original.
+
+![](/.data/assets/expr_edit.png)
+
+### Modifying Variables
+
+If your Slider is bound to a Variable, then `x` represents the variable. This is a powerful way of modifying a variable without having to create a second one.
+
+For example, you have Mountain node with the `Height` property bound to a variable and then a FractalTerrace whose `Spacing` property is also bound to the same variable.
+
+You want the Height of the FractalTerrace to be proportionally linked to the Height of the Mountain. So, you would enter the expression: <mark style="color:yellow;">`x * 0.3`</mark> so the FractalTerrace spacing is always 30% of the Mountain's height. This means no matter what the height, the FractalTerrace spacing remains consistently placed at the same location.
+
+![The FractalTerrace spacing remains consistent no matter the height of the Mountain.](/.data/assets/expr_demo1.gif)
+
+![The expression takes the value of 2.82 and reduces it to 0.84.](/.data/assets/expr_demo2.png)
+
+## Additional Functions and Strategies
+
+You can also use other variables in your expressions by simply using their name as a variable. 
+
+For example, if you have two variables called Height and Strength, you can create the expression: 
+
+```
+x * (Height / Strength)
+```
+
+Here are some additional ideas.
+
+```clike
+// Inverting the value:
+         1 - x
+
+// Dividing by other variable:
+         x / Octaves
+
+// Reducing the power:
+         x * 0.01
+
+// Use functions:
+         median(Octaves, Ridge, Scale, Seed)
+
+// Add with a random:
+         random() + x
+
+// If statements:
+         if(SomeVar, 0.3, 0.6)
+```
+
+For a full list of available options, see [Broken link](broken-reference)
+
+// from functions / functions.md
+---
+title: Allowed Functions
+uid: functions
+---
+
+The following functions, operators, and facilities are usable in the [Math](/reference/nodes/utility/math.html){data-link-icon=''} node as well as [Expressions](/developers/extensibility/scripting-and-expressions/expressions.html){data-link-icon='function'}.
+
+```
+Mathematical operators (+, -, *, /, %, ^)
+
+Equalities & Inequalities (=, ==, <>, !=, <, <=, >, >=)
+
+Assignment (:=, +=, -=, *=, /=, %=)
+
+Logical operators (and, nand, nor, not, or, xor, xnor, mand, mor)
+
+Functions (abs, avg, ceil, clamp, erf, erfc, exp, expm1, floor, frac, hypot, iclamp, inrange, log, log10, log1p, log2, logn, max, min, mod, mul, ncdf, pow, root, round, roundn, sgn, sqrt, sum, swap, trunc, equal, not_equal)
+
+Trigonometry (acos, acosh, asin, asinh, atan, atan2, atanh, cos, cosh, cot, csc, sec, sin, sinc, sinh, tan, tanh, deg2rad, rad2deg, deg2grad, grad2deg)
+
+Control structures (if-then-else, ternary conditional, switch case, return-statement)
+
+Loop structures (while loop, for loop, repeat until loop, break, continue)
+
+Optimization of expressions (constant folding, strength reduction, operator coupling, special functions and dead code elimination)
+
+String operations (equalities, inequalities, logical operators, concatenation and sub-ranges)
+
+Expression local variables, vectors and strings
+
+User defined variables, vectors, strings, constants and function support
+
+Multivariate function composition
+
+Multiple sequence point and sub expression support
+
+Runtime checks (vector bounds, string bounds, loop iterations/execution-time bounds, assert statements)
+
+Compile-time checks (function parameter type checking, compilation and evaluation stackoverflow checks, compilation running time)
+
+Numerical integration and differentiation
+
+Vector Processing: BLAS-L1 (axpy, axpby, axpb), all/any-true/false, assign, count, reverse, rotate-left/right, shift-left/right, sort, nth_element, iota, sum, kahan-sum, dot-product, copy, diff, thresholding
+
+File-IO package (routines include: open, close, read, write, getline, support for binary and text modes)
+```
+// from scripting-and-expressions / index.md
+---
+icon: gear-code
+title: Overview
+uid: scripting-and-expressions
+---
+
+# Scripting and Expressions
+
+Gaea is built around a very powerful, flexible, and extensible core. With Gaea 2.1.1 we are introducing a range of new advanced power-user features that can help you transform a Gaea project into a parametric powerhouse.
+
+![youtube.com](https://www.youtube.com/watch?v=hqgtH7-pyt4)
+
+These offerings are the first portion of what will be the [TOR Platform SDK](/developers/extensibility/sdk/index.html){data-link-icon='square-terminal'}.
+
+[Variables](/developers/extensibility/scripting-and-expressions/variables.html){data-link-icon='xmark'}. Define a variable such as Float, Integer, Choice, Bool, Color, or String. These variables can be bound to different node properties. Variables can be controlled through the UI or the [Command Line Automation](/developers/automation/cli/command-line-automation.html){data-link-icon=''}.
+
+[Expressions](/developers/extensibility/scripting-and-expressions/expressions.html){data-link-icon='function'}. Expressions are modifiers applied to either a property, such as a slider, or to the variable bound to the property. It allows you to make modifications to the incoming value.
+
+[Math Node](/developers/extensibility/scripting-and-expressions/math-node.html){data-link-icon='calculator-simple'}. The Math node is powerful computational node that let you write your own shapes using scripting. It can consume Variables you declare in the Gaea UI so you can actually control your script through external controls.
+
+[Binding Variables](/ui/interface/property-editor/binding-variables.html){data-link-icon=''}. This not a direct feature but a byproduct of [Variables](/developers/extensibility/scripting-and-expressions/variables.html){data-link-icon='xmark'}. You can expose a specific property from a node, and have it be available just like other Variables and edit your node from the Variable Editor panel.
+
+// from math-node / math-node.md
+---
+title: Math Node
+uid: math-node
+order: 03
+icon: calculator-simple
+---
+
+# Math Node
+
+The Math node is a deceptively powerful node with a very simple interface. It is essentially a blank canvas for you to create any kind of mathematical functions or even complex algorithms.
+
+![](/.data/assets/math_node.png)
+
+The Math node can work standalone as a Generator, but can also accept up to 3 inputs. These inputs can be accessed as `a`,`b`,`c` respectively. Note, those are pre-defined variables and can't be used for any other purposes except to access data from the port.
+
+You can also access coordinates per-pixel using `x` and `y` .
+
+### Syntax and Functions
+
+The Math node can accept the following.
+
+```basic
+// Mathematical operators
++, -, *, /, %, ^
+
+// Equalities & Inequalities 
+=, ==, <>, !=, <, <=, >, >=
+
+// Assignment 
+:=, +=, -=, *=, /=, %=
+
+// Logical operators 
+and, nand, nor, not, or, xor, xnor, mand, mor
+
+// Functions
+abs, avg, ceil, clamp, erf, erfc, exp, expm1, floor, frac,
+hypot, iclamp, inrange, log, log10, log1p, log2, logn, max,
+min, mod, mul, ncdf, pow, root, round, roundn, sgn, sqrt,
+sum, swap, trunc, equal, not_equal
+
+// Trigonometry
+acos, acosh, asin, asinh, atan, atan2, atanh, cos, cosh,
+cot, csc, sec, sin, sinc, sinh, tan, tanh, deg2rad,
+rad2deg, deg2grad, grad2deg
+
+// Control structures
+if-then-else, ternary conditional, switch case, return-statement
+
+// Loop structures
+while loop, for loop, repeat until loop, break, continue
+
+// Expression local variables, vectors and strings
+
+// User defined variables, vectors, strings, constants and function support
+```
+
+// from variables / variables.md
+---
+title: Variables
+uid: variables
+icon: xmark
+order: 01
+---
+
+# Variables
+
+Variables provide a "token" you can store values into, confine them to specific ranges, and then bind one or more node properties to them. This gives you an external way to control a node, and even create a concerted set of changes based on a single variable.
+
+Gaea supports Float (decimal), Int (whole number), Choice (dropdowns), Color, Range (float2), and String. There is an additional Undefined variable type for advanced use and error handling.
+
+## Creating a Variable
+
+There are two ways to create variables: by creating a variable directly, or by creating one from a node property.
+
+### Create an unbound variable
+
+Go to the Vars panel in the Data View, and use the Create Variable menu to create a variable.
+
+![](/.data/assets/vars_menu.png)
+
+This will create a variable with an automatically given name, and then bring up the Edit Variable dialog so you can rename the variable and modify its properties.
+
+![](/.data/assets/vars_newVar.png)
+
+:::info
+While you can choose to name your variables anything, it is highly recommended that you keep the names to filename friendly characters such as `AZ`/ `az`/ `0-9` and underscores. Avoid spaces whenever possible, and non ASCII characters.
+
+This will ensure code safety and easy CLI automation.
+:::
+
+Now this variable is ready. It can be viewed in the Variables tab of the Data View.
+
+![](/.data/assets/vars_newVarView.png)
+
+### Creating a Variable from a Property
+
+You can open the Property Binding menu represented by the diamond icon. Select `Bind to > New Variable`.
+
+![](/.data/assets/var_bindMenu_new.png)
+
+This creates a variable based on this property. If it is a float (decimal) value, then it will use its Min and Max values to define the range. It will automatically bind itself to this property.
+
+![](/.data/assets/var_boundToProp.png)
+
+## Binding Variables
+
+Once you have one or more variables defined, you can open the Property Binding menu and bind the property to any variable. You can also unbind a property the same way.
+
+![](/.data/assets/var_bindMenu.png)
+
+Once a property is bound, the normal Slider or other control will be replaced with a Variable control. You will see the name of the variable and the current value. You can click the value to edit it but note that it will also change the Variable's value and affect any other property bound to this variable.
+
+![](/.data/assets/vars_boundView.png)
+
+### Unbind a Property
+
+If you open the Property Binding menu, and select to Bind to > Unbind, you can unbind that property.
+
+![](/.data/assets/vars_unbind.png)
+
+When unbinding, you can choose to just unbind that property and leave the Variable as it is, or delete the variable as well. 
+
+:::warning
+Deleting a variable will unbind any other properties that may be bound to it.
+:::
+
+## Editing and Managing Variables
+
+Gaea provides two easy way to display the Variables: as organized by you, or grouped by Nodes.
+
+[Ungrouped / Custom Order](/.data/assets/vars_normalMode.png) ![Grouped by Nodes](/.data/assets/vars_groupByNode.png)
+
+In the **Grouped By Node** view, all variables bound to a node are grouped by node, unless you have a variable bound to two or more properties, then those variables are separated into the **MultiBound Properties** group.
+
+### Editing Variables
+
+By toggling Edit Mode, you can switch to plain view of all variables. You can edit the values manually, rename the variables, and drag the variables to reorder them. You can also right-click a variable to bring up the Edit Dialog.
+
+![](/.data/assets/vars_editMode.png)
+
+In this dialog, you can change all aspects of the variable including variable type. For Float, Range, and Int variables, you can also specify a Min and Max for the variable's range.
+
+:::danger
+**Changing variable types can be dangerous!** It can cause large incompatibilities if you switch from say an Int to a String. The bound nodes may not know how to respond.
+:::
+
+### Editing the User Interface
+
+In the Create Variable menu, you can choose UI Decorations: specifically, Separator and Group.
+
+You can see that Decorations are shown separately in Edit Mode. You can move them around and edit the UI as needed.
+
+![Edit Mode](/.data/assets/vars_editMode.png) ![Custom UI modifications.](/.data/assets/vars_normalMode.png)
+
+When you switch back from Edit Mode, you will see that the custom UI has been implemented.
+
+### Deleting a Variable
+
+To delete a variable, toggle Edit Mode, right-click the variable and select Delete. This will remove the variable and unbind any properties that were bound to this variable. They will return to their normal state.
+
+## Manipulating Variables from the Command Line
+
+See [Command Line Automation](/developers/automation/cli/command-line-automation.html){data-link-icon=''}
+
+
+// from anatomy-of-node / anatomy-of-node.md
+---
+hidden: true
+icon: x-ray
+title: Anatomy of Node
+uid: anatomy-of-node
+order: 03
+---
+
+# Anatomy of Node
+
+A Gaea node provides complex functionality packaged in a pre-built `Node` class that can be used to create your own nodes quickly and painlessly.
+
+:::info
+This is a preview of an unreleased feature, and subject to change.
+:::
+
+
+
+Let's take a look at the basic structure of a Gaea Node:
+
+```
+import QuadSpinner.TOR.Framework;
+import QuadSpinner.Gaea.Engine;
+import QuadSpinner.Gaea.Engine.Framework;
+
+namespace Daredevil.Nodes;
+
+public class CustomNode : Node
+{
+    public CustomNode()
+    {
+        Name = "Custom Node";
+        
+        // Add second port. In/Out are always defined.
+        Ports.Add(new Port("CustomInput", PortType.In | PortType.Required));
+    }
+    
+    // Declare a Property and give it a Parameter attribute
+    // to have it become visible in the UI
+    [Parameter(0.5f, 0f, 1f)]
+    public float Strength { get; set; } = 0.5f; // Give it a default value.
+    
+    [Parameter(Parameters.Seed)]
+    public int Seed { get; set; } = Global.RandomSeed();
+    
+    // The main code where the input is processed and saved.
+    public override void Build()
+    {
+        // Get a Map from the In port.
+        Map map = In.GetData();
+        
+        if(map == null) throw ExHelper.RequiredNotConnected();
+        
+        // Classic loop
+        for(int y = 0; y < map.Resolution.Height; y++)        
+        {
+            for(int x = 0; x < map.Resolution.Width; x++)
+            {
+                // add your processing code here
+                map[x,y] = 1f - map[x,y];
+            }
+        }
+        
+        // Efficient lambda
+        map.Process(x => Vector<float>.One - x);
+        
+        // Intrinsic functions with fluent syntax
+        map = map.Invert()
+                 .Autolevel()
+                 .Shaper(-0.5f)
+                 .Warp(0.5f, 0.2f, Seed)
+                 .Clamp(0.3f, 0.7f);
+                 
+        map *= (Noises.Perlin(0.5, Seed + 5) * 0.3);
+        
+        // Cache the processed data.
+        Commit(map);
+    }
+
+}
+```
+
+You can use many powerful and efficient low-level functions such as Autolevel, Clamp, Blur, etc. These methods are part of the Engine and built with extremely fast processing code.
+
+If you wish to use C++ for processing, you can P/Invoke your C++ code from the `Build()` method.
+
+// from tor-platform-sdk / index.md
+---
+icon: square-terminal
+title: TOR Platform SDK
+uid: tor-platform-sdk
+order: 01
+---
+
+# TOR Platform SDK
+
+Gaea is built on QuadSpinner's proprietary TOR Platform, a powerful terrain processing engine.
+
+The TOR Platform leverages cutting-edge technologies such as advanced vector computations, hybrid CPU/GPU processing, SIMD/SPMD processing, and a full framework dedicated to creating and managing complex terrain graphs.
+
+The TOR Platform is built on Microsoft .NET 8.0 and is programmed using C#.
+
+:::success
+## Unreleased Feature Information
+
+This part of the documentation discusses features that will be released in the future.
+
+The current [Overview](/developers/extensibility/scripting-and-expressions/index.html){data-link-icon='gear-code'} features are a basic built-in exposure of the SDK features.
+:::
+
+###  Extensibility
+
+The TOR Platform SDK lets developers write their own custom nodes and plugins for Gaea using C# and C++.
+
+The TOR framework has a robust infrastructure that focuses on ease-of-use and reusability, so you can write complex nodes with minimal code.
+
+

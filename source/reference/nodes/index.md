@@ -1,6 +1,7 @@
 ---
-title: nodes
+title: Nodes
 uid: nodes
+hidden: true
 ---
 
 # In this section

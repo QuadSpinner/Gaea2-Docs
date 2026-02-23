@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Crater",
+  "Description": "Crater primitive creates different types of crater shapes.",
+  "Family": "Primitive",
+  "FamilyIcon": "x-crater",
+  "Toolbox": "Terrain",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "cra",
+  "Usage": 46,
+  "SearchString": "Crater Primitive  cra",
+  "SearchWords": [
+    "crater",
+    "primitive",
+    "",
+    "cra"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

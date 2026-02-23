@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "CraterField",
+  "Description": null,
+  "Family": "Landscape",
+  "FamilyIcon": "x-craterfield",
+  "Toolbox": "Terrain",
+  "Classification": "Generator",
+  "Keywords": [
+    "craterfield"
+  ],
+  "ShortCode": "cf",
+  "Usage": 50,
+  "SearchString": "CraterField Landscape craterfield cf",
+  "SearchWords": [
+    "craterfield",
+    "landscape",
+    "craterfield",
+    "cf"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Contours",
+  "Description": null,
+  "Family": "Cartography",
+  "FamilyIcon": "x-contours",
+  "Toolbox": "Surface",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "cn",
+  "Usage": 11,
+  "SearchString": "Contours Cartography  cn",
+  "SearchWords": [
+    "contours",
+    "cartography",
+    "",
+    "cn"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

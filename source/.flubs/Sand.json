@@ -1,0 +1,44 @@
+﻿[
+  {
+    "Name": "Scale",
+    "Description": "The scale of the sand pattern.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Direction",
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Chaos",
+    "Description": "",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Softness",
+    "Description": "Softness of the sand pattern.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Height",
+    "Description": "The height of the sand pattern.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Warp by Terrain",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process.",
+    "Type": "Int32",
+    "IsGroup": false
+  }
+]

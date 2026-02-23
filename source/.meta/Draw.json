@@ -1,0 +1,32 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Draw",
+  "Description": "Draw draws entire mountain ranges in the shape you choose.",
+  "Family": "Basic",
+  "FamilyIcon": "family-basic",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    "vector mask"
+  ],
+  "ShortCode": "vm",
+  "Usage": 203,
+  "SearchString": "Draw Basic vector mask vm",
+  "SearchWords": [
+    "draw",
+    "basic",
+    "vector",
+    "mask",
+    "vm"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

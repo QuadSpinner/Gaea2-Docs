@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Glacier",
+  "Description": "Glacier creates flowing glaciers on mountain tops.",
+  "Family": "Snow",
+  "FamilyIcon": "family-snow",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    "ice"
+  ],
+  "ShortCode": "gl",
+  "Usage": 11,
+  "SearchString": "Glacier Snow ice gl",
+  "SearchWords": [
+    "glacier",
+    "snow",
+    "ice",
+    "gl"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": true,
+  "AccumulationType": null,
+  "HasCustomColorization": true,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

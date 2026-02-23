@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Canyon",
+  "Description": "Canyon is a simple, fast, and detailed canyon primitive. It creates a drainage based river canyon.",
+  "Family": "Landscape",
+  "FamilyIcon": "x-canyon",
+  "Toolbox": "Terrain",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "ny",
+  "Usage": 67,
+  "SearchString": "Canyon Landscape  ny",
+  "SearchWords": [
+    "canyon",
+    "landscape",
+    "",
+    "ny"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

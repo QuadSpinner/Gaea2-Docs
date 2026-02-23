@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Craggy",
+  "Description": null,
+  "Family": "Rocky",
+  "FamilyIcon": "family-rocky",
+  "Toolbox": "Surface",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "cg",
+  "Usage": 123,
+  "SearchString": "Craggy Rocky  cg",
+  "SearchWords": [
+    "craggy",
+    "rocky",
+    "",
+    "cg"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

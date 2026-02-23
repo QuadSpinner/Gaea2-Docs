@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Debris",
+  "Description": null,
+  "Family": "Scatter",
+  "FamilyIcon": "family-scatter",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    "debris"
+  ],
+  "ShortCode": "db",
+  "Usage": 69,
+  "SearchString": "Debris Scatter debris db",
+  "SearchWords": [
+    "debris",
+    "scatter",
+    "debris",
+    "db"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": "Debris",
+  "HasCustomColorization": true,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

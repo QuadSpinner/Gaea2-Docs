@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "FlowMapClassic",
+  "Description": null,
+  "Family": "Generative",
+  "FamilyIcon": "family-generative",
+  "Toolbox": "Derive",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "fl1",
+  "Usage": 2,
+  "SearchString": "FlowMapClassic Generative  fl1",
+  "SearchWords": [
+    "flowmapclassic",
+    "generative",
+    "",
+    "fl1"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

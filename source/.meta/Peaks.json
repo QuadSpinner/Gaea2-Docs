@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Peaks",
+  "Description": null,
+  "Family": "Aspect",
+  "FamilyIcon": "family-aspect",
+  "Toolbox": "Derive",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "pk",
+  "Usage": 29,
+  "SearchString": "Peaks Aspect  pk",
+  "SearchWords": [
+    "peaks",
+    "aspect",
+    "",
+    "pk"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

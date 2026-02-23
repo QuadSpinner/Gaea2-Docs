@@ -1,0 +1,46 @@
+﻿[
+  {
+    "Name": "Method",
+    "Description": "Specifies the style of ground texture to generate, affecting the overall appearance and character of the surface.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Harsh",
+        "Description": "Creates a ground texture with strong, pronounced features and high contrast, simulating rugged or eroded terrain.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Rocky",
+        "Description": "Generates a texture with rocky details, emphasizing stone-like patterns and roughness typical of stony ground.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Rough",
+        "Description": "Produces a generally uneven and coarse texture, adding subtle irregularities for a natural, weathered look.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Strength",
+    "Description": "Controls the intensity of the ground texture effect. Higher values make the texture more prominent and detailed.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Coverage",
+    "Description": "Adjusts how much of the terrain surface is affected by the ground texture, determining the extent of the effect.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Density",
+    "Description": "Sets the concentration of texture features across the surface. Higher density results in more frequent and closely packed details.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

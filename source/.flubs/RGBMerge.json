@@ -1,0 +1,80 @@
+﻿[
+  {
+    "Name": "Enhance R",
+    "Description": "Selects the enhancement method for the Red channel before merging. Adjusts the contrast and distribution of red values to improve the final output.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "No enhancement is applied to the Red channel. The input values are used as-is.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Autolevel",
+        "Description": "Automatically stretches the Red channel's values to use the full available range, increasing contrast.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Equalize",
+        "Description": "Redistributes the Red channel's values to achieve a more uniform histogram, enhancing detail and balance.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Enhance G",
+    "Description": "Selects the enhancement method for the Green channel before merging. Adjusts the contrast and distribution of green values to improve the final output.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "No enhancement is applied to the Green channel. The input values are used as-is.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Autolevel",
+        "Description": "Automatically stretches the Green channel's values to use the full available range, increasing contrast.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Equalize",
+        "Description": "Redistributes the Green channel's values to achieve a more uniform histogram, enhancing detail and balance.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Enhance B",
+    "Description": "Selects the enhancement method for the Blue channel before merging. Adjusts the contrast and distribution of blue values to improve the final output.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "No enhancement is applied to the Blue channel. The input values are used as-is.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Autolevel",
+        "Description": "Automatically stretches the Blue channel's values to use the full available range, increasing contrast.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Equalize",
+        "Description": "Redistributes the Blue channel's values to achieve a more uniform histogram, enhancing detail and balance.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  }
+]

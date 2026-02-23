@@ -1,0 +1,32 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "FlowMap",
+  "Description": null,
+  "Family": "Generative",
+  "FamilyIcon": "family-generative",
+  "Toolbox": "Derive",
+  "Classification": "Mask",
+  "Keywords": [
+    "flow fm"
+  ],
+  "ShortCode": "fl",
+  "Usage": 98,
+  "SearchString": "FlowMap Generative flow fm fl",
+  "SearchWords": [
+    "flowmap",
+    "generative",
+    "flow",
+    "fm",
+    "fl"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

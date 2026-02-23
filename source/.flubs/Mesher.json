@@ -1,0 +1,236 @@
+﻿[
+  {
+    "Name": "Format",
+    "Description": "Specifies the file format for the exported mesh. Choose the format that best fits your workflow or target application.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "OBJ",
+        "Description": "Exports the mesh in the standard OBJ format, widely supported for 3D models and compatible with most 3D software.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "FBX",
+        "Description": "Exports the mesh in the FBX format, suitable for advanced workflows and supporting animation, hierarchy, and metadata.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "DAE",
+        "Description": "Exports the mesh in the Collada (DAE) format, an open standard for exchanging 3D assets between applications.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "GLTF",
+        "Description": "Exports the mesh in the glTF format, optimized for real-time rendering and web-based 3D applications.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "GLB",
+        "Description": "Exports the mesh in the binary GLB format, a compact version of glTF for efficient storage and transmission.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Scale",
+    "Description": "Sets the unit or normalization method for the exported mesh coordinates, determining how the model's size is interpreted.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Normalized",
+        "Description": "Exports the mesh with coordinates normalized to a 0–1 range, useful for workflows that require unitless or relative positions.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Meter",
+        "Description": "Exports the mesh with coordinates in meters, matching real-world scale for compatibility with engineering and GIS applications.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Kilometer",
+        "Description": "Exports the mesh with coordinates in kilometers, suitable for large-scale terrain or geospatial datasets.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Topology",
+    "Description": "Specifies the type of mesh topology used for the exported model, affecting how the surface is constructed and rendered.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Tris",
+        "Description": "Generates the mesh using triangles for all faces, ensuring compatibility with all 3D engines and applications.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Quads",
+        "Description": "Generates the mesh using quadrilaterals where possible, preferred for modeling and sculpting workflows.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "AdaptiveTris",
+        "Description": "Uses adaptive triangulation to optimize mesh density, reducing polygon count in flat areas and increasing detail where needed.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Topology Warning",
+    "Description": "",
+    "Type": "String",
+    "IsGroup": false
+  },
+  {
+    "Name": "Vertices Per Side",
+    "Description": "Sets the resolution of the mesh by specifying the number of vertices along each side. Higher values increase detail but also file size.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Artifact Reduction",
+    "Description": "Applies post-processing to reduce visual artifacts in the mesh, such as smoothing or correcting problematic geometry.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "No artifact reduction is applied; the mesh is exported as generated.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Low",
+        "Description": "Applies minimal artifact reduction, preserving most original detail while correcting minor issues.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Med",
+        "Description": "Applies moderate artifact reduction, balancing detail preservation with improved mesh quality.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Create Normals",
+    "Description": "If enabled, generates normal vectors for the mesh, improving shading and rendering quality in 3D applications.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Create UVs",
+    "Description": "If enabled, generates UV coordinates for the mesh, allowing textures to be mapped accurately onto the surface.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "UV Origin",
+    "Description": "Specifies the origin point for the UV coordinate system, affecting how textures are mapped onto the mesh.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "TopLeft",
+        "Description": "Sets the UV origin to the top-left corner, matching conventions used in some graphics applications.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "BottomLeft",
+        "Description": "Sets the UV origin to the bottom-left corner, standard in most 3D engines and texture workflows.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Create Walls",
+    "Description": "Creates vertical walls along the edges of the mesh, useful for generating closed or extruded terrain models.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Center Pivot",
+    "Description": "If enabled, centers the mesh's pivot point at the origin, making it easier to manipulate in 3D applications.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Level of Detail",
+    "Description": "Specifies the level of detail (LOD) for the exported mesh, allowing for simplified versions to be generated for performance optimization.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "Exports the mesh at full resolution with no LOD applied.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "LOD1",
+        "Description": "Exports a simplified mesh with reduced detail, suitable for distant rendering or performance-sensitive applications.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "LOD2",
+        "Description": "Exports a further simplified mesh with even fewer polygons.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "LOD3",
+        "Description": "Exports a mesh with progressively lower detail, useful for very distant or background objects.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "LOD4",
+        "Description": "Exports a highly simplified mesh, minimizing polygon count for maximum performance.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "LOD5",
+        "Description": "Exports an extremely low-detail mesh, suitable for extreme distance or preview purposes.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "LOD6",
+        "Description": "Exports the lowest possible detail mesh, retaining only the broadest features.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "LOD Info",
+    "Description": "",
+    "Type": "String",
+    "IsGroup": false
+  },
+  {
+    "Name": "Information",
+    "Description": "",
+    "Type": "Byte",
+    "IsGroup": false
+  }
+]

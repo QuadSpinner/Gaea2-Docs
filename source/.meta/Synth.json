@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Synth",
+  "Description": "Synth takes a bitmap image (photo or artwork) and converts it to CLUT map that can be used with a texture mask to colorize your terrain.",
+  "Family": "Color",
+  "FamilyIcon": "family-color",
+  "Toolbox": "Colorize",
+  "Classification": "Colorizer",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "sy",
+  "Usage": 39,
+  "SearchString": "Synth Color  sy",
+  "SearchWords": [
+    "synth",
+    "color",
+    "",
+    "sy"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

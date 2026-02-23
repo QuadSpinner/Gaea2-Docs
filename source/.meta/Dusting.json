@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Dusting",
+  "Description": null,
+  "Family": "Snow",
+  "FamilyIcon": "family-snow",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    "snow"
+  ],
+  "ShortCode": "ds",
+  "Usage": 37,
+  "SearchString": "Dusting Snow snow ds",
+  "SearchWords": [
+    "dusting",
+    "snow",
+    "snow",
+    "ds"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

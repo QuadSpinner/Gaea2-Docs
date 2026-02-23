@@ -8,10 +8,5 @@ order: 03
 
 # Properties
 
-- **Count**  
-  
-- **Accuracy**  
-  
-
 
 

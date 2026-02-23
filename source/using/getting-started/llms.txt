@@ -1,0 +1,442 @@
+// from terrain-basics / index.md
+---
+icon: play
+title: Terrain Basics
+uid: terrain-basics
+---
+
+# Terrain Basics
+
+Gaea uses nodes to create a graph that generates a terrain.
+
+**Nodes** are building blocks for creating terrain features. Each node represents a specific function, like generating shapes, adding erosion, or applying textures.
+
+**Graph** is where you connect these nodes in sequence to build complex terrains. Think of it as a flowchart that outlines each step in creating your landscape.
+
+## Your First Terrain
+
+This terrain graph is made of 3 building blocks, or Nodes. Each represents an object or action.
+
+The first node creates a Mountain. It has a random shape, generated through mathematics.
+
+![Mountain Node](/.data/assets/Gaea_-_Untitled_02-30-40-AM.png)
+
+The second node is an Adjust node which, as the name suggests, adjusts the shape. In this case we use its Shaper property to bulk up the mountain and make it more expansive.
+
+![Adjust Node](/.data/assets/sbJD05BwRh.png)
+
+The third and final node is an [Erosion_2](../understanding-erosion/erosion_2/) node. Erosion is one of the key processes in nature that forms a terrain's shape and character through slow modifications over eons. Gaea does this for you in a flash. This third node takes the basic mountain shape and applies a lot of erosion to make it more realistic - creating strong gullies on some sides and softer, mineral-deposited slopes on others.
+
+![Erosion2 Node](/.data/assets/sQdSAyb7YN.png)
+
+This is how most terrains work: You start with one shape or several, adjust them, and then process them with simulations like Erosion.
+
+// from advanced-methods / advanced-methods.md
+---
+icon: 4
+title: Advanced Methods
+uid: advanced-methods
+order: 04
+---
+
+# Advanced Methods
+
+## Moving Terrains with Transform
+
+![youtube.com](https://www.youtube.com/watch?v=DqGoNGHs0a8)
+
+## Layering Sediments
+
+![youtube.com](https://www.youtube.com/watch?v=N5zWk6qdU3U)
+
+// from elaborate-terrains / elaborate-terrains.md
+---
+icon: 3
+title: Elaborate Terrains
+uid: elaborate-terrains
+order: 03
+section: true
+---
+
+# Elaborate Terrains
+
+## Large River Valley
+
+![youtube.com](https://www.youtube.com/watch?v=Od8n_QCoHDg)
+
+
+
+## Alien Craterfield
+
+![youtube.com](https://www.youtube.com/watch?v=mavy7rFpY9s)
+
+// from exporting-elements / exporting-elements.md
+---
+icon: 5
+title: Exporting Elements
+uid: exporting-elements
+order: 05
+---
+
+# Exporting Elements
+
+![](/.data/assets/beyond-3.webp)
+
+Gaea is primarily an asset generator designed for creating and exporting terrains to be used in other applications. It supports all major heightfield and mesh formats, ensuring compatibility with various platforms and rendering tools.
+
+## Key Export Elements
+
+Below is a list of common elements you may wish to export, and the nodes you can use to get those elements.
+
+![](/.data/assets/beyond-2.webp)
+
+### The Terrain
+
+<div align="left">![](/.data/assets/r2.webp) ![](/.data/assets/sophia-2_-_ACDSee_Photo_Studio_Home_2024_06-03-23-PM.webp)</div>
+
+This can either be a 32-bit displacement map or a high precision mesh. It is the most essential part of your project. Game engines would use 16-bit displacement maps.
+
+### Color Map
+
+<div align="left">![](/.data/assets/r4.webp)</div>
+
+If you have constructed a color map that will be the Diffuse/Albedo map for your terrain, then this will be exported as either an 8-bit or 16-bit bitmap.
+
+### Masks
+
+<div align="left">![](/.data/assets/Data_Flow.webp) ![](/.data/assets/Data_RockMap.webp)</div>
+
+Various aspects of the terrains such as the slope (Slope Map) or flow of sediments (Flow Map) can be exported as bitmaps to control map blending, masking, and driving scatter instances. These are usually exported as 8-bit bitmaps.
+
+### Point Clouds
+
+![](/.data/assets/growth-simulation.webp)
+
+For data usage such as Tree or Rock scattering, or similar functions, you can also export masks as XYZ point clouds.
+
+### Normals and Splat
+
+<div align="left">![](/.data/assets/r6.webp)</div>
+
+Gaea has dedicated nodes for Normal Map and Splat Map creation which are exported as 8-bit bitmaps. The Normal Map node can extract Detail Normals as well.
+
+### Ambient Occlusion and Rock Occlusion
+
+<div>![](/.data/assets/Data_Occlusion.webp) ![](/.data/assets/r11.webp)</div>
+
+Gaea can export both Ambient Occlusion (AO node) and "rock occlusion" (Occlusion node). Rock Occlusion with specific masking or using the Shaper adjustment can often be used for Reflectance in PBR scenarios.
+
+### Rendered / Baked Lighting
+
+<div align="left">![](/.data/assets/r1.webp)</div>
+
+The Light node lets you use high-precision rendering to create a fully realized render that you can use for direct application on your object.
+
+In this example below, the mountain uses a baked lightmap on an unlit shader in Blender to dramatically reduce rendering time.
+
+![](/.data/assets/blender.webp)
+
+
+
+See [Build and Export](/using/using-gaea/build-and-export/index.html){data-link-icon='box-taped'} for more specifics.
+
+
+
+
+// from importing-meshes / importing-meshes.md
+---
+icon: 7
+title: Importing Meshes
+uid: importing-meshes
+order: 07
+---
+
+# Importing Meshes
+
+Gaea 2.1 introduces the Object node which can be used to import 3D models and rasterize them into heightfields. You can fully control the Scale, Rotation, and Movement of the imported mesh. The only limitation is that the 3D mesh is projected and rasterized into a 2.5D heightfield.
+
+![](/.data/assets/image-(58).webp)
+
+Once imported, the model will behave exactly like any other Gaea generated terrain, and you can do anything with it. 
+
+![](/.data/assets/image-(57).webp)
+
+The Object node requires the original mesh to be present during build. If you are not going to have access to the mesh later, you may wish to [Bake the Object node](/using/using-gaea/baking-nodes/index.html).
+
+:::info
+Please note that Gaea is a heightfield-first software. While we do our best to support as many kinds of meshes and objects, sometimes very large or very complex objects may not import that well. You may wish to use applications such as MeshLabs to simplify or recontainerize your mesh
+:::
+
+
+// from basics / index.md
+---
+title: Basics
+uid: basics
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from introduction / introduction.md
+---
+icon: 1
+title: Introduction
+uid: introduction
+order: 01
+---
+
+# Introduction
+
+![youtube.com](https://www.youtube.com/watch?v=vBJwHzb9L6I)
+
+Follow this brief tutorial to familiarize yourself with basic terrain design and texturing.
+
+// from large-mountains-effects / large-mountains-effects.md
+---
+icon: 2
+title: Large Mountains, Effects
+uid: large-mountains-effects
+order: 02
+---
+
+# Large Mountains, Effects
+
+## Making a High Mountain
+
+![youtube.com](https://www.youtube.com/watch?v=lal2cS8Fjvo)
+
+
+
+## Masking Effects
+
+![youtube.com](https://www.youtube.com/watch?v=hAmKE37swH0)
+
+// from masks / masks.md
+---
+icon: 6
+title: Masks
+uid: masks
+order: 06
+---
+
+# Masks
+
+Masks are powerful tools used to control and refine where and how various effects and modifications are applied to a terrain. By using masks, you can selectively influence areas of your terrain, enhancing the precision and complexity of your designs.
+
+## What is a Mask?
+
+A mask in Gaea is essentially a grayscale image where white areas represent sections of the terrain that are fully affected by an operation, black areas are unaffected, and gray areas receive partial effects based on the grayscale value.
+
+## Creating and Applying Masks
+
+### **Creating a Mask**
+
+![](/.data/assets/image-(60).webp)
+
+* Masks can be generated using any node that outputs a grayscale image. Common sources for masks include specific terrain features such as slopes, altitudes, or noise patterns.
+* Use nodes like `Height`, `Slope`, or custom `Noise` patterns to generate masks based on terrain characteristics.
+
+### **Direct Masking**
+
+![](/.data/assets/image-(61).webp)
+
+* To apply a mask, connect the mask output from one node into the mask input of another node. This setup allows the second node’s effects to be limited to the areas defined by the mask.
+* For example, if you want to apply erosion only to the upper regions of a mountain, use a height-based mask that isolates those areas.
+
+### **Post-Masking**
+
+![](/.data/assets/image-(62).png)
+
+* Gaea 2 introduces the new `Mask` node which allows you to mask the node/effect **after** it has been created. You can connect the Mask node after an effect has been applied. For example, in a `Mountain > Erosion > Mask` scenario, the Mask will automatically use the applied mask between Mountain and Erosion.
+* If you have multiple nodes that create the "effect" you wish to mask, just connect the second port of the Mask node to the desired "before" node. For example, in `Mountain > Erosion > Sandstone > Thermal2 > Mask`, you would connect the second input to Mountain.
+* This is very useful because when a node is masked directly, a change to the mask will force a rebuild of the entire node. A Mask node, however, adds masking as a post-process and is extremely fast.
+
+:::info
+There is no difference in results between the Mask port on a node and the Mask node. It is highly recommended that Mask **node** be used when possible as it will make your builds faster, and adapt your workflow to the modern specifications recommended by Gaea 2.0.
+:::
+
+## Practical Uses of Masks
+
+### **Selective Modification**
+
+Selectively apply specific effects like erosion, deposition, or texturing across the terrain. Masks will ensure that these effects enhance the detail and realism of the terrain without overwhelming the entire landscape.
+
+### **Layering Effects**
+
+By using multiple masks with different nodes, you can layer effects on a terrain. This layering can create complex interactions between different processes, such as having erosion only affect the areas not covered by vegetation.
+
+### **Controlling Intensity**
+
+Adjust the intensity of effects in different areas by modifying the grayscale values of the mask. Lighter areas can have more pronounced effects, whereas darker areas will have less or none.
+
+### Tips for Effective Masking
+
+* **Soft Edges**: When possible, use masks with soft edges to create natural transitions between affected and unaffected areas.
+* **Test and Refine**: Experiment with different mask configurations and monitor the results. Adjust the mask's properties to fine-tune how it influences the terrain.
+* **Combine Masks**: For complex terrains, consider combining multiple masks using blending nodes. This approach can give you more control over how different effects interact on the terrain.
+
+// from important / index.md
+---
+title: Important
+uid: important
+hidden: true
+---
+
+# In this section
+
+<div id='show-sublinks'></div>
+
+// from memory-requirements / memory-requirements.md
+---
+title: Memory Requirements
+uid: memory-requirements
+order: 10
+---
+
+# Memory Requirements
+
+Knowing how much memory Gaea will need for your project helps avoid performance issues and crashes. Here’s a simplified approach to understanding memory requirements in Gaea.
+
+![Your memory fills up by at least 4X as you double your resolution. This chart only shows final storage in RAM. It does not include the additional RAM required during processing to calculate each node.](/.data/assets/memory_chart.png)
+
+**Understanding Memory Needs**
+
+* **Memory Demand**: The more complex and detailed your terrain, the more memory it requires.
+* **Factors Affecting Memory**: Resolution, node complexity, and layering all influence memory usage.
+
+### **Resolution**
+
+* **Impact of Resolution**: Higher resolutions consume more memory. A 2048x2048 resolution needs significantly less memory than an 8192x8192 resolution.
+* **General Rule**: Doubling the resolution quadruples memory usage. For example, going from 1024x1024 to 2048x2048 will increase memory requirements fourfold.
+
+### **Heightfields**
+
+* **Heightfield**: The 3D representation of your terrain in Gaea.
+* **Memory Calculation**:
+  * Memory required = Resolution (width x height) x Bit Depth
+  * Gaea uses 32-bit heightfields for high precision.
+* **Example**: For a 1024x1024 resolution with 32-bit depth:
+  * 1024 x 1024 x 4 bytes = \~4 MB
+
+### **Layering Nodes**
+
+* **Nodes**: Each node in Gaea represents an action or modification. More nodes mean more memory.
+* **Layering**: Stacking multiple layers adds depth but also increases memory requirements.
+
+### **System Memory and Performance**
+
+* **Plan for Headroom**: Keep at least 25-30% of your system’s RAM free to ensure smooth performance.
+* **Memory-Saving Tips**: Use lower resolutions and simpler nodes while experimenting. Gradually increase complexity as your project nears completion.
+
+### **Exporting**
+
+* **Export Size**: The larger the resolution at export, the more memory you’ll need during that process.
+* **Preview Exports**: Try lower resolutions for test exports to verify results before the final high-resolution export.
+
+***
+
+## **Quick Tips for Beginners**
+
+* **Start with Lower Resolutions**: Build your terrain in 1024x1024 and increase resolution as needed.
+* **Simplify Your Node Graph**: Fewer nodes use less memory. Start with basic nodes and add detail as you go.
+* **Keep Track of Available Memory**: Regularly check your system’s memory usage to prevent overloads.
+
+***
+
+With these tips, you’ll be better prepared to manage memory efficiently in Gaea and ensure smoother workflows and stable project builds.
+
+// from non-determinism / non-determinism.md
+---
+title: Non-Determinism
+uid: non-determinism
+order: 08
+---
+
+# Non-Determinism
+
+In procedural terrain generation like in Gaea, non-deterministic output at different resolutions occurs because the way the algorithms process the terrain changes depending on the resolution. Here’s how it works:
+
+1. **Grid Size**: Terrain is made up of a grid of points (pixels). At higher resolutions, the grid has more points, allowing for sharper details. At lower resolutions, there are fewer points, so details get simplified or smoothed out.
+2. **Random Effects**: Randomized elements, like noise or rock shapes, look more detailed at high resolutions because there’s more space to show complexity. At lower resolutions, these effects are less detailed because the grid is smaller.
+3. **Scaling**: When you increase or decrease the resolution, the terrain data is resized. This resizing process can slightly alter details, like slopes or edges, depending on how the data is adjusted.
+4. **Algorithm Sensitivity**: Certain tools, like erosion, rely on the grid size for their calculations. Higher resolutions allow for finer details, while lower resolutions result in broader, less detailed changes.
+
+Because of these factors, the terrain can look different at varying resolutions, even with the same settings.
+
+![Determinism across 512, 1024, 2048, and 4096 resolutions.](/.data/assets/rX.webp)
+
+Gaea's algorithms are optimized to reduce the difference across resolutions as much as possible, especially with Erosion_2, however depending on your terrain setup it may be unavoidable in some situations.
+
+Some nodes like the classic Erosion provide a separate option to force Determinism by sacrificing processing speed.
+
+### Forcing Determinism
+
+One of the best ways to ensure a specific shape, especially at an early stage in your graph, is by [Baking Nodes](/using/using-gaea/baking-nodes/index.html){data-link-icon='fire'} at a resolution you like. Gaea will then upscale them at whatever final resolution you use and further low-yield Erosion or other effects can help compensate for the upscaling artifacts.
+
+// from scale-and-resolution / scale-and-resolution.md
+---
+title: Scale and Resolution
+uid: scale-and-resolution
+order: 09
+---
+
+# Scale and Resolution
+
+## Gaea Dimensions and Scale: A Beginner's Guide
+
+Understanding dimensions and scale in Gaea is essential for building terrains that look realistic and match your project needs. Here’s a simplified overview of key concepts:
+
+:::info
+For detailed technical information, see [Dimensions and Scale](/using/advanced-topics/technical-information/dimensions-and-scale.html){data-link-icon=''} in [Broken link](broken-reference).
+:::
+
+### **World Space**
+
+* **What It Is**: World Space refers to the area where your terrain exists.
+* **Units of Measurement**: Gaea typically uses meters (m) to represent distances in World Space. One unit in Gaea equals one meter.
+* **Why It Matters**: Knowing the scale of your terrain helps in creating realistic landscapes, especially when integrating into game engines or 3D software.
+
+### **Resolution**
+
+* **What It Is**: Resolution is the level of detail in your terrain, measured in pixels.
+* **Impact of Resolution**: Higher resolutions provide more detail but require more memory and processing power.
+* **Common Resolutions**: Gaea commonly supports resolutions from 512x512 to 8192x8192 pixels. For beginners, start with 1024x1024 or 2048x2048 pixels.
+
+### **Scale and Extents**
+
+* **Scale**: Determines the overall size of the terrain in meters. For example, if your terrain is 1000x1000 units in Gaea, it represents a 1-kilometer square area.
+* **Extent**: The physical area covered by your terrain. A larger extent means a larger physical space, which affects how objects appear in relation to each other.
+
+### **Height Range**
+
+* **What It Is**: Defines the lowest and highest points of the terrain.
+* **Setting Heights**: When setting terrain height, think about the kind of landscape you’re creating. For example, 100 meters might work for hills, while 3000 meters suit mountain ranges.
+* **Height Precision**: Gaea allows precise control of height, which is critical for realistic landscapes.
+
+### **Real-World Scaling**
+
+* **Importance**: When integrating terrains into real-world projects, make sure the scaling matches. This is especially vital for game environments and simulations where a terrain needs to match character or object sizes accurately.
+
+### **Vertical Scale**
+
+* **Definition**: Adjusts the height of the terrain relative to its width and depth.
+* **Why Adjust**: To create exaggerated terrains, like dramatic mountain ranges, adjust the vertical scale for added effect.
+
+***
+
+## **Quick Tips for Beginners:**
+
+* **Start Small**: Begin with lower resolutions to understand the basics without taxing your computer.
+* **Check Compatibility**: Ensure your terrain scale matches the requirements of your target game engine or software.
+* **Experiment with Extents and Scale**: These two settings can drastically change how your terrain feels. Try different combinations to get comfortable.
+
+***
+
+This guide provides the fundamentals to begin working with dimensions and scale in Gaea. As you gain experience, exploring these settings further will enhance your terrain design skills.
+
+
+
+For detailed technical information see [Dimensions and Scale](/using/advanced-topics/technical-information/dimensions-and-scale.html){data-link-icon=''} in [Broken link](broken-reference).
+

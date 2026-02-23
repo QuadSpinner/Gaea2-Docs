@@ -1,0 +1,190 @@
+﻿[
+  {
+    "Name": "Position",
+    "Description": "Shifts the terrain or object horizontally along the X axis, allowing precise placement within the scene.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Offset X",
+    "Description": "Shifts the terrain or object horizontally along the X axis, allowing precise placement within the scene.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Offset Y",
+    "Description": "Shifts the terrain or object horizontally along the Y axis, moving it forward or backward in the workspace.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Offset Z",
+    "Description": "Moves the terrain or object vertically along the Z axis, raising or lowering its elevation.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale",
+    "Description": "Applies uniform scaling to all axes, maintaining the original proportions of the terrain or object.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Uniform",
+    "Description": "Applies uniform scaling to all axes, maintaining the original proportions of the terrain or object.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale",
+    "Description": "Applies uniform scaling to all axes, maintaining the original proportions of the terrain or object.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale X",
+    "Description": "The non-uniform scale on the X axis, allowing independent horizontal stretching or compression.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Scale Y",
+    "Description": "The non-uniform scale on the Y axis, allowing independent vertical stretching or compression.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Rotation",
+    "Description": "The angle of rotation applied to the terrain or object, measured in degrees.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Angle",
+    "Description": "The angle of rotation applied to the terrain or object, measured in degrees.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Settings",
+    "Description": "Specifies how the transformed terrain or object is merged with the underlying data or input.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Blend Mode",
+    "Description": "Specifies how the transformed terrain or object is merged with the underlying data or input.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "No blending is applied; the transformed data overwrites the input.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Blend",
+        "Description": "Blends the transformed data with the input using standard alpha or linear blending.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Add",
+        "Description": "Adds the transformed values to the input, increasing elevation or intensity.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Subtract",
+        "Description": "Subtracts the transformed values from the input, creating depressions or reductions.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Difference",
+        "Description": "Emphasizes the difference between the transformed data and the input.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Multiply",
+        "Description": "Multiplies the transformed data with the input, modulating the result.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Screen",
+        "Description": "Uses a screen blend, lightening the result where both inputs are present.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Max",
+        "Description": "Takes the maximum value between the transformed data and the input at each point.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Min",
+        "Description": "Takes the minimum value between the transformed data and the input at each point.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Edges",
+    "Description": "Specifies how the edges of the transformed terrain or object are handled.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "None",
+        "Description": "No special edge handling; edges may be abrupt or unblended.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Thin",
+        "Description": "Applies a thin edge blend, softening the transition at the boundaries.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Wide",
+        "Description": "Applies a wide edge blend, creating a broader transition zone at the boundaries.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Soft",
+        "Description": "Applies a soft, gradual edge blend for smooth transitions.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Quality",
+    "Description": "Sets the processing quality for the transform operation.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Draft",
+        "Description": "Fastest processing with lower quality, suitable for previews.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Medium",
+        "Description": "Balanced quality and performance for general use.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "High",
+        "Description": "Highest quality with the most detail, recommended for final output.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  }
+]

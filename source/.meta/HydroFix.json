@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "HydroFix",
+  "Description": "HydroFix alters the terrain to create continuous drainage network friendly slopes. It can be used before Erosion or other flow related nodes to get better results.",
+  "Family": "Erosion",
+  "FamilyIcon": "family-erosion",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    "HydroFix"
+  ],
+  "ShortCode": "hf",
+  "Usage": 24,
+  "SearchString": "HydroFix Erosion HydroFix hf",
+  "SearchWords": [
+    "hydrofix",
+    "erosion",
+    "hydrofix",
+    "hf"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

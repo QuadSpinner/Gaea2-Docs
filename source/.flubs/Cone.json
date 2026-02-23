@@ -1,0 +1,26 @@
+﻿[
+  {
+    "Name": "Scale",
+    "Description": "Controls the overall size (radius) of the cone.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Height",
+    "Description": "Controls the height (amplitude) of the cone.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "X",
+    "Description": "Offsets the cone’s center along the X axis.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Y",
+    "Description": "Offsets the cone’s center along the Y axis.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

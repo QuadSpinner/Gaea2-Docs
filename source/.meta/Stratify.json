@@ -1,0 +1,34 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Stratify",
+  "Description": "Stratify creates broken strata or rock layers on the terrain in a non-linear fashion, producing a robust, realistic formation.",
+  "Family": "Terrace",
+  "FamilyIcon": "x-stratify",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    "complex terraces stratify strata"
+  ],
+  "ShortCode": "ct",
+  "Usage": 241,
+  "SearchString": "Stratify Terrace complex terraces stratify strata ct",
+  "SearchWords": [
+    "stratify",
+    "terrace",
+    "complex",
+    "terraces",
+    "stratify",
+    "strata",
+    "ct"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

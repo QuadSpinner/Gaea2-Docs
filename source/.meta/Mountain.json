@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Mountain",
+  "Description": "Mountain is one of Gaea's most versatile primitives, using a modulated Voronoi pattern and distortions to create realistic mountain shapes, ready for further modification and erosion.",
+  "Family": "Primitive",
+  "FamilyIcon": "family-primitive",
+  "Toolbox": "Terrain",
+  "Classification": "Generator",
+  "Keywords": [
+    "mountain"
+  ],
+  "ShortCode": "m",
+  "Usage": 735,
+  "SearchString": "Mountain Primitive mountain m",
+  "SearchWords": [
+    "mountain",
+    "primitive",
+    "mountain",
+    "m"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

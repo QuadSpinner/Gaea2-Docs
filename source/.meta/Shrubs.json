@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Shrubs",
+  "Description": null,
+  "Family": "Vegetation",
+  "FamilyIcon": "family-vegetation",
+  "Toolbox": "Simulate",
+  "Classification": "Processor",
+  "Keywords": [
+    "arboreal"
+  ],
+  "ShortCode": "shr",
+  "Usage": 7,
+  "SearchString": "Shrubs Vegetation arboreal shr",
+  "SearchWords": [
+    "shrubs",
+    "vegetation",
+    "arboreal",
+    "shr"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": true,
+  "AccumulationType": "Trees",
+  "HasCustomColorization": true,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

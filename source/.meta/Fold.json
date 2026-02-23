@@ -1,0 +1,32 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Fold",
+  "Description": "Fold simulates terrain folding by introducing slants, breaks, and folds to the terrain. It significantly changes the terrain shape and should be used early in the graph.",
+  "Family": "Profile",
+  "FamilyIcon": "x-fold",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "sine mirror"
+  ],
+  "ShortCode": "fo",
+  "Usage": 50,
+  "SearchString": "Fold Profile sine mirror fo",
+  "SearchWords": [
+    "fold",
+    "profile",
+    "sine",
+    "mirror",
+    "fo"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

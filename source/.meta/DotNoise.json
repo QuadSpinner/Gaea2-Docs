@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "DotNoise",
+  "Description": null,
+  "Family": "Extended",
+  "FamilyIcon": "family-extended",
+  "Toolbox": "Primitive",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "do",
+  "Usage": 13,
+  "SearchString": "DotNoise Extended  do",
+  "SearchWords": [
+    "dotnoise",
+    "extended",
+    "",
+    "do"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

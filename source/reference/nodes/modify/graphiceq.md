@@ -15,3 +15,5 @@ Applies a multi-band equalizer-style filter to shape terrain features across dif
   * Positive values boost features at that scale; negative values suppress them.
 
 Use the bands together to fine-tune the terrain’s overall frequency profile and achieve precise control over its shape and detail distribution.
+
+# Properties

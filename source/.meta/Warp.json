@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Warp",
+  "Description": "Warp can take the terrain and \"warp\" the shape creating more believable shapes or alter simple shapes into a more complex formation. It can help breakup masks too.",
+  "Family": "Warp",
+  "FamilyIcon": "x-warp",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "warp"
+  ],
+  "ShortCode": "w",
+  "Usage": 129,
+  "SearchString": "Warp Warp warp w",
+  "SearchWords": [
+    "warp",
+    "warp",
+    "warp",
+    "w"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

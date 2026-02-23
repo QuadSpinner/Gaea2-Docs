@@ -1,0 +1,84 @@
+﻿[
+  {
+    "Name": "Scale",
+    "Description": "Controls the overall size and extent of the mountain slope. Larger values create broader, more expansive slopes.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Detail",
+    "Description": "Adjusts the amount of fine surface detail on the mountain. Higher values add more texture and small-scale features to the slope.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Type",
+    "Description": "Determines the primary form of the mountain feature to generate.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Slope",
+        "Description": "Creates a continuous, sloping mountainside, ideal for simulating the flanks of large mountain ranges.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Peak",
+        "Description": "Generates a prominent mountain peak, focusing elevation and detail toward a summit.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Style",
+    "Description": "Specifies the visual and geological style of the mountain slope, affecting erosion, layering, and surface character.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Basic",
+        "Description": "Produces a simple, unmodified slope or peak with minimal erosion or geological features.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Eroded",
+        "Description": "Applies erosion effects to the mountain, creating realistic weathering, gullies, and worn surfaces.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Old",
+        "Description": "Simulates an ancient mountain with softened features, rounded slopes, and significant erosion.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Alpine",
+        "Description": "Creates sharp, rugged alpine features with steep faces and dramatic relief, typical of young mountain ranges.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Strata",
+        "Description": "Adds visible geological strata or layers to the mountain, emphasizing sedimentary or volcanic banding.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Direction",
+    "Description": "Sets the orientation of the slope or peak, determining which direction the mountain face or ridge is aligned.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "Defines the randomization seed for the node, ensuring reproducible or varied mountain shapes with each value.",
+    "Type": "Int32",
+    "IsGroup": false
+  }
+]

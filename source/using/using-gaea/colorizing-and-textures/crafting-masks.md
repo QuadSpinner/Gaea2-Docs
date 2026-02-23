@@ -20,29 +20,29 @@ In this example, the gradient from a CLUTer node is mapped directly to the heigh
 
 Now, let's a try more detailed, colorful gradient.
 
-![](/.data/assets/Gaea_-_Untitled_04-39-07-AM.png)
+![](/.data/assets/Gaea_-_Untitled_04-39-07-AM.webp)
 
 You can see how it distributes across the terrain.
 
-![](/.data/assets/Gaea_-_Untitled_04-38-54-AM.png)
+![](/.data/assets/Gaea_-_Untitled_04-38-54-AM.webp)
 
 Now, if you use the same CLUT map but feed it a FlowMap instead of the terrain height, the texture will follow the flow lines defined by the FlowMap, producing a very different result.
 
-![](/.data/assets/Gaea_-_Untitled_04-39-18-AM.png)
+![](/.data/assets/Gaea_-_Untitled_04-39-18-AM.webp)
 
 
 
 ### Colorization with Texture Nodes
 
-Gaea provides nodes such as [TextureBase](Reference/nodes/derive/texturebase) and [Texturizer](Reference/nodes/derive/texturizer) provide complex colorization masks based on the terrain's inherent features.
+Gaea provides nodes such as [TextureBase](@texturebase) and [Texturizer](@texturizer) provide complex colorization masks based on the terrain's inherent features.
 
-![](/.data/assets/Gaea_-_Untitled_04-44-21-AM.png)
+![](/.data/assets/Gaea_-_Untitled_04-44-21-AM.webp)
 
-![](/.data/assets/Gaea_-_Untitled_04-47-53-AM.png)
+![](/.data/assets/Gaea_-_Untitled_04-47-53-AM.webp)
 
 Which can create more complex textures such as this:
 
-![](/.data/assets/Gaea_-_Untitled_04-50-15-AM.png)
+![](/.data/assets/Gaea_-_Untitled_04-50-15-AM.webp)
 
 
 

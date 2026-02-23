@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": true,
+  "IsHidden": false,
+  "Name": "Slope",
+  "Description": "Slope creates a selection mask within the slope range specified.",
+  "Family": "Aspect",
+  "FamilyIcon": "x-slope",
+  "Toolbox": "Derive",
+  "Classification": "Mask",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "sl",
+  "Usage": 60,
+  "SearchString": "Slope Aspect  sl",
+  "SearchWords": [
+    "slope",
+    "aspect",
+    "",
+    "sl"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

@@ -7,9 +7,3 @@ order: 16
 
 
 # Properties
-
-- **Seed**  
-  
-
-
-

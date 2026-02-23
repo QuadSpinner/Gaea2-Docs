@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "MountainSide",
+  "Description": null,
+  "Family": "Primitive",
+  "FamilyIcon": "family-primitive",
+  "Toolbox": "Terrain",
+  "Classification": "Generator",
+  "Keywords": [
+    "slopenoise"
+  ],
+  "ShortCode": "ms",
+  "Usage": 109,
+  "SearchString": "MountainSide Primitive slopenoise ms",
+  "SearchWords": [
+    "mountainside",
+    "primitive",
+    "slopenoise",
+    "ms"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

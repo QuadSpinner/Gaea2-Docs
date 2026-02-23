@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Slump",
+  "Description": "Slump is a simple primitive that creates relative smooth hills with slumped (collapsed) areas. It is very useful for creating large landscapes.",
+  "Family": "Landscape",
+  "FamilyIcon": "family-landscape",
+  "Toolbox": "Terrain",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "um",
+  "Usage": 297,
+  "SearchString": "Slump Landscape  um",
+  "SearchWords": [
+    "slump",
+    "landscape",
+    "",
+    "um"
+  ],
+  "RequiresBaking": true,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

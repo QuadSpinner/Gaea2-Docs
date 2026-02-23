@@ -39,23 +39,5 @@ it to create a flat noise map that could be used elsewhere in the graph.
 
 
 
-
-
-
 # Properties
-
-
-## Constant
-
-- Output
-  - **Height**  
-  Create a flat terrain of the specified height.
-  - **Color**  
-  Create a flat color output of the specified color.
-- **Height**  
-  The height of the blank terrain.
-- **Color**  
-  The color to use for creating a flat, color output.
-
-
 

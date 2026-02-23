@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Denoise",
+  "Description": "Denoise is a general purpose noise removal filter that systematically cleans up random noise, spikes, and extremely sharp edges.",
+  "Family": "Adjust",
+  "FamilyIcon": "x-denoise",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "dn",
+  "Usage": 5,
+  "SearchString": "Denoise Adjust  dn",
+  "SearchWords": [
+    "denoise",
+    "adjust",
+    "",
+    "dn"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

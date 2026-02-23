@@ -1,0 +1,40 @@
+﻿[
+  {
+    "Name": "Type",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Stretch",
+        "Description": "Whorls appear as stretched, interconnected formations.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Spin",
+        "Description": "Whorls appear as round, independent formations.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Whorls",
+    "Description": "The number of whorls to add to the terrain.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Power",
+    "Description": "The strength of the distortion applied with each whorl.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "The randomization pattern or seed for the node's process.",
+    "Type": "Int32",
+    "IsGroup": false
+  }
+]

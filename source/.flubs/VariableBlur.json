@@ -1,0 +1,13 @@
+﻿[
+  {
+    "Name": "Blur",
+    "Description": "Controls the blur radius for each pixel. The radius can vary across the image, enabling localized or mask-driven blur effects.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Radius",
+    "Description": "Controls the blur radius for each pixel. The radius can vary across the image, enabling localized or mask-driven blur effects.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

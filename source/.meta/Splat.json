@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Splat",
+  "Description": "Splat is similar to RGBMix, taking heightfield nodes and encoding them to the RGB channels of a color map, and providing properties to control the inputs.",
+  "Family": "Utilities",
+  "FamilyIcon": "x-splat",
+  "Toolbox": "Colorize",
+  "Classification": "Processor",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "spl",
+  "Usage": 6,
+  "SearchString": "Splat Utilities  spl",
+  "SearchWords": [
+    "splat",
+    "utilities",
+    "",
+    "spl"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

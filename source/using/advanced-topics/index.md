@@ -1,6 +1,7 @@
 ---
-title: advanced-topics
+title: Advanced Topics
 uid: advanced-topics
+hidden: true
 ---
 
 # In this section

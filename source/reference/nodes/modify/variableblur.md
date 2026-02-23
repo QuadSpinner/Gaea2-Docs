@@ -7,12 +7,3 @@ order: 39
 
 
 # Properties
-
-
-## Blur
-
-- **Radius**  
-  
-
-
-

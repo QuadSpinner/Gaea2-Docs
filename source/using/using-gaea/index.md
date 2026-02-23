@@ -1,6 +1,7 @@
 ---
-title: using-gaea
+title: Using Gaea
 uid: using-gaea
+hidden: true
 ---
 
 # In this section

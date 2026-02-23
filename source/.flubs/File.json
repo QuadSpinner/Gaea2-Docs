@@ -1,0 +1,67 @@
+﻿[
+  {
+    "Name": "File",
+    "Description": "Specifies the file to load as input for the node. This can be a heightmap, mask, or other supported data file.",
+    "Type": "String",
+    "IsGroup": false
+  },
+  {
+    "Name": "Relative Path",
+    "Description": "Defines the file path relative to the project or asset directory, ensuring portability and correct asset referencing.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Is RGB",
+    "Description": "Indicates whether the loaded file should be interpreted as an RGB image. Enable this for color maps or multi-channel data.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Enforce Linear Gamma",
+    "Description": "Forces the loaded terrain or image data to use linear gamma correction, ensuring accurate color and height interpretation.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Allow Unclamped",
+    "Description": "Allows values outside the standard 0–1 range to be loaded, preserving high dynamic range or special data in the file.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Crop to Square",
+    "Description": "Automatically crops the loaded file to a square aspect ratio, which is often required for terrain processing.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Prepare for Bridge",
+    "Description": "Prepares the loaded file for use with the Bridge system, enabling compatibility with external tools or workflows.",
+    "Type": "Command",
+    "IsGroup": false
+  },
+  {
+    "Name": "Information Houdini",
+    "Description": "Displays or stores metadata related to Houdini integration, such as file attributes or import status.",
+    "Type": "Byte",
+    "IsGroup": false
+  },
+  {
+    "Name": "Caching",
+    "Description": "Clears the cached version of the loaded file, forcing a reload from disk on the next access.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Purge Cache",
+    "Description": "Clears the cached version of the loaded file, forcing a reload from disk on the next access.",
+    "Type": "Command",
+    "IsGroup": false
+  },
+  {
+    "Name": "Never Cache",
+    "Description": "Prevents the loaded file from being cached, ensuring it is always read directly from disk.",
+    "Type": "Boolean",
+    "IsGroup": false
+  }
+]

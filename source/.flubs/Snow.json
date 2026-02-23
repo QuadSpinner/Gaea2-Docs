@@ -1,0 +1,121 @@
+﻿[
+  {
+    "Name": "Snow",
+    "Description": "Controls the length of time snow accumulates on the terrain, affecting overall snow coverage and depth.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Duration",
+    "Description": "Controls the length of time snow accumulates on the terrain, affecting overall snow coverage and depth.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Intensity",
+    "Description": "Determines the rate at which snow falls and accumulates, influencing the thickness and density of the snow layer.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Settle Duration",
+    "Description": "Specifies the time it takes for freshly fallen snow to settle and compact, impacting the smoothness and stability of the snow surface.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Melt",
+    "Description": "Defines the method by which snow melts from the terrain, affecting the pattern and distribution of melting.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Melt Type",
+    "Description": "Defines the method by which snow melts from the terrain, affecting the pattern and distribution of melting.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Uniform",
+        "Description": "Snow melts evenly across the entire terrain, resulting in a consistent reduction of snow coverage.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Directional",
+        "Description": "Snow melts preferentially in a specific direction, simulating effects such as sun exposure or wind, leading to uneven snow retreat.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Melt",
+    "Description": "Defines the method by which snow melts from the terrain, affecting the pattern and distribution of melting.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Melt Remnants",
+    "Description": "Specifies the amount and appearance of snow left behind after melting, such as patches or traces of residual snow.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Direction",
+    "Description": "Sets the primary direction for directional melting, influencing which areas of the terrain lose snow first.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Snow Line",
+    "Description": "Defines the altitude or threshold below which snow does not accumulate, simulating natural snow lines on mountains.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Advanced",
+    "Description": "Specifies the minimum slope angle at which snow will slide off, affecting snow accumulation on steep surfaces.",
+    "IsGroup": true
+  },
+  {
+    "Name": "Slip-off angle",
+    "Description": "Specifies the minimum slope angle at which snow will slide off, affecting snow accumulation on steep surfaces.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Adhered snow mass",
+    "Description": "Controls the amount of snow that remains attached to surfaces, even on steep or vertical terrain.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Model scale",
+    "Description": "Sets the scale of the terrain model, influencing how snow parameters are interpreted relative to real-world dimensions.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Real Scale",
+    "Description": "Specifies the actual physical scale represented by the terrain, used for accurate snow simulation and parameter scaling.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Terrain Scale",
+    "Description": "Adjusts the scaling factor for the terrain, affecting how snow features are distributed and visualized.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Verticality",
+    "Description": "Controls the influence of vertical surfaces on snow accumulation, determining how much snow can adhere to cliffs and steep slopes.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Seed",
+    "Description": "Sets the randomization seed for snow distribution, ensuring reproducible results or introducing variation in snow patterns.",
+    "Type": "Int32",
+    "IsGroup": false
+  }
+]

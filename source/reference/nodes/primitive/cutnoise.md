@@ -8,10 +8,3 @@ order: 06
 
 # Properties
 
-- **Scale**  
-  
-- **Seed**  
-  
-
-
-

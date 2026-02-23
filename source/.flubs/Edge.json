@@ -1,0 +1,46 @@
+﻿[
+  {
+    "Name": "Style",
+    "Description": "Specifies the shape and profile of the edge effect applied to the terrain or mask.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Round",
+        "Description": "Creates a smooth, rounded edge transition for a softer boundary.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Square",
+        "Description": "Produces a straight, angular edge for a more defined and abrupt boundary.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Precise",
+        "Description": "Applies an exact edge in pixels, preserving sharpness and detail at the boundary.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Size",
+    "Description": "Controls the width or thickness of the edge effect. Higher values create a broader edge region.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Pixels",
+    "Description": "Sets the edge width in pixel units, allowing for precise control over the edge's extent.",
+    "Type": "Int32",
+    "IsGroup": false
+  },
+  {
+    "Name": "Softness",
+    "Description": "Adjusts the smoothness of the edge transition. Higher values result in a more gradual, blended edge.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

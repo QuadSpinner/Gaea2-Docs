@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Terraces",
+  "Description": null,
+  "Family": "Terrace",
+  "FamilyIcon": "x-terraces",
+  "Toolbox": "Surface",
+  "Classification": "Processor",
+  "Keywords": [
+    "terrace"
+  ],
+  "ShortCode": "st",
+  "Usage": 43,
+  "SearchString": "Terraces Terrace terrace st",
+  "SearchWords": [
+    "terraces",
+    "terrace",
+    "terrace",
+    "st"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

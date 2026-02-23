@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "SlopeWarp",
+  "Description": "SlopeBlur is a versatile, low-level node that adds directional warping based on the slopes of a Guide terrain or mask. It behaves similarly to SlopeBlur.",
+  "Family": "Warp",
+  "FamilyIcon": "x-slopewarp",
+  "Toolbox": "Modify",
+  "Classification": "Processor",
+  "Keywords": [
+    "swarp"
+  ],
+  "ShortCode": "sw",
+  "Usage": 64,
+  "SearchString": "SlopeWarp Warp swarp sw",
+  "SearchWords": [
+    "slopewarp",
+    "warp",
+    "swarp",
+    "sw"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

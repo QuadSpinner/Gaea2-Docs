@@ -1,6 +1,7 @@
 ---
-title: apps
+title: Scenarios
 uid: scenarios
+hidden: true
 ---
 
 # In this section
