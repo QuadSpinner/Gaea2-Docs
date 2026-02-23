@@ -5,7 +5,7 @@ uid: low-detail-start
 
 # Let Shape Stay Simple
 
-It’s tempting to pour detail into the very first landform—lots of noise, breakup, micro ridges. But front-loading detail usually makes the rest of the graph fight you.
+It’s tempting to pour detail into the very first landform - lots of noise, breakup, micro ridges. But front-loading detail usually makes the rest of the graph fight you.
 
 A cleaner approach is to build a **strong, low-detail macro shape** first, then let **Erosion** and **Surface** nodes generate the believable detail later.
 

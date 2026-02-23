@@ -6,7 +6,7 @@ uid: name-outputs
 
 # Build Output Naming That Won’t Fight Your DCC
 
-Most “pipeline pain” isn’t about file formats—it’s about *file paths*.
+Most “pipeline pain” isn’t about file formats - it’s about *file paths*.
 
 If your DCC links keep breaking, your builds feel chaotic, or your team can’t tell which output belongs to what, this is usually a naming and destination strategy problem.
 
@@ -56,7 +56,7 @@ If you’re doing tiled builds, set tile naming so it plays nicely with your too
 
 A “roundtrip” is when you rebuild and your DCC links break because the output folder changed.
 
-If you use an incremental destination pattern like `[+++]`, you keep build history—but you also change the folder every build.
+If you use an incremental destination pattern like `[+++]`, you keep build history - but you also change the folder every build.
 
 The best practice is:
 

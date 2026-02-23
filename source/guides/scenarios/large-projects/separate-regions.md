@@ -68,7 +68,7 @@ Think “modules” instead of “zoom levels.” Your volcano is a module with 
 * **Safer iteration**: you can change the surrounding world without risking the hero volcano (and vice versa).
 * **Resolution where it matters**: build the volcano at 8K for hero shots, while keeping the broader landscape cheaper until you truly need more.
 * **Consistent scale**: erosion, deposits, and micro-forms remain physically coherent because they were authored at the correct scale from the start.
-* **Multiple deliverables**: the same graph can output a hero asset for closeups and a wide environment for shots—without forcing one to compromise for the other.
+* **Multiple deliverables**: the same graph can output a hero asset for closeups and a wide environment for shots - without forcing one to compromise for the other.
 
 :::tip
 If you try to “fix” a zoomed-in closeup by piling on fractal detail, it may look sharper, but it often won’t match the erosion scale language of the larger terrain. Viewers feel that mismatch immediately.
@@ -82,4 +82,4 @@ Yes, this approach asks you to plan a little earlier:
 * Decide what needs 8K fidelity
 * Decide how it will integrate into the wider world
 
-But once you adopt it, you’ll find it’s **easier, more predictable, and far less fragile** than the old “zoom in after the fact” workflow—especially when erosion and realism matter.
+But once you adopt it, you’ll find it’s **easier, more predictable, and far less fragile** than the old “zoom in after the fact” workflow - especially when erosion and realism matter.

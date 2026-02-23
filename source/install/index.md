@@ -6,7 +6,7 @@ uid: home-getting-started
 
 ## An introduction to Gaea
 
-Getting Started is your on-ramp to Gaea—covering everything you need to go from first launch to confident daily use. You’ll learn how to install and configure Gaea (including portable setups and deployment options), manage and transfer licenses, get comfortable with the interface and customization tools, and—if you’re coming from Gaea 1—quickly understand what’s changed in Gaea 2 and how it improves your workflow.
+Getting Started is your on-ramp to Gaea - covering everything you need to go from first launch to confident daily use. You’ll learn how to install and configure Gaea (including portable setups and deployment options), manage and transfer licenses, get comfortable with the interface and customization tools, and - if you’re coming from Gaea 1 - quickly understand what’s changed in Gaea 2 and how it improves your workflow.
 
 ### Getting Started
 

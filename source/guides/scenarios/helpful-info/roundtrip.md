@@ -11,9 +11,9 @@ A "roundtrip" is when you rebuild in Gaea and then have to re-import (or relink)
 
 ## The problem
 
-If your Build Destination uses an incremental pattern like `[+++]`, Gaea creates a new output folder for every build. That preserves history, but it also changes the asset paths every time—so your materials and file references in your CG application break and must be updated.
+If your Build Destination uses an incremental pattern like `[+++]`, Gaea creates a new output folder for every build. That preserves history, but it also changes the asset paths every time - so your materials and file references in your CG application break and must be updated.
 
-If you use a fixed (static) output path instead, your links stay valid—but each build overwrites the last one, so you lose per-build history.
+If you use a fixed (static) output path instead, your links stay valid - but each build overwrites the last one, so you lose per-build history.
 
 ## The solution
 

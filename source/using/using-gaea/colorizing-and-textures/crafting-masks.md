@@ -50,7 +50,7 @@ Which can create more complex textures such as this:
 
 Data Maps are specialized masks for selecting key terrain properties like slope, angle, and curvature, or for generating complex simulation-based data such as water flow and soil deposits. Additional maps like TextureBase produce pseudo-random texture masks for quick, easy color texturing.
 
-Unlike the classic approach that combines basic data (slope, angle) with noise (e.g., Perlin) or depends heavily on erosion flow outputs—often requiring careful seed tuning—Data Maps introduce controlled randomness derived from systematic terrain analysis. This produces more natural, believable color maps.
+Unlike the classic approach that combines basic data (slope, angle) with noise (e.g., Perlin) or depends heavily on erosion flow outputs - often requiring careful seed tuning - Data Maps introduce controlled randomness derived from systematic terrain analysis. This produces more natural, believable color maps.
 
 ### Aspect Maps
 

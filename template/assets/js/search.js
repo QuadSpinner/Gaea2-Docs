@@ -373,7 +373,7 @@ $(document).ready(function () {
                   </div>
                   <div class="small text-secondary">
                     <span class="text-muted">${esc(pageTitle)}</span>
-                    ${ctxLine ? ` — ${highlight(ctxLine, query)}` : ""}
+                    ${ctxLine ? `  -  ${highlight(ctxLine, query)}` : ""}
                   </div>
                 </a>
                 <hr>

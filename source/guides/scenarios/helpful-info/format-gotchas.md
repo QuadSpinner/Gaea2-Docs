@@ -15,7 +15,7 @@ See @match-height for a useful workflow using Constant (meters) → File (unclam
 
 * Prefer 32-bit float GeoTIFF when available (best fidelity, handles negatives cleanly).
 * Keep File = Unclamped, especially if the DEM includes below sea level or “no-data” borders.
-* Pre-handle NoData if your exporter encodes it as a huge negative (e.g., -32768) or huge positive—mask/crop it before Gaea if possible, or you’ll Autolevel against garbage.
+* Pre-handle NoData if your exporter encodes it as a huge negative (e.g., -32768) or huge positive - mask/crop it before Gaea if possible, or you’ll Autolevel against garbage.
 * Use your Constant in meters as the “intended peak altitude” and MATCH to it.
 
 ### Don’t
@@ -89,7 +89,7 @@ See @match-height for a useful workflow using Constant (meters) → File (unclam
 
 ### Don’t
 
-* Don’t use RAW if you aren’t 100% sure of its format metadata—RAW has no header, so it’s easy to misread.
+* Don’t use RAW if you aren’t 100% sure of its format metadata - RAW has no header, so it’s easy to misread.
 * Don’t change resolution midstream without a deliberate resample strategy.
 
 ---

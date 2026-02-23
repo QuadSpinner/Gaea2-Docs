@@ -7,11 +7,11 @@ uid: match-height
 
 When you bring real-world DEMs or heightmaps into Gaea, the numbers often **don’t match Gaea’s expected height conventions**. Some datasets are already in meters (with negatives), some are biased, some are scaled oddly, and many don’t line up with how you *intend* to use vertical range in your graph.
 
-A clean way to “re-home” that data into a predictable altitude ceiling—without guessing multipliers—is to use a **Constant + MATCH** workflow. It lets you say: “This imported terrain should top out at **X meters**,” and then forces everything to conform.
+A clean way to “re-home” that data into a predictable altitude ceiling - without guessing multipliers - is to use a **Constant + MATCH** workflow. It lets you say: “This imported terrain should top out at **X meters**,” and then forces everything to conform.
 
 ## The goal: define a correct “highest altitude”
 
-Instead of trying to eyeball scale, you explicitly define the maximum elevation you want your imported terrain to represent (e.g., 2400 m, 8849 m, 500 m—whatever your project needs). Then you match the imported data to that reference.
+Instead of trying to eyeball scale, you explicitly define the maximum elevation you want your imported terrain to represent (e.g., 2400 m, 8849 m, 500 m - whatever your project needs). Then you match the imported data to that reference.
 
 That means:
 

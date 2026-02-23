@@ -7,7 +7,7 @@ uid: break-project
 
 Big terrains get heavy fast. Even if your graph is well-optimized, a single “everything in one file” project can balloon memory use, slow previews, and make experimentation risky.
 
-A simple way to stay fast (and sane) is to **break your project into multiple parts**—then pass data forward by exporting stable results as **Gaea RAW** and ingesting them in the next file with a **File** node.
+A simple way to stay fast (and sane) is to **break your project into multiple parts** - then pass data forward by exporting stable results as **Gaea RAW** and ingesting them in the next file with a **File** node.
 
 :::tip
 Think of each file as a “chapter”: Shape → Detail → Output. Keep each chapter focused and your iteration speed stays high.
@@ -43,7 +43,7 @@ In a new file:
 
 * Add a **File** node and ingest the RAW outputs
 * Perform higher-cost detailing: erosion variants, sediment passes, fine noise, breakup, surface detail, specialized masks
-* Iterate aggressively—because your upstream foundation is now stable and lightweight
+* Iterate aggressively - because your upstream foundation is now stable and lightweight
 
 :::tip
 If you’re unsure what will matter later, export one extra “utility” mask (e.g., broad slope/height zones). It’s cheap insurance for downstream flexibility.
@@ -53,7 +53,7 @@ If you’re unsure what will matter later, export one extra “utility” mask (
 
 You can apply the same approach beyond “shape vs detail”:
 
-* **Erosion Lab**: A dedicated file just for erosion exploration—export the best result back into the pipeline.
+* **Erosion Lab**: A dedicated file just for erosion exploration - export the best result back into the pipeline.
 * **Mask Factory**: One file that produces clean masks (flow, wear zones, deposition regions) for use elsewhere.
 * **Biome/Color Pass**: Separate file for albedo/biome logic so you can iterate visuals without touching terrain structure.
 
@@ -65,7 +65,7 @@ Instead of branching inside one giant graph, do it with files:
 * Keep your “gold master” foundation untouched.
 * Swap between variations by pointing a File node at a different RAW export.
 
-This makes “what if we try…” almost free—because you’re not destabilizing the entire project.
+This makes “what if we try…” almost free - because you’re not destabilizing the entire project.
 
 ## Team workflow benefits
 
@@ -97,7 +97,7 @@ When chaining files, keep your terrain definition consistent (scale, dimensions,
 
 # Organize Modular Projects Without Breaking Links
 
-When you split a terrain into multiple `.terrain` files (Shape → Detail → Lookdev), you gain speed and stability—but you also introduce more *outputs* (RAWs, masks, builds) that need to stay predictable.
+When you split a terrain into multiple `.terrain` files (Shape → Detail → Lookdev), you gain speed and stability - but you also introduce more *outputs* (RAWs, masks, builds) that need to stay predictable.
 
 A clean folder layout + stable “latest” build paths lets you iterate hard and @roundtrips in your DCC.
 

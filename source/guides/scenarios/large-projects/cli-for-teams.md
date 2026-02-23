@@ -105,7 +105,7 @@ Gaea.Swarm --Filename "D:\Project\Terrain_Final.terrain" --vars "D:\Project\vars
 1. Use **Build Profiles** to standardize output sets (Shape, Detail, Final).
 2. Store variable presets in version control (`vars_final.json`, `vars_game.json`).
 3. Use `--seed` to make “random” variation repeatable.
-4. Prefer Build Swarm for heavy builds—UI resources can compete with Swarm.
+4. Prefer Build Swarm for heavy builds - UI resources can compete with Swarm.
 
 ---
 
