@@ -33,7 +33,7 @@ Useful when iterating variations and keeping outputs separated.
 ### `[Region]`
 
 Name of the active Region (if one is defined).
-Good for region-based exports (e.g., “NorthRidge”, “ValleyA”). If no region exists, this may resolve to empty.
+Good for region-based exports (e.g., "NorthRidge", "ValleyA"). If no region exists, this may resolve to empty.
 
 ### `[Timestamp]`
 

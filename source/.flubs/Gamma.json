@@ -1,7 +1,7 @@
 ﻿[
   {
     "Name": "Gamma",
-    "Description": "The Gamma range is 0.0 to 2.5, with 1.0 being neutral or the original incoming gamma.",
+    "Description": "The Gamma range is 0.0 to 2.5, with 1.0 being neutral or the original incoming gamma.\n&lt; 1.0 lifts mid-values (brighter), expands lighter detail, broadens features.\n&gt; 1.0 darkens mid-values, compresses lighter detail, tightens features.",
     "Type": "Single",
     "IsGroup": false
   },

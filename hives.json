@@ -46,6 +46,12 @@
       "Url": "/guides"
     },
     {
+      "Name": "Videos",
+      "Folder": "videos",
+      "ShortName": "Videos",
+      "Url": "/videos"
+    },
+    {
       "Name": "Developers",
       "Folder": "developers",
       "ShortName": "Developers",

@@ -55,7 +55,7 @@ order: 03
 
 **Step 7: Finalizing Weightmap and Landscape Layer Settings**
 
-* Before clicking "Create Landscape," make sure that Weightmap Filenames and Landscape Layer Names are correctly configured.
+* Before clicking "Create Landscape", make sure that Weightmap Filenames and Landscape Layer Names are correctly configured.
 * Note that the first layer in the material will not receive a weightmap. Therefore, check that your number of weightmaps is always one less than the number of landscape layer names. If there are discrepancies, such as exporting more weightmaps than layers in the material, delete the extra entries in the Weightmap Filenames property.
 
 ![](/.data/assets/UE_WeightMap_07.png)
@@ -63,7 +63,7 @@ order: 03
 **Final Notes:**
 
 * If the importer does not order the Weightmap Filenames according to your Landscape Layer Names, you can manually adjust the order by dragging the entries up or down.
-* If weightmaps fail to import when clicking "Create Landscape," check that Weightmap Filenames, Landscape Material, Landscape Layer Names, and Layer Info Folder are all properly set. All these properties must be correctly configured for successful weightmap import.
+* If weightmaps fail to import when clicking "Create Landscape", check that Weightmap Filenames, Landscape Material, Landscape Layer Names, and Layer Info Folder are all properly set. All these properties must be correctly configured for successful weightmap import.
 * The Weightmap Filenames array should always have 1 less entry than the Landscape Layer Names array - this is due to the first entry of the landscape layer system not needing a mask applied to it. If your arrays have an equal number of entries, the Create Landscape button will be disabled.
 
 ![](/.data/assets/UE_WeightMap_08.png)

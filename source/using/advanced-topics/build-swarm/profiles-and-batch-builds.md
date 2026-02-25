@@ -20,7 +20,7 @@ To create a profile:
 
 The "Load" button imports the selected build profile into the current build settings.
 
-The "Save As..." button allows you to create a new build profile based on the current build settings.
+The "Save As..". button allows you to create a new build profile based on the current build settings.
 
 The "Delete" button removes the currently selected build profile.
 

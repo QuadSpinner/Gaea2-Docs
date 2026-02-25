@@ -19,7 +19,7 @@ Baking captures a node’s current output at a chosen resolution and lets Gaea r
 
 * **Live RAM usage** (less upstream data needs to remain in memory)
 * **Rebuild time** (fewer nodes are recomputed)
-* **Graph “thrash”** when tweaking downstream nodes
+* **Graph "thrash"** when tweaking downstream nodes
 
 If you need to make changes later, simply **unbake** the node, adjust it, and bake again.
 
@@ -27,14 +27,14 @@ If you need to make changes later, simply **unbake** the node, adjust it, and ba
 
 If you have a lot of nodes and you try to bake everything at 8K or 16K in one go, you may run out of memory. Instead, bake **one (or a few) nodes at a time**:
 
-1. Pick a stable “checkpoint” node near the end of a branch.
+1. Pick a stable "checkpoint" node near the end of a branch.
 2. Bake it.
 3. Move to the next branch or checkpoint.
 
 As you bake, Gaea can keep only the baked nodes that still matter for your current work session - specifically the **linchpin nodes** - and unload baked ancestors that are no longer required. This can dramatically reduce live memory consumption.
 
 :::tip
-For best results, bake “downstream checkpoints” first (nodes closer to where you’re currently working). That increases the chance earlier baked ancestors can be unloaded.
+For best results, bake "downstream checkpoints" first (nodes closer to where you’re currently working). That increases the chance earlier baked ancestors can be unloaded.
 :::
 
 ## Persist baked previews to disk

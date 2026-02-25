@@ -15,14 +15,14 @@ When run, it collects:
 
 **Network snapshot**
 * Local IPv4 addresses detected on the server
-* (Optional) DNS resolution for the “advertised host/IP”
+* (Optional) DNS resolution for the "advertised host/IP"
 **Connection tests (TCP connect)**
 * `localhost:<port>`
 * `127.0.0.1:<port>` (if loopback included)
 * `<each local IPv4>:<port>`
 * (Optional) `<advertised host/IP>:<port>`
 **Hints**
-* Simple conclusions derived from the test results (e.g. “bound to loopback only”, “possible firewall block”, “DNS failed”).
+* Simple conclusions derived from the test results (e.g. "bound to loopback only", "possible firewall block", "DNS failed").
 
 ## Inputs
 
@@ -60,7 +60,7 @@ Each row shows:
 - **Timeout**: No response within the timeout window. Common causes: firewall/AV, network ACLs, wrong routing, host not reachable, or port silently dropped.
 - **DnsFailed**: Hostname couldn’t be resolved to an IP. DNS misconfiguration, wrong hostname, missing record, or wrong DNS server.
 - **Unreachable**: The network stack reports no route / host unreachable. Routing issue, disconnected network, invalid IP, or target is on a different network without route.
-- **Error**: Misc failure (socket or system-level). Check the “Detail” column.
+- **Error**: Misc failure (socket or system-level). Check the "Detail" column.
 
 
 ## Common scenarios

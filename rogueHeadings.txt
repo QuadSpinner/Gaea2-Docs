@@ -20,6 +20,8 @@ X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.4.0.md
 X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.5.0.md
 X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.6.0.md
 X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.7.0.md
+X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.8.0.md
+X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.9.0.md
 X:\Docs\Gaea2-Docs\staging\history\index.md
 X:\Docs\Gaea2-Docs\staging\install\fortress\deallocating.md
 X:\Docs\Gaea2-Docs\staging\install\index.md
@@ -28,6 +30,7 @@ X:\Docs\Gaea2-Docs\staging\install\license-management\floating-license.md
 X:\Docs\Gaea2-Docs\staging\reference\gaea2houdini\gaea-nodes.md
 X:\Docs\Gaea2-Docs\staging\reference\node-map.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\colorize\cluter.md
+X:\Docs\Gaea2-Docs\staging\reference\nodes\colorize\rgbsplit.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\modify\directionalwarp.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\modify\transpose.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\modify\warp.md

@@ -75,5 +75,5 @@ To deallocate a license, select the target machine. All sessions on that machine
 
 Two deallocation options are available:
 
-* **D (Graceful)**: Sends an “exit gracefully” command to the Gaea instance, then waits 10 seconds for it to be accepted and executed.
+* **D (Graceful)**: Sends an "exit gracefully" command to the Gaea instance, then waits 10 seconds for it to be accepted and executed.
 * **K (Force Kill)**: Immediately deallocates the workstation.

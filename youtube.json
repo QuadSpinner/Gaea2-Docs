@@ -1,0 +1,118 @@
+{
+    "channels": [
+        {
+            "ids": [
+                "0PVEk6nrPHY",
+                "R6e7_g9ojMk",
+                "K1-S7YcFD_A",
+                "Una5ZVn-8Ns",
+                "q4YfKk7gQTw",
+                "dQYcxzlwXrM",
+                "IIQw9z0gtLA",
+                "umSfxmtCPwk",
+                "nEEpzse1luo",
+                "xvY915SuJsA",
+                "ziqtb8Z0JKs",
+                "TQh07esFGlU",
+                "xhVaOxT01oY",
+                "EWhpvwBP6nw",
+                "40kWTDAcoo0",
+                "We4Pg_gdsVA",
+                "OPwHLcNX3mA",
+                "C9KpUG8u2WM",
+                "t2WnRZTZpQ0",
+                "N5zWk6qdU3U",
+                "mavy7rFpY9s",
+                "lal2cS8Fjvo",
+                "hAmKE37swH0",
+                "DqGoNGHs0a8",
+                "Od8n_QCoHDg",
+                "qewheDis0aI",
+                "H7xYBTDYnG4",
+                "DsnE4Av72fM",
+                "AuHxShc7j-A"
+            ],
+            "official": true
+        },
+        {
+            "ids": [
+                "DcJmrgPHqGI",
+                "NWYI0OyhlEM"
+            ],
+            "directory": "",
+            "official": false
+        },
+        {
+            "ids": [
+                "rG93GnUmNsI",
+                "58KTZbQPJI8",
+                "6aHA1q7WLno"
+            ],
+            "directory": "KilroysKartography"
+        },
+        {
+            "ids": [
+                "FEhwuATcwSs",
+                "4j3ErgwL8TM"
+            ],
+            "directory": "renderBucket"
+        },
+        {
+            "ids": [
+                "jfPSRLgZ68k"
+            ],
+            "directory": "MichaelGArt"
+        },
+        {
+            "ids": [
+                "BwRi3VqeK-M"
+            ],
+            "directory": "PathtraceStudios",
+            "authorized": true
+        },
+        {
+            "ids": [
+                "dkHehnTPTQc",
+                "iuHNm2peAzg",
+                "NASgAN2EHzc",
+                "-zJHscHbobY",
+                "Lr_3XfeYd0U",
+                "G_LtcUjPugU",
+                "2oKGCa9dv4E",
+                "XLWplfkYDdQ",
+                "nNCVlmwActo",
+                "-SJmBe8Y6M4",
+                "-PjaJ0P0mWA",
+                "fqF2zE3PKnQ"
+            ],
+            "directory": "MotionForgeCG"
+        },
+        {
+            "ids": [
+                "FP6YYouUZTc",
+                "ADXFkirrYAc"
+            ],
+            "directory": "Wernaert"
+        },
+        {
+            "ids": [
+                "6kP3GZtp_0g",
+                "KwSfAJtdATs",
+                "ILJiLjsS4V4",
+                "hPcZ25Tho_k",
+                "nWvc3E0P5oU",
+                "4UPf3PtVoV4",
+                "_EvXaPjaYaE",
+                "hIQAacFW7Wk",
+                "oTqnw2dTvzs",
+                "YIwW1igH1H8",
+                "H9Jm6IxSx0E",
+                "SU1NX8z2jCE",
+                "SWEmK_x4mvY",
+                "napJowdSlEM",
+                "f5YIzzoQJwI"
+            ],
+            "directory": "Polyboost"
+        }
+    ]
+}

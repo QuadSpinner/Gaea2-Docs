@@ -27,6 +27,6 @@ To enhance the visualization of a region, you can save the current node preview 
 
 ## **Using a Saved Node Preview**
 
-he saved node preview can serve as a reference image for visualizing regions. To view or hide the reference image, right-click on the region surface and select "Show reference image."
+he saved node preview can serve as a reference image for visualizing regions. To view or hide the reference image, right-click on the region surface and select "Show reference image".
 
 ![](/.data/assets/Build-Options-ShowHide-Preview.png)

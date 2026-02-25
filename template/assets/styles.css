@@ -277,15 +277,15 @@ code:not(pre > code) {
   font-size: 12px;
 }
 
-figure {
-  text-align: center;
-}
 figure figcaption {
   font-size: 10px;
   font-weight: 600;
   opacity: 0.6;
   padding: 6px;
   display: block;
+}
+figure {
+  text-align: center;
 }
 figure img {
   margin-left: auto;
@@ -568,7 +568,7 @@ figure img {
 #site-nav ul li:has(> ul).active > ul > li,
 #site-nav-2 ul li:has(> ul).active > ul > li {
   border-left: 1px solid var(--toc-border);
-  padding-left: 36px;
+  padding-left: 12px;
 }
 #site-nav ul li:has(> ul).active > ul > li > a,
 #site-nav-2 ul li:has(> ul).active > ul > li > a {

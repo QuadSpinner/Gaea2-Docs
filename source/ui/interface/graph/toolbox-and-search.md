@@ -54,8 +54,8 @@ Search in Gaea is more powerful than ever and is the recommended way to create n
 
 ### Portals
 
-* To manage portals, right-click on a node and select "Manage portals." Alternatively, you can press the `P` key to open the node portal menu directly.
-* Click on the input port and select "Connect to portal." This will display all the portals created on the output port of other nodes.
+* To manage portals, right-click on a node and select "Manage portals". Alternatively, you can press the `P` key to open the node portal menu directly.
+* Click on the input port and select "Connect to portal". This will display all the portals created on the output port of other nodes.
 * Choose the desired portal from the menu to establish a portal connection.
 
 ## Intelligent Search and Sorting

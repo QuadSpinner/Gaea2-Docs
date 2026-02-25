@@ -46,7 +46,7 @@ If internet access is blocked, treat prerequisites as first-class deployment art
 
 Recommended pattern:
 
-* Build a “golden” package set internally: Gaea payload + required runtimes.
+* Build a "golden" package set internally: Gaea payload + required runtimes.
 * Prefer the portable payload when your security team requires deterministic file inventories and minimal machine changes. 
 * If you must use the setup executable, run it only after prerequisites are staged so it doesn’t attempt external downloads. 
 
@@ -78,7 +78,7 @@ Installing to a network drive can work, but avoid UNC paths. If you deploy from 
 
 Practical guidance:
 
-* Treat “run binaries directly from a share” as a separate decision from “deploy from a share.” Even if the share is acceptable, local execution is usually more reliable for compute-heavy workflows.
+* Treat "run binaries directly from a share" as a separate decision from "deploy from a share". Even if the share is acceptable, local execution is usually more reliable for compute-heavy workflows.
 * If you do a shared install, validate GPU/driver access and file locking behavior under concurrent launches.
 
 ## Licensing at scale
@@ -103,7 +103,7 @@ For schools and labs, prefer workflows that let IT place the license material ce
 
 ## Validation checklist
 
-After deployment, validate these on at least one machine per “image” or policy group:
+After deployment, validate these on at least one machine per "image" or policy group:
 
 * Gaea launches without prompting for missing runtimes (offline networks should not attempt downloads). 
 * License material is detected from the intended location and mode (`activate.lic`, `gaea2.lic`, or `floating.lic`). 

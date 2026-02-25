@@ -20,7 +20,7 @@ State Management: This dropdown provides various options to manage selected node
 
 * **Revert Changes**: Undo recent modifications and return the selected properties to their previous state.
 * **Reset to Defaults**: Restore the default settings for the selected properties.
-* **Save State**: Saves the current settings of the selected properties for later retrieval. Once clicked, this option transforms into "Load State," which can be used to reload the previously saved settings.
+* **Save State**: Saves the current settings of the selected properties for later retrieval. Once clicked, this option transforms into "Load State", which can be used to reload the previously saved settings.
 
 Toggle Gizmo: Activates when a node supports gizmo functionality. When enabled, it displays the gizmo for the selected node in the 3D viewport.
 

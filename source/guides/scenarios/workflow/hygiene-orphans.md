@@ -5,7 +5,7 @@ uid: hygiene-orphans
 
 # Graph Hygiene: Find and Remove Orphan Nodes
 
-Large graphs tend to accumulate “just-in-case” experiments: half-finished branches, abandoned masks, and one-off tests that never make it into the final output.
+Large graphs tend to accumulate "just-in-case" experiments: half-finished branches, abandoned masks, and one-off tests that never make it into the final output.
 
 Those loose ends are called **orphan nodes** - nodes that aren’t connected (or don’t contribute to any final output). Keeping them around adds clutter, increases mental load, and can waste resources.
 
@@ -30,7 +30,7 @@ While you’re here, also check:
 Once you have the orphan list, pick one of these outcomes:
 
 ### Delete
-If you’re confident the branch is dead, delete it. This keeps the graph readable and reduces “false complexity”.
+If you’re confident the branch is dead, delete it. This keeps the graph readable and reduces "false complexity".
 
 ### Park It
 If you want to keep an experiment for reference:
@@ -42,7 +42,7 @@ If you want to keep an experiment for reference:
 This keeps your production graph clean while preserving R&D work.
 
 :::warning
-Don’t let “maybe later” nodes live in the main graph area. If it’s worth keeping, it’s worth parking.
+Don’t let "maybe later" nodes live in the main graph area. If it’s worth keeping, it’s worth parking.
 :::
 
 ## Keep the Graph Future-Proof

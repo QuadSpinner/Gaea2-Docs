@@ -95,5 +95,5 @@ This prevents downstream modifier/render issues caused by non-uniform scaling.
 # Common gotchas
 
 * **Gamma/Color management:** heightmaps must be treated as data (linear), not as a color texture.
-* **Insufficient subdivisions:** displacement needs dense geometry; otherwise it will look faceted or “steppy.”
+* **Insufficient subdivisions:** displacement needs dense geometry; otherwise it will look faceted or "steppy".
 * **Clipping/viewport:** very large scenes may require viewport clip adjustments; use meters consistently.

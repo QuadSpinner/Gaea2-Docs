@@ -1,8 +1,8 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const hive = document.body?.dataset?.hive;
+  const hive = document.body?.dataset?.hiveShortname;
   if (!hive) return;
 
-  document.querySelectorAll('.nav-item[data-hive]').forEach(a => a.classList.toggle("active", a.dataset.hive === hive));
+  document.querySelectorAll('.nav-item[data-hive-shortname]').forEach(a => a.classList.toggle("active", a.dataset.hiveShortname === hive));
   const encoded = encodeURIComponent(window.location.href);
   var url = new URL(window.location.href);
 
@@ -14,12 +14,14 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   var mdEdit = md.replace(url.origin, "https://github.com/QuadSpinner/Gaea2-Docs/edit/working/source");
+  var mdBlame = md.replace(url.origin, "https://github.com/QuadSpinner/Gaea2-Docs/blame/working/source");
 
   if (url.search) md += url.search;
   if (url.hash) md += url.hash;
 
   document.getElementById("edit-page").setAttribute("href", mdEdit);
   document.getElementById("cmd-view-md").setAttribute("href", md);
+  document.getElementById("cmd-history").setAttribute("href", mdBlame);
   document.getElementById("cmd-view-llms").setAttribute("href", new URL('llms.txt', window.location.href).toString());
   document.getElementById("cmd-ask-gpt").setAttribute("href", `https://chat.openai.com/?q=Read%20${encoded}%20and%20answer%20questions%20about%20the%20content.`);
   document.getElementById("cmd-ask-claude").setAttribute("href", `https://claude.ai/new?q=Read%20${encoded}%20and%20answer%20questions%20about%20the%20content.`);
@@ -132,7 +134,7 @@ $(document).ready(function () {
       return url.toString();
     }
 
-    // B) Prev/next among “siblings” under the same parent <ul>
+    // B) Prev/next among "siblings" under the same parent <ul>
     // - skips li.divider
     // - if sibling is a group, picks closest leaf inside it:
     //   prev => last leaf in that sibling subtree
@@ -220,7 +222,12 @@ $(document).ready(function () {
 
     if (!prevBtn && !nextBtn) box.outerHTML = "";
 
-    document.getElementById("show-sublinks").firstChild.className = 'd-flex flex-wrap';
+    var subs = document.getElementById("show-sublinks");
+    
+    if(subs != null)
+    {
+      firstChild.className = 'd-flex flex-wrap';
+    }
   });
 })();
 

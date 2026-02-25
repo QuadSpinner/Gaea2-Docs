@@ -11,7 +11,7 @@ A cleaner approach is to build a **strong, low-detail macro shape** first, then 
 
 ## Why early detail is a trap
 
-When your base terrain is already “busy”:
+When your base terrain is already "busy":
 
 * **Procedural shaping has less room to work**: transforms, carving, and large-scale edits get masked by pre-baked noise.
 * **Erosion can’t speak clearly**: fine detail interferes with flow and creates messy, over-textured results.
@@ -37,5 +37,5 @@ Now you get the best of both worlds:
 * Your final detail is generated at the stage where it matters, so the terrain **holds up** without losing fidelity
 
 :::warning
-If you bake noisy “micro” detail into the initial shape, you can lock yourself out of realistic erosion and make high-resolution/tiled builds slower and less predictable.
+If you bake noisy "micro" detail into the initial shape, you can lock yourself out of realistic erosion and make high-resolution/tiled builds slower and less predictable.
 :::
