@@ -364,3 +364,7 @@ FodyWeavers.xsd
 deploy
 
 .env
+
+/youtube.txt
+
+/swa-cli.config.json
