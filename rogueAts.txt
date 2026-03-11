@@ -1,1 +1,1 @@
-X:\Docs\Gaea2-Docs\staging\install\install-gaea\mass-deployment.md
+X:\Docs\Gaea2-Docs\staging\using\using-gaea\build-and-export\regions\index.md

@@ -30,7 +30,6 @@ X:\Docs\Gaea2-Docs\staging\ui\interface\viewport\render-modes.md
 X:\Docs\Gaea2-Docs\staging\using\advanced-topics\technical-information\index.md
 X:\Docs\Gaea2-Docs\staging\using\getting-started\basics\introduction.md
 X:\Docs\Gaea2-Docs\staging\using\troubleshooting\terrains\index.md
-X:\Docs\Gaea2-Docs\staging\using\using-gaea\build-and-export\tiled-builds.md
 X:\Docs\Gaea2-Docs\staging\using\using-gaea\colorizing-and-textures\index.md
 X:\Docs\Gaea2-Docs\staging\using\using-gaea\crafting-the-surface\index.md
 X:\Docs\Gaea2-Docs\staging\using\using-gaea\importing-terrains\index.md

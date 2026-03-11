@@ -13,7 +13,7 @@ order: 01
 * **Region: Select the build scope, options can be Whole terrain or select a region from the dropdown.**
 * **Resolution**: Select the output resolution of the terrain (e.g., 2K, 4K). Higher resolutions provide more detail but require more memory.
 * **Subdivision**: Choose the build speed and quality balance:
-  * **None**: No subdivision for fast, low-quality builds.
+  * **None**:  No subdivision for fast, high-quality builds but only available when your world fits inside 8K or 16K.
   * **Faster**: Faster build speed with moderate quality.
   * **Balanced**: A balance between speed and quality.
   * **Slower**: Highest quality but slower build speed.
