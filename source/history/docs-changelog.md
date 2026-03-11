@@ -9,6 +9,10 @@ icon: compass-drafting
 
 The following tables list changes to individual pages. To see the exact change, go to any page and select the 'Updated on XXXXX' link in the right sidebar.
 
+## March 2026
+|  Id  | Page | Section | Last Modified |
+| ---- | ---- | ------- | ------------- |
+| 001 | [Feature Overview](/using/features.html) | Using Gaea | 2026-03-03 |
 ## February 2026
 |  Id  | Page | Section | Last Modified |
 | ---- | ---- | ------- | ------------- |
@@ -81,7 +85,7 @@ The following tables list changes to individual pages. To see the exact change, 
 | 067 | [Gaea 2 Beginner Tutorial - Episode 1 - The Basics](/videos/community/Wernaert/FP6YYouUZTc.html) | Videos | 2026-02-24 |
 | 068 | [Dormant Volcano - Gaea 2 Tutorial](/videos/community/MotionForgeCG/2oKGCa9dv4E.html) | Videos | 2026-02-24 |
 | 069 | [Gaea 2 to Unreal Engine - 2 Ways To Import heightmaps into Unreal Engine](/videos/community/MotionForgeCG/dkHehnTPTQc.html) | Videos | 2026-02-24 |
-| 070 | [Gaea 2 Tutorial](/videos/community/MotionForgeCG/G_LtcUjPugU.html) | Videos | 2026-02-24 |
+| 070 | ["Gaea 2 Tutorial: Creating a River Between Dual Mountains"](/videos/community/MotionForgeCG/G_LtcUjPugU.html) | Videos | 2026-02-24 |
 | 071 | [Gaea 2 - Mask by Height and with the Draw Node](/videos/community/MotionForgeCG/iuHNm2peAzg.html) | Videos | 2026-02-24 |
 | 072 | [Gaea 2 - Import and Edit Real World Heightmaps](/videos/community/MotionForgeCG/NASgAN2EHzc.html) | Videos | 2026-02-24 |
 | 073 | [Gaea 2 - Beginners Tutorial - Getting Started](/videos/community/MotionForgeCG/nNCVlmwActo.html) | Videos | 2026-02-24 |
@@ -95,7 +99,7 @@ The following tables list changes to individual pages. To see the exact change, 
 | 081 | [[Live VOD] Breakdown - Thermal Scene](/videos/community/MichaelGArt/jfPSRLgZ68k.html) | Videos | 2026-02-24 |
 | 082 | [Gaea 2 Tutorial - Mars & Planetary Surfaces](/videos/community/renderBucket/4j3ErgwL8TM.html) | Videos | 2026-02-24 |
 | 083 | [Gaea 2 - Realistic Desert Incline Tutorial](/videos/community/renderBucket/FEhwuATcwSs.html) | Videos | 2026-02-24 |
-| 084 | [Mastering the Art of Gaea2](/videos/community/KilroysKartography/rG93GnUmNsI.html) | Videos | 2026-02-24 |
+| 084 | ["Mastering the Art of Gaea2: The Fundamentals"](/videos/community/KilroysKartography/rG93GnUmNsI.html) | Videos | 2026-02-24 |
 | 085 | [Ultimate Realism - 3D Fantasy Maps with Gaea - Part 1](/videos/community/KilroysKartography/58KTZbQPJI8.html) | Videos | 2026-02-24 |
 | 086 | [Ultimate Realism - 3D Fantasy Maps with Gaea - Part 2](/videos/community/KilroysKartography/6aHA1q7WLno.html) | Videos | 2026-02-24 |
 | 087 | [Quick Gaea 2.0 to Blender Workflow](/videos/community/DcJmrgPHqGI.html) | Videos | 2026-02-24 |
