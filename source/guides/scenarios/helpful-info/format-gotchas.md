@@ -14,13 +14,13 @@ See @match-height for a useful workflow using Constant (meters) → File (unclam
 ### Do
 
 * Prefer 32-bit float GeoTIFF when available (best fidelity, handles negatives cleanly).
-* Keep File = Unclamped, especially if the DEM includes below sea level or “no-data” borders.
-* Pre-handle NoData if your exporter encodes it as a huge negative (e.g., -32768) or huge positive—mask/crop it before Gaea if possible, or you’ll Autolevel against garbage.
-* Use your Constant in meters as the “intended peak altitude” and MATCH to it.
+* Keep File = Unclamped, especially if the DEM includes below sea level or "no-data" borders.
+* Pre-handle NoData if your exporter encodes it as a huge negative (e.g., -32768) or huge positive - mask/crop it before Gaea if possible, or you’ll Autolevel against garbage.
+* Use your Constant in meters as the "intended peak altitude" and MATCH to it.
 
 ### Don’t
 
-* Don’t export with “visualization scaling” (some GIS apps rescale for display); export raw elevation values.
+* Don’t export with "visualization scaling" (some GIS apps rescale for display); export raw elevation values.
 * Don’t clamp on import; it can silently flatten valid extremes.
 
 ---
@@ -39,7 +39,7 @@ See @match-height for a useful workflow using Constant (meters) → File (unclam
 
 * Don’t use 8-bit PNG for real terrain unless it’s purely stylized; banding will be obvious.
 * Don’t let apps apply sRGB gamma to the heightmap (this bends elevations and ruins slopes).
-* Don’t roundtrip through image editors that “helpfully” color manage or dither unless you’re sure it’s data-safe.
+* Don’t roundtrip through image editors that "helpfully" color manage or dither unless you’re sure it’s data-safe.
 
 ---
 
@@ -54,7 +54,7 @@ See @match-height for a useful workflow using Constant (meters) → File (unclam
 
 ### Don’t
 
-* Don’t assume “TIFF” means “high fidelity.” Many TIFFs are 8-bit, RGB, or color-managed.
+* Don’t assume "TIFF" means "high fidelity". Many TIFFs are 8-bit, RGB, or color-managed.
 * Don’t apply compression workflows that alter values (some pipelines do processing on save).
 
 ---
@@ -70,7 +70,7 @@ See @match-height for a useful workflow using Constant (meters) → File (unclam
 ### Don’t
 
 * Don’t treat EXR like an image: avoid color transforms, tone mapping, or display LUT baking.
-* Don’t export “beauty” EXRs; export data EXRs (single channel if possible).
+* Don’t export "beauty" EXRs; export data EXRs (single channel if possible).
 
 ---
 
@@ -89,7 +89,7 @@ See @match-height for a useful workflow using Constant (meters) → File (unclam
 
 ### Don’t
 
-* Don’t use RAW if you aren’t 100% sure of its format metadata—RAW has no header, so it’s easy to misread.
+* Don’t use RAW if you aren’t 100% sure of its format metadata - RAW has no header, so it’s easy to misread.
 * Don’t change resolution midstream without a deliberate resample strategy.
 
 ---
@@ -119,5 +119,5 @@ See @match-height for a useful workflow using Constant (meters) → File (unclam
 ### Don’t
 
 * Don’t per-tile Autolevel with different min/max unless you *want* seams.
-* Don’t let any stage “optimize” or “enhance” your heightmap like it’s a photo.
+* Don’t let any stage "optimize" or "enhance" your heightmap like it’s a photo.
 

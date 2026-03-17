@@ -18,7 +18,7 @@ You can skip straight to creating your first terrain in @introduction.
 
 ### What is a Node?
 
-A node is a fundamental element in Gaea’s terrain design process. It represents a specific operation or function—such as generating a basic terrain shape, applying erosion, modifying texture, or altering elevation. Each node contains settings that you can adjust to change its effect on the terrain.
+A node is a fundamental element in Gaea’s terrain design process. It represents a specific operation or function - such as generating a basic terrain shape, applying erosion, modifying texture, or altering elevation. Each node contains settings that you can adjust to change its effect on the terrain.
 
 ### Node Graph
 

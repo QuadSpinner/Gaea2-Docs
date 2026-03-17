@@ -5,12 +5,12 @@ uid: break-project
 
 # Keep Projects Light by Splitting Them Into Multiple Files
 
-Big terrains get heavy fast. Even if your graph is well-optimized, a single “everything in one file” project can balloon memory use, slow previews, and make experimentation risky.
+Big terrains get heavy fast. Even if your graph is well-optimized, a single "everything in one file" project can balloon memory use, slow previews, and make experimentation risky.
 
-A simple way to stay fast (and sane) is to **break your project into multiple parts**—then pass data forward by exporting stable results as **Gaea RAW** and ingesting them in the next file with a **File** node.
+A simple way to stay fast (and sane) is to **break your project into multiple parts** - then pass data forward by exporting stable results as **Gaea RAW** and ingesting them in the next file with a **File** node.
 
 :::tip
-Think of each file as a “chapter”: Shape → Detail → Output. Keep each chapter focused and your iteration speed stays high.
+Think of each file as a "chapter": Shape → Detail → Output. Keep each chapter focused and your iteration speed stays high.
 :::
 
 ## Why this helps
@@ -33,7 +33,7 @@ Use this file for:
 
 * Landmass, primary forms, broad elevation design
 * Large-scale masks and region planning
-* Any “foundation” work you don’t want to constantly re-run later
+* Any "foundation" work you don’t want to constantly re-run later
 
 When the macro shape is in a good place, **export the key outputs as Gaea RAW** (heightfield, and any critical masks you’ll need downstream).
 
@@ -43,17 +43,17 @@ In a new file:
 
 * Add a **File** node and ingest the RAW outputs
 * Perform higher-cost detailing: erosion variants, sediment passes, fine noise, breakup, surface detail, specialized masks
-* Iterate aggressively—because your upstream foundation is now stable and lightweight
+* Iterate aggressively - because your upstream foundation is now stable and lightweight
 
 :::tip
-If you’re unsure what will matter later, export one extra “utility” mask (e.g., broad slope/height zones). It’s cheap insurance for downstream flexibility.
+If you’re unsure what will matter later, export one extra "utility" mask (e.g., broad slope/height zones). It’s cheap insurance for downstream flexibility.
 :::
 
 ## Work in modules (even inside the same terrain)
 
-You can apply the same approach beyond “shape vs detail”:
+You can apply the same approach beyond "shape vs detail":
 
-* **Erosion Lab**: A dedicated file just for erosion exploration—export the best result back into the pipeline.
+* **Erosion Lab**: A dedicated file just for erosion exploration - export the best result back into the pipeline.
 * **Mask Factory**: One file that produces clean masks (flow, wear zones, deposition regions) for use elsewhere.
 * **Biome/Color Pass**: Separate file for albedo/biome logic so you can iterate visuals without touching terrain structure.
 
@@ -62,10 +62,10 @@ You can apply the same approach beyond “shape vs detail”:
 Instead of branching inside one giant graph, do it with files:
 
 * Duplicate the detail file and try a new erosion method or experimental node chain.
-* Keep your “gold master” foundation untouched.
+* Keep your "gold master" foundation untouched.
 * Swap between variations by pointing a File node at a different RAW export.
 
-This makes “what if we try…” almost free—because you’re not destabilizing the entire project.
+This makes "what if we try…" almost free - because you’re not destabilizing the entire project.
 
 ## Team workflow benefits
 
@@ -97,12 +97,12 @@ When chaining files, keep your terrain definition consistent (scale, dimensions,
 
 # Organize Modular Projects Without Breaking Links
 
-When you split a terrain into multiple `.terrain` files (Shape → Detail → Lookdev), you gain speed and stability—but you also introduce more *outputs* (RAWs, masks, builds) that need to stay predictable.
+When you split a terrain into multiple `.terrain` files (Shape → Detail → Lookdev), you gain speed and stability - but you also introduce more *outputs* (RAWs, masks, builds) that need to stay predictable.
 
-A clean folder layout + stable “latest” build paths lets you iterate hard and @roundtrips in your DCC.
+A clean folder layout + stable "latest" build paths lets you iterate hard and @roundtrips in your DCC.
 
 :::tip
-Design your folder structure so source files never move, RAW handoff files have stable names, and DCC links always point at a static “Latest” folder.
+Design your folder structure so source files never move, RAW handoff files have stable names, and DCC links always point at a static "Latest" folder.
 :::
 
 ## Recommended folder layout
@@ -159,7 +159,7 @@ Project_Terrain/
 * **`_gaea/`**: your editable `.terrain` files, split by stage
 * **`exports/`** inside each stage: *handoff* outputs (usually Gaea RAW + key masks) that the next stage ingests via **File**
 * **`_builds/`**: heavy build outputs (8K/16K, multi-texture sets, etc.)
-* **`_publish/Latest/`**: optional “clean” packaging layer for the rest of the pipeline (especially helpful if you want DCC to reference one simple folder)
+* **`_publish/Latest/`**: optional "clean" packaging layer for the rest of the pipeline (especially helpful if you want DCC to reference one simple folder)
 
 ## Naming conventions that scale
 
@@ -183,7 +183,7 @@ Keep names *semantic* and stable. Avoid embedding versions in filenames unless y
 Treat RAW exports like an API between files: stable names, stable meaning. If you change what a file outputs, change the name (or add a new output), not the path.
 :::
 
-## Avoid roundtrips with “Latest” folders
+## Avoid roundtrips with "Latest" folders
 
 This is the big workflow unlock.
 
@@ -212,9 +212,9 @@ If you want perfect reproducibility for archived builds, enable:
 
 * `Copy the .terrain file to the build folder`
 
-That gives you a time-stamped “this exact graph made this output” record.
+That gives you a time-stamped "this exact graph made this output" record.
 
-## A “handoff-first” workflow that stays stable
+## A "handoff-first" workflow that stays stable
 
 **In Shape file**
 
@@ -235,7 +235,7 @@ That gives you a time-stamped “this exact graph made this output” record.
 
 ## Team + source control notes
 
-* Put editable `.terrain` files under `_gaea/` and treat that as “source.”
+* Put editable `.terrain` files under `_gaea/` and treat that as "source".
 * Put `_builds/` in ignore rules (it’s usually huge and regenerable).
 * Decide whether RAW handoff exports live in version control:
 
@@ -243,11 +243,11 @@ That gives you a time-stamped “this exact graph made this output” record.
   * **Distributed team / reproducibility**: store critical RAW handoffs (or manage them via an asset system / LFS)
 
 :::warning
-If multiple people work in parallel, agree on the “contract” files:
+If multiple people work in parallel, agree on the "contract" files:
 Terrain_Shape_height.raw, …_slope.raw, etc. Don’t rename them casually.
 :::
 
-## One more trick: a clean “Publish Latest”
+## One more trick: a clean "Publish Latest"
 
 If your DCC wants a simplified structure, make `_publish/Latest/` the only folder external tools see.
 

@@ -60,4 +60,4 @@ The Nudge panel is available when you right-click an Integer or Decimals propert
 
 ### **Seed Reset**
 
-Seed Reset is a minor enhancement in the Nudge UI. It sets the “Default” seed value to whatever the random value is when the node is created. So if you play around for a while and want to go back to the original seed, you can simply reset the Seed.
+Seed Reset is a minor enhancement in the Nudge UI. It sets the "Default" seed value to whatever the random value is when the node is created. So if you play around for a while and want to go back to the original seed, you can simply reset the Seed.

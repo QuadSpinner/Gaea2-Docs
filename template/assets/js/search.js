@@ -312,7 +312,7 @@ $(document).ready(function () {
 
         if (!total) {
             $empty.show();
-            $meta.text(`No results for “${query}”`);
+            $meta.text(`No results for "${query}"`);
             return;
         }
 
@@ -323,9 +323,9 @@ $(document).ready(function () {
         if (totalPages) parts.push(`${totalPages} page${totalPages === 1 ? "" : "s"}`);
 
         if (total <= MAX_RESULTS) {
-            $meta.text(`${total} result${total === 1 ? "" : "s"} (${parts.join(", ")}) for “${query}”`);
+            $meta.text(`${total} result${total === 1 ? "" : "s"} (${parts.join(", ")}) for "${query}"`);
         } else {
-            $meta.text(`Showing ${shown.length} of ${total} results (${parts.join(", ")}) for “${query}”`);
+            $meta.text(`Showing ${shown.length} of ${total} results (${parts.join(", ")}) for "${query}"`);
         }
 
         for (const item of shown) {
@@ -373,7 +373,7 @@ $(document).ready(function () {
                   </div>
                   <div class="small text-secondary">
                     <span class="text-muted">${esc(pageTitle)}</span>
-                    ${ctxLine ? ` — ${highlight(ctxLine, query)}` : ""}
+                    ${ctxLine ? `  -  ${highlight(ctxLine, query)}` : ""}
                   </div>
                 </a>
                 <hr>

@@ -12,7 +12,7 @@ Gaea’s interface is built around a simple loop: **build your terrain in the gr
 
 ## Infinity Graph
 
-At the center of Gaea is the **Infinity Graph**—a node-based workspace where you create terrain logic by placing nodes and connecting them into a flow. The graph is designed to scale from small experiments to large production graphs without forcing a rigid structure.
+At the center of Gaea is the **Infinity Graph** - a node-based workspace where you create terrain logic by placing nodes and connecting them into a flow. The graph is designed to scale from small experiments to large production graphs without forcing a rigid structure.
 
 ## Viewport
 

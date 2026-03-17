@@ -5,7 +5,7 @@ uid: cli-for-teams
 
 # Command Line Basics for Teams
 
-The command line is how you turn a “personal” terrain file into a *repeatable team asset*.
+The command line is how you turn a "personal" terrain file into a *repeatable team asset*.
 
 It enables:
 
@@ -18,7 +18,7 @@ Gaea provides two command line entry points:
 - `Gaea.exe` (UI-side CLI tasks)
 - `Gaea.Swarm.exe` (Build Swarm automation)
 
-## Use “Copy Command Line” First
+## Use "Copy Command Line" First
 
 In the UI, use **Build → Copy Command Line** to get the exact command for the current file, with fully qualified paths and variable defaults.
 
@@ -104,8 +104,8 @@ Gaea.Swarm --Filename "D:\Project\Terrain_Final.terrain" --vars "D:\Project\vars
 
 1. Use **Build Profiles** to standardize output sets (Shape, Detail, Final).
 2. Store variable presets in version control (`vars_final.json`, `vars_game.json`).
-3. Use `--seed` to make “random” variation repeatable.
-4. Prefer Build Swarm for heavy builds—UI resources can compete with Swarm.
+3. Use `--seed` to make "random" variation repeatable.
+4. Prefer Build Swarm for heavy builds - UI resources can compete with Swarm.
 
 ---
 

@@ -20,6 +20,8 @@ X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.4.0.md
 X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.5.0.md
 X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.6.0.md
 X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.7.0.md
+X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.8.0.md
+X:\Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.9.0.md
 X:\Docs\Gaea2-Docs\staging\history\index.md
 X:\Docs\Gaea2-Docs\staging\install\fortress\deallocating.md
 X:\Docs\Gaea2-Docs\staging\install\index.md
@@ -28,6 +30,7 @@ X:\Docs\Gaea2-Docs\staging\install\license-management\floating-license.md
 X:\Docs\Gaea2-Docs\staging\reference\gaea2houdini\gaea-nodes.md
 X:\Docs\Gaea2-Docs\staging\reference\node-map.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\colorize\cluter.md
+X:\Docs\Gaea2-Docs\staging\reference\nodes\colorize\rgbsplit.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\modify\directionalwarp.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\modify\transpose.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\modify\warp.md
@@ -47,10 +50,12 @@ X:\Docs\Gaea2-Docs\staging\ui\interface\property-editor\presets.md
 X:\Docs\Gaea2-Docs\staging\using\advanced-topics\build-swarm\creating-mutations.md
 X:\Docs\Gaea2-Docs\staging\using\advanced-topics\technical-information\dimensions-and-scale.md
 X:\Docs\Gaea2-Docs\staging\using\advanced-topics\technical-information\learning-and-predictive-system.md
+X:\Docs\Gaea2-Docs\staging\using\features.md
 X:\Docs\Gaea2-Docs\staging\using\getting-started\important\memory-requirements.md
 X:\Docs\Gaea2-Docs\staging\using\getting-started\important\non-determinism.md
 X:\Docs\Gaea2-Docs\staging\using\index.md
 X:\Docs\Gaea2-Docs\staging\using\troubleshooting\common-issues-and-workarounds.md
+X:\Docs\Gaea2-Docs\staging\using\troubleshooting\diagnostics-watson\data-folder.md
 X:\Docs\Gaea2-Docs\staging\using\troubleshooting\diagnostics-watson\diagnostics-package.md
 X:\Docs\Gaea2-Docs\staging\using\using-gaea\simulations\debris.md
 X:\Docs\Gaea2-Docs\staging\using\using-gaea\simulations\water.md

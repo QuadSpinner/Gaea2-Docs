@@ -7,11 +7,11 @@ uid: match-height
 
 When you bring real-world DEMs or heightmaps into Gaea, the numbers often **don’t match Gaea’s expected height conventions**. Some datasets are already in meters (with negatives), some are biased, some are scaled oddly, and many don’t line up with how you *intend* to use vertical range in your graph.
 
-A clean way to “re-home” that data into a predictable altitude ceiling—without guessing multipliers—is to use a **Constant + MATCH** workflow. It lets you say: “This imported terrain should top out at **X meters**,” and then forces everything to conform.
+A clean way to "re-home" that data into a predictable altitude ceiling - without guessing multipliers - is to use a **Constant + MATCH** workflow. It lets you say: "This imported terrain should top out at **X meters**", and then forces everything to conform.
 
-## The goal: define a correct “highest altitude”
+## The goal: define a correct "highest altitude"
 
-Instead of trying to eyeball scale, you explicitly define the maximum elevation you want your imported terrain to represent (e.g., 2400 m, 8849 m, 500 m—whatever your project needs). Then you match the imported data to that reference.
+Instead of trying to eyeball scale, you explicitly define the maximum elevation you want your imported terrain to represent (e.g., 2400 m, 8849 m, 500 m - whatever your project needs). Then you match the imported data to that reference.
 
 That means:
 
@@ -21,13 +21,13 @@ That means:
 
 ## Step-by-step workflow
 
-### 1. Create a Constant as your “altitude ruler”
+### 1. Create a Constant as your "altitude ruler"
 
 1. Add a **Constant** node.
 2. Set its **Height** to the *highest altitude you want to use*, **in meters**.
 3. Gaea will convert that meter value into its internal percent-based height representation automatically.
 
-Think of this Constant as your “this is what 100% height means for this project” reference.
+Think of this Constant as your "this is what 100% height means for this project" reference.
 
 ### 2. Import your dataset with File (keep it unclamped)
 
@@ -51,11 +51,11 @@ This does two helpful things:
 2. Plug the **Autolevel output** into MATCH’s main input.
 3. Plug the **Constant** into MATCH’s **Reference Input**.
 
-Now MATCH uses the Constant as the “target height context,” scaling your normalized imported terrain so its overall height aligns with the altitude you defined.
+Now MATCH uses the Constant as the "target height context", scaling your normalized imported terrain so its overall height aligns with the altitude you defined.
 
 ## Why this works so well
 
-* **You declare intent** (“max altitude is 2400 m”) instead of guessing scale factors.
+* **You declare intent** ("max altitude is 2400 m") instead of guessing scale factors.
 * **Autolevel** ensures you’re matching a well-behaved, full-range signal.
 * **MATCH** then handles the conversion cleanly, so your terrain sits correctly within Gaea’s vertical expectations.
 

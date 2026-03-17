@@ -6,7 +6,7 @@ uid: name-outputs
 
 # Build Output Naming That Won’t Fight Your DCC
 
-Most “pipeline pain” isn’t about file formats—it’s about *file paths*.
+Most "pipeline pain" isn’t about file formats - it’s about *file paths*.
 
 If your DCC links keep breaking, your builds feel chaotic, or your team can’t tell which output belongs to what, this is usually a naming and destination strategy problem.
 
@@ -50,13 +50,13 @@ If you’re doing tiled builds, set tile naming so it plays nicely with your too
 - **Tile Suffix Pattern** like `_y%Y%_x%X%`
 - **Add Leading Zeroes** for consistent sorting
 - **Start Numbering from 1** if your pipeline expects 1-based indexing
-- **Organization**: consider “folders for each node” to prevent collisions
+- **Organization**: consider "folders for each node" to prevent collisions
 
 ## Avoid Roundtrips
 
-A “roundtrip” is when you rebuild and your DCC links break because the output folder changed.
+A "roundtrip" is when you rebuild and your DCC links break because the output folder changed.
 
-If you use an incremental destination pattern like `[+++]`, you keep build history—but you also change the folder every build.
+If you use an incremental destination pattern like `[+++]`, you keep build history - but you also change the folder every build.
 
 The best practice is:
 
@@ -70,7 +70,7 @@ Now you get:
 - full build archives for rollback.
 
 :::tip
-If you also enable “Copy the .terrain file to the build folder”, each build becomes a fully traceable snapshot.
+If you also enable "Copy the .terrain file to the build folder", each build becomes a fully traceable snapshot.
 :::
 
 ## Recommended Output Layout

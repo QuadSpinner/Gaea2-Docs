@@ -5,13 +5,13 @@ uid: low-detail-start
 
 # Let Shape Stay Simple
 
-It’s tempting to pour detail into the very first landform—lots of noise, breakup, micro ridges. But front-loading detail usually makes the rest of the graph fight you.
+It’s tempting to pour detail into the very first landform - lots of noise, breakup, micro ridges. But front-loading detail usually makes the rest of the graph fight you.
 
 A cleaner approach is to build a **strong, low-detail macro shape** first, then let **Erosion** and **Surface** nodes generate the believable detail later.
 
 ## Why early detail is a trap
 
-When your base terrain is already “busy”:
+When your base terrain is already "busy":
 
 * **Procedural shaping has less room to work**: transforms, carving, and large-scale edits get masked by pre-baked noise.
 * **Erosion can’t speak clearly**: fine detail interferes with flow and creates messy, over-textured results.
@@ -37,5 +37,5 @@ Now you get the best of both worlds:
 * Your final detail is generated at the stage where it matters, so the terrain **holds up** without losing fidelity
 
 :::warning
-If you bake noisy “micro” detail into the initial shape, you can lock yourself out of realistic erosion and make high-resolution/tiled builds slower and less predictable.
+If you bake noisy "micro" detail into the initial shape, you can lock yourself out of realistic erosion and make high-resolution/tiled builds slower and less predictable.
 :::

@@ -1,5 +1,4 @@
 ---
-icon: fire
 title: Baking Nodes
 uid: baking-nodes
 ---
@@ -28,7 +27,7 @@ Selecting a higher resolution for baking is beneficial when working on detailed 
 
 ### Cache Previews to Disk
 
-The Cache Previews to Disk feature, previously known as "Session Cache," allows Gaea to save processed node previews to your hard drive instead of keeping them in memory. 
+The Cache Previews to Disk feature, previously known as "Session Cache", allows Gaea to save processed node previews to your hard drive instead of keeping them in memory. 
 
 This feature is instrumental in optimizing the performance of Gaea by minimizing memory usage, which is especially beneficial in projects with extensive graphs or high-resolution data.
 

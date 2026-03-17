@@ -50,13 +50,13 @@
   },
   {
     "Name": "Slot",
-    "Description": "Controls the narrow, slot-canyon component—tightness and emphasis of the deepest cut.",
+    "Description": "Controls the narrow, slot-canyon component - tightness and emphasis of the deepest cut.",
     "Type": "Single",
     "IsGroup": false
   },
   {
     "Name": "Valley",
-    "Description": "Controls the broader valley form—overall widening and openness of the canyon.",
+    "Description": "Controls the broader valley form - overall widening and openness of the canyon.",
     "Type": "Single",
     "IsGroup": false
   },

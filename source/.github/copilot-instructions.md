@@ -51,7 +51,7 @@ You should complete it as:
     "option1": true,
     "option2": false
   },
-  "Description": "This parameter is an example used to demonstrate documentation completion. It has two options: option1 and option2. Option1 is currently set to true, and option2 is set to false."
+  "Description": "This parameter is an example used to demonstrate documentation completion. It has two options: option1 and option2. Option1 is currently set to true, and option2 is set to false".
 }
 ```
 

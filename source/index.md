@@ -22,7 +22,7 @@ uid: home
 
   <div class="col">
     <div class="card">
-      <a href="/introduction">
+      <a href="/ui">
         <img class="card-img-top" src="/.data/home/getting-started.webp" alt="" />
       </a>
       <div class="card-body">

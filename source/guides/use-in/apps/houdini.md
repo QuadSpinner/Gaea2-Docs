@@ -23,8 +23,8 @@ You may wish to try @gaea2houdini to use Gaea directly inside Houdini.
      * **Y = 2500**
      * **Z = 5000**
 4. **Fix orientation if needed**
-   * Houdini terrains typically live on the ground plane; HeightField tools default to **ZX** as the “ground” alignment. ([?][2])
-   * If your imported mesh is “standing up” or using a different up-axis, add a **Transform SOP** and rotate until it sits flat.
+   * Houdini terrains typically live on the ground plane; HeightField tools default to **ZX** as the "ground" alignment. ([?][2])
+   * If your imported mesh is "standing up" or using a different up-axis, add a **Transform SOP** and rotate until it sits flat.
 
 ---
 

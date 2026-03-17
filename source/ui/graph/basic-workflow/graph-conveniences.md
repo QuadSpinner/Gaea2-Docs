@@ -55,7 +55,7 @@ Other connections associated with that Port will not be affected.
 
 ![](/.data/assets/Insert-Node.png)
 
-* Right-click on a connection and choose "Insert node." This action opens a search menu.
+* Right-click on a connection and choose "Insert node". This action opens a search menu.
 * Select the node you wish to insert from this menu, and it will be automatically placed between the existing connection.
 
 ### Connect to Portals

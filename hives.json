@@ -13,6 +13,7 @@
       "Folder": "",
       "ShortName": "Home",
       "IsHome": true,
+      "Type": "TopLevel",
       "Url": "/"
     },
     {
@@ -37,13 +38,21 @@
       "Name": "Node Reference",
       "Folder": "reference",
       "ShortName": "Reference",
-      "Url": "/reference"
+      "Url": "/reference",
+      "Type": "Reference"
     },
     {
       "Name": "Guides",
       "Folder": "guides",
       "ShortName": "Guides",
       "Url": "/guides"
+    },
+    {
+      "Name": "Videos",
+      "Folder": "videos",
+      "ShortName": "Videos",
+      "Url": "/videos",
+      "Type": "Videos"
     },
     {
       "Name": "Developers",
@@ -55,7 +64,8 @@
       "Name": "Release History",
       "Folder": "history",
       "ShortName": "History",
-      "Url": "/history"
+      "Url": "/history",
+      "Type": "Changelogs"
     }
   ]
 }
