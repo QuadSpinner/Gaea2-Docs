@@ -53,3 +53,21 @@ On the **right side of the Graph**, the **Data View** offers tabs for inspecting
 Gaea’s **Main Menu** follows standard application organization (File, Edit, Graph, Node, Preview, Project, Tools, Help), providing access to project management, graph tools, baking/build/export actions, and diagnostics.
 
 For faster navigation, the **Lazy Menu (F1)** provides a configurable, keyboard-first hub for jumping to key UI areas and tools (such as Graph, Viewport, Properties, Modifiers, Node Tree, Variables, and Build controls).
+
+## Interface Map
+
+The image below identifies the main regions of the Gaea interface. Use it as a quick reference while reading the rest of this page.
+
+![Annotated Gaea Interface](/.data/ui/main-ui-annotated.webp)
+
+| # | Area | Purpose |
+|---|---|---|
+| 1 | Main Menu | Access project, graph, preview, tools, and help commands. |
+| 2 | Infinity Graph | Build terrain logic by connecting nodes into a flow. |
+| 3 | Viewport | Preview terrain shape, scale, and detail in 3D or 2D. |
+| 4 | Viewport Toolbar | Control preview resolution, lighting, render style, and viewport tools. |
+| 5 | Property Editor | Adjust settings for the currently selected node. |
+| 6 | Property Editor Toolbar | Perform node-specific actions such as replace, revert, and gizmo access. |
+| 7 | Modifier Stack | Apply lightweight post-process refinements to a node’s output. |
+| 8 | Data View | Inspect project structure, terrain organization, and graph filters. |
+| 9 | Lazy Menu | configureable / Fast Access menu. |
