@@ -2,6 +2,7 @@
 title: Gaea 2.0 now available!
 uid: gaea-2-0-now-available
 modified: "2025-07-22T21:38:58Z"
+description: We're very pleased to announce that Gaea 2.0 is now available for everyone and is considered production-ready.
 ---
 
 We're very pleased to announce that Gaea 2.0 is now available for everyone and is considered production-ready.

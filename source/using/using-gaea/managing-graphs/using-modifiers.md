@@ -2,6 +2,7 @@
 title: Using Modifiers
 uid: using-modifiers
 order: 01
+description: The Modifier Stack provides quick access to common adjustments, masks, and modifications that you may wish to apply to a node.
 ---
 
 # Using Modifiers

@@ -2,6 +2,7 @@
 title: Regions
 uid: build-options-regions
 order: 07
+description: Regions allows you to take a portion of your terrain and upscale it to a higher resolution.
 ---
 
 # Regions

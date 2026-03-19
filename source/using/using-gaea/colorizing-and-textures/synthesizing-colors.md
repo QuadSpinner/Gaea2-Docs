@@ -2,6 +2,7 @@
 title: Synthesizing Colors
 uid: synthesizing-colors
 order: 03
+description: Gaea's Synth node can take static color information and turn it into an editable gradient or color ramp just like the CLUTer node.
 ---
 
 # Synthesizing Colors

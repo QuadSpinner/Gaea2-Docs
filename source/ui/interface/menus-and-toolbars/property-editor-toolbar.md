@@ -2,6 +2,7 @@
 title: Property Editor Toolbar
 uid: property-editor-toolbar
 order: 05
+description: Property Editor Toolbar in placed on top of Property Editor.
 ---
 
 # Property Editor Toolbar

@@ -2,6 +2,7 @@
 title: Calculating Memory Requirements
 uid: calculating-memory-requirements
 order: 05
+description: It is common to hear users say "But I have an 8GB GPU" or "But I have 64GB RAM" when a build fails.
 ---
 
 # Calculating Memory Requirements

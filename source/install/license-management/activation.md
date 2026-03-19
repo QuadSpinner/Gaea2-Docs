@@ -3,6 +3,7 @@ title: Activation
 uid: activation
 order: 01
 icon: key
+description: Activate Gaea with a license key or license file, locate the activation dialog, and load licenses from the UI or command line.
 ---
 
 # Activation

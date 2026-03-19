@@ -2,6 +2,7 @@
 title: Autolevel
 uid: autolevel
 order: 03
+description: AutoLevel is a leveling node that allows you to level your terrain.
 ---
 
 # Autolevel

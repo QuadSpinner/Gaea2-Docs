@@ -3,6 +3,7 @@ icon: 7
 title: Importing Meshes
 uid: importing-meshes
 order: 07
+description: Gaea 2.1 introduces the Object node which can be used to import 3D models and rasterize them into heightfields.
 ---
 
 # Importing Meshes

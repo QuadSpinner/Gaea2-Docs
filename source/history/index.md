@@ -1,6 +1,7 @@
 ---
 title: Gaea Release History
 uid: changelogs-home
+description: Browse Gaea release history and changelogs to track new features, fixes, and improvements across versions.
 ---
 
 # Release History

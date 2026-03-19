@@ -3,6 +3,7 @@ title: Node Changes
 uid: node-changes
 order: 02
 icon: swap
+description: See which Gaea 1 nodes were renamed, improved, replaced, or newly introduced in Gaea 2.
 ---
 
 # Node Changes

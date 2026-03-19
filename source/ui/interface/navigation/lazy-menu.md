@@ -2,6 +2,7 @@
 title: Lazy Menu
 uid: lazy-menu
 order: 01
+description: The Lazy Menu can be brought up anywhere in the primary Gaea UI by pressing F1.
 ---
 
 # Lazy Menu

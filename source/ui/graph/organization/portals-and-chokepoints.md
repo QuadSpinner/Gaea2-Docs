@@ -3,6 +3,7 @@ title: Portals and Chokepoints
 uid: portals-and-chokepoints
 order: 06
 icon: person-to-portal
+description: Portals are a unique concept in graph-based applications.
 ---
 
 # Portals and Chokepoints

@@ -3,6 +3,7 @@ title: [Live VOD] Breakdown - Thermal Scene
 uid: yt-jfPSRLgZ68k
 tag: jfPSRLgZ68k
 order: 001
+description: Watch [Live VOD] Breakdown - Thermal Scene, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=jfPSRLgZ68k)

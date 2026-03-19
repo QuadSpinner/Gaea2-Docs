@@ -2,6 +2,7 @@
 title: Closing 2024 with Gaea 2.0.6
 uid: gaea-2-0-6
 modified: "2024-12-31T14:07:42Z"
+description: This has been a very exciting year! Not only was Gaea 2.0 released mid-year, but since then we have pushed over 200 updates and fixes across 14 builds.
 ---
 
 This has been a very exciting year! Not only was Gaea 2.0 released mid-year, but since then we have pushed over 200 updates and fixes across 14 builds.

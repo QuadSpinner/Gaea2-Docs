@@ -2,6 +2,7 @@
 title: Source Code
 uid: source-code-unreal
 order: 04
+description: "The source code for the plugin can be found at: Gaea2Unreal Github Repo."
 ---
 
 # Source Code

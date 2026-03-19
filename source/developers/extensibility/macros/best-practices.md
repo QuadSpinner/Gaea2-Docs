@@ -3,6 +3,7 @@ icon: medal
 title: Best Practices
 uid: macros-best-practices
 order: 03
+description: "{% include \\"macros23.md\\" %}."
 ---
 
 # Best Practices for Macros

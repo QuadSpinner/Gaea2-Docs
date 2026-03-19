@@ -2,6 +2,7 @@
 title: Erosion
 uid: erosion
 order: 06
+description: Erosion is the cornerstone of all terrains.
 ---
 
 

@@ -2,6 +2,7 @@
 title: Installing Gaea2Unreal
 uid: installing-gaea2unreal
 order: 01
+description: Download the Gaea Unreal Tools installer from the the Gaea Tools Menu > Plugins.
 ---
 
 # Installing Gaea2Unreal

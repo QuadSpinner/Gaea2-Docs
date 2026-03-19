@@ -2,6 +2,7 @@
 title: Community Videos
 uid: community-videos
 order: 000
+description: Browse community-created Gaea videos covering tutorials, breakdowns, and real-world terrain workflows.
 ---
 
 # Community Videos

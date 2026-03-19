@@ -2,6 +2,7 @@
 title: Island
 uid: island
 order: 05
+description: The Island node lets you draw basic shapes from which entire landmasses can be generated.
 ---
 
 

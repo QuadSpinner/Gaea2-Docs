@@ -2,6 +2,7 @@
 title: New Undo and Recovery Tools
 uid: new-undo-and-recovery-tools
 modified: "2022-05-27T15:05:42Z"
+description: The new Undo and Recovery tools help you experiment, revert changes, explore different opportunities, and flex your creative muscles without facing.
 ---
 
 *The new Undo and Recovery tools help you experiment, revert changes, explore different opportunities, and flex your creative muscles without facing unexpected crashes or loss of data.*

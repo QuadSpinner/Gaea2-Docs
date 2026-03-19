@@ -2,6 +2,7 @@
 title: Build Path Tokens
 uid: build-tokens
 order: 02
+description: Build paths can include tokens (angle brackets) and variables (square brackets).
 ---
 
 # Build Path Tokens

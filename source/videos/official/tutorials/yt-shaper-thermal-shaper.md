@@ -4,6 +4,7 @@ uid: yt-shaper-thermal-shaper
 tag: 40kWTDAcoo0
 order: 019
 icon: kit fa-qs-logo
+description: Watch the official Gaea tutorial for Shaper & Thermal Shaper and follow along with the demonstrated terrain workflow.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=40kWTDAcoo0)

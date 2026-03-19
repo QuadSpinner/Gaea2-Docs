@@ -1,6 +1,7 @@
 ---
 title: Blender
 uid: blender
+description: Assumptions:.
 ---
 
 # Import a Gaea terrain into Blender

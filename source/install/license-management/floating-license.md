@@ -3,6 +3,7 @@ title: Floating License
 uid: floating-license
 order: 04
 icon: arrow-down-up-lock
+description: Use online floating licenses in Gaea, install floating license files, and understand how workstation license checkout works.
 ---
 
 # Floating License

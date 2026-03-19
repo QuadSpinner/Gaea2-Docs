@@ -2,6 +2,7 @@
 title: Undo and Autosave
 uid: undo-and-autosave
 order: 02
+description: The Undo menu lists recent actions and allows you undo them.
 ---
 
 # Undo and Autosave

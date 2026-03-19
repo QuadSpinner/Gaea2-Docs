@@ -2,6 +2,7 @@
 title: Build Options
 uid: build-options
 order: 01
+description: See scale and resolution.
 ---
 
 # Build Options

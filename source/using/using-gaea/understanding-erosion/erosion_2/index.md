@@ -1,6 +1,7 @@
 ---
 title: Erosion_2
 uid: simulation-erosion-2
+description: The Erosion2 node in Gaea 2 is a powerful new erosion algorithm designed to enhance terrain shaping capabilities beyond the traditional Classic Erosion.
 ---
 
 # Erosion_2

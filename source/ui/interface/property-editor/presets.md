@@ -2,6 +2,7 @@
 title: Presets
 uid: presets
 order: 02
+description: Gaea enables users to save the current settings of a node as a preset.
 ---
 
 # Presets

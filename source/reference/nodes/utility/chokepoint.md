@@ -2,6 +2,7 @@
 title: Chokepoint
 uid: chokepoint
 order: 02
+description: The Chokepoint node is a special node whose sole purpose is to help avoid re-connecting many nodes, while adding no memory overhead.
 ---
 
 

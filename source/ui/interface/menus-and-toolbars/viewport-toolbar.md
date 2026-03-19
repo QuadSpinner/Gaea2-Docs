@@ -2,6 +2,7 @@
 title: Viewport Toolbar
 uid: viewport-toolbar
 order: 04
+description: The Viewport Toolbar is a crucial component of the Gaea Viewport, equipped with a variety of tools and menus designed to enhance user interaction and.
 ---
 
 # Viewport Toolbar

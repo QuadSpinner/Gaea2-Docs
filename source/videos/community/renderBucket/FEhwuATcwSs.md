@@ -3,6 +3,7 @@ title: Gaea 2 - Realistic Desert Incline Tutorial
 uid: yt-FEhwuATcwSs
 tag: FEhwuATcwSs
 order: 002
+description: Watch Gaea 2 - Realistic Desert Incline Tutorial, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=FEhwuATcwSs)

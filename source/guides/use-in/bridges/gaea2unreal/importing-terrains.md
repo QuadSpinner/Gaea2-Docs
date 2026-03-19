@@ -2,6 +2,7 @@
 title: Importing Terrains
 uid: importing-terrains
 order: 02
+description: Use Gaea2Unreal, specifically the Gaea Landscape Importer, to easily import a Gaea terrain in Unreal Engine 5 with a single click.
 ---
 
 # Import-Export Process

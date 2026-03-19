@@ -2,6 +2,7 @@
 title: Feature Overview
 uid: all-features
 order: 05
+description: Overview and guidance for Feature Overview in the Gaea documentation.
 ---
 
 ## Terrain creation and realism

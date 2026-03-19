@@ -2,6 +2,7 @@
 icon: sidebar-flip
 title: User Interface
 uid: user-interface
+description: "Gaea’s interface is built around a simple loop: build your terrain in the graph, preview it in the viewport, and refine it in the property editor."
 ---
 
 # User Interface Overview

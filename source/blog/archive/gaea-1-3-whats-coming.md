@@ -2,6 +2,7 @@
 title: "Gaea 1.3 - What's Coming"
 uid: gaea-1-3-whats-coming
 modified: "2025-07-22T21:38:41Z"
+description: Originally, Tiled Builds, Mesh Importer, and Rivers were supposed to be the pillars of Gaea 1.3.
 ---
 
 ## Highlights

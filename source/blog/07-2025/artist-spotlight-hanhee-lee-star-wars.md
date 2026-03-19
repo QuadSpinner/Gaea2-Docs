@@ -2,6 +2,7 @@
 title: "Spotlight: Hanhee Lee"
 uid: artist-spotlight-hanhee-lee-star-wars
 modified: "2025-07-22T21:38:27Z"
+description: "Earlier this year, QuadSpinner's Cynthia Najim sat down with Hanhee Lee to talk about environment art in games, Star Wars Jedi: Fallen Order, and her."
 ---
 
 ### Senior Skybox Artist, Star Wars Jedi: Fallen Order

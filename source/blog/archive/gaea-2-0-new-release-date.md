@@ -2,6 +2,7 @@
 title: Gaea 2.0 New Release Date
 uid: gaea-2-0-new-release-date
 modified: "2024-07-20T17:08:52Z"
+description: We are moving the final release date from July 24 to July 31.
 ---
 
 We are moving the final release date from **July 24** to **July 31**.

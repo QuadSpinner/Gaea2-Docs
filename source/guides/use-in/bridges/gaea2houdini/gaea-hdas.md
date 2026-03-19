@@ -2,6 +2,7 @@
 title: Gaea HDAs
 uid: gaea-hdas
 order: 03
+description: The Gaea Terrain Processor node runs .terrain files authored in Gaea 2.2 or newer.
 ---
 
 # Gaea SOP Nodes

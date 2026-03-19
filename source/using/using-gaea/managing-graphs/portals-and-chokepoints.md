@@ -2,6 +2,7 @@
 title: Portals and Chokepoints
 uid: portals-introduction
 order: 02
+description: F.
 ---
 
 # Portals and Chokepoints

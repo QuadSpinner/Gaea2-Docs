@@ -2,6 +2,7 @@
 title: Mask
 uid: mask
 order: 12
+description: Gaea 2 introduces the new Mask node which allows you to mask the node/effect after it has been created.
 ---
 
 

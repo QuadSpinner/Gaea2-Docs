@@ -2,6 +2,7 @@
 title: Diagnostics Package
 uid: diagnostics-package
 order: 01
+description: Gaea Diagnostics (Watson) can create a Diagnostics Package that can help our tech support technicians and developers examine crashes or incorrect behavior.
 ---
 
 # Diagnostics Package

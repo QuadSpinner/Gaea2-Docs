@@ -1,6 +1,7 @@
 ---
 title: Mesh Exports
 uid: mesh-exports
+description: Gaea uses the Mesher node to translate a heightfield/terrain into a structured mesh.
 ---
 
 # Mesh Exports

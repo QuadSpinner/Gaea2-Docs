@@ -2,6 +2,7 @@
 title: Gamma
 uid: gamma
 order: 03
+description: The Gamma node applies gamma adjustment to the heightfield (or mask) values.
 ---
 
 The Gamma node applies gamma adjustment to the heightfield (or mask) values. It behaves like gamma in an image editor: it remaps midtones more than extreme blacks/whites, changing perceived contrast without being a simple linear gain.

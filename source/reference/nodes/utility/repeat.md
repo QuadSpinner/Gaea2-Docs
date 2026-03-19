@@ -2,6 +2,7 @@
 title: Repeat
 uid: repeat
 order: 15
+description: This simple filter repeats or tiles a given terrain.
 ---
 
 

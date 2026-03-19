@@ -2,6 +2,7 @@
 title: Vegetation
 uid: simulation-vegetation
 order: 04
+description: Geology influences vegetation growth. In Gaea, you can craft complex ecosystems for your terrains and drive them with relevant data such as conflicting.
 ---
 
 # Vegetation

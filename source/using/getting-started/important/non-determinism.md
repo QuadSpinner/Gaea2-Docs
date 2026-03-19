@@ -2,6 +2,7 @@
 title: Non-Determinism
 uid: non-determinism
 order: 08
+description: In procedural terrain generation like in Gaea, non-deterministic output at different resolutions occurs because the way the algorithms process the terrain.
 ---
 
 # Non-Determinism

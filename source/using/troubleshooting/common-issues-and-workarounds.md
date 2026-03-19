@@ -3,6 +3,7 @@ icon: suitcase-medical
 title: Common Issues
 uid: common-workarounds
 order: 01
+description: You may be missing the Microsoft .NET Runtime.
 ---
 
 # Common Issues and Workarounds

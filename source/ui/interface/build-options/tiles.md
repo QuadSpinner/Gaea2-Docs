@@ -2,6 +2,7 @@
 title: Tiles
 uid: build-options-tiles
 order: 03
+description: Overview and guidance for Tiles in the Gaea documentation.
 ---
 
 # Tiles

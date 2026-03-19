@@ -2,6 +2,7 @@
 icon: power-off
 title: Home
 uid: home-user-guide
+description: Welcome to the official Gaea 2.0 documentation, your gateway to unlocking the full potential of the most advanced terrain generation software on the.
 ---
 
 ## User Guide

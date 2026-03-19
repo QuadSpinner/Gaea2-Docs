@@ -2,6 +2,7 @@
 title: "Gaea 2.1 Preview: Enhanced Workflow, Stability, and Performance"
 uid: gaea-2-1-preview
 modified: "2025-03-03T15:55:13Z"
+description: Gaea 2.1 is now available in Public Early Access Preview, bringing major workflow improvements, expanded mesh support, and increased stability.
 ---
 
 **Gaea 2.1 is now available in Public Early Access Preview**, bringing major workflow improvements, expanded mesh support, and increased stability. This update enhances your terrain-building experience with powerful new features and over **100 fixes** addressing key user-reported issues.

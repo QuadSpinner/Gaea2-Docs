@@ -2,6 +2,7 @@
 title: Transpose
 uid: transpose
 order: 37
+description: Transpose takes the character of the Reference terrain and applies to to the Input terrain.
 ---
 
 # Transpose

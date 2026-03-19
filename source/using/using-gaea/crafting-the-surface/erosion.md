@@ -2,6 +2,7 @@
 title: Erosion
 uid: crafting-erosion
 order: 02
+description: Erosion is the key simulation that helps you transform your terrain from a fractal noise or basic geometric shape (or even a complex shape) into a.
 ---
 
 # Erosion

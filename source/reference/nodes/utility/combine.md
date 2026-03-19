@@ -2,6 +2,7 @@
 title: Combine
 uid: combine
 order: 03
+description: The Combine node is one of the most important nodes in Gaea.
 ---
 
 # Combine

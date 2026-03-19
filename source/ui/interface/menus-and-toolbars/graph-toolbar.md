@@ -2,6 +2,7 @@
 title: Graph Toolbar
 uid: graph-toolbar
 order: 03
+description: The Graph Toolbar is an essential interface within the graph environment, designed to enhance user efficiency and interaction.
 ---
 
 # Graph Toolbar

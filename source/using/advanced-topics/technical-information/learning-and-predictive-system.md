@@ -2,6 +2,7 @@
 title: Learning and Predictive System
 uid: learning-and-predictive-system
 order: 02
+description: Gaea incorporates a sophisticated, fully-local Learning and Predictive System designed to streamline your workflow by intelligently suggesting nodes based.
 ---
 
 # Learning and Predictive System

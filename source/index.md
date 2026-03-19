@@ -1,6 +1,7 @@
 ---
 title: Gaea Documentation
 uid: home
+description: Explore the Gaea documentation, including installation, workflows, interface guides, node reference, videos, and developer resources.
 ---
 
 <div class="row row-cols-1 row-cols-md-4 g-4 home-grid">

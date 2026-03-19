@@ -2,6 +2,7 @@
 title: Source Code
 uid: source-code-houdini
 order: 04
+description: "The source code for the plugin can be found at: Gaea2Houdini Github Repo."
 ---
 
 # Source Code

@@ -2,6 +2,7 @@
 title: Erosion_2 in Action
 uid: erosion-2-in-action
 order: 01
+description: Erosion2 was meant to be incredibly flexible from the beginning.
 ---
 
 # Erosion_2 in Action

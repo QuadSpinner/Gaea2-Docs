@@ -3,6 +3,7 @@ title: Hardware Thumbprint
 uid: hardware-thumbprint
 order: 03
 icon: fingerprint
+description: Copy your hardware thumbprint from Gaea so QuadSpinner can issue offline, node-locked licenses for your machine.
 ---
 
 # Hardware Thumbprint

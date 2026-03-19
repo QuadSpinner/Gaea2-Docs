@@ -3,6 +3,7 @@ title: Installation Strategies
 uid: install-strategies
 order: 03
 icon: bullseye-arrow
+description: Compare installation and deployment strategies for individual users, studios, schools, and offline or restricted environments.
 ---
 
 # Installation strategies

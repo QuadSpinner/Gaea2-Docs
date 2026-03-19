@@ -2,6 +2,7 @@
 title: Shaper
 uid: shaper
 order: 27
+description: The Shaper node can bulk up, or bulk down, a terrain.
 ---
 
 

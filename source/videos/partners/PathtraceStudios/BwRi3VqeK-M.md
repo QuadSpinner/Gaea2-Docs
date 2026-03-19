@@ -4,6 +4,7 @@ uid: yt-BwRi3VqeK-M
 tag: BwRi3VqeK-M
 order: 001
 icon: certificate
+description: Watch Create Realistic Mountains with Blender 5.0 and Gaea 2, a partner video featuring Gaea workflows, production techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=BwRi3VqeK-M)

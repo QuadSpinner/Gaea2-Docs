@@ -3,6 +3,7 @@ icon: box
 title: Install Gaea
 uid: install-gaea
 order: 00
+description: Download Gaea, install prerequisites, choose the correct installer type, and review core system and security requirements.
 ---
 
 ![The Gaea 2.0 User Interface](/.data/assets/gaea-ui2x.webp)

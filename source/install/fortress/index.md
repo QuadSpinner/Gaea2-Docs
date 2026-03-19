@@ -3,6 +3,7 @@ title: Fortress Server
 uid: fortress
 icon: server
 order: 01
+description: Learn when to use Fortress Server for offline floating licenses and understand its core components, workflow, and security model.
 ---
 
 # Fortress Server for Offline Deployment

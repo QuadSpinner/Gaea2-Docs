@@ -3,6 +3,7 @@ title: Math Node
 uid: math-node
 order: 03
 icon: calculator-simple
+description: The Math node is a deceptively powerful node with a very simple interface.
 ---
 
 # Math Node

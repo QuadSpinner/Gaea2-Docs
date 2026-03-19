@@ -2,6 +2,7 @@
 title: Lichtenberg
 uid: lichtenberg
 order: 13
+description: L.
 ---
 
 # Lichtenberg

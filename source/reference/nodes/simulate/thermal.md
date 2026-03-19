@@ -2,6 +2,7 @@
 title: Thermal
 uid: thermal
 order: 21
+description: Thermal simulates Thermal Erosion that can create talus and debris.
 ---
 
 

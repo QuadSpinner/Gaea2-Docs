@@ -2,6 +2,7 @@
 title: Debris
 uid: simulation-debris
 order: 02
+description: Simulate mechanical erosion with thousands (even millions) of individual, physical rocks and other geological debris using our physics-engine powered.
 ---
 
 # Debris

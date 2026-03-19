@@ -2,6 +2,7 @@
 title: Transform
 uid: transform
 order: 35
+description: Transform allows you to move, rotate, and scale any terrain.
 ---
 
 # Transform

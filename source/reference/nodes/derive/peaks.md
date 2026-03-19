@@ -2,6 +2,7 @@
 title: Peaks
 uid: peaks
 order: 08
+description: The Peaks node creates a selection mask for peaks and ridgelines using protrusion, also described as inverse curvature.
 ---
 
 # Peaks

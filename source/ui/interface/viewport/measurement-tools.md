@@ -2,6 +2,7 @@
 title: Measurement Tools
 uid: measurement-tools
 order: 03
+description: The Height Picker tool in Gaea allows you to sample the exact height at any point on your terrain, making it easy to understand elevation and analyze.
 ---
 
 # Measurement Tools

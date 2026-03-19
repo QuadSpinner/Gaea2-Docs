@@ -2,6 +2,7 @@
 title: Unreal
 uid: unreal-import
 order: 01
+description: The easiest way to import a Gaea terrain into Unreal Engine is to use the gaea2unreal plugin.
 ---
 
 # Unreal

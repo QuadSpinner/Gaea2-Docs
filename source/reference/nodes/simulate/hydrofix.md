@@ -2,6 +2,7 @@
 title: HydroFix
 uid: hydrofix
 order: 10
+description: HydroFix is a low level utility that can help create unbroken flows.
 ---
 
 

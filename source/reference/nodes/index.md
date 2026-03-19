@@ -2,6 +2,7 @@
 title: Nodes
 uid: nodes
 hidden: true
+description: Browse the Gaea node reference and explore node families, categories, and individual node documentation.
 ---
 
 # In this section

@@ -2,6 +2,7 @@
 title: Using Regions
 uid: using-regions
 order: 02
+description: Regions allows you to take a portion of your terrain and upscale it to a higher resolution.
 ---
 
 # Using Regions

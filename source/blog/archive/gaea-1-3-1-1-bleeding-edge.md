@@ -2,6 +2,7 @@
 title: Gaea 1.3.1.1 Bleeding Edge
 uid: gaea-1-3-1-1-bleeding-edge
 modified: "2025-07-22T21:38:44Z"
+description: The latest Bleeding Edge build is out now!
 ---
 
 The latest Bleeding Edge build is out now! Featuring Arboreal and Crumble nodes as well as some important performance boosts.

@@ -2,6 +2,7 @@
 icon: play
 title: Terrain Basics
 uid: terrain-basics
+description: Gaea uses nodes to create a graph that generates a terrain.
 ---
 
 # Terrain Basics

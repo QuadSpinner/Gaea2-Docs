@@ -2,6 +2,7 @@
 title: File Formats
 uid: file-formats
 order: 01
+description: Gaea supports all modern (and some legacy) file formats for both flat files and meshes.
 ---
 
 # File Formats

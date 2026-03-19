@@ -2,6 +2,7 @@
 title: Occlusion
 uid: occlusion
 order: 07
+description: The Occlusion node behaves similarly to Ambient Occlusion but favors sedimentary processes and rock crevices rather than lighting.
 ---
 
 

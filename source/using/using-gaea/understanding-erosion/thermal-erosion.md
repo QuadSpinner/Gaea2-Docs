@@ -2,6 +2,7 @@
 title: Thermal Erosion
 uid: simulation-thermal-erosion
 order: 03
+description: Thermal erosion is the sister to Hydraulic erosion.
 ---
 
 # Thermal Erosion

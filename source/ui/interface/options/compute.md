@@ -2,6 +2,7 @@
 title: Compute
 uid: options-compute
 order: 12
+description: The Compute tab allows you to configure which available hardware devices are used for computation, optimizing performance across CPU and GPU resources.
 ---
 
 # Compute

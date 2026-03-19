@@ -2,6 +2,7 @@
 title: Exporting Nodes
 uid: exporting-nodes
 order: 01
+description: Gaea is primarily an asset generator designed for creating and exporting terrains to be used in other applications.
 ---
 
 # Exporting Nodes

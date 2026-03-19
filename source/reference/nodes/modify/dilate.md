@@ -2,6 +2,7 @@
 title: Dilate
 uid: dilate
 order: 11
+description: D.
 ---
 
 # Dilate

@@ -4,6 +4,7 @@ uid: yt-sandstone-and-sand
 tag: N5zWk6qdU3U
 order: 024
 icon: kit fa-qs-logo
+description: Watch the official Gaea tutorial for Sandstone and Sand and follow along with the demonstrated terrain workflow.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=N5zWk6qdU3U)

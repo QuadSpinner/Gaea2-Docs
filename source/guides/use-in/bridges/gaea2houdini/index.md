@@ -2,6 +2,7 @@
 icon: h
 title: Gaea2Houdini
 uid: gaea2houdini
+description: The Gaea2Houdini plugin enables you to access select Gaea simulations and tools natively inside Houdini as standard Houdini nodes.
 ---
 
 # Gaea2Houdini

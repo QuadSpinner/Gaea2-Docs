@@ -2,6 +2,7 @@
 title: GraphicEQ
 uid: graphiceq
 order: 19
+description: Applies a multi-band equalizer-style filter to shape terrain features across different scales.
 ---
 
 # GraphicEQ

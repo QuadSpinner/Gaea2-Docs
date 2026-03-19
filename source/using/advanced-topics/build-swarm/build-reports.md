@@ -2,6 +2,7 @@
 title: Build Reports
 uid: build-reports
 order: 02
+description: Gaea shows a post-action screen when a build finishes.
 ---
 
 # Build Reports

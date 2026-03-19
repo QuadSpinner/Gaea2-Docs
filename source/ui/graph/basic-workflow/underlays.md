@@ -3,6 +3,7 @@ title: Underlays
 uid: underlays
 order: 03
 icon: layer-minus
+description: By default Gaea will use the nearest "Heightfield"/Terrain node to display the structure beneath the color or mask.
 ---
 
 # Using Underlays <a href="#pin-node-as-underlay" id="pin-node-as-underlay"></a>

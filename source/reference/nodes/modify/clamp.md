@@ -2,6 +2,7 @@
 title: Clamp
 uid: clamp
 order: 06
+description: C.
 ---
 
 

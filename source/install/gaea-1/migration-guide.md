@@ -3,6 +3,7 @@ title: Migration Guide
 uid: migration-guide
 order: 01
 icon: book-arrow-right
+description: Review major workflow, file format, and node changes between Gaea 1 and Gaea 2 before migrating projects.
 ---
 
 # Migration Guide

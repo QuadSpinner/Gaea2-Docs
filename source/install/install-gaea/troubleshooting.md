@@ -3,6 +3,7 @@ icon: suitcase-medical
 title: Troubleshooting
 uid: troubleshooting-install
 order: 05
+description: Fix startup, runtime, and installation issues by checking prerequisites, drivers, diagnostics, and CPU-only fallback options.
 ---
 
 # Troubleshooting

@@ -2,6 +2,7 @@
 title: Videos
 uid: videos
 order: 01
+description: Browse official, partner, and community Gaea videos, including tutorials, deep dives, and node walkthroughs.
 ---
 
 # Video Learning Material

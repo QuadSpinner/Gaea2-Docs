@@ -2,6 +2,7 @@
 title: Paths and Storage
 uid: paths-and-storage
 order: 03
+description: Gaea stores all application data, excluding Projects, in a centralized directory known as the Data folder.
 ---
 
 # Paths and Storage

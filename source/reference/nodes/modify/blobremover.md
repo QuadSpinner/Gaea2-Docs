@@ -2,6 +2,7 @@
 title: BlobRemover
 uid: blobremover
 order: 04
+description: A.
 ---
 
 # BlobRemover

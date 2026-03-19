@@ -3,6 +3,7 @@ title: Graph Conveniences
 uid: graph-conveniences
 order: 01
 icon: handshake
+description: Gaea supplies numerous quality-of-life features to help you create and navigate complex graphs with as little effort as possible.
 ---
 
 # Graph Conveniences

@@ -2,6 +2,7 @@
 title: Main Menu
 uid: main-menu
 order: 01
+description: Overview and guidance for Main Menu in the Gaea documentation.
 ---
 
 # Main Menu

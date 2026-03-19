@@ -2,6 +2,7 @@
 title: Procedural Workflow
 uid: procedural-workflow
 order: 02
+description: In Gaea, terrain creation and manipulation are handled through a node-based system.
 ---
 
 # Procedural Workflow

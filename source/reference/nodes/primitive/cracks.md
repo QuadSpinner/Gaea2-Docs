@@ -2,6 +2,7 @@
 title: Cracks
 uid: cracks
 order: 05
+description: The Cracks primitive creates large, cracked patterns on a flat base.
 ---
 
 

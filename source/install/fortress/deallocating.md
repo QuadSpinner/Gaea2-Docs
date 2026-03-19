@@ -3,6 +3,7 @@ title: Deallocate Licenses
 uid: fortress-deallocate
 icon: toggle-off
 order: 04
+description: View active Fortress allocations, release sessions gracefully or forcefully, and clear local token files when needed.
 ---
 ## Viewing and Deallocating License Tokens
 

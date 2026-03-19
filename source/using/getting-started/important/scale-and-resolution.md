@@ -2,6 +2,7 @@
 title: Scale and Resolution
 uid: scale-and-resolution
 order: 09
+description: Understanding dimensions and scale in Gaea is essential for building terrains that look realistic and match your project needs.
 ---
 
 # Scale and Resolution

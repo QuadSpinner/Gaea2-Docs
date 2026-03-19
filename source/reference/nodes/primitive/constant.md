@@ -2,6 +2,7 @@
 title: Constant
 uid: constant
 order: 04
+description: The Constant node is the most basic primitive available in Gaea.
 ---
 
 

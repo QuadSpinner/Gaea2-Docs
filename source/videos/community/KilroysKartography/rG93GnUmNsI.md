@@ -3,6 +3,7 @@ title: Mastering the Art of Gaea2: The Fundamentals
 uid: yt-rG93GnUmNsI
 tag: rG93GnUmNsI
 order: 003
+description: "Watch Mastering the Art of Gaea2: The Fundamentals, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns."
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=rG93GnUmNsI)

@@ -2,6 +2,7 @@
 title: File
 uid: file
 order: 10
+description: The File node loads any supported image or data file as a terrain.
 ---
 
 

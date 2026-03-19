@@ -2,6 +2,7 @@
 title: Dimensions and Scale
 uid: dimensions-and-scale
 order: 04
+description: In Gaea, terrain is represented using a heightfield, which is essentially a grid of pixels where each pixel’s value (ranging from 0 to 1) corresponds to a.
 ---
 
 # Dimensions and Scale

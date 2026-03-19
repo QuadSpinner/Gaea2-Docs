@@ -3,6 +3,7 @@ title: How I Made This Desert Dunes Landscape in GAEA & Cinema 4D
 uid: yt-NWYI0OyhlEM
 tag: NWYI0OyhlEM
 order: 001
+description: Watch How I Made This Desert Dunes Landscape in GAEA & Cinema 4D, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=NWYI0OyhlEM)

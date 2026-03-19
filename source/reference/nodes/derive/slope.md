@@ -2,6 +2,7 @@
 title: Slope
 uid: slope
 order: 10
+description: The Slope node creates a selection mask based on the terrain's slope angle, isolating areas within a specified slope range.
 ---
 
 # Slope

@@ -2,6 +2,7 @@
 title: Wizard
 uid: wizard
 order: 24
+description: The Erosion Wizard is a lightweight wrapper for the Erosion node.
 ---
 
 

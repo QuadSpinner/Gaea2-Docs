@@ -3,6 +3,7 @@ title: Deactivation
 uid: deactivation
 order: 02
 icon: lock-keyhole
+description: Release a Gaea license from a machine so it can be reactivated elsewhere, and use the command line when needed.
 ---
 
 # Deactivation

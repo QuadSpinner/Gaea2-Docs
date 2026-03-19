@@ -1,6 +1,7 @@
 ---
 title: Universal Instructions
 uid: universal-instructions
+description: "Gaea terrains are consumed in other applications in two ways: as a mesh or as a displacement map."
 ---
 
 

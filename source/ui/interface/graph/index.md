@@ -2,6 +2,7 @@
 icon: diagram-project
 title: The Graph
 uid: the-graph
+description: Gaea's advanced graph-based workflow is the key to creating sophisticated terrains.
 ---
 
 # The Graph

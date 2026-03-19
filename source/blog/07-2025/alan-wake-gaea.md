@@ -2,6 +2,7 @@
 title: Alan Wake II + Gaea
 uid: alan-wake-gaea
 modified: "2025-07-22T21:44:07Z"
+description: Nazareno Urbano, Lead Environment Artist, shares "We used Gaea as our primary tool to create landscape for ALAN WAKE II.
 ---
 
 ### More than a decade ago, a writer named Alan Wake went on a vacation that was meant to rid him of his writer's block only to be trapped in a nightmare world. 13 years later, Remedy Entertainment took us back to Cauldron Lake and chose Gaea as their primary tool to bring this place to life.

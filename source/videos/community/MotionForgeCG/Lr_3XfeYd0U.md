@@ -3,6 +3,7 @@ title: Gaea 2 - Transfer Surface Detail onto Another Surface
 uid: yt-Lr_3XfeYd0U
 tag: Lr_3XfeYd0U
 order: 005
+description: Watch Gaea 2 - Transfer Surface Detail onto Another Surface, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=Lr_3XfeYd0U)

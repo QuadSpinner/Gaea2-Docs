@@ -4,6 +4,7 @@ uid: yt-thermal2
 tag: C9KpUG8u2WM
 order: 022
 icon: kit fa-qs-logo
+description: Watch the official Gaea video for Thermal2, including node behavior, workflow tips, and example usage.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=C9KpUG8u2WM)

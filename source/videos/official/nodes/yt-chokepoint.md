@@ -4,6 +4,7 @@ uid: yt-chokepoint
 tag: q4YfKk7gQTw
 order: 009
 icon: kit fa-qs-logo
+description: Watch the official Gaea video for Chokepoint, including node behavior, workflow tips, and example usage.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=q4YfKk7gQTw)

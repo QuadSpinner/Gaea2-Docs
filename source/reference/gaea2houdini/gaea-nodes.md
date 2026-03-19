@@ -2,6 +2,7 @@
 title: Gaea Nodes
 uid: gaea-nodes
 order: 01
+description: The Gaea Terrain Processor node runs .terrain files authored in Gaea 2.2 or newer.
 ---
 
 # Gaea Nodes

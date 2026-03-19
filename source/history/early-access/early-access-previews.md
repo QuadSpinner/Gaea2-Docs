@@ -2,6 +2,7 @@
 title: Early Access Previews
 uid: early-access-previews
 order: 1001
+description: Review the changes, fixes, and preview features introduced in Early Access Previews.
 ---
 
 # Early Access Previews

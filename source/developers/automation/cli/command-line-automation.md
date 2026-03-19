@@ -2,6 +2,7 @@
 title: Command Line Automation
 uid: command-line-automation
 order: 01
+description: Gaea's Build Swarm (Gaea.Swarm.exe) can be automated via the command line interface.
 ---
 
 # Command Line Automation

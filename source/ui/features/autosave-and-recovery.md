@@ -3,6 +3,7 @@ icon: light-emergency-on
 title: Autosave and Recovery
 uid: autosave-and-recovery
 order: 02
+description: The Autosave feature in Gaea is a crucial tool designed to automatically save your project at regular intervals.
 ---
 
 # Autosave and Recovery

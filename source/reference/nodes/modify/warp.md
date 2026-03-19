@@ -2,6 +2,7 @@
 title: Warp
 uid: warp
 order: 40
+description: Warp can take the terrain and "warp" the shape creating more organic shapes.
 ---
 
 # Warp

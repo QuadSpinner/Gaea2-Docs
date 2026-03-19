@@ -3,6 +3,7 @@ title: Variables
 uid: variables
 icon: xmark
 order: 01
+description: Variables provide a "token" you can store values into, confine them to specific ranges, and then bind one or more node properties to them.
 ---
 
 # Variables

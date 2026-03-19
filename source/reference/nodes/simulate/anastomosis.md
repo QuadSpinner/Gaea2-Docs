@@ -2,6 +2,7 @@
 title: Anastomosis
 uid: anastomosis
 order: 01
+description: Anastomosis creates interconnected water flow based downcutting, ranging from small pits to large river channels.
 ---
 
 # Anastomosis

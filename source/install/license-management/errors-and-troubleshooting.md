@@ -3,6 +3,7 @@ title: Errors and Troubleshooting
 uid: errors-and-troubleshooting
 order: 05
 icon: circle-question
+description: Resolve common license issues involving duplicate files, firewall access, hardware changes, and stuck activations.
 ---
 
 # Errors and Troubleshooting

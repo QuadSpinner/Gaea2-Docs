@@ -2,6 +2,7 @@
 title: "Artist Spotlight: Eric Yi Lin"
 uid: artist-spotlight-eric-yi-lin-star-wars
 modified: "2023-10-05T18:22:34Z"
+description: "QuadSpinner's Cynthia Najim sat down with Eric Yi Lin to talk about environments in Star Wars Jedi: Survivor, his journey from loving games to helping."
 ---
 
 ### Senior Skybox Artist, Star Wars: Jedi Survivor

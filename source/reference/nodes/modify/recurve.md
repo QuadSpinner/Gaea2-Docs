@@ -2,6 +2,7 @@
 title: Recurve
 uid: recurve
 order: 26
+description: Recurve is a curvature-based expander node.
 ---
 
 # Recurve

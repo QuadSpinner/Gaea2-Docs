@@ -2,6 +2,7 @@
 title: RGBMerge
 uid: rgbmerge
 order: 05
+description: RGBMerge combines three heightfields into a single RGB color output.
 ---
 
 

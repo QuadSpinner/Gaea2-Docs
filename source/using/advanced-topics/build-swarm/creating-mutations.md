@@ -2,6 +2,7 @@
 title: Creating Mutations
 uid: creating-mutations
 order: 01
+description: Mutations are a great way to create multiple variations of the same terrain with minimal effort.
 ---
 
 # Creating Mutations

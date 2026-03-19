@@ -4,6 +4,7 @@ uid: yt-volcano
 tag: OPwHLcNX3mA
 order: 021
 icon: kit fa-qs-logo
+description: Watch the official deep-dive video for Volcano and see a complete Gaea terrain workflow in action.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=OPwHLcNX3mA)

@@ -2,6 +2,7 @@
 title: Memory Requirements
 uid: memory-requirements
 order: 10
+description: Knowing how much memory Gaea will need for your project helps avoid performance issues and crashes.
 ---
 
 # Memory Requirements

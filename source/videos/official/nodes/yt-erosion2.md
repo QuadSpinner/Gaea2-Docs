@@ -4,6 +4,7 @@ uid: yt-erosion2
 tag: We4Pg_gdsVA
 order: 020
 icon: kit fa-qs-logo
+description: Watch the official Gaea video for Erosion2, including node behavior, workflow tips, and example usage.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=We4Pg_gdsVA)

@@ -2,6 +2,7 @@
 title: HSL
 uid: hsl
 order: 04
+description: The HSL node adjusts Hue, Saturation, and Lightness of a color input.
 ---
 
 # HSL

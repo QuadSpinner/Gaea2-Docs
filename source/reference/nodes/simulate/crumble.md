@@ -2,6 +2,7 @@
 title: Crumble
 uid: crumble
 order: 02
+description: Crumble runs a different kind of simulation that feeds off of existing crevices, erosive information, and other subtle details to collapse the terrain.
 ---
 
 # Crumble

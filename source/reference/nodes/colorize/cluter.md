@@ -2,6 +2,7 @@
 title: CLUTer
 uid: cluter
 order: 01
+description: CLUTer lets you create color gradients which can be mapped to texture masks for creating color maps.
 ---
 
 

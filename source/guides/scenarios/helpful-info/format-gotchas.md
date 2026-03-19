@@ -1,6 +1,7 @@
 ---
 title: File Format Gotchas
 uid: format-gotchas
+description: Here are practical do’s and don’ts for the formats people most often feed into Gaea, tuned for the workflow:.
 ---
 
 Here are practical do’s and don’ts for the formats people most often feed into Gaea, tuned for the workflow:
