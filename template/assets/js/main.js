@@ -60,12 +60,20 @@ $(document).ready(function () {
   $(".image-row-vertical > p").each(function () {
     $(this).replaceWith($(this).contents());
   });
-  // unwrap <figure> if it's directly wrapped by a <p>
+  // Only promote plain markdown images into figures/captions.
+  // Respect authored layout containers such as <div align="left">...</div>.
   $("#contents img").each(function () {
-    if ($(this).attr("alt") != null && !$(this).hasClass("card-img-top")) {
-      $(this).wrap("<figure></figure>");
-      $(this).after("<figcaption>" + $(this).attr("alt") + "</figcaption>");
+    const $img = $(this);
+    const alt = $img.attr("alt")?.trim();
+    const parentTag = this.parentElement?.tagName?.toLowerCase();
+    const hasAuthoredLayout = $img.closest("figure, [align], .image-row, .image-row-vertical").length > 0;
+
+    if (!alt || $img.hasClass("card-img-top") || parentTag !== "p" || hasAuthoredLayout) {
+      return;
     }
+
+    $img.wrap("<figure></figure>");
+    $img.after("<figcaption>" + alt + "</figcaption>");
   });
 });
 

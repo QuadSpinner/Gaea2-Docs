@@ -3,18 +3,13 @@ title: Transform
 uid: transform
 order: 35
 description: Transform allows you to move, rotate, and scale any terrain.
-asset-status: coming-soon
-todo: Remake the lost Transform screenshot for this page.
 ---
 
 # Transform
 
 Transform allows you to move, rotate, and scale any terrain. The Transform node can be implemented at any point in your graph as it is a post-process effect.
 
-:::note
-Example image coming soon.
-:::
-<!-- TODO: Original example image lost: ![](/.data/assets/transform.png) -->
+![](/.data/assets/transform.png)
 
 
 

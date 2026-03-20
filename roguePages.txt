@@ -36,7 +36,6 @@ I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\modify\whorl
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\output\mesher.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\output\texturebaker.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\output\unreal.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\primitive\cutnoise.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\primitive\draw.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\primitive\driftnoise.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\primitive\lineargradient.md

@@ -3,8 +3,6 @@ title: CLUTer
 uid: cluter
 order: 01
 description: CLUTer lets you create color gradients which can be mapped to texture masks for creating color maps.
-asset-status: coming-soon
-todo: Remake the lost CLUTer gradient example screenshots for this page.
 ---
 
 # CLUTer
@@ -20,11 +18,8 @@ The CLUTer nodes let you take any grayscale input (such as Curvature, Slope, Sur
 ## Gradient Editor
 Click anywhere in the gradient to create a new stop. Drag the stop to position it. Select the stop and press `DEL` to delete the stop.
 
-:::note
-Example images coming soon.
-:::
-<!-- TODO: Original example image lost: ![CLUTer](/.images/CLUT-sample.png) -->
-<!-- TODO: Original example image lost: ![CLUTer](/.images/CLUT-sample2.png) -->
+![](/.images/CLUT-sample.png)
+![](/.images/CLUT-sample2.png)
 
 :::info
 You can use **Input Clarity** instead of interjecting an Autolevels node to the graph.
