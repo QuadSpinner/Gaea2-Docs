@@ -2,16 +2,16 @@
 title: Dimensions and Scale
 uid: dimensions-and-scale
 order: 04
-description: In Gaea, terrain is represented using a heightfield, which is essentially a grid of pixels where each pixel’s value (ranging from 0 to 1) corresponds to a.
+description: Learn how terrain size, height, pixels, and compression ratio work together to define scale in Gaea.
 ---
 
 # Dimensions and Scale
 
-### What is a pixel worth?
+## What Is a Pixel Worth?
 
 In Gaea, terrain is represented using a heightfield, which is essentially a grid of pixels where each pixel’s value (ranging from 0 to 1) corresponds to a specific elevation point on the terrain. This system allows Gaea to model the terrain’s slopes and elevations with high precision.
 
-### Scale Philosophy
+## Scale Philosophy
 
 Gaea uses a vertical ratio to maintain scale. This is because we describe the world in meters (e.g., `5000m x 5000m x 2500m`) to retain a consistent scale, but we use pixels in specific sizes (e.g., `4096px x 4096px`) to store our data (as needed by CG applications) which is a finite and arbitrary unit which can't map to pixels. In addition, each pixel's value is stored as a high-precision decimal value (`0.005893f`) which is also an arbitrary, but ratio-based, unit.
 
@@ -25,7 +25,7 @@ $$
 
 ![The default Gaea world is 5000m wide and 2500m tall, creating a perfect 0.5 ratio.](/.data/assets/scale--5000x2600.webp)
 
-### Terrain Size and Height
+## Terrain Size and Height
 
 **1. Size (Width and Sprawl)**
 
@@ -37,14 +37,14 @@ $$
 * **Height Values**: The heights within the heightfield are stored as values between 0 and 1. These values are scaled to represent the actual height range of your terrain in meters.
 * **Example**: A height value of 0.5 in a terrain with a maximum elevation of 100 meters represents an elevation of 50 meters.
 
-### Understanding Vertical Compression Ratio
+## Understanding Vertical Compression Ratio
 
 **Vertical Compression Ratio = Height / Scale**
 
 * **Height**: This is the maximum elevation difference in your terrain, from the lowest point (often represented as 0 in the heightfield) to the highest point (represented as 1).
 * **Scale**: This refers to the specified horizontal dimensions of the terrain.
 
-### **Purpose of the Compression Ratio**
+### Purpose of the Compression Ratio
 
 * The vertical Compression Ratio helps maintain a realistic representation of vertical and horizontal scales. It ensures that the terrain’s vertical scale (elevation) is proportionate to its horizontal scale (width/sprawl).
 * **Interpreting the Ratio**: A higher Compression Ratio indicates that the terrain features are more vertically exaggerated relative to their horizontal spread. Conversely, a lower ratio means the terrain is relatively flatter or more stretched out horizontally.
@@ -64,7 +64,7 @@ $$
 
 This ratio tells us that for every 4 meters you move horizontally, there is a potential elevation change of 1 meter. This relatively low ratio indicates a gentle slope across the terrain.
 
-### Importing a Mesh or Heightfield Object in your 3D App
+## Importing a Mesh or Heightfield Object in Your 3D App
 
 **Scenario:** You have a terrain mesh exported from Gaea where the maximum height is set to a specific value and the horizontal dimensions are defined. You want to ensure the mesh retains realistic proportions when imported into a 3D CG application.
 
@@ -87,7 +87,7 @@ This ratio tells us that for every 4 meters you move horizontally, there is a po
 
 By adhering to these steps, the imported terrain mesh will reflect accurate proportions and the visualization will maintain the intended topographical features and realism, regardless of the 3D CG software used.
 
-### Tips for Users
+## Tips for Users
 
 * **Adjusting the Ratio**: You can manipulate the look and feel of your terrain by adjusting either the height or the sprawl. Increasing the height while keeping the sprawl constant will make the terrain steeper.
 * **Visual Impact**: Use the Compression Ratio to guide the realism of your terrain. A ratio that closely matches real-world landscapes will yield more realistic results. A higher or lower ratio can be used to stylize the terrain according to specific artistic goals.

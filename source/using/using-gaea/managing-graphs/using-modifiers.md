@@ -51,7 +51,7 @@ Using Shaper, you can bulk up or bulk down a terrain. It can apply to masks as w
 
 ![Shaper at +50](/.data/assets/Gaea_-_Untitled_02-52-58-AM.webp) 
 
-![Shaper at -50](...)
+![Shaper at -50](/.data/assets/Gaea_-_Untitled_02-52-51-AM.webp)
 
 ### Restrict Effect to Slope or Height
 

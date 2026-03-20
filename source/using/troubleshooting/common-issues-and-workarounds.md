@@ -18,11 +18,11 @@ If it still does not work, you may be missing a necessary C++ runtime. This may 
 
 ## Gaea fails or freezes on starting up. \[NVidia GPU / Nahimic]
 
-#### Nvidia Drivers
+### Nvidia Drivers
 
 Some users have reported issues with recent NVidia GPU drivers. We recommend trying an [older driver such as 566](https://www.nvidia.com/en-us/drivers/details/237726/)
 
-#### Nahimic / SteelSeries Conflict
+### Nahimic / SteelSeries Conflict
 
 The "Nahimic" audio utility is installed with software bundles from manufacurers such as ASUS, MSI, etc. This audio tweaking application can aggressively interfere with non-game applications.
 

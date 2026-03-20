@@ -17,11 +17,11 @@ You can keep them in the heightmap, or export a point-cloud for later use. You c
 
 ![](/.data/assets/debrismask.webp)
 
-### Emission Source
+## Emission Source
 
 The Debris simulation lets you control the emission source so you can place the debris as needed. In this image, the flow map of the terrain is provided as the Emitter Source, so the debris form only within those lanes and the take advantage of the inherent physics of the flows to create scree rivers.
 
-@erosion2 Wear data can often be a great source. @
+Wear data from @erosion2 can often be a great source.
 
 ![](/.data/assets/Gaea_-_cx1.terrain_06-47-11-AM---Copy.webp)
 
@@ -38,7 +38,7 @@ So, adjusting friction changes how steep or shallow debris deposits will appear 
 For natural rock surfaces, the friction coefficient averages around **0.62**. This value directly relates to the **slope of repose** – the stable angle at which debris piles up. A friction coefficient of 0.62 corresponds to a **32° slope**, which is the typical angle of a talus (debris pile) formed under gravity.
 :::
 
-### Size, Shape, and Layering
+## Size, Shape, and Layering
 
 You vary debris sizes and even layer multiple Debris simulations to mix and match settings and shapes. The Debris node provides Sharp and Round rock shapes.
 

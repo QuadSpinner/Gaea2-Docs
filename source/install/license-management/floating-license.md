@@ -8,11 +8,11 @@ description: Use online floating licenses in Gaea, install floating license file
 
 # Floating License
 
-::note
+:::note
 This page talks about Online Floating Licenses. For using Offline Floating Licenses, see @fortress
 :::
 
-### Installing a License
+## Installing a License
 
 Activating a Floating License on a workstation is the same as loading a user key for a standard @activation. The only difference is your key will have a `FL-` prefix. Just enter the key in the Activation dialog, or via `Help > Manage License`, or `Help > About > Load License`.
 
@@ -22,13 +22,13 @@ You can install your floating license the same way as described in license file 
 :::
 
 
-### Acquiring a License
+## Acquiring a License
 
 When you start Gaea, it will contact the online license server to acquire a floating license. 
 
 If your maximum number of licenses/seats have been assigned at that moment, you will be notified. In that case, you have to wait until a license slot has been released.
 
-### Usage and Loss of Network or License
+## Usage and Loss of Network or License
 
 Gaea will use \~5 minute heartbeats to keep the license alive, with an additional \~5 minute grace period to allow for network interruptions or other possibilities.
 
@@ -38,7 +38,7 @@ In case of network loss, or any other disruption, Gaea will release the license 
 In case you lose the network connection or the software crashes, then recover it, you may get a "Maximum Clients Assigned" message when trying to acquire a license. This is because your old license slot may not have been released. Just wait until the end of the current heartbeat (5 minutes or fewer) and then try again.
 :::
 
-### Refreshing or Re-acquiring the License
+## Refreshing or Re-acquiring the License
 
 The `Refresh` button in the Help > About dialog can be used to force a re-verification and re-acquisition of your license token. 
 

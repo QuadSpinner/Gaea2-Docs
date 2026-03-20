@@ -12,7 +12,7 @@ The Suspend/Engine button, or the shortcut `` ` `` lets you toggle the Gaea engi
 
 ![When the engine is suspended, an animated red line appears around the Graph. The progress status icon (bottom left) and the Suspend Engine button in the Graph Toolbar (right) also turn red.](/.data/assets/suspend_engine.png)
 
-### Benefits of Suspending the Engine
+## Benefits of Suspending the Engine
 
 * Make several changes and avoid long reprocessing on nodes.
 * Edit more than one node, or restructuring a graph.

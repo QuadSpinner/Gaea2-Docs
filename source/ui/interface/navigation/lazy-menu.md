@@ -17,7 +17,7 @@ This extra level of laziness can be disabled in the @options-general Options.
 
 ![](/.data/assets/lazy_menu.png)
 
-### Editing Options
+## Editing Options
 
 You may not want all options to visible or maybe just want some options to stand out over others. You can edit the Lazy Menu in Options > @options#lazy-menu.
 

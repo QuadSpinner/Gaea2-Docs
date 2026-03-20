@@ -114,4 +114,4 @@ Pressing `F4` when one or more nodes are selected will automatically layout the 
 
 Dragging the cursor on the graph while holding `Ctrl + Shift` lets you push all nodes to the right of the cursor. It is a handy tool to quickly organize portions of a graph.
 
-<figure><img src="/.data/assets/Gaea_-_Mixer_and_ColorErosion.terrain_11-46-49-PM.gif"><figcaption><p>Push nodes with <code>Ctrl + Shift + LMB</code></p></figcaption></figure>
+<figure><img src="/.data/assets/Gaea_-_Mixer_and_ColorErosion.terrain_11-46-49-PM_p001.webp"><figcaption><p>Push nodes with <code>Ctrl + Shift + LMB</code></p></figcaption></figure>

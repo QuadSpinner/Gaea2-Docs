@@ -5,6 +5,8 @@ order: 04
 description: The anatomy of the Gaea Data Folder.
 ---
 
+# Data Folder
+
 The anatomy of the Gaea Data Folder.
 
 | Path             | Description                                                                              |

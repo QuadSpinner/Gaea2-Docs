@@ -8,7 +8,7 @@ Here are practical do’s and don’ts for the formats people most often feed in
 
 See @match-height for a useful workflow using Constant (meters) → File (unclamped) → Autolevel → MATCH (Constant as Reference)
 
----
+# File Format Gotchas
 
 ## GeoTIFF DEM
 

@@ -5,6 +5,8 @@ order: 10
 description: The File node loads any supported image or data file as a terrain.
 ---
 
+# File
+
 
 The File node loads any supported image or data file as a terrain. It
 supports all major file formats, and you can load either a grayscale
@@ -25,4 +27,4 @@ data must retain a specific number range.
 
 
 
-# Properties
+## Properties

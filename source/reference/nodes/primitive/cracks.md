@@ -5,8 +5,7 @@ order: 05
 description: The Cracks primitive creates large, cracked patterns on a flat base.
 ---
 
-
-
+# Cracks
 
 The Cracks primitive creates large, cracked patterns on a flat base. You
 can use it to mask other nodes or subtract it from other primitives
@@ -16,14 +15,14 @@ using the Combine node.
 
 ## Usage
 
-#### Basic Technique
+### Basic Technique
 
 By using Combine to subtract out the Cracks output, you can cut out the
 pattern in the main terrain.
 
 ![](/.data/ref/Cracks/usage-1.webp)
 
-#### Nested Patterns
+### Nested Patterns
 
 The default pattern may seem to geometric and simplistic. This is by
 design so you have broad room to make modifications.
@@ -54,5 +53,5 @@ If you need more elaborate distortions in your patterns, you can add a Warp node
 
 
 
-# Properties
+## Properties
 
