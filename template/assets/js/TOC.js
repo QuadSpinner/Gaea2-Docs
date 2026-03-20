@@ -286,8 +286,11 @@ function initGlobalToc({
     const i = document.createElement("i");
     const cls = String(icon).trim();
 
-    // Your chosen convention: icon contains the suffix only (e.g. "dog"), render fa-dog
-    i.className = `fa-duotone fa-solid fa-${cls}`;
+    if (cls.includes("fa-")) {
+      i.className = cls;
+    } else {
+      i.className = `fa-duotone fa-solid fa-${cls}`;
+    }
     i.classList.add("toc-icon");
     el.appendChild(i);
   }

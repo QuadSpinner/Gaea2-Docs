@@ -1,5 +1,5 @@
 ---
-icon: power-off
+icon: check-to-slot
 title: Install
 uid: home-getting-started
 description: Install Gaea, manage licenses, and find setup guidance for first-time installs, migrations, deployment, and maintenance.

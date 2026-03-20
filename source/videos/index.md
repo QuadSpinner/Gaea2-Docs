@@ -1,4 +1,5 @@
 ---
+icon: film
 title: Videos
 uid: videos
 order: 01
