@@ -2,6 +2,7 @@
 title: Profiles
 uid: build-options-profiles
 order: 08
+description: Build Profiles let you save all Build Settings in a named preset.
 ---
 
 # Profiles

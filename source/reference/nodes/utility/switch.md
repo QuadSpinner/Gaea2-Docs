@@ -2,6 +2,7 @@
 title: Switch
 uid: switch
 order: 19
+description: R.
 ---
 
 Route lets you choose between two different heightfield inputs. This is an automation node that relies on a boolean (true/false) input.

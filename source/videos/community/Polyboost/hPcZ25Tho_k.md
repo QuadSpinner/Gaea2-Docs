@@ -3,6 +3,7 @@ title: Master of Gaea – Creating Dynamic Landscape Patches | Gaea + Unreal Eng
 uid: yt-hPcZ25Tho_k
 tag: hPcZ25Tho_k
 order: 004
+description: Watch Master of Gaea – Creating Dynamic Landscape Patches | Gaea + Unreal Engine, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=hPcZ25Tho_k)

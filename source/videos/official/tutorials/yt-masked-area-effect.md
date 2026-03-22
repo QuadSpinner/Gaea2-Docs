@@ -4,6 +4,7 @@ uid: yt-masked-area-effect
 tag: hAmKE37swH0
 order: 027
 icon: kit fa-qs-logo
+description: Watch the official Gaea tutorial for Masked Area Effect and follow along with the demonstrated terrain workflow.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=hAmKE37swH0)

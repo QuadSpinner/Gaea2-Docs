@@ -2,6 +2,7 @@
 title: LineNoise
 uid: linenoise
 order: 14
+description: LineNoise is a geometry generator that creates sets of lines which can be distorted and used with other noises and fractals to produce layered ridges.
 ---
 
 

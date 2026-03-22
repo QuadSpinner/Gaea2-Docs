@@ -2,6 +2,7 @@
 title: Blur
 uid: blur
 order: 05
+description: The Blur node diffuses sharp shapes and softens the terrain.
 ---
 
 

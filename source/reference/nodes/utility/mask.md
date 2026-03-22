@@ -2,10 +2,11 @@
 title: Mask
 uid: mask
 order: 12
+description: Gaea 2 introduces the new Mask node which allows you to mask the node/effect after it has been created.
 ---
 
+# Mask
 
-## Mask
 
 Gaea 2 introduces the new `Mask` node which allows you to mask the node/effect **after** it has been created. You can connect the Mask node after an effect has been applied. For example, in a `Mountain > Erosion > Mask scenario`, the Mask will automatically use the applied mask between Mountain and Erosion.
 

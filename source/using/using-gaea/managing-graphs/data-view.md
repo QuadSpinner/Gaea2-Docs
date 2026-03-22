@@ -2,6 +2,7 @@
 title: Data View
 uid: data-view
 order: 05
+description: The Data View is a set of tabs in the right side of the Graph, providing fast access to key information in your project.
 ---
 
 # Data View

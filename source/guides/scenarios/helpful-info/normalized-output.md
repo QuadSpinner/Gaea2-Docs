@@ -1,6 +1,7 @@
 ---
 title: Using Normalized Output
 uid: normalized-output
+description: When you export a heightfield, you’re not really exporting "mountains" - you’re exporting numbers.
 ---
 
 # Using Normalized Output for Maximum Data Depth

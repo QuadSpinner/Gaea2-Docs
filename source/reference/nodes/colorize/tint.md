@@ -2,6 +2,7 @@
 title: Tint
 uid: tint
 order: 11
+description: Tint converts a heightmap or mask into a color texture by blending between two colors across the input range.
 ---
 
 # Tint

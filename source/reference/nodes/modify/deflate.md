@@ -2,6 +2,7 @@
 title: Deflate
 uid: deflate
 order: 09
+description: Deflate takes away the bulk of the terrain leaving only finer details.
 ---
 
 # Deflate

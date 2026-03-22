@@ -4,6 +4,7 @@ title: Elaborate Terrains
 uid: elaborate-terrains
 order: 03
 section: true
+description: Overview and guidance for Elaborate Terrains in the Gaea documentation.
 ---
 
 # Elaborate Terrains

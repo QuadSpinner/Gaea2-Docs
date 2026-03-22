@@ -4,6 +4,7 @@ uid: yt-high-mountain
 tag: lal2cS8Fjvo
 order: 026
 icon: kit fa-qs-logo
+description: Watch the official Gaea tutorial for High Mountain and follow along with the demonstrated terrain workflow.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=lal2cS8Fjvo)

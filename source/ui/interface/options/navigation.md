@@ -2,6 +2,7 @@
 title: Navigation
 uid: options-navigation
 order: 10
+description: The Navigation tab allows you to customize how you interact with the 3D viewport using your mouse and keyboard.
 ---
 
 # Navigation

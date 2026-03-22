@@ -4,6 +4,7 @@ uid: yt-blobremover
 tag: IIQw9z0gtLA
 order: 011
 icon: kit fa-qs-logo
+description: Watch the official Gaea video for BlobRemover, including node behavior, workflow tips, and example usage.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=IIQw9z0gtLA)

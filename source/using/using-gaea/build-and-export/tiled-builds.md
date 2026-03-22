@@ -2,6 +2,7 @@
 title: Tiled Builds
 uid: tiled-builds
 order: 01
+description: Tiled Builds process a terrain as a grid of smaller chunks, or tiles, instead of building the entire world as one large image.
 ---
 # Tiled Builds
 

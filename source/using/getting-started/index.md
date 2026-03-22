@@ -2,6 +2,7 @@
 icon: play
 title: Terrain Basics
 uid: terrain-basics
+description: Gaea uses nodes to create a graph that generates a terrain.
 ---
 
 # Terrain Basics
@@ -18,7 +19,7 @@ This terrain graph is made of 3 building blocks, or Nodes. Each represents an ob
 
 The first node creates a Mountain. It has a random shape, generated through mathematics.
 
-![Mountain Node](/.data/assets/Gaea_-_Untitled_02-30-40-AM.png)
+![Mountain Node](/.data/assets/Gaea_-_Untitled_02-30-40-AM.webp)
 
 The second node is an Adjust node which, as the name suggests, adjusts the shape. In this case we use its Shaper property to bulk up the mountain and make it more expansive.
 

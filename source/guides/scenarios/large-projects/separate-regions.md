@@ -1,6 +1,7 @@
 ---
 uid: separate-regions
 title: Develop Regions Separately
+description: "A lot of people coming from older World Machine workflows are used to the idea of \\"zooming in\\" after they’ve established a terrain: build a big landscape."
 ---
 
 # Design Closeups First Instead of Zooming In

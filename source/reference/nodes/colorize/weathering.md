@@ -2,6 +2,7 @@
 title: Weathering
 uid: weathering
 order: 13
+description: "Weathering adds subtle tonal variation based on surface form: it brightens protrusions and exposed features, and darkens crevices and sheltered areas."
 ---
 
 # Weathering

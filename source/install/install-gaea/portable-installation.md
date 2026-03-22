@@ -3,6 +3,7 @@ icon: usb-drive
 title: Portable Installation
 uid: portable-installation
 order: 02
+description: Install Gaea without administrator rights, choose a custom path or USB target, and run it in portable mode.
 ---
 
 # Portable Installation

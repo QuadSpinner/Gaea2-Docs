@@ -4,6 +4,7 @@ uid: yt-sunlight
 tag: qewheDis0aI
 order: 004
 icon: kit fa-qs-logo
+description: Watch the official Gaea video for Sunlight, including node behavior, workflow tips, and example usage.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=qewheDis0aI)

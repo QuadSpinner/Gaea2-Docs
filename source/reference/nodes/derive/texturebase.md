@@ -2,6 +2,7 @@
 title: TextureBase
 uid: texturebase
 order: 12
+description: Creates a mask simulating natural material distribution onto which color from satmap or cluter or other color node is "flowed".
 ---
 
 # TextureBase

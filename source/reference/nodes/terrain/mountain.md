@@ -2,6 +2,7 @@
 title: Mountain
 uid: mountain
 order: 06
+description: Mountain is one of the most versatile primitives in Gaea.
 ---
 
 

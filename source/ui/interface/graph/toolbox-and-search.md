@@ -2,6 +2,7 @@
 title: Toolbox and Search
 uid: toolbox-and-search
 order: 01
+description: The handy Toolbox sits inside the graph, giving you quick drag-drop access to all nodes.
 ---
 
 # Toolbox and Search

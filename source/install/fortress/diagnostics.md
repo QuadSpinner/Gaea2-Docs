@@ -3,6 +3,7 @@ title: Network Diagnostics
 uid: fortress-diagnostics
 order: 06
 icon: notes-medical
+description: Run Fortress network diagnostics to verify bind addresses, DNS, reachability, and common server connectivity problems.
 ---
 
 # Diagnosing Network Issues

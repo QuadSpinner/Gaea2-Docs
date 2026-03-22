@@ -2,11 +2,10 @@
 title: Thermal Erosion
 uid: simulation-thermal-erosion
 order: 03
+description: Thermal erosion is the sister to Hydraulic erosion.
 ---
 
 # Thermal Erosion
-
-### Thermal Erosion <a href="#thermal-erosion" id="thermal-erosion"></a>
 
 Thermal erosion is the sister to Hydraulic erosion. While used less frequently, Thermal erosion is equally as important in most environments.
 

@@ -2,6 +2,7 @@
 title: Layering Textures
 uid: layering-textures
 order: 04
+description: The Mixer node provides an easy interface to add and manage multiple color layers and combine them with various masks.
 ---
 
 # Layering Textures

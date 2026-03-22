@@ -2,13 +2,14 @@
 title: Presets
 uid: presets
 order: 02
+description: Gaea enables users to save the current settings of a node as a preset.
 ---
 
 # Presets
 
 Gaea enables users to save the current settings of a node as a preset. This preset can then be applied to other instances of the same node type. 
 
-### Creating a preset
+## Creating a Preset
 
 To create a preset, select the desired node within the graph. 
 

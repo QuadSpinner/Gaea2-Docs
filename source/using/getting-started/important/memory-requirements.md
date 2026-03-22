@@ -2,6 +2,7 @@
 title: Memory Requirements
 uid: memory-requirements
 order: 10
+description: Knowing how much memory Gaea will need for your project helps avoid performance issues and crashes.
 ---
 
 # Memory Requirements
@@ -15,12 +16,12 @@ Knowing how much memory Gaea will need for your project helps avoid performance 
 * **Memory Demand**: The more complex and detailed your terrain, the more memory it requires.
 * **Factors Affecting Memory**: Resolution, node complexity, and layering all influence memory usage.
 
-### **Resolution**
+## Resolution
 
 * **Impact of Resolution**: Higher resolutions consume more memory. A 2048x2048 resolution needs significantly less memory than an 8192x8192 resolution.
 * **General Rule**: Doubling the resolution quadruples memory usage. For example, going from 1024x1024 to 2048x2048 will increase memory requirements fourfold.
 
-### **Heightfields**
+## Heightfields
 
 * **Heightfield**: The 3D representation of your terrain in Gaea.
 * **Memory Calculation**:
@@ -29,24 +30,24 @@ Knowing how much memory Gaea will need for your project helps avoid performance 
 * **Example**: For a 1024x1024 resolution with 32-bit depth:
   * 1024 x 1024 x 4 bytes = \~4 MB
 
-### **Layering Nodes**
+## Layering Nodes
 
 * **Nodes**: Each node in Gaea represents an action or modification. More nodes mean more memory.
 * **Layering**: Stacking multiple layers adds depth but also increases memory requirements.
 
-### **System Memory and Performance**
+## System Memory and Performance
 
 * **Plan for Headroom**: Keep at least 25-30% of your system’s RAM free to ensure smooth performance.
 * **Memory-Saving Tips**: Use lower resolutions and simpler nodes while experimenting. Gradually increase complexity as your project nears completion.
 
-### **Exporting**
+## Exporting
 
 * **Export Size**: The larger the resolution at export, the more memory you’ll need during that process.
 * **Preview Exports**: Try lower resolutions for test exports to verify results before the final high-resolution export.
 
 ***
 
-## **Quick Tips for Beginners**
+## Quick Tips for Beginners
 
 * **Start with Lower Resolutions**: Build your terrain in 1024x1024 and increase resolution as needed.
 * **Simplify Your Node Graph**: Fewer nodes use less memory. Start with basic nodes and add detail as you go.

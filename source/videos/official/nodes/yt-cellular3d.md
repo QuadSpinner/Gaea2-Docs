@@ -4,6 +4,7 @@ uid: yt-cellular3d
 tag: ziqtb8Z0JKs
 order: 015
 icon: kit fa-qs-logo
+description: Watch the official Gaea video for Cellular3D, including node behavior, workflow tips, and example usage.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=ziqtb8Z0JKs)

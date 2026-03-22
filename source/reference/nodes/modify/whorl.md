@@ -2,6 +2,7 @@
 title: Whorl
 uid: whorl
 order: 41
+description: Whorl applies multiple vortex-like distortions across the terrain to create large scale warping.
 ---
 
 

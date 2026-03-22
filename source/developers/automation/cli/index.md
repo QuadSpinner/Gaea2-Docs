@@ -3,6 +3,7 @@ icon: rectangle-terminal
 title: Command-line Interface
 uid: command-line-interface
 order: 03
+description: Gaea provides two command line interfaces.
 ---
 
 # Command-line Interface

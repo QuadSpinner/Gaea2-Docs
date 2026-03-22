@@ -3,6 +3,7 @@ title: Master Gaea 2.2 Nodes Ep.1 | Create Epic Terrains with Primitives (Genera
 uid: yt-f5YIzzoQJwI
 tag: f5YIzzoQJwI
 order: 015
+description: Watch Master Gaea 2.2 Nodes Ep.1 | Create Epic Terrains with Primitives (Generators), a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=f5YIzzoQJwI)

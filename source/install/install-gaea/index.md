@@ -3,6 +3,7 @@ icon: box
 title: Install Gaea
 uid: install-gaea
 order: 00
+description: Download Gaea, install prerequisites, choose the correct installer type, and review core system and security requirements.
 ---
 
 ![The Gaea 2.0 User Interface](/.data/assets/gaea-ui2x.webp)
@@ -51,13 +52,17 @@ Gaea is available in various forms to provide flexible methods of deployment, wh
 
 ## Setup Executable
 
-<div align="left">![EXE](/.data/assets/image-(43).png)</div>
+<div align="left">
+  <img src="/.data/assets/image-(43).png" alt="EXE" />
+</div>
 
-The setup exe is our primary - and recommended - way of installing Gaea. It provides for both @regular-installationand @portable-installationwhile also setting up additional registry entries required for the [gaea2unreal](/plugins/gaea2unreal/) and [gaea2houdini](/plugins/gaea2houdini/) bridges.
+The setup exe is our primary - and recommended - way of installing Gaea. It provides for both @regular-installation and @portable-installation while also setting up additional registry entries required for the [gaea2unreal](/plugins/gaea2unreal/) and [gaea2houdini](/plugins/gaea2houdini/) bridges.
 
 ## 7-Zip Package
 
-<div align="left">![7zip file](/.data/assets/image-(44).png)</div>
+<div align="left">
+  <img src="/.data/assets/image-(44).png" alt="EXE" />
+</div>
 
 The 7-zip package contains the exact same files as the setup executable; however, it is purely portable and does not create registry entries. It is very useful for advanced users or for System Administrators to create custom deployments. See @mass-deployment on how to enable Gaea2Unreal and Gaea2Houdini functionality in pure portable installs such as this.
 

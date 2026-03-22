@@ -4,6 +4,7 @@ uid: yt-rolling-hills
 tag: TQh07esFGlU
 order: 016
 icon: kit fa-qs-logo
+description: Watch the official deep-dive video for Rolling Hills and see a complete Gaea terrain workflow in action.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=TQh07esFGlU)

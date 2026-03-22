@@ -1,6 +1,7 @@
 ---
 title: Baking Nodes
 uid: baking-nodes
+description: The Baking feature in Gaea is a powerful tool designed to enhance workflow efficiency by locking nodes at a high resolution, enabling high-quality.
 ---
 
 # Baking Nodes

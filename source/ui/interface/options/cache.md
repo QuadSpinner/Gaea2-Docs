@@ -2,6 +2,7 @@
 title: Cache
 uid: options-cache
 order: 08
+description: T.
 ---
 
 # Cache

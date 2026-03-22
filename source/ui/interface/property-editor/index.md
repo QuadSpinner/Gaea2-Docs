@@ -1,6 +1,7 @@
 ---
 title: Property Editor
 uid: property-editor
+description: Every node exposes a set of properties or settings that you can modify to influence the effect that node has on the terrain.
 ---
 
 # Property Editor

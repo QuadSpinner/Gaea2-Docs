@@ -2,6 +2,7 @@
 title: Profiles and Batch Builds
 uid: profiles-and-batch-builds
 order: 03
+description: Build Profiles let you save all Build Settings in a named preset.
 ---
 
 # Profiles and Batch Builds

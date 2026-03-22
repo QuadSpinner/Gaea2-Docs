@@ -3,6 +3,7 @@ icon: shield-halved
 title: Regular Installation
 uid: regular-installation
 order: 01
+description: Install Gaea with the standard setup, review administrator requirements, choose a location, and complete a full local installation.
 ---
 
 # Regular Installation

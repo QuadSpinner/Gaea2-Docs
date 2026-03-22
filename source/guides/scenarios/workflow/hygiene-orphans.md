@@ -1,6 +1,7 @@
 ---
 title: Graph Hygiene - Orphan Nodes
 uid: hygiene-orphans
+description: "Large graphs tend to accumulate \\"just-in-case\\" experiments: half-finished branches, abandoned masks, and one-off tests that never make it into the final."
 ---
 
 # Graph Hygiene: Find and Remove Orphan Nodes

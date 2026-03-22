@@ -2,6 +2,7 @@
 title: Sea
 uid: sea
 order: 16
+description: Sea is a multi-function water surface generator and coastal erosion tool.
 ---
 
 

@@ -2,6 +2,7 @@
 title: Benchmark Devices
 uid: benchmark-devices
 order: 03
+description: The Hardware Benchmark runs tests to determine the general speed of your CPU, integrated GPU, dedicated GPU, and any other compatible devices that Gaea.
 ---
 
 # Benchmark Devices

@@ -2,6 +2,7 @@
 title: Noises, Primitives, and Landscapes
 uid: noises-primitives-and-landscapes
 order: 01
+description: Gaea provides three types of building blocks:.
 ---
 
 # Noises, Primitives, and Landscapes

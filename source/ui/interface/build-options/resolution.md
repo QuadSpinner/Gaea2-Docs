@@ -2,6 +2,7 @@
 title: Resolution
 uid: build-options-resolution
 order: 01
+description: S.
 ---
 
 # Resolution

@@ -3,6 +3,7 @@ title: Quick Gaea 2.0 to Blender Workflow
 uid: yt-DcJmrgPHqGI
 tag: DcJmrgPHqGI
 order: 002
+description: Watch Quick Gaea 2.0 to Blender Workflow, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=DcJmrgPHqGI)

@@ -4,6 +4,7 @@ uid: yt-heal
 tag: nEEpzse1luo
 order: 013
 icon: kit fa-qs-logo
+description: Watch the official Gaea video for Heal, including node behavior, workflow tips, and example usage.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=nEEpzse1luo)

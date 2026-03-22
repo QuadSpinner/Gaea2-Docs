@@ -3,6 +3,7 @@ icon: network-wired
 title: Mass Deployment
 uid: mass-deployment
 order: 04
+description: Deploy Gaea at scale with unattended installs, portable rollouts, activation files, and network-share considerations.
 ---
 
 # Mass Deployment

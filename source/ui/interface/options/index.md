@@ -2,6 +2,7 @@
 title: Options
 uid: options
 order: 01
+description: "options general: The General tab provides essential application-wide preferences, controlling how Gaea launches, handles logs, updates, licensing, and."
 ---
 
 # Options

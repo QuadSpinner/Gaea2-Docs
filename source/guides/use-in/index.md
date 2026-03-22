@@ -1,6 +1,7 @@
 ---
 title: Universal Instructions
 uid: universal-instructions
+description: "Gaea terrains are consumed in other applications in two ways: as a mesh or as a displacement map."
 ---
 
 
@@ -22,7 +23,7 @@ As a best practice, export your mesh with Normalized scale. This means your terr
 
 ![](/.data/assets/image-(27).png)
 
-Import the mesh into your target application such as Blender, 3dsmax, etc. then scale it by the same amount as the metric size of your terrain in Gaea's @build-options-terrain. For example, if your terrain's width is 5000 meters then you should scale up your model by 5000.
+Import the mesh into your target application such as Blender, 3dsmax, etc. then scale it by the same amount as the metric size of your terrain in Gaea's [Broken link](broken-reference). For example, if your terrain's width is 5000 meters then you should scale up your model by 5000.
 
 Depending on your target application, your OBJ importer may allow you to scale up straight in the importer by specifying a factor.
 

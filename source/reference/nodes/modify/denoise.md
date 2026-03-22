@@ -2,6 +2,7 @@
 title: Denoise
 uid: denoise
 order: 10
+description: Denoise is a general purpose noise removal filter.
 ---
 
 # Denoise

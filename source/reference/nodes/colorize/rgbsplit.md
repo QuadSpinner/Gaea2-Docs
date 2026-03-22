@@ -2,7 +2,10 @@
 title: RGBSplit
 uid: rgbsplit
 order: 06
+description: RGBSplit takes an RGB color input and outputs separate heightfields derived from the Red, Green, and Blue channels.
 ---
+
+# RGBSplit
 
 RGBSplit takes an RGB color input and outputs separate heightfields derived from the Red, Green, and Blue channels. It is the inverse of RGBMix: where RGBMix packs three heightfields into a single color image, RGBSplit unpacks a color image back into usable scalar maps.
 
@@ -65,7 +68,7 @@ In calibrated pipelines, a better approach is usually to keep the split values u
 RGBSplit is a small node, but it’s a key enabler for channel-efficient pipelines and interoperability with external tools.
 
 
-# Properties
+## Properties
 
 
 

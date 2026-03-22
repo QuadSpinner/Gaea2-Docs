@@ -3,6 +3,7 @@ title: Gaea 2 - How to Mask Rivers for Texturing
 uid: yt-XLWplfkYDdQ
 tag: XLWplfkYDdQ
 order: 011
+description: Watch Gaea 2 - How to Mask Rivers for Texturing, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=XLWplfkYDdQ)

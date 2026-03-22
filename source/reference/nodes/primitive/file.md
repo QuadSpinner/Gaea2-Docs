@@ -2,7 +2,10 @@
 title: File
 uid: file
 order: 10
+description: The File node loads any supported image or data file as a terrain.
 ---
+
+# File
 
 
 The File node loads any supported image or data file as a terrain. It
@@ -24,4 +27,4 @@ data must retain a specific number range.
 
 
 
-# Properties
+## Properties

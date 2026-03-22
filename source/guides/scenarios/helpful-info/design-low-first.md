@@ -1,6 +1,7 @@
 ---
 title: Start with low detail shapes
 uid: low-detail-start
+description: It’s tempting to pour detail into the very first landform - lots of noise, breakup, micro ridges.
 ---
 
 # Let Shape Stay Simple

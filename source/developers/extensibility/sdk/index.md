@@ -3,6 +3,7 @@ icon: square-terminal
 title: TOR Platform SDK
 uid: tor-platform-sdk
 order: 01
+description: Gaea is built on QuadSpinner's proprietary TOR Platform, a powerful terrain processing engine.
 ---
 
 # TOR Platform SDK

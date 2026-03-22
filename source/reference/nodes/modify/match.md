@@ -2,6 +2,7 @@
 title: Match
 uid: match
 order: 21
+description: The Match node is a low-level lets you provide a Reference input that is used to adapt/match the heights of the main Input.
 ---
 
 # Match

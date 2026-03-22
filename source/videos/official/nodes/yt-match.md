@@ -4,6 +4,7 @@ uid: yt-match
 tag: R6e7_g9ojMk
 order: 006
 icon: kit fa-qs-logo
+description: Watch the official Gaea video for Match, including node behavior, workflow tips, and example usage.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=R6e7_g9ojMk)

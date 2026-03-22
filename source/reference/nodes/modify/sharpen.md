@@ -2,6 +2,7 @@
 title: Sharpen
 uid: sharpen
 order: 28
+description: Sharpen enhances the edges and small structures of a terrain by making them more prominent.
 ---
 
 

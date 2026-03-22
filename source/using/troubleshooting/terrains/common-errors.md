@@ -2,6 +2,7 @@
 title: Common Errors
 uid: common-errors
 order: 01
+description: Use the File > Repair menu item to have Gaea attempt to re-containerize the terrain file and remove any extraneous information or bad data remnants that.
 ---
 
 # Common Errors

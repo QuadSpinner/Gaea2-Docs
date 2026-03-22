@@ -2,6 +2,7 @@
 icon: gear-code
 title: Overview
 uid: scripting-and-expressions
+description: Gaea is built around a very powerful, flexible, and extensible core.
 ---
 
 # Scripting and Expressions

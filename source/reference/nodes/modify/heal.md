@@ -2,6 +2,7 @@
 title: Heal
 uid: heal
 order: 20
+description: The Heal node can reconstruct damaged, low res, or 8-bit data with 16-bit, high resolution fidelity.
 ---
 
 The Heal node can reconstruct damaged, low res, or 8-bit data with 16-bit, high resolution fidelity. The Heal node can take quantized images with extreme banding of any shape, and clean up the terrain into a naturalistic output.

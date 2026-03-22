@@ -3,6 +3,7 @@ icon: 2
 title: Large Mountains, Effects
 uid: large-mountains-effects
 order: 02
+description: Overview and guidance for Large Mountains, Effects in the Gaea documentation.
 ---
 
 # Large Mountains, Effects

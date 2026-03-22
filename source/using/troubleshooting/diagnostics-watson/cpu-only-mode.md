@@ -2,6 +2,7 @@
 title: CPU Only Mode
 uid: cpu-only-mode
 order: 02
+description: In some cases, Gaea may have trouble using your GPU device.
 ---
 
 # CPU Only Mode

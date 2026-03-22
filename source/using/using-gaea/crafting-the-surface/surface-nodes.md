@@ -2,6 +2,7 @@
 title: Surface Nodes
 uid: surface-nodes
 order: 03
+description: "Terrain design has been plagued with a core issue for decades: when you erode a terrain or apply a strong effect filter, the overall terrain shape is."
 ---
 
 # Surface Nodes

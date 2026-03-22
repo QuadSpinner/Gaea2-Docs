@@ -2,6 +2,7 @@
 title: Rivers
 uid: rivers
 order: 14
+description: Rivers can instantly generate complex river networks on any terrain, whether it can sustain rivers or not.
 ---
 
 

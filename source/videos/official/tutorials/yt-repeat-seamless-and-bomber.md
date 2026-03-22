@@ -4,6 +4,7 @@ uid: yt-repeat-seamless-and-bomber
 tag: xhVaOxT01oY
 order: 017
 icon: kit fa-qs-logo
+description: Watch the official Gaea tutorial for Repeat, Seamless, and Bomber and follow along with the demonstrated terrain workflow.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=xhVaOxT01oY)

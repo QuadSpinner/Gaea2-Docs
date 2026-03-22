@@ -1,6 +1,7 @@
 ---
 title: Bake Only What Matters
 uid: bake-required
+description: Baking is one of the simplest ways to keep large projects fast and memory-friendly - especially when you’re working with Regions, tiled builds, or heavy.
 ---
 
 

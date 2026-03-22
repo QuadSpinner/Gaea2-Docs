@@ -2,6 +2,7 @@
 title: Avoid Roundtrips
 uid: roundtrips
 order: 02
+description: A "roundtrip" is when you rebuild in Gaea and then have to re-import (or relink) the terrain, masks, bitmaps, and other outputs in your DCC because the.
 ---
 
 

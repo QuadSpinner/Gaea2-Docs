@@ -1,6 +1,7 @@
 ---
 title: Allowed Functions
 uid: functions
+description: The following functions, operators, and facilities are usable in the math node as well as expressions.
 ---
 
 The following functions, operators, and facilities are usable in the @math node as well as @expressions.

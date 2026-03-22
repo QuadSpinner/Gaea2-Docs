@@ -2,6 +2,7 @@
 title: Adjust
 uid: adjust
 order: 01
+description: The Adjust node is pretty much the same as the Modifier Stack, but in node form.
 ---
 
 # Adjust

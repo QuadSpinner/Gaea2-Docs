@@ -2,6 +2,7 @@
 title: Tangent-Space Normals and Warped Maps
 uid: tangent-space-normals-and-warped-maps
 order: 01
+description: The MeshWarp node can create tangent-space normals maps that provide very high quality normals that can be used with lower-resolution Meshes/LODs.
 ---
 
 # Tangent-Space Normals and Warped Maps

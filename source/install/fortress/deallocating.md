@@ -3,7 +3,11 @@ title: Deallocate Licenses
 uid: fortress-deallocate
 icon: toggle-off
 order: 04
+description: View active Fortress allocations, release sessions gracefully or forcefully, and clear local token files when needed.
 ---
+
+# Deallocate Licenses
+
 ## Viewing and Deallocating License Tokens
 
 By default, the Fortress Console shows only Tenants and does not auto-refresh to avoid unnecessary server load.

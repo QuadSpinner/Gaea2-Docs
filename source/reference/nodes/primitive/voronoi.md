@@ -2,6 +2,7 @@
 title: Voronoi
 uid: voronoi
 order: 23
+description: V.
 ---
 
 

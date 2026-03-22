@@ -2,6 +2,7 @@
 title: Commands
 uid: build-options-commands
 order: 09
+description: Execute Build. Starts the build swarmfor the current file and outputs a full resolution build as specified in the Build Options.
 ---
 
 # Commands

@@ -3,6 +3,7 @@ icon: trash-xmark
 title: Uninstall or Clean Install
 uid: uninstall-or-clean-install
 order: 08
+description: Uninstall Gaea safely, release your license, reset settings, and perform a clean reinstall when troubleshooting.
 ---
 
 # Uninstall or Clean Install

@@ -1,2 +1,2 @@
 gaea2houdini|Gaea2Houdini|hat-wizard
-gaea2unreal|Gaea2Unreal|x fa-brands fa-unreal-engine
+gaea2unreal|Gaea2Unreal|alien-8bit

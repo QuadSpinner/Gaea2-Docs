@@ -3,6 +3,7 @@ icon: 4
 title: Advanced Methods
 uid: advanced-methods
 order: 04
+description: Overview and guidance for Advanced Methods in the Gaea documentation.
 ---
 
 # Advanced Methods

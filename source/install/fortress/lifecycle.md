@@ -3,6 +3,7 @@ title: License Lifecycle
 uid: fortress-lifecycle
 icon: arrows-spin
 order: 06
+description: Understand how Fortress license tokens are allocated, refreshed with heartbeats, and eventually deallocated.
 ---
 
 # Lifecycle of a License Token

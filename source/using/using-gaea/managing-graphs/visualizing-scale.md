@@ -2,6 +2,7 @@
 title: Visualizing Scale
 uid: visualizing-scale
 order: 03
+description: Gaea 2.1 ships with multiple pre-defined overlays that you can use for showing relative scale on your terrain.
 ---
 
 # Visualizing Scale

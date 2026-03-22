@@ -2,6 +2,7 @@
 title: Clip
 uid: clip
 order: 07
+description: C.
 ---
 
 # Clip

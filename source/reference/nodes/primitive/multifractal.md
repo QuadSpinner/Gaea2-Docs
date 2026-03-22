@@ -2,6 +2,7 @@
 title: MultiFractal
 uid: multifractal
 order: 15
+description: M.
 ---
 
 

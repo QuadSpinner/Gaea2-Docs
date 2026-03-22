@@ -2,6 +2,7 @@
 title: Splat
 uid: splat
 order: 08
+description: Splat creates a single heightfield by combining the channels of an RGBA color input.
 ---
 
 

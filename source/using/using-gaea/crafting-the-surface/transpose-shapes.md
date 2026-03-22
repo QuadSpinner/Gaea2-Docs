@@ -2,6 +2,7 @@
 title: Transpose Shapes
 uid: transpose-shapes
 order: 04
+description: The Transpose node can take the surface shapes of one terrain and transpose them onto another, while preserving the volume of the target terrain.
 ---
 
 # Transpose Shapes

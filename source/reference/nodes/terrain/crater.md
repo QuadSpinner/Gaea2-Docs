@@ -2,6 +2,7 @@
 title: Crater
 uid: crater
 order: 02
+description: The Crater primitive creates different types of crater shapes.
 ---
 
 

@@ -2,6 +2,7 @@
 title: FractalTerraces
 uid: fractalterraces
 order: 06
+description: FractalTerraces creates terraces or stratification of the terrain.
 ---
 
 FractalTerraces creates terraces or stratification of the terrain. The node is fractal in nature, and terracing is performed in multiple octaves giving you a very high level of detail.

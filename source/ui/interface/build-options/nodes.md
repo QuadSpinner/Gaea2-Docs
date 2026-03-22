@@ -2,6 +2,7 @@
 title: Nodes
 uid: build-options-nodes
 order: 04
+description: The Exportable Nodes section lists all nodes marked for export.
 ---
 
 # Nodes

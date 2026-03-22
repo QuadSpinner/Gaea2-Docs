@@ -2,6 +2,7 @@
 title: ThermalShaper
 uid: thermalshaper
 order: 33
+description: ThermalShaper is a fast and effective way of condensing and coalescing shapes similar to what Shaper does, but in a way where it is in line with what.
 ---
 
 

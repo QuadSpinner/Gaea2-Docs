@@ -2,6 +2,7 @@
 title: RockNoise
 uid: rocknoise
 order: 11
+description: RockNoise is a useful tool for generating fields of rocks with size variations and controllable density.
 ---
 
 RockNoise is a useful tool for generating fields of rocks with size variations and controllable density. Its "flat" generation makes it easy to apply the rocks to any surface using the Embed and Insert modes in the Combine node. RockNoise can be mixed with other nodes, like Rocky and Outcrops, to create even more diverse rock formations. In the example above, RockNoise is embedded into the output of an Erosion node using the Wear output as a mask.

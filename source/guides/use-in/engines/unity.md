@@ -1,6 +1,7 @@
 ---
 title: Unity
 uid: unity-import
+description: The Unity node lets you export your heightfield as a ^2+1 heightmap.
 ---
 
 

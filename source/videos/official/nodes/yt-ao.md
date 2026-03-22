@@ -4,6 +4,7 @@ uid: yt-ao
 tag: AuHxShc7j-A
 order: 001
 icon: kit fa-qs-logo
+description: Watch the official Gaea video for AO, including node behavior, workflow tips, and example usage.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=AuHxShc7j-A)

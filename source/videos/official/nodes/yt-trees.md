@@ -4,6 +4,7 @@ uid: yt-trees
 tag: xvY915SuJsA
 order: 014
 icon: kit fa-qs-logo
+description: Watch the official Gaea video for Trees, including node behavior, workflow tips, and example usage.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=xvY915SuJsA)

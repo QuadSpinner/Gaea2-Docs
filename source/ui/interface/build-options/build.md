@@ -2,6 +2,7 @@
 title: Build
 uid: build-options-build
 order: 02
+description: Token can be used in the Build Path of Build Destination, the specified token will be replaced by the respective value.
 ---
 
 # Build

@@ -2,6 +2,7 @@
 title: Curvature
 uid: curvature
 order: 02
+description: T.
 ---
 
 # Curvature

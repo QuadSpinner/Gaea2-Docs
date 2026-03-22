@@ -2,6 +2,7 @@
 title: Height
 uid: height
 order: 05
+description: The Height node creates a selection mask based on terrain elevation, isolating areas within a specified height range.
 ---
 
 # Height

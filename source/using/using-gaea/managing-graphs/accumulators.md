@@ -2,6 +2,7 @@
 title: Accumulators
 uid: accumulators
 order: 04
+description: One of the common ways a graph gets clutters with overlapping connections is when multiple Snow, Lake, or Debris nodes are used and their respective masks.
 ---
 
 # Accumulators

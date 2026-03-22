@@ -3,6 +3,7 @@ title: Expressions
 uid: expressions
 order: 02
 icon: function
+description: Expressions are modifiers applied to either a property, such as a slider, or to the variable bound to the property.
 ---
 
 # Expressions
@@ -71,4 +72,4 @@ Here are some additional ideas.
          if(SomeVar, 0.3, 0.6)
 ```
 
-For a full list of available options, see @math-node.
+For a full list of available options, see [Broken link](broken-reference)
