@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Name": "Start",
+    "Description": "The color to mask from the given input.",
+    "Type": "Color",
+    "IsGroup": false
+  },
+  {
+    "Name": "Falloff",
+    "Description": "Range of similar colors to be masked as well.",
+    "Type": "Single",
+    "IsGroup": false
+  }
+]

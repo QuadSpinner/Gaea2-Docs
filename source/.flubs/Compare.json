@@ -1,19 +1,25 @@
 ﻿[
   {
     "Name": "A/B",
-    "Description": "",
+    "Description": "Ratio of the terrain to compare.",
     "Type": "Single",
     "IsGroup": false
   },
   {
     "Name": "Colorized",
-    "Description": "",
+    "Description": "Show colorized output to signify the modified terrain.",
     "Type": "Boolean",
     "IsGroup": false
   },
   {
     "Name": "Perpendicular",
-    "Description": "",
+    "Description": "Switch from Horizontal/Stacked to Perpendicular comparison.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Swap",
+    "Description": "Swap A and B inputs.",
     "Type": "Boolean",
     "IsGroup": false
   }
