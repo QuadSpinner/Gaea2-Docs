@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "ColorThreshold",
-  "Description": null,
+  "Description": "Creates a greyscale mask from a specified color range.",
   "Family": "Aspect",
   "FamilyIcon": "family-aspect",
   "Toolbox": "Derive",
