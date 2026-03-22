@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Sandstone",
-  "Description": null,
+  "Description": "Creates layered sandstone-like terracing and sedimentary rock structure.",
   "Family": "Terrace",
   "FamilyIcon": "family-terrace",
   "Toolbox": "Surface",

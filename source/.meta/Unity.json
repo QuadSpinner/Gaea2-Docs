@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Unity",
-  "Description": null,
+  "Description": "Exports terrain data in Unity-friendly resolutions and formats.",
   "Family": "Assets",
   "FamilyIcon": "x-unity",
   "Toolbox": "Output",

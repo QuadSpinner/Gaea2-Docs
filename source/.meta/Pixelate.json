@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Pixelate",
-  "Description": null,
+  "Description": "Converts the input into a blocky, pixelated version.",
   "Family": "Effect",
   "FamilyIcon": "x-pixelate",
   "Toolbox": "Modify",

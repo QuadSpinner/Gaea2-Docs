@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "FlowMap",
-  "Description": null,
+  "Description": "Generates a modern flow map showing how water or material would travel across the terrain.",
   "Family": "Generative",
   "FamilyIcon": "family-generative",
   "Toolbox": "Derive",

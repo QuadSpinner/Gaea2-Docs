@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "Halftone",
-  "Description": null,
+  "Description": "Converts the terrain or mask into a halftone-style rendered output.",
   "Family": "Render",
   "FamilyIcon": "x-halftone",
   "Toolbox": "Output",

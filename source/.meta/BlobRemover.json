@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "BlobRemover",
-  "Description": null,
+  "Description": "BlobRemover can remove smaller fragments or blobs near larger shapes. This is very useful for cleanup.",
   "Family": "Utilities",
   "FamilyIcon": "family-utilities",
   "Toolbox": "Modify",

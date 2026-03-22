@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "Texturizer",
-  "Description": null,
+  "Description": "Generates terrain texture masks using preset styles and controllable secondary effects.",
   "Family": "Texture",
   "FamilyIcon": "family-texture",
   "Toolbox": "Derive",

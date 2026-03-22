@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "EasyErosion",
-  "Description": null,
+  "Description": "Provides a simplified erosion workflow for quickly adding natural erosion effects.",
   "Family": "Erosion",
   "FamilyIcon": "x-easyerosion",
   "Toolbox": "Simulate",

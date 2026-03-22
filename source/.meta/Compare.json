@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Compare",
-  "Description": null,
+  "Description": "Compares two inputs and produces a result based on their relative values.",
   "Family": "Routing",
   "FamilyIcon": "family-routing",
   "Toolbox": "Utility",

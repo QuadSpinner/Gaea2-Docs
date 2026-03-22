@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Volcano",
-  "Description": null,
+  "Description": "Generates a volcanic landform with a central cone and crater structure.",
   "Family": "Primitive",
   "FamilyIcon": "family-primitive",
   "Toolbox": "Terrain",

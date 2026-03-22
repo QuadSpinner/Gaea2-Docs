@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "PointCloud",
-  "Description": null,
+  "Description": "Exports the terrain as a point cloud in formats such as PLY, XYZ, or CSV.",
   "Family": "Assets",
   "FamilyIcon": "x-pointcloud",
   "Toolbox": "Output",

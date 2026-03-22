@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Math",
-  "Description": null,
+  "Description": "Evaluates mathematical expressions to generate or modify terrain data procedurally.",
   "Family": "Utilities",
   "FamilyIcon": "x-mathx",
   "Toolbox": "Utility",

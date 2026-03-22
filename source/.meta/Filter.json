@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Filter",
-  "Description": null,
+  "Description": "Applies profile-based filtering to reshape terrain values and refine feature response.",
   "Family": "Profile",
   "FamilyIcon": "family-profile",
   "Toolbox": "Modify",

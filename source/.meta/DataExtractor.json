@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "DataExtractor",
-  "Description": null,
+  "Description": "Extracts specific derived data such as boundaries, differences, or Modifier maps from an input.",
   "Family": "Utilities",
   "FamilyIcon": "x-dataextractor",
   "Toolbox": "Utility",

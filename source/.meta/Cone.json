@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Cone",
-  "Description": null,
+  "Description": "Generates a simple conical gradient that is useful as a primitive shape or mask.",
   "Family": "Gradient",
   "FamilyIcon": "family-gradient",
   "Toolbox": "Primitive",

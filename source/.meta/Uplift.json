@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Uplift",
-  "Description": null,
+  "Description": "Creates tectonic-style uplift by raising and shaping large terrain masses.",
   "Family": "Landscape",
   "FamilyIcon": "family-landscape",
   "Toolbox": "Terrain",

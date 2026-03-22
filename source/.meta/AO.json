@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "AO",
-  "Description": null,
+  "Description": "Creates an ambient occlusion map that darkens recessed areas and enhances terrain depth.",
   "Family": "Render",
   "FamilyIcon": "x-ao",
   "Toolbox": "Output",

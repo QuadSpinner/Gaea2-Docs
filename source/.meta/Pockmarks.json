@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Pockmarks",
-  "Description": null,
+  "Description": "Creates scattered pits, dents, and small impact-like depressions on the surface.",
   "Family": "Scatter",
   "FamilyIcon": "x-pockmarks",
   "Toolbox": "Surface",

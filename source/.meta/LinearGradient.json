@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "LinearGradient",
-  "Description": null,
+  "Description": "Generates a straight linear gradient across the terrain.",
   "Family": "Gradient",
   "FamilyIcon": "family-gradient",
   "Toolbox": "Primitive",

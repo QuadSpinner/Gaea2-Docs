@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Transpose",
-  "Description": null,
+  "Description": "Adapts the terrain to the substructures of a given reference terrain.",
   "Family": "Adjust",
   "FamilyIcon": "x-transpose",
   "Toolbox": "Modify",

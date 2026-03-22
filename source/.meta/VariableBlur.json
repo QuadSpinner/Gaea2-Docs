@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "VariableBlur",
-  "Description": null,
+  "Description": "Blurs the input by varying the blur amount across the surface using local data or a guide.",
   "Family": "Blur",
   "FamilyIcon": "x-variableblur",
   "Toolbox": "Modify",

@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Distance",
-  "Description": null,
+  "Description": "Generates a distance field from the input, measuring how far each point is from the nearest boundary or feature.",
   "Family": "Transform",
   "FamilyIcon": "x-distance",
   "Toolbox": "Modify",

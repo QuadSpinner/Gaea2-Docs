@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Terraces",
-  "Description": null,
+  "Description": "Creates stepped terrace formations from the terrain.",
   "Family": "Terrace",
   "FamilyIcon": "x-terraces",
   "Toolbox": "Surface",

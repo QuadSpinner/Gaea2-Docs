@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "DotNoise",
-  "Description": null,
+  "Description": "Generates dotted or speckled noise patterns for texturing and breakup.",
   "Family": "Extended",
   "FamilyIcon": "family-extended",
   "Toolbox": "Primitive",

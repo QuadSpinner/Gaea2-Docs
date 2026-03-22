@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Distress",
-  "Description": null,
+  "Description": "Adds superficial wear, breakup, and irregular damage to a surface.",
   "Family": "Superficial",
   "FamilyIcon": "family-superficial",
   "Toolbox": "Surface",

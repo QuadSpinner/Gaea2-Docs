@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "WaterColor",
-  "Description": null,
+  "Description": "Colorizes water bodies using palette-based shallow and deep water tones.",
   "Family": "Color",
   "FamilyIcon": "family-color",
   "Toolbox": "Colorize",

@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Clip",
-  "Description": null,
+  "Description": "Cuts the terrain against a threshold, removing values above or below a specified level.",
   "Family": "Adjust",
   "FamilyIcon": "x-clip",
   "Toolbox": "Modify",

@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Bulbous",
-  "Description": null,
+  "Description": "Bulbous inflates existing shapes to make them more voluminous while respecting standard geological boundaries.",
   "Family": "Structure",
   "FamilyIcon": "family-structure",
   "Toolbox": "Surface",

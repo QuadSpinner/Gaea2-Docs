@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "ColorErosion",
-  "Description": null,
+  "Description": "Applies erosion-style transport and deposition to color data, creating more natural weathered color variation.",
   "Family": "Erosion",
   "FamilyIcon": "family-erosion",
   "Toolbox": "Colorize",
