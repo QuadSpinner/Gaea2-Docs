@@ -1,19 +1,19 @@
 ﻿[
   {
     "Name": "Expression",
-    "Description": "",
+    "Description": "Math expression or program to execute.",
     "Type": "String",
     "IsGroup": false
   },
   {
     "Name": "Open Editor",
-    "Description": "",
+    "Description": "Opens the Math Editor dialog.",
     "Type": "Command",
     "IsGroup": false
   },
   {
     "Name": "Normalized Coordinates",
-    "Description": "",
+    "Description": "Normalizes all coordinate inputs.",
     "Type": "Boolean",
     "IsGroup": false
   }
