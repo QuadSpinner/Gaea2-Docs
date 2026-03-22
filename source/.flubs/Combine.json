@@ -139,7 +139,7 @@
       },
       {
         "Name": "Reflect",
-        "Description": "Creates intense highlights by reflecting colors around white.\nA² / (1 - B); creates sharp highlight "reflection" effects.",
+        "Description": "Creates intense highlights by reflecting colors around white.\nA² / (1 - B); creates sharp highlight 'reflection' effects.",
         "Type": "EnumValue",
         "IsGroup": false
       },
