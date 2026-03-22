@@ -42,6 +42,7 @@ X:\Docs\Gaea2-Docs\staging\reference\nodes\simulate\thermal.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\simulate\wizard.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\utility\combine.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\utility\mask.md
+X:\Docs\Gaea2-Docs\staging\reference\nodes\utility\math.md
 X:\Docs\Gaea2-Docs\staging\ui\features\autosave-and-recovery.md
 X:\Docs\Gaea2-Docs\staging\ui\graph\basic-workflow\suspending-engine.md
 X:\Docs\Gaea2-Docs\staging\ui\interface\menus-and-toolbars\undo-and-autosave.md

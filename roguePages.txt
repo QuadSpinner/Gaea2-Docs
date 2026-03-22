@@ -7,7 +7,6 @@ X:\Docs\Gaea2-Docs\staging\guides\scenarios\helpful-info\index.md
 X:\Docs\Gaea2-Docs\staging\guides\use-in\apps\cinema4d.md
 X:\Docs\Gaea2-Docs\staging\guides\use-in\apps\maya.md
 X:\Docs\Gaea2-Docs\staging\guides\use-in\apps\zbrush.md
-X:\Docs\Gaea2-Docs\staging\guides\use-in\bridges\gaea2unreal\index.md
 X:\Docs\Gaea2-Docs\staging\install\gaea-1\index.md
 X:\Docs\Gaea2-Docs\staging\reference\gaea2houdini\tor-processor.md
 X:\Docs\Gaea2-Docs\staging\reference\index.md
@@ -71,7 +70,6 @@ X:\Docs\Gaea2-Docs\staging\reference\nodes\utility\layers.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\utility\loopbegin.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\utility\loopend.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\utility\macroport.md
-X:\Docs\Gaea2-Docs\staging\reference\nodes\utility\math.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\utility\mixer.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\utility\reseed.md
 X:\Docs\Gaea2-Docs\staging\reference\nodes\utility\seamless.md
