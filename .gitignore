@@ -370,3 +370,4 @@ deploy
 /swa-cli.config.json
 
 Reports/**
+.vscode/atlinks.json
