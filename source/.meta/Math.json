@@ -2,7 +2,7 @@
   "MaxPorts": 0,
   "IsSoftData": false,
   "IsHidden": false,
-  "Name": "MathX",
+  "Name": "Math",
   "Description": null,
   "Family": "Utilities",
   "FamilyIcon": "x-mathx",
@@ -13,9 +13,9 @@
   ],
   "ShortCode": "mx",
   "Usage": 56,
-  "SearchString": "MathX Utilities  mx",
+  "SearchString": "Math Utilities  mx",
   "SearchWords": [
-    "mathx",
+    "math",
     "utilities",
     "",
     "mx"
