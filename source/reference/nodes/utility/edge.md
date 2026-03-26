@@ -5,6 +5,11 @@ order: 07
 description: E.
 ---
 
+<!-- AUTO-VIDEO-LINK:START -->
+## Official Video
+
+For a video breakdown of this node, see [the official Edge video](/videos/official/nodes/yt-edge.html).
+<!-- AUTO-VIDEO-LINK:END -->
 
 # Edge
 

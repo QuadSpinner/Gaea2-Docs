@@ -5,8 +5,11 @@ order: 02
 description: The Chokepoint node is a special node whose sole purpose is to help avoid re-connecting many nodes, while adding no memory overhead.
 ---
 
+<!-- AUTO-VIDEO-LINK:START -->
+## Official Video
 
-
+For a video breakdown of this node, see [the official Chokepoint video](/videos/official/nodes/yt-chokepoint.html).
+<!-- AUTO-VIDEO-LINK:END -->
 
 The Chokepoint node is a special node whose sole purpose is to help avoid re-connecting many nodes, while adding no memory overhead.
 
@@ -30,4 +33,3 @@ The Chokepoint can be further organized by making its output a portal. You can s
 
 
 # Properties
-

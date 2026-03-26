@@ -61,6 +61,7 @@ I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\terrain\rugg
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\terrain\slump.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\terrain\uplift.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\accumulator.md
+I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\combine.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\compare.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\dataextractor.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\gate.md
