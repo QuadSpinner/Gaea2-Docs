@@ -103,7 +103,19 @@ $(document).ready(function () {
         return (q || "").trim().split(/\s+/).filter(Boolean);
     }
 
+    function cleanSearchText(input) {
+        const raw = String(input ?? "");
+        const withoutComments = raw.replace(/<!--[\s\S]*?-->/g, " ");
+        const withoutTags = withoutComments.replace(/<[^>]+>/g, " ");
+        const decoder = document.createElement("textarea");
+        decoder.innerHTML = withoutTags;
+        return (decoder.value || decoder.textContent || "")
+            .replace(/\s+/g, " ")
+            .trim();
+    }
+
     function highlight(s, q) {
+        s = cleanSearchText(s);
         const terms = splitTerms(q).map(t => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
         if (!terms.length) return esc(s);
         const re = new RegExp(`(${terms.join("|")})`, "ig");
@@ -111,7 +123,7 @@ $(document).ready(function () {
     }
 
     function snippet(text, q, maxLen = 160) {
-        const t = (text || "").replace(/\s+/g, " ").trim();
+        const t = cleanSearchText(text);
         if (!t) return "";
 
         const hay = t.toLowerCase();
@@ -216,21 +228,33 @@ $(document).ready(function () {
                 // - old: [ {url,title,text,...}, ... ]
                 // - new: { pages: [...], heads: [...] }
                 // - new: { pages: [...] } with page.headings[]
-                pages = Array.isArray(data) ? data : (data.pages || []);
+                pages = (Array.isArray(data) ? data : (data.pages || [])).map(p => ({
+                    ...p,
+                    url: String(p.url || ""),
+                    title: cleanSearchText(p.title || ""),
+                    hive: cleanSearchText(p.hive || ""),
+                    text: cleanSearchText(p.text || "")
+                }));
                 byPage = new Map(pages.map(p => [String(p.url), p]));
 
                 heads = (!Array.isArray(data) && Array.isArray(data.heads))
                     ? data.heads.map(h => ({
                         ref: String(h.ref || `${h.pageUrl}#${h.hid || h.id}`),
                         pageUrl: String(h.pageUrl),
-                        pageTitle: h.pageTitle || "",
-                        hive: h.hive || "",
+                        pageTitle: cleanSearchText(h.pageTitle || ""),
+                        hive: cleanSearchText(h.hive || ""),
                         hid: String(h.hid || h.id || ""),
-                        htext: h.htext || h.text || "",
+                        htext: cleanSearchText(h.htext || h.text || ""),
                         level: Number(h.level || 0),
-                        ctx: (h.ctx ?? "") + ""
+                        ctx: cleanSearchText(h.ctx ?? "")
                     }))
-                    : toHeadsFromPages(pages);
+                    : toHeadsFromPages(pages).map(h => ({
+                        ...h,
+                        pageTitle: cleanSearchText(h.pageTitle || ""),
+                        hive: cleanSearchText(h.hive || ""),
+                        htext: cleanSearchText(h.htext || ""),
+                        ctx: cleanSearchText(h.ctx || "")
+                    }));
 
                 byHead = new Map();
                 for (const h of heads) {
