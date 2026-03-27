@@ -31,6 +31,7 @@ I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\modify\slope
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\modify\swirl.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\modify\triplanardisplacement.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\modify\whorl.md
+I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\output\halftone.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\output\mesher.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\output\texturebaker.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\output\unreal.md
@@ -45,6 +46,7 @@ I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\simulate\ero
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\simulate\erosion2.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\simulate\glacier.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\simulate\hillify.md
+I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\simulate\lake.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\simulate\rivers.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\simulate\sediments.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\simulate\snowfield.md
@@ -62,14 +64,12 @@ I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\terrain\slum
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\terrain\uplift.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\accumulator.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\combine.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\compare.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\dataextractor.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\gate.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\layers.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\loopbegin.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\loopend.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\macroport.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\math.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\mixer.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\reseed.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\seamless.md

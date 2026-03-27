@@ -1,6 +1,7 @@
 [
   {
     "Name": "Accumulator",
+    "Description": "Accumulates specific map types such as Water, Forest, or Snow from all available nodes.",
     "Flubs": [
       {
         "Name": "Type",
@@ -255,6 +256,7 @@
   },
   {
     "Name": "AO",
+    "Description": "Creates an ambient occlusion map that darkens recessed areas and enhances terrain depth.",
     "Flubs": [
       {
         "Name": "Quality",
@@ -377,10 +379,12 @@
   },
   {
     "Name": "Autolevel",
+    "Description": "Automatically remaps the input to use the full available height or mask range.",
     "Flubs": []
   },
   {
     "Name": "BlobRemover",
+    "Description": "BlobRemover can remove smaller fragments or blobs near larger shapes. This is very useful for cleanup.",
     "Flubs": [
       {
         "Name": "Range",
@@ -579,6 +583,7 @@
   },
   {
     "Name": "Bulbous",
+    "Description": "Bulbous inflates existing shapes to make them more voluminous while respecting standard geological boundaries.",
     "Flubs": [
       {
         "Name": "Scale",
@@ -906,6 +911,7 @@
   },
   {
     "Name": "Cellular",
+    "Description": "Cellular creates cell-based patterns and noises that can be quite versatile as they're ever-present in nature.",
     "Flubs": [
       {
         "Name": "Size",
@@ -1005,6 +1011,7 @@
   },
   {
     "Name": "Cellular3D",
+    "Description": "Generates three-dimensional cellular noise useful for volumetric-looking patterns and complex terrain breakup.",
     "Flubs": [
       {
         "Name": "Size",
@@ -1098,6 +1105,7 @@
   },
   {
     "Name": "Clip",
+    "Description": "Cuts the terrain against a threshold, removing values above or below a specified level.",
     "Flubs": [
       {
         "Name": "Clip",
@@ -1164,6 +1172,7 @@
   },
   {
     "Name": "ColorErosion",
+    "Description": "Applies erosion-style transport and deposition to color data, creating more natural weathered color variation.",
     "Flubs": [
       {
         "Name": "Transport Distance",
@@ -1240,8 +1249,24 @@
     ]
   },
   {
+    "Name": "ColorThreshold",
+    "Description": "Creates a greyscale mask from a specified color range.",
+    "Flubs": [
+      {
+        "Name": "Start",
+        "Description": "The color to mask from the given input.",
+        "Type": "Color"
+      },
+      {
+        "Name": "Falloff",
+        "Description": "Range of similar colors to be masked as well.",
+        "Type": "Single"
+      }
+    ]
+  },
+  {
     "Name": "Combine",
-    "Description": "Combine is one of Gaea's most important nodes. You can combine two terrains (or any node output) using various mathematical operations, often known as 'Blend Modes'.",
+    "Description": "Combine is one of Gaea's most important nodes. You can combine two terrains (or any node output) using various mathematical operations often known as Blend Modes.",
     "Flubs": [
       {
         "Name": "Ratio",
@@ -1433,26 +1458,33 @@
   },
   {
     "Name": "Compare",
+    "Description": "Compares two inputs and produces a result based on their relative values.",
     "Flubs": [
       {
         "Name": "A/B",
-        "Description": "",
+        "Description": "Ratio of the terrain to compare.",
         "Type": "Single"
       },
       {
         "Name": "Colorized",
-        "Description": "",
+        "Description": "Show colorized output to signify the modified terrain.",
         "Type": "Boolean"
       },
       {
         "Name": "Perpendicular",
-        "Description": "",
+        "Description": "Switch from Horizontal/Stacked to Perpendicular comparison.",
+        "Type": "Boolean"
+      },
+      {
+        "Name": "Swap",
+        "Description": "Swap A and B inputs.",
         "Type": "Boolean"
       }
     ]
   },
   {
     "Name": "Cone",
+    "Description": "Generates a simple conical gradient that is useful as a primitive shape or mask.",
     "Flubs": [
       {
         "Name": "Scale",
@@ -1516,6 +1548,7 @@
   },
   {
     "Name": "Contours",
+    "Description": "Creates map-like contours for a terrain. Useful for making maps or for other overlays.",
     "Flubs": [
       {
         "Name": "Count",
@@ -1639,6 +1672,7 @@
   },
   {
     "Name": "Craggy",
+    "Description": "Turns a terrain's surface into a craggy, rocky, broken landscape.",
     "Flubs": [
       {
         "Name": "Size",
@@ -1739,6 +1773,7 @@
   },
   {
     "Name": "CraterField",
+    "Description": "Creates a landscape full of craters.",
     "Flubs": [
       {
         "Name": "Craterfield",
@@ -1938,6 +1973,7 @@
   },
   {
     "Name": "DataExtractor",
+    "Description": "Extracts specific derived data such as boundaries, differences, or Modifier maps from an input.",
     "Flubs": [
       {
         "Name": "Data",
@@ -1980,6 +2016,7 @@
   },
   {
     "Name": "Debris",
+    "Description": "Simulates loose debris across the terrain surface to create broken rocky accumulation.",
     "Flubs": [
       {
         "Name": "Debris Amount",
@@ -2074,6 +2111,7 @@
   },
   {
     "Name": "Deflate",
+    "Description": "Compresses and pulls terrain features inward, reducing bulk and prominence.",
     "Flubs": [
       {
         "Name": "Amount",
@@ -2208,6 +2246,7 @@
   },
   {
     "Name": "Distance",
+    "Description": "Generates a distance field from the input, measuring how far each point is from the nearest boundary or feature.",
     "Flubs": [
       {
         "Name": "Method",
@@ -2307,6 +2346,7 @@
   },
   {
     "Name": "Distress",
+    "Description": "Adds superficial wear, breakup, and irregular damage to a surface.",
     "Flubs": [
       {
         "Name": "Octaves",
@@ -2352,6 +2392,7 @@
   },
   {
     "Name": "DotNoise",
+    "Description": "Generates dotted or speckled noise patterns for texturing and breakup.",
     "Flubs": [
       {
         "Name": "Style",
@@ -2533,6 +2574,7 @@
   },
   {
     "Name": "DuneSea",
+    "Description": "Creates broad fields of dune-like terrain suitable for deserts and wind-shaped landscapes.",
     "Flubs": [
       {
         "Name": "Scale",
@@ -2649,6 +2691,7 @@
   },
   {
     "Name": "Dusting",
+    "Description": "Applies a thin dusting of snow or sediment over the terrain surface.",
     "Flubs": [
       {
         "Name": "Snowfall",
@@ -2739,6 +2782,7 @@
   },
   {
     "Name": "EasyErosion",
+    "Description": "Provides a simplified erosion workflow for quickly adding natural erosion effects.",
     "Flubs": [
       {
         "Name": "Erosion",
@@ -2926,6 +2970,7 @@
   },
   {
     "Name": "Equalize",
+    "Description": "Redistributes the input values to balance the histogram and reveal more detail across the range.",
     "Flubs": [
       {
         "Name": "Factor",
@@ -3115,6 +3160,7 @@
   },
   {
     "Name": "Erosion2",
+    "Description": "An advanced hydraulic erosion node that creates more detailed and realistic erosion results.",
     "Flubs": [
       {
         "Name": "General",
@@ -3255,6 +3301,7 @@
   },
   {
     "Name": "Export",
+    "Description": "Exports terrain, masks, or textures to external files.",
     "Flubs": [
       {
         "Name": "Format",
@@ -3401,6 +3448,7 @@
   },
   {
     "Name": "Extend",
+    "Description": "Expands the terrain range beyond its current limits, effectively stretching elevation values.",
     "Flubs": [
       {
         "Name": "Extend",
@@ -3477,6 +3525,7 @@
   },
   {
     "Name": "Filter",
+    "Description": "Applies profile-based filtering to reshape terrain values and refine feature response.",
     "Flubs": [
       {
         "Name": "Mode",
@@ -3572,6 +3621,7 @@
   },
   {
     "Name": "FlowMap",
+    "Description": "Generates a modern flow map showing how water or material would travel across the terrain.",
     "Flubs": [
       {
         "Name": "Flow Length",
@@ -3592,6 +3642,7 @@
   },
   {
     "Name": "FlowMapClassic",
+    "Description": "Generates a classic-style flow map based on legacy flow behavior.",
     "Flubs": [
       {
         "Name": "Rainfall",
@@ -3892,6 +3943,7 @@
   },
   {
     "Name": "Gate",
+    "Description": "Defines a baking boundary for the graph by forcing all ancestor nodes to be baked.",
     "Flubs": []
   },
   {
@@ -4007,6 +4059,7 @@
   },
   {
     "Name": "GraphicEQ",
+    "Description": "Reshapes terrain using multiple adjustable bands, similar to an equalizer for height profiles.",
     "Flubs": [
       {
         "Name": "Band 1",
@@ -4047,6 +4100,7 @@
   },
   {
     "Name": "Grid",
+    "Description": "Generates a regular grid pattern useful for cartography, masking, or stylized surfaces.",
     "Flubs": [
       {
         "Name": "Subdivision",
@@ -4115,6 +4169,7 @@
   },
   {
     "Name": "Halftone",
+    "Description": "Converts the terrain or mask into a halftone-style rendered output.",
     "Flubs": [
       {
         "Name": "Pattern",
@@ -4129,16 +4184,6 @@
           {
             "Name": "Riemersma",
             "Description": "Uses Riemersma dithering, which distributes error along a space-filling curve for a unique, less directional halftone appearance.",
-            "Type": "EnumValue"
-          },
-          {
-            "Name": "Threshold",
-            "Description": "Applies a simple threshold to the input, converting pixels above a certain value to white and below to black, resulting in a stark, high-contrast halftone.",
-            "Type": "EnumValue"
-          },
-          {
-            "Name": "Checks",
-            "Description": "Creates a checkerboard halftone pattern, alternating black and white squares to simulate shading.",
             "Type": "EnumValue"
           },
           {
@@ -4162,11 +4207,6 @@
             "Type": "EnumValue"
           },
           {
-            "Name": "H3X4A",
-            "Description": "Applies a 3x4 halftone matrix (variant A), creating a specific dot arrangement for stylized halftone effects.",
-            "Type": "EnumValue"
-          },
-          {
             "Name": "H6X6A",
             "Description": "Uses a 6x6 halftone matrix (variant A) for a larger, more complex dot pattern.",
             "Type": "EnumValue"
@@ -4177,11 +4217,6 @@
             "Type": "EnumValue"
           },
           {
-            "Name": "H3X4O",
-            "Description": "Uses a 3x4 halftone matrix (variant O), offering an alternative dot arrangement for different visual results.",
-            "Type": "EnumValue"
-          },
-          {
             "Name": "H6X6O",
             "Description": "Applies a 6x6 halftone matrix (variant O), producing a unique halftone pattern with distinct dot placement.",
             "Type": "EnumValue"
@@ -4189,11 +4224,6 @@
           {
             "Name": "H8X8O",
             "Description": "Uses an 8x8 halftone matrix (variant O), providing a dense and alternative halftone style.",
-            "Type": "EnumValue"
-          },
-          {
-            "Name": "H36X16O",
-            "Description": "Applies a large 36x16 halftone matrix (variant O), creating a very fine and complex halftone pattern.",
             "Type": "EnumValue"
           },
           {
@@ -4227,11 +4257,26 @@
             "Type": "EnumValue"
           },
           {
-            "Name": "DIA",
-            "Description": "Creates a halftone pattern using diagonal lines, simulating shading with slanted, evenly spaced lines.",
+            "Name": "DIAG",
+            "Description": "<desc>",
+            "Type": "EnumValue"
+          },
+          {
+            "Name": "HLINE",
+            "Description": "<desc>",
             "Type": "EnumValue"
           }
         ]
+      },
+      {
+        "Name": "Posterize",
+        "Description": "",
+        "Type": "Boolean"
+      },
+      {
+        "Name": "Depth",
+        "Description": "",
+        "Type": "Int32"
       }
     ]
   },
@@ -4269,6 +4314,7 @@
   },
   {
     "Name": "Hemisphere",
+    "Description": "Generates a hemispherical gradient useful for domes, mounds, and radial falloffs.",
     "Flubs": [
       {
         "Name": "Scale",
@@ -4299,6 +4345,7 @@
   },
   {
     "Name": "Hillify",
+    "Description": "Softens and reshapes terrain into smoother, hill-like forms.",
     "Flubs": [
       {
         "Name": "Coverage",
@@ -4348,6 +4395,7 @@
   },
   {
     "Name": "HSL",
+    "Description": "Adjusts the hue, saturation, and lightness of a color input.",
     "Flubs": [
       {
         "Name": "Hue",
@@ -4464,6 +4512,80 @@
         "IsGroup": true
       },
       {
+        "Name": "Type",
+        "Description": "",
+        "Type": "Enum",
+        "Flubs": [
+          {
+            "Name": "Simple",
+            "Description": "<desc>",
+            "Type": "EnumValue"
+          },
+          {
+            "Name": "Advanced",
+            "Description": "<desc>",
+            "Type": "EnumValue"
+          }
+        ]
+      },
+      {
+        "Name": "Simple Mode",
+        "Description": "",
+        "IsGroup": true
+      },
+      {
+        "Name": "X",
+        "Description": "X position of the lake source.",
+        "Type": "Single"
+      },
+      {
+        "Name": "Y",
+        "Description": "Y position of the lake source.",
+        "Type": "Single"
+      },
+      {
+        "Name": "Water Level",
+        "Description": "Level of the water.",
+        "Type": "Single"
+      },
+      {
+        "Name": "Render Surface",
+        "Description": "Whether to render the surface of the water or just create masks.",
+        "Type": "Boolean"
+      },
+      {
+        "Name": "Accuracy",
+        "Description": "The accuracy of the water placement and water containment within depressions.",
+        "Type": "Enum",
+        "Flubs": [
+          {
+            "Name": "Low",
+            "Description": "",
+            "Type": "EnumValue"
+          },
+          {
+            "Name": "Med",
+            "Description": "",
+            "Type": "EnumValue"
+          },
+          {
+            "Name": "High",
+            "Description": "",
+            "Type": "EnumValue"
+          },
+          {
+            "Name": "Ultra",
+            "Description": "",
+            "Type": "EnumValue"
+          }
+        ]
+      },
+      {
+        "Name": "Advanced Mode",
+        "Description": "",
+        "IsGroup": true
+      },
+      {
         "Name": "Precipitation",
         "Description": "Controls the amount of water available for lake formation, influencing the size and number of lakes generated.",
         "Type": "Single"
@@ -4507,6 +4629,7 @@
   },
   {
     "Name": "Layers",
+    "Description": "Combines multiple layers using blend operations in a stacked workflow.",
     "Flubs": [
       {
         "Name": "Blend Layer 1",
@@ -4547,6 +4670,7 @@
   },
   {
     "Name": "Lichtenberg",
+    "Description": "Creates branching, lightning-like erosion or fracture patterns.",
     "Flubs": [
       {
         "Name": "Style",
@@ -4604,6 +4728,7 @@
   },
   {
     "Name": "LightX",
+    "Description": "Creates a fully lit render using controllable sun, shadow, and ambient lighting.",
     "Flubs": [
       {
         "Name": "Direction Selection",
@@ -4768,6 +4893,7 @@
   },
   {
     "Name": "LinearGradient",
+    "Description": "Generates a straight linear gradient across the terrain.",
     "Flubs": [
       {
         "Name": "Scale",
@@ -4937,6 +5063,7 @@
   },
   {
     "Name": "MacroPort",
+    "Description": "Defines an input or output port inside a macro for passing height, mask, or color data.",
     "Flubs": [
       {
         "Name": "Direction",
@@ -4981,6 +5108,33 @@
         "Name": "Is Optional",
         "Description": "",
         "Type": "Boolean"
+      },
+      {
+        "Name": "Fallback",
+        "Description": "When the given input fails or is intended to short-circuit, return the selected map.",
+        "Type": "Enum",
+        "Flubs": [
+          {
+            "Name": "Null",
+            "Description": "Return a null value. May cause node to be disrupted, but needed for Switch and other mechanisms.",
+            "Type": "EnumValue"
+          },
+          {
+            "Name": "Black",
+            "Description": "A black (0) value map.",
+            "Type": "EnumValue"
+          },
+          {
+            "Name": "White",
+            "Description": "A white (1) value map.",
+            "Type": "EnumValue"
+          },
+          {
+            "Name": "Grey",
+            "Description": "A grey (0.5) value map.",
+            "Type": "EnumValue"
+          }
+        ]
       }
     ]
   },
@@ -4991,6 +5145,7 @@
   },
   {
     "Name": "Match",
+    "Description": "Matches the height range or histogram of one terrain to another.",
     "Flubs": [
       {
         "Name": "Mode",
@@ -5012,27 +5167,29 @@
     ]
   },
   {
-    "Name": "MathX",
+    "Name": "Math",
+    "Description": "Evaluates mathematical expressions to generate or modify terrain data procedurally.",
     "Flubs": [
       {
         "Name": "Expression",
-        "Description": "",
+        "Description": "Math expression or program to execute.",
         "Type": "String"
       },
       {
         "Name": "Open Editor",
-        "Description": "",
+        "Description": "Opens the Math Editor dialog.",
         "Type": "Command"
       },
       {
         "Name": "Normalized Coordinates",
-        "Description": "",
+        "Description": "Normalizes all coordinate inputs.",
         "Type": "Boolean"
       }
     ]
   },
   {
     "Name": "Median",
+    "Description": "Applies a median filter to remove spikes, speckles, and small noise while preserving edges better than blur.",
     "Flubs": [
       {
         "Name": "Mode",
@@ -5040,7 +5197,7 @@
         "Type": "Enum",
         "Flubs": [
           {
-            "Name": "Fast",
+            "Name": "Classic",
             "Description": "<desc>",
             "Type": "EnumValue"
           },
@@ -5050,7 +5207,7 @@
             "Type": "EnumValue"
           },
           {
-            "Name": "GPU",
+            "Name": "Advanced2",
             "Description": "<desc>",
             "Type": "EnumValue"
           }
@@ -5097,6 +5254,28 @@
         "Name": "Iterations",
         "Description": "",
         "Type": "Int32"
+      },
+      {
+        "Name": "Quality",
+        "Description": "",
+        "Type": "Enum",
+        "Flubs": [
+          {
+            "Name": "Low",
+            "Description": "<desc>",
+            "Type": "EnumValue"
+          },
+          {
+            "Name": "Medium",
+            "Description": "<desc>",
+            "Type": "EnumValue"
+          },
+          {
+            "Name": "High",
+            "Description": "<desc>",
+            "Type": "EnumValue"
+          }
+        ]
       }
     ]
   },
@@ -5305,6 +5484,7 @@
   },
   {
     "Name": "Meshify",
+    "Description": "Converts terrain into a faceted, mesh-like surface with controllable vertex density and detail sensitivity.",
     "Flubs": [
       {
         "Name": "Meshify",
@@ -5516,6 +5696,7 @@
   },
   {
     "Name": "MountainSide",
+    "Description": "Generates a single mountain slope or mountainside formation.",
     "Flubs": [
       {
         "Name": "Scale",
@@ -5872,6 +6053,7 @@
   },
   {
     "Name": "Normals",
+    "Description": "Generates a normal map from the terrain for shading and downstream workflows.",
     "Flubs": [
       {
         "Name": "Type",
@@ -5948,6 +6130,7 @@
   },
   {
     "Name": "Object",
+    "Description": "Loads external object or mesh data for use inside the graph.",
     "Flubs": [
       {
         "Name": "Mesh",
@@ -6121,6 +6304,7 @@
   },
   {
     "Name": "Pattern",
+    "Description": "Generates repeatable geometric or decorative patterns for masking and stylized terrain work.",
     "Flubs": [
       {
         "Name": "Size",
@@ -6183,6 +6367,7 @@
   },
   {
     "Name": "Peaks",
+    "Description": "Creates a mask that isolates the peaks and highest protruding parts of the terrain.",
     "Flubs": [
       {
         "Name": "Falloff",
@@ -6323,6 +6508,7 @@
   },
   {
     "Name": "Pixelate",
+    "Description": "Converts the input into a blocky, pixelated version.",
     "Flubs": [
       {
         "Name": "Size",
@@ -6379,6 +6565,7 @@
   },
   {
     "Name": "Pockmarks",
+    "Description": "Creates scattered pits, dents, and small impact-like depressions on the surface.",
     "Flubs": [
       {
         "Name": "Pockmarks",
@@ -6424,6 +6611,7 @@
   },
   {
     "Name": "PointCloud",
+    "Description": "Exports the terrain as a point cloud in formats such as PLY, XYZ, or CSV.",
     "Flubs": [
       {
         "Name": "Format",
@@ -6488,6 +6676,7 @@
   },
   {
     "Name": "RadialGradient",
+    "Description": "Generates a circular gradient radiating outward from a center point.",
     "Flubs": [
       {
         "Name": "Scale",
@@ -6572,6 +6761,7 @@
   },
   {
     "Name": "Reseed",
+    "Description": "Re-randomizes an upstream procedural node by overriding or refreshing its seed behavior.",
     "Flubs": [
       {
         "Name": "Seed",
@@ -6582,6 +6772,7 @@
   },
   {
     "Name": "RGBMerge",
+    "Description": "Combines three heightfields into a single RGB color output by packing them into separate channels.",
     "Flubs": [
       {
         "Name": "Enhance R",
@@ -6793,7 +6984,7 @@
       },
       {
         "Name": "Render Surface",
-        "Description": "",
+        "Description": "Whether to render the surface of the water or just create masks.",
         "Type": "Boolean"
       },
       {
@@ -6869,6 +7060,7 @@
   },
   {
     "Name": "Rockscape",
+    "Description": "Creates broad rocky surface formations and broken stone-like terrain detail.",
     "Flubs": [
       {
         "Name": "Size",
@@ -6958,6 +7150,7 @@
   },
   {
     "Name": "Roughen",
+    "Description": "Adds fine roughness and small-scale breakup to the terrain surface.",
     "Flubs": [
       {
         "Name": "Width",
@@ -7105,6 +7298,7 @@
   },
   {
     "Name": "Sandstone",
+    "Description": "Creates layered sandstone-like terracing and sedimentary rock structure.",
     "Flubs": [
       {
         "Name": "Passes",
@@ -7165,6 +7359,7 @@
   },
   {
     "Name": "SatMap",
+    "Description": "Generates terrain color from preset satellite-style palettes with controllable range and processing.",
     "Flubs": [
       {
         "Name": "Library",
@@ -7306,6 +7501,7 @@
   },
   {
     "Name": "Scree",
+    "Description": "Creates accumulations of loose rock fragments scattered across slopes and terrain edges.",
     "Flubs": [
       {
         "Name": "Stones",
@@ -7500,6 +7696,7 @@
   },
   {
     "Name": "Shade",
+    "Description": "Produces a shaded terrain render based on lighting direction and surface relief.",
     "Flubs": [
       {
         "Name": "Render Style",
@@ -7567,6 +7764,7 @@
   },
   {
     "Name": "Shape",
+    "Description": "Generates basic geometric terrain shapes for use as primitives or masks.",
     "Flubs": [
       {
         "Name": "Geometry",
@@ -7735,6 +7933,7 @@
   },
   {
     "Name": "Shrubs",
+    "Description": "Adds low vegetation or shrub-like surface growth across the terrain.",
     "Flubs": [
       {
         "Name": "Shrubs",
@@ -8292,6 +8491,7 @@
   },
   {
     "Name": "Snowfield",
+    "Description": "Creates broad settled snow coverage across the terrain surface.",
     "Flubs": [
       {
         "Name": "Snow",
@@ -8509,6 +8709,7 @@
   },
   {
     "Name": "Steps",
+    "Description": "Creates stepped formations and hard terrace-like breaks in the terrain.",
     "Flubs": [
       {
         "Name": "Steps",
@@ -8534,6 +8735,7 @@
   },
   {
     "Name": "Stones",
+    "Description": "Scatters stones or small rock forms across the surface.",
     "Flubs": [
       {
         "Name": "Stones",
@@ -8626,6 +8828,7 @@
   },
   {
     "Name": "SuperColor",
+    "Description": "Applies procedural terrain colorization using texture, flow, peaks, and palette controls.",
     "Flubs": [
       {
         "Name": "Texture",
@@ -8929,6 +9132,7 @@
   },
   {
     "Name": "Terraces",
+    "Description": "Creates stepped terrace formations from the terrain.",
     "Flubs": [
       {
         "Name": "Terraces",
@@ -8959,6 +9163,7 @@
   },
   {
     "Name": "TextureBaker",
+    "Description": "Bakes derived texture maps from the terrain for export and downstream use.",
     "Flubs": [
       {
         "Name": "Generate Normals",
@@ -9084,6 +9289,7 @@
   },
   {
     "Name": "Texturizer",
+    "Description": "Generates terrain texture masks using preset styles and controllable secondary effects.",
     "Flubs": [
       {
         "Name": "Style",
@@ -9621,6 +9827,7 @@
   },
   {
     "Name": "Transform3D",
+    "Description": "Applies full 3D transformation to the terrain, including rotation and spatial adjustment.",
     "Flubs": [
       {
         "Name": "Position",
@@ -9691,6 +9898,7 @@
   },
   {
     "Name": "Transpose",
+    "Description": "Adapts the terrain to the substructures of a given reference terrain.",
     "Flubs": [
       {
         "Name": "Mode",
@@ -9982,6 +10190,7 @@
   },
   {
     "Name": "Unity",
+    "Description": "Exports terrain data in Unity-friendly resolutions and formats.",
     "Flubs": [
       {
         "Name": "Target Size",
@@ -10024,6 +10233,7 @@
   },
   {
     "Name": "Unreal",
+    "Description": "Exports terrain data in Unreal-friendly resolutions, formats, and naming conventions.",
     "Flubs": [
       {
         "Name": "Automatic Size",
@@ -10058,6 +10268,16 @@
           {
             "Name": "x505",
             "Description": "Exports at 505 x 505 pixels, used for small terrain tiles or prototyping.",
+            "Type": "EnumValue"
+          },
+          {
+            "Name": "x253",
+            "Description": "<desc>",
+            "Type": "EnumValue"
+          },
+          {
+            "Name": "x127",
+            "Description": "<desc>",
             "Type": "EnumValue"
           }
         ]
@@ -10398,6 +10618,7 @@
   },
   {
     "Name": "Uplift",
+    "Description": "Creates tectonic-style uplift by raising and shaping large terrain masses.",
     "Flubs": [
       {
         "Name": "Passes",
@@ -10438,6 +10659,7 @@
   },
   {
     "Name": "Var",
+    "Description": "Reads or modifies named graph variables for procedural control and automation.",
     "Flubs": [
       {
         "Name": "Edit Mode",
@@ -10475,6 +10697,7 @@
   },
   {
     "Name": "VariableBlur",
+    "Description": "Blurs the input by varying the blur amount across the surface using local data or a guide.",
     "Flubs": [
       {
         "Name": "Blur",
@@ -10490,6 +10713,7 @@
   },
   {
     "Name": "Volcano",
+    "Description": "Generates a volcanic landform with a central cone and crater structure.",
     "Flubs": [
       {
         "Name": "Scale",
@@ -10866,6 +11090,7 @@
   },
   {
     "Name": "WaterColor",
+    "Description": "Colorizes water bodies using palette-based shallow and deep water tones.",
     "Flubs": [
       {
         "Name": "Source",
@@ -11015,6 +11240,7 @@
   },
   {
     "Name": "WaveShine",
+    "Description": "Generates wave-like reflective or rippling patterns useful for stylized surfaces and water-like forms.",
     "Flubs": [
       {
         "Name": "Global",
@@ -11115,6 +11341,7 @@
   },
   {
     "Name": "Weathering",
+    "Description": "Creates weathered color or mask variation that simulates dirt, fading, and environmental wear.",
     "Flubs": [
       {
         "Name": "Primary",
@@ -11450,6 +11677,7 @@
   },
   {
     "Name": "Wizard2",
+    "Description": "A simplified erosion wrapper that provides curated controls for shaping erosion depth, scale, and strength.",
     "Flubs": [
       {
         "Name": "Erosion",

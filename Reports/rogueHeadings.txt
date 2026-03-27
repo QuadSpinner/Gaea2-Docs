@@ -17,6 +17,7 @@ I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.6.0.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.7.0.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.8.0.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\history\gaea-2.2\2.2.9.0.md
+I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\install\install-gaea\system-requirements.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\node-map.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\derive\occlusion.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\modify\blobremover.md
