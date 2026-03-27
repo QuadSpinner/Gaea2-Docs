@@ -3,6 +3,10 @@ $(document).ready(function () {
     const MIN_CHARS = 2;
     const MAX_RESULTS = 12;
     const DEBOUNCE_MS = 120;
+    const FUZZY_MIN_TERM_LEN = 4;
+    const FUZZY_EDIT_DISTANCE = 1;
+    const FUZZY_TRIGGER_RESULTS = 3;
+    const FUZZY_SCORE_WEIGHT = 0.75;
 
     const $host = $("#site-search");
     const $box = $("#searchBox");
@@ -158,6 +162,30 @@ $(document).ready(function () {
         }).join(" ");
     }
 
+    function buildFuzzyQuery(input) {
+        const terms = splitTerms(input).map(escapeLunrTerm);
+        let hasFuzzyTerm = false;
+
+        const query = terms.map(t => {
+            if (t.length >= FUZZY_MIN_TERM_LEN) {
+                hasFuzzyTerm = true;
+                return `+${t}~${FUZZY_EDIT_DISTANCE}`;
+            }
+
+            return `+${t}`;
+        }).join(" ");
+
+        return hasFuzzyTerm ? query : "";
+    }
+
+    function weightResults(results, factor, mode) {
+        return (results || []).map(r => ({
+            ...r,
+            score: (r.score ?? 0) * factor,
+            matchMode: mode
+        }));
+    }
+
     function mergeResults(a, b) {
         const m = new Map(); // ref -> best result
         for (const r of a || []) m.set(String(r.ref), r);
@@ -173,6 +201,7 @@ $(document).ready(function () {
         let exactReq = [];
         let plain = [];
         let wildReq = [];
+        let fuzzyReq = [];
 
         try { exactReq = idx.search(buildRequiredQuery(q, false)); } catch { exactReq = []; }
 
@@ -186,7 +215,21 @@ $(document).ready(function () {
             try { wildReq = idx.search(buildRequiredQuery(q, true)); } catch { wildReq = []; }
         }
 
-        return mergeResults(mergeResults(exactReq, plain), wildReq);
+        const primary = mergeResults(mergeResults(exactReq, plain), wildReq);
+
+        if (primary.length < FUZZY_TRIGGER_RESULTS) {
+            const fuzzyQuery = buildFuzzyQuery(q);
+            if (fuzzyQuery) {
+                try { fuzzyReq = weightResults(idx.search(fuzzyQuery), FUZZY_SCORE_WEIGHT, "fuzzy"); } catch { fuzzyReq = []; }
+            }
+        }
+
+        const primaryRefs = new Set(primary.map(r => String(r.ref)));
+        const fuzzySupplement = fuzzyReq.filter(r => !primaryRefs.has(String(r.ref)));
+        const results = mergeResults(primary, fuzzySupplement);
+        const usedFuzzy = fuzzySupplement.length > 0;
+
+        return { results, usedFuzzy };
     }
 
     function toHeadsFromPages(pagesArr) {
@@ -327,12 +370,13 @@ $(document).ready(function () {
         return out.slice(0, MAX_RESULTS);
     }
 
-    function render(query, pageMatches, headMatches) {
+    function render(query, pageMatches, headMatches, options = {}) {
         clear();
 
         const totalPages = (pageMatches || []).length;
         const totalHeads = (headMatches || []).length;
         const total = totalPages + totalHeads;
+        const fuzzyNote = options.usedFuzzy ? " including close matches" : "";
 
         if (!total) {
             $empty.show();
@@ -347,9 +391,9 @@ $(document).ready(function () {
         if (totalPages) parts.push(`${totalPages} page${totalPages === 1 ? "" : "s"}`);
 
         if (total <= MAX_RESULTS) {
-            $meta.text(`${total} result${total === 1 ? "" : "s"} (${parts.join(", ")}) for "${query}"`);
+            $meta.text(`${total} result${total === 1 ? "" : "s"} (${parts.join(", ")}) for "${query}"${fuzzyNote}`);
         } else {
-            $meta.text(`Showing ${shown.length} of ${total} results (${parts.join(", ")}) for "${query}"`);
+            $meta.text(`Showing ${shown.length} of ${total} results (${parts.join(", ")}) for "${query}"${fuzzyNote}`);
         }
 
         for (const item of shown) {
@@ -423,10 +467,12 @@ $(document).ready(function () {
             return;
         }
 
-        const pageMatches = searchIndex(idxPages, query);
-        const headMatches = searchIndex(idxHeads, query);
+        const pageSearch = searchIndex(idxPages, query);
+        const headSearch = searchIndex(idxHeads, query);
 
-        render(query, pageMatches, headMatches);
+        render(query, pageSearch.results, headSearch.results, {
+            usedFuzzy: pageSearch.usedFuzzy || headSearch.usedFuzzy
+        });
     }
 
     function debounce(fn, ms) {

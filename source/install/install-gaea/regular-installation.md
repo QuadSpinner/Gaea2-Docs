@@ -8,7 +8,7 @@ description: Install Gaea with the standard setup, review administrator requirem
 
 # Regular Installation
 
-Please make sure you have read the [.](./)page.
+Please make sure you have read the @install-gaea page.
 
 ## Running the Setup
 
@@ -21,7 +21,7 @@ Our new installer makes it very easy to install Gaea, whether you are at home wi
 To begin the installation select Regular or @portable-installation. In most cases, Regular Installation is the safest and recommended option.
 
 :::warning
-:shield: You will require Administrator Privileges for a Regular Installation. If you don't have them, you can choose to go for a @portable-installation.
+You will require Administrator Privileges for a Regular Installation. If you don't have them, you can choose to go for a @portable-installation.
 :::
 
 ![](/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM-(1).png)

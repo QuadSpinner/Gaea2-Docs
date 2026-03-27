@@ -21,7 +21,7 @@ The Exportable Nodes section lists all nodes marked for export. You can modify t
 **Filename.** The name specified for the node here will be the name used to save file. Files are named in the format `<Name or NodeName>_<PortName>.<extension>`, ensuring clarity and order in file management.
 
 :::info
-You can disable `_Out` suffix for the Primary Port in [.](./).
+You can disable `_Out` suffix for the Primary Port in the @build-options-build section.
 :::
 
 **File Formats.** Gaea supports a wide range of file formats, allowing you to choose the best option based on the requirements of the receiving application or your workflow needs.

@@ -41,9 +41,25 @@ function Clean-SearchText {
     $text = [string]$Value
     $text = [regex]::Replace($text, "<!--[\s\S]*?-->", " ")
     $text = [regex]::Replace($text, "<[^>]+>", " ")
+    $text = [regex]::Replace($text, "[\uD800-\uDFFF\uFE0F]", " ")
     $text = [System.Net.WebUtility]::HtmlDecode($text)
     $text = [regex]::Replace($text, "\s+", " ").Trim()
     return $text
+}
+
+function Remove-LegacyUnsafeChars {
+    param(
+        [AllowNull()]
+        [string]$Text
+    )
+
+    if ($null -eq $Text) {
+        return $null
+    }
+
+    $Text = [regex]::Replace($Text, "[\uD800-\uDBFF][\uDC00-\uDFFF]\uFE0F?", " ")
+    $Text = [regex]::Replace($Text, "[\uD800-\uDFFF\uFE0F]", " ")
+    return [regex]::Replace($Text, "\s+", " ").Trim()
 }
 
 $raw = Get-Content -Raw -Path $searchIndexPath
@@ -63,6 +79,7 @@ foreach ($page in $pages) {
 }
 
 $json = $pages | ConvertTo-Json -Depth 100 -Compress
+$json = Remove-LegacyUnsafeChars $json
 Set-Content -Path $searchIndexPath -Value $json -NoNewline
 
 Write-Host "Sanitized search index: $searchIndexPath"
