@@ -5,6 +5,92 @@
     "IsGroup": true
   },
   {
+    "Name": "Type",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Simple",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Advanced",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Simple Mode",
+    "Description": "",
+    "IsGroup": true
+  },
+  {
+    "Name": "X",
+    "Description": "X position of the lake source.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Y",
+    "Description": "Y position of the lake source.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Water Level",
+    "Description": "Level of the water.",
+    "Type": "Single",
+    "IsGroup": false
+  },
+  {
+    "Name": "Render Surface",
+    "Description": "Whether to render the surface of the water or just create masks.",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Accuracy",
+    "Description": "The accuracy of the water placement and water containment within depressions.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Low",
+        "Description": "",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Med",
+        "Description": "",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "High",
+        "Description": "",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Ultra",
+        "Description": "",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
+  },
+  {
+    "Name": "Advanced Mode",
+    "Description": "",
+    "IsGroup": true
+  },
+  {
     "Name": "Precipitation",
     "Description": "Controls the amount of water available for lake formation, influencing the size and number of lakes generated.",
     "Type": "Single",

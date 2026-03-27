@@ -1,1 +1,0 @@
-window.SITE_TOC = null;

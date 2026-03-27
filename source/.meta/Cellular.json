@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Cellular",
-  "Description": null,
+  "Description": "Cellular creates cell-based patterns and noises that can be quite versatile as they're ever-present in nature.",
   "Family": "Extended",
   "FamilyIcon": "family-extended",
   "Toolbox": "Primitive",

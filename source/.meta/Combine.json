@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Combine",
-  "Description": "Combine is one of Gaea's most important nodes. You can combine two terrains (or any node output) using various mathematical operations, often known as 'Blend Modes'.",
+  "Description": "Combine is one of Gaea's most important nodes. You can combine two terrains (or any node output) using various mathematical operations often known as Blend Modes.",
   "Family": "Routing",
   "FamilyIcon": "x-combine",
   "Toolbox": "Utility",

@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Hemisphere",
-  "Description": null,
+  "Description": "Generates a hemispherical gradient useful for domes, mounds, and radial falloffs.",
   "Family": "Gradient",
   "FamilyIcon": "family-gradient",
   "Toolbox": "Primitive",

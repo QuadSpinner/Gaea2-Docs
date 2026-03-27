@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Export",
-  "Description": null,
+  "Description": "Exports terrain, masks, or textures to external files.",
   "Family": "Assets",
   "FamilyIcon": "x-export",
   "Toolbox": "Output",

@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Deflate",
-  "Description": null,
+  "Description": "Compresses and pulls terrain features inward, reducing bulk and prominence.",
   "Family": "Profile",
   "FamilyIcon": "x-deflate",
   "Toolbox": "Modify",

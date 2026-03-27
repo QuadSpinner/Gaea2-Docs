@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Meshify",
-  "Description": null,
+  "Description": "Converts terrain into a faceted, mesh-like surface with controllable vertex density and detail sensitivity.",
   "Family": "Shape",
   "FamilyIcon": "x-meshify",
   "Toolbox": "Modify",

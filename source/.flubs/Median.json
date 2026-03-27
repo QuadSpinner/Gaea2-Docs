@@ -6,7 +6,7 @@
     "IsGroup": false,
     "Flubs": [
       {
-        "Name": "Fast",
+        "Name": "Classic",
         "Description": "<desc>",
         "Type": "EnumValue",
         "IsGroup": false
@@ -18,7 +18,7 @@
         "IsGroup": false
       },
       {
-        "Name": "GPU",
+        "Name": "Advanced2",
         "Description": "<desc>",
         "Type": "EnumValue",
         "IsGroup": false
@@ -74,5 +74,31 @@
     "Description": "",
     "Type": "Int32",
     "IsGroup": false
+  },
+  {
+    "Name": "Quality",
+    "Description": "",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Low",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Medium",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "High",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
   }
 ]

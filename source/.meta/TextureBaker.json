@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "TextureBaker",
-  "Description": null,
+  "Description": "Bakes derived texture maps from the terrain for export and downstream use.",
   "Family": "Utilities",
   "FamilyIcon": "family-utilities",
   "Toolbox": "Output",
@@ -11,7 +11,7 @@
   "Keywords": [
     ""
   ],
-  "ShortCode": "nm",
+  "ShortCode": "txb",
   "Usage": 3,
   "SearchString": "TextureBaker Utilities  nm",
   "SearchWords": [

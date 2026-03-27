@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "LightX",
-  "Description": null,
+  "Description": "Creates a fully lit render using controllable sun, shadow, and ambient lighting.",
   "Family": "Render",
   "FamilyIcon": "x-lightx",
   "Toolbox": "Output",

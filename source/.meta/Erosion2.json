@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Erosion2",
-  "Description": null,
+  "Description": "An advanced hydraulic erosion node that creates more detailed and realistic erosion results.",
   "Family": "Erosion",
   "FamilyIcon": "x-erosion2",
   "Toolbox": "Simulate",

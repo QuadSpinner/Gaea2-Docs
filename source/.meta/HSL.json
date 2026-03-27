@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "HSL",
-  "Description": null,
+  "Description": "Adjusts the hue, saturation, and lightness of a color input.",
   "Family": "Adjust",
   "FamilyIcon": "x-hsl",
   "Toolbox": "Colorize",

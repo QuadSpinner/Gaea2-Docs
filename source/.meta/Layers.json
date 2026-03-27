@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Layers",
-  "Description": null,
+  "Description": "Combines multiple layers using blend operations in a stacked workflow.",
   "Family": "Routing",
   "FamilyIcon": "x-layers",
   "Toolbox": "Utility",

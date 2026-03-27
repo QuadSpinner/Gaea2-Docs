@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Extend",
-  "Description": null,
+  "Description": "Expands the terrain range beyond its current limits, effectively stretching elevation values.",
   "Family": "Adjust",
   "FamilyIcon": "x-extend",
   "Toolbox": "Modify",

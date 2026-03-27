@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Stones",
-  "Description": null,
+  "Description": "Scatters stones or small rock forms across the surface.",
   "Family": "Scatter",
   "FamilyIcon": "x-stones",
   "Toolbox": "Surface",

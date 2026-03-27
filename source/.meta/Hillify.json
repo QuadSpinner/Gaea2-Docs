@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Hillify",
-  "Description": null,
+  "Description": "Softens and reshapes terrain into smoother, hill-like forms.",
   "Family": "Erosion",
   "FamilyIcon": "family-erosion",
   "Toolbox": "Simulate",

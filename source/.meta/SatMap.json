@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "SatMap",
-  "Description": null,
+  "Description": "Generates terrain color from preset satellite-style palettes with controllable range and processing.",
   "Family": "Color",
   "FamilyIcon": "x-satmap",
   "Toolbox": "Colorize",

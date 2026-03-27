@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Object",
-  "Description": null,
+  "Description": "Loads external object or mesh data for use inside the graph.",
   "Family": "Assets",
   "FamilyIcon": "x-object",
   "Toolbox": "Primitive",

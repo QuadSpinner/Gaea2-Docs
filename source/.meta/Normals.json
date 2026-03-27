@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "Normals",
-  "Description": null,
+  "Description": "Generates a normal map from the terrain for shading and downstream workflows.",
   "Family": "Aspect",
   "FamilyIcon": "x-normals",
   "Toolbox": "Derive",

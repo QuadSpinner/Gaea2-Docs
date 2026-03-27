@@ -18,18 +18,6 @@
         "IsGroup": false
       },
       {
-        "Name": "Threshold",
-        "Description": "Applies a simple threshold to the input, converting pixels above a certain value to white and below to black, resulting in a stark, high-contrast halftone.",
-        "Type": "EnumValue",
-        "IsGroup": false
-      },
-      {
-        "Name": "Checks",
-        "Description": "Creates a checkerboard halftone pattern, alternating black and white squares to simulate shading.",
-        "Type": "EnumValue",
-        "IsGroup": false
-      },
-      {
         "Name": "O2X2",
         "Description": "Uses a 2x2 ordered dithering matrix to create a small, repeating halftone pattern.",
         "Type": "EnumValue",
@@ -54,12 +42,6 @@
         "IsGroup": false
       },
       {
-        "Name": "H3X4A",
-        "Description": "Applies a 3x4 halftone matrix (variant A), creating a specific dot arrangement for stylized halftone effects.",
-        "Type": "EnumValue",
-        "IsGroup": false
-      },
-      {
         "Name": "H6X6A",
         "Description": "Uses a 6x6 halftone matrix (variant A) for a larger, more complex dot pattern.",
         "Type": "EnumValue",
@@ -72,12 +54,6 @@
         "IsGroup": false
       },
       {
-        "Name": "H3X4O",
-        "Description": "Uses a 3x4 halftone matrix (variant O), offering an alternative dot arrangement for different visual results.",
-        "Type": "EnumValue",
-        "IsGroup": false
-      },
-      {
         "Name": "H6X6O",
         "Description": "Applies a 6x6 halftone matrix (variant O), producing a unique halftone pattern with distinct dot placement.",
         "Type": "EnumValue",
@@ -86,12 +62,6 @@
       {
         "Name": "H8X8O",
         "Description": "Uses an 8x8 halftone matrix (variant O), providing a dense and alternative halftone style.",
-        "Type": "EnumValue",
-        "IsGroup": false
-      },
-      {
-        "Name": "H36X16O",
-        "Description": "Applies a large 36x16 halftone matrix (variant O), creating a very fine and complex halftone pattern.",
         "Type": "EnumValue",
         "IsGroup": false
       },
@@ -132,11 +102,29 @@
         "IsGroup": false
       },
       {
-        "Name": "DIA",
-        "Description": "Creates a halftone pattern using diagonal lines, simulating shading with slanted, evenly spaced lines.",
+        "Name": "DIAG",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "HLINE",
+        "Description": "<desc>",
         "Type": "EnumValue",
         "IsGroup": false
       }
     ]
+  },
+  {
+    "Name": "Posterize",
+    "Description": "",
+    "Type": "Boolean",
+    "IsGroup": false
+  },
+  {
+    "Name": "Depth",
+    "Description": "",
+    "Type": "Int32",
+    "IsGroup": false
   }
 ]

@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Gate",
-  "Description": null,
+  "Description": "Defines a baking boundary for the graph by forcing all ancestor nodes to be baked.",
   "Family": "Routing",
   "FamilyIcon": "x-gate",
   "Toolbox": "Utility",

@@ -98,7 +98,7 @@ description: Explore the Gaea documentation, including installation, workflows, 
   </div>
   <div class="col">
     <div class="card">
-      <a href="#">
+      <a href="/developers">
         <img class="card-img-top" src="/.data/home/developers.png" alt="" />
       </a>
       <div class="card-body">

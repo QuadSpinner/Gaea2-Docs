@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "RGBMerge",
-  "Description": null,
+  "Description": "Combines three heightfields into a single RGB color output by packing them into separate channels.",
   "Family": "Utilities",
   "FamilyIcon": "x-rgbmerge",
   "Toolbox": "Colorize",

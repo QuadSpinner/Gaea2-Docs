@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Autolevel",
-  "Description": null,
+  "Description": "Automatically remaps the input to use the full available height or mask range.",
   "Family": "Adjust",
   "FamilyIcon": "x-autolevel",
   "Toolbox": "Modify",

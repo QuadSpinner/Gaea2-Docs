@@ -16,35 +16,13 @@ You will also require [.NET 8.0](https://download.visualstudio.microsoft.com/dow
 
 The Gaea installer will download and install those if needed. An internet connection will be required to do that. 
 
+Depending on your hardware, you may also need [Intel&reg; CPU Runtime for OpenCL Applications with SYCL Support](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-cpu-runtime-for-opencl-applications-with-sycl-support.html)
+
 :::warning
 If you are going to install in an air-gapped/offline environment, then you may want to install the prerequisites beforehand.
 :::
 
-## System Requirements
-
-Before running Gaea, make sure your computer meets the minimum system requirements and that you have the latest CPU and GPU drivers.
-
-| Minimum                                                    | Recommended                                                   |
-| ---------------------------------------------------------- | ------------------------------------------------------------- |
-| Windows 10 (April 2018 - Build 1803)                       | Windows 11 - 23H2                                             |
-| Intel Core i5-4200U / AMD FX-8370                          | Intel Core i7-4770K / AMD Ryzen-5 1500X                       |
-| 16GB RAM                                                   | 32GB RAM                                                      |
-| <p>NVIDIA GeForce GTX 1080</p><p>AMD Radeon RX Vega 64</p> | <p>NVIDIA GeForce RTX 3070 Ti</p><p>AMD Radeon RX 6800 XT</p> |
-| 10GB HDD space                                             | 50GB HDD space                                                |
-
-
-
-:::danger
-For CPU compute: The CPU must support AVX2 instruction set.
-
-For GPU compute: NVIDIA cards need CUDA 12.5; AMD cards need HIP 6.0.
-:::
-
-:::info
-RAM may depend on project requirements. See @calculating-memory-requirements.
-:::
-
-***
+You may also want to check @requirements.
 
 # The Gaea Installers
 

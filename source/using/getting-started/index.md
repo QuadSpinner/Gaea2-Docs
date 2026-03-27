@@ -1,13 +1,13 @@
 ---
-icon: play
-title: Terrain Basics
+icon: book-atlas
+title: Starter Guide
 uid: terrain-basics
 description: Gaea uses nodes to create a graph that generates a terrain.
 ---
 
 # Terrain Basics
 
-Gaea uses nodes to create a graph that generates a terrain.
+A complete starter guide for Gaea 2, covering the interface, settings, node categories, and core workflows. Follow along as we build a full terrain from start to finish while explaining each step along the way.
 
 **Nodes** are building blocks for creating terrain features. Each node represents a specific function, like generating shapes, adding erosion, or applying textures.
 
@@ -30,3 +30,6 @@ The third and final node is an [Erosion_2](../understanding-erosion/erosion_2/) 
 ![Erosion2 Node](/.data/assets/sQdSAyb7YN.png)
 
 This is how most terrains work: You start with one shape or several, adjust them, and then process them with simulations like Erosion.
+
+![Beginner's Guide](https://www.youtube.com/watch?v=2BMOmQJTXsQ&)
+

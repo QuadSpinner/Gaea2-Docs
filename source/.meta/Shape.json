@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Shape",
-  "Description": null,
+  "Description": "Generates basic geometric terrain shapes for use as primitives or masks.",
   "Family": "Basic",
   "FamilyIcon": "x-shape",
   "Toolbox": "Primitive",

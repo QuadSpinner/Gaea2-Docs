@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "MountainSide",
-  "Description": null,
+  "Description": "Generates a single mountain slope or mountainside formation.",
   "Family": "Primitive",
   "FamilyIcon": "family-primitive",
   "Toolbox": "Terrain",

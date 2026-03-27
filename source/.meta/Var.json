@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Var",
-  "Description": null,
+  "Description": "Reads or modifies named graph variables for procedural control and automation.",
   "Family": "Utilities",
   "FamilyIcon": "family-utilities",
   "Toolbox": "Utility",

@@ -2,8 +2,8 @@
   "MaxPorts": 0,
   "IsSoftData": false,
   "IsHidden": false,
-  "Name": "MathX",
-  "Description": null,
+  "Name": "Math",
+  "Description": "Evaluates mathematical expressions to generate or modify terrain data procedurally.",
   "Family": "Utilities",
   "FamilyIcon": "x-mathx",
   "Toolbox": "Utility",
@@ -13,9 +13,9 @@
   ],
   "ShortCode": "mx",
   "Usage": 56,
-  "SearchString": "MathX Utilities  mx",
+  "SearchString": "Math Utilities  mx",
   "SearchWords": [
-    "mathx",
+    "math",
     "utilities",
     "",
     "mx"

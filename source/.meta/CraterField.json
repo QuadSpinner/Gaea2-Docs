@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "CraterField",
-  "Description": null,
+  "Description": "Creates a landscape full of craters.",
   "Family": "Landscape",
   "FamilyIcon": "x-craterfield",
   "Toolbox": "Terrain",

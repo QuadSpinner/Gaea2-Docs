@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "RadialGradient",
-  "Description": null,
+  "Description": "Generates a circular gradient radiating outward from a center point.",
   "Family": "Gradient",
   "FamilyIcon": "family-gradient",
   "Toolbox": "Primitive",

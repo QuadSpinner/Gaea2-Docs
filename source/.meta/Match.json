@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Match",
-  "Description": null,
+  "Description": "Matches the height range or histogram of one terrain to another.",
   "Family": "Adjust",
   "FamilyIcon": "x-match",
   "Toolbox": "Modify",

@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Rockscape",
-  "Description": null,
+  "Description": "Creates broad rocky surface formations and broken stone-like terrain detail.",
   "Family": "Rocky",
   "FamilyIcon": "family-rocky",
   "Toolbox": "Surface",

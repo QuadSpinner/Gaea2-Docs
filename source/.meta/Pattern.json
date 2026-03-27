@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Pattern",
-  "Description": null,
+  "Description": "Generates repeatable geometric or decorative patterns for masking and stylized terrain work.",
   "Family": "Basic",
   "FamilyIcon": "family-basic",
   "Toolbox": "Primitive",

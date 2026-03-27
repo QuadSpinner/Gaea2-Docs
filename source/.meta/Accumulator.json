@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Accumulator",
-  "Description": null,
+  "Description": "Accumulates specific map types such as Water, Forest, or Snow from all available nodes.",
   "Family": "Utilities",
   "FamilyIcon": "x-accumulator",
   "Toolbox": "Utility",

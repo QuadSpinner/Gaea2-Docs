@@ -69,7 +69,7 @@
   },
   {
     "Name": "Render Surface",
-    "Description": "",
+    "Description": "Whether to render the surface of the water or just create masks.",
     "Type": "Boolean",
     "IsGroup": false
   },
