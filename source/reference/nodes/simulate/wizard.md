@@ -1,13 +1,16 @@
 ---
+description: The Erosion Wizard is a lightweight wrapper for the Erosion node.
 title: Wizard
 uid: wizard
 order: 24
-description: The Erosion Wizard is a lightweight wrapper for the Erosion node.
 ---
 
 # Wizard
 
 The Erosion Wizard is a lightweight wrapper for the Erosion node. It simplifies the settings through curated presets, and provides secondary passes for additional processing. The Wizard node is meant to replace the Erosion node - in fact, it is meant to augment it. For many direct and basic uses, Wizard can help achieve results much faster than with the Erosion node.
+
+## When to Use It
+Use Wizard when you need the Erosion Wizard is a lightweight wrapper for the Erosion node.
 
 ## Comparison to Erosion
 
@@ -29,7 +32,4 @@ Phase 2 is comprised of lightweight recipes that can be applied either on top of
 
 A common problem many users encounter is that strong erosion can destroy the precise shape they have created. This is because erosion, by definition, will remove material from the terrain to create erosive results. The `Bulk` parameter helps prevent this. By bulking up the terrain even slightly, sharper peaks and delicate areas are less prone to become too eroded or spikey.
 
-
-
 ## Properties
-

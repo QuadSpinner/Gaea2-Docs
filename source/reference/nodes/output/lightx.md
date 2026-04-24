@@ -1,11 +1,13 @@
 ---
+description: Creates a fully lit render using controllable sun, shadow, and ambient lighting.
 title: LightX
 uid: lightx
 order: 05
-description: Learn about the LightX node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# LightX
 
+## When to Use It
+Use LightX when you need a fully lit render using controllable sun, shadow, and ambient lighting.
 
-# Properties
-
+## Properties

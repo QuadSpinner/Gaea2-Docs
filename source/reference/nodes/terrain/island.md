@@ -1,24 +1,19 @@
 ---
+description: The Island node lets you draw basic shapes from which entire landmasses can be generated.
 title: Island
 uid: island
 order: 05
-description: The Island node lets you draw basic shapes from which entire landmasses can be generated.
 ---
 
-
-
-
-The Island node lets you draw basic shapes from which entire landmasses can be generated.
+# Island
 
 To draw an Island, open the Editor from the Properties panel and draw your basic island shape. It is best to create coarse, less-defined shapes and let the algorithm generate the details for you.
 
-Once the general shape is ready, you can then use smaller brush sizes in both add and subtract modes to refine the coastlines.
+## When to Use It
+Use Island when you want to sketch a landmass silhouette first and let the node build an island from that broad shape.
 
-:::info
-When refining the shape, keep your eye on the underlying generated shape instead of on your drawing. This will help you follow what changes.
-:::
+## Visual Direction
 
+![](/.data/assets/Island_VD.png)
 
-
-# Properties
-
+## Properties

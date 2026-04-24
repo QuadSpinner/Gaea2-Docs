@@ -1,13 +1,17 @@
 ---
+description: Draw draws entire mountain ranges in the shape you choose.
 title: Draw
 uid: draw
 order: 08
-description: Learn about the Draw node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Draw
 
+## When to Use It
+Use Draw when you need draws entire mountain ranges in the shape you choose.
 
-# Properties
+## Visual Direction
 
+![](/.data/assets/Draw_VD.gif)
 
-
+## Properties

@@ -2,15 +2,16 @@
 title: Commands
 uid: build-options-commands
 order: 09
-description: Execute Build. Starts the build swarmfor the current file and outputs a full resolution build as specified in the Build Options.
+description: Run the current build or copy its generated command line for automation and troubleshooting.
 ---
 
 # Commands
 
-**Execute Build.** Starts the @build-swarmfor the current file and outputs a full resolution build as specified in the Build Options.
+The **Commands** area provides the actions that launch the build or expose the equivalent command line for automation.
 
-**Copy Command Line.** Displays the command line for the current file, including fully qualified paths and any variables with their default values.
+* **Execute Build**: Starts [Build Swarm](@build-swarm) for the current file and runs a full-resolution build using the active Build Options.
+* **Copy Command Line**: Copies the generated command line for the current file, including fully qualified paths and any variables with their default values.
 
 ![](/.data/assets/command_line_example.png)
 
-See @command-line-automation for further details on how to use the Command Line.
+See [Command Line Automation](@command-line-automation) for more detail on using the generated command.

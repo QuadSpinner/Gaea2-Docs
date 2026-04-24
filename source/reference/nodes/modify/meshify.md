@@ -1,10 +1,17 @@
 ---
+description: Converts terrain into a faceted, mesh-like surface with controllable vertex density and detail sensitivity.
 title: Meshify
 uid: meshify
 order: 23
-description: Learn about the Meshify node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Meshify
 
+## When to Use It
+Use Meshify when the terrain shape is mostly working and you need a targeted reshape, filter, or remap pass.
 
-# Properties
+## Visual Direction
+
+![](/.data/assets/Meshify_VD.png)
+
+## Properties

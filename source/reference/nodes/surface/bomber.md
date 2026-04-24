@@ -1,16 +1,18 @@
 ---
+description: The Bomber node takes an input heightfield and "stamps" or bombs it across the entire surface of the terrain using the randomization properties you set.
 title: Bomber
 uid: bomber
 order: 01
-description: The Bomber node takes an input heightfield and "stamps" or bombs it across the entire surface of the terrain using the randomization properties you set.
 ---
-
 
 # Bomber
 
-
-The Bomber node takes an input heightfield and "stamps" or bombs it across the entire surface of the terrain using the randomization properties you set.
-
 If your terrain has a hard edge, you can turn on Fade Edges. Or for more precise control, try using the @edge or @clip before applying the Bomber node.
 
-# Properties
+## When to Use It
+Use Bomber when you need takes an input heightfield and "stamps" or bombs it across the entire surface of the terrain using the randomization properties you set.
+
+## Visual Direction
+Use a before-and-after pair from the same terrain so the surface change is readable, and add a closer crop if the effect lives in smaller detail.
+
+## Properties

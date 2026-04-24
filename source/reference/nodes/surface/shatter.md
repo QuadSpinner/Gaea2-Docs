@@ -1,17 +1,16 @@
 ---
+description: Shatter transforms simple shapes into complex, highly eroded, and fractured terrains.
 title: Shatter
 uid: shatter
 order: 16
-description: Learn about the Shatter node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Shatter
 
+## When to Use It
+Use Shatter when you need transforms simple shapes into complex, highly eroded, and fractured terrains.
 
+## Visual Direction
+Use a before-and-after pair from the same terrain so the surface change is readable, and add a closer crop if the effect lives in smaller detail.
 
-
-
-
-
-# Properties
-
-
+## Properties

@@ -2,17 +2,21 @@
 title: Tiles
 uid: build-options-tiles
 order: 03
-description: Overview and guidance for Tiles in the Gaea documentation.
+description: Control naming, numbering, overlap, and folder organization for tiled terrain builds.
 ---
 
 # Tiles
 
+The **Tiles** tab controls how tiled builds are named and arranged on disk. Use it when exporting large terrains as multiple tiles for engines, DCCs, or large-world workflows.
+
 ![](/.data/assets/Build-Options-Tiles-(2).png)
 
-* **Tile Suffix Pattern**: Choose a suffix format for naming tiles (e.g., `_y%Y%_x%X%`).
+## Tile Output Settings
+
+* **Tile Suffix Pattern**: Choose a suffix format for naming tiles, for example `_y%Y%_x%X%`.
 * **Add Leading Zeroes**: Adds leading zeroes to tile numbers for consistent filename length.
 * **Start Numbering from 1**: Starts tile numbering from 1 instead of 0.
-* **Organization**: Select how tiles are organized in the output (e.g., Folders for each Node).
+* **Organization**: Select how tiles are organized in the output, such as folders for each node.
 * **Flip Y Axis**: Reverses the Y-axis orientation for tile output.
 * **Preserve Cache in Build Folder**: Retains tile cache files in the build folder for later use.
 * **Overlap Pixels**: Set the number of overlapping pixels between adjacent tiles for smoother seams.

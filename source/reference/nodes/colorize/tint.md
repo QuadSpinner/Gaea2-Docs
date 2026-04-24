@@ -1,8 +1,8 @@
 ---
+description: Tint converts a heightmap or mask into a color texture by blending between two colors across the input range.
 title: Tint
 uid: tint
 order: 11
-description: Tint converts a heightmap or mask into a color texture by blending between two colors across the input range.
 ---
 
 # Tint
@@ -10,6 +10,9 @@ description: Tint converts a heightmap or mask into a color texture by blending 
 Tint converts a heightmap or mask into a color texture by blending between two colors across the input range. Dark values map toward the start color, bright values map toward the end color. This is essentially a two-color lookup table (CLUT) applied to a scalar map.
 
 Tint is useful for quick colorization, visualization of masks, and generating simple gradients for export or downstream blending.
+
+## When to Use It
+Use Tint when you need converts a heightmap or mask into a color texture by blending between two colors across the input range.
 
 ## How it works
 
@@ -33,5 +36,4 @@ Tint is useful for quick colorization, visualization of masks, and generating si
 * Equalize can reveal structure in subtle masks by redistributing values, but it may produce "busier" transitions than expected. Use it when detail visibility matters more than strict thresholds.
 * Hue, saturation, and lightness are best treated as finishing controls. Set start/end first, then do small global shifts to tune the palette.
 
-
-# Properties
+## Properties

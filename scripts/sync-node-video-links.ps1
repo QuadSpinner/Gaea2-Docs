@@ -27,6 +27,7 @@ $ErrorActionPreference = "Stop"
 $sourceRoot = Join-Path $RepoRoot "source"
 $videoRoot = Join-Path $sourceRoot "videos\official\nodes"
 $referenceRoot = Join-Path $sourceRoot "reference\nodes"
+$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
 
 if (-not (Test-Path $videoRoot)) {
     throw "Video source folder not found: $videoRoot"
@@ -87,6 +88,18 @@ function Set-ManagedBlock {
             return "$frontMatter`r`n`r`n$Block`r`n"
         }
 
+        $h1Match = [regex]::Match($body, "(?m)^#\s+.+$")
+        if ($h1Match.Success) {
+            $beforeBlock = $body.Substring(0, $h1Match.Index + $h1Match.Length).TrimEnd()
+            $afterBlock = $body.Substring($h1Match.Index + $h1Match.Length).Trim()
+
+            if ([string]::IsNullOrWhiteSpace($afterBlock)) {
+                return "$frontMatter`r`n`r`n$beforeBlock`r`n`r`n$Block`r`n"
+            }
+
+            return "$frontMatter`r`n`r`n$beforeBlock`r`n`r`n$Block`r`n`r`n$afterBlock`r`n"
+        }
+
         return "$frontMatter`r`n`r`n$Block`r`n`r`n$body`r`n"
     }
 
@@ -123,8 +136,8 @@ Get-ChildItem -Path $videoRoot -File -Filter "yt-*.md" | ForEach-Object {
     }
 
     $referenceFile = $referenceBySlug[$slug]
-    $videoContent = Get-Content -Raw -Path $videoFile.FullName
-    $referenceContent = Get-Content -Raw -Path $referenceFile.FullName
+    $videoContent = [System.IO.File]::ReadAllText($videoFile.FullName, [System.Text.Encoding]::UTF8)
+    $referenceContent = [System.IO.File]::ReadAllText($referenceFile.FullName, [System.Text.Encoding]::UTF8)
 
     $title = Get-FrontMatterValue -Content $videoContent -Key "title"
     if ([string]::IsNullOrWhiteSpace($title)) {
@@ -137,7 +150,7 @@ Get-ChildItem -Path $videoRoot -File -Filter "yt-*.md" | ForEach-Object {
     $updatedContent = Set-ManagedBlock -Content $referenceContent -Block $block
 
     if ($updatedContent -ne $referenceContent) {
-        Set-Content -Path $referenceFile.FullName -Value $updatedContent -NoNewline
+        [System.IO.File]::WriteAllText($referenceFile.FullName, $updatedContent, $utf8NoBom)
         $updatedFiles.Add($referenceFile.FullName)
     }
 }

@@ -1,10 +1,17 @@
 ---
+description: Range primitive quickly sets up an entire mountain terrain with shapes highly optimized for eroding large-scale landscapes.
 title: MountainRange
 uid: mountainrange
 order: 07
-description: Learn about the MountainRange node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# MountainRange
 
+## When to Use It
+Use MountainRange when you need range primitive quickly sets up an entire mountain terrain with shapes highly optimized for eroding large-scale landscapes.
 
-# Properties
+## Visual Direction
+
+![](/.data/assets/MountainRange_VD.png)
+
+## Properties

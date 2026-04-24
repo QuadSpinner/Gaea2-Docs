@@ -1,11 +1,13 @@
 ---
+description: Seamless can transform any input terrain or color map into a tileable/repeating pattern.
 title: Seamless
 uid: seamless
 order: 18
-description: S.
 ---
 
+# Seamless
 
-Seamless can transform any input terrain or color map into a tileable/repeating pattern. It requires very little effort.
+## When to Use It
+Use Seamless when the graph needs routing, layering, or control logic instead of a new terrain feature.
 
-# Properties
+## Properties

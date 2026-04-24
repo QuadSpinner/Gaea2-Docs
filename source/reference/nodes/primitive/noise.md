@@ -1,13 +1,19 @@
 ---
+description: Applies controlled single-pixel noise onto your terrain.
 title: Noise
 uid: noise
 order: 16
-description: Applies controlled single-pixel noise onto your terrain.
 ---
 
-Applies controlled single-pixel noise onto your terrain.
+# Noise
 
-This is a resolution-dependent node.
+Noise applies controlled single-pixel noise onto the terrain.
 
-# Properties
+## When to Use It
+Use Noise when you need a controlled speckle or grain layer to disturb an otherwise clean terrain or mask.
 
+## Visual Direction
+
+![](/.data/assets/Noise_VD.png)
+
+## Properties

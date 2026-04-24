@@ -1,11 +1,20 @@
 ---
+description: Transpose takes the character of the Reference terrain and applies to to the Input terrain.
 title: Transpose
 uid: transpose
 order: 37
-description: Transpose takes the character of the Reference terrain and applies to to the Input terrain.
 ---
 
 # Transpose
+
+<!-- AUTO-VIDEO-LINK:START -->
+## Official Video
+
+For a video breakdown of this node, see [the official Transpose video](/videos/official/nodes/yt-transpose.html).
+<!-- AUTO-VIDEO-LINK:END -->
+
+## When to Use It
+Use Transpose when you need takes the character of the Reference terrain and applies to to the Input terrain.
 
 ## Transpose
 
@@ -19,10 +28,12 @@ By combining Mask and Draw, you can [paint your effect](https://www.youtube.com/
 
 ## Embed
 
-
-
 ## Insert
 
 Insert is a utility node that lets you insert a sparse heightfield into another heightfield while preserving the target heightfield's relative heights. A common example is creating rocks on a flat (clipped) surface and then inserting them onto a terrain. Unlike Max or Add combines, Insert preserves the inserted heightfield and does not add artifacts or shapes from the underlying heightfield.
+
+## Visual Direction
+
+![](/.data/assets/Transpose_VD.png)
 
 ## Properties

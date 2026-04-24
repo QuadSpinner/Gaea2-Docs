@@ -7,7 +7,7 @@ description: The easiest way to import a Gaea terrain into Unreal Engine is to u
 
 # Unreal
 
-The easiest way to import a Gaea terrain into Unreal Engine is to use the [gaea2unreal](/../plugins/gaea2unreal/) plugin.
+The easiest way to import a Gaea terrain into Unreal Engine is to use the [gaea2unreal](/../gaea2unreal/installing-gaea2unreal)
 
 If you wish to import it by yourself, use @unreal-node to prepare the output to fit your terrain size as required by Unreal Engine. Then you can manually import the terrain.
 

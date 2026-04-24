@@ -1,14 +1,20 @@
 ---
+description: FractalTerraces creates terraces or stratification of the terrain.
 title: FractalTerraces
 uid: fractalterraces
 order: 06
-description: FractalTerraces creates terraces or stratification of the terrain.
 ---
+
+# FractalTerraces
 
 FractalTerraces creates terraces or stratification of the terrain. The node is fractal in nature, and terracing is performed in multiple octaves giving you a very high level of detail.
 
 You get detailed control over the edge shape, uniformity, rock hardness, and overall character of the terracing.
 
+## When to Use It
+Use FractalTerraces when the landform needs stepped stratification with more natural irregularity than a simple terrace effect.
 
-# Properties
+## Visual Direction
+Use a before-and-after pair that makes the stepped strata easy to read. A second comparison should push the irregularity so readers can see how this differs from a cleaner terrace effect.
 
+## Properties

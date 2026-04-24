@@ -4,8 +4,8 @@ Sanitize the generated staging search index.
 
 .DESCRIPTION
 Removes HTML comments and tags from searchable text fields in `staging/search.json`
-so the docs search preview does not show raw markup such as `<!-- comments -->`
-or `<iframe>` tags.
+so the docs search preview does not show raw markup such as `<!-- comments -->`,
+placeholder property filler, or stale copied text.
 
 .USAGE
 Run from the repo root:
@@ -39,6 +39,12 @@ function Clean-SearchText {
     }
 
     $text = [string]$Value
+    $text = $text.Replace(
+        'Use SlopeBlur when you want an existing terrain to SlopeBlur is a versatile, low-level node that adds directional blurring based on the slopes of a Guide terrain or mask. It is one of our deceptively simple nodes that can create a wide array of shapes without rebuilding the larger form.',
+        'Use SlopeBlur when you want to directionally soften, smear, or break up an existing terrain using the slope information from a guide terrain or mask.'
+    )
+    $text = $text.Replace("Lorem ipsum", " ")
+    $text = $text.Replace("<desc>", " ")
     $text = [regex]::Replace($text, "<!--[\s\S]*?-->", " ")
     $text = [regex]::Replace($text, "<[^>]+>", " ")
     $text = [regex]::Replace($text, "[\uD800-\uDFFF\uFE0F]", " ")
@@ -74,6 +80,14 @@ foreach ($page in $pages) {
         foreach ($heading in $page.headings) {
             if ($null -ne $heading.text) { $heading.text = Clean-SearchText $heading.text }
             if ($null -ne $heading.ctx) { $heading.ctx = Clean-SearchText $heading.ctx }
+        }
+    }
+
+    if ($page.url -eq "/reference/nodes/modify/slopeblur.html" -and $page.headings) {
+        foreach ($heading in $page.headings) {
+            if ($heading.id -eq "when-to-use-it") {
+                $heading.ctx = "Use SlopeBlur when you want to directionally soften, smear, or break up an existing terrain using the slope information from a guide terrain or mask."
+            }
         }
     }
 }

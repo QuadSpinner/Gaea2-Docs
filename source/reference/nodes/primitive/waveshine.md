@@ -1,11 +1,17 @@
 ---
+description: Generates wave-like reflective or rippling patterns useful for stylized surfaces and water-like forms.
 title: WaveShine
 uid: waveshine
 order: 24
-description: Learn about the WaveShine node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# WaveShine
 
+## When to Use It
+Use WaveShine when you need wave-like reflective or rippling patterns useful for stylized surfaces and water-like forms.
 
-# Properties
+## Visual Direction
 
+![](/.data/assets/WaveShine_VD.png)
+
+## Properties

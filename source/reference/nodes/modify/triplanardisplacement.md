@@ -1,14 +1,14 @@
 ---
-hidden: true
-title: TriplanarDisplacement
 uid: triplanardisplacement
+description: TriplanarDisplacement applies displacement using triplanar projection across a surface.
+title: TriplanarDisplacement
+hidden: true
 order: 38
-description: Learn about the TriplanarDisplacement node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
 # TriplanarDisplacement
 
-## TriplanarDisplacement
+## When to Use It
+Use TriplanarDisplacement when you need displacement using triplanar projection across a surface.
 
 ## Properties
-

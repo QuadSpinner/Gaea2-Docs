@@ -3,10 +3,10 @@
 Sanitize generated staging text files for tooling compatibility.
 
 .DESCRIPTION
-Cleans generated text artifacts in `staging` that may still contain legacy
-emoji/shortcode output or broken placeholder link text after source fixes.
-This is useful when a rebuild has not yet regenerated `llms` files or
-`search.json`, and downstream tools need plain text only.
+Cleans generated artifacts in `staging` that may still contain legacy
+emoji/shortcode output, stale copied text, or placeholder property
+descriptions after source fixes. This is useful when a rebuild has not yet
+regenerated node HTML, `llms` files, or `search.json`.
 
 .USAGE
 Run from the repo root:
@@ -14,7 +14,8 @@ Run from the repo root:
 
 Notes:
   - Safe to rerun.
-  - Intended as a post-build cleanup for generated `llms*.txt` files and `search.json`.
+  - Intended as a post-build cleanup for generated node HTML, `llms*.txt`,
+    markdown mirrors, and `search.json`.
 #>
 
 param(
@@ -52,8 +53,15 @@ function Clean-StagingText {
         'You can disable `_Out` suffix for the Primary Port in [.](./).',
         'You can disable `_Out` suffix for the Primary Port in the Build section.'
     )
+    $Text = $Text.Replace(
+        'Use SlopeBlur when you want an existing terrain to SlopeBlur is a versatile, low-level node that adds directional blurring based on the slopes of a Guide terrain or mask. It is one of our deceptively simple nodes that can create a wide array of shapes without rebuilding the larger form.',
+        'Use SlopeBlur when you want to directionally soften, smear, or break up an existing terrain using the slope information from a guide terrain or mask.'
+    )
 
+    $Text = $Text.Replace("Lorem ipsum", "")
+    $Text = $Text.Replace("<desc>", "")
     $Text = $Text.Replace(":shield:", "")
+    $Text = [regex]::Replace($Text, '<span class="choice-description">\s*</span>', "")
     $Text = [regex]::Replace($Text, "[\uD800-\uDBFF][\uDC00-\uDFFF]\uFE0F?", "")
     $Text = [regex]::Replace($Text, "[\uD800-\uDFFF\uFE0F]", "")
     $Text = [regex]::Replace($Text, " {2,}", " ")
@@ -63,18 +71,39 @@ function Clean-StagingText {
 
 $targets = New-Object System.Collections.Generic.List[string]
 
-$searchIndex = Join-Path $stagingRoot "search.json"
-if (Test-Path $searchIndex) {
-    $targets.Add($searchIndex)
+function Add-Target {
+    param(
+        [string]$Path
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Path)) {
+        return
+    }
+
+    if ((Test-Path $Path) -and (-not $targets.Contains($Path))) {
+        $targets.Add($Path)
+    }
 }
+
+$searchIndex = Join-Path $stagingRoot "search.json"
+Add-Target $searchIndex
 
 $llmsFull = Join-Path $stagingRoot "llms-full.txt"
-if (Test-Path $llmsFull) {
-    $targets.Add($llmsFull)
-}
+Add-Target $llmsFull
 
 Get-ChildItem -Path $stagingRoot -Recurse -File -Filter "llms.txt" | ForEach-Object {
-    $targets.Add($_.FullName)
+    Add-Target $_.FullName
+}
+
+$nodeReferenceRoot = Join-Path $stagingRoot "reference\nodes"
+if (Test-Path $nodeReferenceRoot) {
+    Get-ChildItem -Path $nodeReferenceRoot -Recurse -File -Filter "*.html" | ForEach-Object {
+        Add-Target $_.FullName
+    }
+
+    Get-ChildItem -Path $nodeReferenceRoot -Recurse -File -Filter "*.md" | ForEach-Object {
+        Add-Target $_.FullName
+    }
 }
 
 $updated = 0

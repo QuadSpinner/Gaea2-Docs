@@ -1,9 +1,11 @@
 ---
+description: The Arboreal Node gives you the power of creating superficial forests and vegetation. These forests are part of the heightfield while being "detached" enough for various export scenarios.
 title: Trees
 uid: trees
 order: 23
-description: Learn about the Trees node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
+
+# Trees
 
 <!-- AUTO-VIDEO-LINK:START -->
 ## Official Video
@@ -11,4 +13,10 @@ description: Learn about the Trees node in Gaea, including its purpose, controls
 For a video breakdown of this node, see [the official Trees video](/videos/official/nodes/yt-trees.html).
 <!-- AUTO-VIDEO-LINK:END -->
 
-# Properties
+## When to Use It
+Use Trees when you want forest or vegetation massing to appear as part of the heightfield for distant coverage, canopy breakup, or export-friendly vegetation forms.
+
+## Visual Direction
+Lead with the terrain before vegetation massing, then the Trees result. One additional crop is useful only if it clarifies how dense canopy forms sit on the terrain.
+
+## Properties

@@ -1,14 +1,13 @@
 ---
+description: Exports terrain, masks, or textures to external files.
 title: Export
 uid: export
 order: 03
-description: Learn about the Export node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Export
 
+## When to Use It
+Use Export when you need terrain, masks, or textures to external files.
 
-# Properties
-
-
-
-
+## Properties

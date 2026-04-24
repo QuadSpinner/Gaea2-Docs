@@ -1,8 +1,8 @@
 ---
+description: The Cracks primitive creates large, cracked patterns on a flat base.
 title: Cracks
 uid: cracks
 order: 05
-description: The Cracks primitive creates large, cracked patterns on a flat base.
 ---
 
 # Cracks
@@ -12,6 +12,9 @@ can use it to mask other nodes or subtract it from other primitives
 using the Combine node.
 
 ![](/.data/ref/Cracks/Cracks.webp)
+
+## When to Use It
+Use Cracks when you need large, cracked patterns on a flat base.
 
 ## Usage
 
@@ -51,7 +54,4 @@ If you need more elaborate distortions in your patterns, you can add a Warp node
 
 ![](/.data/ref/Cracks/usage-4.webp)
 
-
-
 ## Properties
-

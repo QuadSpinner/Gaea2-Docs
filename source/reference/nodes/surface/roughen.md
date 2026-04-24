@@ -1,11 +1,16 @@
 ---
+description: Adds fine roughness and small-scale breakup to the terrain surface.
 title: Roughen
 uid: roughen
 order: 13
-description: Learn about the Roughen node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Roughen
 
+## When to Use It
+Use Roughen when you need fine roughness and small-scale breakup to the terrain surface.
 
-# Properties
+## Visual Direction
+Use a before-and-after pair from the same terrain so the surface change is readable, and add a closer crop if the effect lives in smaller detail.
 
+## Properties

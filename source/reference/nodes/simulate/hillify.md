@@ -1,10 +1,16 @@
 ---
+description: Softens and reshapes terrain into smoother, hill-like forms.
 title: Hillify
 uid: hillify
 order: 09
-description: Learn about the Hillify node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Hillify
 
+## When to Use It
+Use Hillify when you need softens and reshapes terrain into smoother, hill-like forms.
 
-# Properties
+## Visual Direction
+Use a before-and-after pair from the same terrain so the process effect reads immediately. If you add another visual, make it a single high-impact control comparison rather than a broad gallery.
+
+## Properties

@@ -1,17 +1,17 @@
 ---
+description: The Erosion2 node in Gaea 2 is a powerful new erosion algorithm designed to enhance terrain shaping capabilities beyond the traditional erosion.
 title: Erosion2
 uid: erosion2
 order: 07
-description: The Erosion2 node in Gaea 2 is a powerful new erosion algorithm designed to enhance terrain shaping capabilities beyond the traditional erosion.
 ---
+
+# Erosion2
 
 <!-- AUTO-VIDEO-LINK:START -->
 ## Official Video
 
 For a video breakdown of this node, see [the official Erosion2 video](/videos/official/nodes/yt-erosion2.html).
 <!-- AUTO-VIDEO-LINK:END -->
-
-# Erosion2
 
 The **Erosion_2** node in Gaea 2 is a powerful new erosion algorithm designed to enhance terrain shaping capabilities beyond the traditional @erosion.
 
@@ -23,4 +23,7 @@ It simulates advanced hydraulic erosion with realistic sediment transport and te
 
 ![](/.data/assets/erosion.webp)
 
-# Properties
+## When to Use It
+Use Erosion2 when you want a more advanced hydraulic erosion pass with strong control over downcutting, sediment behavior, and rainfall-driven shaping.
+
+## Properties

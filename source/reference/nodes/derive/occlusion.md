@@ -1,9 +1,11 @@
 ---
+description: The Occlusion node behaves similarly to Ambient Occlusion but favors sedimentary processes and rock crevices rather than lighting.
 title: Occlusion
 uid: occlusion
 order: 07
-description: The Occlusion node behaves similarly to Ambient Occlusion but favors sedimentary processes and rock crevices rather than lighting.
 ---
+
+# Occlusion
 
 <!-- AUTO-VIDEO-LINK:START -->
 ## Official Video
@@ -21,6 +23,7 @@ You can choose to focus on larger shapes such as gulleys and valleys over crevic
 In Gaea 1.3, the Invert and Strong options have been removed. Use the @modifier-stack or an Fx node.
 :::
 
+## When to Use It
+Use Occlusion when you need a crevice-focused mask for recessed zones, sediment pockets, or darker material buildup.
 
-
-# Properties
+## Properties

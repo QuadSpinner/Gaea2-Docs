@@ -1,8 +1,8 @@
 ---
+description: The Combine node is one of the most important nodes in Gaea.
 title: Combine
 uid: combine
 order: 03
-description: The Combine node is one of the most important nodes in Gaea.
 ---
 
 # Combine
@@ -10,6 +10,9 @@ description: The Combine node is one of the most important nodes in Gaea.
 The Combine node is one of the most important nodes in Gaea. It allows you to take two outputs (terrains, masks, or color maps) and combine them using various mathematical operations, often known as 'Blend Modes'.
 
 In addition, the Combine node also gives you a separation mask for texturing purposes when working with terrains and masks.
+
+## When to Use It
+Use Combine when two terrains, masks, or color maps need to be blended, compared, or merged into one controllable result.
 
 ## Using Combine
 
@@ -48,6 +51,3 @@ If you're adding two terrains where the combined output goes beyond `1.0`, it wi
 Alternatively, you can add an Fx node to the Combine output or other nodes like Clamp and bring it down manually.
 
 ## Properties
-
-
-

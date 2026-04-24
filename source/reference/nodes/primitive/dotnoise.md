@@ -1,13 +1,17 @@
 ---
+description: Generates dotted or speckled noise patterns for texturing and breakup.
 title: DotNoise
 uid: dotnoise
 order: 07
-description: Learn about the DotNoise node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# DotNoise
 
+## When to Use It
+Use DotNoise when you need dotted or speckled noise patterns for texturing and breakup.
 
-# Properties
+## Visual Direction
 
+![](/.data/assets/DotNoise_VD.png)
 
-
+## Properties

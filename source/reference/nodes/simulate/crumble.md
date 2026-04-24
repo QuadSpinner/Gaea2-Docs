@@ -1,8 +1,8 @@
 ---
+description: Crumble runs a different kind of simulation that feeds off of existing crevices, erosive information, and other subtle details to collapse the terrain.
 title: Crumble
 uid: crumble
 order: 02
-description: Crumble runs a different kind of simulation that feeds off of existing crevices, erosive information, and other subtle details to collapse the terrain.
 ---
 
 # Crumble
@@ -12,6 +12,9 @@ Crumble runs a different kind of simulation that feeds off of existing crevices,
 ![](/.data/ref/crumble-all.gif)
 
 Crumble works with just about any Primitive, Erosion, and Surface node. While the controls may seem somewhat simplistic, they can create a wide range of effects depending on the combination.
+
+## When to Use It
+Use Crumble when you need runs a different kind of simulation that feeds off of existing crevices, erosive information, and other subtle details to collapse the terrain.
 
 ## Controlling the Edge
 
@@ -23,4 +26,4 @@ While both may look simple, combining them in unique ways can give you a variety
 
 While Crumble does "eat away" the edges, the control over the edges was limited. With the new Edge slider, you can reduce or expand the effect the erosion process has on sharp edges. You can combine this with the Rock Hardness slider for absolute control.
 
-# Properties
+## Properties
