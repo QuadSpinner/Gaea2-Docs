@@ -13,8 +13,6 @@ order: 22
 For a video breakdown of this node, see [the official Thermal2 video](/videos/official/nodes/yt-thermal2.html).
 <!-- AUTO-VIDEO-LINK:END -->
 
-![youtube.com](https://www.youtube.com/watch?v=C9KpUG8u2WM)
-
 ## When to Use It
 Use Thermal2 when you want talus, debris, and slope breakdown that feel driven by thermal weathering rather than hydraulic flow.
 

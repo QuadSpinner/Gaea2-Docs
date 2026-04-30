@@ -1,12 +1,10 @@
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\developers\automation\building-bridges\building-a-bridge-with-the-cli.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\developers\automation\building-bridges\index.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\developers\automation\index.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\developers\extensibility\index.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\guides\scenarios\helpful-info\index.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\guides\use-in\apps\cinema4d.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\guides\use-in\apps\maya.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\guides\use-in\apps\zbrush.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\guides\use-in\bridges\gaea2unreal\index.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\install\gaea-1\index.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\gaea2houdini\tor-processor.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\colorize\cluter.md
@@ -89,9 +87,3 @@ I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\ui\interface\viewport\render
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\using\advanced-topics\technical-information\index.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\using\getting-started\basics\introduction.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\using\troubleshooting\terrains\index.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\using\using-gaea\colorizing-and-textures\index.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\using\using-gaea\crafting-the-surface\index.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\using\using-gaea\importing-terrains\index.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\using\using-gaea\managing-graphs\index.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\using\using-gaea\managing-graphs\navigating-complex-graphs.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\using\using-gaea\managing-graphs\portals-and-chokepoints.md

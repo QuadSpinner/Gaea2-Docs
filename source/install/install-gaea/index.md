@@ -34,7 +34,7 @@ Gaea is available in various forms to provide flexible methods of deployment, wh
   <img src="/.data/assets/image-(43).png" alt="EXE" />
 </div>
 
-The setup exe is our primary - and recommended - way of installing Gaea. It provides for both @regular-installation and @portable-installation while also setting up additional registry entries required for the [gaea2unreal](/plugins/gaea2unreal/) and [gaea2houdini](/plugins/gaea2houdini/) bridges.
+The setup exe is our primary - and recommended - way of installing Gaea. It provides for both @regular-installation and @portable-installation while also setting up additional registry entries required for the @gaea2unreal and @gaea2houdini bridges.
 
 ## 7-Zip Package
 

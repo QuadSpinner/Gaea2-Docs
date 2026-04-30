@@ -7,9 +7,9 @@ description: The easiest way to import a Gaea terrain into Unreal Engine is to u
 
 # Unreal
 
-The easiest way to import a Gaea terrain into Unreal Engine is to use the [gaea2unreal](/../gaea2unreal/installing-gaea2unreal)
+The easiest way to import a Gaea terrain into Unreal Engine is to use @gaea2unreal. Start with @installing-gaea2unreal if the plugin is not installed yet.
 
-If you wish to import it by yourself, use @unreal-node to prepare the output to fit your terrain size as required by Unreal Engine. Then you can manually import the terrain.
+If you wish to import it by yourself, use the @unreal output node to prepare the output to fit your terrain size as required by Unreal Engine. Then you can manually import the terrain.
 
 
 
@@ -22,7 +22,7 @@ If you wish to import it by yourself, use @unreal-node to prepare the output to 
 5. Click **Import**.
 
 :::info
-If the Z-scale calculation feels too complex or you are not getting accurate results, use the [gaea2unreal](/../plugins/gaea2unreal/) plugin to import your terrain. Gaea will prepare these calculations and other factors for you.
+If the Z-scale calculation feels too complex or you are not getting accurate results, use @gaea2unreal to import your terrain. Gaea will prepare these calculations and other factors for you.
 :::
 
 
@@ -73,6 +73,6 @@ The heightfield should always be the primary input.
 
 ## Building
 
-When you build your terrain (See [..](../)) the Unreal node will save all the appropriate asset files along with a JSON definition file. This is the key file you will need for @importing-terrains.
+When you build your terrain, the Unreal node will save all the appropriate asset files along with a JSON definition file. This is the key file you will need for @importing-terrains. See @build-and-export for the general build workflow.
 
 See the next section on how to set up your exported terrain in Unreal Engine.

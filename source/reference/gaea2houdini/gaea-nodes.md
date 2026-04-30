@@ -50,5 +50,5 @@ Houdini uses the same mechanism to display both color and masks, making it hard 
 
 ***
 
-See [Gaea2Houdini](/plugins/gaea2houdini) for more information.
+See @gaea2houdini for more information.
 
