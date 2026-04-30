@@ -12,22 +12,22 @@ The following tables list changes to individual pages. To see the exact change, 
 ## April 2026
 |  Id  | Page | Section | Last Modified |
 | ---- | ---- | ------- | ------------- |
-| 001 | [Building a Bridge with the CLI](/developers/automation/building-bridges/building-a-bridge-with-the-cli.html) | Developers | 2026-04-30 |
-| 002 | [Building Bridges](/developers/automation/building-bridges/index.html) | Developers | 2026-04-30 |
-| 003 | [Automation](/developers/automation/index.html) | Developers | 2026-04-30 |
-| 004 | [Crafting the Surface](/using/using-gaea/crafting-the-surface/index.html) | Using Gaea | 2026-04-30 |
-| 005 | [Thermal2](/reference/nodes/simulate/thermal2.html) | Node Reference | 2026-04-30 |
-| 006 | [EasyErosion](/reference/nodes/simulate/easyerosion.html) | Node Reference | 2026-04-30 |
-| 007 | [Erosion2](/reference/nodes/simulate/erosion2.html) | Node Reference | 2026-04-30 |
-| 008 | [EasyErosion](/videos/official/nodes/yt-easyerosion.html) | Videos | 2026-04-30 |
-| 009 | [Build and Export](/using/using-gaea/build-and-export/index.html) | Using Gaea | 2026-04-30 |
-| 010 | [Portals and Chokepoints](/using/using-gaea/managing-graphs/portals-and-chokepoints.html) | Using Gaea | 2026-04-30 |
-| 011 | [Navigating Complex Graphs](/using/using-gaea/managing-graphs/navigating-complex-graphs.html) | Using Gaea | 2026-04-30 |
-| 012 | [Managing Graphs](/using/using-gaea/managing-graphs/index.html) | Using Gaea | 2026-04-30 |
-| 013 | [Importing Terrains](/using/using-gaea/importing-terrains/index.html) | Using Gaea | 2026-04-30 |
-| 014 | [Colorizing and Textures](/using/using-gaea/colorizing-and-textures/index.html) | Using Gaea | 2026-04-30 |
-| 015 | [Using Gaea](/using/using-gaea/index.html) | Using Gaea | 2026-04-30 |
-| 016 | [Extensibility](/developers/extensibility/index.html) | Developers | 2026-04-29 |
+| 001 | [Extensibility](/developers/extensibility/index.html) | Developers | 2026-04-30 |
+| 002 | [Crafting the Surface](/using/using-gaea/crafting-the-surface/index.html) | Using Gaea | 2026-04-30 |
+| 003 | [Building a Bridge with the CLI](/developers/automation/building-bridges/building-a-bridge-with-the-cli.html) | Developers | 2026-04-30 |
+| 004 | [Building Bridges](/developers/automation/building-bridges/index.html) | Developers | 2026-04-30 |
+| 005 | [Automation](/developers/automation/index.html) | Developers | 2026-04-30 |
+| 006 | [Thermal2](/reference/nodes/simulate/thermal2.html) | Node Reference | 2026-04-30 |
+| 007 | [EasyErosion](/reference/nodes/simulate/easyerosion.html) | Node Reference | 2026-04-30 |
+| 008 | [Erosion2](/reference/nodes/simulate/erosion2.html) | Node Reference | 2026-04-30 |
+| 009 | [EasyErosion](/videos/official/nodes/yt-easyerosion.html) | Videos | 2026-04-30 |
+| 010 | [Build and Export](/using/using-gaea/build-and-export/index.html) | Using Gaea | 2026-04-30 |
+| 011 | [Portals and Chokepoints](/using/using-gaea/managing-graphs/portals-and-chokepoints.html) | Using Gaea | 2026-04-30 |
+| 012 | [Navigating Complex Graphs](/using/using-gaea/managing-graphs/navigating-complex-graphs.html) | Using Gaea | 2026-04-30 |
+| 013 | [Managing Graphs](/using/using-gaea/managing-graphs/index.html) | Using Gaea | 2026-04-30 |
+| 014 | [Importing Terrains](/using/using-gaea/importing-terrains/index.html) | Using Gaea | 2026-04-30 |
+| 015 | [Colorizing and Textures](/using/using-gaea/colorizing-and-textures/index.html) | Using Gaea | 2026-04-30 |
+| 016 | [Using Gaea](/using/using-gaea/index.html) | Using Gaea | 2026-04-30 |
 | 017 | [Allowed Functions](/developers/extensibility/scripting-and-expressions/functions.html) | Developers | 2026-04-29 |
 | 018 | [Expressions](/developers/extensibility/scripting-and-expressions/expressions.html) | Developers | 2026-04-29 |
 | 019 | [The Graph](/ui/interface/graph/index.html) | User Interface | 2026-04-29 |
