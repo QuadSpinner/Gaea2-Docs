@@ -11,6 +11,5 @@ order: 17
 Use Shear when you need rock shearing and exposes strata.
 
 ## Visual Direction
-Use a before-and-after pair from the same terrain so the surface change is readable, and add a closer crop if the effect lives in smaller detail.
 
 ## Properties

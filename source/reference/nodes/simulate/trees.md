@@ -17,6 +17,5 @@ For a video breakdown of this node, see [the official Trees video](/videos/offic
 Use Trees when you want forest or vegetation massing to appear as part of the heightfield for distant coverage, canopy breakup, or export-friendly vegetation forms.
 
 ## Visual Direction
-Lead with the terrain before vegetation massing, then the Trees result. One additional crop is useful only if it clarifies how dense canopy forms sit on the terrain.
 
 ## Properties

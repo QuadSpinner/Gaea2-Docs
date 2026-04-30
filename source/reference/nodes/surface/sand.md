@@ -11,6 +11,5 @@ order: 14
 Use Sand when broad landforms are already in place and the terrain needs dune-like or blown-sand surface patterns.
 
 ## Visual Direction
-Use a before-and-after pair from the same terrain so the surface change is readable, and add a closer crop if the effect lives in smaller detail.
 
 ## Properties

@@ -11,6 +11,5 @@ order: 12
 Use Rockscape when the terrain needs broad rocky massing or broken stone forms layered onto the existing landform.
 
 ## Visual Direction
-Use a before-and-after pair from the same terrain so the surface change is readable, and add a closer crop if the effect lives in smaller detail.
 
 ## Properties

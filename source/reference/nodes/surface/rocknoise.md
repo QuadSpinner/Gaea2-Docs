@@ -15,6 +15,5 @@ RockNoise has a minimal interface that lets you control the density and number o
 Use RockNoise when you need a useful tool for generating fields of rocks with size variations and controllable density.
 
 ## Visual Direction
-Use a before-and-after pair from the same terrain so the surface change is readable, and add a closer crop if the effect lives in smaller detail.
 
 ## Properties

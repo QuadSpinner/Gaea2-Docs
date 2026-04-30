@@ -15,6 +15,5 @@ The water surface can be generated either as global surface or filled from the e
 Use Sea when you want one node to both establish a water surface and shape nearby coastal response.
 
 ## Visual Direction
-Show the incoming coastline or basin first, then the Sea result so water level and shoreline response read together. If you add a second visual, make it a closer coastal crop rather than another full scene.
 
 ## Properties

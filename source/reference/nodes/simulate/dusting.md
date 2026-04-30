@@ -21,6 +21,5 @@ This node can be used with or without Snow.
 Use Dusting when you need a light snow pass that settles gently without turning the whole terrain into a deep winter result.
 
 ## Visual Direction
-Use a before-and-after pair from the same terrain so the light snow layer is easy to judge. One wider read and one closer crop are enough.
 
 ## Properties

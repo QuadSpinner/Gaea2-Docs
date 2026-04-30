@@ -13,6 +13,5 @@ Coloration in Gaea is based on CLUTs, or color lookup tables. As 2D heightfields
 Use CLUTer when you want to create color gradients which can be mapped to texture masks for creating color maps.
 
 ## Visual Direction
-Show the terrain before colorization, then the colorized result. If you add a second visual, use it to compare a different mask, palette, or blend strength.
 
 ## Properties

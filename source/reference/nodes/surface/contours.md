@@ -11,6 +11,5 @@ order: 03
 Use Contours when you need map-like contours for a terrain.
 
 ## Visual Direction
-Use a before-and-after pair from the same terrain so the surface change is readable, and add a closer crop if the effect lives in smaller detail.
 
 ## Properties

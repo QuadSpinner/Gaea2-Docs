@@ -19,6 +19,5 @@ Icefloe creates flat plates of ice inside a water body.
 Use IceFloe when a water body needs broken plates of ice rather than open water or a continuous frozen surface.
 
 ## Visual Direction
-Show the water body before the simulation, then the ice plate result. Keep the framing wide enough that the plate boundaries and open gaps are both visible.
 
 ## Properties

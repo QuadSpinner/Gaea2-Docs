@@ -15,6 +15,5 @@ You get detailed control over the edge shape, uniformity, rock hardness, and ove
 Use FractalTerraces when the landform needs stepped stratification with more natural irregularity than a simple terrace effect.
 
 ## Visual Direction
-Use a before-and-after pair that makes the stepped strata easy to read. A second comparison should push the irregularity so readers can see how this differs from a cleaner terrace effect.
 
 ## Properties

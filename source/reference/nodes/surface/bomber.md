@@ -13,6 +13,5 @@ If your terrain has a hard edge, you can turn on Fade Edges. Or for more precise
 Use Bomber when you need takes an input heightfield and "stamps" or bombs it across the entire surface of the terrain using the randomization properties you set.
 
 ## Visual Direction
-Use a before-and-after pair from the same terrain so the surface change is readable, and add a closer crop if the effect lives in smaller detail.
 
 ## Properties
