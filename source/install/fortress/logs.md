@@ -3,6 +3,7 @@ title: Logs
 uid: fortress-logs
 icon: scroll
 order: 08
+description: Use Fortress Server logs to inspect current activity, review archived logs, and collect diagnostics for support.
 ---
 
 # Using Fortress Server Logs

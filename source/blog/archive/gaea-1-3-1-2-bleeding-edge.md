@@ -2,6 +2,7 @@
 title: Gaea 1.3.1.2 Bleeding Edge
 uid: gaea-1-3-1-2-bleeding-edge
 modified: "2025-07-22T21:38:45Z"
+description: A minor but important update for the new Crumble and Arboreal nodes, along with a few bug fixes.
 ---
 
 *A minor but important update for the new Crumble and Arboreal nodes, along with a few bug fixes.*

@@ -50,5 +50,37 @@
     "Description": "",
     "Type": "Boolean",
     "IsGroup": false
+  },
+  {
+    "Name": "Fallback",
+    "Description": "When the given input fails or is intended to short-circuit, return the selected map.",
+    "Type": "Enum",
+    "IsGroup": false,
+    "Flubs": [
+      {
+        "Name": "Null",
+        "Description": "Return a null value. May cause node to be disrupted, but needed for Switch and other mechanisms.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Black",
+        "Description": "A black (0) value map.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "White",
+        "Description": "A white (1) value map.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "Grey",
+        "Description": "A grey (0.5) value map.",
+        "Type": "EnumValue",
+        "IsGroup": false
+      }
+    ]
   }
 ]

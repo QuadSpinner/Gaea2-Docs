@@ -1,6 +1,7 @@
 ---
 title: Separate a Project 
 uid: break-project
+description: Big terrains get heavy fast. Even if your graph is well-optimized, a single "everything in one file" project can balloon memory use, slow previews, and.
 ---
 
 # Keep Projects Light by Splitting Them Into Multiple Files

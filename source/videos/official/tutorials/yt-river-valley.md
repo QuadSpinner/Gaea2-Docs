@@ -4,6 +4,7 @@ uid: yt-river-valley
 tag: Od8n_QCoHDg
 order: 029
 icon: kit fa-qs-logo
+description: Watch the official Gaea tutorial for River Valley and follow along with the demonstrated terrain workflow.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=Od8n_QCoHDg)

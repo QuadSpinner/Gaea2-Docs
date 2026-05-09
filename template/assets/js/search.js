@@ -3,6 +3,10 @@ $(document).ready(function () {
     const MIN_CHARS = 2;
     const MAX_RESULTS = 12;
     const DEBOUNCE_MS = 120;
+    const FUZZY_MIN_TERM_LEN = 4;
+    const FUZZY_EDIT_DISTANCE = 1;
+    const FUZZY_TRIGGER_RESULTS = 3;
+    const FUZZY_SCORE_WEIGHT = 0.75;
 
     const $host = $("#site-search");
     const $box = $("#searchBox");
@@ -103,7 +107,19 @@ $(document).ready(function () {
         return (q || "").trim().split(/\s+/).filter(Boolean);
     }
 
+    function cleanSearchText(input) {
+        const raw = String(input ?? "");
+        const withoutComments = raw.replace(/<!--[\s\S]*?-->/g, " ");
+        const withoutTags = withoutComments.replace(/<[^>]+>/g, " ");
+        const decoder = document.createElement("textarea");
+        decoder.innerHTML = withoutTags;
+        return (decoder.value || decoder.textContent || "")
+            .replace(/\s+/g, " ")
+            .trim();
+    }
+
     function highlight(s, q) {
+        s = cleanSearchText(s);
         const terms = splitTerms(q).map(t => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
         if (!terms.length) return esc(s);
         const re = new RegExp(`(${terms.join("|")})`, "ig");
@@ -111,7 +127,7 @@ $(document).ready(function () {
     }
 
     function snippet(text, q, maxLen = 160) {
-        const t = (text || "").replace(/\s+/g, " ").trim();
+        const t = cleanSearchText(text);
         if (!t) return "";
 
         const hay = t.toLowerCase();
@@ -146,6 +162,30 @@ $(document).ready(function () {
         }).join(" ");
     }
 
+    function buildFuzzyQuery(input) {
+        const terms = splitTerms(input).map(escapeLunrTerm);
+        let hasFuzzyTerm = false;
+
+        const query = terms.map(t => {
+            if (t.length >= FUZZY_MIN_TERM_LEN) {
+                hasFuzzyTerm = true;
+                return `+${t}~${FUZZY_EDIT_DISTANCE}`;
+            }
+
+            return `+${t}`;
+        }).join(" ");
+
+        return hasFuzzyTerm ? query : "";
+    }
+
+    function weightResults(results, factor, mode) {
+        return (results || []).map(r => ({
+            ...r,
+            score: (r.score ?? 0) * factor,
+            matchMode: mode
+        }));
+    }
+
     function mergeResults(a, b) {
         const m = new Map(); // ref -> best result
         for (const r of a || []) m.set(String(r.ref), r);
@@ -161,6 +201,7 @@ $(document).ready(function () {
         let exactReq = [];
         let plain = [];
         let wildReq = [];
+        let fuzzyReq = [];
 
         try { exactReq = idx.search(buildRequiredQuery(q, false)); } catch { exactReq = []; }
 
@@ -174,7 +215,21 @@ $(document).ready(function () {
             try { wildReq = idx.search(buildRequiredQuery(q, true)); } catch { wildReq = []; }
         }
 
-        return mergeResults(mergeResults(exactReq, plain), wildReq);
+        const primary = mergeResults(mergeResults(exactReq, plain), wildReq);
+
+        if (primary.length < FUZZY_TRIGGER_RESULTS) {
+            const fuzzyQuery = buildFuzzyQuery(q);
+            if (fuzzyQuery) {
+                try { fuzzyReq = weightResults(idx.search(fuzzyQuery), FUZZY_SCORE_WEIGHT, "fuzzy"); } catch { fuzzyReq = []; }
+            }
+        }
+
+        const primaryRefs = new Set(primary.map(r => String(r.ref)));
+        const fuzzySupplement = fuzzyReq.filter(r => !primaryRefs.has(String(r.ref)));
+        const results = mergeResults(primary, fuzzySupplement);
+        const usedFuzzy = fuzzySupplement.length > 0;
+
+        return { results, usedFuzzy };
     }
 
     function toHeadsFromPages(pagesArr) {
@@ -216,21 +271,33 @@ $(document).ready(function () {
                 // - old: [ {url,title,text,...}, ... ]
                 // - new: { pages: [...], heads: [...] }
                 // - new: { pages: [...] } with page.headings[]
-                pages = Array.isArray(data) ? data : (data.pages || []);
+                pages = (Array.isArray(data) ? data : (data.pages || [])).map(p => ({
+                    ...p,
+                    url: String(p.url || ""),
+                    title: cleanSearchText(p.title || ""),
+                    hive: cleanSearchText(p.hive || ""),
+                    text: cleanSearchText(p.text || "")
+                }));
                 byPage = new Map(pages.map(p => [String(p.url), p]));
 
                 heads = (!Array.isArray(data) && Array.isArray(data.heads))
                     ? data.heads.map(h => ({
                         ref: String(h.ref || `${h.pageUrl}#${h.hid || h.id}`),
                         pageUrl: String(h.pageUrl),
-                        pageTitle: h.pageTitle || "",
-                        hive: h.hive || "",
+                        pageTitle: cleanSearchText(h.pageTitle || ""),
+                        hive: cleanSearchText(h.hive || ""),
                         hid: String(h.hid || h.id || ""),
-                        htext: h.htext || h.text || "",
+                        htext: cleanSearchText(h.htext || h.text || ""),
                         level: Number(h.level || 0),
-                        ctx: (h.ctx ?? "") + ""
+                        ctx: cleanSearchText(h.ctx ?? "")
                     }))
-                    : toHeadsFromPages(pages);
+                    : toHeadsFromPages(pages).map(h => ({
+                        ...h,
+                        pageTitle: cleanSearchText(h.pageTitle || ""),
+                        hive: cleanSearchText(h.hive || ""),
+                        htext: cleanSearchText(h.htext || ""),
+                        ctx: cleanSearchText(h.ctx || "")
+                    }));
 
                 byHead = new Map();
                 for (const h of heads) {
@@ -303,12 +370,13 @@ $(document).ready(function () {
         return out.slice(0, MAX_RESULTS);
     }
 
-    function render(query, pageMatches, headMatches) {
+    function render(query, pageMatches, headMatches, options = {}) {
         clear();
 
         const totalPages = (pageMatches || []).length;
         const totalHeads = (headMatches || []).length;
         const total = totalPages + totalHeads;
+        const fuzzyNote = options.usedFuzzy ? " including close matches" : "";
 
         if (!total) {
             $empty.show();
@@ -323,9 +391,9 @@ $(document).ready(function () {
         if (totalPages) parts.push(`${totalPages} page${totalPages === 1 ? "" : "s"}`);
 
         if (total <= MAX_RESULTS) {
-            $meta.text(`${total} result${total === 1 ? "" : "s"} (${parts.join(", ")}) for "${query}"`);
+            $meta.text(`${total} result${total === 1 ? "" : "s"} (${parts.join(", ")}) for "${query}"${fuzzyNote}`);
         } else {
-            $meta.text(`Showing ${shown.length} of ${total} results (${parts.join(", ")}) for "${query}"`);
+            $meta.text(`Showing ${shown.length} of ${total} results (${parts.join(", ")}) for "${query}"${fuzzyNote}`);
         }
 
         for (const item of shown) {
@@ -399,10 +467,12 @@ $(document).ready(function () {
             return;
         }
 
-        const pageMatches = searchIndex(idxPages, query);
-        const headMatches = searchIndex(idxHeads, query);
+        const pageSearch = searchIndex(idxPages, query);
+        const headSearch = searchIndex(idxHeads, query);
 
-        render(query, pageMatches, headMatches);
+        render(query, pageSearch.results, headSearch.results, {
+            usedFuzzy: pageSearch.usedFuzzy || headSearch.usedFuzzy
+        });
     }
 
     function debounce(fn, ms) {

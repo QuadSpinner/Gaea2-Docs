@@ -1,6 +1,7 @@
 ---
 title: Bake and Offload Data
 uid: bake-and-offload
+description: At high resolutions, node previews can consume a lot of memory - and they’ll often take longer to process than the same graph at 1K–4K.
 ---
 
 # Conserve Memory by Baking Nodes

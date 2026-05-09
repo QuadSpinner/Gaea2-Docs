@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Roughen",
-  "Description": null,
+  "Description": "Adds fine roughness and small-scale breakup to the terrain surface.",
   "Family": "Superficial",
   "FamilyIcon": "family-superficial",
   "Toolbox": "Surface",

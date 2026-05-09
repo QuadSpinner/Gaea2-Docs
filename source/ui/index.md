@@ -2,13 +2,39 @@
 icon: sidebar-flip
 title: User Interface
 uid: user-interface
+description: "Gaea's interface is built around a simple loop: build your terrain in the graph, preview it in the viewport, and refine it in the property editor."
 ---
 
 # User Interface Overview
 
-Gaea’s interface is built around a simple loop: **build your terrain in the graph**, **preview it in the viewport**, and **refine it in the property editor**.
+Gaea's interface is built around a simple loop: **build your terrain in the graph**, **preview it in the viewport**, and **refine it in the property editor**.
 
-![The Gaea Interface](/.data/ui/complete-ui.png)
+<div class="row row-cols-1 row-cols-lg-2 g-4 align-items-start">
+  <div class="col">
+    <figure>
+      <img class="img-fluid" src="/.data/ui/complete-ui.png" alt="The full Gaea interface" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+      <img class="img-fluid" src="/.data/ui/main-ui-annotated.webp" alt="Annotated Gaea interface map" />
+    </figure>
+  </div>
+</div>
+
+Use this numbered reference to identify the main regions shown in the interface map above. Click an area name to jump to its section.
+
+| # | Area | Purpose |
+|---|---|---|
+| 1 | [Main Menu](#menus-and-fast-access) | Access project, graph, preview, tools, and help commands. |
+| 2 | [Infinity Graph](#infinity-graph) | Build terrain logic by connecting nodes into a flow. |
+| 3 | [Viewport](#viewport) | Preview terrain shape, scale, and detail in 3D or 2D. |
+| 4 | [Viewport Toolbar](#viewport) | Control preview resolution, lighting, render style, and viewport tools. |
+| 5 | [Property Editor](#property-editor) | Adjust settings for the currently selected node. |
+| 6 | [Property Editor Toolbar](#property-editor) | Perform node-specific actions such as replace, revert, and gizmo access. |
+| 7 | [Modifier Stack](#modifiers) | Apply lightweight post-process refinements to a node's output. |
+| 8 | [Data View](#data-view) | Inspect project structure, terrain organization, and graph filters. |
+| 9 | [Lazy Menu](#menus-and-fast-access) | Configurable fast-access menu. |
 
 ## Infinity Graph
 
@@ -42,14 +68,14 @@ A **Property Editor Toolbar** provides node-focused actions such as replacing th
 
 ## Modifiers
 
-Gaea also supports a **Modifier Stack**, which lets you apply lightweight, post-process adjustments to a node’s output. Modifiers are intended for quick refinements without having to rebuild or restructure large parts of your graph.
+Gaea also supports a **Modifier Stack**, which lets you apply lightweight, post-process adjustments to a node's output. Modifiers are intended for quick refinements without having to rebuild or restructure large parts of your graph.
 
 ## Data View
 
-On the **right side of the Graph**, the **Data View** offers tabs for inspecting and navigating project information. The Terrain view includes a node tree organized by Tabs → Groups → Nodes, plus filters that help you locate specific nodes quickly (by type, export-marked, heavy nodes, error nodes, and more).
+On the **right side of the Graph**, the **Data View** offers tabs for inspecting and navigating project information. The Terrain view includes a node tree organized by Tabs -> Groups -> Nodes, plus filters that help you locate specific nodes quickly (by type, export-marked, heavy nodes, error nodes, and more).
 
 ## Menus and Fast Access
 
-Gaea’s **Main Menu** follows standard application organization (File, Edit, Graph, Node, Preview, Project, Tools, Help), providing access to project management, graph tools, baking/build/export actions, and diagnostics.
+Gaea's **Main Menu** follows standard application organization (File, Edit, Graph, Node, Preview, Project, Tools, Help), providing access to project management, graph tools, baking/build/export actions, and diagnostics.
 
 For faster navigation, the **Lazy Menu (F1)** provides a configurable, keyboard-first hub for jumping to key UI areas and tools (such as Graph, Viewport, Properties, Modifiers, Node Tree, Variables, and Build controls).

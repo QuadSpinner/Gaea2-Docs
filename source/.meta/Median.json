@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Median",
-  "Description": null,
+  "Description": "Applies a median filter to remove spikes, speckles, and small noise while preserving edges better than blur.",
   "Family": "Blur",
   "FamilyIcon": "x-median",
   "Toolbox": "Modify",

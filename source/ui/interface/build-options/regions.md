@@ -2,14 +2,17 @@
 title: Regions
 uid: build-options-regions
 order: 07
+description: Create and manage focused regions so selected parts of a terrain can be built at higher effective detail.
 ---
 
 # Regions
 
-Regions allows you to take a portion of your terrain and upscale it to a higher resolution. Gaea gives you the ability to preview any individual region. You can have an unlimited number of regions.
-
-Right-Click on regions surface and click on "Add Region" to add region.  Once the region is created, it can be resized by resized handles on the bottom right of region.
+The **Regions** tab lets you define focused areas of the terrain that can be built or refined separately at higher effective detail. Gaea can store multiple regions and preview them individually.
 
 ![](/.data/assets/Build-Option-Add-Region-Menu.png)
 
-See @managing-regions for more information.
+## Working with Regions
+
+To add a region, right-click in the Regions surface and choose `Add Region`. After the region is created, drag the handle in the lower-right corner to resize it.
+
+See [Managing Regions](@managing-regions) for more detail.

@@ -2,6 +2,7 @@
 title: Snowfall
 uid: simulation-snowfall
 order: 01
+description: The Gaea Snow node is a powerful snowfall precipitation simulator.
 ---
 
 # Snowfall

@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "Shade",
-  "Description": null,
+  "Description": "Produces a shaded terrain render based on lighting direction and surface relief.",
   "Family": "Render",
   "FamilyIcon": "family-render",
   "Toolbox": "Output",

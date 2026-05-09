@@ -2,6 +2,7 @@
 title: Graph
 uid: options-graph
 order: 04
+description: The Graph tab controls the behavior, snapping, and visibility of certain interface elements within the node graph workspace, allowing customization of.
 ---
 
 # Graph

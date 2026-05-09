@@ -3,6 +3,7 @@ icon: trash-xmark
 title: Uninstall or Clean Install
 uid: uninstall-or-clean-install
 order: 08
+description: Uninstall Gaea safely, release your license, reset settings, and perform a clean reinstall when troubleshooting.
 ---
 
 # Uninstall or Clean Install
@@ -35,7 +36,7 @@ Releasing the license helps avoid re-authorization issues from a "double install
 
 Once the license has been released, close Gaea. Go to Installed Apps in Windows Settings (or Add/Remove Programs in older versions) and uninstall Gaea.
 
-Download a fresh installer from the [QuadSpinner Website](https://quadspinner.com/download/) and [.](./).
+Download a fresh installer from the [QuadSpinner Website](https://quadspinner.com/download/) and reinstall Gaea.
 
 
 

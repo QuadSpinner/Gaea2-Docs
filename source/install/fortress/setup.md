@@ -3,6 +3,7 @@ title: Server Setup
 uid: fortress-setup
 icon: floppy-disk-circle-arrow-right
 order: 02
+description: Install Fortress Server, review server requirements, load tenant files, and prepare a machine for offline floating license hosting.
 ---
 
 # Installing and Deploying the Fortress Server

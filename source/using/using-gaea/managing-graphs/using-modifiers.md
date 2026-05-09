@@ -2,6 +2,7 @@
 title: Using Modifiers
 uid: using-modifiers
 order: 01
+description: The Modifier Stack provides quick access to common adjustments, masks, and modifications that you may wish to apply to a node.
 ---
 
 # Using Modifiers
@@ -50,7 +51,7 @@ Using Shaper, you can bulk up or bulk down a terrain. It can apply to masks as w
 
 ![Shaper at +50](/.data/assets/Gaea_-_Untitled_02-52-58-AM.webp) 
 
-![Shaper at -50](...)
+![Shaper at -50](/.data/assets/Gaea_-_Untitled_02-52-51-AM.webp)
 
 ### Restrict Effect to Slope or Height
 

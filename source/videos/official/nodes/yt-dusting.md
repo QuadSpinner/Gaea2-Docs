@@ -4,6 +4,7 @@ uid: yt-dusting
 tag: EWhpvwBP6nw
 order: 018
 icon: kit fa-qs-logo
+description: Watch the official Gaea video for Dusting, including node behavior, workflow tips, and example usage.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=EWhpvwBP6nw)

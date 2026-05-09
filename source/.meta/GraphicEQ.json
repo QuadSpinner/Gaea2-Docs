@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "GraphicEQ",
-  "Description": null,
+  "Description": "Reshapes terrain using multiple adjustable bands, similar to an equalizer for height profiles.",
   "Family": "Profile",
   "FamilyIcon": "x-graphiceq",
   "Toolbox": "Modify",

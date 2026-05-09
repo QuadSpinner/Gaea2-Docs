@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Craggy",
-  "Description": null,
+  "Description": "Turns a terrain's surface into a craggy, rocky, broken landscape.",
   "Family": "Rocky",
   "FamilyIcon": "family-rocky",
   "Toolbox": "Surface",
@@ -13,7 +13,7 @@
   ],
   "ShortCode": "cg",
   "Usage": 123,
-  "SearchString": "Craggy Rocky  cg",
+  "SearchString": "Craggy Rocky cg",
   "SearchWords": [
     "craggy",
     "rocky",

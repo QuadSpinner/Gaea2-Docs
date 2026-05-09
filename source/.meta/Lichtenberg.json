@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Lichtenberg",
-  "Description": null,
+  "Description": "Creates branching, lightning-like erosion or fracture patterns.",
   "Family": "Erosion",
   "FamilyIcon": "family-erosion",
   "Toolbox": "Simulate",

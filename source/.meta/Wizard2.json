@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Wizard2",
-  "Description": null,
+  "Description": "A simplified erosion wrapper that provides curated controls for shaping erosion depth, scale, and strength.",
   "Family": "Erosion",
   "FamilyIcon": "x-wizard2",
   "Toolbox": "Simulate",

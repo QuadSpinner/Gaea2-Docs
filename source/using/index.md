@@ -1,55 +1,36 @@
 ---
 icon: power-off
-title: Home
+title: Using Gaea
 uid: home-user-guide
+description: Learn the core terrain creation workflows in Gaea, from erosion and surfacing to graph management, baking, importing, and export.
 ---
 
-## User Guide
+# Using Gaea
 
-**Welcome to the official Gaea 2.0 documentation**, your gateway to unlocking the full potential of the most advanced terrain generation software on the market. Whether you’re just starting or a seasoned professional, this guide is designed to provide you with everything you need to create stunning, complex terrains with ease and precision.
+This section covers the core workflows used to build terrains in Gaea. It is designed to help you move from understanding the terrain graph to shaping surfaces, running simulations, preparing builds, and exporting results.
 
-![](/.data/assets/gaea-ui2x.webp)
+![The Gaea 2.0 User Interface](/.data/assets/gaea-ui2x.webp)
 
-### Using Gaea
+Whether you are learning the fundamentals or refining a production workflow, these guides will help you understand how Gaea’s main systems fit together.
 
-Explore Gaea’s terrain creation tools, techniques, and workflows. Key areas include:
+## In This Section
 
-* @terrain-basics: Get started with the core concepts of how terrains work in Gaea.
-* @crafting-the-surface: Shape and sculpt your terrains using a variety of nodes and tools.
-* @understanding-erosion: Master the erosion processes that bring realism to your terrains.
-* @simulations: Explore variation natural process simulations such as snow, debris, and more.
-* @colorizing-and-textures: Add detail and depth with advanced color and texture techniques.
-* @managing-graphs: Kick off your project with the right foundation.
-* @baking-nodes: Optimize your terrains by baking nodes for better performance.
-* @build-and-export: Export your work for use in other applications or game engines.
-* @importing-terrains: Bring in external data to enhance your terrain projects.
+* @terrain-basics: Learn the core concepts behind terrain creation in Gaea.
+* @understanding-erosion: Understand the erosion systems that shape believable landforms.
+* @simulations: Explore natural process simulations such as snow, debris, and other surface effects.
+* @crafting-the-surface: Shape and refine terrain forms using Gaea’s terrain tools and nodes.
+* @colorizing-and-textures: Add colour, masks, and surface detail to support look development and export.
+* @importing-terrains: Bring external terrain data into Gaea for editing, enhancement, or integration.
+* @managing-graphs: Organize, scale, and maintain complex terrain graphs more effectively.
+* @baking-nodes: Cache and bake parts of your graph for faster iteration and more efficient builds.
+* @build-and-export: Generate final outputs for use in other tools, engines, and production pipelines.
 
-### Advanced Topics
+## Suggested Path
 
-For those looking to push Gaea to its limits, delve into these advanced features:
+If you are new to Gaea, start with @terrain-basics and then continue into @understanding-erosion and @crafting-the-surface.
 
-* @build-swarm: Learn about the Gaea Build CLI works.
-* @technical-information: Understand the under-the-hood details that power Gaea.
-* @automation: Discover how to automate repetitive tasks to save time and maintain consistency.
+If you are already building terrains, you may want to jump directly to @managing-graphs, @baking-nodes, or @build-and-export depending on your workflow.
 
-### Plugins
+## Need help?
 
-Extend Gaea’s functionality with powerful plugins designed to integrate seamlessly into your workflow:
-
-* @gaea2houdini: Bridge your Gaea terrains into Houdini for advanced VFX and simulations.
-* @gaea2unreal: Integrate your terrains into Unreal Engine for breathtaking environments.
-
-### Troubleshooting
-
-Find solutions to common (and uncommon) issues:
-
-* @terrains: Understand terrain problems, output artifacts, and explore various workarounds.
-* @diagnostics: Use Gaea's Diagnostics tool to find and fix common problems.
-
-## Getting Help
-
-If you encounter any challenges or have questions along the way, this documentation is your first resource. For additional support, the [Gaea support channels](https://quadspinner.com/support/) are always available to assist you.
-
-***
-
-:tada: Thank you for choosing Gaea 2.0. We’re excited to see the incredible terrains you create.
+If something is not working as expected, check the troubleshooting sections in the documentation or visit the [Gaea support page](https://quadspinner.com/support/).

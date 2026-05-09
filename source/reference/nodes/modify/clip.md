@@ -1,4 +1,5 @@
 ---
+description: Cuts the terrain against a threshold, removing values above or below a specified level.
 title: Clip
 uid: clip
 order: 07
@@ -6,6 +7,11 @@ order: 07
 
 # Clip
 
-Constrains the terrain’s elevation values to a defined range.
+## When to Use It
+Use Clip when the terrain shape is mostly working and you need a targeted reshape, filter, or remap pass.
 
-# Properties
+## Visual Direction
+
+![](/.data/assets/Clip_VD.png)
+
+## Properties

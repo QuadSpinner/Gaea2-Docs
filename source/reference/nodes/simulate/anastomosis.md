@@ -1,4 +1,5 @@
 ---
+description: Anastomosis creates interconnected water flow based downcutting, ranging from small pits to large river channels.
 title: Anastomosis
 uid: anastomosis
 order: 01
@@ -24,5 +25,7 @@ Using a high Impact value in Rivers mode.
 
 ![](/.data/ref/Anastomosis/Anastomosis--RiversImpact.webp)
 
-## Properties
+## When to Use It
+Use Anastomosis when you need interconnected water flow based downcutting, ranging from small pits to large river channels.
 
+## Properties

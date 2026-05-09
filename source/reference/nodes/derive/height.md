@@ -1,4 +1,5 @@
 ---
+description: The Height node creates a selection mask based on terrain elevation, isolating areas within a specified height range.
 title: Height
 uid: height
 order: 05
@@ -11,6 +12,9 @@ order: 05
 The Height node creates a selection mask based on terrain elevation, isolating areas within a specified height range. It is a core selector for building altitude-based effects such as snow lines, vegetation bands, shoreline masks, plateau targeting, and biome zoning.
 
 The output is a grayscale mask where white represents selected elevations and black represents excluded elevations, with optional soft transitions at the boundaries.
+
+## When to Use It
+Use Height when you need a selection mask based on terrain elevation, isolating areas within a specified height range.
 
 ## Common uses
 
@@ -29,4 +33,3 @@ The output is a grayscale mask where white represents selected elevations and bl
 {% }
 
 ## Properties
-

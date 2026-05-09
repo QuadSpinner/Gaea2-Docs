@@ -3,6 +3,7 @@ icon: cloud-showers
 coverY: 0
 title: Understanding Erosion
 uid: understanding-erosion
+description: Erosion is a fundamental process in the natural world that plays a crucial role in shaping terrains.
 ---
 
 # Understanding Erosion

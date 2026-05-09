@@ -2,6 +2,7 @@
 icon: cloud-sun-rain
 title: Simulations
 uid: simulations
+description: Gaea's wide range of simulations help you mimic nature through simulating real-world processes from a both scientific and artistic point-of-view.
 ---
 
 # Simulations

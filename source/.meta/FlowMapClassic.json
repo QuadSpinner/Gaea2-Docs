@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "FlowMapClassic",
-  "Description": null,
+  "Description": "Generates a classic-style flow map based on legacy flow behavior.",
   "Family": "Generative",
   "FamilyIcon": "family-generative",
   "Toolbox": "Derive",

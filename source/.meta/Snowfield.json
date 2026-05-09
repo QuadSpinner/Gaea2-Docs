@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Snowfield",
-  "Description": null,
+  "Description": "Creates broad settled snow coverage across the terrain surface.",
   "Family": "Snow",
   "FamilyIcon": "family-snow",
   "Toolbox": "Simulate",

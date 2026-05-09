@@ -1,6 +1,7 @@
 ---
 title: Houdini
 uid: houdini
+description: You may wish to try gaea2houdini to use Gaea directly inside Houdini.
 ---
 
 # Import Gaea terrain as a mesh (OBJ/FBX)

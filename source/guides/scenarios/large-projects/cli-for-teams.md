@@ -1,6 +1,7 @@
 ---
 title: Command Line for Teams
 uid: cli-for-teams
+description: The command line is how you turn a "personal" terrain file into a repeatable team asset.
 ---
 
 # Command Line Basics for Teams

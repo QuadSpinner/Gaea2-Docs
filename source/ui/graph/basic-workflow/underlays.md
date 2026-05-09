@@ -3,6 +3,7 @@ title: Underlays
 uid: underlays
 order: 03
 icon: layer-minus
+description: By default Gaea will use the nearest "Heightfield"/Terrain node to display the structure beneath the color or mask.
 ---
 
 # Using Underlays <a href="#pin-node-as-underlay" id="pin-node-as-underlay"></a>
@@ -20,6 +21,20 @@ The Underlay node can be accessed from the toolbar in the Data Editor. It is sho
 :::info
 To see a flat preview, click `V` to temporarily toggle a flat preview in the viewport.
 :::
+
+## Ignoring Nodes for Underlays
+
+When an Underlay is not explicitly specified, Gaea nodes such as @colorerosion will try to automatically pick up the appropriate ancestor node as an underlay. However, in some situations you may get an undesired underlay.
+
+Let's take this example. We use a @shaper node to modify our input for the @texturebase node. The child nodes then use that Shaper as the underlay and not the Erosion node.
+
+![](/.data/assets/underlay-skip-01.png)
+
+To prevent this, we right-click the Shaper node and set "Exclude from Underlay". Gaea will now ignore it and go to the parent node instead.
+
+![](/.data/assets/underlay-skip-02.png)
+
+This is very useful when switching between different portions of a complex graph where local underlays may be different.
 
 ## **Beware of downstream underlays**
 

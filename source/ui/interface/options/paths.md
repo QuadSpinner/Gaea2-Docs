@@ -2,6 +2,7 @@
 title: Paths
 uid: options-paths
 order: 02
+description: The Paths tab defines where Gaea stores and retrieves user data and project files.
 ---
 
 # Paths

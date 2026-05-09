@@ -3,6 +3,7 @@ title: Ultimate Realism - 3D Fantasy Maps with Gaea - Part 1
 uid: yt-58KTZbQPJI8
 tag: 58KTZbQPJI8
 order: 002
+description: Watch Ultimate Realism - 3D Fantasy Maps with Gaea - Part 1, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=58KTZbQPJI8)

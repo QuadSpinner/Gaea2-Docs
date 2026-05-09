@@ -3,6 +3,7 @@ title: License Types
 uid: license-types
 icon: key-skeleton-left-right
 order: 08
+description: Compare Gaea license types and activation methods for online, offline, node-locked, and floating license workflows.
 ---
 
 # License Types and Activation Methods

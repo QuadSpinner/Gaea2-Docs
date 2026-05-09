@@ -1,7 +1,7 @@
 ﻿[
   {
     "Name": "Snow",
-    "Description": "Controls the length of time snow accumulates on the terrain, affecting overall snow coverage and depth.",
+    "Description": "",
     "IsGroup": true
   },
   {

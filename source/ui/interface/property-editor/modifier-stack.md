@@ -2,6 +2,7 @@
 title: Modifier Stack
 uid: modifier-stack
 order: 01
+description: Modifiers are additional adjustments you can add on top of most nodes.
 ---
 
 # Modifier Stack

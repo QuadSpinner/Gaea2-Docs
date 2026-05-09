@@ -69,15 +69,18 @@
 
       &.h2>a {
         font-weight: 600;
+        padding-left: 12px;
       }
-
+      
       &.h3>a {
         font-weight: 500;
+        padding-left: 24px;
       }
-
+      
       &.h4>a {
         font-size: 13px;
         font-weight: 500;
+        padding-left: 36px;
       }
     }
   }

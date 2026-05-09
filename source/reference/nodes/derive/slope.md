@@ -1,4 +1,5 @@
 ---
+description: The Slope node creates a selection mask based on the terrain's slope angle, isolating areas within a specified slope range.
 title: Slope
 uid: slope
 order: 10
@@ -9,6 +10,9 @@ order: 10
 The Slope node creates a selection mask based on the terrain's slope angle, isolating areas within a specified slope range. It is commonly used to target steep cliffs, gentle hillsides, and transitional faces for erosion control, material placement, and biome logic.
 
 The output is a grayscale mask where white represents slopes inside the range and black represents slopes outside it, with optional soft transitions at the boundaries.
+
+## When to Use It
+Use Slope when you need a selection mask based on the terrain's slope angle, isolating areas within a specified slope range.
 
 ## Common uses
 
@@ -27,4 +31,3 @@ The output is a grayscale mask where white represents slopes inside the range an
 * Combine with Height for stronger zoning. Height + Slope is a common pairing for snowlines, rock exposure, vegetation rules, and shoreline cliff detection.
 
 ## Properties
-

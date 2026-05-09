@@ -3,6 +3,7 @@ title: Gaea 2 - Mask by Height and with the Draw Node
 uid: yt-iuHNm2peAzg
 tag: iuHNm2peAzg
 order: 010
+description: Watch Gaea 2 - Mask by Height and with the Draw Node, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=iuHNm2peAzg)

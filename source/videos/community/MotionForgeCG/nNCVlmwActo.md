@@ -3,6 +3,7 @@ title: Gaea 2 - Beginners Tutorial - Getting Started
 uid: yt-nNCVlmwActo
 tag: nNCVlmwActo
 order: 012
+description: Watch Gaea 2 - Beginners Tutorial - Getting Started, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=nNCVlmwActo)

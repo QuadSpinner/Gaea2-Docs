@@ -1,4 +1,5 @@
 ---
+description: Dilate the pixels of the heightfield or mask.
 title: Dilate
 uid: dilate
 order: 11
@@ -6,8 +7,11 @@ order: 11
 
 # Dilate
 
-Dilate expands every pixel of your terrain or mask using the selected kernel or shape.
+## When to Use It
+Use Dilate when the terrain shape is mostly working and you need a targeted reshape, filter, or remap pass.
 
+## Visual Direction
 
+![](/.data/assets/Dilate_VD.png)
 
-# Properties
+## Properties

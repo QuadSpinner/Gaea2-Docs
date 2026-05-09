@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Debris",
-  "Description": null,
+  "Description": "Simulates loose debris across the terrain surface to create broken rocky accumulation.",
   "Family": "Scatter",
   "FamilyIcon": "family-scatter",
   "Toolbox": "Simulate",

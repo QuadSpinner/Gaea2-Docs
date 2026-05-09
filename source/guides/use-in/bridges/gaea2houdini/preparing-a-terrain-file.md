@@ -2,6 +2,7 @@
 title: Preparing a Terrain File
 uid: preparing-a-terrain-file
 order: 02
+description: Your Gaea .terrain file can be as simple as one node, or have a hundred nodes with complex routing logic.
 ---
 
 # Preparing a Terrain File

@@ -2,6 +2,7 @@
 title: Linchpin Nodes
 uid: linchpin-nodes
 order: 01
+description: An added bonus of baking is that it can free up a lot of RAM.
 ---
 
 # Linchpin Nodes

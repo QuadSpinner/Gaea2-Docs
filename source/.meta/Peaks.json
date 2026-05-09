@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "Peaks",
-  "Description": null,
+  "Description": "Creates a mask that isolates the peaks and highest protruding parts of the terrain.",
   "Family": "Aspect",
   "FamilyIcon": "family-aspect",
   "Toolbox": "Derive",

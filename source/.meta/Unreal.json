@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Unreal",
-  "Description": null,
+  "Description": "Exports terrain data in Unreal-friendly resolutions, formats, and naming conventions.",
   "Family": "Assets",
   "FamilyIcon": "x-unreal",
   "Toolbox": "Output",

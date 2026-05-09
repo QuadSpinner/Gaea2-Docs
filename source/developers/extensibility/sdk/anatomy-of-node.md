@@ -4,6 +4,7 @@ icon: x-ray
 title: Anatomy of Node
 uid: anatomy-of-node
 order: 03
+description: A Gaea node provides complex functionality packaged in a pre-built Node class that can be used to create your own nodes quickly and painlessly.
 ---
 
 # Anatomy of Node

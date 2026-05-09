@@ -1,0 +1,31 @@
+{
+  "MaxPorts": 0,
+  "IsSoftData": false,
+  "IsHidden": false,
+  "Name": "Math",
+  "Description": "Evaluates mathematical expressions to generate or modify terrain data procedurally.",
+  "Family": "Utilities",
+  "FamilyIcon": "x-mathx",
+  "Toolbox": "Utility",
+  "Classification": "Generator",
+  "Keywords": [
+    ""
+  ],
+  "ShortCode": "mx",
+  "Usage": 56,
+  "SearchString": "Math Utilities  mx",
+  "SearchWords": [
+    "math",
+    "utilities",
+    "",
+    "mx"
+  ],
+  "RequiresBaking": false,
+  "UsesAccumulation": false,
+  "AccumulationType": null,
+  "HasCustomColorization": false,
+  "HasCustomUnderlay": false,
+  "CanCreatePorts": false,
+  "OrderedPorts": false,
+  "PreventPurge": false
+}

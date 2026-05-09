@@ -3,6 +3,7 @@ title: Gaea 2 to Unreal Engine - 2 Ways To Import heightmaps into Unreal Engine
 uid: yt-dkHehnTPTQc
 tag: dkHehnTPTQc
 order: 006
+description: Watch Gaea 2 to Unreal Engine - 2 Ways To Import heightmaps into Unreal Engine, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=dkHehnTPTQc)

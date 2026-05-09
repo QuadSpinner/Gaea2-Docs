@@ -1,4 +1,5 @@
 ---
+description: The Adjust node is pretty much the same as the Modifier Stack, but in node form.
 title: Adjust
 uid: adjust
 order: 01
@@ -10,4 +11,7 @@ The Adjust node is pretty much the same as the Modifier Stack, but in node form.
 
 This node makes that process easier by combining all the common adjustments inside a single node and allowing you to toggle them on and off. Additionally, it has its own @modifier-stack so you can apply further adjustments.
 
-# Properties
+## When to Use It
+Use Adjust when you want modifier-stack style height remapping in the graph without committing to a baked upstream result.
+
+## Properties

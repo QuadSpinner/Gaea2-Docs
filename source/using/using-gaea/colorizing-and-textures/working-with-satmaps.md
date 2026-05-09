@@ -2,6 +2,7 @@
 title: Working with SatMaps
 uid: working-with-satmaps
 order: 02
+description: Our library of over 1400 color maps, derived from real satellite data, helps you colorize your terrains quickly without sacrificing realism.
 ---
 
 # Working with SatMaps

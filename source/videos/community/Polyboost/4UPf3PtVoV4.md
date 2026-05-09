@@ -3,6 +3,7 @@ title: Master of Gaea Returns! Creating Mars Terrain – Ground & Mountain Workf
 uid: yt-4UPf3PtVoV4
 tag: 4UPf3PtVoV4
 order: 006
+description: Watch Master of Gaea Returns! Creating Mars Terrain – Ground & Mountain Workflow, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=4UPf3PtVoV4)

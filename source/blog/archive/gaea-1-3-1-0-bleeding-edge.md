@@ -2,6 +2,7 @@
 title: Gaea 1.3.1.0 Bleeding Edge
 uid: gaea-1-3-1-0-bleeding-edge
 modified: "2025-07-22T21:38:43Z"
+description: The first Bleeding Edge build for the 1.3.1 version is now available, bringing expanded support for tiled builds, improved rivers, new LookDev nodes, and.
 ---
 
 The first Bleeding Edge build for the 1.3.1 version is now available, bringing expanded support for tiled builds, improved rivers, new LookDev nodes, and several stability improvements.

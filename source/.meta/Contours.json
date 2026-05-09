@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "Contours",
-  "Description": null,
+  "Description": "Creates map-like contours for a terrain. Useful for making maps or for other overlays.",
   "Family": "Cartography",
   "FamilyIcon": "x-contours",
   "Toolbox": "Surface",

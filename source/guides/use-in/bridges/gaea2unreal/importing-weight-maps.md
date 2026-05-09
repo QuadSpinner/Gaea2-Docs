@@ -2,6 +2,7 @@
 title: Importing Weight Maps
 uid: importing-weight-maps
 order: 03
+description: "Step 1: Exporting Heightmaps and Weightmaps in Gaea."
 ---
 
 # Importing Weight Maps

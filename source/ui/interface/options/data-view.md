@@ -2,6 +2,7 @@
 title: Data View
 uid: options-data-view
 order: 06
+description: The Data View tab controls the appearance and expansion behavior of the Data View panel, allowing you to choose how icons are displayed and whether the.
 ---
 
 # Data View

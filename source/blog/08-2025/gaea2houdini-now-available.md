@@ -2,6 +2,7 @@
 title: The all-new Gaea2Houdini now available!
 uid: gaea2houdini-now-available
 modified: "2025-08-06T14:14:07Z"
+description: The Gaea2Houdini plugin enables you to access select Gaea simulations and tools natively inside Houdini as standard Houdini nodes.
 ---
 
 The Gaea2Houdini plugin enables you to access select Gaea simulations and tools natively inside Houdini as standard Houdini nodes.

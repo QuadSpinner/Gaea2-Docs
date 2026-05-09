@@ -1,10 +1,15 @@
 ---
+description: Creates layered sandstone-like terracing and sedimentary rock structure.
 title: Sandstone
 uid: sandstone
 order: 15
 ---
 
+# Sandstone
 
+## When to Use It
+Use Sandstone when you need layered sandstone-like terracing and sedimentary rock structure.
 
-# Properties
+## Visual Direction
 
+## Properties

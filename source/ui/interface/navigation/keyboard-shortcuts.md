@@ -2,6 +2,7 @@
 title: Keyboard Shortcuts
 uid: keyboard-shortcuts
 order: 02
+description: "| Command | Shortcut | | ---------------------------------- | -----------------: | | New | Ctrl + N | | Open | Ctrl + O | | Save | Ctrl + S | | Save."
 ---
 
 # Keyboard Shortcuts

@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "Weathering",
-  "Description": null,
+  "Description": "Creates weathered color or mask variation that simulates dirt, fading, and environmental wear.",
   "Family": "Surface",
   "FamilyIcon": "family-surface",
   "Toolbox": "Colorize",

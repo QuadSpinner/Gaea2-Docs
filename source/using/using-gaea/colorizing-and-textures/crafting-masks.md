@@ -2,6 +2,7 @@
 title: Crafting Masks
 uid: crafting-masks
 order: 01
+description: All color texture generation in Gaea relies on applying color ramps (gradients) through a black-and-white mask.
 ---
 
 # Crafting Masks

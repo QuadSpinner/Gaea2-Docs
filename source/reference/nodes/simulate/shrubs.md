@@ -1,4 +1,5 @@
 ---
+description: Adds low vegetation or shrub-like surface growth across the terrain.
 title: Shrubs
 uid: shrubs
 order: 18
@@ -6,4 +7,9 @@ order: 18
 
 # Shrubs
 
-# Properties
+## When to Use It
+Use Shrubs when you need low vegetation or shrub-like surface growth across the terrain.
+
+## Visual Direction
+
+## Properties

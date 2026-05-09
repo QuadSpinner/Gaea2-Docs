@@ -1,6 +1,7 @@
 ---
 title: Name Outputs
 uid: name-outputs
+description: Most "pipeline pain" isn’t about file formats - it’s about file paths.
 ---
 
 

@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Reseed",
-  "Description": null,
+  "Description": "Re-randomizes an upstream procedural node by overriding or refreshing its seed behavior.",
   "Family": "Routing",
   "FamilyIcon": "x-reseed",
   "Toolbox": "Utility",

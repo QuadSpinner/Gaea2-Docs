@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "MacroPort",
-  "Description": null,
+  "Description": "Defines an input or output port inside a macro for passing height, mask, or color data.",
   "Family": "Routing",
   "FamilyIcon": "family-routing",
   "Toolbox": "Utility",

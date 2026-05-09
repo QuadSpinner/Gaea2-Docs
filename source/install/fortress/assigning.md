@@ -3,6 +3,7 @@ title: Assign Licenses
 uid: fortress-assign
 icon: toggle-on
 order: 03
+description: Create workstation floating.lic files in Fortress Console and distribute them so clients can request offline floating licenses.
 ---
 
 # Assign Licenses

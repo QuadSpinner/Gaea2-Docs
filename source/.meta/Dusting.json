@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Dusting",
-  "Description": null,
+  "Description": "Applies a thin dusting of snow or sediment over the terrain surface.",
   "Family": "Snow",
   "FamilyIcon": "family-snow",
   "Toolbox": "Simulate",

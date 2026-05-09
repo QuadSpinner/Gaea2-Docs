@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Shrubs",
-  "Description": null,
+  "Description": "Adds low vegetation or shrub-like surface growth across the terrain.",
   "Family": "Vegetation",
   "FamilyIcon": "family-vegetation",
   "Toolbox": "Simulate",

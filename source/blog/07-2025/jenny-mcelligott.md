@@ -2,6 +2,7 @@
 title: "Artist Spotlight: Jenny McElligott from NASA"
 uid: jenny-mcelligott
 modified: "2025-07-22T21:44:03Z"
+description: QuadSpinner's Cynthia Najim visited with Jenny McElligott about creating environments for NASA missions OSIRIS-REx and DAVINCI, her path to her current.
 ---
 
 ### 

@@ -2,6 +2,7 @@
 title: "Gaea at Microsoft dotNetConf 2025: High-Performance Terrain Simulations in .NET"
 uid: gaea-at-dotnetconf
 modified: "2025-11-23T22:37:06Z"
+description: We were invited to participate in Microsoft .NET Conference 2025 to present the advances achieved in .NET Development in the course of Gaea's production.
 ---
 
 We were invited to participate in [Microsoft .NET Conference 2025](https://dotnetconf.com) to present the advances achieved in .NET Development in the course of Gaea's production.

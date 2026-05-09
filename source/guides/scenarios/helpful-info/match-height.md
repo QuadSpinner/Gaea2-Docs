@@ -1,6 +1,7 @@
 ---
 title: Match or Correct Heights
 uid: match-height
+description: When you bring real-world DEMs or heightmaps into Gaea, the numbers often don’t match Gaea’s expected height conventions.
 ---
 
 # Match or Correct Heights for Incoming Data

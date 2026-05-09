@@ -2,6 +2,7 @@
 title: Gaea 2.0 - Release Date Announcement
 uid: gaea-2-release-announcement
 modified: "2025-07-22T21:38:49Z"
+description: Creating Gaea 2.0 has been a long adventurous trek.
 ---
 
 Creating Gaea 2.0 has been a long adventurous trek. From rewriting the entire application and engine to be future-friendly, to integrating 6+ years of feedback that you gave us, to creating a new paradigm for working with terrains. Oh, and a pandemic in the middle.

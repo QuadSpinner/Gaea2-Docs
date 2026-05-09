@@ -3,6 +3,7 @@ title: Math Node
 uid: math-node
 order: 03
 icon: calculator-simple
+description: The Math node is a deceptively powerful node with a very simple interface.
 ---
 
 # Math Node
@@ -15,7 +16,7 @@ The Math node can work standalone as a Generator, but can also accept up to 3 in
 
 You can also access coordinates per-pixel using `x` and `y` .
 
-### Syntax and Functions
+## Syntax and Functions
 
 The Math node can accept the following.
 

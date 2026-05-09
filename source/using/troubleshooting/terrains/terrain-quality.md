@@ -2,6 +2,7 @@
 title: Terrain Quality
 uid: terrain-quality
 order: 02
+description: Open the exported heightfield in a good quality image viewer and check whether it is 32-bit or not.
 ---
 
 # Terrain Quality

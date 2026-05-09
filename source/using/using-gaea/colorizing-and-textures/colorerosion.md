@@ -2,6 +2,7 @@
 title: ColorErosion
 uid: simulation-colorerosion
 order: 05
+description: ColorErosion takes the principles of sedimentary erosion and applies it to color maps.
 ---
 
 # ColorErosion

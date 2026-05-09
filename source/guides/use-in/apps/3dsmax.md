@@ -1,6 +1,7 @@
 ---
 title: 3dsmax
 uid: 3dsmax
+description: Assumptions:.
 ---
 
 # Import a Gaea terrain into 3ds Max

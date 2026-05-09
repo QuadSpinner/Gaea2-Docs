@@ -3,6 +3,7 @@ title: Lock Preview
 uid: lock-preview
 order: 02
 icon: anchor-lock
+description: Locking preview to a node shows only the that node in the viewport.
 ---
 
 # Lock Preview

@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Equalize",
-  "Description": null,
+  "Description": "Redistributes the input values to balance the histogram and reveal more detail across the range.",
   "Family": "Adjust",
   "FamilyIcon": "x-equalize",
   "Toolbox": "Modify",

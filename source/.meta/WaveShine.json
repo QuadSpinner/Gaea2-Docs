@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "WaveShine",
-  "Description": null,
+  "Description": "Generates wave-like reflective or rippling patterns useful for stylized surfaces and water-like forms.",
   "Family": "Extended",
   "FamilyIcon": "family-extended",
   "Toolbox": "Primitive",

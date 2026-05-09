@@ -2,6 +2,7 @@
 icon: diagram-project
 title: The Graph
 uid: the-graph
+description: Gaea's advanced graph-based workflow is the key to creating sophisticated terrains.
 ---
 
 # The Graph
@@ -28,7 +29,7 @@ Node graphs go from left to right, never the opposite. They represent a one-way 
 
 To learn more about node graphs, see @procedural-workflow.
 
-Also see @lock-preview-and-underlays.
+Also see @lock-preview.
 
 ### Conveniences
 

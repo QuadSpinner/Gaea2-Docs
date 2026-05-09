@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "DuneSea",
-  "Description": null,
+  "Description": "Creates broad fields of dune-like terrain suitable for deserts and wind-shaped landscapes.",
   "Family": "Landscape",
   "FamilyIcon": "family-landscape",
   "Toolbox": "Terrain",

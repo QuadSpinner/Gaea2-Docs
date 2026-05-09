@@ -40,6 +40,18 @@
         "Description": "Exports at 505 x 505 pixels, used for small terrain tiles or prototyping.",
         "Type": "EnumValue",
         "IsGroup": false
+      },
+      {
+        "Name": "x253",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
+      },
+      {
+        "Name": "x127",
+        "Description": "<desc>",
+        "Type": "EnumValue",
+        "IsGroup": false
       }
     ]
   },

@@ -2,6 +2,7 @@
 title: Managing Input and Output
 uid: managing-input-and-output
 order: 02
+description: It is crucial to be able to modify the Input and Output filenames for automating a workflow via command line automation.
 ---
 
 # Managing Input and Output

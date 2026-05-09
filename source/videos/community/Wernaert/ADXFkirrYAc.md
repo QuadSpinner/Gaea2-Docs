@@ -3,6 +3,7 @@ title: Gaea 2 Beginner Tutorial - Episode 2 - Terrain Shaping
 uid: yt-ADXFkirrYAc
 tag: ADXFkirrYAc
 order: 001
+description: Watch Gaea 2 Beginner Tutorial - Episode 2 - Terrain Shaping, a community-made Gaea video covering terrain workflows, techniques, or project breakdowns.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=ADXFkirrYAc)

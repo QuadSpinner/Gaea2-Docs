@@ -2,6 +2,7 @@
 title: Gaea 1.3.2
 uid: gaea-1-3-2
 modified: "2022-11-14T21:27:34Z"
+description: Rock tooling, object import, and supersampled screenshots.
 ---
 
 *Rock tooling, object import, and supersampled screenshots.*

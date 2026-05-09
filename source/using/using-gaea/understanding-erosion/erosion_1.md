@@ -2,6 +2,7 @@
 title: Erosion_1
 uid: simulation-erosion-1
 order: 01
+description: This page refers to Erosion, aka Erosion\1 or Classic Erosion.
 ---
 
 # Classic Erosion

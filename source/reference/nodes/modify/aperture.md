@@ -1,11 +1,17 @@
 ---
+description: Aperture expands or compacts every feature on the terrain, similar to a camera's bokeh.
 title: Aperture
 uid: aperture
 order: 02
 ---
 
-The Aperture node expands or compacts every single feature on the terrain, similar to bokeh in a camera.
+# Aperture
 
+## When to Use It
+Use Aperture when the terrain shape is mostly working and you need a targeted reshape, filter, or remap pass.
 
-# Properties
+## Visual Direction
 
+![](/.data/assets/Aperture_VD.png)
+
+## Properties

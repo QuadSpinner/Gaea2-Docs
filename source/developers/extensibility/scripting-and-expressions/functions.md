@@ -1,46 +1,95 @@
 ---
 title: Allowed Functions
 uid: functions
+description: Operators, functions, control structures, and advanced facilities available to Gaea expressions and the Math node.
 ---
 
-The following functions, operators, and facilities are usable in the @math node as well as @expressions.
+# Allowed Functions
 
-```
-Mathematical operators (+, -, *, /, %, ^)
+The following operators, functions, and language features are available in @expressions and the @math-node.
 
-Equalities & Inequalities (=, ==, <>, !=, <, <=, >, >=)
+Use this page as a reference when you need to transform a value, constrain a variable, or build a procedural calculation inside the Math node.
 
-Assignment (:=, +=, -=, *=, /=, %=)
+## Common Operators
 
-Logical operators (and, nand, nor, not, or, xor, xnor, mand, mor)
+| Type | Available syntax |
+| --- | --- |
+| Arithmetic | `+`, `-`, `*`, `/`, `%`, `^` |
+| Equality and comparison | `=`, `==`, `<>`, `!=`, `<`, `<=`, `>`, `>=` |
+| Assignment | `:=`, `+=`, `-=`, `*=`, `/=`, `%=` |
+| Logic | `and`, `nand`, `nor`, `not`, `or`, `xor`, `xnor`, `mand`, `mor` |
 
-Functions (abs, avg, ceil, clamp, erf, erfc, exp, expm1, floor, frac, hypot, iclamp, inrange, log, log10, log1p, log2, logn, max, min, mod, mul, ncdf, pow, root, round, roundn, sgn, sqrt, sum, swap, trunc, equal, not_equal)
+## Numeric Functions
 
-Trigonometry (acos, acosh, asin, asinh, atan, atan2, atanh, cos, cosh, cot, csc, sec, sin, sinc, sinh, tan, tanh, deg2rad, rad2deg, deg2grad, grad2deg)
+| Use | Functions |
+| --- | --- |
+| Basic values | `abs`, `sgn`, `floor`, `ceil`, `round`, `roundn`, `trunc`, `frac` |
+| Bounds and ranges | `clamp`, `iclamp`, `inrange`, `min`, `max` |
+| Aggregation | `avg`, `sum`, `mul` |
+| Powers and roots | `pow`, `sqrt`, `root`, `hypot` |
+| Logs and exponentials | `exp`, `expm1`, `log`, `log10`, `log1p`, `log2`, `logn` |
+| Remainders | `mod` |
+| Probability and error functions | `erf`, `erfc`, `ncdf` |
+| Comparison helpers | `equal`, `not_equal` |
+| Value exchange | `swap` |
 
-Control structures (if-then-else, ternary conditional, switch case, return-statement)
+## Trigonometry
 
-Loop structures (while loop, for loop, repeat until loop, break, continue)
+| Use | Functions |
+| --- | --- |
+| Standard trig | `sin`, `cos`, `tan`, `cot`, `sec`, `csc`, `sinc` |
+| Inverse trig | `asin`, `acos`, `atan`, `atan2` |
+| Hyperbolic trig | `sinh`, `cosh`, `tanh` |
+| Inverse hyperbolic trig | `asinh`, `acosh`, `atanh` |
+| Unit conversion | `deg2rad`, `rad2deg`, `deg2grad`, `grad2deg` |
 
-Optimization of expressions (constant folding, strength reduction, operator coupling, special functions and dead code elimination)
+## Flow Control
 
-String operations (equalities, inequalities, logical operators, concatenation and sub-ranges)
+| Feature | Use it for |
+| --- | --- |
+| `if-then-else` | Branching between values or calculations. |
+| Ternary conditional | Compact conditional expressions. |
+| `switch` / `case` | Choosing between several possible branches. |
+| `return` | Ending a calculation and returning a value. |
+| `while` | Repeating while a condition remains true. |
+| `for` | Repeating with a counter or bounded iteration. |
+| `repeat until` | Repeating until a condition becomes true. |
+| `break` and `continue` | Controlling loop execution. |
 
-Expression local variables, vectors and strings
+## Variables, Strings, and Composition
 
-User defined variables, vectors, strings, constants and function support
+| Feature | Notes |
+| --- | --- |
+| Expression local variables | Store intermediate values inside an expression. |
+| User-defined variables | Use values exposed through Gaea variables. |
+| Vectors and strings | Create and manipulate vector or string values. |
+| String operations | Equality, inequality, logical operations, concatenation, and sub-ranges. |
+| Constants and user functions | Define reusable values and helper functions. |
+| Multivariate function composition | Build functions that depend on multiple inputs. |
+| Multiple sequence points | Use multiple sub-expressions in a single calculation. |
 
-Multivariate function composition
+## Advanced Facilities
 
-Multiple sequence point and sub expression support
+These features are available for more complex Math node and expression work. Use them when a simple value transform is not enough.
 
-Runtime checks (vector bounds, string bounds, loop iterations/execution-time bounds, assert statements)
+| Area | Facilities |
+| --- | --- |
+| Optimization | Constant folding, strength reduction, operator coupling, special functions, and dead code elimination. |
+| Runtime checks | Vector bounds, string bounds, loop iteration and execution-time bounds, and assert statements. |
+| Compile-time checks | Function parameter type checking, compilation stack overflow checks, evaluation stack overflow checks, and compilation running time checks. |
+| Numerical methods | Numerical integration and differentiation. |
 
-Compile-time checks (function parameter type checking, compilation and evaluation stackoverflow checks, compilation running time)
+## Vector Processing
 
-Numerical integration and differentiation
+| Area | Facilities |
+| --- | --- |
+| BLAS-L1 style operations | `axpy`, `axpby`, `axpb` |
+| Boolean checks | All true, any true, all false, any false |
+| Vector manipulation | `assign`, `copy`, `reverse`, `rotate-left`, `rotate-right`, `shift-left`, `shift-right`, `sort`, `nth_element`, `iota` |
+| Vector analysis | `count`, `sum`, `kahan-sum`, `dot-product`, `diff`, `thresholding` |
 
-Vector Processing: BLAS-L1 (axpy, axpby, axpb), all/any-true/false, assign, count, reverse, rotate-left/right, shift-left/right, sort, nth_element, iota, sum, kahan-sum, dot-product, copy, diff, thresholding
+## File I/O
 
-File-IO package (routines include: open, close, read, write, getline, support for binary and text modes)
-```
+The File I/O package includes routines such as `open`, `close`, `read`, `write`, and `getline`, with support for binary and text modes.
+
+For typical parameter work, prefer @variables and @expressions before reaching for File I/O or vector-processing features.

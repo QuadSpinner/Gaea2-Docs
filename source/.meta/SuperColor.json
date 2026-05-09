@@ -3,7 +3,7 @@
   "IsSoftData": true,
   "IsHidden": false,
   "Name": "SuperColor",
-  "Description": null,
+  "Description": "Applies procedural terrain colorization using texture, flow, peaks, and palette controls.",
   "Family": "Color",
   "FamilyIcon": "x-supercolor",
   "Toolbox": "Colorize",

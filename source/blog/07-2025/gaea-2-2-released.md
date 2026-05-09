@@ -2,6 +2,7 @@
 title: Gaea 2.2 released!
 uid: gaea-2-2-released
 modified: "2025-07-14T19:41:16Z"
+description: Over the last 3 months, we've been working very hard to create Gaea 2.2.
 ---
 
 ### Gaea 2.2 features a major upgrade for Erosion\_2, Ice nodes, several new nodes, 20+ improvements to existing nodes, many key workflow enhancements, and over 150 bug fixes and stability updates.

@@ -4,6 +4,7 @@ uid: yt-moving-mountains
 tag: DqGoNGHs0a8
 order: 028
 icon: kit fa-qs-logo
+description: Watch the official Gaea tutorial for Moving Mountains and follow along with the demonstrated terrain workflow.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=DqGoNGHs0a8)

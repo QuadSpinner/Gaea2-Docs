@@ -1,4 +1,5 @@
 ---
+description: AutoLevel is a leveling node that allows you to level your terrain.
 title: Autolevel
 uid: autolevel
 order: 03
@@ -10,11 +11,7 @@ AutoLevel is a leveling node that allows you to level your terrain. This node ca
 
 By default, AutoLevel automatically stretches the heights of the terrain between 0 to 100% height while maintaing the proportions.
 
-
-
 This node does not have any properties or controls.
-
-
 
 :::info
 For more convenient usage, try the Autolevel via Modifiers. See [Using Modifiers](/using-gaea/managing-graphs/using-modifiers)
@@ -22,4 +19,11 @@ For more convenient usage, try the Autolevel via Modifiers. See [Using Modifiers
 Or you can try the @adjust node which is an easier to use node and provides additional functionality.
 :::
 
-# Properties
+## When to Use It
+Use Autolevel when terrain values need to be rebalanced so the full height range is usable again before later nodes.
+
+## Visual Direction
+
+![](/.data/assets/AutoLevel_VD.png)
+
+## Properties

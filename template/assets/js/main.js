@@ -1,3 +1,11 @@
+(() => {
+  if (location.protocol !== "http:" && location.protocol !== "https:") return;
+  if (!/\/index\.html$/i.test(location.pathname)) return;
+
+  const canonicalPath = location.pathname.replace(/index\.html$/i, "");
+  location.replace(canonicalPath + location.search + location.hash);
+})();
+
 window.addEventListener("DOMContentLoaded", () => {
   const hive = document.body?.dataset?.hiveShortname;
   if (!hive) return;
@@ -54,20 +62,89 @@ window.addEventListener("DOMContentLoaded", () => {
 
 $(document).ready(function () {
 
+  // enhanceNodeReferenceLayout();
+
   $(".image-row > p").each(function () {
     $(this).replaceWith($(this).contents());
   });
   $(".image-row-vertical > p").each(function () {
     $(this).replaceWith($(this).contents());
   });
-  // unwrap <figure> if it's directly wrapped by a <p>
+  // Only promote plain markdown images into figures/captions.
+  // Respect authored layout containers such as <div align="left">...</div>.
   $("#contents img").each(function () {
-    if ($(this).attr("alt") != null && !$(this).hasClass("card-img-top")) {
-      $(this).wrap("<figure></figure>");
-      $(this).after("<figcaption>" + $(this).attr("alt") + "</figcaption>");
+    const $img = $(this);
+    const alt = $img.attr("alt")?.trim();
+    const parentTag = this.parentElement?.tagName?.toLowerCase();
+    const hasAuthoredLayout = $img.closest("figure, [align], .image-row, .image-row-vertical").length > 0;
+
+    if (!alt || $img.hasClass("card-img-top") || parentTag !== "p" || hasAuthoredLayout) {
+      return;
     }
+
+    $img.wrap("<figure></figure>");
+    $img.after("<figcaption>" + alt + "</figcaption>");
   });
 });
+
+function enhanceNodeReferenceLayout() {
+  const isNodeReference =
+    document.body?.dataset?.hiveShortname === "Reference" &&
+    /\/reference\/nodes\//i.test(location.pathname);
+
+  if (!isNodeReference) return;
+
+  const contents = document.querySelector("#contents");
+  if (!contents || contents.querySelector(":scope > .node-guidance")) return;
+
+  const pageTitle = (document.querySelector("#content-header h1")?.textContent || "").trim();
+  const firstElement = contents.firstElementChild;
+  if (
+    firstElement?.tagName === "H1" &&
+    pageTitle &&
+    firstElement.textContent.trim().toLowerCase() === pageTitle.toLowerCase()
+  ) {
+    firstElement.remove();
+  }
+
+  const propertiesAnchor =
+    contents.querySelector(":scope > h2#properties") ||
+    contents.querySelector(":scope > .properties-table");
+
+  if (!propertiesAnchor) return;
+
+  const guidanceNodes = [];
+  let node = contents.firstChild;
+
+  while (node && node !== propertiesAnchor) {
+    const next = node.nextSibling;
+    const hasContent =
+      node.nodeType === Node.ELEMENT_NODE ||
+      (node.nodeType === Node.TEXT_NODE && node.textContent.trim().length > 0);
+
+    if (hasContent) guidanceNodes.push(node);
+    node = next;
+  }
+
+  if (!guidanceNodes.length) return;
+
+  const details = document.createElement("details");
+  details.className = "node-guidance";
+
+  const summary = document.createElement("summary");
+  summary.innerHTML = "<span>Usage, videos, and visuals</span> <i class='fa-duotone fa-light fa-caret-large-down'></i>";
+  details.appendChild(summary);
+
+  const body = document.createElement("div");
+  body.className = "node-guidance-body";
+  details.appendChild(body);
+
+  for (const guidanceNode of guidanceNodes) {
+    body.appendChild(guidanceNode);
+  }
+
+  contents.insertBefore(details, propertiesAnchor);
+}
 
 (function () {
   function hasPre() {
@@ -129,6 +206,7 @@ $(document).ready(function () {
       url.hash = "";
       url.search = "";
       let p = url.pathname;
+      p = p.replace(/\/index\.html$/i, "/");
       if (p.length > 1 && p.endsWith("/")) p = p.slice(0, -1);
       url.pathname = p;
       return url.toString();
@@ -226,7 +304,8 @@ $(document).ready(function () {
     
     if(subs != null)
     {
-      firstChild.className = 'd-flex flex-wrap';
+      const firstChild = subs.firstElementChild;
+      if (firstChild) firstChild.className = 'd-flex flex-wrap';
     }
   });
 })();

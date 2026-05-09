@@ -4,6 +4,7 @@ uid: yt-yukon-river-valley
 tag: 0PVEk6nrPHY
 order: 005
 icon: kit fa-qs-logo
+description: Watch the official deep-dive video for Yukon River Valley and see a complete Gaea terrain workflow in action.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=0PVEk6nrPHY)

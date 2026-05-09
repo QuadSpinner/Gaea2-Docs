@@ -2,6 +2,7 @@
 title: Undo and Autosave
 uid: undo-and-autosave
 order: 02
+description: The Undo menu lists recent actions and allows you undo them.
 ---
 
 # Undo and Autosave
@@ -28,7 +29,7 @@ Selecting one of these options will configure the application to remind you to s
 
 **Reset Timer.** Selecting 'Reset Timer' will restart the countdown of the current Autosave interval. This is useful when you want to make sure that a save happens at a specific point during your work session.
 
-#### Revert Options
+### Revert Options
 
 **Revert to.** Under this sub-menu, you can find a list of the most recent Autosave points. Each entry is labeled with a sequential number and the time of the save (e.g., Autosave 4 @ 03:16:46). This feature allows you to revert your project to a previous state, which is extremely helpful if you need to go back to an earlier version of your work due to errors or changes that did not produce the desired outcome.
 

@@ -3,6 +3,7 @@ icon: 5
 title: Exporting Elements
 uid: exporting-elements
 order: 05
+description: Gaea is primarily an asset generator designed for creating and exporting terrains to be used in other applications.
 ---
 
 # Exporting Elements

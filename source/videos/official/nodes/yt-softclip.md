@@ -4,6 +4,7 @@ uid: yt-softclip
 tag: Una5ZVn-8Ns
 order: 008
 icon: kit fa-qs-logo
+description: Watch the official Gaea video for SoftClip, including node behavior, workflow tips, and example usage.
 ---
 
 ![youtube.com](https://www.youtube.com/watch?v=Una5ZVn-8Ns)

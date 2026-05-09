@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Scree",
-  "Description": null,
+  "Description": "Creates accumulations of loose rock fragments scattered across slopes and terrain edges.",
   "Family": "Scatter",
   "FamilyIcon": "family-scatter",
   "Toolbox": "Simulate",

@@ -2,6 +2,7 @@
 title: Toolbox
 uid: options-toolbox
 order: 03
+description: The Toolbox tab customizes the appearance, organization, and search behavior of the node toolbox, improving workflow efficiency and navigation within.
 ---
 
 # Toolbox

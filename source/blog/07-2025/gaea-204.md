@@ -2,6 +2,7 @@
 title: "Gaea 2.0.4: Delivering Stability, Quality of Life updates, and more"
 uid: gaea-204
 modified: "2025-07-22T21:39:00Z"
+description: We just shipped Gaea 2.0.4, our largest update since the initial public beta of 2.0, if you count the number of items in it.
 ---
 
 We just shipped [**Gaea 2.0.4**](https://quadspinner.com/blog/), our largest update since the initial public beta of 2.0, if you count the number of items in it. While this release has quite a few new features - some big crowd-pleasers that will save LOTS of time and reduce frustration - the big hero is stability.

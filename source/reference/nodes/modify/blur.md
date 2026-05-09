@@ -1,14 +1,19 @@
 ---
+description: The Blur node diffuses sharp shapes and softens the terrain.
 title: Blur
 uid: blur
 order: 05
 ---
 
-
 # Blur
 
-The Blur node diffuses sharp shapes and softens the terrain.
+Blur diffuses sharp shapes and softens the terrain.
 
-Blur is also available as a Modifier.
+## When to Use It
+Use Blur when a terrain or mask is too sharp and needs a softer transition before the next shaping or blending step.
 
-# Properties
+## Visual Direction
+
+![](/.data/assets/BlurVD.png)
+
+## Properties

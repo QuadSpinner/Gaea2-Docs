@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Transform3D",
-  "Description": null,
+  "Description": "Applies full 3D transformation to the terrain, including rotation and spatial adjustment.",
   "Family": "Transform",
   "FamilyIcon": "family-transform",
   "Toolbox": "Modify",

@@ -3,6 +3,7 @@ icon: code-branch
 title: Version Numbers
 uid: version-numbers
 order: 07
+description: Understand Gaea version numbers by learning what the major, minor, build, and revision segments represent.
 ---
 
 # Version Numbers

@@ -1,4 +1,5 @@
 ---
+description: The Peaks node creates a selection mask for peaks and ridgelines using protrusion, also described as inverse curvature.
 title: Peaks
 uid: peaks
 order: 08
@@ -9,6 +10,9 @@ order: 08
 The Peaks node creates a selection mask for peaks and ridgelines using protrusion, also described as inverse curvature. Unlike height-based selectors, Peaks can isolate prominent high points even when they occur at different absolute elevations. This makes it useful for targeting summit features, crest lines, and exposed tips across an uneven terrain.
 
 The output is a grayscale mask where white indicates strong peak or ridge features and black indicates flatter or recessed areas.
+
+## When to Use It
+Use Peaks when you need a selection mask for peaks and ridgelines using protrusion, also described as inverse curvature.
 
 ## Common uses
 
@@ -26,7 +30,4 @@ The output is a grayscale mask where white indicates strong peak or ridge featur
 * Precise produces a tighter, more faithful ridge and tip detection. It is helpful when you need the mask to track narrow crest lines, but it can also make the result more sensitive to small surface noise.
 * If the mask becomes noisy, reduce upstream micro detail or smooth lightly before Peaks, then reintroduce micro detail later in the texturing stage.
 
-# Properties
-
-
-
+## Properties

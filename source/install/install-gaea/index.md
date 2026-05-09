@@ -3,6 +3,7 @@ icon: box
 title: Install Gaea
 uid: install-gaea
 order: 00
+description: Download Gaea, install prerequisites, choose the correct installer type, and review core system and security requirements.
 ---
 
 ![The Gaea 2.0 User Interface](/.data/assets/gaea-ui2x.webp)
@@ -15,35 +16,13 @@ You will also require [.NET 8.0](https://download.visualstudio.microsoft.com/dow
 
 The Gaea installer will download and install those if needed. An internet connection will be required to do that. 
 
+Depending on your hardware, you may also need [Intel&reg; CPU Runtime for OpenCL Applications with SYCL Support](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-cpu-runtime-for-opencl-applications-with-sycl-support.html)
+
 :::warning
 If you are going to install in an air-gapped/offline environment, then you may want to install the prerequisites beforehand.
 :::
 
-## System Requirements
-
-Before running Gaea, make sure your computer meets the minimum system requirements and that you have the latest CPU and GPU drivers.
-
-| Minimum                                                    | Recommended                                                   |
-| ---------------------------------------------------------- | ------------------------------------------------------------- |
-| Windows 10 (April 2018 - Build 1803)                       | Windows 11 - 23H2                                             |
-| Intel Core i5-4200U / AMD FX-8370                          | Intel Core i7-4770K / AMD Ryzen-5 1500X                       |
-| 16GB RAM                                                   | 32GB RAM                                                      |
-| <p>NVIDIA GeForce GTX 1080</p><p>AMD Radeon RX Vega 64</p> | <p>NVIDIA GeForce RTX 3070 Ti</p><p>AMD Radeon RX 6800 XT</p> |
-| 10GB HDD space                                             | 50GB HDD space                                                |
-
-
-
-:::danger
-For CPU compute: The CPU must support AVX2 instruction set.
-
-For GPU compute: NVIDIA cards need CUDA 12.5; AMD cards need HIP 6.0.
-:::
-
-:::info
-RAM may depend on project requirements. See @calculating-memory-requirements.
-:::
-
-***
+You may also want to check @requirements.
 
 # The Gaea Installers
 
@@ -51,13 +30,17 @@ Gaea is available in various forms to provide flexible methods of deployment, wh
 
 ## Setup Executable
 
-<div align="left">![EXE](/.data/assets/image-(43).png)</div>
+<div align="left">
+  <img src="/.data/assets/image-(43).png" alt="EXE" />
+</div>
 
-The setup exe is our primary - and recommended - way of installing Gaea. It provides for both @regular-installationand @portable-installationwhile also setting up additional registry entries required for the [gaea2unreal](/plugins/gaea2unreal/) and [gaea2houdini](/plugins/gaea2houdini/) bridges.
+The setup exe is our primary - and recommended - way of installing Gaea. It provides for both @regular-installation and @portable-installation while also setting up additional registry entries required for the @gaea2unreal and @gaea2houdini bridges.
 
 ## 7-Zip Package
 
-<div align="left">![7zip file](/.data/assets/image-(44).png)</div>
+<div align="left">
+  <img src="/.data/assets/image-(44).png" alt="EXE" />
+</div>
 
 The 7-zip package contains the exact same files as the setup executable; however, it is purely portable and does not create registry entries. It is very useful for advanced users or for System Administrators to create custom deployments. See @mass-deployment on how to enable Gaea2Unreal and Gaea2Houdini functionality in pure portable installs such as this.
 

@@ -2,6 +2,7 @@
 title: "Just a Terrain App: The Hidden Depths of Gaea - Part 1"
 uid: terrain-app1
 modified: "2025-11-13T18:38:38Z"
+description: We have been working on Gaea since 2015. It underwent a complete overhaul in 2020-2022 during the Pandemic so we could create a more future-friendly.
 ---
 
 We have been working on Gaea since 2015. It underwent a complete overhaul in 2020-2022 during the Pandemic so we could create a more future-friendly platform on which Gaea would run for the next decade.

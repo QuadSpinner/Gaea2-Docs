@@ -2,6 +2,7 @@
 icon: cubes-stacked
 title: Build Swarm
 uid: build-swarm
+description: The Build Swarm, represented by Gaea.Swarm.exe is the heart of Gaea.
 ---
 
 # Build Swarm

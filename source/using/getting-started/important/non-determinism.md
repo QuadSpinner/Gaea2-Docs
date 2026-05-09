@@ -2,6 +2,7 @@
 title: Non-Determinism
 uid: non-determinism
 order: 08
+description: In procedural terrain generation like in Gaea, non-deterministic output at different resolutions occurs because the way the algorithms process the terrain.
 ---
 
 # Non-Determinism
@@ -21,6 +22,6 @@ Gaea's algorithms are optimized to reduce the difference across resolutions as m
 
 Some nodes like the classic Erosion provide a separate option to force Determinism by sacrificing processing speed.
 
-### Forcing Determinism
+## Forcing Determinism
 
 One of the best ways to ensure a specific shape, especially at an early stage in your graph, is by @baking-nodes at a resolution you like. Gaea will then upscale them at whatever final resolution you use and further low-yield Erosion or other effects can help compensate for the upscaling artifacts.

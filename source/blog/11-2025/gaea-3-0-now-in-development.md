@@ -2,6 +2,7 @@
 title: Gaea 3.0 - Now in Development
 uid: gaea-3-0-now-in-development
 modified: "2025-11-25T16:01:14Z"
+description: Gaea 3.0 is now in active development, and it’s a major leap forward in how artists build serious environments.
 ---
 
 Gaea 3.0 is now in active development, and it’s a major leap forward in how artists build serious environments. This release is about scale, realism, and speed—built on a new foundation that expands what Gaea can do without compromising its procedural core.

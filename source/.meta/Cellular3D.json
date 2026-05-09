@@ -3,7 +3,7 @@
   "IsSoftData": false,
   "IsHidden": false,
   "Name": "Cellular3D",
-  "Description": null,
+  "Description": "Generates three-dimensional cellular noise useful for volumetric-looking patterns and complex terrain breakup.",
   "Family": "Extended",
   "FamilyIcon": "family-extended",
   "Toolbox": "Primitive",

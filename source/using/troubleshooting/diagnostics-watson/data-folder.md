@@ -2,7 +2,10 @@
 title: Data Folder
 uid: data-folder
 order: 04
+description: The anatomy of the Gaea Data Folder.
 ---
+
+# Data Folder
 
 The anatomy of the Gaea Data Folder.
 

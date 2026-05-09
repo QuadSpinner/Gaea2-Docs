@@ -2,6 +2,7 @@
 title: Creating Mutations
 uid: creating-mutations
 order: 01
+description: Mutations are a great way to create multiple variations of the same terrain with minimal effort.
 ---
 
 # Creating Mutations
@@ -18,7 +19,7 @@ To prevent specific nodes from being affected, you can try @baking-nodes.
 
 
 
-### Using the Batch Build Manager
+## Using the Batch Build Manager
 
 The fastest way to set up mutations, is to go to Build menu > Batch Build Manager and use the `Add Mutation` button to queue up as many mutations as you want.
 

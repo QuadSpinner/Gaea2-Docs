@@ -2,6 +2,7 @@
 title: Build
 uid: options-build
 order: 07
+description: The Build tab defines the default output location, file formats, and memory handling preferences for builds in Gaea.
 ---
 
 # Build

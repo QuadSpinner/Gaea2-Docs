@@ -2,6 +2,7 @@
 title: Managing Regions
 uid: managing-regions
 order: 03
+description: To rename a region, right-click on it and enter the new name in the prompt that appears.
 ---
 
 # Managing Regions

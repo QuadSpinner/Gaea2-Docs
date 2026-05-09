@@ -1,4 +1,5 @@
 ---
+description: Converts the input into a blocky, pixelated version.
 title: Pixelate
 uid: pixelate
 order: 25
@@ -6,6 +7,11 @@ order: 25
 
 # Pixelate
 
-Pixelates, or creates a blocky effect, from the terrain or mask being input.
+## When to Use It
+Use Pixelate when the terrain shape is mostly working and you need a targeted reshape, filter, or remap pass.
 
-# Properties
+## Visual Direction
+
+![](/.data/assets/PIxelate_VD.png)
+
+## Properties

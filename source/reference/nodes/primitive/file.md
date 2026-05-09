@@ -1,13 +1,18 @@
 ---
+description: The File node loads any supported image or data file as a terrain.
 title: File
 uid: file
 order: 10
 ---
 
+# File
 
 The File node loads any supported image or data file as a terrain. It
 supports all major file formats, and you can load either a grayscale
 image as a heightfield, or a RGB color image as a color map.
+
+## When to Use It
+Use File when you need loads any supported image or data file as a terrain.
 
 ## A note about scale
 
@@ -22,6 +27,4 @@ The `Mapped` mode is mainly used for communicating with other
 applications in automation scenarios where the incoming and outgoing
 data must retain a specific number range.
 
-
-
-# Properties
+## Properties

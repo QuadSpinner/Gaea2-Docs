@@ -3,6 +3,7 @@ icon: 6
 title: Masks
 uid: masks
 order: 06
+description: Masks are powerful tools used to control and refine where and how various effects and modifications are applied to a terrain.
 ---
 
 # Masks

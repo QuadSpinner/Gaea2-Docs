@@ -177,29 +177,49 @@ function initGlobalToc({
 
   // ---------- match current URL, set active, expand ancestors ----------
   markCurrentUrlActive();
-  // Add this at the end of initGlobalToc() after markCurrentUrlActive();
-  renderCurrentFolderSubLinks("#show-sublinks");
+  if (hostSelector === "#site-nav") {
+    renderCurrentFolderSubLinks("#show-sublinks");
+  }
 
   function renderCurrentFolderSubLinks(hostSelector = "#show-sublinks") {
     const out = document.querySelector(hostSelector);
     if (!out) return;
 
-    // find current active leaf
     const active = host.querySelector('a[href]:not(.toc-group).active');
-    if (!active) return;
+    const activeLi = active?.closest("li") || null;
+    let sourceLis = [];
 
-    // current folder UL = where the active leaf lives
-    const currentUl = active.closest("ul");
-    if (!currentUl) return;
+    if (activeLi) {
+      const childUl = activeLi.querySelector(":scope > ul");
+
+      if (childUl) {
+        sourceLis = Array.from(childUl.querySelectorAll(":scope > li"));
+      } else {
+        const currentUl = activeLi.closest("ul");
+        if (currentUl) sourceLis = Array.from(currentUl.querySelectorAll(":scope > li"));
+      }
+    }
+
+    if (!sourceLis.length) {
+      const activeGroupLi = Array.from(host.querySelectorAll("li.active"))
+        .reverse()
+        .find(li => li.querySelector(":scope > a.toc-group"));
+      const groupUl = activeGroupLi?.querySelector(":scope > ul");
+      if (groupUl) sourceLis = Array.from(groupUl.querySelectorAll(":scope > li"));
+    }
+
+    sourceLis = sourceLis.filter(li =>
+      !li.classList.contains("divider") &&
+      !li.classList.contains("d-none")
+    );
+
+    if (!sourceLis.length) return;
 
     // clone ONE level of siblings from that UL, but as a fresh UL with fresh nodes
     const ul = document.createElement("ul");
     ul.className = "sub-links";
 
-    const sibLis = Array.from(currentUl.querySelectorAll(":scope > li"))
-      .filter(li => !li.classList.contains("divider"));
-
-    for (const li of sibLis) {
+    for (const li of sourceLis) {
       const item = document.createElement("li");
 
       // leaf sibling
@@ -209,9 +229,6 @@ function initGlobalToc({
         a.href = leafA.getAttribute("href") || leafA.href;
         a.textContent = (leafA.textContent || "").trim();
         if (leafA.classList.contains("active")) a.classList.add("active");
-        if (li.classList.contains("d-none")) {
-          item.classList.add("d-none");
-        }
         item.appendChild(a);
         ul.appendChild(item);
         continue;
@@ -274,6 +291,7 @@ function initGlobalToc({
     url.hash = "";
     url.search = "";
     let p = url.pathname;
+    p = p.replace(/\/index\.html$/i, "/");
     if (p.length > 1 && p.endsWith("/")) p = p.slice(0, -1);
     url.pathname = p;
     return url.toString();
@@ -286,8 +304,11 @@ function initGlobalToc({
     const i = document.createElement("i");
     const cls = String(icon).trim();
 
-    // Your chosen convention: icon contains the suffix only (e.g. "dog"), render fa-dog
-    i.className = `fa-duotone fa-solid fa-${cls}`;
+    if (cls.includes("fa-")) {
+      i.className = cls;
+    } else {
+      i.className = `fa-duotone fa-solid fa-${cls}`;
+    }
     i.classList.add("toc-icon");
     el.appendChild(i);
   }
