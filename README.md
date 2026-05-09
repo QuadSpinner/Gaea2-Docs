@@ -42,3 +42,7 @@ The generated site also exposes machine-readable documentation outputs, includin
 ## License
 
 See [LICENSE.txt](LICENSE.txt).
+
+## Credits
+
+Special thanks to [Ty Xanders](https://github.com/ty-xanders) for his prolific contributions to the Documentation and the Community.
