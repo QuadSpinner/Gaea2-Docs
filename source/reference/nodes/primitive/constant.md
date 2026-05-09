@@ -1,8 +1,8 @@
 ---
+description: The Constant node is the most basic primitive available in Gaea.
 title: Constant
 uid: constant
 order: 04
-description: The Constant node is the most basic primitive available in Gaea.
 ---
 
 # Constant
@@ -13,6 +13,9 @@ output, or a noise pattern.
 
 Constant is rarely used directly, but rather as a mask or a second input
 blended using Combine with another node.
+
+## When to Use It
+Use Constant when you need a flat reference value, a uniform mask, or a neutral starting layer inside the graph.
 
 ## Modes
 
@@ -37,7 +40,4 @@ instead. The Noise mode was added to the Constant node to reduce the
 need to create a flat Constant and then apply the Noise node on top of
 it to create a flat noise map that could be used elsewhere in the graph.
 
-
-
 ## Properties
-

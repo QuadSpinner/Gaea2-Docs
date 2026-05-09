@@ -1,13 +1,15 @@
 ---
+description: Glacier creates flowing glaciers on mountain tops.
 title: Glacier
 uid: glacier
 order: 08
-description: Learn about the Glacier node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Glacier
 
+## When to Use It
+Use Glacier when you need flowing glaciers on mountain tops.
 
-# Properties
+## Visual Direction
 
-
-
+## Properties

@@ -1,11 +1,15 @@
 ---
+description: Applies procedural terrain colorization using texture, flow, peaks, and palette controls.
 title: SuperColor
 uid: supercolor
 order: 09
-description: Learn about the SuperColor node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# SuperColor
 
+## When to Use It
+Use SuperColor when you need a color pass that stays grounded in the terrain or masks you already have.
 
-# Properties
+## Visual Direction
 
+## Properties

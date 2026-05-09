@@ -1,14 +1,15 @@
 ---
+description: Adds superficial wear, breakup, and irregular damage to a surface.
 title: Distress
 uid: distress
 order: 05
-description: Learn about the Distress node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Distress
 
+## When to Use It
+Use Distress when you need superficial wear, breakup, and irregular damage to a surface.
 
-# Properties
+## Visual Direction
 
-
-
-
+## Properties

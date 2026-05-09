@@ -1,19 +1,15 @@
 ---
+description: Shear creates rock shearing and exposes strata.
 title: Shear
 uid: shear
 order: 17
-description: S.
 ---
 
+# Shear
 
+## When to Use It
+Use Shear when you need rock shearing and exposes strata.
 
+## Visual Direction
 
-
-
-Shear creates rock shearing and exposes strata.
-
-
-
-# Properties
-
-
+## Properties

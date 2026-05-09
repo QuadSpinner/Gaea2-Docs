@@ -1,11 +1,14 @@
 ---
+description: Warp can take the terrain and "warp" the shape creating more organic shapes.
 title: Warp
 uid: warp
 order: 40
-description: Warp can take the terrain and "warp" the shape creating more organic shapes.
 ---
 
 # Warp
+
+## When to Use It
+Use Warp when the terrain feels too synthetic and needs broader organic distortion.
 
 ## Warp
 
@@ -16,5 +19,9 @@ By using vector fields, the warping created by this node result in more comprehe
 **Warp as a Post Process**
 
 Warp is also built into the @modifier-stack for easy access.
+
+## Visual Direction
+
+![](/.data/assets/Warp_VD.png)
 
 ## Properties

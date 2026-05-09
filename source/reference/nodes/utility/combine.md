@@ -1,8 +1,8 @@
 ---
+description: The Combine node is one of the most important nodes in Gaea.
 title: Combine
 uid: combine
 order: 03
-description: The Combine node is one of the most important nodes in Gaea.
 ---
 
 # Combine
@@ -10,6 +10,9 @@ description: The Combine node is one of the most important nodes in Gaea.
 The Combine node is one of the most important nodes in Gaea. It allows you to take two outputs (terrains, masks, or color maps) and combine them using various mathematical operations, often known as 'Blend Modes'.
 
 In addition, the Combine node also gives you a separation mask for texturing purposes when working with terrains and masks.
+
+## When to Use It
+Use Combine when two terrains, masks, or color maps need to be blended, compared, or merged into one controllable result.
 
 ## Using Combine
 
@@ -27,9 +30,13 @@ Inversely, if the first input is a heightmap or mask and the second is a color m
 
 **Example**
 
-This is an example of equally blending (Mode: Blend, Ratio: 50%) Perlin and Mountain nodes. ![](/.data/ref/Combine/combine--blend.webp)
+This is an example of equally blending (Mode: Blend, Ratio: 50%) Perlin and Mountain nodes.
 
-If you switch the mode to Max and Ratio to 100%: ![](/.data/ref/Combine/combine--max.webp)
+![](/.data/ref/Combine/combine--blend.webp)
+
+If you switch the mode to Max and Ratio to 100%:
+
+![](/.data/ref/Combine/combine--max.webp)
 
 If you plug in a shape of any kind to the Mask input of the Combine node, the brighter parts of the mask will be replaced with the first input, while darker areas will be replaced with the second input. If your mask is soft (ie - lots of grays instead of just black and white) then the blending between the two will be soft. This is usually the preferred method. ![](/.data/ref/Combine/combine--hardmask.webp)
 
@@ -44,6 +51,3 @@ If you're adding two terrains where the combined output goes beyond `1.0`, it wi
 Alternatively, you can add an Fx node to the Combine output or other nodes like Clamp and bring it down manually.
 
 ## Properties
-
-
-

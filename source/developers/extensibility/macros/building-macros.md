@@ -3,6 +3,7 @@ icon: puzzle
 title: Building Macros
 uid: building-macros
 order: 02
+description: "{% include \\"macros23.md\\" %}."
 ---
 
 # Building Macros
@@ -11,11 +12,11 @@ order: 02
 
 A Macro packages a small node graph and lets you reuse it as a single node. In current Gaea builds, the node used to define Macro inputs and outputs is `MacroPort`.
 
-:::note
+:::info
 Edition availability:
 
-* Indie: install and use existing Macros.
-* Professional and Enterprise: create and use Macros. These editions also include Expose Parameters, Variables and Expressions, and Automation.
+* `Indie`: install and use existing Macros.
+* `Professional` and `Enterprise`: create and use Macros. These editions also include `Expose Parameters`, `Variables and Expressions`, and `Automation`.
 
 See [Compare Editions](https://quadspinner.com/Order/Editions/#:~:text=the%20core%20design.-,Extend%20%2B%20Automate,-Expose%20Parameters%0APromote).
 :::

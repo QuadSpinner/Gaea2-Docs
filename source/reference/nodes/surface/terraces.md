@@ -1,10 +1,15 @@
 ---
+description: Creates stepped terrace formations from the terrain.
 title: Terraces
 uid: terraces
 order: 21
-description: Learn about the Terraces node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Terraces
 
+## When to Use It
+Use Terraces when you need stepped terrace formations from the terrain.
 
-# Properties
+## Visual Direction
+
+## Properties

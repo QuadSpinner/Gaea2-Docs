@@ -1,13 +1,13 @@
 ---
+description: Begins a Loop circuit.
 title: LoopBegin
 uid: loopbegin
 order: 10
-description: Learn about the LoopBegin node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# LoopBegin
 
+## When to Use It
+Use LoopBegin when the graph needs routing, layering, or control logic instead of a new terrain feature.
 
-
-
-
-# Properties
+## Properties

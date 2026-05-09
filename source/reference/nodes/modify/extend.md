@@ -1,13 +1,17 @@
 ---
+description: Expands the terrain range beyond its current limits, effectively stretching elevation values.
 title: Extend
 uid: extend
 order: 15
-description: Learn about the Extend node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Extend
 
+## When to Use It
+Use Extend when the terrain shape is mostly working and you need a targeted reshape, filter, or remap pass.
 
-# Properties
+## Visual Direction
 
+![](/.data/assets/Extend_VD.png)
 
-
+## Properties

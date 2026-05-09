@@ -2,6 +2,7 @@
 title: Einar Martinsen on Creating the Nuke 16 Splash Screens with Gaea
 uid: einar-martinsen
 modified: "2025-11-28T22:47:33Z"
+description: "He has worked on many major motion pictures and TV shows, with credits to his name such as Avengers: End Game, Lord of the Rings: Rings of Power, among."
 ---
 
 ![](__GHOST_URL__/content/images/2025/11/image-6.png)[Einar Martinsen](https://www.einarmartinsen.com) is a VFX Art Director with a distinct and unmistakable style to his art - whether digital shots or plein air oil paintings.

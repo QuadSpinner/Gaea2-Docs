@@ -1,12 +1,15 @@
 ---
+description: Generates a regular grid pattern useful for cartography, masking, or stylized surfaces.
 title: Grid
 uid: grid
 order: 07
-description: Learn about the Grid node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Grid
 
+## When to Use It
+Use Grid when you need a regular grid pattern useful for cartography, masking, or stylized surfaces.
 
-# Properties
+## Visual Direction
 
-
+## Properties

@@ -2,6 +2,7 @@
 title: "Gaea2Unreal: Now Open Source!"
 uid: gaea2unreal-now-open-source
 modified: "2025-03-11T19:38:10Z"
+description: As we worked towards Gaea 2’s initial release, we recognized the immense demand for seamless integration with Unreal Engine.
 ---
 
 As we worked towards Gaea 2’s initial release, we recognized the immense demand for seamless integration with Unreal Engine. To address this, alongside the Gaea2Houdini plugin, we embarked on developing **Gaea2Unreal**—a dedicated plugin for Unreal Engine.

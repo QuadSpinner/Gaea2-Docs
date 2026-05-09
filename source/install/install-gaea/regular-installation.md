@@ -8,27 +8,27 @@ description: Install Gaea with the standard setup, review administrator requirem
 
 # Regular Installation
 
-Please make sure you have read the [.](./)page.
+Before you begin, download the setup executable and review the prerequisites on @install-gaea.
 
 ## Running the Setup
 
-Our new installer makes it very easy to install Gaea, whether you are at home with full Administrator privileges or in a restricted environment at work.
+Regular installation is the recommended setup for most users. It installs Gaea like a standard Windows application and creates the registry entries needed by bridge integrations such as Gaea2Unreal and Gaea2Houdini.
 
 ![](/.data/assets/QuadSpinner_Gaea_2.0_Setup_09-55-53-PM.png)
 
 ### Choosing the Installation Type
 
-To begin the installation select Regular or @portable-installation. In most cases, Regular Installation is the safest and recommended option.
+Select **Regular Installation**. Choose @portable-installation only if you cannot use administrator privileges or need a self-contained deployment.
 
 :::warning
-:shield: You will require Administrator Privileges for a Regular Installation. If you don't have them, you can choose to go for a @portable-installation.
+Regular installation requires administrator privileges. If you do not have them, use @portable-installation.
 :::
 
 ![](/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM-(1).png)
 
 ### Choosing the Path
 
-Next, select the path where you would like to install Gaea. In most cases, saving to the Program Files folder is recommended for safety. Click Install to begin the process.
+Choose where Gaea should be installed. In most cases, keep the default Program Files location, then click **Install**.
 
 :::danger
 When installing to a network drive, it must be installed on a network share hosted as a drive and not a UNC path. Gaea may not work properly on UNC paths.
@@ -36,41 +36,31 @@ When installing to a network drive, it must be installed on a network share host
 
 Gaea will now install. You will be given an option to launch Gaea once the installation is finished.
 
-
-
-## Welcome to Gaea
+## First Launch
 
 ![](/.data/assets/Welcome_to_Gaea_2.0_09-56-21-PM.png)
 
-Once Gaea launches, you will be presented with this Welcome dialog.
-
-You can set your Gaea Projects storage path here, and select the navigation style for the Viewport.
+When Gaea launches for the first time, the Welcome dialog lets you set your Gaea Projects storage path and choose the Viewport navigation style.
 
 ![](/.data/assets/Welcome_to_Gaea_2.0_09-56-28-PM.png)
 
 ### License Key
 
-If you have a License Key, you can also enter it here to activate all the features of your Gaea Edition. You can find the License Key in the email you received after purchasing Gaea 2. 
+If you have a License Key, enter it here to activate the features included with your Gaea edition. You can find the License Key in the email you received after purchasing Gaea 2.
 
 :::info
 If you have forgotten your License Key, you can click "Forgot your key?" to log into the User Area on the QuadSpinner website.
 :::
 
-You can also enter your License Key from the Start Screen whenever you start Gaea, or from Help > About menu item. See Licensing for more details.
+You can also enter your License Key from the Start Screen whenever you start Gaea, or from **Help > About**. See @activation for more details.
 
 ### File Licenses
 
-For users who have been issued a file-based key, just drag and drop the file (usually a `XYZ123.lic` file) on the license dialog. Gaea will automatically consume the file to authorize your copy.
+For file-based licenses, drag the `.lic` file onto the license dialog. Gaea will consume the file and authorize your copy.
 
 ***
 
 Gaea is now installed and you are ready to create @terrain-basics!
 
-
-
-
-
-
-
-Facing issues? See @troubleshooting
+Facing issues? See @troubleshooting.
 

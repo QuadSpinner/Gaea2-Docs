@@ -1,12 +1,17 @@
 ---
+description: The Chokepoint node is a special node whose sole purpose is to help avoid re-connecting many nodes, while adding no memory overhead.
 title: Chokepoint
 uid: chokepoint
 order: 02
-description: The Chokepoint node is a special node whose sole purpose is to help avoid re-connecting many nodes, while adding no memory overhead.
 ---
 
+# Chokepoint
 
+<!-- AUTO-VIDEO-LINK:START -->
+## Official Video
 
+For a video breakdown of this node, see [the official Chokepoint video](/videos/official/nodes/yt-chokepoint.html).
+<!-- AUTO-VIDEO-LINK:END -->
 
 The Chokepoint node is a special node whose sole purpose is to help avoid re-connecting many nodes, while adding no memory overhead.
 
@@ -18,7 +23,6 @@ In this example, the second Erosion node is the chokepoint. It feeds several oth
 
 The easy solution is to interject a Chokepoint node onto the important node. You can hold `Shift` while drag-dropping a Chokepoint on to the Erosion node to interject it and have Gaea reroute all connections. See conveniences for more information.
 
-
 ![](/.data/ref/choke_2.webp)
 
 Now everything is routed through the Chokepoint, allowing you to experiment with the Erosion node later, and only reroute a single connection when needed.
@@ -27,7 +31,7 @@ The Chokepoint can be further organized by making its output a portal. You can s
 
 ![](/.data/ref/choke_3.webp)
 
+## When to Use It
+Use Chokepoint when several downstream nodes depend on the same result and you want a safer place to reroute that shared connection later.
 
-
-# Properties
-
+## Properties

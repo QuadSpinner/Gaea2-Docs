@@ -1,16 +1,17 @@
 ---
+description: Ridge creates a rugged ridgeline with multiple fractures and rock shearing.
 title: Ridge
 uid: ridge
 order: 10
-description: R.
 ---
 
+# Ridge
 
+## When to Use It
+Use Ridge when you need a rugged ridgeline with multiple fractures and rock shearing.
 
+## Visual Direction
 
-Ridge creates a rugged ridgeline with multiple fractures and rock shearing.
+![](/.data/assets/Ridge_VD.png)
 
-
-
-# Properties
-
+## Properties

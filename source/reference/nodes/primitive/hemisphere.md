@@ -1,13 +1,17 @@
 ---
+description: Generates a hemispherical gradient useful for domes, mounds, and radial falloffs.
 title: Hemisphere
 uid: hemisphere
 order: 12
-description: Learn about the Hemisphere node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Hemisphere
 
+## When to Use It
+Use Hemisphere when you need a hemispherical gradient useful for domes, mounds, and radial falloffs.
 
-# Properties
+## Visual Direction
 
+![](/.data/assets/Hemisphere_VD.png)
 
-
+## Properties

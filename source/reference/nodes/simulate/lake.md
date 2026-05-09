@@ -1,13 +1,15 @@
 ---
+description: Lake simulates rainfall on the terrain and creates physically accurate lakes.
 title: Lake
 uid: lake
 order: 12
-description: Learn about the Lake node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Lake
 
+## When to Use It
+Use Lake when you need simulates rainfall on the terrain and creates physically accurate lakes.
 
-# Properties
+## Visual Direction
 
-
-
+## Properties

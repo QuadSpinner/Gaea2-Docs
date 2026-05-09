@@ -1,12 +1,11 @@
 ---
+description: Rivers can instantly generate complex river networks on any terrain, whether it can sustain rivers or not.
 title: Rivers
 uid: rivers
 order: 14
-description: Rivers can instantly generate complex river networks on any terrain, whether it can sustain rivers or not.
 ---
 
-
-
+# Rivers
 
 Rivers can instantly generate complex river networks on any terrain, whether it can sustain rivers or not. The node subtly transforms the terrain to provide unbroken pathways for a river to be generated.
 
@@ -18,10 +17,7 @@ You can even use Rivers early in your graph to help carve pathways and valleys f
 
 Rivers and Lakes can work together to create a comprehensive water element for your terrains. See the Quickstart "Rivers and Lakes" on how to combine them and produce colors from the combined water depth.
 
+## When to Use It
+Use Rivers when you want to generate believable river networks quickly, either to carve channels early or to add waterways later in the graph.
 
-
-# Properties
-
-
-
-
+## Properties

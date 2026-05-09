@@ -1,11 +1,17 @@
 ---
+description: Generates basic geometric terrain shapes for use as primitives or masks.
 title: Shape
 uid: shape
 order: 21
-description: Learn about the Shape node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Shape
 
+## When to Use It
+Use Shape when you need basic geometric terrain shapes for use as primitives or masks.
 
-# Properties
+## Visual Direction
 
+![](/.data/assets/Shape_VD.png)
+
+## Properties

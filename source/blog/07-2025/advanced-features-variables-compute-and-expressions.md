@@ -2,6 +2,7 @@
 title: "Advanced Features: Variables, Compute, and Expressions"
 uid: advanced-features-variables-compute-and-expressions
 modified: "2025-07-21T13:59:32Z"
+description: Gaea is built around a very powerful, flexible, and extensible core.
 ---
 
 Gaea is built around a very powerful, flexible, and extensible core. With Gaea 2.1.1 we introduced a range of new advanced power-user features that can help you transform a Gaea project into a parametric powerhouse.

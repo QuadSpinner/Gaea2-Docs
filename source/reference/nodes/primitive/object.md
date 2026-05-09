@@ -1,10 +1,15 @@
 ---
+description: Loads external object or mesh data for use inside the graph.
 title: Object
 uid: object
 order: 17
-description: Learn about the Object node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Object
 
+## When to Use It
+Use Object when you need loads external object or mesh data for use inside the graph.
 
-# Properties
+## Visual Direction
+
+## Properties

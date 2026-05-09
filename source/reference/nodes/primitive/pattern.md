@@ -1,11 +1,17 @@
 ---
+description: Generates repeatable geometric or decorative patterns for masking and stylized terrain work.
 title: Pattern
 uid: pattern
 order: 18
-description: Learn about the Pattern node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Pattern
 
+## When to Use It
+Use Pattern when you need repeatable geometric or decorative patterns for masking and stylized terrain work.
 
-# Properties
+## Visual Direction
 
+![](/.data/assets/Pattern_VD.png)
+
+## Properties

@@ -2,6 +2,7 @@
 title: Gaea 1.3 Bleeding Edge
 uid: gaea-1-3-bleeding-edge
 modified: "2021-10-08T14:25:57Z"
+description: It has been a long road, but we're very pleased to report that the Gaea 1.3 development is in its final stages.
 ---
 
 It has been a long road, but we're very pleased to report that the Gaea 1.3 development is in its final stages. We will release a few Bleeding Edge builds between now and the final release (late October to early November).

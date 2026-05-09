@@ -2,6 +2,7 @@
 title: Gaea 2.2.7 - Christmas Release
 uid: gaea-2-2-7-christmas-release
 modified: "2025-12-24T14:52:16Z"
+description: During our recent announcement about Gaea 3, we also mentioned how any major issues in 2.0 would be addressed before 3.0 and made available to Gaea 2.
 ---
 
 During our recent announcement about Gaea 3, we also mentioned how any major issues in 2.0 would be addressed before 3.0 and made available to Gaea 2 users free of cost. Gaea 2.2.7 is a small version bump in numbers, but a MAJOR increment in Gaea's stability and usefulness. 

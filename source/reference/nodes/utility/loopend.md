@@ -1,17 +1,13 @@
 ---
+description: Ends a Loop circuit. 
 title: LoopEnd
 uid: loopend
 order: 11
-description: Learn about the LoopEnd node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# LoopEnd
 
+## When to Use It
+Use LoopEnd when the graph needs routing, layering, or control logic instead of a new terrain feature.
 
-
-
-
-# Properties
-
-
-
-
+## Properties

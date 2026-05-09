@@ -1,10 +1,17 @@
 ---
+description: Cellular creates cell-based patterns and noises that can be quite versatile as they're ever-present in nature.
 title: Cellular
 uid: cellular
 order: 01
-description: Learn about the Cellular node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Cellular
 
+## When to Use It
+Use Cellular when you need cell-based patterns and noises that can be quite versatile as they're ever-present in nature.
 
-# Properties
+## Visual Direction
+
+![](/.data/assets/Cellular_VD.png)
+
+## Properties

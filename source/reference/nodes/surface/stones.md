@@ -1,11 +1,15 @@
 ---
+description: Scatters stones or small rock forms across the surface.
 title: Stones
 uid: stones
 order: 19
-description: Learn about the Stones node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Stones
 
+## When to Use It
+Use Stones when you need scatters stones or small rock forms across the surface.
 
-# Properties
+## Visual Direction
 
+## Properties

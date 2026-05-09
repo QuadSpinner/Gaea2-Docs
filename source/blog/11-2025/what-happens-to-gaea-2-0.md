@@ -2,6 +2,7 @@
 title: What happens to Gaea 2.0?
 uid: what-happens-to-gaea-2-0
 modified: "2025-11-25T14:20:14Z"
+description: "How We Ship 2.0 While R&D Moves to 3.0: Parallel Development, Roadmap Delivery, and more."
 ---
 
 **How We Ship 2.0 While R&D Moves to 3.0: Parallel Development, Roadmap Delivery, and more.**

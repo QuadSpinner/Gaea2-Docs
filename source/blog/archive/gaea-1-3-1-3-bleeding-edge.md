@@ -2,6 +2,7 @@
 title: Gaea 1.3.1.3 Bleeding Edge
 uid: gaea-1-3-1-3-bleeding-edge
 modified: "2025-07-22T21:38:46Z"
+description: This penultimate release for the 1.3.1 series brings highly requested changes, including an overhauled undo system, new undo-related tooling.
 ---
 
 *This penultimate release for the 1.3.1 series brings highly requested changes, including an overhauled undo system, new undo-related tooling, auto-recovery options, and more.*

@@ -1,13 +1,13 @@
 ---
+description: Converts the terrain or mask into a halftone-style rendered output.
 title: Halftone
 uid: halftone
 order: 04
-description: Learn about the Halftone node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Halftone
 
+## When to Use It
+Use Halftone when you need converts the terrain or mask into a halftone-style rendered output.
 
-# Properties
-
-
-
+## Properties

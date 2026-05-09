@@ -1,12 +1,15 @@
 ---
+description: Sediments creates a thick layer of generic sedimentation on top of the terrain, which can be used for sand or snow.
 title: Sediments
 uid: sediments
 order: 17
-description: Learn about the Sediments node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Sediments
 
+## When to Use It
+Use Sediments when you need a thick layer of generic sedimentation on top of the terrain, which can be used for sand or snow.
 
-# Properties
+## Visual Direction
 
-
+## Properties

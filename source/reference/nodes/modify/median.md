@@ -1,11 +1,17 @@
 ---
+description: Applies a median filter to remove spikes, speckles, and small noise while preserving edges better than blur.
 title: Median
 uid: median
 order: 22
-description: Learn about the Median node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Median
 
+## When to Use It
+Use Median when the terrain shape is mostly working and you need a targeted reshape, filter, or remap pass.
 
-# Properties
+## Visual Direction
 
+![](/.data/assets/Median_VD.png)
+
+## Properties

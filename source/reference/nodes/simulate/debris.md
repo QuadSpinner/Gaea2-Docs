@@ -1,10 +1,15 @@
 ---
+description: Simulates loose debris across the terrain surface to create broken rocky accumulation.
 title: Debris
 uid: debris
 order: 03
-description: Learn about the Debris node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
 # Debris
 
-# Properties
+## When to Use It
+Use Debris when you need simulates loose debris across the terrain surface to create broken rocky accumulation.
+
+## Visual Direction
+
+## Properties

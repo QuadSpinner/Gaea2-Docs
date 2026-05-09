@@ -1,11 +1,19 @@
 ---
+description: Creates an ambient occlusion map that darkens recessed areas and enhances terrain depth.
 title: AO
 uid: ao
 order: 01
-description: Learn about the AO node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# AO
 
+<!-- AUTO-VIDEO-LINK:START -->
+## Official Video
 
-# Properties
+For a video breakdown of this node, see [the official AO video](/videos/official/nodes/yt-ao.html).
+<!-- AUTO-VIDEO-LINK:END -->
 
+## When to Use It
+Use AO when you need an ambient occlusion map for previewing depth or driving downstream texturing and shading.
+
+## Properties

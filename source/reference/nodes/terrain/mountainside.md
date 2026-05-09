@@ -1,15 +1,17 @@
 ---
+description: Generates a single mountain slope or mountainside formation.
 title: MountainSide
 uid: mountainside
 order: 08
-description: Learn about the MountainSide node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# MountainSide
 
+## When to Use It
+Use MountainSide when you need a single mountain slope or mountainside formation.
 
-# Properties
+## Visual Direction
 
-  
+![](/.data/assets/MountainSide_VD.png)
 
-
-
+## Properties

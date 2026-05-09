@@ -1,14 +1,15 @@
 ---
+description: Creates accumulations of loose rock fragments scattered across slopes and terrain edges.
 title: Scree
 uid: scree
 order: 15
-description: Learn about the Scree node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Scree
 
+## When to Use It
+Use Scree when you need accumulations of loose rock fragments scattered across slopes and terrain edges.
 
-# Properties
+## Visual Direction
 
-
-
-
+## Properties

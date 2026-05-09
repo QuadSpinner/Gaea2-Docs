@@ -2,6 +2,7 @@
 title: Gaea 1.3 now available
 uid: gaea-1-3-now-available
 modified: "2025-07-22T21:38:42Z"
+description: One of our longest development cycles is finally over.
 ---
 
 One of our longest development cycles is finally over. We're happy to announce that Gaea 1.3 - our biggest and most powerful update yet - is ready for production! 

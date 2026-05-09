@@ -1,10 +1,15 @@
 ---
+description: Creates scattered pits, dents, and small impact-like depressions on the surface.
 title: Pockmarks
 uid: pockmarks
 order: 10
-description: Learn about the Pockmarks node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Pockmarks
 
+## When to Use It
+Use Pockmarks when you need scattered pits, dents, and small impact-like depressions on the surface.
 
-# Properties
+## Visual Direction
+
+## Properties

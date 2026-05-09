@@ -1,12 +1,15 @@
 ---
+description: Creates broad settled snow coverage across the terrain surface.
 title: Snowfield
 uid: snowfield
 order: 20
-description: Learn about the Snowfield node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Snowfield
 
+## When to Use It
+Use Snowfield when you need broad settled snow coverage across the terrain surface.
 
-# Properties
+## Visual Direction
 
-
+## Properties

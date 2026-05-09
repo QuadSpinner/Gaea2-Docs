@@ -1,12 +1,11 @@
 ---
+description: The Crater primitive creates different types of crater shapes.
 title: Crater
 uid: crater
 order: 02
-description: The Crater primitive creates different types of crater shapes.
 ---
 
-
-
+# Crater
 
 The Crater primitive creates different types of crater shapes. Like all primitives, it is not meant to be the finished product, but rather a starting point from which to develop your own detailed shape.
 
@@ -26,7 +25,11 @@ Craters can be either *volcanic*, which start at the base and go up in a conical
 <figcaption>Volcanic Crater: The base is a flat area and easier to combine with existing terrains.</figcaption>
 </figure>
 
+## When to Use It
+Use Crater when you need a controllable volcanic or impact crater base that can be developed further with erosion, blending, or surface detail.
 
+## Visual Direction
 
-# Properties
+![](/.data/assets/Crater_VD.png)
 
+## Properties

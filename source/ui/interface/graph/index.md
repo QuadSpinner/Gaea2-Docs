@@ -29,7 +29,7 @@ Node graphs go from left to right, never the opposite. They represent a one-way 
 
 To learn more about node graphs, see @procedural-workflow.
 
-Also see @lock-preview-and-underlays.
+Also see @lock-preview.
 
 ### Conveniences
 

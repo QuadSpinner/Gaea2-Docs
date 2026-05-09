@@ -2,6 +2,7 @@
 title: Gaea 1.2.1
 uid: gaea-1-2-1
 modified: "2020-11-27T11:33:58Z"
+description: We are pleased to announce the Production Ready release of Gaea 1.2.1.2 which was in Bleeding Edge for a while.
 ---
 
 We are pleased to announce the **Production Ready** release of **Gaea 1.2.1.2** which was in Bleeding Edge for a while.

@@ -1,9 +1,13 @@
 ---
+description: Defines an input or output port inside a macro for passing height, mask, or color data.
 title: MacroPort
 uid: macroport
 order: 10
-description: Learn about the MacroPort node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# MacroPort
 
-# Properties
+## When to Use It
+Use MacroPort when the graph needs routing, layering, or control logic instead of a new terrain feature.
+
+## Properties

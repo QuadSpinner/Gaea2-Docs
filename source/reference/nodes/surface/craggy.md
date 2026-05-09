@@ -1,13 +1,15 @@
 ---
+description: Turns a terrain's surface into a craggy, rocky, broken landscape.
 title: Craggy
 uid: craggy
 order: 04
-description: Learn about the Craggy node in Gaea, including its purpose, controls, and typical terrain workflows.
 ---
 
+# Craggy
 
+## When to Use It
+Use Craggy when you need turns a terrain's surface into a craggy, rocky, broken landscape.
 
-# Properties
+## Visual Direction
 
-
-
+## Properties

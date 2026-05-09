@@ -72,4 +72,4 @@ Here are some additional ideas.
          if(SomeVar, 0.3, 0.6)
 ```
 
-For a full list of available options, see [Broken link](broken-reference)
+For a full list of available options, see @functions.

@@ -11,5 +11,7 @@ ColorThreshold creates a grayscale mask from a color input by selecting pixels c
 
 The Color property sets the color to match. Falloff controls how wide the match is. A low Falloff selects only colors very close to the chosen value, while a higher Falloff includes a broader range of similar shades and creates a softer result.
 
-# Properties
+## When to Use It
+Use ColorThreshold when you need learn about the ColorThreshold node in Gaea, including its purpose, controls, and typical terrain workflows.
 
+## Properties

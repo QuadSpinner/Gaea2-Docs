@@ -13,7 +13,7 @@ Importing terrains into Unreal Engine can be a complicated process, especially w
 
 ## Exporting your Terrain
 
-See the @unreal-node section on how to prepare your terrain for export.
+See @unreal-import for the Unreal export workflow and the Unreal node setup.
 
 ## Importing into Unreal Engine 5
 

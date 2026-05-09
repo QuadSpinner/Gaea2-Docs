@@ -18,7 +18,7 @@ Gaea is primarily an asset generator designed for creating and exporting terrain
 ![Export node for Bitmap export](/.data/assets/image-(3).png){.w-50}
 :::
 
-* **Node Types**: Utilize specific output nodes, such as Mesher for mesh generation, Point Cloud for simple XY point cloud export, or platform-specific nodes like @unreal-node and @unity-node, to export your assets.
+* **Node Types**: Utilize specific output nodes, such as Mesher for mesh generation, Point Cloud for simple XY point cloud export, or platform-specific nodes like @unreal and @unity, to export your assets.
 * **Customization**: Depending on the output node type, you can adjust settings such as map sizes for Unreal, file naming conventions, or mesh topology and vertex count for Mesher.
 * **Naming Conventions**: The name of the exported file matches the name of the Output node, streamlining asset management and integration into other projects.
 

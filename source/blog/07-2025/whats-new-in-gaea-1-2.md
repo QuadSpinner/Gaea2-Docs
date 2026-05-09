@@ -2,6 +2,7 @@
 title: "What's new in Gaea 1.2?"
 uid: whats-new-in-gaea-1-2
 modified: "2025-07-22T21:38:24Z"
+description: Gaea 1.2 is the largest feature update to Gaea since the original release.
 ---
 
 Gaea 1.2 is the largest feature update to Gaea since the original release. It features an improved user interface, a new 2.5D heightfield renderer for the viewport, LookDev nodes, several new primitives, and major performance improvements.
