@@ -1,3 +1,0 @@
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\modify\blobremover.md|/.data/assets/Gaea_-_Untitled_10-43-03-PM.webp
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\modify\transform.md|/.data/assets/transform.png
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\compare.md|/.data/assets/compare.png

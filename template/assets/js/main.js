@@ -62,7 +62,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 $(document).ready(function () {
 
-  enhanceNodeReferenceLayout();
+  // enhanceNodeReferenceLayout();
 
   $(".image-row > p").each(function () {
     $(this).replaceWith($(this).contents());
@@ -132,7 +132,7 @@ function enhanceNodeReferenceLayout() {
   details.className = "node-guidance";
 
   const summary = document.createElement("summary");
-  summary.innerHTML = "<span>Usage, videos, and visuals</span><small>Open for usage notes, videos, and visual direction.</small>";
+  summary.innerHTML = "<span>Usage, videos, and visuals</span> <i class='fa-duotone fa-light fa-caret-large-down'></i>";
   details.appendChild(summary);
 
   const body = document.createElement("div");

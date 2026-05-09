@@ -8387,7 +8387,7 @@
     "Flubs": [
       {
         "Name": "Snow",
-        "Description": "Controls the length of time snow accumulates on the terrain, affecting overall snow coverage and depth.",
+        "Description": "",
         "IsGroup": true
       },
       {
@@ -8495,122 +8495,122 @@
     "Flubs": [
       {
         "Name": "Snow",
-        "Description": "",
+        "Description": "Control the snow cascades. Small variations will be added per cascade.",
         "IsGroup": true
       },
       {
         "Name": "Cascades",
-        "Description": "",
+        "Description": "The number of cascades, or periods of snowfall.",
         "Type": "Int32"
       },
       {
         "Name": "Duration",
-        "Description": "",
+        "Description": "Controls the length of time snow accumulates on the terrain, affecting overall snow coverage and depth.",
         "Type": "Single"
       },
       {
         "Name": "Intensity",
-        "Description": "",
+        "Description": "Determines the rate at which snow falls and accumulates, influencing the thickness and density of the snow layer.",
         "Type": "Single"
       },
       {
         "Name": "Taper Snowfall",
-        "Description": "",
+        "Description": "Sequentially reduce the amount of snowfall per cascade.",
         "Type": "Boolean"
       },
       {
         "Name": "Taper Amount",
-        "Description": "",
+        "Description": "The amount to reduce in each snowfall period.",
         "Type": "Single"
       },
       {
         "Name": "Settle Duration",
-        "Description": "",
+        "Description": "Specifies the time it takes for freshly fallen snow to settle and compact, impacting the smoothness and stability of the snow surface.",
         "Type": "Single"
       },
       {
         "Name": "Melt",
-        "Description": "",
+        "Description": "Snow melts evenly across the entire terrain, resulting in a consistent reduction of snow coverage.",
         "Type": "Single"
       },
       {
         "Name": "Snow Line",
-        "Description": "",
+        "Description": "Defines the altitude or threshold below which snow does not accumulate, simulating natural snow lines on mountains.",
         "Type": "Single"
       },
       {
         "Name": "Advanced",
-        "Description": "",
+        "Description": "Specifies the minimum slope angle at which snow will slide off, affecting snow accumulation on steep surfaces.",
         "IsGroup": true
       },
       {
         "Name": "Slip-off angle",
-        "Description": "",
+        "Description": "Specifies the minimum slope angle at which snow will slide off, affecting snow accumulation on steep surfaces.",
         "Type": "Single"
       },
       {
         "Name": "Adhered snow mass",
-        "Description": "",
+        "Description": "Controls the amount of snow that remains attached to surfaces, even on steep or vertical terrain.",
         "Type": "Single"
       },
       {
         "Name": "Flows",
-        "Description": "",
+        "Description": "Create flow structures like furrows and grooves from sharp snow accumulation.",
         "Type": "Boolean"
       },
       {
         "Name": "Flows Depth",
-        "Description": "",
+        "Description": "The depth of the flow structures.",
         "Type": "Single"
       },
       {
         "Name": "Seed",
-        "Description": "",
+        "Description": "Sets the randomization seed for snow distribution, ensuring reproducible results or introducing variation in snow patterns.",
         "Type": "Int32"
       },
       {
         "Name": "Sharp Buildup",
-        "Description": "",
+        "Description": "Forces sharp edges where large amounts of snow gets piled up.",
         "Type": "Boolean"
       },
       {
         "Name": "Alternate Snowfall",
-        "Description": "",
+        "Description": "Use an alternate algorithm to create snow cascades.",
         "Type": "Boolean"
       },
       {
         "Name": "Surface Details",
-        "Description": "",
+        "Description": "Add small surface details to accentuate snow buildup.",
         "Type": "Single"
       },
       {
         "Name": "Direction",
-        "Description": "",
+        "Description": "The general direction of snowfall.",
         "Type": "Enum",
         "Flubs": [
           {
             "Name": "X",
-            "Description": "<desc>",
+            "Description": "None",
             "Type": "EnumValue"
           },
           {
             "Name": "N",
-            "Description": "<desc>",
+            "Description": "North",
             "Type": "EnumValue"
           },
           {
             "Name": "E",
-            "Description": "<desc>",
+            "Description": "East",
             "Type": "EnumValue"
           },
           {
             "Name": "S",
-            "Description": "<desc>",
+            "Description": "South",
             "Type": "EnumValue"
           },
           {
             "Name": "W",
-            "Description": "<desc>",
+            "Description": "West",
             "Type": "EnumValue"
           }
         ]

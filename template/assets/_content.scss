@@ -103,12 +103,12 @@
     .node-guidance {
         margin: 0 0 24px;
         border: 1px solid #ffffff1a;
-        border-left: 3px solid var(--family);
-        border-radius: 8px;
-        background: linear-gradient(180deg, #ffffff08, #00000012);
+        border-left: 1.5px solid var(--family);
+        border-radius: 4px;
+        background: #ffffff08;
         overflow: hidden;
 
-        > summary {
+        >summary {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -131,24 +131,13 @@
                 color: #888;
                 font-size: 12px;
             }
-
-            &::after {
-                content: "+";
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                width: 24px;
-                height: 24px;
-                border: 1px solid #ffffff1f;
-                border-radius: 999px;
-                color: var(--family);
-                flex: 0 0 auto;
-            }
         }
 
-        &[open] > summary::after {
-            content: "-";
-        }
+    &[open] {
+      > summary i {
+        transform: scaleY(-1);
+      }
+    }
 
         .node-guidance-body {
             padding: 4px 16px 16px;
@@ -383,13 +372,14 @@ figure {
     .title-desc {
         font-weight: 400;
         text-align: left !important;
+        font-size: 12px;
     }
 
     th,
     td {
         vertical-align: top;
         border: 1px solid #fff1;
-        padding: 8px;
+        padding: 12px !important;
         font-size: 14px;
 
         i:not(.choice i) {

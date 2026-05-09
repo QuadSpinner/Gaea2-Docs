@@ -1,143 +1,143 @@
 ﻿[
   {
     "Name": "Snow",
-    "Description": "",
+    "Description": "Control the snow cascades. Small variations will be added per cascade.",
     "IsGroup": true
   },
   {
     "Name": "Cascades",
-    "Description": "",
+    "Description": "The number of cascades, or periods of snowfall.",
     "Type": "Int32",
     "IsGroup": false
   },
   {
     "Name": "Duration",
-    "Description": "",
+    "Description": "Controls the length of time snow accumulates on the terrain, affecting overall snow coverage and depth.",
     "Type": "Single",
     "IsGroup": false
   },
   {
     "Name": "Intensity",
-    "Description": "",
+    "Description": "Determines the rate at which snow falls and accumulates, influencing the thickness and density of the snow layer.",
     "Type": "Single",
     "IsGroup": false
   },
   {
     "Name": "Taper Snowfall",
-    "Description": "",
+    "Description": "Sequentially reduce the amount of snowfall per cascade.",
     "Type": "Boolean",
     "IsGroup": false
   },
   {
     "Name": "Taper Amount",
-    "Description": "",
+    "Description": "The amount to reduce in each snowfall period.",
     "Type": "Single",
     "IsGroup": false
   },
   {
     "Name": "Settle Duration",
-    "Description": "",
+    "Description": "Specifies the time it takes for freshly fallen snow to settle and compact, impacting the smoothness and stability of the snow surface.",
     "Type": "Single",
     "IsGroup": false
   },
   {
     "Name": "Melt",
-    "Description": "",
+    "Description": "Snow melts evenly across the entire terrain, resulting in a consistent reduction of snow coverage.",
     "Type": "Single",
     "IsGroup": false
   },
   {
     "Name": "Snow Line",
-    "Description": "",
+    "Description": "Defines the altitude or threshold below which snow does not accumulate, simulating natural snow lines on mountains.",
     "Type": "Single",
     "IsGroup": false
   },
   {
     "Name": "Advanced",
-    "Description": "",
+    "Description": "Specifies the minimum slope angle at which snow will slide off, affecting snow accumulation on steep surfaces.",
     "IsGroup": true
   },
   {
     "Name": "Slip-off angle",
-    "Description": "",
+    "Description": "Specifies the minimum slope angle at which snow will slide off, affecting snow accumulation on steep surfaces.",
     "Type": "Single",
     "IsGroup": false
   },
   {
     "Name": "Adhered snow mass",
-    "Description": "",
+    "Description": "Controls the amount of snow that remains attached to surfaces, even on steep or vertical terrain.",
     "Type": "Single",
     "IsGroup": false
   },
   {
     "Name": "Flows",
-    "Description": "",
+    "Description": "Create flow structures like furrows and grooves from sharp snow accumulation.",
     "Type": "Boolean",
     "IsGroup": false
   },
   {
     "Name": "Flows Depth",
-    "Description": "",
+    "Description": "The depth of the flow structures.",
     "Type": "Single",
     "IsGroup": false
   },
   {
     "Name": "Seed",
-    "Description": "",
+    "Description": "Sets the randomization seed for snow distribution, ensuring reproducible results or introducing variation in snow patterns.",
     "Type": "Int32",
     "IsGroup": false
   },
   {
     "Name": "Sharp Buildup",
-    "Description": "",
+    "Description": "Forces sharp edges where large amounts of snow gets piled up.",
     "Type": "Boolean",
     "IsGroup": false
   },
   {
     "Name": "Alternate Snowfall",
-    "Description": "",
+    "Description": "Use an alternate algorithm to create snow cascades.",
     "Type": "Boolean",
     "IsGroup": false
   },
   {
     "Name": "Surface Details",
-    "Description": "",
+    "Description": "Add small surface details to accentuate snow buildup.",
     "Type": "Single",
     "IsGroup": false
   },
   {
     "Name": "Direction",
-    "Description": "",
+    "Description": "The general direction of snowfall.",
     "Type": "Enum",
     "IsGroup": false,
     "Flubs": [
       {
         "Name": "X",
-        "Description": "<desc>",
+        "Description": "None",
         "Type": "EnumValue",
         "IsGroup": false
       },
       {
         "Name": "N",
-        "Description": "<desc>",
+        "Description": "North",
         "Type": "EnumValue",
         "IsGroup": false
       },
       {
         "Name": "E",
-        "Description": "<desc>",
+        "Description": "East",
         "Type": "EnumValue",
         "IsGroup": false
       },
       {
         "Name": "S",
-        "Description": "<desc>",
+        "Description": "South",
         "Type": "EnumValue",
         "IsGroup": false
       },
       {
         "Name": "W",
-        "Description": "<desc>",
+        "Description": "West",
         "Type": "EnumValue",
         "IsGroup": false
       }

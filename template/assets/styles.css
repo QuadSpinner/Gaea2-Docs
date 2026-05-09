@@ -206,9 +206,9 @@ body[data-node-category=Macro] {
 #contents .node-guidance {
   margin: 0 0 24px;
   border: 1px solid rgba(255, 255, 255, 0.1019607843);
-  border-left: 3px solid var(--family);
-  border-radius: 8px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.031372549), rgba(0, 0, 0, 0.0705882353));
+  border-left: 1.5px solid var(--family);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.031372549);
   overflow: hidden;
 }
 #contents .node-guidance > summary {
@@ -232,20 +232,8 @@ body[data-node-category=Macro] {
   color: #888;
   font-size: 12px;
 }
-#contents .node-guidance > summary::after {
-  content: "+";
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.1215686275);
-  border-radius: 999px;
-  color: var(--family);
-  flex: 0 0 auto;
-}
-#contents .node-guidance[open] > summary::after {
-  content: "-";
+#contents .node-guidance[open] > summary i {
+  transform: scaleY(-1);
 }
 #contents .node-guidance .node-guidance-body {
   padding: 4px 16px 16px;
@@ -435,12 +423,13 @@ figure img {
 .properties-table .title-desc {
   font-weight: 400;
   text-align: left !important;
+  font-size: 12px;
 }
 .properties-table th,
 .properties-table td {
   vertical-align: top;
   border: 1px solid rgba(255, 255, 255, 0.0666666667);
-  padding: 8px;
+  padding: 12px !important;
   font-size: 14px;
 }
 .properties-table th i:not(.choice i),
@@ -714,13 +703,16 @@ figure img {
 }
 #page-nav ul li.h2 > a {
   font-weight: 600;
+  padding-left: 12px;
 }
 #page-nav ul li.h3 > a {
   font-weight: 500;
+  padding-left: 24px;
 }
 #page-nav ul li.h4 > a {
   font-size: 13px;
   font-weight: 500;
+  padding-left: 36px;
 }
 
 .note {
