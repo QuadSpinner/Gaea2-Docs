@@ -12,4 +12,6 @@ Use Bulbous when you need inflates existing shapes to make them more voluminous 
 
 ## Visual Direction
 
+![](/.data/assets/Bulbous_VD.png)
+
 ## Properties

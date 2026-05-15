@@ -12,4 +12,6 @@ Use Distress when you need superficial wear, breakup, and irregular damage to a 
 
 ## Visual Direction
 
+![](/.data/assets/Distress_VD.png)
+
 ## Properties

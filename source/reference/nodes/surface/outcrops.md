@@ -12,4 +12,6 @@ Use Outcrops when you need lookDev node creates rocky outcrops on any surface.
 
 ## Visual Direction
 
+![](/.data/assets/Outcrops_VD.png)
+
 ## Properties

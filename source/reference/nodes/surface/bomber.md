@@ -14,4 +14,6 @@ Use Bomber when you need takes an input heightfield and "stamps" or bombs it acr
 
 ## Visual Direction
 
+![](/.data/assets/Bomber_VD.png)
+
 ## Properties

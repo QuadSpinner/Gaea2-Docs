@@ -12,4 +12,6 @@ Use Pockmarks when you need scattered pits, dents, and small impact-like depress
 
 ## Visual Direction
 
+![](/.data/assets/Pockmarks_VD.png)
+
 ## Properties

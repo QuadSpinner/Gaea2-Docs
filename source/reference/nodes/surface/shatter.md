@@ -12,4 +12,6 @@ Use Shatter when you need transforms simple shapes into complex, highly eroded, 
 
 ## Visual Direction
 
+![](/.data/assets/Shatter_VD.png)
+
 ## Properties

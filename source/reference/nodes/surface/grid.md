@@ -12,4 +12,6 @@ Use Grid when you need a regular grid pattern useful for cartography, masking, o
 
 ## Visual Direction
 
+![](/.data/assets/Grid_VD.png)
+
 ## Properties

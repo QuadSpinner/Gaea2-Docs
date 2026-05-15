@@ -14,4 +14,6 @@ Use Stratify when the terrain needs broken rock layering or sedimentary bands th
 
 ## Visual Direction
 
+![](/.data/assets/Stratify_VD.png)
+
 ## Properties

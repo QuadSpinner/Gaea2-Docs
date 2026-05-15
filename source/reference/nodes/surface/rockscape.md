@@ -12,4 +12,6 @@ Use Rockscape when the terrain needs broad rocky massing or broken stone forms l
 
 ## Visual Direction
 
+![](/.data/assets/Rockscape_VD.png)
+
 ## Properties

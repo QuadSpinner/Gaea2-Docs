@@ -16,4 +16,6 @@ Use RockNoise when you need a useful tool for generating fields of rocks with si
 
 ## Visual Direction
 
+![](/.data/assets/RockNoise_VD.png)
+
 ## Properties

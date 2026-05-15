@@ -12,4 +12,6 @@ Use Steps when you need stepped formations and hard terrace-like breaks in the t
 
 ## Visual Direction
 
+![](/.data/assets/Steps_VD.png)
+
 ## Properties

@@ -16,4 +16,6 @@ Use FractalTerraces when the landform needs stepped stratification with more nat
 
 ## Visual Direction
 
+![](/.data/assets/FractalTerraces_VD.png)
+
 ## Properties

@@ -12,4 +12,6 @@ Use Sand when broad landforms are already in place and the terrain needs dune-li
 
 ## Visual Direction
 
+![](/.data/assets/Sand_VD.png)
+
 ## Properties

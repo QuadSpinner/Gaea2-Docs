@@ -12,4 +12,6 @@ Use GroundTexture when you need superficial detail to the terrain to increase re
 
 ## Visual Direction
 
+![](/.data/assets/GroundTexture_VD.png)
+
 ## Properties

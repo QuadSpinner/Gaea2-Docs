@@ -12,4 +12,6 @@ Use Contours when you need map-like contours for a terrain.
 
 ## Visual Direction
 
+![](/.data/assets/Contours_VD.png)
+
 ## Properties

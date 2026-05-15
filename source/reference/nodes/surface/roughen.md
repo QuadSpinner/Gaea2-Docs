@@ -12,4 +12,6 @@ Use Roughen when you need fine roughness and small-scale breakup to the terrain 
 
 ## Visual Direction
 
+![](/.data/assets/Roughen_VD.png)
+
 ## Properties

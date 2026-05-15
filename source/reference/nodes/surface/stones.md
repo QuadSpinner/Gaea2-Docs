@@ -12,4 +12,6 @@ Use Stones when you need scatters stones or small rock forms across the surface.
 
 ## Visual Direction
 
+![](/.data/assets/Stones_VD.png)
+
 ## Properties

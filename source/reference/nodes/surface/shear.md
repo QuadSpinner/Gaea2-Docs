@@ -12,4 +12,6 @@ Use Shear when you need rock shearing and exposes strata.
 
 ## Visual Direction
 
+![](/.data/assets/Shear_VD.png)
+
 ## Properties

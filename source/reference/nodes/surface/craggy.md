@@ -12,4 +12,6 @@ Use Craggy when you need turns a terrain's surface into a craggy, rocky, broken 
 
 ## Visual Direction
 
+![](/.data/assets/Craggy_VD.png)
+
 ## Properties
