@@ -78,18 +78,6 @@ Rebuild notes:
 
 This does not need to become a large document. It only needs to answer the questions that would otherwise interrupt the next person.
 
-## Confirm it in Gaea
-
-This guide should include captures from the actual package workflow:
-
-* named output nodes in the graph
-* the Build Options destination for the package
-* the option that copies the `.terrain` source into the build folder, when used
-* a Build Report for the final build
-* the final package folder with height, masks, preview, and source snapshot visible
-
-Those screenshots are important because packaging is easy to describe vaguely. The useful part is showing the exact Gaea settings and the resulting files.
-
 ## Stop before sending if
 
 Do one final pass before handoff. Stop if the final file is named `final2`, masks do not explain black and white meaning, the package has no preview, source inputs are missing, scale has to be guessed, or old and final outputs are mixed together.

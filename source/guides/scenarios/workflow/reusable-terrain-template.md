@@ -39,15 +39,3 @@ If a template already looks like a finished terrain, it is probably too specific
 Create the graph stages with Groups or annotations. Add the scale note near the top of the graph. Name the starter output nodes. Save the useful Build Profiles. Add a small output checklist near the export area.
 
 Then keep the template clean. When a real project starts from it, save a new project file immediately and do the creative work there.
-
-## Confirm it in Gaea
-
-This guide should show:
-
-* the empty staged graph layout
-* the scale note annotation
-* named starter output nodes
-* the Build Profiles list
-* the experiments area separated from the main chain
-
-The point of the screenshots is to show restraint: the template gives a new project a clean start, while the first creative decision still belongs to that project.

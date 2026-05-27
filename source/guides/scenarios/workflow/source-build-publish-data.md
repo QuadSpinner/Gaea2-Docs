@@ -48,15 +48,3 @@ When reproducibility matters, copy the `.terrain` file into the build folder. Wh
 The common failure is linking a downstream tool directly to a random numbered build folder. A week later, a newer build exists, but the DCC still points at the older one. Or the opposite happens: someone deletes a build folder that was quietly acting as the source of truth.
 
 Generated build folders are history. A `Latest` or `_publish/Latest` folder is a contract.
-
-## Confirm it in Gaea
-
-This guide should include captures that show the workflow, not just the folder idea:
-
-* Build Options with the destination pointed at `_builds/final/`
-* static latest folder enabled for a final build
-* named output nodes producing readable files
-* a generated `_builds/final/Latest/` folder beside numbered history
-* an optional `_publish/Latest/` folder containing only delivery files
-
-Once this is working, another artist can find the editable source, the required inputs, the generated builds, and the current delivery without asking which folder is real.

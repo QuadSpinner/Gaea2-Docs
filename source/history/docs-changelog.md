@@ -12,28 +12,28 @@ The following tables list changes to individual pages. To see the exact change, 
 ## May 2026
 |  Id  | Page | Section | Last Modified |
 | ---- | ---- | ------- | ------------- |
-| 001 | [Terraces](/reference/nodes/surface/terraces.html) | Node Reference | 2026-05-27 |
-| 002 | [Glacier](/reference/nodes/simulate/glacier.html) | Node Reference | 2026-05-27 |
-| 003 | [EasyErosion](/reference/nodes/simulate/easyerosion.html) | Node Reference | 2026-05-27 |
-| 004 | [Debris](/reference/nodes/simulate/debris.html) | Node Reference | 2026-05-27 |
-| 005 | [Art Direct a Terrain from Reference to Final Mood](/guides/scenarios/helpful-info/art-direct-from-reference.html) | Guides | 2026-05-27 |
-| 006 | [Choose Resolution and Tiles Without Creating Seams](/guides/scenarios/large-projects/resolution-tiles-without-seams.html) | Guides | 2026-05-27 |
-| 007 | [Plan Scale, Height, and Resolution Before You Start](/guides/scenarios/helpful-info/plan-scale-height-resolution.html) | Guides | 2026-05-27 |
-| 008 | [Diagnose Why a Terrain Does Not Match the Look You Wanted](/guides/scenarios/helpful-info/diagnose-terrain-look.html) | Guides | 2026-05-27 |
-| 009 | [Create Clean Masks for Materials, Biomes, and Shaders](/guides/scenarios/workflow/clean-production-masks.html) | Guides | 2026-05-27 |
-| 010 | [Audit a Graph Before Build with Data View](/guides/scenarios/workflow/audit-graph-before-build.html) | Guides | 2026-05-27 |
-| 011 | [Build the Right Version Before You Export](/guides/scenarios/workflow/build-right-version.html) | Guides | 2026-05-27 |
-| 012 | [Keep Complex Graphs Readable as They Grow](/guides/scenarios/workflow/readable-complex-graphs.html) | Guides | 2026-05-27 |
-| 013 | [Work Faster with Keyboard-First Navigation](/guides/scenarios/workflow/keyboard-first-workflow.html) | Guides | 2026-05-27 |
-| 014 | [Keep File Nodes Portable with Relative Paths](/guides/scenarios/workflow/portable-file-node-paths.html) | Guides | 2026-05-27 |
-| 015 | [Debug Macros with Test Nodes Before Export](/guides/scenarios/workflow/debug-macros-with-test-nodes.html) | Guides | 2026-05-27 |
-| 016 | [Start New Projects with a Reusable Terrain Template](/guides/scenarios/workflow/reusable-terrain-template.html) | Guides | 2026-05-27 |
-| 017 | [Keep Source, Builds, and Publish Data Separate](/guides/scenarios/workflow/source-build-publish-data.html) | Guides | 2026-05-27 |
-| 018 | [Hand Off a Terrain to Another Artist Without Losing Intent](/guides/scenarios/workflow/handoff-terrain-intent.html) | Guides | 2026-05-27 |
-| 019 | [Explore Variations Without Breaking Your Main Graph](/guides/scenarios/workflow/explore-variations-safely.html) | Guides | 2026-05-27 |
-| 020 | [Deliver a Terrain Package That Others Can Use](/guides/scenarios/workflow/deliver-terrain-package.html) | Guides | 2026-05-27 |
-| 021 | [Build One Terrain for Game, Cinematic, and Closeup Outputs](/guides/scenarios/large-projects/multi-purpose-terrain-outputs.html) | Guides | 2026-05-27 |
-| 022 | [Use Profiles for Repeatable Builds and Automation](/guides/scenarios/large-projects/profile-driven-builds.html) | Guides | 2026-05-27 |
+| 001 | [Plan Scale, Height, and Resolution Before You Start](/guides/scenarios/helpful-info/plan-scale-height-resolution.html) | Guides | 2026-05-27 |
+| 002 | [Diagnose Why a Terrain Does Not Match the Look You Wanted](/guides/scenarios/helpful-info/diagnose-terrain-look.html) | Guides | 2026-05-27 |
+| 003 | [Art Direct a Terrain from Reference to Final Mood](/guides/scenarios/helpful-info/art-direct-from-reference.html) | Guides | 2026-05-27 |
+| 004 | [Start New Projects with a Reusable Terrain Template](/guides/scenarios/workflow/reusable-terrain-template.html) | Guides | 2026-05-27 |
+| 005 | [Keep Source, Builds, and Publish Data Separate](/guides/scenarios/workflow/source-build-publish-data.html) | Guides | 2026-05-27 |
+| 006 | [Keep Complex Graphs Readable as They Grow](/guides/scenarios/workflow/readable-complex-graphs.html) | Guides | 2026-05-27 |
+| 007 | [Keep File Nodes Portable with Relative Paths](/guides/scenarios/workflow/portable-file-node-paths.html) | Guides | 2026-05-27 |
+| 008 | [Debug Macros with Test Nodes Before Export](/guides/scenarios/workflow/debug-macros-with-test-nodes.html) | Guides | 2026-05-27 |
+| 009 | [Work Faster with Keyboard-First Navigation](/guides/scenarios/workflow/keyboard-first-workflow.html) | Guides | 2026-05-27 |
+| 010 | [Use Profiles for Repeatable Builds and Automation](/guides/scenarios/large-projects/profile-driven-builds.html) | Guides | 2026-05-27 |
+| 011 | [Deliver a Terrain Package That Others Can Use](/guides/scenarios/workflow/deliver-terrain-package.html) | Guides | 2026-05-27 |
+| 012 | [Explore Variations Without Breaking Your Main Graph](/guides/scenarios/workflow/explore-variations-safely.html) | Guides | 2026-05-27 |
+| 013 | [Choose Resolution and Tiles Without Creating Seams](/guides/scenarios/large-projects/resolution-tiles-without-seams.html) | Guides | 2026-05-27 |
+| 014 | [Hand Off a Terrain to Another Artist Without Losing Intent](/guides/scenarios/workflow/handoff-terrain-intent.html) | Guides | 2026-05-27 |
+| 015 | [Audit a Graph Before Build with Data View](/guides/scenarios/workflow/audit-graph-before-build.html) | Guides | 2026-05-27 |
+| 016 | [Build the Right Version Before You Export](/guides/scenarios/workflow/build-right-version.html) | Guides | 2026-05-27 |
+| 017 | [Build One Terrain for Game, Cinematic, and Closeup Outputs](/guides/scenarios/large-projects/multi-purpose-terrain-outputs.html) | Guides | 2026-05-27 |
+| 018 | [Create Clean Masks for Materials, Biomes, and Shaders](/guides/scenarios/workflow/clean-production-masks.html) | Guides | 2026-05-27 |
+| 019 | [Glacier](/reference/nodes/simulate/glacier.html) | Node Reference | 2026-05-27 |
+| 020 | [Terraces](/reference/nodes/surface/terraces.html) | Node Reference | 2026-05-27 |
+| 021 | [EasyErosion](/reference/nodes/simulate/easyerosion.html) | Node Reference | 2026-05-27 |
+| 022 | [Debris](/reference/nodes/simulate/debris.html) | Node Reference | 2026-05-27 |
 | 023 | [Terraces & FractalTerraces](/videos/official/nodes/yt-terraces-and-fractalterraces.html) | Videos | 2026-05-27 |
 | 024 | [FractalTerraces](/reference/nodes/surface/fractalterraces.html) | Node Reference | 2026-05-27 |
 | 025 | [Snowfield](/reference/nodes/simulate/snowfield.html) | Node Reference | 2026-05-27 |

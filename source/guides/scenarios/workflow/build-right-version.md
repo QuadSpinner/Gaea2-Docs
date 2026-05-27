@@ -32,15 +32,3 @@ Common finds include:
 * a DCC linked to a numbered archive instead of `Latest`
 * a renamed node changing a filename unexpectedly
 * masks visible in the graph but not marked for export
-
-## Confirm it in Gaea
-
-This guide should include:
-
-* the active Build Profile
-* the Build tab destination and resolution
-* the Nodes tab or Data View showing export-marked nodes
-* the generated output folder with current timestamps
-* a Build Report for the final build
-
-The build is ready to send when you can point to the output folder and say which profile made it, at what resolution, with which exported nodes, and why those files are the current deliverable.

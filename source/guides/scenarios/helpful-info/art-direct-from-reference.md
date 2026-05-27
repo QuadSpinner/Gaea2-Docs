@@ -34,16 +34,3 @@ This order matters because a convincing color pass cannot fix a weak landform. I
 Reference is also a filter. It helps reject detail that is too small for the camera, erosion that belongs to another climate, color that hides the landform, material masks that ignore slope or height, or a strong experiment that weakens the intended mood.
 
 When an idea is interesting but does not serve the reference, make it a variation. Do not let it quietly redirect the main terrain.
-
-## Confirm it in Gaea
-
-This guide should include:
-
-* the reference board or key reference image beside the Gaea result
-* macro shape before detail
-* erosion pass compared against the target terrain language
-* mask views for material or biome decisions
-* color or SatMap pass after the form is already readable
-* final preview from the intended camera distance
-
-The finished terrain should be explainable from the reference: "The wide plateau comes from this image, the shallow erosion supports the dry mood, the slope mask drives exposed rock, and the color stays muted so the landform remains readable."

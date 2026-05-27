@@ -31,16 +31,3 @@ You do not need to memorize every shortcut in Gaea. A small set of keyboard habi
 When a heavy graph keeps rebuilding, suspend the engine before editing several nodes. When output names are unclear, select the node and press `F2`. When you cannot find what will export, jump to the Build tab in Data View. When a branch may be damaging the result, bypass it with `B`. When wires run across the graph, use portals instead of dragging long connections through the whole terrain.
 
 These are small habits, but they keep attention on the terrain instead of the interface.
-
-## Confirm it in Gaea
-
-This guide should include short capture examples:
-
-* opening the Lazy Menu
-* creating a node with search
-* renaming an output node
-* suspending the engine in a heavy graph
-* using Data View to find export-marked nodes
-* bypassing a suspect branch
-
-The goal is not shortcut trivia. It is a faster daily rhythm for working through large graphs.

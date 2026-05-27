@@ -34,15 +34,3 @@ If the output differs from expectation, check @build-reports before guessing.
 * required baking before a tiled build
 * an orphaned branch that looks like production logic
 * one heavy node making the build feel broken
-
-## Confirm it in Gaea
-
-This guide should show:
-
-* Data View with the Terrain tab filters
-* Required Baking results before a tiled or Hybrid build
-* the Build tab listing export-marked nodes
-* an orphan-node cleanup example
-* a Build Report after a validation build
-
-After the audit, you should know what will export, what needs baking, what is slow, what is broken, and what should be removed or isolated.

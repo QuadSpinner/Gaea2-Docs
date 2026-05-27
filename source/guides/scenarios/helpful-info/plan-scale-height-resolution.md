@@ -32,17 +32,3 @@ Work at a fast preview resolution while designing macro shape. Choose final buil
 Stop if you only know the resolution, not the terrain width. Stop if the terrain looks correct only from one viewport camera. Stop if you are changing Terrain Definition after masks and erosion are finished. Stop if you cannot explain the terrain height in the receiving app.
 
 Those are signs the graph is carrying a scale decision that should have been made earlier.
-
-## Confirm it in Gaea
-
-This guide should include:
-
-* Terrain Definition showing width and height range
-* build resolution settings for preview and final profiles
-* a Region setup for closeup work
-* a tiled build setup for a larger world
-* the same terrain checked in the target app, when available
-
-Before the graph gets complex, you should be able to say: "This is a 4 km terrain, with about 700 m of useful relief, designed at 2K or 4K, built through a gameplay profile, with a focused Region for closeup work."
-
-That sentence gives the graph a physical target. It does not decide the art. It prevents scale from becoming a late-stage surprise.

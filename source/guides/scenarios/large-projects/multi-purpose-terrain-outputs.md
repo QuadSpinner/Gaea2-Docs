@@ -58,18 +58,6 @@ For a closeup near the summit, you use a Region or a separate detail file. You s
 
 All three outputs belong to the same terrain. None of them needs to compromise for the other two.
 
-## Confirm it in Gaea
-
-This guide should reserve space for real Gaea evidence:
-
-* a graph view showing the shared source branch and separate output lanes
-* the Build Profiles list with names like `Gameplay`, `Trailer_Wide`, and `Hero_Closeup`
-* a Region view for the closeup output
-* the Build tab or Data View showing which nodes are marked for export
-* output folders showing how the generated files differ by lane
-
-Those captures turn the workflow from a planning idea into a repeatable Gaea guide.
-
 ## Common wrong turns
 
 Building the whole world at closeup density is the expensive one. It slows the project and still may not give the closeup the art direction it needs.

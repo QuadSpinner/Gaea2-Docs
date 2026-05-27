@@ -71,17 +71,6 @@ They may all come from the same graph, but they are not the same build.
 
 Once a profile is correct, copy the command line from Gaea and use that command as the automation baseline. This matters because the command came from a build you already validated in the UI, not from a hand-written guess.
 
-## Confirm it in Gaea
-
-This guide should include real captures from Gaea when the workflow is documented:
-
-* the Profiles tab showing a small set of named profiles
-* the Batch Build Manager with multiple profiles queued
-* the Copy Command Line button or command output for one selected profile
-* an example build folder showing the files produced by two different profiles
-
-Those images make the guide concrete: the reader can see the profile names, the UI path, and the resulting output instead of treating profiles as an abstract production idea.
-
 ## A good profile is boring
 
 You know the setup is working when an artist or build machine can run `Final_8K`, `Unreal_Landscape`, or `Masks_Package` and get the expected output without recreating settings by hand.

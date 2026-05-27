@@ -56,18 +56,6 @@ Do not edit the main erosion chain directly. Bake or Gate the approved shape, du
 
 If the dry version wins, promote that branch into the main path. If it loses, delete or archive the branch without untangling the production graph.
 
-## Confirm it in Gaea
-
-This guide should include screenshots or captures that show the workflow in practice:
-
-* the approved baseline marked in the graph
-* a baked checkpoint or Gate before the variation branch
-* two named variation branches beside the main path
-* the Mutation or Variables setup when those are used
-* side-by-side preview or build outputs from the same review camera
-
-Those images make the guide useful because variation control is visual: the reader should be able to see how the graph avoids confusion.
-
 ## Exploration should end cleanly
 
 At the end, you should be able to show the baseline and variants side by side, explain what changed, choose a winner, and remove the rejected work without damaging the production graph.

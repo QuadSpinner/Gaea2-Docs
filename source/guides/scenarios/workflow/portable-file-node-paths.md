@@ -43,14 +43,3 @@ Then copy the project folder to a temporary location and open it. If File nodes 
 :::warning
 Relative paths must be tested in the workflow that will run the build. UI use and command-line automation can have different assumptions about where a path starts.
 :::
-
-## Confirm it in Gaea
-
-This guide should show:
-
-* a File node pointed at a project `inputs` folder
-* the same project opened from a copied location
-* a variable-bound File node for automation, if used
-* the required input files included in the handoff package
-
-The setup is done when another artist or build machine can open the project and all File nodes resolve, or the automation command clearly supplies the required paths.

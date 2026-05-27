@@ -42,15 +42,3 @@ Before a final build or handoff, do a small pass:
 * check Data View for orphans and export-marked nodes
 
 This does not need to become a redesign. A small cleanup often removes the worst ambiguity.
-
-## Confirm it in Gaea
-
-This guide should show:
-
-* a graph organized into terrain stages
-* an annotated experimental branch
-* a Portal or Chokepoint replacing long wires
-* Data View showing orphan nodes or export-marked nodes
-* final output nodes with readable names
-
-A readable graph is working when a returning artist can find source shape, erosion, masks, color, and exports quickly, and can tell what is approved, experimental, or safe to change.

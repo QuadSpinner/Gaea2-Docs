@@ -39,14 +39,3 @@ After export, restart Gaea and test the installed Macro in a clean graph. That c
 :::warning
 Do not ship private debug branches inside a shared Macro unless they are intentionally exposed and documented.
 :::
-
-## Confirm it in Gaea
-
-This guide should include:
-
-* the Macro source graph with temporary test inputs
-* the real MacroPort route separated from the test harness
-* exposed parameters being tested
-* the exported Macro in a clean graph after restart
-
-The source file should keep enough test context to reproduce problems later, even if the final exported Macro stays clean.

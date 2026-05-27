@@ -34,15 +34,3 @@ Do not use micro detail to solve a macro shape problem. It usually makes the ter
 ## Useful Gaea moves
 
 Bypass suspect nodes with `B`. Lock preview to a downstream result while editing upstream. View masks directly before judging color. Use Data View to find the active output branch. Build a small test output before rebuilding the final package.
-
-## Confirm it in Gaea
-
-This guide should show:
-
-* a macro shape preview with late detail bypassed
-* an erosion pass being compared against the source shape
-* a mask viewed directly before color
-* Data View identifying the active output branch
-* a small exported test compared against the target context
-
-The goal is to replace "it looks bad" with something specific: "the height range is compressed," "the erosion is too strong for the source relief," "the masks are muddy," or "the engine import scale is wrong."

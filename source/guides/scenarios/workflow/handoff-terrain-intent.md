@@ -61,18 +61,6 @@ The note can say: "Base shape and erosion are approved. Continue from the mask g
 
 That is enough context to start work without a meeting.
 
-## Confirm it in Gaea
-
-This guide should include real workflow captures:
-
-* grouped graph stages with the approved path visible
-* annotations on experimental or handoff-critical branches
-* Gates or baked checkpoints on stable work
-* Data View showing export-marked nodes and orphan cleanup
-* the output nodes that form the production contract
-
-These screenshots matter because handoff quality is partly visual. A clean graph tells the receiver what to trust.
-
 ## A good handoff is obvious
 
 The receiving artist should be able to open the file, identify the approved chain, understand the terrain goal, find the production outputs, and know where to continue.

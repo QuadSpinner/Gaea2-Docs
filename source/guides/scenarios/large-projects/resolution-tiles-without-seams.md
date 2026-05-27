@@ -30,15 +30,3 @@ Increasing blend will not fix every seam. If each tile has a different value ran
 :::
 
 For lower resolutions, you can also use Split Build, as the tiling process is made entierly after the build, however this can be very resource intensive depending on graph complexity.
-
-## Confirm it in Gaea
-
-This guide should include:
-
-* the baked world-space base before the tiled stage
-* Tiled Build settings, including tile size and naming
-* a Required Baking check when relevant
-* a 2x2 neighboring-tile test
-* the same tiles placed in the target app or DCC
-
-The tile setup is ready when adjacent tiles agree in height and mask values, the target app places them correctly, and the build comes from a stable world-space base.

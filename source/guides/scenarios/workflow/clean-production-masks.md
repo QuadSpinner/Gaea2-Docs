@@ -44,15 +44,3 @@ A colorization mask is not automatically a good weight map. Weight maps often ne
 Toggle the mask view and make sure the shape is readable. Check whether mid-gray areas are intentional. Zoom out to gameplay or shot distance. Confirm filenames match material or layer names where possible. Remove masks that nobody downstream will use.
 
 If a material looks muddy, the mask may have too many noisy mid-tones. If a layer appears everywhere, the threshold is probably too broad. If biomes feel random, the mask may be detail-driven instead of intent-driven.
-
-## Confirm it in Gaea
-
-This guide should include:
-
-* mask previews in Gaea, viewed as data
-* the node chain that shapes one production mask
-* export-marked mask nodes in the Build tab
-* final mask files with readable names
-* a downstream material or layer using the exported mask, if available
-
-Each exported mask should be explainable in one sentence: "`Mask_Slope_Rock` marks steep exposed rock for the engine material." If that sentence is clear, the mask has a production purpose.
