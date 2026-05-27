@@ -12,4 +12,6 @@ Use Debris when you need simulates loose debris across the terrain surface to cr
 
 ## Visual Direction
 
+![](/.data/assets/Debris_VD.png)
+
 ## Properties

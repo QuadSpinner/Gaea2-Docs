@@ -29,11 +29,23 @@ If a terrain (or mask) is not the exact height values you need, you can use the 
 
 Inversely, bringing the top beyond 1.0 makes your terrain taller than the original range.
 
+### Normalizing Imported or Flat Data
+
+Imported terrains and generated masks may only use a small part of the available height range. Adding an Autolevel modifier is a quick way to stretch the current minimum and maximum values across the full range, making the result easier to read and more useful for later processing.
+
+Use this when the shape is correct but looks too flat, too faint, or difficult to judge in the viewport.
+
 ### Making Stronger Masks
 
 By simply applying Autolevel, Equalize, or Shaper (positive value) you can take a weak mask and make it stronger.
 
 ![](/.data/assets/image-(63).png){.w-50} ![](/.data/assets/image-(64).png){.w-50}
+
+### Keeping Values in Range
+
+After strong shaping, blending, or imported data cleanup, some terrain or mask values may go beyond the range you want. Use Clamp when you need to cap the result without adding another node to the graph.
+
+Clamp is especially useful near the end of a small modifier stack, after Height Remap, Shaper, Autolevel, or Equalize.
 
 ### Dropping the Terrain
 
@@ -69,6 +81,12 @@ You can attach a DataExtractor node to any node that uses a Mask by Height/Slope
 
 The Min and Max modifiers are one of the most powerful tools in Gaea.
 
+Min and Max work like the Min and Max blend modes in Combine, but they compare the node's processed result against the node's original incoming terrain instead of comparing two separate Combine inputs.
+
+Per pixel, **Max** keeps the areas where the modifier result became higher. **Min** keeps the areas where the modifier result became lower.
+
+![](/.data/assets/Modifier-MinMax.gif)
+
 ### Breaking up a Mask
 
 Sometimes you want a bit of crunchy detail to breakup the edges of your mask or introduce some uneven variations. Add a Warp modifier with the appropriate Size and Strength to change the mask.
@@ -83,5 +101,24 @@ Sometimes you want a bit of crunchy detail to breakup the edges of your mask or 
 Try mixing with Min or Max modifiers for broader options.
 :::
 
+### Softening a Mask
+
+When a mask is too hard or creates obvious cut lines, add a small Blur modifier to soften the transition. This is useful before using the mask to control erosion, texturing, color, or any effect where a sharp boundary would look artificial.
+
+Use only as much blur as needed. Too much blur can make the mask lose the specific area it was meant to isolate.
+
+
+![](/.data/assets/Modifier-Blur.gif)
+
+### Preparing Masks for Export
+
+Modifiers are a fast way to do final mask cleanup before export. Autolevel can use the full available range, Clamp can keep values valid, Blur can soften harsh edges, and Threshold can turn a soft mask into a more definite selection.
+
+If the mask has a specific meaning in another application, avoid aggressive Equalize or Autolevel unless you want to change how the values are distributed.
+
 ### Getting the Difference
+
+Use DataExtractor set to modifer when you need to isolate what a modifier changed. For example, after using Min or Max on an erosion result, DataExtractor can help pull out the difference as a separate mask for routing, layering, or texturing.
+
+This is useful when the modified terrain looks correct, but you also want to reuse the affected areas elsewhere in the graph.
 

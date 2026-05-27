@@ -13,6 +13,10 @@ order: 37
 For a video breakdown of this node, see [the official Transpose video](/videos/official/nodes/yt-transpose.html).
 <!-- AUTO-VIDEO-LINK:END -->
 
+## Example Files
+
+Download the tutorial file from the Gaea community thread: [Transpose node tutorial file](https://talk.gaea.app/t/transpose-node-tutorial-file/579).
+
 ## When to Use It
 Use Transpose when you need takes the character of the Reference terrain and applies to to the Input terrain.
 

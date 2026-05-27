@@ -15,9 +15,11 @@ For a video breakdown of this node, see [the official Compare video](/videos/off
 
 Compare is a low-level utility that helps you compare two Heightfields.
 
-![](/.data/assets/compare.png)
-
 ## When to Use It
 Use Compare when you need to evaluate two inputs against each other instead of just blending them.
+
+## Visual Direction
+
+![](/.data/assets/Compare_VD.png)
 
 ## Properties

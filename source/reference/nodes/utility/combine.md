@@ -15,10 +15,15 @@ In addition, the Combine node also gives you a separation mask for texturing pur
 Use Combine when two terrains, masks, or color maps need to be blended, compared, or merged into one controllable result.
 
 ## Using Combine
+:::info
+Min and Max blend modes compare Input A and Input B per pixel. Max keeps the higher value from the two inputs, while Min keeps the lower value. This is different from the Min and Max modifiers, which compare a node's processed result against its own incoming terrain.
+:::
 
 :::aside
 Combine is deceptively simple, but may be the single most important node in Gaea.
 :::
+
+
 
 **Color Mixing**
 
