@@ -20,4 +20,8 @@ Rivers and Lakes can work together to create a comprehensive water element for y
 ## When to Use It
 Use Rivers when you want to generate believable river networks quickly, either to carve channels early or to add waterways later in the graph.
 
+## Visual Direction
+
+![](/.data/assets/Rivers_VD.png)
+
 ## Properties

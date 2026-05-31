@@ -12,4 +12,6 @@ Use Hillify when you need softens and reshapes terrain into smoother, hill-like 
 
 ## Visual Direction
 
+![](/.data/assets/Hillify_VD.png)
+
 ## Properties

@@ -39,7 +39,10 @@ Use this when the shape is correct but looks too flat, too faint, or difficult t
 
 By simply applying Autolevel, Equalize, or Shaper (positive value) you can take a weak mask and make it stronger.
 
-![](/.data/assets/image-(63).png){.w-50} ![](/.data/assets/image-(64).png){.w-50}
+<div class="image-row">
+  <img src="/.data/assets/image-(63).png" alt="">
+  <img src="/.data/assets/image-(64).png" alt="">
+</div>
 
 ### Keeping Values in Range
 
@@ -53,17 +56,33 @@ The "Drop" modifier removes any "empty" space under the terrain, forcing it to d
 
 ![](/.data/assets/image-(68).png)
 
-<div>![Normal Perlin](/.data/assets/Gaea_-_Untitled_02-55-12-AM.webp) ![Dropped Perlin](/.data/assets/Gaea_-_Untitled_02-55-15-AM.webp)</div>
+<div class="image-row">
+  <figure>
+    <img src="/.data/assets/Modifier-PerlinDrop.png" alt="Normal Perlin">
+    <figcaption>Normal Perlin</figcaption>
+  </figure>
+  <figure>
+    <img src="/.data/assets/Modifier-PerlinDrop2.png" alt="Dropped Perlin">
+    <figcaption>Dropped Perlin</figcaption>
+  </figure>
+</div>
 
 ### Bulking Up or Bulking Down
 
 Using Shaper, you can bulk up or bulk down a terrain. It can apply to masks as well. For example, taking Flow Map output and making it stronger by adding Shaper.
 
 ![Original terrain](/.data/assets/Gaea_-_Untitled_02-52-42-AM.webp)
+<div class="image-row">
+  <figure>
+    <img src="/.data/assets/Gaea_-_Untitled_02-52-58-AM.webp" alt="Shaper at +50">
+    <figcaption>Shaper at +50</figcaption>
+  </figure>
 
-![Shaper at +50](/.data/assets/Gaea_-_Untitled_02-52-58-AM.webp) 
-
-![Shaper at -50](/.data/assets/Gaea_-_Untitled_02-52-51-AM.webp)
+  <figure>
+    <img src="/.data/assets/Gaea_-_Untitled_02-52-51-AM.webp" alt="Shaper at -50">
+    <figcaption>Shaper at -50</figcaption>
+  </figure>
+</div>
 
 ### Restrict Effect to Slope or Height
 

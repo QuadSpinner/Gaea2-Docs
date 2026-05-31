@@ -37,7 +37,7 @@ Right-click a node and select `Manage Portals` (shortcut key `P`). Then select t
 If you press `Shift` while Converting a Port to a Portal in the Manage Portals menu, a Chokepoint node will be created first and then its output will be turned into a Portal.
 :::
 
-![](</.data/assets/image-(71).png>)
+![](/.data/assets/image-(71).png)
 
 ![](/.data/assets/Gaea_-_Untitled_09-30-27-PM.png)
 

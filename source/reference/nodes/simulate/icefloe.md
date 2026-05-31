@@ -24,4 +24,6 @@ Use IceFloe when a water body needs broken plates of ice rather than open water 
 
 ## Visual Direction
 
+![](/.data/assets/IceFloe_VD.png)
+
 ## Properties

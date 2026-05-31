@@ -12,4 +12,6 @@ Use Lichtenberg when you need branching, lightning-like erosion or fracture patt
 
 ## Visual Direction
 
+![](/.data/assets/Lichtenberg_VD.png)
+
 ## Properties

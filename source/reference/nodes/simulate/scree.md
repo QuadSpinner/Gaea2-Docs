@@ -12,4 +12,6 @@ Use Scree when you need accumulations of loose rock fragments scattered across s
 
 ## Visual Direction
 
+![](/.data/assets/Scree_VD.png)
+
 ## Properties

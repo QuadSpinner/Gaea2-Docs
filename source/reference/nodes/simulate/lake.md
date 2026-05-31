@@ -12,4 +12,6 @@ Use Lake when you need simulates rainfall on the terrain and creates physically 
 
 ## Visual Direction
 
+![](/.data/assets/Lake_VD.png)
+
 ## Properties
