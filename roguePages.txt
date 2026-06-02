@@ -64,6 +64,7 @@ I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\gate
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\layers.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\loopbegin.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\loopend.md
+I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\macro.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\macroport.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\mixer.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\utility\reseed.md
