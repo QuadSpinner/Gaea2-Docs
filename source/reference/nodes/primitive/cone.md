@@ -1,4 +1,4 @@
----
+﻿---
 description: Generates a simple conical gradient that is useful as a primitive shape or mask.
 title: Cone
 uid: cone
@@ -12,6 +12,6 @@ Use Cone when you need a simple conical gradient that is useful as a primitive s
 
 ## Visual Direction
 
-![](/.data/assets/Cone_VD.png)
+![](/.data/reference/nodes/primitive/cone/visual-direction.webp)
 
 ## Properties

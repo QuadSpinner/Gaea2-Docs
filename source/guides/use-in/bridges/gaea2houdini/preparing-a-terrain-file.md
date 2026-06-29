@@ -1,4 +1,4 @@
----
+﻿---
 title: Preparing a Terrain File
 uid: preparing-a-terrain-file
 order: 02
@@ -19,13 +19,13 @@ Your Gaea `.terrain` file can be as simple as one node, or have a hundred nodes 
 
 Create a new String variable. Give it a meaningful name, and set the Type to "Input". Then create a File node, and bind its File property to this Input variable.
 
-<div>![](/.data/assets/Gaea_-_Untitled_09-04-29-PM.png) ![](/.data/assets/Gaea_-_Untitled_09-04-52-PM.png) ![](/.data/assets/Gaea_-_Untitled_09-05-02-PM.png)</div>
+<div>![](/.data/guides/use-in/bridges/gaea2houdini/preparing-a-terrain-file/gaea-untitled.webp) ![](/.data/guides/use-in/bridges/gaea2houdini/preparing-a-terrain-file/gaea-untitled-02.webp) ![](/.data/guides/use-in/bridges/gaea2houdini/preparing-a-terrain-file/gaea-untitled-03.webp)</div>
 
 
 
 For Output, create a variable and set the Type to Output. Create an Export node, set the format to `GaeaRaw`, the Location to `Explicit` and bind the Output Path to your variable.
 
-![](/.data/assets/Gaea_-_HoudiniTest-001.terrain_09-09-59-PM.png)
+![](/.data/guides/use-in/bridges/gaea2houdini/preparing-a-terrain-file/gaea-houdini-test-001-terrain.webp)
 
 
 
@@ -39,7 +39,7 @@ Let's say you only want to use Erosion2, create an Erosion2 node between the Fil
 
 For each parameter you wish to expose, open the Edit Parameter menu and select `Bind To > New Variable`.
 
-![](/.data/assets/image-(70).png)
+![](/.data/guides/use-in/bridges/gaea2houdini/preparing-a-terrain-file/simple-example-erosion2.webp)
 
 Once all your properties are exposed, your .terrain file is ready for use in Houdini.
 
@@ -49,7 +49,7 @@ Not all properties can be exposed!
 Some properties with custom UI like Curve, CLUTer, Draw, and others may not bind to a parameter.
 :::
 
-![](/.data/assets/Gaea_-_Untitled_09-15-05-PM.png)
+![](/.data/guides/use-in/bridges/gaea2houdini/preparing-a-terrain-file/gaea-untitled-04.webp)
 
 
 
@@ -57,7 +57,7 @@ Some properties with custom UI like Curve, CLUTer, Draw, and others may not bind
 
 In this larger example, we have created two outputs - one for the heightfield and one for color, so we can use Gaea's ColorErosion tools.
 
-![](/.data/assets/Gaea_-_HoudiniTest-001.terrain_09-17-07-PM.png)
+![](/.data/guides/use-in/bridges/gaea2houdini/preparing-a-terrain-file/gaea-houdini-test-001-terrain-02.webp)
 
 #### Design-Time Tip
 

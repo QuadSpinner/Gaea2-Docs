@@ -1,4 +1,4 @@
----
+﻿---
 description: RockNoise is a useful tool for generating fields of rocks with size variations and controllable density.
 title: RockNoise
 uid: rocknoise
@@ -16,6 +16,6 @@ Use RockNoise when you need a useful tool for generating fields of rocks with si
 
 ## Visual Direction
 
-![](/.data/assets/RockNoise_VD.png)
+![](/.data/reference/nodes/surface/rocknoise/visual-direction.webp)
 
 ## Properties

@@ -1,4 +1,4 @@
----
+﻿---
 description: Applies profile-based filtering to reshape terrain values and refine feature response.
 title: Filter
 uid: filter
@@ -14,6 +14,6 @@ Use Filter when you need a profile-based remap that changes how terrain values r
 
 ## Visual Direction
 
-![](/.data/assets/Filter_VD.png)
+![](/.data/reference/nodes/modify/filter/visual-direction.webp)
 
 ## Properties

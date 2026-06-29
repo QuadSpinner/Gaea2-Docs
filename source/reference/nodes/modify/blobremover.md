@@ -1,4 +1,4 @@
----
+﻿---
 description: Remove small blobs or disconnected shapes from masks and heightfields in Gaea.
 title: BlobRemover
 uid: blobremover
@@ -21,7 +21,7 @@ Use BlobRemover when masks or heightfields contain small stray islands that shou
 ## Visual Direction
 
 :::image-row
-![Before BlobRemover](/.data/assets/BlobRemover_Before_VD.png) ![After BlobRemover](/.data/assets/BlobRemover_After_VD.png)
+![Before BlobRemover](/.data/reference/nodes/modify/blobremover/before.webp) ![After BlobRemover](/.data/reference/nodes/modify/blobremover/after.webp)
 :::
 
 ## Properties

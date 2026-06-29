@@ -1,4 +1,4 @@
----
+﻿---
 description: Sand creates medium and small level sand patterns. It can also be used to simulate dunes.
 title: Sand
 uid: sand
@@ -12,6 +12,6 @@ Use Sand when broad landforms are already in place and the terrain needs dune-li
 
 ## Visual Direction
 
-![](/.data/assets/Sand_VD.png)
+![](/.data/reference/nodes/surface/sand/visual-direction.webp)
 
 ## Properties

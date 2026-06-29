@@ -1,4 +1,4 @@
----
+﻿---
 description: Creates broad fields of dune-like terrain suitable for deserts and wind-shaped landscapes.
 title: DuneSea
 uid: dunesea
@@ -12,6 +12,6 @@ Use DuneSea when you need a fast desert or wind-shaped base landform that can ca
 
 ## Visual Direction
 
-![](/.data/assets/DuneSea_VD.png)
+![](/.data/reference/nodes/terrain/dunesea/visual-direction.webp)
 
 ## Properties

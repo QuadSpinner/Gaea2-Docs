@@ -1,4 +1,4 @@
----
+﻿---
 title: Command Line Automation
 uid: command-line-automation
 order: 01
@@ -17,7 +17,7 @@ The Build Swarm can accept the following arguments:
 
 <table><thead><tr><th width="265" valign="top">Argument</th><th>Description</th></tr></thead><tbody><tr><td valign="top"><code>-filename &#x3C;filename></code></td><td>The fully qualified path to the .terrain file that should be built. It should be wrapped <code>""</code> quotes for safety.</td></tr><tr><td valign="top"><code>-interactive</code></td><td>Show interactive prompts when launched from the CLI.</td></tr><tr><td valign="top"><code>-ignorecache</code></td><td>Ignore baked cache when set to <code>true</code>.</td></tr><tr><td valign="top"><code>-verbose</code></td><td>Enable Verbose logging for diagnostics purposes.</td></tr><tr><td valign="top"><code>-safemode</code></td><td>Enforce Sade Mode for debugging or diagnostics purposes. Not recommended for production builds.</td></tr><tr><td valign="top"><code>-seed &#x3C;int></code></td><td>Mutation seed to use for the build.</td></tr><tr><td valign="top"><code>-v</code> or <code>--v</code></td><td><p>Variables. This argument marks the beginning of key-value pairs of variables.<br><br><i class="fa-duotone fa-light fa-triangle-exclamation text-warning" aria-hidden="true"></i> <em>This must ALWAYS be the last argument. All other switches and arguments should precede</em> <code>-v</code></p><p></p><p><i class="fa-duotone fa-light fa-triangle-exclamation text-warning" aria-hidden="true"></i> The <code>-v</code> argument must be repeated for each variable (key-value pair).<br><br>For example:</p><p><code>-v foo=bar -v value=0.35 -v erosion=1</code></p></td></tr><tr><td valign="top"><code>--va &#x3C;string></code></td><td><p>Comma separated variable values alphanumerically-sorted by variable names. Must include all values. This is to help reduce character count by not having to i</p><p></p><p>Variables passed this argument must be equal in count to the number of variables declared in the terrain file.</p></td></tr><tr><td valign="top"><code>-vars &#x3C;filename></code></td><td>Instead of <code>-v</code> the <code>-vars</code> argument can be used to pass a specifically formatted plain text or JSON file to provide Variable values.</td></tr></tbody></table>
 
-![](/.data/assets/command_line_example.png)
+![](/.data/shared/common/command-line-example.webp)
 
 The @build-options window has a helpful button to Show Command Line that will show the current file's Build Command Line including all variables. It is useful to copy this and then modify it as needed.
 

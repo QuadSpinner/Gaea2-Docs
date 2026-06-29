@@ -1,4 +1,4 @@
----
+﻿---
 description: Rivers can instantly generate complex river networks on any terrain, whether it can sustain rivers or not.
 title: Rivers
 uid: rivers
@@ -22,6 +22,6 @@ Use Rivers when you want to generate believable river networks quickly, either t
 
 ## Visual Direction
 
-![](/.data/assets/Rivers_VD.png)
+![](/.data/reference/nodes/simulate/rivers/visual-direction.webp)
 
 ## Properties

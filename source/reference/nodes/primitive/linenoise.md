@@ -1,4 +1,4 @@
----
+﻿---
 description: LineNoise is a geometry generator that creates sets of lines which can be distorted and used with other noises and fractals to produce layered ridges.
 title: LineNoise
 uid: linenoise
@@ -16,6 +16,6 @@ Use LineNoise when you need a geometry generator that creates sets of lines whic
 
 ## Visual Direction
 
-![](/.data/assets/LineNoise_VD.png)
+![](/.data/reference/nodes/primitive/linenoise/visual-direction.webp)
 
 ## Properties

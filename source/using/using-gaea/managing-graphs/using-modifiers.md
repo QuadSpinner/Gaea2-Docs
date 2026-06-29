@@ -1,4 +1,4 @@
----
+﻿---
 title: Using Modifiers
 uid: using-modifiers
 order: 01
@@ -7,7 +7,7 @@ description: The Modifier Stack provides quick access to common adjustments, mas
 
 # Using Modifiers
 
-![](/.data/assets/image-(26).png)
+![](/.data/shared/common/modifier-stack.webp)
 
 ## Modifiers
 
@@ -25,7 +25,7 @@ Modifiers work as a post-process so updating them does not require re-building t
 
 If a terrain (or mask) is not the exact height values you need, you can use the Height Remap modifier to adjust both the lower and upper extent of your terrain. Bringing up the bottom "raises" the terrain from the bottom, while "lowering" the top makes the terrain shorter.
 
-![](/.data/assets/image-(65).png)
+![](/.data/using/using-gaea/managing-graphs/using-modifiers/adjusting-the-height.webp)
 
 Inversely, bringing the top beyond 1.0 makes your terrain taller than the original range.
 
@@ -40,8 +40,8 @@ Use this when the shape is correct but looks too flat, too faint, or difficult t
 By simply applying Autolevel, Equalize, or Shaper (positive value) you can take a weak mask and make it stronger.
 
 <div class="image-row">
-  <img src="/.data/assets/image-(63).png" alt="">
-  <img src="/.data/assets/image-(64).png" alt="">
+  <img src="/.data/using/using-gaea/managing-graphs/using-modifiers/making-stronger-masks.webp" alt="">
+  <img src="/.data/using/using-gaea/managing-graphs/using-modifiers/making-stronger-masks-02.webp" alt="">
 </div>
 
 ### Keeping Values in Range
@@ -54,15 +54,15 @@ Clamp is especially useful near the end of a small modifier stack, after Height 
 
 The "Drop" modifier removes any "empty" space under the terrain, forcing it to drop to the "floor".
 
-![](/.data/assets/image-(68).png)
+![](/.data/using/using-gaea/managing-graphs/using-modifiers/dropping-the-terrain.webp)
 
 <div class="image-row">
   <figure>
-    <img src="/.data/assets/Modifier-PerlinDrop.png" alt="Normal Perlin">
+    <img src="/.data/using/using-gaea/managing-graphs/using-modifiers/modifier-perlin-drop.webp" alt="Normal Perlin">
     <figcaption>Normal Perlin</figcaption>
   </figure>
   <figure>
-    <img src="/.data/assets/Modifier-PerlinDrop2.png" alt="Dropped Perlin">
+    <img src="/.data/using/using-gaea/managing-graphs/using-modifiers/modifier-perlin-drop2.webp" alt="Dropped Perlin">
     <figcaption>Dropped Perlin</figcaption>
   </figure>
 </div>
@@ -71,15 +71,15 @@ The "Drop" modifier removes any "empty" space under the terrain, forcing it to d
 
 Using Shaper, you can bulk up or bulk down a terrain. It can apply to masks as well. For example, taking Flow Map output and making it stronger by adding Shaper.
 
-![Original terrain](/.data/assets/Gaea_-_Untitled_02-52-42-AM.webp)
+![Original terrain](/.data/using/using-gaea/managing-graphs/using-modifiers/gaea-untitled.webp)
 <div class="image-row">
   <figure>
-    <img src="/.data/assets/Gaea_-_Untitled_02-52-58-AM.webp" alt="Shaper at +50">
+    <img src="/.data/using/using-gaea/managing-graphs/using-modifiers/gaea-untitled-03.webp" alt="Shaper at +50">
     <figcaption>Shaper at +50</figcaption>
   </figure>
 
   <figure>
-    <img src="/.data/assets/Gaea_-_Untitled_02-52-51-AM.webp" alt="Shaper at -50">
+    <img src="/.data/using/using-gaea/managing-graphs/using-modifiers/gaea-untitled-02.webp" alt="Shaper at -50">
     <figcaption>Shaper at -50</figcaption>
   </figure>
 </div>
@@ -88,9 +88,9 @@ Using Shaper, you can bulk up or bulk down a terrain. It can apply to masks as w
 
 You can easily restrict the effect of a node to a height or slope range by adding a "Mask by Height" or "Mask by Slope" modifier on the effect node.
 
-![](/.data/assets/image-(67).webp)
+![](/.data/using/using-gaea/managing-graphs/using-modifiers/restrict-effect-to-slope-or-height-02.webp)
 
-![](/.data/assets/image-(66).png){.w-50}
+![](/.data/using/using-gaea/managing-graphs/using-modifiers/restrict-effect-to-slope-or-height.webp){.w-50}
 
 :::info
 You can attach a DataExtractor node to any node that uses a Mask by Height/Slope modifier, and get the exact mask generated as a separate output.
@@ -104,17 +104,17 @@ Min and Max work like the Min and Max blend modes in Combine, but they compare t
 
 Per pixel, **Max** keeps the areas where the modifier result became higher. **Min** keeps the areas where the modifier result became lower.
 
-![](/.data/assets/Modifier-MinMax.gif)
+![](/.data/using/using-gaea/managing-graphs/using-modifiers/modifier-min-max.gif)
 
 ### Breaking up a Mask
 
 Sometimes you want a bit of crunchy detail to breakup the edges of your mask or introduce some uneven variations. Add a Warp modifier with the appropriate Size and Strength to change the mask.
 
-![](/.data/assets/image-(69).png){.w-50}
+![](/.data/using/using-gaea/managing-graphs/using-modifiers/breaking-up-a-mask.webp){.w-50}
 
-![](/.data/assets/threshold1.webp) 
+![](/.data/using/using-gaea/managing-graphs/using-modifiers/breaking-up-a-mask-02.webp) 
 
-![](/.data/assets/threshold2.webp)
+![](/.data/using/using-gaea/managing-graphs/using-modifiers/breaking-up-a-mask-03.webp)
 
 :::info
 Try mixing with Min or Max modifiers for broader options.
@@ -127,7 +127,7 @@ When a mask is too hard or creates obvious cut lines, add a small Blur modifier 
 Use only as much blur as needed. Too much blur can make the mask lose the specific area it was meant to isolate.
 
 
-![](/.data/assets/Modifier-Blur.gif)
+![](/.data/using/using-gaea/managing-graphs/using-modifiers/modifier-blur.gif)
 
 ### Preparing Masks for Export
 

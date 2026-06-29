@@ -1,4 +1,4 @@
----
+﻿---
 description: Compare two heightfields to inspect differences and validate terrain data in Gaea.
 title: Compare
 uid: compare
@@ -20,6 +20,6 @@ Use Compare when you need to evaluate two inputs against each other instead of j
 
 ## Visual Direction
 
-![](/.data/assets/Compare_VD.png)
+![](/.data/reference/nodes/utility/compare/visual-direction.webp)
 
 ## Properties

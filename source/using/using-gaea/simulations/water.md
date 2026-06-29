@@ -1,4 +1,4 @@
----
+﻿---
 title: Water
 uid: simulation-water
 order: 03
@@ -9,17 +9,17 @@ description: Create lakes, rivers, and seas in Gaea using physically guided wate
 
 Create lakes, rivers, and even seas that follow physical rules, which not only produce a body of water, but also correspondingly affect the surrounding environment.
 
-![](/.data/assets/water.webp)
+![](/.data/using/using-gaea/simulations/water/water.webp)
 
 ## Lakes
 
-![](/.data/assets/water-lakes.webp)
+![](/.data/using/using-gaea/simulations/water/water-lakes.webp)
 
 ## Rivers
 
-![](/.data/assets/water-rivers.webp)
+![](/.data/using/using-gaea/simulations/water/water-rivers.webp)
 
 ## Sea
 
-![](/.data/assets/water-sea.webp)
+![](/.data/using/using-gaea/simulations/water/water-sea.webp)
 

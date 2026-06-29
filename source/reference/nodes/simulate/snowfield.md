@@ -1,4 +1,4 @@
----
+﻿---
 description: Creates broad settled snow coverage across the terrain surface.
 title: Snowfield
 uid: snowfield
@@ -22,5 +22,7 @@ Download the terrain files from the Gaea community thread: [Snowfield terrains: 
 Use Snowfield when you need broad settled snow coverage across the terrain surface.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/simulate/snowfield/visual-direction.webp)
 
 ## Properties

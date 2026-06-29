@@ -1,9 +1,5 @@
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\guides\scenarios\helpful-info\index.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\guides\use-in\apps\cinema4d.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\guides\use-in\apps\maya.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\guides\use-in\apps\zbrush.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\install\gaea-1\index.md
-I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\gaea2houdini\tor-processor.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\colorize\cluter.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\colorize\colorerosion.md
 I:\Clients\Quadspinner\Gaea2Docs\Gaea2-Docs\staging\reference\nodes\colorize\satmap.md

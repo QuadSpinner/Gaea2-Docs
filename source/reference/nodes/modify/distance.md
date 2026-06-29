@@ -1,4 +1,4 @@
----
+﻿---
 description: Generates a distance field from the input, measuring how far each point is from the nearest boundary or feature.
 title: Distance
 uid: distance
@@ -24,6 +24,6 @@ Use Distance when you need a distance field from a shape or mask boundary for fa
 
 ## Visual Direction
 
-![](/.data/assets/Distance_VD.png)
+![](/.data/reference/nodes/modify/distance/visual-direction.webp)
 
 ## Properties

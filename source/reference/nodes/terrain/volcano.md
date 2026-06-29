@@ -1,4 +1,4 @@
----
+﻿---
 description: Generates a volcanic landform with a central cone and crater structure.
 title: Volcano
 uid: volcano
@@ -12,6 +12,6 @@ Use Volcano when you need a self-contained volcanic cone or caldera that can lat
 
 ## Visual Direction
 
-![](/.data/assets/Volcano_VD.png)
+![](/.data/reference/nodes/terrain/volcano/visual-direction.webp)
 
 ## Properties

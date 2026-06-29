@@ -1,4 +1,4 @@
----
+﻿---
 description: Aperture expands or compacts every feature on the terrain, similar to a camera's bokeh.
 title: Aperture
 uid: aperture
@@ -12,6 +12,6 @@ Use Aperture when the terrain shape is mostly working and you need a targeted re
 
 ## Visual Direction
 
-![](/.data/assets/Aperture_VD.png)
+![](/.data/reference/nodes/modify/aperture/visual-direction.webp)
 
 ## Properties

@@ -1,4 +1,4 @@
----
+﻿---
 description: FractalTerraces creates terraces or stratification of the terrain.
 title: FractalTerraces
 uid: fractalterraces
@@ -20,6 +20,6 @@ Use FractalTerraces when the landform needs stepped stratification with more nat
 
 ## Visual Direction
 
-![](/.data/assets/FractalTerraces_VD.png)
+![](/.data/reference/nodes/surface/fractalterraces/visual-direction.webp)
 
 ## Properties

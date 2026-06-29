@@ -1,4 +1,4 @@
----
+﻿---
 description: Transpose takes the character of the Reference terrain and applies to to the Input terrain.
 title: Transpose
 uid: transpose
@@ -38,6 +38,6 @@ Insert is a utility node that lets you insert a sparse heightfield into another 
 
 ## Visual Direction
 
-![](/.data/assets/Transpose_VD.png)
+![](/.data/reference/nodes/modify/transpose/visual-direction.webp)
 
 ## Properties

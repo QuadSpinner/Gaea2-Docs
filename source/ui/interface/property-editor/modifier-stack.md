@@ -1,4 +1,4 @@
----
+﻿---
 title: Modifier Stack
 uid: modifier-stack
 order: 01
@@ -13,7 +13,7 @@ Modifiers are additional adjustments you can add on top of most nodes. These Mod
 
 Many of these Modifiers provide the same functionality as nodes of the same names. However, when you use a Modifier, you create less overhead than creating individual nodes for small adjustments.
 
-![](/.data/assets/image-(26).png)
+![](/.data/shared/common/modifier-stack.webp)
 
 The Modifier Stack can be used to re-order the Modifiers applied to the node. Often this may change the end-result when using impactful Modifiers such as Autolevel or Height Remap.
 

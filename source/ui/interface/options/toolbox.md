@@ -1,4 +1,4 @@
----
+﻿---
 title: Toolbox
 uid: options-toolbox
 order: 03
@@ -9,7 +9,7 @@ description: The Toolbox tab customizes the appearance, organization, and search
 
 The **Toolbox** tab customizes the appearance, organization, and search behavior of the node toolbox, improving workflow efficiency and navigation within Gaea’s graph editor.
 
-![](/.data/assets/Options_-_Toolbox_09-56-54-PM.png)
+![](/.data/ui/interface/options/toolbox/options-toolbox.webp)
 
 
 

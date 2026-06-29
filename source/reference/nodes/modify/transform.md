@@ -1,4 +1,4 @@
----
+﻿---
 description: Transform allows you to move, rotate, and scale any terrain.
 title: Transform
 uid: transform
@@ -19,7 +19,7 @@ Use Transform when a terrain or mask needs straightforward translation, rotation
 ## Visual Direction
 
 :::image-row
-![Transform 3D View](/.data/assets/Transform_3DView_VD.png) ![Transform 2D View](/.data/assets/Transform_2DView_VD.png)
+![Transform 3D View](/.data/reference/nodes/modify/transform/visual-direction-3d-view.webp) ![Transform 2D View](/.data/reference/nodes/modify/transform/visual-direction-2d-view.webp)
 :::
 
 ## Properties

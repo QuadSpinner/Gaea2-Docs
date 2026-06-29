@@ -1,4 +1,4 @@
----
+﻿---
 description: Icefloe creates flat plates of ice inside a water body.
 title: IceFloe
 uid: icefloe
@@ -24,6 +24,6 @@ Use IceFloe when a water body needs broken plates of ice rather than open water 
 
 ## Visual Direction
 
-![](/.data/assets/IceFloe_VD.png)
+![](/.data/reference/nodes/simulate/icefloe/visual-direction.webp)
 
 ## Properties

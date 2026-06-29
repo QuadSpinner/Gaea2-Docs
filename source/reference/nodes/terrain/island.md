@@ -1,4 +1,4 @@
----
+﻿---
 description: The Island node lets you draw basic shapes from which entire landmasses can be generated.
 title: Island
 uid: island
@@ -14,6 +14,6 @@ Use Island when you want to sketch a landmass silhouette first and let the node 
 
 ## Visual Direction
 
-![](/.data/assets/Island_VD.png)
+![](/.data/reference/nodes/terrain/island/visual-direction.webp)
 
 ## Properties

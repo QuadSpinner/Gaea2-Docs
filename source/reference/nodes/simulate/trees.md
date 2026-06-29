@@ -1,4 +1,4 @@
----
+﻿---
 description: The Arboreal Node gives you the power of creating superficial forests and vegetation. These forests are part of the heightfield while being "detached" enough for various export scenarios.
 title: Trees
 uid: trees
@@ -17,5 +17,7 @@ For a video breakdown of this node, see [the official Trees video](/videos/offic
 Use Trees when you want forest or vegetation massing to appear as part of the heightfield for distant coverage, canopy breakup, or export-friendly vegetation forms.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/simulate/trees/visual-direction.webp)
 
 ## Properties

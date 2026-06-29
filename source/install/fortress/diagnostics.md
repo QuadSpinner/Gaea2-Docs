@@ -1,4 +1,4 @@
----
+﻿---
 title: Network Diagnostics
 uid: fortress-diagnostics
 order: 06
@@ -12,7 +12,7 @@ Network Diagnostics helps admins verify that the license server is reachable on 
 
 When run, it collects:
 
-![](/.data/ui/fortress-network.png)
+![](/.data/install/fortress/diagnostics/fortress-network.webp)
 
 **Network snapshot**
 * Local IPv4 addresses detected on the server

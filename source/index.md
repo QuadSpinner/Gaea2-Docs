@@ -1,4 +1,4 @@
----
+﻿---
 title: Gaea Documentation
 uid: home
 description: Explore the Gaea documentation, including installation, workflows, interface guides, node reference, videos, and developer resources.
@@ -8,7 +8,7 @@ description: Explore the Gaea documentation, including installation, workflows, 
   <div class="col">
     <div class="card">
       <a href="/install">
-        <img class="card-img-top" src="/.data/home/install.png" alt="" />
+        <img class="card-img-top" src="/.data/index/install.webp" alt="" />
       </a>
       <div class="card-body">
         <h3 class="card-title">
@@ -24,7 +24,7 @@ description: Explore the Gaea documentation, including installation, workflows, 
   <div class="col">
     <div class="card">
       <a href="/ui">
-        <img class="card-img-top" src="/.data/home/getting-started.webp" alt="" />
+        <img class="card-img-top" src="/.data/index/getting-started.webp" alt="" />
       </a>
       <div class="card-body">
         <h3 class="card-title">
@@ -39,7 +39,7 @@ description: Explore the Gaea documentation, including installation, workflows, 
   <div class="col">
     <div class="card">
       <a href="/using">
-        <img class="card-img-top" src="/.data/home/user-guide.webp" alt="" />
+        <img class="card-img-top" src="/.data/index/user-guide.webp" alt="" />
       </a>
       <div class="card-body">
         <h3 class="card-title">
@@ -54,7 +54,7 @@ description: Explore the Gaea documentation, including installation, workflows, 
   <div class="col">
     <div class="card">
       <a href="/reference">
-        <img class="card-img-top" src="/.data/home/node-reference.webp" alt="" />
+        <img class="card-img-top" src="/.data/index/node-reference.webp" alt="" />
       </a>
       <div class="card-body">
         <h3 class="card-title">
@@ -69,7 +69,7 @@ description: Explore the Gaea documentation, including installation, workflows, 
   <div class="col">
     <div class="card">
       <a href="/guides">
-        <img class="card-img-top" src="/.data/home/guides.webp" alt="" />
+        <img class="card-img-top" src="/.data/index/guides.webp" alt="" />
       </a>
       <div class="card-body">
         <h3 class="card-title">
@@ -84,7 +84,7 @@ description: Explore the Gaea documentation, including installation, workflows, 
   <div class="col">
     <div class="card">
       <a href="/videos">
-        <img class="card-img-top" src="/.data/home/video-tutorials.webp" alt="" />
+        <img class="card-img-top" src="/.data/index/video-tutorials.webp" alt="" />
       </a>
       <div class="card-body">
         <h3 class="card-title">
@@ -99,7 +99,7 @@ description: Explore the Gaea documentation, including installation, workflows, 
   <div class="col">
     <div class="card">
       <a href="/developers">
-        <img class="card-img-top" src="/.data/home/developers.png" alt="" />
+        <img class="card-img-top" src="/.data/index/asset.webp" alt="" />
       </a>
       <div class="card-body">
         <h3 class="card-title">
@@ -114,7 +114,7 @@ description: Explore the Gaea documentation, including installation, workflows, 
   <div class="col">
     <div class="card">
       <a href="/changelogs">
-        <img class="card-img-top" src="/.data/home/changelog.png" alt="" />
+        <img class="card-img-top" src="/.data/index/changelog.webp" alt="" />
       </a>
       <div class="card-body">
         <h3 class="card-title">

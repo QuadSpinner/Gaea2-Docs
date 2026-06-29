@@ -1,4 +1,4 @@
----
+﻿---
 description: Provides a simplified erosion workflow for quickly adding natural erosion effects.
 title: EasyErosion
 uid: easyerosion
@@ -18,6 +18,6 @@ Use EasyErosion when you need a simplified erosion workflow for quickly adding n
 
 ## Visual Direction
 
-![](/.data/assets/EasyErosion_VD.gif)
+![](/.data/reference/nodes/simulate/easyerosion/visual-direction.gif)
 
 ## Properties

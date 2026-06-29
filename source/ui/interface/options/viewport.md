@@ -1,4 +1,4 @@
----
+﻿---
 title: Viewport
 uid: options-viewport
 order: 09
@@ -9,7 +9,7 @@ description: T.
 
 The **Viewport** tab allows you to configure the visual display settings for Gaea’s 3D viewport. These options affect how terrains and masks are rendered during editing and previewing.
 
-![](/.data/assets/Options_-_Viewport_09-57-08-PM.png)
+![](/.data/ui/interface/options/viewport/options-viewport.webp)
 
 
 

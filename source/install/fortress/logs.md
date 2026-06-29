@@ -1,4 +1,4 @@
----
+﻿---
 title: Logs
 uid: fortress-logs
 icon: scroll
@@ -14,14 +14,14 @@ Fortress Server records operational activity (events, actions, warnings, errors,
 
 1. In the Fortress Console, select **Logs** from the main menu.
 
-   ![](/.data/ui/fortress-logs1.png)
+   ![](/.data/install/fortress/logs/fortress-logs1.webp)
 
 2. Choose one of the following:
 
    * **Logs (Tail)**: Shows the most recent ~40 entries (quick check for recent errors).
    * **Logs (Entire)**: Opens the full log for the current day.
 
-   ![](/.data/ui/fortress-logs2.png)
+   ![](/.data/install/fortress/logs/fortress-logs2.webp)
 
 ## View Older Logs
 
@@ -31,7 +31,7 @@ To access previous days:
 
 1. Select **Open Log Directory**.
 
-   ![](/.data/ui/fortress-logs-directory.png)
+   ![](/.data/install/fortress/logs/fortress-logs-directory.webp)
 
 2. Open the log file for the day you need.
 

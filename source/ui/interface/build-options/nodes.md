@@ -1,4 +1,4 @@
----
+﻿---
 title: Nodes
 uid: build-options-nodes
 order: 04
@@ -9,7 +9,7 @@ description: Review exportable nodes, choose which ports are written, and contro
 
 The **Nodes** tab lists all nodes marked for export and lets you adjust their output settings before building.
 
-![](/.data/assets/Build-Option-Nodes-(1).png)
+![](/.data/ui/interface/build-options/nodes/build-option-nodes-1.webp)
 
 ## Node Export Settings
 

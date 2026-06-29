@@ -1,4 +1,4 @@
----
+﻿---
 description: Creates scattered pits, dents, and small impact-like depressions on the surface.
 title: Pockmarks
 uid: pockmarks
@@ -12,6 +12,6 @@ Use Pockmarks when you need scattered pits, dents, and small impact-like depress
 
 ## Visual Direction
 
-![](/.data/assets/Pockmarks_VD.png)
+![](/.data/reference/nodes/surface/pockmarks/visual-direction.webp)
 
 ## Properties

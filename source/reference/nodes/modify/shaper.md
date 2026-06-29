@@ -1,4 +1,4 @@
----
+﻿---
 description: The Shaper node can bulk up, or bulk down, a terrain.
 title: Shaper
 uid: shaper
@@ -20,6 +20,6 @@ Use Shaper when you want to bulk forms up or down quickly while preserving the m
 
 ## Visual Direction
 
-![](/.data/assets/Shaper_VD.png)
+![](/.data/reference/nodes/modify/shaper/visual-direction.webp)
 
 ## Properties

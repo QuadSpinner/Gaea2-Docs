@@ -1,4 +1,4 @@
----
+﻿---
 description: Creates accumulations of loose rock fragments scattered across slopes and terrain edges.
 title: Scree
 uid: scree
@@ -12,6 +12,6 @@ Use Scree when you need accumulations of loose rock fragments scattered across s
 
 ## Visual Direction
 
-![](/.data/assets/Scree_VD.png)
+![](/.data/reference/nodes/simulate/scree/visual-direction.webp)
 
 ## Properties

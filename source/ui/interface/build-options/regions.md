@@ -1,4 +1,4 @@
----
+﻿---
 title: Regions
 uid: build-options-regions
 order: 07
@@ -9,7 +9,7 @@ description: Create and manage focused regions so selected parts of a terrain ca
 
 The **Regions** tab lets you define focused areas of the terrain that can be built or refined separately at higher effective detail. Gaea can store multiple regions and preview them individually.
 
-![](/.data/assets/Build-Option-Add-Region-Menu.png)
+![](/.data/ui/interface/build-options/regions/build-option-add-region-menu.webp)
 
 ## Working with Regions
 

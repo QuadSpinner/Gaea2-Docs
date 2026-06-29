@@ -1,4 +1,4 @@
----
+﻿---
 title: Viewport Toolbar
 uid: viewport-toolbar
 order: 04
@@ -9,7 +9,7 @@ description: The Viewport Toolbar is a crucial component of the Gaea Viewport, e
 
 The Viewport Toolbar is a crucial component of the Gaea Viewport, equipped with a variety of tools and menus designed to enhance user interaction and efficiency. It provides easy access to navigation controls, display settings, lighting settings, facilitating a streamlined workflow in the Gaea Viewport environment.
 
-![](/.data/assets/Viewport-Toolbar.png)
+![](/.data/ui/interface/menus-and-toolbars/viewport-toolbar/viewport-toolbar.webp)
 
 
 
@@ -17,11 +17,11 @@ The Viewport Toolbar is a crucial component of the Gaea Viewport, equipped with 
 
 Lighting: Provides comprehensive set of options to modify the viewport lighting. User can modify settings for Sun, Light, Atmosphere.
 
-![Lighting properties](/.data/assets/Viewport-Lighting.png)
+![Lighting properties](/.data/ui/interface/menus-and-toolbars/viewport-toolbar/viewport-lighting.webp)
 
 Render Style: Viewport preview renderer can be set from this option. User can select from Realistic Render, Clay Render, Visualize Data allows to view the raw data with render off. See @render-modes
 
-![Render Style](/.data/assets/Viewport-Renderer-(1).png)
+![Render Style](/.data/ui/interface/menus-and-toolbars/viewport-toolbar/viewport-renderer-1.webp)
 
 Autolevel Masks: 
 
@@ -29,11 +29,11 @@ Toggle 2D Viewport: Shows/Hides 2D viewport.
 
 Viewport Tools: It provides tools to Pick Height/Color and provides various measurement tools. See @measurement-tools
 
-![Viewport Tools](/.data/assets/Viewport-Tools.png)
+![Viewport Tools](/.data/ui/interface/menus-and-toolbars/viewport-toolbar/viewport-tools.webp)
 
 Viewport Toolbar submenu: This submenu provides extended functionalities and settings for viewport.
 
-![More viewport options](/.data/assets/Viewport-Submenu.png)
+![More viewport options](/.data/ui/interface/menus-and-toolbars/viewport-toolbar/viewport-submenu.webp)
 
 
 

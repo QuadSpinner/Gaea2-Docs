@@ -1,4 +1,4 @@
----
+﻿---
 description: Glacier creates flowing glaciers on mountain tops.
 title: Glacier
 uid: glacier
@@ -22,6 +22,6 @@ Use Glacier when you need flowing glaciers on mountain tops or create partial, s
 
 ## Visual Direction
 
-![](/.data/assets/Glacier_VD.png)
+![](/.data/reference/nodes/simulate/glacier/visual-direction.webp)
 
 ## Properties

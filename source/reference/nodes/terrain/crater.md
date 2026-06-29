@@ -1,4 +1,4 @@
----
+﻿---
 description: The Crater primitive creates different types of crater shapes.
 title: Crater
 uid: crater
@@ -13,14 +13,14 @@ Craters can be either *volcanic*, which start at the base and go up in a conical
 
 <figure>
 
-![](/.data/ref/Crater/Crater--Impact.webp)
+![](/.data/reference/nodes/terrain/crater/crater-impact.webp)
 
 <figcaption>Impact Crater: The base is higher than the "ground" as the impact crater goes below the surface.</figcaption>
 </figure>
 
 <figure>
 
-![](/.data/ref/Crater/Crater--Volcanic.webp)
+![](/.data/reference/nodes/terrain/crater/crater-volcanic.webp)
 
 <figcaption>Volcanic Crater: The base is a flat area and easier to combine with existing terrains.</figcaption>
 </figure>
@@ -30,6 +30,6 @@ Use Crater when you need a controllable volcanic or impact crater base that can 
 
 ## Visual Direction
 
-![](/.data/assets/Crater_VD.png)
+![](/.data/reference/nodes/terrain/crater/visual-direction.webp)
 
 ## Properties

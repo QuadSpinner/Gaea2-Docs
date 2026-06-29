@@ -1,4 +1,4 @@
----
+﻿---
 description: ThermalShaper is a fast and effective way of condensing and coalescing shapes similar to what Shaper does, but in a way where it is in line with what.
 title: ThermalShaper
 uid: thermalshaper
@@ -16,6 +16,6 @@ Use ThermalShaper when you want shapes to condense and settle in a way that feel
 
 ## Visual Direction
 
-![](/.data/assets/ThermalShaper_VD.png)
+![](/.data/reference/nodes/modify/thermalshaper/visual-direction.webp)
 
 ## Properties

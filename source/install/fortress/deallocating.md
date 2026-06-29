@@ -1,4 +1,4 @@
----
+﻿---
 title: Deallocate Licenses
 uid: fortress-deallocate
 icon: toggle-off
@@ -12,15 +12,15 @@ description: View active Fortress allocations, release sessions gracefully or fo
 
 By default, the Fortress Console shows only Tenants and does not auto-refresh to avoid unnecessary server load.
 
-![](/.data/ui/fortress-allocs.png)
+![](/.data/shared/install/fortress-allocs.webp)
 
 Select **View Allocations** to see a live list of allocated licenses.
 
-![](/.data/ui/fortress-allocs-kill.png)
+![](/.data/shared/install/fortress-allocs-kill.webp)
 
 To deallocate a license, select the target machine. All sessions on that machine will be released.
 
-![](/.data/ui/fortress-allocs-killing.png)
+![](/.data/shared/install/fortress-allocs-killing.webp)
 
 Two deallocation options are available:
 

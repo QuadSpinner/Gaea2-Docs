@@ -1,4 +1,4 @@
----
+﻿---
 description: Generates basic geometric terrain shapes for use as primitives or masks.
 title: Shape
 uid: shape
@@ -12,6 +12,6 @@ Use Shape when you need basic geometric terrain shapes for use as primitives or 
 
 ## Visual Direction
 
-![](/.data/assets/Shape_VD.png)
+![](/.data/reference/nodes/primitive/shape/visual-direction.webp)
 
 ## Properties

@@ -1,4 +1,4 @@
----
+﻿---
 title: Deactivation
 uid: deactivation
 order: 02
@@ -12,7 +12,7 @@ description: Release a Gaea license from a machine so it can be reactivated else
 
 You can release a license so it can be installed on a different computer. To do so, go to Help > About. Then click "Release License" at the bottom of the dialog. This will de-authorize the installation and revert it back to the Community Edition.
 
-![](/.data/assets/about-2.2.9.0.webp)
+![](/.data/install/license-management/deactivation/about-2-2-9-0.webp)
 
 This is not a permanent deactivation. You can re-activate the same installation again if needed.
 
@@ -41,6 +41,6 @@ To release an activation online:
 5. Locate the computer you want to remove.
 6. Click **Release** for that activation.
 
-![Online license release from the License Dashboard](/.data/assets/license-dashboard-release.webp)
+![Online license release from the License Dashboard](/.data/install/license-management/deactivation/license-dashboard-release.webp)
 
 This allows you to remotely manage license activations without needing to open Gaea on the original PC.

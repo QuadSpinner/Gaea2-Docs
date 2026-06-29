@@ -1,4 +1,4 @@
----
+﻿---
 description: Rugged is a very powerful primitive node that creates a strong, rocky surface for any terrain while preserving overall shape.
 title: Rugged
 uid: rugged
@@ -14,6 +14,6 @@ Use Rugged when you want a large landform that already carries a strong rocky ch
 
 ## Visual Direction
 
-![](/.data/assets/Rugged_VD.png)
+![](/.data/reference/nodes/terrain/rugged/visual-direction.webp)
 
 ## Properties

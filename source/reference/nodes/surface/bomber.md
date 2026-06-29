@@ -1,4 +1,4 @@
----
+﻿---
 description: The Bomber node takes an input heightfield and "stamps" or bombs it across the entire surface of the terrain using the randomization properties you set.
 title: Bomber
 uid: bomber
@@ -14,6 +14,6 @@ Use Bomber when you need takes an input heightfield and "stamps" or bombs it acr
 
 ## Visual Direction
 
-![](/.data/assets/Bomber_VD.png)
+![](/.data/reference/nodes/surface/bomber/visual-direction.webp)
 
 ## Properties

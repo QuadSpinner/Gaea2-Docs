@@ -1,4 +1,4 @@
----
+﻿---
 description: Creates broad rocky surface formations and broken stone-like terrain detail.
 title: Rockscape
 uid: rockscape
@@ -12,6 +12,6 @@ Use Rockscape when the terrain needs broad rocky massing or broken stone forms l
 
 ## Visual Direction
 
-![](/.data/assets/Rockscape_VD.png)
+![](/.data/reference/nodes/surface/rockscape/visual-direction.webp)
 
 ## Properties

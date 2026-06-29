@@ -1,4 +1,4 @@
----
+﻿---
 description: Redistributes the input values to balance the histogram and reveal more detail across the range.
 title: Equalize
 uid: equalize
@@ -12,6 +12,6 @@ Use Equalize when the terrain shape is mostly working and you need a targeted re
 
 ## Visual Direction
 
-![](/.data/assets/Equalize_VD.png)
+![](/.data/reference/nodes/modify/equalize/visual-direction.webp)
 
 ## Properties

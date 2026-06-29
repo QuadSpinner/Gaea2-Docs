@@ -1,4 +1,4 @@
----
+﻿---
 description: The Cracks primitive creates large, cracked patterns on a flat base.
 title: Cracks
 uid: cracks
@@ -11,7 +11,7 @@ The Cracks primitive creates large, cracked patterns on a flat base. You
 can use it to mask other nodes or subtract it from other primitives
 using the Combine node.
 
-![](/.data/ref/Cracks/Cracks.webp)
+![](/.data/reference/nodes/primitive/cracks/cracks.webp)
 
 ## When to Use It
 Use Cracks when you need large, cracked patterns on a flat base.
@@ -23,7 +23,7 @@ Use Cracks when you need large, cracked patterns on a flat base.
 By using Combine to subtract out the Cracks output, you can cut out the
 pattern in the main terrain.
 
-![](/.data/ref/Cracks/usage-1.webp)
+![](/.data/reference/nodes/primitive/cracks/usage-1.webp)
 
 ### Nested Patterns
 
@@ -36,13 +36,13 @@ rule of thumb, you can take the largest size, right-click the `Scale`
 slider and select the `Halve` button. Duplicate the node and halve it
 again for the next node.
 
-![](/.data/ref/Cracks/usage-2.webp)
+![](/.data/reference/nodes/primitive/cracks/usage-2.webp)
 
 This may still look too simple for most usage scenarios. So you can add
 distortions to the nodes by using the `Displace` option in the
 @modifier-stack. This will create more natural-looking cracks.
 
-![](/.data/ref/Cracks/usage-3.webp)
+![](/.data/reference/nodes/primitive/cracks/usage-3.webp)
 
 :::info
 Remember to modify the `Seed` property under the Displacement post process slider to make each node randomized.
@@ -52,6 +52,6 @@ When subtracting this pattern out of another terrain, you can get complex, subtl
 
 If you need more elaborate distortions in your patterns, you can add a Warp node to each Cracks node.
 
-![](/.data/ref/Cracks/usage-4.webp)
+![](/.data/reference/nodes/primitive/cracks/usage-4.webp)
 
 ## Properties

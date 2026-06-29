@@ -1,4 +1,4 @@
----
+﻿---
 description: SoftClip a low-level utility that lets you softly reduce the intensity of shapes above a specified threshold. It can be comparable to masking a shape with a Height node and then clamping that portion.
 title: SoftClip
 uid: softclip
@@ -20,6 +20,6 @@ Use SoftClip when peaks or high values need to be reduced gently instead of with
 
 ## Visual Direction
 
-![](/.data/assets/SoftClip_VD.png)
+![](/.data/reference/nodes/modify/softclip/visual-direction.webp)
 
 ## Properties

@@ -1,4 +1,4 @@
----
+﻿---
 title: Script
 uid: build-options-script
 order: 05
@@ -9,7 +9,7 @@ description: Run post-build commands automatically after Gaea finishes building.
 
 The **Script** tab lets you define a **Post-Build Script** that runs after the build completes. This is useful for automation tasks such as moving files, organizing outputs, or launching downstream processing.
 
-![](/.data/assets/Build-Options-Script-(2).png)
+![](/.data/ui/interface/build-options/script/build-options-script-2.webp)
 
 ## Post-Build Script
 

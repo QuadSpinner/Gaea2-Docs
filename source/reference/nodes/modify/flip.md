@@ -1,4 +1,4 @@
----
+﻿---
 description: Flip flips the terrain horizontally, vertically, or both.
 title: Flip
 uid: flip
@@ -14,6 +14,6 @@ Use Flip when a terrain, mask, or pattern is correct in shape but needs its orie
 
 ## Visual Direction
 
-![](/.data/assets/Flip_VD.png)
+![](/.data/reference/nodes/modify/flip/visual-direction.webp)
 
 ## Properties

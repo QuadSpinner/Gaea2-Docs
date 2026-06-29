@@ -1,4 +1,4 @@
----
+﻿---
 title: Assign Licenses
 uid: fortress-assign
 icon: toggle-on
@@ -30,21 +30,21 @@ FL-00000000-0000-0000-0000-000000000000
 
 1. Select **Create a License File**.
 
-   ![](/.data/ui/fortress-create1.png)
+   ![](/.data/install/fortress/assigning/fortress-create1.webp)
 
 2. Choose a **Tenant**.
 
-   ![](/.data/ui/fortress-create2.png)
+   ![](/.data/install/fortress/assigning/fortress-create2.webp)
 
 3. Choose the desired IP address (or enter one manually).
 
    * If the server has multiple network adapters, all assigned IP addresses will be listed.
 
-   ![](/.data/ui/fortress-create3.png)
+   ![](/.data/install/fortress/assigning/fortress-create3.webp)
 
 4. Choose where to save the file (or press Enter to accept the default path shown).
 
-   ![](/.data/ui/fortress-create4.png)
+   ![](/.data/install/fortress/assigning/fortress-create4.webp)
 
 The file is typically saved as `000000.lic` (or using the Tenant’s ID). Copy this file to the [Gaea Data folder](@paths-and-storage) on the workstation and rename it to:
 
@@ -64,15 +64,15 @@ During a run, a local token is stored so `Gaea.exe`, `Gaea.Build.exe`, and Gaea 
 
 By default, the Fortress Console shows only Tenants and does not auto-refresh to avoid unnecessary server load.
 
-![](/.data/ui/fortress-allocs.png)
+![](/.data/shared/install/fortress-allocs.webp)
 
 Select **View Allocations** to see a live list of allocated licenses.
 
-![](/.data/ui/fortress-allocs-kill.png)
+![](/.data/shared/install/fortress-allocs-kill.webp)
 
 To deallocate a license, select the target machine. All sessions on that machine will be released.
 
-![](/.data/ui/fortress-allocs-killing.png)
+![](/.data/shared/install/fortress-allocs-killing.webp)
 
 Two deallocation options are available:
 

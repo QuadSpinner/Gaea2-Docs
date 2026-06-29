@@ -1,4 +1,4 @@
----
+﻿---
 description: Shatter transforms simple shapes into complex, highly eroded, and fractured terrains.
 title: Shatter
 uid: shatter
@@ -12,6 +12,6 @@ Use Shatter when you need transforms simple shapes into complex, highly eroded, 
 
 ## Visual Direction
 
-![](/.data/assets/Shatter_VD.png)
+![](/.data/reference/nodes/surface/shatter/visual-direction.webp)
 
 ## Properties

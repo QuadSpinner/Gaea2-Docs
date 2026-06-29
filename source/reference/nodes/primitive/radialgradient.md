@@ -1,4 +1,4 @@
----
+﻿---
 description: Generates a circular gradient radiating outward from a center point.
 title: RadialGradient
 uid: radialgradient
@@ -12,6 +12,6 @@ Use RadialGradient when you need a circular gradient radiating outward from a ce
 
 ## Visual Direction
 
-![](/.data/assets/RadialGradient_VD.png)
+![](/.data/reference/nodes/primitive/radialgradient/visual-direction.webp)
 
 ## Properties

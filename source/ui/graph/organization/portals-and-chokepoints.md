@@ -1,4 +1,4 @@
----
+﻿---
 title: Portals and Chokepoints
 uid: portals-and-chokepoints
 order: 06
@@ -22,13 +22,13 @@ Any output port in a node can be converted to a portal. You can create a portal 
 
 Right-click a connection to bring up the Connection menu and select `Convert to Portal`.
 
-![The connection is replaced with Portals.](/.data/assets/Nm7n3sItlh.png)
+![The connection is replaced with Portals.](/.data/ui/graph/organization/portals-and-chokepoints/nm7n3s-itlh.webp)
 
 Right-click an existing connection and select `Convert to Portal`.
 
 
 :::image-row
-![Press P to bring up the Portal menu.](/.data/assets/image-(48).png) ![Create or delete Portal connections in the Portal menu.](/.data/assets/image-(49).png)
+![Press P to bring up the Portal menu.](/.data/ui/graph/organization/portals-and-chokepoints/press-p-to-bring-up-the-portal-menu.webp) ![Create or delete Portal connections in the Portal menu.](/.data/ui/graph/organization/portals-and-chokepoints/press-p-to-bring-up-the-portal-menu-02.webp)
 :::
 
 Right-click a node and select `Manage Portals` (shortcut key `P`). Then select the port you wish to convert to a Portal. If the Port has existing connections, they will be converted to portal connections.
@@ -37,9 +37,9 @@ Right-click a node and select `Manage Portals` (shortcut key `P`). Then select t
 If you press `Shift` while Converting a Port to a Portal in the Manage Portals menu, a Chokepoint node will be created first and then its output will be turned into a Portal.
 :::
 
-![](/.data/assets/image-(71).png)
+![](/.data/ui/graph/organization/portals-and-chokepoints/creating-portals.webp)
 
-![](/.data/assets/Gaea_-_Untitled_09-30-27-PM.png)
+![](/.data/ui/graph/organization/portals-and-chokepoints/gaea-untitled.webp)
 
 When you select "Connect to Portal" in the Portal menu for any incoming ports, you will get a Search popup with a list of available Portals.
 

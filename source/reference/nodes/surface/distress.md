@@ -1,4 +1,4 @@
----
+﻿---
 description: Adds superficial wear, breakup, and irregular damage to a surface.
 title: Distress
 uid: distress
@@ -12,6 +12,6 @@ Use Distress when you need superficial wear, breakup, and irregular damage to a 
 
 ## Visual Direction
 
-![](/.data/assets/Distress_VD.png)
+![](/.data/reference/nodes/surface/distress/visual-direction.webp)
 
 ## Properties

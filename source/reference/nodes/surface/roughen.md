@@ -1,4 +1,4 @@
----
+﻿---
 description: Adds fine roughness and small-scale breakup to the terrain surface.
 title: Roughen
 uid: roughen
@@ -12,6 +12,6 @@ Use Roughen when you need fine roughness and small-scale breakup to the terrain 
 
 ## Visual Direction
 
-![](/.data/assets/Roughen_VD.png)
+![](/.data/reference/nodes/surface/roughen/visual-direction.webp)
 
 ## Properties

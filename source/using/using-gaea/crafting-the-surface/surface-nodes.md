@@ -1,4 +1,4 @@
----
+﻿---
 title: Surface Nodes
 uid: surface-nodes
 order: 03
@@ -15,13 +15,13 @@ Gaea 2.0 introduces Surface Nodes, and as the name implies, they work on the sur
 
 Surface Nodes come in a large variety - from rock formations to simple superficial effects - and boast powerful realism coupled with volume preservation.
 
-![](/.data/assets/rockformations.webp)
+![](/.data/using/using-gaea/crafting-the-surface/surface-nodes/surface-modification-tools.webp)
 
 ### Volume Preservation
 
 Gaea's Surface tools separate the process of designing the overall terrain shape (or volume) and designing the superficial shapes on the surface.
 
-![](/.data/assets/volume.webp)
+![](/.data/using/using-gaea/crafting-the-surface/surface-nodes/volume.webp)
 
 This allows you to modify the surface without altering the overall shape, volume, or silhouette of the terrain - which is crucial when you already have the asset in your scene yet need to modify it.
 
@@ -29,13 +29,13 @@ This allows you to modify the surface without altering the overall shape, volume
 
 Gaea takes terrain design towards new horizons by introducing key tools for sandstone, limestone, and generic rock layers that promote mechanical breakage as opposed to softer, sedimentary flow.
 
-![](/.data/assets/sandstonelayers.webp)
+![](/.data/using/using-gaea/crafting-the-surface/surface-nodes/sandstone-limestone-and-generic-layering.webp)
 
 **Stratify** is a high-level node that provides large scale stratification, tilt, and uplift. It can be used for larger shaping.
 
 **Sandstone** is a versatile node that works on both small and medium scale to add multi-level detail through multiple passes while also chipping the rock and excising large chunks as mechanical erosion. Sandstone can also create staggered stairstep patterns quite common in nature. This pseudo-self-similar repetition is the hallmark of such rock formations.
 
-![](/.data/assets/vertwall.webp)
+![](/.data/using/using-gaea/crafting-the-surface/surface-nodes/vertwall.webp)
 
 **FractalTerraces** provides a more low-level approach to stratification and tilting, giving you more primary control. This is useful when you want to achieve direct control over the erosion through a complex graph and don't want _Stratify_ or _Sandstone_ to introduce too many features into your terrain directly.
 
@@ -51,15 +51,15 @@ The Rocky family of nodes provides powerful rock "growth" on your existing terra
 
 **Outcrops** can help you turn any surface into a powerful, rugged, large-scale rock formation.
 
-![](/.data/assets/outcrops.webp)
+![](/.data/using/using-gaea/crafting-the-surface/surface-nodes/outcrops.webp)
 
 **Craggy** can help you turn any surface into a fragmented field of rocks.
 
-![](/.data/assets/craggy.webp)
+![](/.data/using/using-gaea/crafting-the-surface/surface-nodes/craggy.webp)
 
 **Stones** helps add small, superficial stones to the surface. These are random, and not physically driven like @debris.
 
-![](/.data/assets/stones.webp)
+![](/.data/using/using-gaea/crafting-the-surface/surface-nodes/stones.webp)
 
 There are several other nodes in the Surface family that provide other functionality.
 

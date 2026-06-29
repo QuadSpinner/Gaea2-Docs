@@ -1,4 +1,4 @@
----
+﻿---
 title: Terrain
 uid: build-options-terrain
 order: 06
@@ -9,7 +9,7 @@ description: Configure the Terrain Definition for a build, including terrain wid
 
 The **Terrain** tab contains the **Terrain Definition** panel, where you set the physical size of the terrain used by the build. These values define the real-world scale of the terrain and influence measurements, simulations, and export expectations across the project.
 
-![](/.data/assets/Build-Options-Terrain-(2).png)
+![](/.data/shared/common/build-options-2.webp)
 
 ## Terrain Definition
 

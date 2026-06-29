@@ -1,4 +1,4 @@
----
+﻿---
 description: Generates a regular grid pattern useful for cartography, masking, or stylized surfaces.
 title: Grid
 uid: grid
@@ -12,6 +12,6 @@ Use Grid when you need a regular grid pattern useful for cartography, masking, o
 
 ## Visual Direction
 
-![](/.data/assets/Grid_VD.png)
+![](/.data/reference/nodes/surface/grid/visual-direction.webp)
 
 ## Properties

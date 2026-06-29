@@ -1,4 +1,4 @@
----
+﻿---
 title: CPU Only Mode
 uid: cpu-only-mode
 order: 02
@@ -11,10 +11,10 @@ In some cases, Gaea may have trouble using your GPU device. Often this is becaus
 
 To enable CPU only mode, start Gaea Diagnostics from the Start Menu. Select "Run Gaea with CPU only" and click "Start".
 
-![](/.data/assets/Gaea_Diagnostics_11-00-52-AM.png)
+![](/.data/using/troubleshooting/diagnostics-watson/cpu-only-mode/gaea-diagnostics.webp)
 
 This will start Gaea in CPU only mode. It will now remain in CPU only mode, including when running the Gaea Build CLI.
 
 To re-enable multiple device usage, you can go to the @options-compute tab in @options.
 
-![](/.data/assets/Options_11-01-25-AM.png)
+![](/.data/using/troubleshooting/diagnostics-watson/cpu-only-mode/options.webp)

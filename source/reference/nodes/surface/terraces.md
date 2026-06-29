@@ -1,4 +1,4 @@
----
+﻿---
 description: Creates stepped terrace formations from the terrain.
 title: Terraces
 uid: terraces
@@ -16,6 +16,6 @@ Use Terraces when you need stepped terrace formations from the terrain.
 
 ## Visual Direction
 
-![](/.data/assets/Terraces_VD.png)
+![](/.data/reference/nodes/surface/terraces/visual-direction.webp)
 
 ## Properties

@@ -1,4 +1,4 @@
----
+﻿---
 description: Stratify creates broken strata or rock layers on the terrain in a non-linear fashion, producing a robust, realistic formation.
 title: Stratify
 uid: stratify
@@ -14,6 +14,6 @@ Use Stratify when the terrain needs broken rock layering or sedimentary bands th
 
 ## Visual Direction
 
-![](/.data/assets/Stratify_VD.png)
+![](/.data/reference/nodes/surface/stratify/visual-direction.webp)
 
 ## Properties

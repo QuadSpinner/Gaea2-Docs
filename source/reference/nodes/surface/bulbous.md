@@ -1,4 +1,4 @@
----
+﻿---
 description: Bulbous inflates existing shapes to make them more voluminous while respecting standard geological boundaries.
 title: Bulbous
 uid: bulbous
@@ -12,6 +12,6 @@ Use Bulbous when you need inflates existing shapes to make them more voluminous 
 
 ## Visual Direction
 
-![](/.data/assets/Bulbous_VD.png)
+![](/.data/reference/nodes/surface/bulbous/visual-direction.webp)
 
 ## Properties

@@ -1,4 +1,4 @@
----
+﻿---
 description: Swirl creates a vortex warp on the terrain. Very useful for adding a fluid look.
 title: Swirl
 uid: swirl
@@ -14,6 +14,6 @@ Use Swirl when you want a single vortex-like distortion that gives the terrain a
 
 ## Visual Direction
 
-![](/.data/assets/Swirl_VD.png)
+![](/.data/reference/nodes/modify/swirl/visual-direction.webp)
 
 ## Properties

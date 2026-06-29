@@ -1,4 +1,4 @@
----
+﻿---
 title: General
 uid: options-general
 order: 01
@@ -9,7 +9,7 @@ description: The General tab provides essential application-wide preferences, co
 
 The **General** tab provides essential application-wide preferences, controlling how Gaea launches, handles logs, updates, licensing, and diagnostic tools. These settings affect global behavior rather than project-specific options.
 
-![](/.data/assets/Options_-_General_09-56-50-PM.png)
+![](/.data/ui/interface/options/general/options-general.webp)
 
 
 
