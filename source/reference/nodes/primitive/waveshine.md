@@ -1,4 +1,4 @@
----
+﻿---
 description: Generates wave-like reflective or rippling patterns useful for stylized surfaces and water-like forms.
 title: WaveShine
 uid: waveshine
@@ -12,6 +12,6 @@ Use WaveShine when you need wave-like reflective or rippling patterns useful for
 
 ## Visual Direction
 
-![](/.data/assets/WaveShine_VD.png)
+![](/.data/reference/nodes/primitive/waveshine/visual-direction.webp)
 
 ## Properties

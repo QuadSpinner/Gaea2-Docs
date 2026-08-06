@@ -1,4 +1,4 @@
----
+﻿---
 description: MultiFractal creates a multi-noise that can have a large level of variations. Often useful for texturing.
 title: MultiFractal
 uid: multifractal
@@ -12,6 +12,6 @@ Use MultiFractal when you need a multi-noise that can have a large level of vari
 
 ## Visual Direction
 
-![](/.data/assets/MultiFractal_VD.png)
+![](/.data/reference/nodes/primitive/multifractal/visual-direction.webp)
 
 ## Properties

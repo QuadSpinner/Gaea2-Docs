@@ -1,4 +1,4 @@
----
+﻿---
 description: Fold simulates terrain folding by introducing slants, breaks, and folds to the terrain. It significantly changes the terrain shape and should be used early in the graph.
 title: Fold
 uid: fold
@@ -14,6 +14,6 @@ Use Fold when you want to introduce strong bent, slanted, or folded structure ea
 
 ## Visual Direction
 
-![](/.data/assets/Fold_VD.png)
+![](/.data/reference/nodes/modify/fold/visual-direction.webp)
 
 ## Properties

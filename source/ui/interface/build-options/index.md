@@ -1,4 +1,4 @@
----
+﻿---
 title: Build Options
 uid: build-options
 order: 01
@@ -9,7 +9,7 @@ description: Use Build Options to control resolution, terrain scale, exports, re
 
 The **Build Options** window gathers the settings that define how Gaea builds and exports a terrain. Use the tabs on the left to choose build scope, output destinations, tiled build behavior, export nodes, Terrain Definition, regions, profiles, scripts, and execution commands.
 
-![](/.data/assets/Build-Options-Overview.webp)
+![](/.data/ui/interface/build-options/index/build-options-overview.webp)
 
 | Tab | Purpose |
 |---|---|

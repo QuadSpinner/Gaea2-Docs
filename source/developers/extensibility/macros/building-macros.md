@@ -1,4 +1,4 @@
----
+﻿---
 icon: puzzle
 title: Building Macros
 uid: building-macros
@@ -42,7 +42,7 @@ Rename the ports to something clear such as `In` and `Out` so the source graph s
 7. Enable `Is Optional` on any `MacroPort` that should not be required.
 
 <figure style="max-width: 820px; margin: 1rem auto;">
-  <img class="img-fluid" src="/.data/assets/CreateAMacro.png" alt="A simple Macro graph built from two MacroPort nodes and a Shaper node." />
+  <img class="img-fluid" src="/.data/developers/extensibility/macros/building-macros/create-amacro.webp" alt="A simple Macro graph built from two MacroPort nodes and a Shaper node." />
   <figcaption><p>A simple Macro graph built with <code>MacroPort &gt; Shaper &gt; MacroPort</code>.</p></figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ To expose a setting from a node inside the Macro:
 4. Give the variable a clear name and sensible range.
 
 <figure style="max-width: 820px; margin: 1rem auto;">
-  <img class="img-fluid" src="/.data/assets/BindNewVariable.webp" alt="Binding a Shaper property to a new variable inside a Macro." />
+  <img class="img-fluid" src="/.data/developers/extensibility/macros/building-macros/bind-new-variable.webp" alt="Binding a Shaper property to a new variable inside a Macro." />
   <figcaption><p>Create a new exposed variable from any internal node property.</p></figcaption>
 </figure>
 
@@ -71,12 +71,12 @@ Repeat for any other settings you want to control from outside the Macro. These 
 5. **Restart Gaea to test the Macro.**
 
 <figure style="max-width: 820px; margin: 1rem auto;">
-  <img class="img-fluid" src="/.data/assets/CreateAMacroExportReady.png" alt="A finished Macro graph with renamed In and Out ports, ready to export." />
+  <img class="img-fluid" src="/.data/developers/extensibility/macros/building-macros/create-amacro-export-ready.webp" alt="A finished Macro graph with renamed In and Out ports, ready to export." />
   <figcaption><p>Once the ports are named and the graph is wired, the Macro is ready to export.</p></figcaption>
 </figure>
 
 <figure style="max-width: 820px; margin: 1rem auto;">
-  <img class="img-fluid" src="/.data/assets/ExportMacro.webp" alt="The Export Macro dialog showing metadata, Macro ID preview, and install options." />
+  <img class="img-fluid" src="/.data/developers/extensibility/macros/building-macros/export-macro.webp" alt="The Export Macro dialog showing metadata, Macro ID preview, and install options." />
   <figcaption><p>Use the export dialog to define metadata, review the Macro ID, and optionally install the Macro into Gaea.</p></figcaption>
 </figure>
 
@@ -92,7 +92,7 @@ Keep the original Macro source `.terrain` file. The exported `.macro` is the ins
 
 <figure style="max-width: 820px; margin: 1rem auto;">
   <video controls muted loop playsinline preload="metadata" style="width: 100%; height: auto;">
-    <source src="/.data/assets/MacroImport.webm" type="video/webm" />
+    <source src="/.data/developers/extensibility/macros/building-macros/macro-import.webm" type="video/webm" />
   </video>
   <figcaption><p>Install a Macro by dragging the <code>.macro</code> file into Gaea, then search for it by name like any other node.</p></figcaption>
 </figure>

@@ -1,4 +1,4 @@
----
+﻿---
 title: Benchmark Devices
 uid: benchmark-devices
 order: 03
@@ -7,7 +7,7 @@ description: The Hardware Benchmark runs tests to determine the general speed of
 
 # Benchmark Devices
 
-![](/.data/assets/Gaea_Diagnostics_11-07-49-AM.png)
+![](/.data/using/troubleshooting/diagnostics-watson/benchmark-devices/gaea-diagnostics.webp)
 
 ## Hardware Benchmark
 
@@ -15,7 +15,7 @@ The Hardware Benchmark runs tests to determine the general speed of your CPU, in
 
 You can choose between the normal, High Accuracy, or Very High Accuracy test. Higher accuracy tests require longer testing time.
 
-![](/.data/assets/Benchmark_Results_11-08-17-AM.png)
+![](/.data/using/troubleshooting/diagnostics-watson/benchmark-devices/benchmark-results.webp)
 
 The score signifies the performance factor of each device. A higher score indicates better performance.
 
@@ -23,4 +23,4 @@ The score signifies the performance factor of each device. A higher score indica
 
 The benchmark data is also available via the [Compute Tab](@options-compute) tab. 
 
-![](/.data/assets/Options_11-09-14-AM.png)
+![](/.data/using/troubleshooting/diagnostics-watson/benchmark-devices/options.webp)

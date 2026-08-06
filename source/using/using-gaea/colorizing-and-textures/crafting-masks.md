@@ -1,4 +1,4 @@
----
+﻿---
 title: Crafting Masks
 uid: crafting-masks
 order: 01
@@ -13,23 +13,23 @@ All color texture generation in Gaea relies on applying color ramps (gradients) 
 
 A simple example: the darkest part of the gradient maps to the lowest terrain elevations, while the brightest part maps to the highest. Intermediate grayscale values distribute the gradient proportionally. This is known as a CLUT or Color Look Up Table.
 
-![](/.data/assets/CLUTer.png)
+![](/.data/using/using-gaea/colorizing-and-textures/crafting-masks/cluter.webp)
 
 In this example, the gradient from a CLUTer node is mapped directly to the heightfield.
 
-![](/.data/assets/mountain_autolevelled.png)
+![](/.data/using/using-gaea/colorizing-and-textures/crafting-masks/mountain-autolevelled.webp)
 
 Now, let's a try more detailed, colorful gradient.
 
-![](/.data/assets/Gaea_-_Untitled_04-39-07-AM.webp)
+![](/.data/using/using-gaea/colorizing-and-textures/crafting-masks/gaea-untitled-02.webp)
 
 You can see how it distributes across the terrain.
 
-![](/.data/assets/Gaea_-_Untitled_04-38-54-AM.webp)
+![](/.data/using/using-gaea/colorizing-and-textures/crafting-masks/gaea-untitled.webp)
 
 Now, if you use the same CLUT map but feed it a FlowMap instead of the terrain height, the texture will follow the flow lines defined by the FlowMap, producing a very different result.
 
-![](/.data/assets/Gaea_-_Untitled_04-39-18-AM.webp)
+![](/.data/using/using-gaea/colorizing-and-textures/crafting-masks/gaea-untitled-03.webp)
 
 
 
@@ -37,13 +37,13 @@ Now, if you use the same CLUT map but feed it a FlowMap instead of the terrain h
 
 Gaea provides nodes such as [TextureBase](@texturebase) and [Texturizer](@texturizer) provide complex colorization masks based on the terrain's inherent features.
 
-![](/.data/assets/Gaea_-_Untitled_04-44-21-AM.webp)
+![](/.data/using/using-gaea/colorizing-and-textures/crafting-masks/gaea-untitled-04.webp)
 
-![](/.data/assets/Gaea_-_Untitled_04-47-53-AM.webp)
+![](/.data/using/using-gaea/colorizing-and-textures/crafting-masks/gaea-untitled-05.webp)
 
 Which can create more complex textures such as this:
 
-![](/.data/assets/Gaea_-_Untitled_04-50-15-AM.webp)
+![](/.data/using/using-gaea/colorizing-and-textures/crafting-masks/gaea-untitled-06.webp)
 
 
 
@@ -57,13 +57,13 @@ Unlike the classic approach that combines basic data (slope, angle) with noise (
 
 Aspect Data Maps mask out aspects of the terrain such as Height, Slope, Curvature, Angle, Peaks, etc.
 
-![](/.data/assets/datamaps.webp)
+![](/.data/shared/using/datamaps.webp)
 
 ### Generative Maps
 
 Generate Data Maps run various algorithms on the terrain to generate information such as Flows, Soil, Rock Occlusion, etc.
 
-![](/.data/assets/datamaps2.webp)
+![](/.data/using/using-gaea/colorizing-and-textures/crafting-masks/datamaps2.webp)
 
 Data Maps can be combined together or with Texture nodes to create complex texture masks for colorization.
 

@@ -1,4 +1,4 @@
----
+﻿---
 description: Lake simulates rainfall on the terrain and creates physically accurate lakes.
 title: Lake
 uid: lake
@@ -11,5 +11,7 @@ order: 12
 Use Lake when you need simulates rainfall on the terrain and creates physically accurate lakes.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/simulate/lake/visual-direction.webp)
 
 ## Properties

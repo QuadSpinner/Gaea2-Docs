@@ -1,4 +1,4 @@
----
+﻿---
 description: Generates three-dimensional cellular noise useful for volumetric-looking patterns and complex terrain breakup.
 title: Cellular3D
 uid: cellular3d
@@ -18,6 +18,6 @@ Use Cellular3D when you want a volumetric-looking cellular pattern for breakup, 
 
 ## Visual Direction
 
-![](/.data/assets/Celluar3D_VD.png)
+![](/.data/reference/nodes/primitive/cellular3d/visual-direction.webp)
 
 ## Properties

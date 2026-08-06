@@ -1,4 +1,4 @@
----
+﻿---
 icon: sidebar-flip
 title: User Interface
 uid: user-interface
@@ -12,12 +12,12 @@ Gaea's interface is built around a simple loop: **build your terrain in the grap
 <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-start">
   <div class="col">
     <figure>
-      <img class="img-fluid" src="/.data/ui/complete-ui.png" alt="The full Gaea interface" />
+      <img class="img-fluid" src="/.data/ui/index/complete-ui.webp" alt="The full Gaea interface" />
     </figure>
   </div>
   <div class="col">
     <figure>
-      <img class="img-fluid" src="/.data/ui/main-ui-annotated.webp" alt="Annotated Gaea interface map" />
+      <img class="img-fluid" src="/.data/ui/index/main-ui-annotated.webp" alt="Annotated Gaea interface map" />
     </figure>
   </div>
 </div>

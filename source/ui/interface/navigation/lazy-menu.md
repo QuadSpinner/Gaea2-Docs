@@ -1,4 +1,4 @@
----
+﻿---
 title: Lazy Menu
 uid: lazy-menu
 order: 01
@@ -15,14 +15,14 @@ In true lazy fashion, when you use the Lazy Menu to navigate to a section, your 
 This extra level of laziness can be disabled in the @options-general Options.
 :::
 
-![](/.data/assets/lazy_menu.png)
+![](/.data/ui/interface/navigation/lazy-menu/lazy-menu.webp)
 
 ## Editing Options
 
 You may not want all options to visible or maybe just want some options to stand out over others. You can edit the Lazy Menu in Options > @options#lazy-menu.
 
-![Lazy Menu options](/.data/assets/Gaea-Viewport-Lazy-Menu1.png)
+![Lazy Menu options](/.data/ui/interface/navigation/lazy-menu/viewport-lazy-menu1.webp)
 
 This modifies the Lazy Menu with your desired levels of visibility.
 
-![](/.data/assets/lazy_menu_modified.png)
+![](/.data/ui/interface/navigation/lazy-menu/lazy-menu-modified.webp)

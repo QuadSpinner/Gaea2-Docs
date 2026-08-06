@@ -1,4 +1,4 @@
----
+﻿---
 description: Cuts the terrain against a threshold, removing values above or below a specified level.
 title: Clip
 uid: clip
@@ -12,6 +12,6 @@ Use Clip when the terrain shape is mostly working and you need a targeted reshap
 
 ## Visual Direction
 
-![](/.data/assets/Clip_VD.png)
+![](/.data/reference/nodes/modify/clip/visual-direction.webp)
 
 ## Properties

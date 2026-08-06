@@ -1,4 +1,4 @@
----
+﻿---
 icon: power-off
 title: Using Gaea
 uid: home-user-guide
@@ -9,7 +9,7 @@ description: Learn the core terrain creation workflows in Gaea, from erosion and
 
 This section covers the core workflows used to build terrains in Gaea. It is designed to help you move from understanding the terrain graph to shaping surfaces, running simulations, preparing builds, and exporting results.
 
-![The Gaea 2.0 User Interface](/.data/assets/gaea-ui2x.webp)
+![The Gaea 2.0 User Interface](/.data/shared/common/ui2x.webp)
 
 Whether you are learning the fundamentals or refining a production workflow, these guides will help you understand how Gaea’s main systems fit together.
 

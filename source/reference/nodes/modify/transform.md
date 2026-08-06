@@ -1,4 +1,4 @@
----
+﻿---
 description: Transform allows you to move, rotate, and scale any terrain.
 title: Transform
 uid: transform
@@ -9,8 +9,6 @@ order: 35
 
 Transform allows you to move, rotate, and scale any terrain. The Transform node can be implemented at any point in your graph as it is a post-process effect.
 
-![](/.data/assets/transform.png)
-
 :::info
 If your terrain has a hard edge, try using the `Zero Borders` node before applying the Transform node.
 :::
@@ -20,6 +18,8 @@ Use Transform when a terrain or mask needs straightforward translation, rotation
 
 ## Visual Direction
 
-![](/.data/assets/Transform_VD.png)
+:::image-row
+![Transform 3D View](/.data/reference/nodes/modify/transform/visual-direction-3d-view.webp) ![Transform 2D View](/.data/reference/nodes/modify/transform/visual-direction-2d-view.webp)
+:::
 
 ## Properties

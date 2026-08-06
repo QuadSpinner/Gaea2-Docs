@@ -1,4 +1,4 @@
----
+﻿---
 description: Rivers can instantly generate complex river networks on any terrain, whether it can sustain rivers or not.
 title: Rivers
 uid: rivers
@@ -19,5 +19,9 @@ Rivers and Lakes can work together to create a comprehensive water element for y
 
 ## When to Use It
 Use Rivers when you want to generate believable river networks quickly, either to carve channels early or to add waterways later in the graph.
+
+## Visual Direction
+
+![](/.data/reference/nodes/simulate/rivers/visual-direction.webp)
 
 ## Properties

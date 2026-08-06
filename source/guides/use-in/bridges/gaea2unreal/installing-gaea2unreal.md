@@ -1,4 +1,4 @@
----
+﻿---
 title: Installing Gaea2Unreal
 uid: installing-gaea2unreal
 order: 01
@@ -29,9 +29,9 @@ Instead of `Engine\Plugins` you can install to the `<Project>\Plugins` folder in
 
 Once installed, launch Unreal Engine. Open the Plugins window and check `Gaea2Unreal`
 
-![](/.data/assets/Plugins_02-35-06-PM.png)
+![](/.data/guides/use-in/bridges/gaea2unreal/installing-gaea2unreal/plugins.webp)
 
-![](/.data/assets/image-(53).png)
+![](/.data/guides/use-in/bridges/gaea2unreal/installing-gaea2unreal/running-the-plugin.webp)
 
 Once the plugin is loaded (a restart may be required) - you will find the Gaea Landscape Importer in the main toolbar. 
 

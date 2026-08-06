@@ -1,4 +1,4 @@
----
+﻿---
 title: Data View
 uid: options-data-view
 order: 06
@@ -9,7 +9,7 @@ description: The Data View tab controls the appearance and expansion behavior of
 
 The **Data View** tab controls the appearance and expansion behavior of the Data View panel, allowing you to choose how icons are displayed and whether the view should auto-expand for easier navigation.
 
-![](/.data/assets/Options_-_Data_View_09-57-01-PM.png)
+![](/.data/ui/interface/options/data-view/options-data-view.webp)
 
 
 

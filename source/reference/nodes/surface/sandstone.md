@@ -1,4 +1,4 @@
----
+﻿---
 description: Creates layered sandstone-like terracing and sedimentary rock structure.
 title: Sandstone
 uid: sandstone
@@ -11,5 +11,7 @@ order: 15
 Use Sandstone when you need layered sandstone-like terracing and sedimentary rock structure.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/surface/sandstone/visual-direction.webp)
 
 ## Properties

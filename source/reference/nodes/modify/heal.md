@@ -1,4 +1,4 @@
----
+﻿---
 description: The Heal node can reconstruct damaged, low res, or 8-bit data with 16-bit, high resolution fidelity.
 title: Heal
 uid: heal
@@ -22,11 +22,11 @@ Obviously, not all data can be reconstructed, but you can get a fair bit of qual
 :::
 
 :::image-row
-![Original Data](/.data/ref/Heal/healA1.webp) ![After using Heal](/.data/ref/Heal/healA2.webp)
+![Original Data](/.data/reference/nodes/modify/heal/after.webp) ![After using Heal](/.data/reference/nodes/modify/heal/after-02.webp)
 :::
 
 :::image-row
-![Original Data](/.data/ref/Heal/healB1.webp) ![After using Heal](/.data/ref/Heal/healB2.webp)
+![Original Data](/.data/reference/nodes/modify/heal/after-03.webp) ![After using Heal](/.data/reference/nodes/modify/heal/after-04.webp)
 :::
 
 ## When to Use It

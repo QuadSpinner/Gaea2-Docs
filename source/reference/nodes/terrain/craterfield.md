@@ -1,4 +1,4 @@
----
+﻿---
 description: Creates a landscape full of craters.
 title: CraterField
 uid: craterfield
@@ -12,6 +12,6 @@ Use CraterField when you need a landscape full of craters.
 
 ## Visual Direction
 
-![](/.data/assets/CraterField_VD.png)
+![](/.data/reference/nodes/terrain/craterfield/visual-direction.webp)
 
 ## Properties

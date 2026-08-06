@@ -1,4 +1,4 @@
----
+﻿---
 description: Generates a straight linear gradient across the terrain.
 title: LinearGradient
 uid: lineargradient
@@ -12,6 +12,6 @@ Use LinearGradient when you need a straight linear gradient across the terrain.
 
 ## Visual Direction
 
-![](/.data/assets/LinearGradient_VD.png)
+![](/.data/reference/nodes/primitive/lineargradient/visual-direction.webp)
 
 ## Properties

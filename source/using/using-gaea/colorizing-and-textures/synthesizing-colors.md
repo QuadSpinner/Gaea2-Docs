@@ -1,4 +1,4 @@
----
+﻿---
 title: Synthesizing Colors
 uid: synthesizing-colors
 order: 03
@@ -11,7 +11,7 @@ Gaea's Synth node can take static color information and turn it into an editable
 
 The process is quite simple:
 
-![](/.data/assets/synth_process.webp)
+![](/.data/using/using-gaea/colorizing-and-textures/synthesizing-colors/synth-process.webp)
 
 1. Connect a static color map such as a SatMap or a File node with a color input to a Synth node.
    1. You will also need to provide a Height or Texture input, so you can apply the colors.

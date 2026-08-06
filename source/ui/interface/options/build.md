@@ -1,4 +1,4 @@
----
+﻿---
 title: Build
 uid: options-build
 order: 07
@@ -9,7 +9,7 @@ description: The Build tab defines the default output location, file formats, an
 
 The **Build** tab defines the default output location, file formats, and memory handling preferences for builds in Gaea. These settings apply globally unless overridden in individual project build settings.
 
-![The Build Tab](/.data/assets/Options_-_Build_09-57-03-PM.png)
+![The Build Tab](/.data/ui/interface/options/build/options-build.webp)
 
 
 

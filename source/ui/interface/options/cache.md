@@ -1,4 +1,4 @@
----
+﻿---
 title: Cache
 uid: options-cache
 order: 08
@@ -9,7 +9,7 @@ description: T.
 
 The **Cache** tab manages how Gaea stores temporary data and autosaves, allowing you to balance memory usage, disk performance, and long-term cleanup.
 
-![](/.data/assets/Options_-_Cache_09-57-05-PM.png)
+![](/.data/ui/interface/options/cache/options-cache.webp)
 
 
 

@@ -36,15 +36,16 @@ Use @nodes when you know the kind of processor you need. Node families group rel
 
 | Family | Use it for |
 | --- | --- |
-| @terrain | Large terrain primitives and landform starters. |
 | @primitive | Foundational shapes, gradients, patterns, and noise sources. |
-| @simulate | Natural processes such as erosion, snow, water, vegetation, and deposition. |
-| @surface | Surface breakup, stratification, rocks, sand, terraces, and texture-like terrain detail. |
+| @terrain | Large terrain primitives and landform starters. |
 | @modify | Filtering, remapping, warping, shaping, and cleanup operations. |
+| @surface | Surface breakup, stratification, rocks, sand, terraces, and texture-like terrain detail. |
+| @simulate | Natural processes such as erosion, snow, water, vegetation, and deposition. |
 | @derive | Masks and data maps derived from terrain, color, flow, slope, or surface structure. |
 | @colorize | Terrain color, palettes, channel operations, and color processing. |
-| @utility | Graph organization, control flow, routing, masking, and helper logic. |
 | @output | Rendering, baking, export, and downstream handoff nodes. |
+| @utility | Graph organization, control flow, routing, masking, and helper logic. |
+| [Macro](/reference/nodes/macro/) | Your installed custom Macros, shown as reusable nodes in the graph. |
 
 ### Integration Reference
 

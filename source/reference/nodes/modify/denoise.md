@@ -1,4 +1,4 @@
----
+﻿---
 description: Denoise is a general purpose noise removal filter.
 title: Denoise
 uid: denoise
@@ -16,6 +16,6 @@ Use Denoise when tiny unwanted chatter needs to be smoothed out before erosion, 
 
 ## Visual Direction
 
-![](/.data/assets/Denoise_VD.png)
+![](/.data/reference/nodes/modify/denoise/visual-direction.webp)
 
 ## Properties

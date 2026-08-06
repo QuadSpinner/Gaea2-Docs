@@ -1,4 +1,4 @@
----
+﻿---
 title: Presets
 uid: presets
 order: 02
@@ -17,7 +17,7 @@ You can create the preset by selecting "Create Preset" from the "Presets" menu i
 
 It will open a create preset dialog.
 
-![Create Preset dialog](/.data/assets/Create-Preset.png)
+![Create Preset dialog](/.data/ui/interface/property-editor/presets/create-preset.webp)
 
 Enter a meaningful name for the preset. 
 
@@ -25,7 +25,7 @@ Checking the option "Make these the default settings for this type of node" will
 
 Clicking on "Create Preset" button will create the preset. We have named the preset "Long Duration". This new preset will now be visible in preset menu. clicking on this preset will apply its settings to the selected node.
 
-![](/.data/assets/Preset-Added.png)
+![](/.data/ui/interface/property-editor/presets/preset-added.webp)
 
 You can create multiple presets with various node settings. 
 

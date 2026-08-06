@@ -22,7 +22,8 @@ Useful starting points:
 - @layers, @mixer, and @combine for organizing multiple inputs
 - @gate, @switch, @route, @loopbegin, and @loopend for flow control
 - @repeat, @seamless, and @reseed for pattern and variation workflows
-- @math, @var, @macroport, and @dataextractor for technical graph logic
+- @macro and @macroport for reusable graph logic and Macro authoring
+- @math, @var, and @dataextractor for technical graph logic
 
 ## In this section
 

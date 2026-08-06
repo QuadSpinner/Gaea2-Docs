@@ -1,4 +1,4 @@
----
+﻿---
 title: Paths
 uid: options-paths
 order: 02
@@ -9,7 +9,7 @@ description: The Paths tab defines where Gaea stores and retrieves user data and
 
 The **Paths** tab defines where Gaea stores and retrieves user data and project files. Properly configuring these paths ensures smooth operation, faster backups, and prevents accidental data loss or corruption.
 
-![](/.data/assets/Options_-_Paths_09-56-52-PM.png)
+![](/.data/ui/interface/options/paths/options-paths.webp)
 
 
 

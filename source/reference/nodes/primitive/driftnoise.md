@@ -1,4 +1,4 @@
----
+﻿---
 description: DriftNoise is a unique primitive that can create overlapping "shelves". It is a versatile primitive noise that can be used in various scenarios from cliffs to crack production.
 title: DriftNoise
 uid: driftnoise
@@ -12,6 +12,6 @@ Use DriftNoise when you want a base pattern that naturally produces overlapping 
 
 ## Visual Direction
 
-![](/.data/assets/DriftNoise_VD.png)
+![](/.data/reference/nodes/primitive/driftnoise/visual-direction.webp)
 
 ## Properties

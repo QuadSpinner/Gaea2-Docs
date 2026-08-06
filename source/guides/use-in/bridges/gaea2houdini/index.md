@@ -1,4 +1,4 @@
----
+﻿---
 icon: h
 title: Gaea2Houdini
 uid: gaea2houdini
@@ -11,14 +11,14 @@ The Gaea2Houdini plugin enables you to access select Gaea simulations and tools 
 
 Infuse your Houdini worlds with Gaea's 180+ nodes.
 
-![](/.data/assets/houdini.webp)
+![](/.data/guides/use-in/bridges/gaea2houdini/index/houdini.webp)
 
 
 # Install Gaea2Houdini
 
 Gaea2Houdini ships in [SideFX Labs](https://www.sidefx.com/products/sidefx-labs/) and can be installed directly from the Houdini Launcher.
 
-![](/.data/assets/Houdini_Launcher_08-05-19-PM.png)
+![](/.data/guides/use-in/bridges/gaea2houdini/index/houdini-launcher.webp)
 
 You can find further details on SideFX Labs' Installation process [in their documentation](https://www.sidefx.com/docs/houdini/labs/#install).
 

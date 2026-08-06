@@ -1,4 +1,4 @@
----
+﻿---
 title: Underlays
 uid: underlays
 order: 03
@@ -10,11 +10,11 @@ description: By default Gaea will use the nearest "Heightfield"/Terrain node to 
 
 By default Gaea will use the nearest "Heightfield"/Terrain node to display the structure beneath the color or mask. However, if your graph splits or follows a secondary path to the color node, then it may use an incorrect node to display the terrain. To prevent this, all you have to do is go to the correct heightfield node, right-click and select "Use as Underlay".
 
-![The "top" branch is used by default by Gaea to show the terrain under a color map or mask.](/.data/assets/underlay1.webp)
+![The "top" branch is used by default by Gaea to show the terrain under a color map or mask.](/.data/ui/graph/basic-workflow/underlays/underlay1.webp)
 
 To use a node as the underlay, right-click the node and select  `Use as Underlay`. You can also select the node and press `G`.
 
-![Now the RadialGradient, or bottom branch, is used as the underlay after being marked.](/.data/assets/underlay2.webp)
+![Now the RadialGradient, or bottom branch, is used as the underlay after being marked.](/.data/ui/graph/basic-workflow/underlays/after.webp)
 
 The Underlay node can be accessed from the toolbar in the Data Editor. It is shown as a purple link.
 
@@ -28,11 +28,11 @@ When an Underlay is not explicitly specified, Gaea nodes such as @colorerosion w
 
 Let's take this example. We use a @shaper node to modify our input for the @texturebase node. The child nodes then use that Shaper as the underlay and not the Erosion node.
 
-![](/.data/assets/underlay-skip-01.png)
+![](/.data/ui/graph/basic-workflow/underlays/underlay-skip-01.webp)
 
 To prevent this, we right-click the Shaper node and set "Exclude from Underlay". Gaea will now ignore it and go to the parent node instead.
 
-![](/.data/assets/underlay-skip-02.png)
+![](/.data/ui/graph/basic-workflow/underlays/underlay-skip-02.webp)
 
 This is very useful when switching between different portions of a complex graph where local underlays may be different.
 

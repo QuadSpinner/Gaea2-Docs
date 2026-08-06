@@ -1,4 +1,4 @@
----
+﻿---
 title: Node
 uid: options-node
 order: 05
@@ -9,7 +9,7 @@ description: T.
 
 The **Node** tab manages the appearance and interaction behavior of nodes in the graph workspace, allowing customization of visual style, connection handling, and data display precision.
 
-![](/.data/assets/Options_-_Node_09-56-59-PM.png)
+![](/.data/ui/interface/options/node/options-node.webp)
 
 
 
