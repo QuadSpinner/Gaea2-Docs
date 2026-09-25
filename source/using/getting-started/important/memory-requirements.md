@@ -1,4 +1,4 @@
----
+﻿---
 title: Memory Requirements
 uid: memory-requirements
 order: 10
@@ -9,7 +9,7 @@ description: Knowing how much memory Gaea will need for your project helps avoid
 
 Knowing how much memory Gaea will need for your project helps avoid performance issues and crashes. Here’s a simplified approach to understanding memory requirements in Gaea.
 
-![Your memory fills up by at least 4X as you double your resolution. This chart only shows final storage in RAM. It does not include the additional RAM required during processing to calculate each node.](/.data/assets/memory_chart.png)
+![Your memory fills up by at least 4X as you double your resolution. This chart only shows final storage in RAM. It does not include the additional RAM required during processing to calculate each node.](/.data/shared/using/memory-chart.webp)
 
 **Understanding Memory Needs**
 

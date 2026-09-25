@@ -1,4 +1,4 @@
----
+﻿---
 title: Resolution
 uid: build-options-resolution
 order: 01
@@ -9,7 +9,7 @@ description: Choose the build scope, output resolution, subdivision mode, and ou
 
 The **Resolution** tab controls how much of the terrain is built and how the output is divided. Use it to select the build scope, target resolution, subdivision strategy, and whether the result is exported as a single image or as tiles.
 
-![](/.data/assets/Build-Options-Resolution-(2).png)
+![](/.data/ui/interface/build-options/resolution/build-options-resolution-2.webp)
 
 ## Resolution Settings
 

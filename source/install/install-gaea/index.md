@@ -1,4 +1,4 @@
----
+﻿---
 icon: box
 title: Install Gaea
 uid: install-gaea
@@ -6,7 +6,7 @@ order: 00
 description: Download Gaea, install prerequisites, choose the correct installer type, and review core system and security requirements.
 ---
 
-![The Gaea 2.0 User Interface](/.data/assets/gaea-ui2x.webp)
+![The Gaea 2.0 User Interface](/.data/shared/common/ui2x.webp)
 
 # Download Gaea
 
@@ -31,7 +31,7 @@ Gaea is available in various forms to provide flexible methods of deployment, wh
 ## Setup Executable
 
 <div align="left">
-  <img src="/.data/assets/image-(43).png" alt="EXE" />
+  <img src="/.data/install/install-gaea/index/setup-executable.webp" alt="EXE" />
 </div>
 
 The setup exe is our primary - and recommended - way of installing Gaea. It provides for both @regular-installation and @portable-installation while also setting up additional registry entries required for the @gaea2unreal and @gaea2houdini bridges.
@@ -39,7 +39,7 @@ The setup exe is our primary - and recommended - way of installing Gaea. It prov
 ## 7-Zip Package
 
 <div align="left">
-  <img src="/.data/assets/image-(44).png" alt="EXE" />
+  <img src="/.data/install/install-gaea/index/7-zip-package.webp" alt="EXE" />
 </div>
 
 The 7-zip package contains the exact same files as the setup executable; however, it is purely portable and does not create registry entries. It is very useful for advanced users or for System Administrators to create custom deployments. See @mass-deployment on how to enable Gaea2Unreal and Gaea2Houdini functionality in pure portable installs such as this.
@@ -66,7 +66,7 @@ Click "**Run Anyway**" to proceed with the installation.
 
 You can also check the SHA-256 hash of the file against the hash shown on the [download page](https://quadspinner.com/download/) for additional verification.
 :::small
-![](/.data/assets/JgfGg2VQGB.png) ![](/.data/assets/rqGW1Jb2K2.png)
+![](/.data/install/install-gaea/index/jgf-gg2-vqgb.webp) ![](/.data/install/install-gaea/index/rq-gw1-jb2-k2.webp)
 :::
 Our new installer makes it very easy to install Gaea, whether you are at home with full Administrator privileges or in a restricted environment at work.
 
@@ -86,7 +86,7 @@ We provide a VirusTotal report for our installer on the download page.
 
 All Gaea binaries¹ are signed with a code-signing certificate provided after rigorous verification of our organization by a Certificate Authority. These signed files prevent tampering. You can open the file properties to see the certificate signature and ensure that each file has not been tampered with.
 :::small
-![](/.data/assets/Certificate_03-08-17-AM.png)
+![](/.data/install/install-gaea/index/signed-binaries.webp)
 :::
 
 ¹ Exe and DLL files legally within QuadSpinner's ownership.

@@ -1,4 +1,4 @@
----
+﻿---
 icon: stethoscope
 title: Diagnostics
 uid: diagnostics
@@ -9,6 +9,6 @@ description: The Gaea Diagnostics application, nicknamed WATSON, is crucial for 
 
 The Gaea Diagnostics application, nicknamed WATSON, is crucial for diagnosing problems, helping tech support find solutions for you, and for benchmarking your hardware.
 
-![](/.data/assets/Watson_-_Gaea_Diagnostics_06-12-24-PM.png)
+![](/.data/shared/using/watson-gaea-diagnostics.webp)
 
 Use Watson to generate a @diagnostics-package.

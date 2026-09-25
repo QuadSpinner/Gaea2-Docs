@@ -1,4 +1,4 @@
----
+﻿---
 description: Generates a hemispherical gradient useful for domes, mounds, and radial falloffs.
 title: Hemisphere
 uid: hemisphere
@@ -12,6 +12,6 @@ Use Hemisphere when you need a hemispherical gradient useful for domes, mounds, 
 
 ## Visual Direction
 
-![](/.data/assets/Hemisphere_VD.png)
+![](/.data/reference/nodes/primitive/hemisphere/visual-direction.webp)
 
 ## Properties

@@ -7,3 +7,4 @@ derive|⚪ Derive
 colorize|🟣 Colorize
 output|🔴 Output
 utility|⚫ Utility
+macro|🧩 Macro

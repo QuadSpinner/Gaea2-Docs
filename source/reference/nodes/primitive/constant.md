@@ -1,4 +1,4 @@
----
+﻿---
 description: The Constant node is the most basic primitive available in Gaea.
 title: Constant
 uid: constant
@@ -24,7 +24,7 @@ Use Constant when you need a flat reference value, a uniform mask, or a neutral 
 The uniform height "block" terrain can be used with Combine in `Max`
 mode to create a flat area at the specified height in a terrain.
 
-![](/.data/ref/Constant/Constant.webp)
+![](/.data/reference/nodes/primitive/constant/constant.webp)
 
 ### Color
 

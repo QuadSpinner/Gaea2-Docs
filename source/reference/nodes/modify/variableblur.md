@@ -1,4 +1,4 @@
----
+﻿---
 description: Blurs the input by varying the blur amount across the surface using local data or a guide.
 title: VariableBlur
 uid: variableblur
@@ -12,6 +12,6 @@ Use VariableBlur when the terrain shape is mostly working and you need a targete
 
 ## Visual Direction
 
-![](/.data/assets/VariableBlur_VD.png)
+![](/.data/reference/nodes/modify/variableblur/visual-direction.webp)
 
 ## Properties

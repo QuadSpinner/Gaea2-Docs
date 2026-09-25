@@ -1,4 +1,4 @@
----
+﻿---
 description: Creates tectonic-style uplift by raising and shaping large terrain masses.
 title: Uplift
 uid: uplift
@@ -12,6 +12,6 @@ Use Uplift when you need tectonic-style uplift by raising and shaping large terr
 
 ## Visual Direction
 
-![](/.data/assets/Uplift_VD.png)
+![](/.data/reference/nodes/terrain/uplift/visual-direction.webp)
 
 ## Properties

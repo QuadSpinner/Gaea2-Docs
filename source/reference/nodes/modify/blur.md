@@ -1,4 +1,4 @@
----
+﻿---
 description: The Blur node diffuses sharp shapes and softens the terrain.
 title: Blur
 uid: blur
@@ -14,6 +14,6 @@ Use Blur when a terrain or mask is too sharp and needs a softer transition befor
 
 ## Visual Direction
 
-![](/.data/assets/BlurVD.png)
+![](/.data/reference/nodes/modify/blur/visual-direction.webp)
 
 ## Properties

@@ -1,4 +1,4 @@
----
+﻿---
 description: Turns a terrain's surface into a craggy, rocky, broken landscape.
 title: Craggy
 uid: craggy
@@ -11,5 +11,7 @@ order: 04
 Use Craggy when you need turns a terrain's surface into a craggy, rocky, broken landscape.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/surface/craggy/visual-direction.webp)
 
 ## Properties

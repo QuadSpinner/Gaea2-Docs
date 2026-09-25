@@ -1,4 +1,4 @@
----
+﻿---
 title: Commands
 uid: build-options-commands
 order: 09
@@ -12,6 +12,6 @@ The **Commands** area provides the actions that launch the build or expose the e
 * **Execute Build**: Starts [Build Swarm](@build-swarm) for the current file and runs a full-resolution build using the active Build Options.
 * **Copy Command Line**: Copies the generated command line for the current file, including fully qualified paths and any variables with their default values.
 
-![](/.data/assets/command_line_example.png)
+![](/.data/shared/common/command-line-example.webp)
 
 See [Command Line Automation](@command-line-automation) for more detail on using the generated command.

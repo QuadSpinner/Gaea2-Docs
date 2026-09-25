@@ -1,4 +1,4 @@
----
+﻿---
 title: Profiles and Batch Builds
 uid: profiles-and-batch-builds
 order: 03
@@ -9,7 +9,7 @@ description: Build Profiles let you save all Build Settings in a named preset.
 
 Build Profiles let you save all Build Settings in a named preset. If you find yourself creating multiple versions of your terrain, or creating different output types, you can switch between the different build settings swiftly with Profiles.
 
-![The Profiles tab lets you preview and manage profiles.](/.data/assets/Build_Settings_and_Regions_08-00-36-PM.png)
+![The Profiles tab lets you preview and manage profiles.](/.data/using/advanced-topics/build-swarm/profiles-and-batch-builds/build-settings-and-regions.webp)
 
 ## Using Profiles
 
@@ -33,7 +33,7 @@ Use ASCII-friendly names for the profile as you may wish to use them in command 
 
 You can execute multiple builds using saved profiles using the Batch Builds dialog. Go to Build menu > Batch Builds to open the dialog.
 
-![](/.data/assets/Batch_Build_Manager_07-33-43-PM.png)
+![](/.data/using/advanced-topics/build-swarm/profiles-and-batch-builds/batch-build-manager.webp)
 
 Queue the different profiles you want to build and execute the batch. You can also save the batch as a `.bat` file for later execution or modification.
 

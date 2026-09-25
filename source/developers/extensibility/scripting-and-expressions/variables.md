@@ -1,4 +1,4 @@
----
+﻿---
 title: Variables
 uid: variables
 icon: xmark
@@ -20,11 +20,11 @@ There are two ways to create variables: by creating a variable directly, or by c
 
 Go to the Vars panel in the Data View, and use the Create Variable menu to create a variable.
 
-![](/.data/assets/vars_menu.png)
+![](/.data/shared/common/vars-menu.webp)
 
 This will create a variable with an automatically given name, and then bring up the Edit Variable dialog so you can rename the variable and modify its properties.
 
-![](/.data/assets/vars_newVar.png)
+![](/.data/developers/extensibility/scripting-and-expressions/variables/vars-new-var.webp)
 
 :::info
 While you can choose to name your variables anything, it is highly recommended that you keep the names to filename friendly characters such as `AZ`/ `az`/ `0-9` and underscores. Avoid spaces whenever possible, and non ASCII characters.
@@ -34,33 +34,33 @@ This will ensure code safety and easy CLI automation.
 
 Now this variable is ready. It can be viewed in the Variables tab of the Data View.
 
-![](/.data/assets/vars_newVarView.png)
+![](/.data/developers/extensibility/scripting-and-expressions/variables/vars-new-var-view.webp)
 
 ### Creating a Variable from a Property
 
 You can open the Property Binding menu represented by the diamond icon. Select `Bind to > New Variable`.
 
-![](/.data/assets/var_bindMenu_new.png)
+![](/.data/developers/extensibility/scripting-and-expressions/variables/var-bind-menu-new.webp)
 
 This creates a variable based on this property. If it is a float (decimal) value, then it will use its Min and Max values to define the range. It will automatically bind itself to this property.
 
-![](/.data/assets/var_boundToProp.png)
+![](/.data/developers/extensibility/scripting-and-expressions/variables/var-bound-to-prop.webp)
 
 ## Binding Variables
 
 Once you have one or more variables defined, you can open the Property Binding menu and bind the property to any variable. You can also unbind a property the same way.
 
-![](/.data/assets/var_bindMenu.png)
+![](/.data/developers/extensibility/scripting-and-expressions/variables/var-bind-menu.webp)
 
 Once a property is bound, the normal Slider or other control will be replaced with a Variable control. You will see the name of the variable and the current value. You can click the value to edit it but note that it will also change the Variable's value and affect any other property bound to this variable.
 
-![](/.data/assets/vars_boundView.png)
+![](/.data/developers/extensibility/scripting-and-expressions/variables/vars-bound-view.webp)
 
 ### Unbind a Property
 
 If you open the Property Binding menu, and select to Bind to > Unbind, you can unbind that property.
 
-![](/.data/assets/vars_unbind.png)
+![](/.data/developers/extensibility/scripting-and-expressions/variables/vars-unbind.webp)
 
 When unbinding, you can choose to just unbind that property and leave the Variable as it is, or delete the variable as well. 
 
@@ -72,7 +72,7 @@ Deleting a variable will unbind any other properties that may be bound to it.
 
 Gaea provides two easy way to display the Variables: as organized by you, or grouped by Nodes.
 
-[Ungrouped / Custom Order](/.data/assets/vars_normalMode.png) ![Grouped by Nodes](/.data/assets/vars_groupByNode.png)
+[Ungrouped / Custom Order](/.data/developers/extensibility/scripting-and-expressions/variables/vars-normal-mode.webp) ![Grouped by Nodes](/.data/shared/common/vars-group-by-node.webp)
 
 In the **Grouped By Node** view, all variables bound to a node are grouped by node, unless you have a variable bound to two or more properties, then those variables are separated into the **MultiBound Properties** group.
 
@@ -80,7 +80,7 @@ In the **Grouped By Node** view, all variables bound to a node are grouped by no
 
 By toggling Edit Mode, you can switch to plain view of all variables. You can edit the values manually, rename the variables, and drag the variables to reorder them. You can also right-click a variable to bring up the Edit Dialog.
 
-![](/.data/assets/vars_editMode.png)
+![](/.data/developers/extensibility/scripting-and-expressions/variables/vars-edit-mode.webp)
 
 In this dialog, you can change all aspects of the variable including variable type. For Float, Range, and Int variables, you can also specify a Min and Max for the variable's range.
 
@@ -94,7 +94,7 @@ In the Create Variable menu, you can choose UI Decorations: specifically, Separa
 
 You can see that Decorations are shown separately in Edit Mode. You can move them around and edit the UI as needed.
 
-![Edit Mode](/.data/assets/vars_editMode.png) ![Custom UI modifications.](/.data/assets/vars_normalMode.png)
+![Edit Mode](/.data/developers/extensibility/scripting-and-expressions/variables/vars-edit-mode.webp) ![Custom UI modifications.](/.data/developers/extensibility/scripting-and-expressions/variables/vars-normal-mode.webp)
 
 When you switch back from Edit Mode, you will see that the custom UI has been implemented.
 

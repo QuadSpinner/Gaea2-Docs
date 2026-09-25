@@ -1,4 +1,4 @@
----
+﻿---
 description: Whorl applies multiple vortex-like distortions across the terrain to create large scale warping.
 title: Whorl
 uid: whorl
@@ -18,6 +18,6 @@ Use Whorl when you want multiple swirling distortions spread across the terrain 
 
 ## Visual Direction
 
-![](/.data/assets/Whorl_VD.png)
+![](/.data/reference/nodes/modify/whorl/visual-direction.webp)
 
 ## Properties

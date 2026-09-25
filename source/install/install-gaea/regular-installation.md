@@ -1,4 +1,4 @@
----
+﻿---
 icon: shield-halved
 title: Regular Installation
 uid: regular-installation
@@ -14,7 +14,7 @@ Before you begin, download the setup executable and review the prerequisites on 
 
 Regular installation is the recommended setup for most users. It installs Gaea like a standard Windows application and creates the registry entries needed by bridge integrations such as Gaea2Unreal and Gaea2Houdini.
 
-![](/.data/assets/QuadSpinner_Gaea_2.0_Setup_09-55-53-PM.png)
+![](/.data/shared/install/quad-spinner-gaea-2-0-setup.webp)
 
 ### Choosing the Installation Type
 
@@ -24,7 +24,7 @@ Select **Regular Installation**. Choose @portable-installation only if you canno
 Regular installation requires administrator privileges. If you do not have them, use @portable-installation.
 :::
 
-![](/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM-(1).png)
+![](/.data/shared/install/setup-gaea-version-2-0-1.webp)
 
 ### Choosing the Path
 
@@ -38,11 +38,11 @@ Gaea will now install. You will be given an option to launch Gaea once the insta
 
 ## First Launch
 
-![](/.data/assets/Welcome_to_Gaea_2.0_09-56-21-PM.png)
+![](/.data/shared/install/welcome-to-gaea-2-0.webp)
 
 When Gaea launches for the first time, the Welcome dialog lets you set your Gaea Projects storage path and choose the Viewport navigation style.
 
-![](/.data/assets/Welcome_to_Gaea_2.0_09-56-28-PM.png)
+![](/.data/shared/install/welcome-to-gaea-2-0-02.webp)
 
 ### License Key
 

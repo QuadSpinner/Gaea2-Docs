@@ -1,4 +1,4 @@
----
+﻿---
 description: Recurve is a curvature-based expander node.
 title: Recurve
 uid: recurve
@@ -18,6 +18,6 @@ Use Recurve when you need curvature-based expansion or contraction that reshapes
 
 ## Visual Direction
 
-![](/.data/assets/Recurve.png)
+![](/.data/reference/nodes/modify/recurve/visual-direction.webp)
 
 ## Properties

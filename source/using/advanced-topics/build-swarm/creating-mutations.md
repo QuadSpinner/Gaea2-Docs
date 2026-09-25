@@ -1,4 +1,4 @@
----
+﻿---
 title: Creating Mutations
 uid: creating-mutations
 order: 01
@@ -23,12 +23,12 @@ To prevent specific nodes from being affected, you can try @baking-nodes.
 
 The fastest way to set up mutations, is to go to Build menu > Batch Build Manager and use the `Add Mutation` button to queue up as many mutations as you want.
 
-![](/.data/assets/Batch_Build_Manager_08-19-54-PM.png)
+![](/.data/using/advanced-topics/build-swarm/creating-mutations/batch-build-manager.webp)
 
 If you find yourself repeating these builds, save the batch build as a Windows Batch (.bat) file.
 
 :::info
-Use the `[Mutation]` token in the [#build](/using-gaea/build-and-export/build-options/#build) Destination to add the current mutation as part of a folder name or subfolder.
+Use the `[Mutation]` token in the [Build Destination](/ui/interface/build-options/build.html#build-destination-and-file-handling) to add the current mutation as part of a folder name or subfolder.
 
 For example:
 

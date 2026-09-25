@@ -1,4 +1,4 @@
----
+﻿---
 title: Toolbox and Search
 uid: toolbox-and-search
 order: 01
@@ -22,9 +22,9 @@ If you drop it on a node, it will automatically connect itself to that node's ou
 You can drag the right edge of the Toolbox to switch between three layout styles depending on your preferences for verbosity or compactness.
 
 :::image-row-vertical
-![Expanded](/.data/assets/Gaea_-_Untitled_11-24-27-PM.png) 
-![Compact](/.data/assets/CKomeuEpQs.png) 
-![Toolbar](/.data/assets/Z9GjprHpvl.png)
+![Expanded](/.data/ui/interface/graph/toolbox-and-search/gaea-untitled.webp) 
+![Compact](/.data/ui/interface/graph/toolbox-and-search/ckomeu-ep-qs.webp) 
+![Toolbar](/.data/ui/interface/graph/toolbox-and-search/z9-gjpr-hpvl.webp)
 :::
 
 
@@ -34,15 +34,15 @@ You can drag the right edge of the Toolbox to switch between three layout styles
 Nodes inside the Toolbox are organized by Family. You can choose how to visualize this organization.
 
 :::image-row
-![Nested (Default): Toolbox menus are nested by Family then family members to avoid clutter](/.data/assets/Gaea_-_Untitled_11-25-16-PM.png)
-![Flat: All Families and family members are shown in a flat menu](/.data/assets/Gaea_-_Untitled_11-25-46-PM.png)
+![Nested (Default): Toolbox menus are nested by Family then family members to avoid clutter](/.data/ui/interface/graph/toolbox-and-search/gaea-untitled-02.webp)
+![Flat: All Families and family members are shown in a flat menu](/.data/ui/interface/graph/toolbox-and-search/gaea-untitled-03.webp)
 :::
 
 ## Search
 
 Search in Gaea is more powerful than ever and is the recommended way to create nodes. You can bring up Search by right-clicking in an empty area of the Graph surface, or by pressing `Tab`.
 :::image-row-vertical
-![Search for both Nodes (Grey) and Presets (Teal).](/.data/assets/Gaea_-_Untitled_11-31-06-PM.png)
+![Search for both Nodes (Grey) and Presets (Teal).](/.data/shared/ui/gaea-untitled.webp)
 :::
 
 ### Nodes

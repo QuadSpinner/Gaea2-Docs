@@ -1,4 +1,4 @@
----
+﻿---
 description: The Erosion Wizard is a lightweight wrapper for the Erosion node.
 title: Wizard
 uid: wizard
@@ -31,5 +31,9 @@ Phase 2 is comprised of lightweight recipes that can be applied either on top of
 ## Prevent Over-Erosion
 
 A common problem many users encounter is that strong erosion can destroy the precise shape they have created. This is because erosion, by definition, will remove material from the terrain to create erosive results. The `Bulk` parameter helps prevent this. By bulking up the terrain even slightly, sharper peaks and delicate areas are less prone to become too eroded or spikey.
+
+## Visual Direction
+
+![](/.data/reference/nodes/simulate/wizard/visual-direction.webp)
 
 ## Properties

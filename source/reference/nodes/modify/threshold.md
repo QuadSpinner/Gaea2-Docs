@@ -1,4 +1,4 @@
----
+﻿---
 description: Abs can modify the terrain or mask it by eliminating values higher or lower than the exact value specified.
 title: Threshold
 uid: threshold
@@ -14,6 +14,6 @@ Use Threshold when you need to isolate values above or below a cutoff for maskin
 
 ## Visual Direction
 
-![](/.data/assets/Threshold_VD.png)
+![](/.data/reference/nodes/modify/threshold/visual-direction.webp)
 
 ## Properties

@@ -1,4 +1,4 @@
----
+﻿---
 title: Tiles
 uid: build-options-tiles
 order: 03
@@ -9,7 +9,7 @@ description: Control naming, numbering, overlap, and folder organization for til
 
 The **Tiles** tab controls how tiled builds are named and arranged on disk. Use it when exporting large terrains as multiple tiles for engines, DCCs, or large-world workflows.
 
-![](/.data/assets/Build-Options-Tiles-(2).png)
+![](/.data/ui/interface/build-options/tiles/build-options-tiles-2.webp)
 
 ## Tile Output Settings
 

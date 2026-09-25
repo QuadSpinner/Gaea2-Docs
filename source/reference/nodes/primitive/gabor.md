@@ -1,4 +1,4 @@
----
+﻿---
 description: Gabor noise is one of the lesser used noises, but provides a wonderful pattern-friendly noise that can be used to simulate various aspects of nature.
 title: Gabor
 uid: gabor
@@ -14,6 +14,6 @@ Use Gabor when you need noise is one of the lesser used noises, but provides a w
 
 ## Visual Direction
 
-![](/.data/assets/Garbor_VD.png)
+![](/.data/reference/nodes/primitive/gabor/visual-direction.webp)
 
 ## Properties

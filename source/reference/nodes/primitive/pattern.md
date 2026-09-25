@@ -1,4 +1,4 @@
----
+﻿---
 description: Generates repeatable geometric or decorative patterns for masking and stylized terrain work.
 title: Pattern
 uid: pattern
@@ -12,6 +12,6 @@ Use Pattern when you need repeatable geometric or decorative patterns for maskin
 
 ## Visual Direction
 
-![](/.data/assets/Pattern_VD.png)
+![](/.data/reference/nodes/primitive/pattern/visual-direction.webp)
 
 ## Properties

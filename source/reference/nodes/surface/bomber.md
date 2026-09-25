@@ -1,4 +1,4 @@
----
+﻿---
 description: The Bomber node takes an input heightfield and "stamps" or bombs it across the entire surface of the terrain using the randomization properties you set.
 title: Bomber
 uid: bomber
@@ -13,5 +13,7 @@ If your terrain has a hard edge, you can turn on Fade Edges. Or for more precise
 Use Bomber when you need takes an input heightfield and "stamps" or bombs it across the entire surface of the terrain using the randomization properties you set.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/surface/bomber/visual-direction.webp)
 
 ## Properties

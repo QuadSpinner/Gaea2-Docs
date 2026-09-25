@@ -1,4 +1,4 @@
----
+﻿---
 description: Origami creates a diagonal multifold pattern, and can produce a highly stylized terrain.
 title: Origami
 uid: origami
@@ -14,6 +14,6 @@ Use Origami when you want deliberate stylized multifold structure rather than na
 
 ## Visual Direction
 
-![](/.data/assets/Origami_VD.png)
+![](/.data/reference/nodes/modify/origami/visual-direction.webp)
 
 ## Properties

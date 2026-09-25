@@ -7,94 +7,99 @@ description: Gaea supports all modern (and some legacy) file formats for both fl
 
 # File Formats
 
-Gaea supports all modern (and some legacy) file formats for both flat files and meshes.
+Gaea can read and write common terrain, image, and mesh formats used by DCC applications, game engines, and custom pipelines. Choose the format based on the kind of data you are moving and how much precision it needs to preserve.
 
-## For Import
+## Supported Formats
 
-### **Bitmap Formats**
+### Bitmap and Data Formats
 
-<table><thead><tr><th width="280">Format</th><th data-type="checkbox">32-bit</th><th data-type="checkbox">16-bit</th><th data-type="checkbox">8-bit</th></tr></thead><tbody><tr><td>OpenEXR</td><td>true</td><td>false</td><td>false</td></tr><tr><td>TIFF</td><td>true</td><td>true</td><td>true</td></tr><tr><td>PNG (64 / 16 / 8)</td><td>true</td><td>true</td><td>true</td></tr><tr><td>RAW (Float / Half / UShort)</td><td>true</td><td>true</td><td>false</td></tr><tr><td>JPG</td><td>false</td><td>false</td><td>false</td></tr><tr><td>Gaea RAW</td><td>true</td><td>false</td><td>false</td></tr></tbody></table>
-
-:::info
-Raw can be saved as .raw, .r16, and .r32 as required as different applications use different combinations of format and extensions.
-:::
-
-### 3D Formats
-
-* Wavefront OBJ (.obj)
-* Autodesk Filmbox (.fbx)
-* Collada (.dae)
-* WebGL (.glTF/.glb)
-* Point Cloud (.xyz)
-
-## **For Import**
-
-Gaea supports the following formats for importing data:
-
-* .exr
-* .tif/.tiff
-* .webp/.jpeg
-* .webp
-* .svg
-* .psd
-* .hdr
-* .pfm
-* .r32
-* .raw
-* .bmp
+| Format | 32-bit | 16-bit | 8-bit | Notes |
+|---|:---:|:---:|:---:|---|
+| OpenEXR (`.exr`) | Yes | No | No | Best general-purpose choice for high precision heightfields and maps. |
+| TIFF (`.tif`, `.tiff`) | Yes | Yes | Yes | Good compatibility for heightfields, masks, and color maps. |
+| PNG (`.png`) | Yes | Yes | Yes | Useful for masks, color maps, and 16-bit heightfield workflows. |
+| RAW (`.raw`, `.r16`, `.r32`) | Yes | Yes | No | Headerless heightfield data for tools that require raw values. |
+| Gaea RAW (`.graw`) | Yes | No | No | Gaea's high-fidelity raw terrain data format. |
+| JPEG (`.jpg`, `.jpeg`) | No | No | Yes | Color/reference images only; avoid for height data. |
+| WebP (`.webp`) | No | No | Yes | Color/reference images only. |
+| BMP (`.bmp`) | No | No | Yes | Legacy color/reference image support. |
+| HDR (`.hdr`) | Yes | No | No | High dynamic range image data. |
+| PFM (`.pfm`) | Yes | No | No | Simple floating point image data for custom workflows. |
+| PSD (`.psd`) | No | No | Yes | Image import for source/reference material. |
+| SVG (`.svg`) | No | No | Yes | Vector source/reference material where supported. |
 
 :::info
-Gaea can also import 3D objects with the Object node.
+Raw files may use `.raw`, `.r16`, or `.r32` depending on the target application. Different tools use different extension and precision conventions, so always confirm the expected bit depth before export.
 :::
 
+### Mesh and Object Formats
 
+Gaea can import 3D objects through the Object node and export terrain meshes through mesh/export workflows.
 
-## Gaea's Project Formats <a href="#gaea-27s-project-formats" id="gaea-27s-project-formats"></a>
+* Wavefront OBJ (`.obj`)
+* Autodesk Filmbox (`.fbx`)
+* Collada (`.dae`)
+* WebGL (`.gltf`, `.glb`)
+* Point cloud (`.xyz`)
 
-Gaea saves files in the formats mentioned below.
+## Import Formats
 
-### **.terrain**
+Use bitmap/data formats when you need to bring in a heightfield, mask, color map, or reference image. Use mesh/object formats when you need an external model or terrain surface as part of a graph.
 
-Gaea terrain projects are saved as a `.terrain` file. All Gaea editions can read this format.
+For heightfields, prefer 32-bit EXR, TIFF, R32, PFM, or Gaea RAW when fidelity matters. For masks and secondary maps, 16-bit PNG or TIFF is usually enough. Use 8-bit formats for reference images, color sources, or simple masks where precision is not critical.
 
-See @#advanced-automation for manipulating this file format.
+## Export Formats
 
+For production heightfields, EXR and TIFF provide the best balance of precision and compatibility. Use `.r32`, `.raw`, or `.graw` when another tool expects simple raw data or when you need to move data between Gaea projects with minimal loss.
 
+For game engines and DCC tools, the correct export depends on the target:
 
-## Precision <a href="#precision" id="precision"></a>
+* Use 32-bit EXR or TIFF for high-quality displacement in rendering applications.
+* Use 16-bit PNG, TIFF, or RAW when the target tool expects 16-bit heightfields.
+* Use OBJ or FBX when the target workflow needs a baked terrain mesh.
+* Use color formats such as PNG, TIFF, or EXR for masks, splat maps, color maps, and supporting outputs.
 
-Gaea stores and processes its heightfields in 32-bit floating points, which is compatible with all professional CGI applications.
+## Project Formats
 
-### **32-bit**
+### `.terrain`
 
-For practical purposes, exporting as either OpenEXR or TIFF will give you the best results and maximum compatibility with other applications. If you are using a custom pipeline, using R32 or PFM formats may be of more use. See the section below for those formats.
+Gaea projects are saved as `.terrain` files. This is the main graph file format and can be opened by all Gaea editions that support the project version.
+
+Automation and bridge workflows can run `.terrain` files without manually opening the full interface. See @automation for the supported command-line and file-based automation workflow.
+
+## Precision
+
+Gaea stores and processes heightfields in 32-bit floating point precision. Export at lower precision only when the target workflow can tolerate the reduced range.
+
+### 32-bit
+
+Use 32-bit output for primary heightfields, displacement maps, and any data that must survive further processing. EXR and TIFF are the most broadly useful 32-bit formats. R32 and PFM are useful for custom pipelines that read simple floating point data directly.
 
 :::info
-If you are saving output from Gaea to bring back to Gaea either in the same or different file, we recommend using the `.r32` or `.graw` formats for maximum fidelity and efficiency.
+If you are saving output from Gaea to bring back into Gaea, use `.r32` or `.graw` for maximum fidelity and efficient loading.
 :::
 
-### **16-bit**
+### 16-bit
 
-While displacement/heightfield information requires 32-bit precision for accuracy; color maps, masks, and other secondary data which may have fewer levels of complexity can make use of 16-bit formats, such as PNG. This can help save on disk space as larger worlds will require a lot of storage space. Storing in 16-bit also helps performance.
+Use 16-bit output for many masks, secondary maps, and heightfields headed to tools that require 16-bit terrain input. This can save disk space and memory, but may introduce visible stepping on very smooth or high-relief displacement.
 
-In fact, if your terrain does not contain many smooth details, you can even export your main displacement as 16-bit.
+Some game engine terrain workflows require 16-bit unsigned RAW data.
 
-Game engines, such as Unity, can only import RAW 16-bit (ushort) format terrains.
+### 8-bit
 
-### **8-bit**
+Use 8-bit output for reference images, color maps that do not require high precision, and simple black-and-white masks. Avoid 8-bit output for primary terrain heightfields unless the loss of precision is acceptable.
 
-In some cases, for example with black and white masks, you may not need a high level of precision at all. You can use 8-bit PNG or TIFF output which can increase performance and save disk space.
+## Raw Technical Details
 
-**Custom Workflows Precision**
+For custom workflows, 32-bit float (`.r32`) and 16-bit unsigned short (`.raw`) are the simplest terrain data formats. They are headerless binary arrays that can be read directly from disk.
 
-If you are using Gaea in a custom workflow, such as automation, you may require the data to be as simple and efficiently readable as possible.
+* `.r32` stores one 32-bit IEEE 754 float per pixel.
+* `.raw` stores one 16-bit unsigned integer per pixel.
+* Values are stored in little-endian byte order.
+* The files are intended for square heightfields.
 
-### Technical Details
+To infer the resolution, divide the byte length by the element size, then take the square root. Use 4 bytes per pixel for `.r32` and 2 bytes per pixel for 16-bit `.raw`.
 
-32-bit float (.r32) and 16-bit ushort (.raw) are the simplest formats you can use. It is a simple binary array of `float` (IEEE 754) or `unsigned short`. The file has no header and can be read directly as a binary stream. The files will use Little Endian.
+The `.r32` format stores normalized floating point values between `0.0f` and `1.0f`. The 16-bit `.raw` format stores integer values between `0` and `65535`.
 
-The size of the heightfield should be square root of the byte length divided by the size of the type (4 bytes for `float`, 2 bytes for `ushort`).
-
-The `.r32` format will store values between `0.0f` and `1.0f`. While the `.raw` format will store values between `0` and `65535`.
-
-Both formats are recommended for heightfield (grayscale) data only.
+Both raw formats are recommended for grayscale heightfield data only.

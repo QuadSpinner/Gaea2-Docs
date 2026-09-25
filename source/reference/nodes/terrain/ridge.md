@@ -1,4 +1,4 @@
----
+﻿---
 description: Ridge creates a rugged ridgeline with multiple fractures and rock shearing.
 title: Ridge
 uid: ridge
@@ -12,6 +12,6 @@ Use Ridge when you need a rugged ridgeline with multiple fractures and rock shea
 
 ## Visual Direction
 
-![](/.data/assets/Ridge_VD.png)
+![](/.data/reference/nodes/terrain/ridge/visual-direction.webp)
 
 ## Properties

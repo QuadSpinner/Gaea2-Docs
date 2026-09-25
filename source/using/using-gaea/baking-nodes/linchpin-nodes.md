@@ -1,4 +1,4 @@
----
+﻿---
 title: Linchpin Nodes
 uid: linchpin-nodes
 order: 01
@@ -15,7 +15,7 @@ When dealing with complex graphs made of dozens, sometimes hundreds of nodes, li
 
 ## Example
 
-![](/.data/assets/linchpin_example.png)
+![](/.data/using/using-gaea/baking-nodes/linchpin-nodes/linchpin-example.webp)
 
 Consider this graph. It shows how Gaea unloads 4 of the 5 baked nodes by identifying only the last baked node as a "linchpin". The memory/cache consumption is reduced by \~66%.
 

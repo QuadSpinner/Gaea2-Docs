@@ -1,4 +1,4 @@
----
+﻿---
 description: Snow simulates snow fall, melt, and settling like in nature, and controls how the snow adheres and flows along the terrain.
 title: Snow
 uid: snow
@@ -11,5 +11,7 @@ order: 19
 Use Snow when you need simulates snow fall, melt, and settling like in nature, and controls how the snow adheres and flows along the terrain.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/simulate/snow/visual-direction.webp)
 
 ## Properties

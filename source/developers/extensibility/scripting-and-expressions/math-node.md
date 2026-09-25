@@ -1,4 +1,4 @@
----
+﻿---
 title: Math Node
 uid: math-node
 order: 03
@@ -10,7 +10,7 @@ description: The Math node is a deceptively powerful node with a very simple int
 
 The Math node is a deceptively powerful node with a very simple interface. It is essentially a blank canvas for you to create any kind of mathematical functions or even complex algorithms.
 
-![](/.data/assets/math_node.png)
+![](/.data/developers/extensibility/scripting-and-expressions/math-node/math-node.webp)
 
 The Math node can work standalone as a Generator, but can also accept up to 3 inputs. These inputs can be accessed as `a`,`b`,`c` respectively. Note, those are pre-defined variables and can't be used for any other purposes except to access data from the port.
 

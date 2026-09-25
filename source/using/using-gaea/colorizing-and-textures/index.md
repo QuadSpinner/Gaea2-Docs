@@ -1,4 +1,4 @@
----
+﻿---
 title: Colorizing and Textures
 uid: colorizing-and-textures
 description: Create color maps, masks, data maps, and layered textures for terrain look development and export.
@@ -8,7 +8,7 @@ description: Create color maps, masks, data maps, and layered textures for terra
 
 Colorizing in Gaea is built around masks. A terrain's height, slope, curvature, flow, soil, and other derived data can drive gradients, SatMaps, layered materials, and exported masks for downstream tools.
 
-![](/.data/assets/datamaps.webp)
+![](/.data/shared/using/datamaps.webp)
 
 The goal is not only to make the viewport look finished. Good color and texture graphs also produce useful production data: albedo or diffuse maps, splat masks, erosion masks, vegetation masks, wetness masks, and other control maps that can be used in engines and DCC applications.
 

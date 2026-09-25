@@ -1,4 +1,4 @@
----
+﻿---
 description: CLUTer lets you create color gradients which can be mapped to texture masks for creating color maps.
 title: CLUTer
 uid: cluter
@@ -13,5 +13,7 @@ Coloration in Gaea is based on CLUTs, or color lookup tables. As 2D heightfields
 Use CLUTer when you want to create color gradients which can be mapped to texture masks for creating color maps.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/colorize/cluter/visual-direction.webp)
 
 ## Properties

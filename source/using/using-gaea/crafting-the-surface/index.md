@@ -1,4 +1,4 @@
----
+﻿---
 title: Crafting the Surface
 uid: crafting-the-surface
 description: Shape and refine terrain forms with primitives, erosion, surface nodes, and transposed detail.
@@ -8,7 +8,7 @@ description: Shape and refine terrain forms with primitives, erosion, surface no
 
 Crafting the surface is where a basic heightfield becomes a believable landform. In Gaea, this usually means building a clear primary shape first, then layering erosion, rock formation, surface breakup, and smaller material cues until the terrain has the right geological character.
 
-![](/.data/assets/CraftingSurface.png)
+![](/.data/using/using-gaea/crafting-the-surface/index/crafting-surface.webp)
 
 Most graphs are strongest when they separate the broad form from the surface treatment. Use primitives and terrain nodes to establish the main mass, erosion to introduce natural drainage and sediment behavior, and surface nodes to add rock, strata, roughness, ledges, or localized detail without losing the larger silhouette.
 

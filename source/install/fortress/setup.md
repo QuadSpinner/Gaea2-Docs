@@ -1,4 +1,4 @@
----
+﻿---
 title: Server Setup
 uid: fortress-setup
 icon: floppy-disk-circle-arrow-right
@@ -10,7 +10,7 @@ description: Install Fortress Server, review server requirements, load tenant fi
 
 The Fortress Server is very easily to deploy.
 
-![](/.data/ui/fortress-tenants.png)
+![](/.data/install/fortress/setup/fortress-tenants.webp)
 
 ## Requirements
 

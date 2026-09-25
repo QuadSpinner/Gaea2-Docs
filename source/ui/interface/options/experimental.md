@@ -1,4 +1,4 @@
----
+﻿---
 title: Experimental
 uid: options-experimental
 order: 13
@@ -9,7 +9,7 @@ description: T.
 
 The **Experimental** tab provides access to preview and in-development features of Gaea. These options are **not final** and may change or be removed in future updates. They can improve performance or alter behavior but may cause instability.
 
-![](/.data/assets/Options_-_Experimental_09-57-20-PM.png)
+![](/.data/ui/interface/options/experimental/options-experimental.webp)
 
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 description: Applies a median filter to remove spikes, speckles, and small noise while preserving edges better than blur.
 title: Median
 uid: median
@@ -12,6 +12,6 @@ Use Median when the terrain shape is mostly working and you need a targeted resh
 
 ## Visual Direction
 
-![](/.data/assets/Median_VD.png)
+![](/.data/reference/nodes/modify/median/visual-direction.webp)
 
 ## Properties

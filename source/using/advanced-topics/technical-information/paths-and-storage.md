@@ -54,7 +54,7 @@ Default location: `C:\Users\<you>\Documents\Gaea\Projects\`
 
 ### Builds
 
-This is where output files from builds are stored. It is denoted by the token `<Builds>` in [#build](/using-gaea/build-and-export/build-options/#build) Build Destination.
+This is where output files from builds are stored. It is denoted by the token `<Builds>` in [Build Destination](/ui/interface/build-options/build.html#build-destination-and-file-handling).
 
 Default location: `C:\Users\<you>\Documents\Gaea\Builds\`
 

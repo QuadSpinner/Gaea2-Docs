@@ -1,4 +1,4 @@
----
+﻿---
 description: Simulates loose debris across the terrain surface to create broken rocky accumulation.
 title: Debris
 uid: debris
@@ -11,5 +11,7 @@ order: 03
 Use Debris when you need simulates loose debris across the terrain surface to create broken rocky accumulation.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/simulate/debris/visual-direction.webp)
 
 ## Properties

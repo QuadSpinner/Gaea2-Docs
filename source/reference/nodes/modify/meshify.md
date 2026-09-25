@@ -1,4 +1,4 @@
----
+﻿---
 description: Converts terrain into a faceted, mesh-like surface with controllable vertex density and detail sensitivity.
 title: Meshify
 uid: meshify
@@ -12,6 +12,6 @@ Use Meshify when the terrain shape is mostly working and you need a targeted res
 
 ## Visual Direction
 
-![](/.data/assets/Meshify_VD.png)
+![](/.data/reference/nodes/modify/meshify/visual-direction.webp)
 
 ## Properties

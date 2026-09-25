@@ -1,4 +1,4 @@
----
+﻿---
 description: HydroFix is a low level utility that can help create unbroken flows.
 title: HydroFix
 uid: hydrofix
@@ -10,8 +10,8 @@ order: 10
 HydroFix is a low level utility that can help create unbroken flows. It does not change the landscape completely, but rather creates small adjustments along flow zones to promote long and better looking flows.
 
 :::image-row
-![](/.data/ref/hydrofix-before.webp)
-![](/.data/ref/hydrofix-after.webp)
+![](/.data/reference/nodes/simulate/hydrofix/before.webp)
+![](/.data/reference/nodes/simulate/hydrofix/after.webp)
 :::
 
 In this example, you can see a simple Perlin with a Flow map. The first image shows the default Perlin, while the second shows the Perlin noise with HydroFix applied. You can see the flow map produces longer and more coherent structures.

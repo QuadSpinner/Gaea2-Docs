@@ -1,4 +1,4 @@
----
+﻿---
 title: Activation
 uid: activation
 order: 01
@@ -20,7 +20,7 @@ A license file is usually provided as a `Gaea-XYZ123.lic` where `XYZ123` is your
 
 ## Loading a License
 
-![](/.data/assets/Gaea_-_Build_and_Export_06-53-07-PM.png)
+![](/.data/install/license-management/activation/gaea-build-and-export.webp)
 
 To load your license, enter the **License Key** in the Activation Dialog and click Activate. Gaea will communicate with the license server and authorize your installation.
 
@@ -30,7 +30,7 @@ If alternatively you have a **License File**, drag and drop the license file on 
 
 When running Gaea for the first time, you will be presented with a "Welcome" dialog. You can click the "Have a license key?" button to bring up the activation dialog.
 
-![](/.data/assets/Welcome_to_Gaea_2.0_09-56-28-PM.png)
+![](/.data/shared/install/welcome-to-gaea-2-0-02.webp)
 
 You can also access this same dialog in other ways:
 
@@ -38,7 +38,7 @@ You can also access this same dialog in other ways:
 * In Help menu > Manage License.
 * In Help menu > About Dialog.
 
-![](/.data/assets/About_06-48-38-PM.png)
+![](/.data/shared/install/about.webp)
 
 ### Activate by File
 

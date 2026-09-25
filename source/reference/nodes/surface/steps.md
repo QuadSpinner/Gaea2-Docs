@@ -1,4 +1,4 @@
----
+﻿---
 description: Creates stepped formations and hard terrace-like breaks in the terrain.
 title: Steps
 uid: steps
@@ -11,5 +11,7 @@ order: 18
 Use Steps when you need stepped formations and hard terrace-like breaks in the terrain.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/surface/steps/visual-direction.webp)
 
 ## Properties

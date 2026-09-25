@@ -1,4 +1,4 @@
----
+﻿---
 title: Graph
 uid: options-graph
 order: 04
@@ -9,7 +9,7 @@ description: The Graph tab controls the behavior, snapping, and visibility of ce
 
 The **Graph** tab controls the behavior, snapping, and visibility of certain interface elements within the node graph workspace, allowing customization of layout precision and shortcut handling.
 
-![](/.data/assets/Options_-_Graph_09-56-57-PM.png)
+![](/.data/ui/interface/options/graph/options-graph.webp)
 
 
 

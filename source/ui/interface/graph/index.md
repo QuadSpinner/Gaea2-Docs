@@ -1,4 +1,4 @@
----
+﻿---
 icon: diagram-project
 title: The Graph
 uid: the-graph
@@ -11,7 +11,7 @@ description: Gaea's advanced graph-based workflow is the key to creating sophist
 
 Gaea's advanced graph-based workflow is the key to creating sophisticated terrains. This open-ended workflow gives you the flexibility to create almost any kind of results that you want.
 
-![](/.data/assets/gaea-ui2x.webp)
+![](/.data/shared/common/ui2x.webp)
 
 
 
@@ -19,7 +19,7 @@ Gaea's advanced graph-based workflow is the key to creating sophisticated terrai
 
 If you have not used node-based workflows before, they may look intimidating, but they aren't. Gaea provides an artist-friendly workflow where you are not required to create complex graphs to get good results.
 
-![](/.data/assets/image-(12).png)
+![](/.data/shared/common/what-are-nodes.webp)
 
 Each node is a heightfield processor that performs a single task. By connecting several nodes, you can create an elaborate program or "recipe" for creating a complex process. Some nodes provide more than one output and input. These additional "ports" can be used for more sophisticated processing of your terrain.
 

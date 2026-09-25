@@ -1,4 +1,4 @@
----
+﻿---
 title: Compute
 uid: options-compute
 order: 12
@@ -9,7 +9,7 @@ description: The Compute tab allows you to configure which available hardware de
 
 The **Compute** tab allows you to configure which available hardware devices are used for computation, optimizing performance across CPU and GPU resources.
 
-![](/.data/assets/Options_-_Compute_09-57-14-PM.png)
+![](/.data/ui/interface/options/compute/options-compute.webp)
 
 
 

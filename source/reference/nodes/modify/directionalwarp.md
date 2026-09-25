@@ -1,4 +1,4 @@
----
+﻿---
 description: Warp terrain using a guide input to create controlled directional deformation effects in Gaea.
 title: DirectionalWarp
 uid: directionalwarp
@@ -19,6 +19,6 @@ Use DirectionalWarp when you want controlled deformation pushed along a guide di
 
 ## Visual Direction
 
-![](/.data/assets/DirectionalWarp_VD.png)
+![](/.data/reference/nodes/modify/directionalwarp/visual-direction.webp)
 
 ## Properties

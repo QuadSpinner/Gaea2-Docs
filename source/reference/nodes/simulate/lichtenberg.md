@@ -1,4 +1,4 @@
----
+﻿---
 description: Creates branching, lightning-like erosion or fracture patterns.
 title: Lichtenberg
 uid: lichtenberg
@@ -11,5 +11,7 @@ order: 13
 Use Lichtenberg when you need branching, lightning-like erosion or fracture patterns.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/simulate/lichtenberg/visual-direction.webp)
 
 ## Properties

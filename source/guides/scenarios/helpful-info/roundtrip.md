@@ -1,4 +1,4 @@
----
+﻿---
 title: Avoid Roundtrips
 uid: roundtrips
 order: 02
@@ -20,7 +20,7 @@ If you use a fixed (static) output path instead, your links stay valid - but eac
 
 Gaea 2 includes an option in @build-options (Build tab) called `Maintain a static folder with the latest copy`.
 
-![Enable "Maintain a static folder" to maintain a constant folder with the latest build](/.data/assets/build-settings-prime-folder.png)
+![Enable "Maintain a static folder" to maintain a constant folder with the latest build](/.data/guides/scenarios/helpful-info/roundtrip/build-settings-prime-folder.webp)
 
 Enable it *while still using* an incremental destination pattern like `[+++]`:
 

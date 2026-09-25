@@ -1,4 +1,4 @@
----
+﻿---
 description: Deflate takes away the bulk of the terrain leaving only finer details.
 title: Deflate
 uid: deflate
@@ -22,6 +22,6 @@ Use Deflate when you want to strip away bulky forms and leave a thinner, more de
 
 ## Visual Direction
 
-![](/.data/assets/Deflate_VD.png)
+![](/.data/reference/nodes/modify/deflate/visual-direction.webp)
 
 ## Properties

@@ -1,4 +1,4 @@
----
+﻿---
 description: Cellular creates cell-based patterns and noises that can be quite versatile as they're ever-present in nature.
 title: Cellular
 uid: cellular
@@ -12,6 +12,6 @@ Use Cellular when you need cell-based patterns and noises that can be quite vers
 
 ## Visual Direction
 
-![](/.data/assets/Cellular_VD.png)
+![](/.data/reference/nodes/primitive/cellular/visual-direction.webp)
 
 ## Properties

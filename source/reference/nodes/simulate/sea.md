@@ -1,4 +1,4 @@
----
+﻿---
 description: Sea is a multi-function water surface generator and coastal erosion tool.
 title: Sea
 uid: sea
@@ -15,5 +15,7 @@ The water surface can be generated either as global surface or filled from the e
 Use Sea when you want one node to both establish a water surface and shape nearby coastal response.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/simulate/sea/visual-direction.webp)
 
 ## Properties

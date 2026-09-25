@@ -1,4 +1,4 @@
----
+﻿---
 title: Using Regions
 uid: using-regions
 order: 02
@@ -13,7 +13,7 @@ description: Regions allows you to take a portion of your terrain and upscale it
 
 Regions allows you to take a portion of your terrain and upscale it to a higher resolution. For example, you can take 1/6th of a 8192 x 8192 terrain and upscale the Region to 8192 x 8192 - making it almost 6X times larger in proportional pixel density.
 
-![](/.data/ui/regions-with-overlay.png)
+![](/.data/using/using-gaea/build-and-export/regions/index/regions-with-overlay.webp)
 
 Gaea gives you the ability to preview any individual region. You can have an unlimited number of regions.
 
@@ -23,15 +23,15 @@ This workflow is very helpful in isolating specific areas that may be of higher 
 
 You first create the basic shapes that represent your world, without adding too much detail (See @low-detail-start). 
 
-![](/.data/ui/region-whole-terrain.png)
+![](/.data/using/using-gaea/build-and-export/regions/index/region-whole.webp)
 
 Go to Build Settings > Regions > Right-Click and add a Region. Set the region to the size and position you like.
 
-![](/.data/ui/region-add.png)
+![](/.data/using/using-gaea/build-and-export/regions/index/region-add.webp)
 
 Now when you exit the Build Settings dialog, you will see a new dropdown next to the Preview Resolution Selection. Use it to select a specific region.
 
-![](/.data/ui/region-selection.png)
+![](/.data/using/using-gaea/build-and-export/regions/index/region-selection.webp)
 
 Gaea will now focus specifically on that area and at full resolution.
 
@@ -46,7 +46,7 @@ If any required nodes are not baked, Gaea will prompt you to bake them. You can 
 
 The Gate node lets you quickly bake and unbake necessary nodes. Simply put a Gate node at the end of one or more chain of nodes you need to bake. Then use the `Bake Required Nodes` command in the Bake menu to bake all Gates. Use `Unbake All` to unbake the Gates.
 
-![](/.data/assets/Bake-Menu.png)
+![](/.data/using/using-gaea/build-and-export/regions/index/bake-menu.webp)
 
 ### Negligible Loss of quality
 

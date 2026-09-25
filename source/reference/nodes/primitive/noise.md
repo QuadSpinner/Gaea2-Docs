@@ -1,4 +1,4 @@
----
+﻿---
 description: Applies controlled single-pixel noise onto your terrain.
 title: Noise
 uid: noise
@@ -14,6 +14,6 @@ Use Noise when you need a controlled speckle or grain layer to disturb an otherw
 
 ## Visual Direction
 
-![](/.data/assets/Noise_VD.png)
+![](/.data/reference/nodes/primitive/noise/visual-direction.webp)
 
 ## Properties

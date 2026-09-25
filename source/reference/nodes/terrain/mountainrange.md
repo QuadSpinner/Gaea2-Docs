@@ -1,4 +1,4 @@
----
+﻿---
 description: Range primitive quickly sets up an entire mountain terrain with shapes highly optimized for eroding large-scale landscapes.
 title: MountainRange
 uid: mountainrange
@@ -12,6 +12,6 @@ Use MountainRange when you need range primitive quickly sets up an entire mounta
 
 ## Visual Direction
 
-![](/.data/assets/MountainRange_VD.png)
+![](/.data/reference/nodes/terrain/mountainrange/visual-direction.webp)
 
 ## Properties

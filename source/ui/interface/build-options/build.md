@@ -1,4 +1,4 @@
----
+﻿---
 title: Build
 uid: build-options-build
 order: 02
@@ -9,7 +9,7 @@ description: Choose where builds are written and how output files are named, cop
 
 The **Build** tab controls the destination and file-handling rules for the current build. Use it to decide where outputs are written, whether supporting files are copied, and how Gaea handles name collisions.
 
-![](/.data/assets/Build-Options-Build-(2).png)
+![](/.data/ui/interface/build-options/build/build-options-build-2.webp)
 
 ## Build Destination and File Handling
 

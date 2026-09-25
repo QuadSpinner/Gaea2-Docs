@@ -1,4 +1,4 @@
----
+﻿---
 description: Dilate the pixels of the heightfield or mask.
 title: Dilate
 uid: dilate
@@ -12,6 +12,6 @@ Use Dilate when the terrain shape is mostly working and you need a targeted resh
 
 ## Visual Direction
 
-![](/.data/assets/Dilate_VD.png)
+![](/.data/reference/nodes/modify/dilate/visual-direction.webp)
 
 ## Properties

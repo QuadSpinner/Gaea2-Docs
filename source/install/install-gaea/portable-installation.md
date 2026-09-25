@@ -1,4 +1,4 @@
----
+﻿---
 icon: usb-drive
 title: Portable Installation
 uid: portable-installation
@@ -14,7 +14,7 @@ Before you begin, download the setup executable and review the prerequisites on 
 
 Portable installation installs Gaea into a user-writable or custom folder. Use it when you do not have administrator privileges, need a removable-drive install, or want a self-contained deployment.
 
-![](/.data/assets/QuadSpinner_Gaea_2.0_Setup_09-55-53-PM.png)
+![](/.data/shared/install/quad-spinner-gaea-2-0-setup.webp)
 
 ### Choosing the Installation Type
 
@@ -24,7 +24,7 @@ Select **Portable Installation**. Choose @regular-installation instead when you 
 Portable installations do not create the same registry entries as regular installations. If you rely on Gaea2Unreal or Gaea2Houdini, see @mass-deployment for bridge setup options.
 :::
 
-![](/.data/assets/Setup_-_Gaea_version_2.0_09-56-05-PM-(1).png)
+![](/.data/shared/install/setup-gaea-version-2-0-1.webp)
 
 ### Choosing the Path
 
@@ -40,11 +40,11 @@ Gaea will now install. You will be given an option to launch Gaea once the insta
 
 ## First Launch
 
-![](/.data/assets/Welcome_to_Gaea_2.0_09-56-21-PM.png)
+![](/.data/shared/install/welcome-to-gaea-2-0.webp)
 
 When Gaea launches for the first time, the Welcome dialog lets you set your Gaea Projects storage path and choose the Viewport navigation style.
 
-![](/.data/assets/Welcome_to_Gaea_2.0_09-56-28-PM.png)
+![](/.data/shared/install/welcome-to-gaea-2-0-02.webp)
 
 ### License Key
 

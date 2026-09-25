@@ -1,4 +1,4 @@
----
+﻿---
 title: Navigation
 uid: options-navigation
 order: 10
@@ -9,7 +9,7 @@ description: The Navigation tab allows you to customize how you interact with th
 
 The **Navigation** tab allows you to customize how you interact with the 3D viewport using your mouse and keyboard. It provides full control over button assignments, sensitivity, and directional preferences.
 
-![](/.data/assets/Options_-_Navigation_09-57-10-PM.png)
+![](/.data/ui/interface/options/navigation/options-navigation.webp)
 
 
 

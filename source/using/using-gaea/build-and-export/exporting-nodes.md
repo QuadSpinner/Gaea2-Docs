@@ -1,4 +1,4 @@
----
+﻿---
 title: Exporting Nodes
 uid: exporting-nodes
 order: 01
@@ -9,13 +9,13 @@ description: Gaea is primarily an asset generator designed for creating and expo
 
 Gaea is primarily an asset generator designed for creating and exporting terrains to be used in other applications. It supports all major heightfield and mesh formats, ensuring compatibility with various platforms and rendering tools.
 
-![Output/Export Nodes in the Gaea Toolbox](/.data/assets/image-(42).png)
+![Output/Export Nodes in the Gaea Toolbox](/.data/using/using-gaea/build-and-export/exporting-nodes/output-export-nodes-in-the-gaea-toolbox.webp)
 
 ## **Output Nodes**
 
 :::image-row
-![Mesher node properties](/.data/assets/image-(41).png) {.w-50}
-![Export node for Bitmap export](/.data/assets/image-(3).png){.w-50}
+![Mesher node properties](/.data/using/using-gaea/build-and-export/exporting-nodes/mesher-node-properties.webp) {.w-50}
+![Export node for Bitmap export](/.data/using/using-gaea/build-and-export/exporting-nodes/export-node-for-bitmap-export.webp){.w-50}
 :::
 
 * **Node Types**: Utilize specific output nodes, such as Mesher for mesh generation, Point Cloud for simple XY point cloud export, or platform-specific nodes like @unreal and @unity, to export your assets.
@@ -24,7 +24,7 @@ Gaea is primarily an asset generator designed for creating and exporting terrain
 
 ### **Mark for Export**
 
-![Data View's BUILD Tab showing nodes marked for export.](/.data/assets/image-(39).png)
+![Data View's BUILD Tab showing nodes marked for export.](/.data/shared/using/data-view-s-build-tab-showing-nodes-marked-for-export.webp)
 
 * **Shortcut Key**: Right-click a node and select `Mark for Export` or press `F3` on any node to mark it for export. This flexibility allows you to export multiple node outputs simultaneously.
 * **Build Tab and Settings**: The Build tab and Build Settings window display all nodes marked for export. Here, you can change the output format, select which ports to export, and rename the export files.
@@ -36,7 +36,7 @@ You can disable `_Out` suffix for the Primary Port in @build-options.
 
 ### Export Settings and Options
 
-![](/.data/assets/image-(4).png)
+![](/.data/using/using-gaea/build-and-export/exporting-nodes/export-settings-and-options.webp)
 
 **File name.** The node name is used by default for the export filename, however, you change the name in the Export Items list in the Build Tab in @data-editor or in the @build-options.
 

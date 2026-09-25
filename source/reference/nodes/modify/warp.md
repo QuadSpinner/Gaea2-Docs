@@ -1,4 +1,4 @@
----
+﻿---
 description: Warp can take the terrain and "warp" the shape creating more organic shapes.
 title: Warp
 uid: warp
@@ -22,6 +22,6 @@ Warp is also built into the @modifier-stack for easy access.
 
 ## Visual Direction
 
-![](/.data/assets/Warp_VD.png)
+![](/.data/reference/nodes/modify/warp/visual-direction.webp)
 
 ## Properties

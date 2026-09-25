@@ -1,4 +1,4 @@
----
+﻿---
 description: Generates dotted or speckled noise patterns for texturing and breakup.
 title: DotNoise
 uid: dotnoise
@@ -12,6 +12,6 @@ Use DotNoise when you need dotted or speckled noise patterns for texturing and b
 
 ## Visual Direction
 
-![](/.data/assets/DotNoise_VD.png)
+![](/.data/reference/nodes/primitive/dotnoise/visual-direction.webp)
 
 ## Properties

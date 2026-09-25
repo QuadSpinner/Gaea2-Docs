@@ -1,4 +1,4 @@
----
+﻿---
 description: Converts the input into a blocky, pixelated version.
 title: Pixelate
 uid: pixelate
@@ -12,6 +12,6 @@ Use Pixelate when the terrain shape is mostly working and you need a targeted re
 
 ## Visual Direction
 
-![](/.data/assets/PIxelate_VD.png)
+![](/.data/reference/nodes/modify/pixelate/visual-direction.webp)
 
 ## Properties

@@ -1,4 +1,4 @@
----
+﻿---
 description: Generates a single mountain slope or mountainside formation.
 title: MountainSide
 uid: mountainside
@@ -12,6 +12,6 @@ Use MountainSide when you need a single mountain slope or mountainside formation
 
 ## Visual Direction
 
-![](/.data/assets/MountainSide_VD.png)
+![](/.data/reference/nodes/terrain/mountainside/visual-direction.webp)
 
 ## Properties

@@ -1,4 +1,4 @@
----
+﻿---
 description: SlopeBlur is a versatile, low-level node that adds directional blurring based on the slopes of a Guide terrain or mask. It is one of our deceptively simple nodes that can create a wide array of shapes.
 title: SlopeBlur
 uid: slopeblur
@@ -12,6 +12,6 @@ Use SlopeBlur when you want to directionally soften, smear, or break up an exist
 
 ## Visual Direction
 
-![](/.data/assets/SlopeBlur_VD.png)
+![](/.data/reference/nodes/modify/slopeblur/visual-direction.webp)
 
 ## Properties

@@ -1,4 +1,4 @@
----
+﻿---
 description: Scatters stones or small rock forms across the surface.
 title: Stones
 uid: stones
@@ -11,5 +11,7 @@ order: 19
 Use Stones when you need scatters stones or small rock forms across the surface.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/surface/stones/visual-direction.webp)
 
 ## Properties

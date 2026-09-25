@@ -1,4 +1,4 @@
----
+﻿---
 description: The Match node is a low-level lets you provide a Reference input that is used to adapt/match the heights of the main Input.
 title: Match
 uid: match
@@ -26,6 +26,6 @@ Use Match when one terrain needs to inherit the height range or elevation charac
 
 ## Visual Direction
 
-![](/.data/assets/Match_VD.png)
+![](/.data/reference/nodes/modify/match/visual-direction.webp)
 
 ## Properties

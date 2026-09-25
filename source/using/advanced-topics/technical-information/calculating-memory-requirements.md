@@ -1,4 +1,4 @@
----
+﻿---
 title: Calculating Memory Requirements
 uid: calculating-memory-requirements
 order: 05
@@ -11,7 +11,7 @@ description: It is common to hear users say "But I have an 8GB GPU" or "But I ha
 
 It is common to hear users say _"But I have an 8GB GPU"_ or _"But I have 64GB RAM"_ when a build fails. However, it is imperative to remember that, while terrains may seem like just simple objects, the procedural graph represents a LOT of data and this data takes up a lot of memory.
 
-![The Build Statistics window lets you keep an eye on how much time each node takes.](/.data/assets/gaea_2051_stats.png)
+![The Build Statistics window lets you keep an eye on how much time each node takes.](/.data/using/advanced-topics/technical-information/calculating-memory-requirements/gaea-2051-stats.webp)
 
 When working in a specific resolution, each node generates single channel (heightfield) or multichannel (RGB) data. The amount of data is multiplied by the number of output ports.
 
@@ -28,7 +28,7 @@ The table below describes the size of the cache of a single node at different re
 
 During the lifetime of a node's process, dozens - sometimes hundreds - of datasets may be created, altered, and discarded. This is one of the reasons why Gaea requires large amounts of memory when processing.
 
-![Allocated Memory readout in the Status Bar](/.data/assets/image-(47).png)
+![Allocated Memory readout in the Status Bar](/.data/using/advanced-topics/technical-information/calculating-memory-requirements/allocated-memory-readout-in-the-status-bar.webp)
 
 Gaea's Status Bar shows the currently allocated memory in the bottom right corner of the screen. This updates every 5 seconds. However, it only counts the allocated cache - the amount used in between for temporary usage - so should only be considered an estimate.
 
@@ -36,7 +36,7 @@ Gaea's Status Bar shows the currently allocated memory in the bottom right corne
 
 ### Excessive Nodes
 
-![Memory consumption increases 4X when you double the resolution.](/.data/assets/memory_chart.png)
+![Memory consumption increases 4X when you double the resolution.](/.data/shared/using/memory-chart.webp)
 
 The fewer nodes you use, the better. The higher number of nodes makes your graph more complex and slower to process. Also, each node takes up a certain amount of space. While Gaea tries to free up as much space as possible once a node is processed, it's not always possible to economize.
 
@@ -50,7 +50,7 @@ For a typical 8K terrain graph, if you use 20 nodes, you would have a cache size
 
 ### Large Resolutions
 
-![Cache size requirements increase quadratically with resolution.](/.data/assets/memory_chart2.png)
+![Cache size requirements increase quadratically with resolution.](/.data/using/advanced-topics/technical-information/calculating-memory-requirements/memory-chart2.webp)
 
 While 16K may not seem like much on the surface, the sheer processing power required for a relatively complex scene can overwhelm a computer. Using the table above, we can easily calculate that 20 nodes at 16K would require 20GB-30GB of memory for actual cache and up to 96GB of memory for the overall processing and management of the build.
 
@@ -62,7 +62,7 @@ While Gaea would recycle memory in between, there would still be some large spik
 
 When exporting meshes, you can expect very large file sizes at higher resolutions. As terrain meshes use an equidistant grid system, it creates 1 vertex per pixel. So your 2048 x 2048 terrain will have 2048 (+1) x 2048 (+1) vertices. That's 4 million vertices!!
 
-![](/.data/assets/sophia-1.webp)
+![](/.data/shared/using/sophia-1.webp)
 
 You can choose to export `Optimized` meshes when using the Mesher node. Our proprietary algorithms can help you reduce the polygon count based on the complexity of the terrain. This will budget more polygons where there are complex details and fewer polygons for flatter areas. This can lead to up to 60% reduction in polygon count in typical scenarios.
 

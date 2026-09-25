@@ -1,4 +1,4 @@
----
+﻿---
 description: The Combine node is one of the most important nodes in Gaea.
 title: Combine
 uid: combine
@@ -15,10 +15,15 @@ In addition, the Combine node also gives you a separation mask for texturing pur
 Use Combine when two terrains, masks, or color maps need to be blended, compared, or merged into one controllable result.
 
 ## Using Combine
+:::info
+Min and Max blend modes compare Input A and Input B per pixel. Max keeps the higher value from the two inputs, while Min keeps the lower value. This is different from the Min and Max modifiers, which compare a node's processed result against its own incoming terrain.
+:::
 
 :::aside
 Combine is deceptively simple, but may be the single most important node in Gaea.
 :::
+
+
 
 **Color Mixing**
 
@@ -32,13 +37,13 @@ Inversely, if the first input is a heightmap or mask and the second is a color m
 
 This is an example of equally blending (Mode: Blend, Ratio: 50%) Perlin and Mountain nodes.
 
-![](/.data/ref/Combine/combine--blend.webp)
+![](/.data/reference/nodes/utility/combine/combine-blend.webp)
 
 If you switch the mode to Max and Ratio to 100%:
 
-![](/.data/ref/Combine/combine--max.webp)
+![](/.data/reference/nodes/utility/combine/combine-max.webp)
 
-If you plug in a shape of any kind to the Mask input of the Combine node, the brighter parts of the mask will be replaced with the first input, while darker areas will be replaced with the second input. If your mask is soft (ie - lots of grays instead of just black and white) then the blending between the two will be soft. This is usually the preferred method. ![](/.data/ref/Combine/combine--hardmask.webp)
+If you plug in a shape of any kind to the Mask input of the Combine node, the brighter parts of the mask will be replaced with the first input, while darker areas will be replaced with the second input. If your mask is soft (ie - lots of grays instead of just black and white) then the blending between the two will be soft. This is usually the preferred method. ![](/.data/reference/nodes/utility/combine/combine-hardmask.webp)
 
 ## Additional Scenarios
 

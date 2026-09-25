@@ -1,4 +1,4 @@
----
+﻿---
 title: Lazy Menu
 uid: options-lazy-menu
 order: 11
@@ -9,7 +9,7 @@ description: The Lazy Menu tab lets you control the visibility and prominence of
 
 The **Lazy Menu** tab lets you control the visibility and prominence of key panels and tools in the Lazy Menu interface. This helps declutter the UI or highlight frequently used options for faster access.
 
-![](/.data/assets/Options_-_Lazy_Menu_09-57-12-PM.png)
+![](/.data/ui/interface/options/lazy-menu/options-lazy-menu.webp)
 
 
 

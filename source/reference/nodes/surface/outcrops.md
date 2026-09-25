@@ -1,4 +1,4 @@
----
+﻿---
 description: The Outcrops LookDev node creates rocky outcrops on any surface. You can control coverage, breakage, and surface details. Several Outcrops nodes can be layered for complex results.
 title: Outcrops
 uid: outcrops
@@ -11,5 +11,7 @@ order: 09
 Use Outcrops when you need lookDev node creates rocky outcrops on any surface.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/surface/outcrops/visual-direction.webp)
 
 ## Properties

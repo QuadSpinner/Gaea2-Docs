@@ -1,4 +1,4 @@
----
+﻿---
 description: Synth takes a bitmap image (photo or artwork) and converts it to CLUT map that can be used with a texture mask to colorize your terrain.
 title: Synth
 uid: synth
@@ -13,5 +13,7 @@ Synth can take a bitmap image whether photo or artwork and convert it to CLUT ma
 Use Synth when you want a photo or painted palette to drive terrain coloration while still respecting procedural masks and selectors.
 
 ## Visual Direction
+
+![](/.data/reference/nodes/colorize/synth/visual-direction.webp)
 
 ## Properties

@@ -1,4 +1,4 @@
----
+﻿---
 description: AutoLevel is a leveling node that allows you to level your terrain.
 title: Autolevel
 uid: autolevel
@@ -24,6 +24,6 @@ Use Autolevel when terrain values need to be rebalanced so the full height range
 
 ## Visual Direction
 
-![](/.data/assets/AutoLevel_VD.png)
+![](/.data/reference/nodes/modify/autolevel/visual-direction.webp)
 
 ## Properties

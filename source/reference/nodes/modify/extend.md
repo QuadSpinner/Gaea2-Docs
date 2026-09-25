@@ -1,4 +1,4 @@
----
+﻿---
 description: Expands the terrain range beyond its current limits, effectively stretching elevation values.
 title: Extend
 uid: extend
@@ -12,6 +12,6 @@ Use Extend when the terrain shape is mostly working and you need a targeted resh
 
 ## Visual Direction
 
-![](/.data/assets/Extend_VD.png)
+![](/.data/reference/nodes/modify/extend/visual-direction.webp)
 
 ## Properties
